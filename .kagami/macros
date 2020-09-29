@@ -1,0 +1,13 @@
+# unset to set document root to /
+unset DOC_ROOT
+
+AUTHOR='microsounds'
+AVATAR='https://avatars3.githubusercontent.com/u/15962566'
+SITE_TITLE="chrystalline µsounds"
+SITE_SUBTITLE="the echoes of time stand still"
+SITE_HOST='https://microsounds.github.io'
+GIT_REMOTE='https://github.com/microsounds'
+
+# functions
+CURRENT_DATE="$(fancy_date $(date +%s))"
+YEAR="$(date '+%Y')"

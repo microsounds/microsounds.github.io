@@ -1,0 +1,147 @@
+/* night sky background
+ * anchor footer pic bottom of viewport or bottom of document,
+ * whichever is the longest
+ */
+html {
+	min-height: 100%;
+	background:
+		url("nightsky.png") repeat,
+		url("moon_crop2.png") no-repeat bottom right,
+		linear-gradient(270deg, #809F88, #0B6672);
+	background-blend-mode: screen, screen, normal;
+	background-size: auto, 20%, auto;
+}
+
+/* 2-column layout [150px navbar] [ page content ]
+ *  content margin |----150px---->
+ */
+.content {
+	margin: 0 150px 0 150px;
+	padding: 0 10px 5px 10px;
+	border-top: 5px double #E2FAF9;
+	color: #FFFFFF;
+	font-family: "Liberation Serif", "Times New Roman", serif, "Dejima Mincho"; 
+	text-shadow: 2px 1px #646464;
+}
+
+.navbar {
+	position: static;
+	width: 130px;
+	float: left;
+	background: linear-gradient(145deg, #FFFFFF, #E2FAF9);
+	border: 1px solid #646464;
+	box-shadow: 3px 3px #646464;
+	word-break: break-word;
+	hyphens: auto;
+}
+.navbar a { color: #0F968C; }
+.navbar a:hover { text-shadow: 0 0 3px #646464; }
+.navbar .avatar { width: 100%; transform: rotate(90deg); }
+.navbar .container { display: block; padding: 10px; }
+.navbar .title {
+	float: left;
+	writing-mode: vertical-rl;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.navbar .subtitle {
+	color: #888888;
+	font-size: 14px;
+	font-family: "Liberation Sans", "Arial", "Helvetica", sans-serif;
+	font-style: italic;
+}
+.navbar ul { margin: unset; padding: unset; list-style: none; }
+.navbar li { border-top: 1px dotted #FFFFFF; }
+
+/* links */
+a { color: #F5D6EA; text-decoration: none; }	
+a:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
+
+/* blockquotes */
+blockquote {
+	border-left: 5px solid #646464;
+	background: #BB67A170;
+	padding: 5px;
+}
+
+/* inline images */
+.content img {
+/*	display: block;*/
+/*	margin-left: auto;*/
+/*	margin-right: auto;*/
+/*	margin-top: auto;*/
+	margin: 10px;
+	width: 60%;
+	border: 5px solid #646464;
+}
+
+/* automatically generated page index */
+.index { font-size: 18px; }
+
+/* code blocks */
+code {
+	font-family: "Go Mono", monospace;
+	font-size: 13px;
+	letter-spacing: -0.06em;
+	text-shadow: 2px 2px 5px #646464;
+}
+pre { 
+	margin: 0 30px 0 30px;
+	overflow: auto;
+	tab-size: 36px;
+	text-shadow: none;
+	background-color: #272727;
+	border: 2px solid #B24A7A;
+	box-shadow: 2px 2px #646464;
+	opacity: 90%;
+	padding: 3px;
+}
+
+/* tables */
+table {
+	margin: 0 30px 0 30px;
+	border-collapse: collapse;
+	text-shadow: none;
+}
+th, td { border: 2px solid #666; }
+th { padding: 10px 5px 10px 5px; background: #777; }
+td { padding: 5px; }
+tr { background: #999; }
+tr:nth-child(even) { background: #777; }
+	
+/* end of page footnote */
+.footnote {
+	font-family: "Liberation Sans", "Arial", "Helvetica", sans-serif;
+	font-style: italic;
+	font-size: 11px;
+}
+
+/* changes for mobile devices */
+@media only screen and (max-width: 720px), (orientation: portrait) {
+	/* background pic */
+	html { background-size: auto, 300px, auto; }
+	/* flatten to single column layout */
+	.content { margin: unset; padding: unset; border: unset; }
+	/* unpin navbar */
+	.navbar { position: unset; float: unset; height: 100px; width: 100%; }
+	.navbar .avatar { float: left; padding-right: 10px; height: 100%; width: unset; transform: unset; }
+	.navbar .title { float: unset; writing-mode: unset; padding: unset; }
+	.navbar li { display: inline; color: #646464; border: unset;  }
+	/* horizontal menu separator */
+	.navbar li:not(:last-child):after { content: " | "; } 
+	/* align special elements to edge of display */
+	pre { margin: unset; }
+	table { margin: unset; }
+}
+
+/* keep embedded fonts to a minimum */
+@font-face {
+	font-family: "Go Mono"; /* serif monospace font */
+	src: local("Go Mono"), url("fonts/go-mono.woff") format("woff");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Dejima Mincho"; /* serif japanese fallback font */
+	src: local("Dejima Mincho"), url("fonts/dejima-mincho.woff") format("woff");
+	font-display: swap;
+}
