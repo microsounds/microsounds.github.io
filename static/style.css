@@ -125,7 +125,7 @@ tr:nth-child(even) { background: #777; }
 	/* unpin navbar */
 	.navbar { position: unset; float: unset; height: 100px; width: 100%; }
 	.navbar .avatar { float: left; padding-right: 10px; height: 100%; width: unset; transform: unset; }
-	.navbar .title { float: unset; writing-mode: unset; padding: unset; }
+	.navbar .title { float: unset; writing-mode: unset; padding: unset; font-size: 25px; }
 	.navbar li { display: inline; color: #646464; border: unset;  }
 	/* horizontal menu separator */
 	.navbar li:not(:last-child):after { content: " | "; } 
