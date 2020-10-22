@@ -1,4 +1,4 @@
-<!--updated 2020/9/23-->
+<!--updated 2020/11/22-->
 # List of low profile GPUs for small form factor PCs (SFFs)
 <img src="assets/low_profile_gpu.jpg" align="right">
 Last updated on {CREATED}.
@@ -42,6 +42,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | Nvidia GeForce GT 730 | 2014 | 794 | Zotac makes passively cooled versions. |
 | AMD Radeon R7 240 | 2013 | 836 | |
 | AMD Radeon HD 8570 | 2013 | 1001 | OEM only. |
+| AMD Radeon R7 250 | 2013 | 1181 | |
 | AMD Radeon R7 430 | 2017 | 1200 | OEM only. |
 | AMD Radeon Pro WX 2100 | 2017 | 1581 | Workstation card. |
 | AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
@@ -51,14 +52,14 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | AMD Radeon Pro WX 3100 | 2017 | 2818 | Workstation card. |
 | Nvidia Quadro K1200 | 2015 | 2861 | Workstation card. |
 | Nvidia Quadro P620 | 2018 | 3639 | Workstation card. |
-| AMD Radeon RX 560 | 2017 | 3672 | Available from MSI, VisionTek (workstation version) |
 | AMD Radeon Pro WX 4100 | 2017 | 3758 | Workstation card. |
-| AMD Radeon RX 460 | 2016 | 4034 | Available from MSI. |
 | Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
 
 # 2-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Comments |
 | :-- | :--: | :--: | :-- |
+| AMD Radeon RX 560 | 2017 | 3672 | Available from MSI, VisionTek (workstation 1-slot card) |
+| AMD Radeon RX 460 | 2016 | 4034 | Available from MSI. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 6398 | ASL makes a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 7866 | ASL makes a [1-slot version][4] for the Chinese market. |
 | _Nvidia Ampere-based LP card_ | 2021? | ? | _Low-end, low profile iterations of RTX 30* series cards will probably be announced by 2021._ |
