@@ -33,19 +33,25 @@ You might also find that some SFF prebuilts have less than ideal PCIe placement.
 In the case of many late model [Dell Optiplex SFFs][5], they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against other components, unable to accomodate most modern cards which are 2 slots at the bare minimum.
 In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of roughly 10% on a GTX 1050/1650, potentially more on more powerful cards.
 
+
 # 1-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Comments |
 | :-- | :--: | :--: | :-- |
 | Nvidia GeForce 210 | 2009 | 98 | Still sold new, worse than integrated. |
+| AMD Radeon HD 8490 | 2014 | 270 | OEM only. |
+| AMD Radeon R5 240 | 2014 | 516 | OEM only. |
 | Nvidia GeForce GT 710 | 2014 | 636 | Zotac, Asus, VisionTek make passively cooled versions. |
 | _Intel HD Graphics 4600_ | 2013 | 640 | _Haswell-era Intel integrated graphics, for reference._ |
 | Nvidia GeForce GT 730 | 2014 | 794 | Zotac makes passively cooled versions. |
+| Nvidia GeForce GT 635 | 2013 | 826 | |
 | AMD Radeon R7 240 | 2013 | 836 | |
 | AMD Radeon HD 8570 | 2013 | 1001 | OEM only. |
+| Nvidia GeForce GT 640 | 2011 | 1153 | |
 | AMD Radeon R7 250 | 2013 | 1181 | |
 | AMD Radeon R7 430 | 2017 | 1200 | OEM only. |
 | AMD Radeon Pro WX 2100 | 2017 | 1581 | Workstation card. |
 | AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
+| Nvidia GTX 745 | 2014 | 2205 | OEM only. |
 | AMD Radeon RX 550 | 2017 | 2408 | Yeston, MSI, Sapphire, XFX make low profile versions. |
 | AMD Radeon Pro WX 3200 | 2019 | 2560 | Workstation card. |
 | Nvidia GeForce GT 1030 | 2017 | 2607 | Asus, EVGA, MSI make passively cooled versions. |
