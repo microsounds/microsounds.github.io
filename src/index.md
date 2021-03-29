@@ -1,10 +1,12 @@
-# Home
-There isn't much to speak of at the moment.
+# Homepage
+![header](https://github.com/microsounds/microsounds/raw/master/profile/bg.png)
 
-## About Me
-I like starry night skies, people watching, and the Unix programming environment.
+### About Me
+There isn't much to say at the moment, I like starry night skies, people watching, and the unix programming environment.
 
-## Some Links
-* My Dotfiles — https://github.com/microsounds/atelier
+### Some Links
+* My Dotfiles — <https://github.com/microsounds/atelier>
+* My Website — <https://microsounds.github.io>
 
-<sup>Unless otherwise stated, source code is licensed GPLv3 or later, written content is licensed CC BY-SA 4.0.</sup>
+### Contact Me
+If it's about a project, feel free to open an issue.

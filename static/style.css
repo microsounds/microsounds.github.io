@@ -2,6 +2,7 @@
  * anchor footer pic bottom of viewport or bottom of document,
  * whichever is the longest
  */
+
 html {
 	min-height: 100%;
 	background:
@@ -16,9 +17,12 @@ html {
  *  content margin |----150px---->
  */
 .content {
-	margin: 0 150px 0 150px;
-	padding: 0 10px 5px 10px;
+	margin: auto;
+	min-width: 500px;
+	max-width: 800px;
+	padding: 0 30px 10px 30px;
 	border-top: 5px double #E2FAF9;
+	background: rgba(0, 0, 0, 30%);
 	color: #FFFFFF;
 	font-family: "Liberation Serif", "Times New Roman", serif, "Dejima Mincho"; 
 	text-shadow: 2px 1px #646464;
@@ -65,14 +69,10 @@ blockquote {
 }
 
 /* inline images */
-.content img {
-/*	display: block;*/
-/*	margin-left: auto;*/
-/*	margin-right: auto;*/
-/*	margin-top: auto;*/
-	margin: 10px;
-	width: 60%;
-	border: 5px solid #646464;
+p img {
+	display: block;
+	width: 100%;
+	border: 1px solid #CCCCCC;
 }
 
 /* automatically generated page index */
@@ -117,11 +117,11 @@ tr:nth-child(even) { background: #777; }
 }
 
 /* changes for mobile devices */
-@media only screen and (max-width: 720px), (orientation: portrait) {
+@media only screen and (max-width: 1160px), (orientation: portrait) {
 	/* background pic */
 	html { background-size: auto, 300px, auto; }
 	/* flatten to single column layout */
-	.content { margin: unset; padding: unset; border: unset; }
+	.content { margin: 10px 0 0 0; padding: 15px; max-width: unset; border: unset; }
 	/* unpin navbar */
 	.navbar { position: unset; float: unset; height: 100px; width: 100%; }
 	.navbar .avatar { float: left; padding-right: 10px; height: 100%; width: unset; transform: unset; }

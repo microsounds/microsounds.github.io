@@ -1,7 +1,8 @@
 <!--updated 2020/10/22-->
 # List of low profile GPUs for small form factor PCs (SFFs)
-<img src="assets/low_profile_gpu.jpg" align="right">
-Last updated on {CREATED}.
+{CREATED}
+
+![img](assets/low_profile_gpu.jpg)
 
 For our purposes **"low profile"** refers to cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
 Think space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors.
