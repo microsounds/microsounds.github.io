@@ -18,7 +18,6 @@ html {
  */
 .content {
 	margin: auto;
-	min-width: 500px;
 	max-width: 800px;
 	padding: 0 30px 10px 30px;
 	border-top: 5px double #E2FAF9;
@@ -70,8 +69,7 @@ blockquote {
 
 /* inline images */
 p img {
-	display: block;
-	width: 100%;
+	max-width: 100%;
 	border: 1px solid #CCCCCC;
 }
 
