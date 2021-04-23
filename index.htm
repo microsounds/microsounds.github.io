@@ -8,12 +8,27 @@
 	<title>Homepage | sentimental µsounds</title>
 </head>
 <body>
+<audio id="bgm" loop hidden>
+	<!-- effe - night drive ft. 初音ミク -->
+	<source src="/static/wind1_loop.opus" type="audio/ogg">
+	<script>
+		function play() {
+			var btn = document.getElementById('bgm_toggle');
+			var bgm = document.getElementById('bgm');
+			if (bgm.paused)
+				btn.innerText = btn.innerText.replace('play', 'pause'), bgm.play();
+			else
+				btn.innerText = btn.innerText.replace('pause', 'play'), bgm.pause();
+		}
+	</script>
+</audio>
 <div class="navbar">
 	<a href="/index.htm"><img class="avatar" alt="avatar" src="https://avatars3.githubusercontent.com/u/15962566"></a>
 	<div class="container">
 		<div class="title"><a href="/index.htm">sentimental µsounds</a></div>
 		<div class="subtitle">the echoes of time stand still</div>
 		<ul>
+			<li><a id="bgm_toggle" href="javascript:play()">♫ play</a></li>
 			<li><a href="https://github.com/microsounds">my github</a></li>
 			<li><a href="/notes/index.htm">notes</a></li>
 		</ul>
