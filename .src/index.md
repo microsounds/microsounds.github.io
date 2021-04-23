@@ -6,7 +6,7 @@ There isn't much to say at the moment, you can call me `microsounds` if you want
 
 I like starry night skies, people watching and the unix programming environment.
 
-### Things I made recently
+### Things I've made recently
 * *(2019–present)* my "graphical shell" computing environment — [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier)
 * *(2020–present)* static microblog processor in POSIX sh — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)
 * *(2019–present)* this website and it's kagami template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
