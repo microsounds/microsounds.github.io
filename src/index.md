@@ -1,5 +1,5 @@
 # Homepage
-![header](https://github.com/microsounds/microsounds/raw/master/profile/bg.png)
+![header]({DOC_ROOT}/static/starry.png)
 
 ### About Me
 There isn't much to say at the moment, I like starry night skies, people watching, and the unix programming environment.

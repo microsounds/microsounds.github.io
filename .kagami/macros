@@ -3,7 +3,6 @@
 unset DOC_ROOT
 
 AUTHOR='microsounds'
-AVATAR='https://avatars3.githubusercontent.com/u/15962566'
 SITE_TITLE='sentimental µsounds'
 SITE_SUBTITLE='the echoes of time stand still'
 SITE_HOST='https://microsounds.github.io'
