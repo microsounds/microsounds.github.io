@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# unset to set document root to /
+# uncomment to set document root to /
 unset DOC_ROOT
 
 AUTHOR='microsounds'
