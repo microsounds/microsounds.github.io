@@ -1,3 +1,5 @@
+'use strict';
+
 /* toggle bgm playback */
 function play() {
 	var btn = document.getElementById('bgm_toggle');
