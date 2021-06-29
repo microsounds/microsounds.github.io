@@ -14,7 +14,7 @@ This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on
 
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
 * Git is used to maintain an identical and reproducible setup across multiple machines.
-* A series of post-install scripts in [`~/.once.d`](.once.d) document and reproduce system-wide deviations from a fresh install.
+* A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d) document and reproduce system-wide deviations from a fresh install.
 	* _Unit testing ensures a reproducible installation with each new change to post-install scripts._
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
@@ -37,9 +37,9 @@ Basic installation instructions are provided, along with some documentation for 
 4. Run `post-install` in the shell to run post-install scripts automatically.
 	* _Sets up the package manager, installs essential packages, compiles the window manager, etc._
 5. Reboot to finish.
-	* _[`xinit`](.xinitrc) starts automatically upon login to [`tty1`](.profile)._
+	* _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
 
-## Quick start for Termux (Android)
+## Quick start for Termux ({GIT_REMOTE}/atelier/blob/master/Android)
 Currently, only a basic shell environment in single-user mode is supported.
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only `~/.once.d/a0-android-termux.sh` to apply android-specific hacks and terminal emulator theming.
@@ -54,20 +54,20 @@ For local-scope changes, files in `$HOME` are versioned and mangled in place usi
 	* _`init` and `clone` commands are unaffected._
 
 ## Using `~/.once.d` post-install scripts
-All system-wide changes are performed through automated scripts located in [`~/.once.d`](.once.d), you can run them all at once with shell function `post-install`. Each script is self-contained, you can run them individually, anytime.
+All system-wide changes are performed through automated scripts located in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d), you can run them all at once with shell function `post-install`. Each script is self-contained, you can run them individually, anytime.
 
 * Some scripts only apply to specific hardware configurations, and will exit even if they are run.
 * Scripts affecting `systemd` or the bootloader will be skipped in virtualized container contexts.
-* Sideloaded software is installed to [`~/.local/bin`](.local/bin) when possible.
-* [`~/.comforts-git`](.comforts-git) describes small sideloaded utilities that will be installed automatically at runtime via git.
-	* Repos must have a valid makefile install recipe using the `$(PREFIX)` metaphor.
-* [`~/.comforts`](.comforts) describes the full list of non-optional package groups that will be installed.
+* Sideloaded software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin) when possible.
+* [`~/.comforts-git`]({GIT_REMOTE}/atelier/blob/master/.comforts-git) describes small sideloaded utilities that will be installed automatically at runtime via git.
+	* Repos must have a valid makefile install recipe using the `$({GIT_REMOTE}/atelier/blob/master/PREFIX)` metaphor.
+* [`~/.comforts`]({GIT_REMOTE}/atelier/blob/master/.comforts) describes the full list of non-optional package groups that will be installed.
 	* Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.
 
 | series | function |
 | -- | -- |
 | `0*` | System-wide changes performed **through** the package manager. |
-| `1*` | Changes to [`~/.local`](.local) file hierarchy, such as sideloaded 3rd party software. |
+| `1*` | Changes to [`~/.local`]({GIT_REMOTE}/atelier/blob/master/.local) file hierarchy, such as sideloaded 3rd party software. |
 | `2*` | System-wide changes that bypass the package manager, such as changes to `/etc`.<br>_These are hacks._ |
 | `c*` | System-wide changes affecting chromebook hardware only. |
 | `a*` | Android-specific hacks only. |
@@ -120,7 +120,7 @@ All daemons and services required to support the graphical shell are initialized
 At startup, `startx` will pass hardware-specific `xorg.conf` files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.
 
 Xorg's security model forbids non-root users from passing arbitrary config files to the X server unless they are located in one of several "blessed" directories.
-Post-install scripts will create symlink `/etc/X11/$(id -u)-override` that points to `~/.config/xorg` to override this behavior.
+Post-install scripts will create symlink `/etc/X11/$({GIT_REMOTE}/atelier/blob/master/id -u)-override` that points to `~/.config/xorg` to override this behavior.
 
 ## Optional X Window configuration
 ### `~/.xrandr`
@@ -131,7 +131,7 @@ For use with multi-monitor and/or complicated display setups, you can override t
 --output HDMI-0 --auto --primary --rotate normal
 --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 ```
-Commands in this file are passed to [`xrandr-cycle`](Scripts/xrandr_cycle.sh) line by line at startup if it exists.
+Commands in this file are passed to [`xrandr-cycle`]({GIT_REMOTE}/atelier/blob/master/Scripts/xrandr_cycle.sh) line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.
 
 ### `~/.xdecor`
@@ -141,13 +141,13 @@ You can designate one or more paths to directories containing images or videos f
 /media/sd_card/some/path
 ```
 
-If it exists, [`xwin-decor`](Scripts/xwin_decor.sh) will randomly pick a directory and file within it and set it as the wallpaper on startup.
+If it exists, [`xwin-decor`]({GIT_REMOTE}/atelier/blob/master/Scripts/xwin_decor.sh) will randomly pick a directory and file within it and set it as the wallpaper on startup.
 In the case of video files, a random video frame from that file will be taken and set as the wallpaper using `ffmpeg`.
 
 ## X resources and theming
 For consistency, `xinit`, `dwm` and other scripts make use of the C preprocessor to mangle config files and configure color schemes.
 
-Theme settings and indivdual color schemes are stored as C header files containing preprocessor macros representing color hex codes in [`~/.local/include`](.local/include).
+Theme settings and indivdual color schemes are stored as C header files containing preprocessor macros representing color hex codes in [`~/.local/include`]({GIT_REMOTE}/atelier/blob/master/.local/include).
 This directory is appended to `$C_INCLUDE_PATH` at login.
 
 * Invoking shell function `reload` will reload changes to `.xresources` and refresh your terminal instance.
@@ -164,7 +164,7 @@ This directory is appended to `$C_INCLUDE_PATH` at login.
 ## Non-standard commands
 Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:
 
-1. Interactive shell functions defined in [`~/.bashrc`](.bashrc)
+1. Interactive shell functions defined in [`~/.bashrc`]({GIT_REMOTE}/atelier/blob/master/.bashrc)
 2. Executables and symlinks in `~/.local/bin`
 	* Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
 3. `/usr/bin` system executables
@@ -179,7 +179,7 @@ Several commands are extended to include impure functions, such as purposefully 
 	| `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
 
 ## `nano`
-* `nano` is an alias for [`nano-overlay`](Scripts/nano_overlay.sh) which mangles config files and offers the following extensions:
+* `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extensions:
 
 	| opt | function |
 	| -- | -- |
@@ -189,7 +189,7 @@ Several commands are extended to include impure functions, such as purposefully 
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
-# Complete listing
+# Complete source listing
 <pre><code>
 -rw-r--r-- 1 6.0K   2021-06-22 18:30:11 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   2021-06-28 19:05:52 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>

@@ -41,7 +41,7 @@
 <p>This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.</p>
 <ul>
 <li>Git is used to maintain an identical and reproducible setup across multiple machines.</li>
-<li>A series of post-install scripts in <a href=".once.d"><code>~/.once.d</code></a> document and reproduce system-wide deviations from a fresh install.
+<li>A series of post-install scripts in <a href="https://github.com/microsounds/atelier/blob/master/.once.d"><code>~/.once.d</code></a> document and reproduce system-wide deviations from a fresh install.
 <ul>
 <li><em>Unit testing ensures a reproducible installation with each new change to post-install scripts.</em></li>
 </ul>
@@ -78,11 +78,11 @@ $ exec $SHELL -l
 </li>
 <li>Reboot to finish.
 <ul>
-<li><em><a href=".xinitrc"><code>xinit</code></a> starts automatically upon login to <a href=".profile"><code>tty1</code></a>.</em></li>
+<li><em><a href="https://github.com/microsounds/atelier/blob/master/.xinitrc"><code>xinit</code></a> starts automatically upon login to <a href=".profile"><code>tty1</code></a>.</em></li>
 </ul>
 </li>
 </ol>
-<h2>Quick start for Termux (Android)</h2>
+<h2>Quick start for Termux (https://github.com/microsounds/atelier/blob/master/Android)</h2>
 <p>Currently, only a basic shell environment in single-user mode is supported.</p>
 <ol>
 <li>Install <code>git</code>, and bootstrap the system using <code>git reset --hard</code> as described above.</li>
@@ -102,17 +102,17 @@ $ exec $SHELL -l
 </li>
 </ul>
 <h2>Using <code>~/.once.d</code> post-install scripts</h2>
-<p>All system-wide changes are performed through automated scripts located in <a href=".once.d"><code>~/.once.d</code></a>, you can run them all at once with shell function <code>post-install</code>. Each script is self-contained, you can run them individually, anytime.</p>
+<p>All system-wide changes are performed through automated scripts located in <a href="https://github.com/microsounds/atelier/blob/master/.once.d"><code>~/.once.d</code></a>, you can run them all at once with shell function <code>post-install</code>. Each script is self-contained, you can run them individually, anytime.</p>
 <ul>
 <li>Some scripts only apply to specific hardware configurations, and will exit even if they are run.</li>
 <li>Scripts affecting <code>systemd</code> or the bootloader will be skipped in virtualized container contexts.</li>
-<li>Sideloaded software is installed to <a href=".local/bin"><code>~/.local/bin</code></a> when possible.</li>
-<li><a href=".comforts-git"><code>~/.comforts-git</code></a> describes small sideloaded utilities that will be installed automatically at runtime via git.
+<li>Sideloaded software is installed to <a href="https://github.com/microsounds/atelier/blob/master/.local/bin"><code>~/.local/bin</code></a> when possible.</li>
+<li><a href="https://github.com/microsounds/atelier/blob/master/.comforts-git"><code>~/.comforts-git</code></a> describes small sideloaded utilities that will be installed automatically at runtime via git.
 <ul>
-<li>Repos must have a valid makefile install recipe using the <code>$(PREFIX)</code> metaphor.</li>
+<li>Repos must have a valid makefile install recipe using the <code>$(https://github.com/microsounds/atelier/blob/master/PREFIX)</code> metaphor.</li>
 </ul>
 </li>
-<li><a href=".comforts"><code>~/.comforts</code></a> describes the full list of non-optional package groups that will be installed.
+<li><a href="https://github.com/microsounds/atelier/blob/master/.comforts"><code>~/.comforts</code></a> describes the full list of non-optional package groups that will be installed.
 <ul>
 <li>Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.</li>
 </ul>
@@ -132,7 +132,7 @@ $ exec $SHELL -l
 </tr>
 <tr>
 <td><code>1*</code></td>
-<td>Changes to <a href=".local"><code>~/.local</code></a> file hierarchy, such as sideloaded 3rd party software.</td>
+<td>Changes to <a href="https://github.com/microsounds/atelier/blob/master/.local"><code>~/.local</code></a> file hierarchy, such as sideloaded 3rd party software.</td>
 </tr>
 <tr>
 <td><code>2*</code></td>
@@ -307,7 +307,7 @@ All daemons and services required to support the graphical shell are initialized
 <p><code>systemd</code> unit services, cronjobs and similar mechanisms are avoided.</p>
 <p>At startup, <code>startx</code> will pass hardware-specific <code>xorg.conf</code> files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.</p>
 <p>Xorg’s security model forbids non-root users from passing arbitrary config files to the X server unless they are located in one of several “blessed” directories.
-Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code> that points to <code>~/.config/xorg</code> to override this behavior.</p>
+Post-install scripts will create symlink <code>/etc/X11/$(https://github.com/microsounds/atelier/blob/master/id -u)-override</code> that points to <code>~/.config/xorg</code> to override this behavior.</p>
 <h2>Optional X Window configuration</h2>
 <h3><code>~/.xrandr</code></h3>
 <p>For use with multi-monitor and/or complicated display setups, you can override the default display layout with one or more commands to <code>xrandr</code> saved to <em>optional</em> config file <code>~/.xrandr</code></p>
@@ -315,18 +315,18 @@ Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code>
 --output HDMI-0 --auto --primary --rotate normal
 --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 </code></pre>
-<p>Commands in this file are passed to <a href="Scripts/xrandr_cycle.sh"><code>xrandr-cycle</code></a> line by line at startup if it exists.
+<p>Commands in this file are passed to <a href="https://github.com/microsounds/atelier/blob/master/Scripts/xrandr_cycle.sh"><code>xrandr-cycle</code></a> line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.</p>
 <h3><code>~/.xdecor</code></h3>
 <p>You can designate one or more paths to directories containing images or videos for use as a wallpaper using <em>optional</em> config file <code>~/.xdecor</code></p>
 <pre><code>~/Pictures/some/path
 /media/sd_card/some/path
 </code></pre>
-<p>If it exists, <a href="Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper on startup.
+<p>If it exists, <a href="https://github.com/microsounds/atelier/blob/master/Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper on startup.
 In the case of video files, a random video frame from that file will be taken and set as the wallpaper using <code>ffmpeg</code>.</p>
 <h2>X resources and theming</h2>
 <p>For consistency, <code>xinit</code>, <code>dwm</code> and other scripts make use of the C preprocessor to mangle config files and configure color schemes.</p>
-<p>Theme settings and indivdual color schemes are stored as C header files containing preprocessor macros representing color hex codes in <a href=".local/include"><code>~/.local/include</code></a>.
+<p>Theme settings and indivdual color schemes are stored as C header files containing preprocessor macros representing color hex codes in <a href="https://github.com/microsounds/atelier/blob/master/.local/include"><code>~/.local/include</code></a>.
 This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <ul>
 <li>Invoking shell function <code>reload</code> will reload changes to <code>.xresources</code> and refresh your terminal instance.
@@ -347,7 +347,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <h2>Non-standard commands</h2>
 <p>Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:</p>
 <ol>
-<li>Interactive shell functions defined in <a href=".bashrc"><code>~/.bashrc</code></a></li>
+<li>Interactive shell functions defined in <a href="https://github.com/microsounds/atelier/blob/master/.bashrc"><code>~/.bashrc</code></a></li>
 <li>Executables and symlinks in <code>~/.local/bin</code>
 <ul>
 <li>Some are shell functions promoted to scripts so they’ll work in <code>dmenu</code> or outside of a terminal context.</li>
@@ -385,7 +385,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <h2><code>nano</code></h2>
 <ul>
 <li>
-<p><code>nano</code> is an alias for <a href="Scripts/nano_overlay.sh"><code>nano-overlay</code></a> which mangles config files and offers the following extensions:</p>
+<p><code>nano</code> is an alias for <a href="https://github.com/microsounds/atelier/blob/master/Scripts/nano_overlay.sh"><code>nano-overlay</code></a> which mangles config files and offers the following extensions:</p>
 <table>
 <thead>
 <tr>
@@ -410,7 +410,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </table>
 </li>
 </ul>
-<h1>Complete listing</h1>
+<h1>Complete source listing</h1>
 <pre><code>
 -rw-r--r-- 1 6.0K   2021-06-22 18:30:11 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   2021-06-28 19:05:52 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
