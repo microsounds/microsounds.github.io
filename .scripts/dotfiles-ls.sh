@@ -7,7 +7,7 @@
 	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	cat ~/readme.md
 	echo '# Complete listing'
-	echo '<pre>'
+	echo '<pre><code>'
 	git meta ls-tree --name-only -r master | xargs ls -hgnG --time-style='+'| while read -r line; do
 		path="${line##* }"
 		case "$path" in
@@ -20,5 +20,5 @@
 					"<a href=\"https://raw.githubusercontent.com/microsounds/atelier/master/$path\">$path</a>"
 		esac
 	done
-	echo '</pre>'
+	echo '</code></pre>'
 } > .src/dotfiles.md

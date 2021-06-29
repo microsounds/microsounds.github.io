@@ -190,7 +190,7 @@ Several commands are extended to include impure functions, such as purposefully 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete listing
-<pre>
+<pre><code>
 -rw-r--r-- 1 6.0K   2021-06-22 18:30:11 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   2021-06-28 19:05:52 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  271   2021-04-29 21:37:27 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -263,7 +263,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rwxr-xr-x 1  200   2021-06-18 00:52:54 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   2021-03-30 13:19:00 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  623   2021-03-13 18:45:34 -0800 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  11K   2021-06-18 01:31:56 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  11K   2021-06-28 23:17:56 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   2021-02-16 22:46:03 -0800 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   2021-03-15 11:34:25 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  15K   2021-06-22 18:44:52 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -275,4 +275,4 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1  965   2020-01-28 18:34:28 -0800 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1 1.4K   2021-06-22 13:39:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   2021-05-03 17:14:44 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
-</pre>
+</code></pre>
