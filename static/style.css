@@ -83,6 +83,14 @@ code {
 	letter-spacing: -0.06em;
 	text-shadow: 2px 2px 5px #646464;
 }
+
+h* code { font-size: unset; }
+h2 code { font-size: unset; }
+h3 code { font-size: unset; }
+h4 code { font-size: unset; }
+h5 code { font-size: unset; }
+h6 code { font-size: unset; }
+
 pre { 
 	margin: 0 30px 0 30px;
 	overflow: auto;
