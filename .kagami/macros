@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
-# uncomment to set document root to /
+
+# execute pre-run scripts
+export DOC_ROOT
+for f in "$DOC_ROOT/.scripts/"*; do echo "Pre-run: '$f'"; $f; done
+
+# unsetting document root will rewrite links starting from /
 unset DOC_ROOT
 
 AUTHOR='microsounds'

@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 
+# spit out markdown list of all my dotfiles
+
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 
-# spit out markdown list of all my dotfiles
 {
 	echo '# My dotfiles'
 	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
@@ -26,4 +27,4 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 	done
 	echo '</code></pre>'
 	echo "<!-- updated $(date --iso-8601) -->"
-} > .src/dotfiles.md
+} > "$DOC_ROOT/.src/dotfiles.md"
