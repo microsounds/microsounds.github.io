@@ -27,7 +27,7 @@ Basic installation instructions are provided, along with some documentation for 
 # Quick start
 1. Install Debian stable, perform a base install with no DE selected and no standard utilities when prompted.
 	* _Do not perform these steps on `tty1`, `xinit` will launch without `dwm` present and you will be booted._
-2. Install `git`, `wget`, and `sudo`, then add yourself to the `sudo` group.
+2. Install `git`, `gnupg1`, `wget`, and `sudo`, then add yourself to the `sudo` group.
 	* Log back in to apply changes to group membership.
 3. Bootstrap the system automatically with a hard git reset from this repo, this is done only once.
 	```shell
@@ -211,7 +211,7 @@ Several commands are extended to include impure functions, such as purposefully 
 -rw-r--r-- 1  368   2020-08-24 22:50:35 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  289   2020-08-29 21:25:04 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  628   2021-01-18 21:56:19 -0800 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 2.1K   2021-06-28 19:11:39 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 2.1K   2021-06-30 16:22:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1  225   2021-03-30 13:19:00 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1  650   2021-06-18 00:06:09 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/conf-append">.local/bin/conf-append</a>
 -rwxr-xr-x 1  477   2020-06-07 18:13:37 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/extern">.local/bin/extern</a>
@@ -265,7 +265,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rwxr-xr-x 1  200   2021-06-18 00:52:54 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   2021-03-30 13:19:00 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  623   2021-03-13 18:45:34 -0800 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  11K   2021-06-29 01:26:22 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  11K   2021-06-30 16:22:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   2021-02-16 22:46:03 -0800 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   2021-03-15 11:34:25 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  15K   2021-06-22 18:44:52 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -278,4 +278,4 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1 1.4K   2021-06-22 13:39:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   2021-05-03 17:14:44 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-06-29 -->
+<!-- updated 2021-06-30 -->
