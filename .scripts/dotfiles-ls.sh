@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-# spit out markdown list of all my dotfiles
+# re-render ~/readme.md for use as a webpage
+# spit out complete listing of dotfiles with inline links
 
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 
@@ -22,10 +23,10 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 			*)
 				printf '%s %s %s\n' \
 					"${line%%$path}" \
-					"$(git meta log -1 --date=iso --format="%ad" -- $path)" \
+					"$(git meta log -1 --date=iso --format='%ad' -- $path)" \
 					"<a href=\"$RAW/$path\">$path</a>"
 		esac
 	done
 	echo '</code></pre>'
-	echo "<!-- updated $(date --iso-8601) -->"
+	echo "<!-- updated $(git meta log -1 --date=short --format='%ad') -->"
 } > "$DOC_ROOT/.src/dotfiles.md"

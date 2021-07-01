@@ -278,4 +278,4 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1 1.4K   2021-06-22 13:39:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   2021-05-03 17:14:44 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-07-01 -->
+<!-- updated 2021-06-30 -->
