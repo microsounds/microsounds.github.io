@@ -1,4 +1,4 @@
-# My dotfiles
+# Selected documentation and usage notes for my dotfiles
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.

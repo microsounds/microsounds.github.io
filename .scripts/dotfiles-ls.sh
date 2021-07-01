@@ -5,8 +5,7 @@
 
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 
-{
-	echo '# My dotfiles'
+{	echo '# Selected documentation and usage notes for my dotfiles'
 	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
@@ -29,4 +28,4 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 	done
 	echo '</code></pre>'
 	echo "<!-- updated $(git meta log -1 --date=short --format='%ad') -->"
-} > "$DOC_ROOT/.src/dotfiles.md"
+} > "$DOC_ROOT/.src/notes/dotfiles.md"
