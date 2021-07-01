@@ -62,7 +62,7 @@ All system-wide changes are performed through automated scripts located in [`~/.
 * Scripts affecting `systemd` or the bootloader will be skipped in virtualized container contexts.
 * Sideloaded software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin) when possible.
 * [`~/.comforts-git`]({GIT_REMOTE}/atelier/blob/master/.comforts-git) describes small sideloaded utilities that will be installed automatically at runtime via git.
-	* Repos must have a valid makefile install recipe using the `$({GIT_REMOTE}/atelier/blob/master/PREFIX)` metaphor.
+	* Repos must have a valid makefile install recipe using the `$(PREFIX)` metaphor.
 * [`~/.comforts`]({GIT_REMOTE}/atelier/blob/master/.comforts) describes the full list of non-optional package groups that will be installed.
 	* Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.
 
@@ -122,7 +122,7 @@ All daemons and services required to support the graphical shell are initialized
 At startup, `startx` will pass hardware-specific `xorg.conf` files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.
 
 Xorg's security model forbids non-root users from passing arbitrary config files to the X server unless they are located in one of several "blessed" directories.
-Post-install scripts will create symlink `/etc/X11/$({GIT_REMOTE}/atelier/blob/master/id -u)-override` that points to `~/.config/xorg` to override this behavior.
+Post-install scripts will create symlink `/etc/X11/$(id -u)-override` that points to `~/.config/xorg` to override this behavior.
 
 ## Optional X Window configuration
 ### `~/.xrandr`
@@ -278,4 +278,4 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1 1.4K   2021-06-22 13:39:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   2021-05-03 17:14:44 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-06-30 -->
+<!-- updated 2021-07-01 -->

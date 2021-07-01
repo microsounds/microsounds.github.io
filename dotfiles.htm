@@ -27,7 +27,7 @@
 <!--kagami v0.4.2 — static microblog processor-->
 <h1>My dotfiles</h1>
 <p>This document is also available at <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
-<p>Last updated 🌒 Wed, Jun 30th, 2021.</p>
+<p>Last updated 🌓 Thu, Jul 1st, 2021.</p>
 <h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div></h1>
 <div align="center">
 	<img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
@@ -110,7 +110,7 @@ $ exec $SHELL -l
 <li>Sideloaded software is installed to <a href="https://github.com/microsounds/atelier/blob/master/.local/bin"><code>~/.local/bin</code></a> when possible.</li>
 <li><a href="https://github.com/microsounds/atelier/blob/master/.comforts-git"><code>~/.comforts-git</code></a> describes small sideloaded utilities that will be installed automatically at runtime via git.
 <ul>
-<li>Repos must have a valid makefile install recipe using the <code>$(https://github.com/microsounds/atelier/blob/master/PREFIX)</code> metaphor.</li>
+<li>Repos must have a valid makefile install recipe using the <code>$(PREFIX)</code> metaphor.</li>
 </ul>
 </li>
 <li><a href="https://github.com/microsounds/atelier/blob/master/.comforts"><code>~/.comforts</code></a> describes the full list of non-optional package groups that will be installed.
@@ -308,7 +308,7 @@ All daemons and services required to support the graphical shell are initialized
 <p><code>systemd</code> unit services, cronjobs and similar mechanisms are avoided.</p>
 <p>At startup, <code>startx</code> will pass hardware-specific <code>xorg.conf</code> files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.</p>
 <p>Xorg’s security model forbids non-root users from passing arbitrary config files to the X server unless they are located in one of several “blessed” directories.
-Post-install scripts will create symlink <code>/etc/X11/$(https://github.com/microsounds/atelier/blob/master/id -u)-override</code> that points to <code>~/.config/xorg</code> to override this behavior.</p>
+Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code> that points to <code>~/.config/xorg</code> to override this behavior.</p>
 <h2>Optional X Window configuration</h2>
 <h3><code>~/.xrandr</code></h3>
 <p>For use with multi-monitor and/or complicated display setups, you can override the default display layout with one or more commands to <code>xrandr</code> saved to <em>optional</em> config file <code>~/.xrandr</code></p>
@@ -498,7 +498,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1 1.4K   2021-06-22 13:39:03 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   2021-05-03 17:14:44 -0700 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-06-30 -->
+<!-- updated 2021-07-01 -->
 <hr>
 <div class="footnote">
 <p>

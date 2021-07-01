@@ -9,7 +9,8 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
-	cat ~/readme.md | sed -E "s,\(([^http].*)\),({GIT_REMOTE}/atelier/blob/master/\1),g" # rewrite relative links
+	# rewrite relative markdown links
+	cat ~/readme.md | sed -E 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g'
 	echo '# Complete source listing'
 	echo '<pre><code>'
 	cd ~
