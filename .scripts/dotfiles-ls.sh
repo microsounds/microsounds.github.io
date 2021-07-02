@@ -22,7 +22,7 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 			*)
 				printf '%s %s %s\n' \
 					"${line%%$path}" \
-					"$(git meta log -1 --date=iso --format='%ad' -- $path)" \
+					"$(git meta log -1 --date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"<a href=\"$RAW/$path\">$path</a>"
 		esac
 	done
