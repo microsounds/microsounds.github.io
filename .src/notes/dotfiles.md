@@ -167,7 +167,7 @@ This directory is appended to `$C_INCLUDE_PATH` at login.
 Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:
 
 1. Interactive shell functions defined in [`~/.bashrc`]({GIT_REMOTE}/atelier/blob/master/.bashrc)
-2. Executables and symlinks in `~/.local/bin`
+2. Executables and symlinks in [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin)
 	* Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
 3. `/usr/bin` system executables
 
@@ -179,6 +179,11 @@ Several commands are extended to include impure functions, such as purposefully 
 	| -- | -- |
 	| `...`, `....`, etc. | Shorthand for `../../`, `../../../` and so on. |
 	| `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
+
+## `chromium`
+`chromium` was extended to mangle the user-hostile per-profile `Preferences` JSON file with a series of chained `jq` filters in [`~/.config/chromium/settings.conf`]({GIT_REMOTE}/atelier/blob/master/.config/chromium/settings.conf), applying persistent settings in order.
+
+C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xAARRGGBB` in two's complement hexadecimal with alpha channel always set to `0xFF`
 
 ## `nano`
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extensions:
@@ -194,8 +199,9 @@ Several commands are extended to include impure functions, such as purposefully 
 # Complete source listing
 <pre><code>
 -rw-r--r-- 1 6.0K   Jun 22 2021 18:30 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.1K   Jun 28 2021 19:05 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.1K   Jul  3 2021 21:48 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  271   Apr 29 2021 21:37 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1  390   Jul  3 2021 21:48 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/settings.conf">.config/chromium/settings.conf</a>
 -rw-r--r-- 1 6.2K   Jun  4 2021 00:40 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/config.h">.config/dwm/config.h</a>
 -rw-r--r-- 1  362   Feb 13 2020 01:04 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/monocle-indicator.patch">.config/dwm/patches/monocle-indicator.patch</a>
 -rw-r--r-- 1  700   Apr 26 2021 17:03 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/fm/libfm.conf">.config/fm/libfm.conf</a>
@@ -212,7 +218,7 @@ Several commands are extended to include impure functions, such as purposefully 
 -rw-r--r-- 1  289   Aug 29 2020 21:25 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  628   Jan 18 2021 21:56 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 2.1K   Jun 30 2021 16:22 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
--rwxr-xr-x 1  225   Mar 30 2021 13:19 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 1.1K   Jul  3 2021 21:48 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1  650   Jun 18 2021 00:06 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/conf-append">.local/bin/conf-append</a>
 -rwxr-xr-x 1  477   Jun  7 2020 18:13 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/extern">.local/bin/extern</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
@@ -265,7 +271,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  623   Mar 13 2021 18:45 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  11K   Jun 30 2021 16:22 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  11K   Jul  3 2021 21:48 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  15K   Jun 22 2021 18:44 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -278,4 +284,4 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1 1.4K   Jun 22 2021 13:39 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-06-30 -->
+<!-- updated 2021-07-03 -->
