@@ -6,6 +6,8 @@
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 
 {	echo '# Selected documentation and usage notes for my dotfiles'
+	echo "Revision No. $(git meta log --oneline | wc -l),"
+	echo "commit \`$(git meta rev-parse --short HEAD)\`."
 	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
