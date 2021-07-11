@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 585,
-commit `f25936d`.
+Revision No. 586,
+commit `f404e2c`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -248,7 +248,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
 -rwxr-xr-x 1  477   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/extern">.local/lib/extern</a>
 -rwxr-xr-x 1  162   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
--rwxr-xr-x 1  154   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-container">.local/lib/is-container</a>
+-rwxr-xr-x 1  160   Jul 11 2021 11:12 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-container">.local/lib/is-container</a>
 -rwxr-xr-x 1  258   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/mk-tempdir">.local/lib/mk-tempdir</a>
 -rwxr-xr-x 1 1.3K   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/moonphase-date">.local/lib/moonphase-date</a>
 lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
@@ -292,4 +292,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Jun 22 2021 13:39 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-07-10 -->
+<!-- updated 2021-07-11 -->
