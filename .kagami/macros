@@ -16,5 +16,5 @@ GIT_REMOTE='https://github.com/microsounds'
 # functions
 YEAR="$(date '+%Y')"
 
-# shared moonphase date function
-DATE_FUNCTION='moonphase -iy'
+# moonphase date function
+DATE_FUNCTION='moonphase-date -iy'
