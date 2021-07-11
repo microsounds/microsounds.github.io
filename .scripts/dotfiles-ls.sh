@@ -4,10 +4,11 @@
 # spit out complete listing of dotfiles with inline links
 
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
+ver="$(git meta log --oneline | wc -l)"
+hash="$(git meta rev-parse --short HEAD)"
 
 {	echo '# Selected documentation and usage notes for my dotfiles'
-	echo "Revision No. $(git meta log --oneline | wc -l),"
-	echo "commit \`$(git meta rev-parse --short HEAD)\`."
+	echo "Revision No. $ver, commit \`$hash\`."
 	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
@@ -17,11 +18,11 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 	echo '<pre><code>'
 	cd ~
 	git meta ls-tree --name-only -r master | xargs ls -hgnG --time-style='+'| while read -r line; do
-		path="${line##* }"
-		case "$path" in
-			..*)
+		case "$line" in
+			l*) # skip symlinks
 				echo "$line";;
 			*)
+				path="${line##* }"
 				printf '%s %s %s\n' \
 					"${line%%$path}" \
 					"$(git meta log -1 --date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \

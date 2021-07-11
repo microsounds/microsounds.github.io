@@ -1,6 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 586,
-commit `f404e2c`.
+Revision No. 586, commit `f404e2c`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
