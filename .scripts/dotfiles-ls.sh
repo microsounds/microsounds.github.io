@@ -9,15 +9,16 @@ hash="$(git meta rev-parse --short HEAD)"
 
 {	echo '# Selected documentation and usage notes for my dotfiles'
 	echo "Revision No. $ver, commit \`$hash\`."
-	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
+	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier on Github.'
 	echo '\nLast updated {CREATED}.'
 
 	# rewrite relative markdown links
 	cat ~/readme.md | sed -E 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g'
 	echo '# Complete source listing'
-	echo '<pre><code>'
+	printf '%s' '<pre><code>'
 	cd ~
-	git meta ls-tree --name-only -r master | xargs ls -hgnG --time-style='+'| while read -r line; do
+	git meta ls-tree --name-only -r master \
+		| xargs ls -lhgG --time-style='+'| while read -r line; do
 		case "$line" in
 			l*) # skip symlinks
 				echo "$line";;

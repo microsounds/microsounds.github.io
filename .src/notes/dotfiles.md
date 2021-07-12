@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
 Revision No. 586, commit `f404e2c`.
-This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
+This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier on Github.
 
 Last updated {CREATED}.
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
@@ -202,8 +202,7 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code>
--rw-r--r-- 1 6.0K   Jun 22 2021 18:30 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+<pre><code>-rw-r--r-- 1 6.0K   Jun 22 2021 18:30 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jul  3 2021 21:48 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  271   Apr 29 2021 21:37 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
