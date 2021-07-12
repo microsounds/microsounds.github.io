@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
 Revision No. 586, commit `f404e2c`.
-This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier on Github.
+This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
