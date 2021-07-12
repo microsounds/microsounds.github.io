@@ -9,7 +9,7 @@ hash="$(git meta rev-parse --short HEAD)"
 
 {	echo '# Selected documentation and usage notes for my dotfiles'
 	echo "Revision No. $ver, commit \`$hash\`."
-	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier on Github.'
+	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
 	# rewrite relative markdown links
