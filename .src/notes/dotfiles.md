@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 587, commit `d03a098`.
+Revision No. 588, commit `358a8eb`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -88,9 +88,9 @@ Primary modkey `Mod1` is super instead of alt.
 | set as master window<sup>[toggle]</sup> | terminal | return |
 | | launcher | p |
 | | file manager | e |
-| partial | screenshot | Print |
-| | _reserved_ | Scroll Lock |
-| | _reserved_ | Pause |
+| partial screenshot | screenshot | print |
+| | _reserved_ | scroll lock |
+| | _reserved_ | pause |
 | reboot | shutdown | F1 |
 | hibernate | sleep | F2 |
 | hibernate + reboot | display off | F3 |
@@ -280,7 +280,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  685   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  12K   Jul 13 2021 15:46 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  12K   Jul 13 2021 23:00 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  15K   Jun 22 2021 18:44 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
