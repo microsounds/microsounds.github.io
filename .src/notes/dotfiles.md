@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 602, commit `48763df`.
+Revision No. 603, commit `0eaf079`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -278,7 +278,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  499   Nov 21 2020 15:41 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/20-xorg-override.sh">.once.d/20-xorg-override.sh</a>
 -rwxr-xr-x 1  387   Jun 18 2021 00:52 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/21-network-manager.sh">.once.d/21-network-manager.sh</a>
 -rwxr-xr-x 1  720   May 26 2021 16:02 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/22-realtek-rtl8812au.sh">.once.d/22-realtek-rtl8812au.sh</a>
--rwxr-xr-x 1  402   Jun 18 2021 00:52 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/23-grub-config.sh">.once.d/23-grub-config.sh</a>
+-rwxr-xr-x 1  541   Jul 17 2021 19:41 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/23-grub-config.sh">.once.d/23-grub-config.sh</a>
 -rwxr-xr-x 1   58   Nov 21 2020 15:41 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/24-motd.sh">.once.d/24-motd.sh</a>
 -rwxr-xr-x 1  747   Mar 30 2021 13:19 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/25-chromium-widevine.sh">.once.d/25-chromium-widevine.sh</a>
 -rwxr-xr-x 1  484   Jul 17 2021 13:49 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-systemd-tweaks.sh">.once.d/26-systemd-tweaks.sh</a>
