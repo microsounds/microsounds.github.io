@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 599, commit `5ee98ad`.
+Revision No. 601, commit `5708f13`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -94,7 +94,7 @@ Primary modkey `Mod1` is super instead of alt.
 | reboot | shutdown | F1 |
 | hibernate | sleep | F2 |
 | hibernate + reboot | display off | F3 |
-| | calculator | F4 |
+| configure networking | calculator | F4 |
 | configure displays | switch active display<sup>[toggle]</sup> | F5 |
 | minimum brightness | lower brightness 10% | F6 |
 | maximum brightness | raise brightness 10% | F7 |
@@ -224,7 +224,7 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 -rw-r--r-- 1  966   May 11 2021 15:04 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  559   May 18 2021 22:36 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
--rw-r--r-- 1 1.7K   Jul 17 2021 16:24 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1 1.7K   Jul 17 2021 18:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1 1.3K   Sep 14 2020 22:04 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
 -rw-r--r-- 1  199   Sep 23 2020 14:50 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
@@ -267,7 +267,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.2K   Jun 28 2021 18:35 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1 1004   May 19 2021 22:40 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
--rwxr-xr-x 1  817   Jul 17 2021 16:20 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-dwm-install.sh">.once.d/10-dwm-install.sh</a>
+-rwxr-xr-x 1  817   Jul 17 2021 16:30 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-dwm-install.sh">.once.d/10-dwm-install.sh</a>
 -rwxr-xr-x 1  611   Apr  6 2021 11:28 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/11-utilities-git.sh">.once.d/11-utilities-git.sh</a>
 -rwxr-xr-x 1 1.2K   Mar 31 2021 22:48 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/12-gnu-nano.sh">.once.d/12-gnu-nano.sh</a>
 -rwxr-xr-x 1  289   Mar 29 2021 17:03 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
@@ -285,7 +285,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  685   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  12K   Jul 13 2021 23:00 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  12K   Jul 17 2021 18:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  15K   Jun 22 2021 18:44 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
