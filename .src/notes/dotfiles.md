@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 603, commit `0eaf079`.
+Revision No. 604, commit `ca72e27`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -208,8 +208,8 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code>-rw-r--r-- 1 6.0K   Jun 22 2021 18:30 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.1K   Jul 13 2021 15:46 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+<pre><code>-rw-r--r-- 1 5.8K   Jul 17 2021 22:28 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 1.1K   Jul 17 2021 22:28 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  271   Apr 29 2021 21:37 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
@@ -242,7 +242,7 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 lrwxrwxrwx 1   29  .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
 -rwxr-xr-x 1  728   May  6 2021 00:27 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/qr">.local/bin/qr</a>
 -rwxr-xr-x 1  155   Oct 16 2020 13:58 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
--rwxr-xr-x 1  551   Sep 23 2020 14:50 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
+-rwxr-xr-x 1  758   Jul 17 2021 22:28 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  656   May 11 2021 15:58 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
 -rwxr-xr-x 1  224   Jul 11 2020 15:41 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual">.local/bin/visual</a>
 lrwxrwxrwx 1   29  .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
@@ -258,6 +258,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rwxr-xr-x 1  477   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/extern">.local/lib/extern</a>
 -rwxr-xr-x 1  162   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
 -rwxr-xr-x 1  160   Jul 11 2021 11:12 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-container">.local/lib/is-container</a>
+-rwxr-xr-x 1  314   Jul 17 2021 22:28 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-newer">.local/lib/is-newer</a>
 -rwxr-xr-x 1  258   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/mk-tempdir">.local/lib/mk-tempdir</a>
 -rwxr-xr-x 1 1.3K   Jul 10 2021 23:42 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/moonphase-date">.local/lib/moonphase-date</a>
 lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
