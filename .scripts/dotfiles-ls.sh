@@ -24,9 +24,10 @@ hash="$(git meta rev-parse --short HEAD)"
 				echo "$line";;
 			*)
 				path="${line##* }"
-				printf '%s %s %s\n' \
+				printf '%s %s rev. %-3d %s\n' \
 					"${line%%$path}" \
 					"$(git meta log -1 --date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
+					"$(git meta log --follow --oneline $path | wc -l)" \
 					"<a href=\"$RAW/$path\">$path</a>"
 		esac
 	done
