@@ -4,7 +4,7 @@
 # spit out complete listing of dotfiles with inline links
 
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
-ver="$(git meta log --oneline | wc -l)"
+ver="$(git meta log --oneline | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 
 {	echo '# Selected documentation and usage notes for my dotfiles'
@@ -24,7 +24,7 @@ hash="$(git meta rev-parse --short HEAD)"
 				echo "$line";;
 			*)
 				path="${line##* }"
-				printf '%s %s rev. %-3d %s\n' \
+				printf "%s %s rev. %-${#ver}d %s\n" \
 					"${line%%$path}" \
 					"$(git meta log -1 --date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
