@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 609, commit `a751cd5`.
+Revision No. 610, commit `e115b8d`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -42,8 +42,13 @@ Basic installation instructions are provided, along with some documentation for 
 5. Reboot to finish.
 	* _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
 
+<a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
+	<img height="150px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
+</a>
+
 ## Quick start on Termux for Android
 Currently, only a basic shell environment in single-user mode is supported.
+
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only `~/.once.d/a0-android-termux.sh` to apply android-specific hacks and terminal emulator theming.
 
@@ -294,7 +299,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  12K   Jul 20 2021 23:54 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
--rwxr-xr-x 1  20K   Jul 21 2021 13:33 rev. 70  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
+-rwxr-xr-x 1  20K   Jul 21 2021 14:23 rev. 71  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 4.7K   Jul 20 2021 15:04 rev. 40  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   May  4 2021 22:40 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
