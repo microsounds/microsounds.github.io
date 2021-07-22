@@ -3,30 +3,30 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="/static/doki.ico">
-	<link rel="stylesheet" type="text/css" href="/static/style.css">
-	<script src="/static/script.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/home/microsounds/Git/microsounds.github.io/static/doki.ico">
+	<link rel="stylesheet" type="text/css" href="/home/microsounds/Git/microsounds.github.io/static/style.css">
+	<script src="/home/microsounds/Git/microsounds.github.io/static/script.js"></script>
 	<title>Selected documentation and usage notes for my dotfiles | sentimental µsounds</title>
 </head>
 <body>
-<audio id="bgm" loop="true" hidden="true" type="audio/ogg" src="/static/wind1_loop.opus"></audio>
+<audio id="bgm" loop="true" hidden="true" type="audio/ogg" src="/home/microsounds/Git/microsounds.github.io/static/wind1_loop.opus"></audio>
 <div class="navbar">
-	<a href="/index.htm"><img class="avatar" alt="avatar" src="/static/avatar.png"></a>
+	<a href="/home/microsounds/Git/microsounds.github.io/index.htm"><img class="avatar" alt="avatar" src="/home/microsounds/Git/microsounds.github.io/static/avatar.png"></a>
 	<div class="container">
-		<div class="title"><a href="/index.htm">sentimental µsounds</a></div>
+		<div class="title"><a href="/home/microsounds/Git/microsounds.github.io/index.htm">sentimental µsounds</a></div>
 		<div class="subtitle">the echoes of time stand still</div>
 		<ul>
 			<li><a id="bgm_toggle" href="javascript:play()">♫ play</a></li>
 			<li><a href="https://github.com/microsounds">my github</a></li>
-			<li><a href="/notes/dotfiles.htm">my dotfiles</a></li>
-			<li><a href="/notes/index.htm">notes</a></li>
+			<li><a href="/home/microsounds/Git/microsounds.github.io/notes/dotfiles.htm">my dotfiles</a></li>
+			<li><a href="/home/microsounds/Git/microsounds.github.io/notes/index.htm">notes</a></li>
 		</ul>
 	</div>
 </div>
 <div class="content">
 <!--kagami v0.4.2 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles</h1>
-<p>Revision No. 610, commit <code>e115b8d</code>.
+<p>Revision No. 611, commit <code>4e3ba0c</code>.
 This document is also available at <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
 <p>Last updated 🌘 Wed, Jul 21st, 2021.</p>
 <h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div></h1>
@@ -466,7 +466,8 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </li>
 </ul>
 <h1>Complete source listing</h1>
-<pre><code>-rw-r--r-- 1 5.8K   Jul 17 2021 22:28 rev. 104 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+<pre><code><b style="color: #63B0B0;">microsounds@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+-rw-r--r-- 1 5.8K   Jul 17 2021 22:28 rev. 104 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jul 18 2021 11:56 rev. 63  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  271   Apr 29 2021 21:37 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -547,7 +548,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  740   Jul 18 2021 11:56 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  12K   Jul 20 2021 23:54 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.htm">readme.htm</a>
+-rw-r--r-- 1  12K   Jul 21 2021 16:15 rev. 126 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.htm">readme.htm</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Jul 21 2021 14:23 rev. 71  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>

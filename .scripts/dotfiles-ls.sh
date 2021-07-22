@@ -17,8 +17,11 @@ hash="$(git meta rev-parse --short HEAD)"
 	echo '# Complete source listing'
 	printf '%s' '<pre><code>'
 	cd ~
+	printf '%s %s\n' \
+		'<b style="color: #63B0B0;">{AUTHOR}@effe</b>:<b style="color: #5786BC;">~</b>$' \
+		'git meta ls-tree --name-only -r master | xargs ls -lhgG'
 	git meta ls-tree --name-only -r master \
-		| xargs ls -lhgG --time-style='+'| while read -r line; do
+		| xargs ls -lhgG --time-style='+' | while read -r line; do
 		case "$line" in
 			l*) # skip symlinks
 				echo "$line";;
