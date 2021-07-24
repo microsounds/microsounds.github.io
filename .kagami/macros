@@ -17,4 +17,6 @@ GIT_REMOTE='https://github.com/microsounds'
 YEAR="$(date '+%Y')"
 
 # moonphase date function
+# dark background, invert glyphs
+# might backfire if browser uses it's own emoji for moonphases
 DATE_FUNCTION='moonphase-date -iy'
