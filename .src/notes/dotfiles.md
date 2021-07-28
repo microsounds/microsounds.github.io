@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 621, commit `50bc71c`.
+Revision No. 623, commit `b56d639`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -277,7 +277,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  291   Jul 15 2020 16:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/stdc.syntax">.local/share/nano/stdc.syntax</a>
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  44K   Dec 17 2019 22:28 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip">.minecraft/resourcepacks/HatsuneMiku.zip</a>
--rw-r--r-- 1 1.1K   Jul 26 2021 23:43 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
+-rw-r--r-- 1 1.1K   Jul 28 2021 16:17 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.2K   Jun 28 2021 18:35 rev. 13  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  805   Jul 23 2021 00:58 rev. 14  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
@@ -295,7 +295,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  576   Jul 24 2021 15:03 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-systemd-tweaks.sh">.once.d/26-systemd-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   May 23 2021 23:13 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
--rwxr-xr-x 1 2.0K   Jul 22 2021 23:13 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 2.2K   Jul 27 2021 08:36 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  723   Jul 24 2021 15:29 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
@@ -312,4 +312,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Jul 24 2021 15:29 rev. 58  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-07-26 -->
+<!-- updated 2021-07-28 -->
