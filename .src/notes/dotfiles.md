@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 624, commit `1f8658c`.
+Revision No. 624, commit `f36ab10`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -216,7 +216,7 @@ _Note: `nano` keybind macros make use of inline non-printable control characters
 
 * Once inside the actual `nano`, the following keybind macros are available:
 
-	| key | func |
+	| key | function |
 	| -- | -- |
 	| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
 	| `M-1` | Execute current line as shell command and paste output in current buffer.<br>_Inline comments ok._ |
