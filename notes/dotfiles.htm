@@ -433,22 +433,62 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <p><em>Note: <code>nano</code> keybind macros make use of inline non-printable control characters, you must use <code>nano</code> or <code>cat -v</code> to view <a href="https://github.com/microsounds/atelier/blob/master/.nanorc"><code>~/.nanorc</code></a> correctly.</em></p>
 <ul>
 <li>
-<p><code>nano</code> is an alias for <a href="https://github.com/microsounds/atelier/blob/master/Scripts/nano_overlay.sh"><code>nano-overlay</code></a> which mangles config files and offers the following extended options:
-| opt | function |
-| – | – |
-| <code>-e, --ctags</code><br><code>&lt;tag&gt; &lt;#&gt;</code>  | Jumps into file containing <code>ctags</code> definition matching <code>&lt;tag&gt;</code>.<br>Optional <code>&lt;#&gt;</code> selects from multiple matches, <code>all</code> will open all of them. |
-| <code>-f, --encrypt</code><br><code>&lt;file&gt;</code> | Open AES encrypted text file with a plaintext password. <br>File will be created if it doesn’t exist. |
-| <code>-j, --rsa</code><br><code>&lt;file&gt;</code> | Open AES encrypted text file with generic RSA keypair in PEM format. <br>File will be created if it doesn’t exist. |
-| <code>-s, --ssh-sign</code><br><code>&lt;file&gt;</code> | Open AES encrypted text file with a nonce value signed with SSH private key. <br>File will be created if it doesn’t exist. |
-| <code>-i, --identity</code><br><code>&lt;key&gt;</code> | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in <code>ssh-agent</code> |</p>
+<p><code>nano</code> is an alias for <a href="https://github.com/microsounds/atelier/blob/master/Scripts/nano_overlay.sh"><code>nano-overlay</code></a> which mangles config files and offers the following extended options:</p>
+<table>
+<thead>
+<tr>
+<th>opt</th>
+<th>function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-e, --ctags</code><br><code>&lt;tag&gt; &lt;#&gt;</code></td>
+<td>Jumps into file containing <code>ctags</code> definition matching <code>&lt;tag&gt;</code>.<br>Optional <code>&lt;#&gt;</code> selects from multiple matches, <code>all</code> will open all of them.</td>
+</tr>
+<tr>
+<td><code>-f, --encrypt</code><br><code>&lt;file&gt;</code></td>
+<td>Open AES encrypted text file with a plaintext password. <br>File will be created if it doesn’t exist.</td>
+</tr>
+<tr>
+<td><code>-j, --rsa</code><br><code>&lt;file&gt;</code></td>
+<td>Open AES encrypted text file with generic RSA keypair in PEM format. <br>File will be created if it doesn’t exist.</td>
+</tr>
+<tr>
+<td><code>-s, --ssh-sign</code><br><code>&lt;file&gt;</code></td>
+<td>Open AES encrypted text file with a nonce value signed with SSH private key. <br>File will be created if it doesn’t exist.</td>
+</tr>
+<tr>
+<td><code>-i, --identity</code><br><code>&lt;key&gt;</code></td>
+<td>Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in <code>ssh-agent</code></td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
-<p>Once inside the actual <code>nano</code>, the following keybind macros are available:
-| key | func |
-| – | – |
-| <code>M-0</code> | Execute current line as shell command and pipe contents of buffer as stdin.<br><em>Destructively replaces entire contents of buffer, useful for formatting.</em> |
-| <code>M-1</code> | Execute current line as shell command and paste output in current buffer.<br><em>Inline comments ok.</em> |
-| <code>M-2</code> | Select token underneath cursor and jump into it’s <code>ctags</code> definition(s).<br><em>Requires valid <code>tags</code> file in current or a parent directory.</em> |</p>
+<p>Once inside the actual <code>nano</code>, the following keybind macros are available:</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>func</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M-0</code></td>
+<td>Execute current line as shell command and pipe contents of buffer as stdin.<br><em>Destructively replaces entire contents of buffer, useful for formatting.</em></td>
+</tr>
+<tr>
+<td><code>M-1</code></td>
+<td>Execute current line as shell command and paste output in current buffer.<br><em>Inline comments ok.</em></td>
+</tr>
+<tr>
+<td><code>M-2</code></td>
+<td>Select token underneath cursor and jump into it’s <code>ctags</code> definition(s).<br><em>Requires valid <code>tags</code> file in current or a parent directory.</em></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ul>
 <h1>Complete source listing</h1>

@@ -205,6 +205,7 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 _Note: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
 
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
+
 	| opt | function |
 	| -- | -- |
 	| `-e, --ctags`<br>`<tag> <#>`  | Jumps into file containing `ctags` definition matching `<tag>`.<br>Optional `<#>` selects from multiple matches, `all` will open all of them. |
@@ -214,6 +215,7 @@ _Note: `nano` keybind macros make use of inline non-printable control characters
 	| `-i, --identity`<br>`<key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in `ssh-agent` |
 
 * Once inside the actual `nano`, the following keybind macros are available:
+
 	| key | func |
 	| -- | -- |
 	| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
