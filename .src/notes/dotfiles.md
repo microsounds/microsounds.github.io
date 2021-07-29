@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 624, commit `4e52383`.
+Revision No. 624, commit `1f8658c`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -214,11 +214,11 @@ _Note: `nano` keybind macros make use of inline non-printable control characters
 	| `-i, --identity`<br>`<key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in `ssh-agent` |
 
 * Once inside the actual `nano`, the following keybind macros are available:
-| key | func |
-| :-- | :-- |
-| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
-| `M-1` | Execute current line as shell command and paste output in current buffer.<br>_Inline comments ok._ |
-| `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s).<br>_Requires valid `tags` file in current or a parent directory._ |
+	| key | func |
+	| -- | -- |
+	| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
+	| `M-1` | Execute current line as shell command and paste output in current buffer.<br>_Inline comments ok._ |
+	| `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s).<br>_Requires valid `tags` file in current or a parent directory._ |
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
