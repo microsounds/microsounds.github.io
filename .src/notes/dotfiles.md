@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 626, commit `a14b95d`.
+Revision No. 627, commit `b595377`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -246,7 +246,7 @@ _Note: `nano` keybind macros make use of inline non-printable control characters
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  559   May 18 2021 22:36 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
--rw-r--r-- 1 2.0K   Aug  2 2021 15:28 rev. 35  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1 1.9K   Aug  2 2021 15:47 rev. 36  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1 1.3K   Sep 14 2020 22:04 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
@@ -283,6 +283,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rwxr-xr-x 1 1.3K   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/moonphase-date">.local/lib/moonphase-date</a>
 lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  553   Jul 10 2021 23:42 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/path-shorthand">.local/lib/path-shorthand</a>
+-rwxr-xr-x 1  181   Aug  2 2021 15:47 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-play">.local/lib/sfx-play</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
 -rw-r--r-- 1  685   Mar 31 2021 21:37 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/md-kagami.nanorc">.local/share/nano/md-kagami.nanorc</a>
 -rw-r--r-- 1  291   Jul 15 2020 16:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/stdc.syntax">.local/share/nano/stdc.syntax</a>
@@ -321,7 +322,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.3K   May 11 2021 15:58 rev. 18  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 1.6K   May  5 2021 01:09 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1 1.5K   Aug  2 2021 15:28 rev. 59  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 1.4K   Aug  2 2021 15:47 rev. 60  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
 <!-- updated 2021-08-02 -->
