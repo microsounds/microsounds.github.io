@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 629, commit `05bd8c4`.
+Revision No. 631, commit `aa20023`.
 This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -41,6 +41,11 @@ Basic installation instructions are provided, along with some documentation for 
 	* _Sets up the package manager, installs essential packages, compiles the window manager, etc._
 5. Reboot to finish.
 	* _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
+
+<sub><i>
+	NOTE: When performing installation on obsolete versions of Debian, `apt` may send installer prompts that that cannot be bypassed.<br>
+	Comment out the last line in [`~/.once.d/00-apt-repositories.sh`]({GIT_REMOTE}/atelier/blob/master/.once.d/00-apt-repositories.sh) and run `update` manually after running `post-install`
+</i></sub>
 
 <a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
 	<img height="150px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
@@ -202,8 +207,10 @@ Several commands are extended to include impure functions, such as purposefully 
 
 C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xBBGGRRAA` in two's complement hexadecimal with `AA` (alpha channel) always set to `0xFF`
 
+_NOTE: You may have to manually select `Customize -> Color and Theme` and apply a random color scheme within Chromium's new tab page for externally customized color options to take effect on next launch._
+
 ## `nano`
-_Note: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
+_NOTE: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
 
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
 
@@ -290,8 +297,8 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  44K   Dec 17 2019 22:28 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip">.minecraft/resourcepacks/HatsuneMiku.zip</a>
 -rw-r--r-- 1 1.4K   Jul 28 2021 22:45 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
--rwxr-xr-x 1 1.2K   Jun 28 2021 18:35 rev. 13  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
--rwxr-xr-x 1  805   Jul 23 2021 00:58 rev. 14  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
+-rwxr-xr-x 1 1.5K   Aug  5 2021 15:32 rev. 14  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
+-rwxr-xr-x 1  779   Aug  5 2021 15:32 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
 -rwxr-xr-x 1  817   Jul 17 2021 16:30 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-dwm-install.sh">.once.d/10-dwm-install.sh</a>
 -rwxr-xr-x 1  611   Apr  6 2021 11:28 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/11-utilities-git.sh">.once.d/11-utilities-git.sh</a>
@@ -312,7 +319,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  723   Jul 24 2021 15:29 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  13K   Aug  2 2021 15:28 rev. 128 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  14K   Aug  5 2021 17:02 rev. 129 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Jul 29 2021 00:59 rev. 74  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
