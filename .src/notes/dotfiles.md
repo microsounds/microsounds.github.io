@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 637, commit `bd2e6e4`.
-### "Post-install: apt-key deprecated, removing all dependencies on gnupg"
+### Revision No. 638, commit `e43bf96`.
+### "chromium: Automatically force external settings on first-run"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -198,13 +198,13 @@ Several commands are extended to include impure functions, such as purposefully 
 	| `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
 
 ## `chromium`
+_NOTE: On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
+
 `chromium` was extended to mangle the user-hostile per-profile `Preferences` and global `Local State` JSON files with a series of chained `jq` filters stored in the following files, applying persistent settings in order.
 * [`~/.config/chromium/preferences.conf`]({GIT_REMOTE}/atelier/blob/master/.config/chromium/preferences.conf)
 * [`~/.config/chromium/local_state.conf`]({GIT_REMOTE}/atelier/blob/master/.config/chromium/local_state.conf)
 
 C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xBBGGRRAA` in two's complement hexadecimal with `AA` (alpha channel) always set to `0xFF`
-
-_NOTE: You may have to manually select `Customize -> Color and Theme` and apply a random color scheme within Chromium's new tab page for externally customized color options to take effect on next launch._
 
 ## `nano`
 _NOTE: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
@@ -257,7 +257,7 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  628   Jan 18 2021 21:56 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 2.8K   Jul 20 2021 23:44 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
--rwxr-xr-x 1 1.3K   Jul 10 2021 19:16 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 1.6K   Aug  6 2021 16:18 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 -rwxr-xr-x 1 2.1K   Jul  4 2021 01:04 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
@@ -316,7 +316,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  723   Jul 24 2021 15:29 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  13K   Aug  6 2021 01:10 rev. 132 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  13K   Aug  6 2021 16:18 rev. 133 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Jul 29 2021 00:59 rev. 74  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
