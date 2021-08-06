@@ -1,6 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-Revision No. 636, commit `b214b64`.
-This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
+### Revision No. 636, commit `b214b64`.
+### "Documentation"
+This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>

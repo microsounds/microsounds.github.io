@@ -6,10 +6,12 @@
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 ver="$(git meta log --oneline | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
+mesg="$(git meta log -1 --format=%s)"
 
 {	echo '# Selected documentation and usage notes for my dotfiles'
-	echo "Revision No. $ver, commit \`$hash\`."
-	echo 'This document is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
+	echo "### Revision No. $ver, commit \`$hash\`."
+	echo "### \"$mesg\""
+	echo 'This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
 	# rewrite relative markdown links
