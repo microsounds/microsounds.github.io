@@ -1,7 +1,7 @@
 name: Update website
 on:
   schedule:
-    - cron: "* * * * *"
+  - cron: "0 * * * *"
 
 jobs:
   Kagami:
