@@ -1,0 +1,23 @@
+name: Update website
+on:
+  schedule:
+    cron: '* * * * *'
+
+jobs:
+  Kagami:
+    runs-on: ubuntu-latest
+    steps:
+      name: pull in sources and apply dotfiles for a moment
+      run: |
+        git clone https://github.com/microsounds/kagami kagami
+        git clone https://github.com/microsounds/microsounds.github.io website
+        git clone --bare https://github.com/microsounds/atelier ~/.config/meta
+        git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
+      name: install kagami and rebuild website from sources
+        make -C ~/kagami install PREFIX="$HOME/.local"
+        cd ~/website
+        kagami
+        git sync
+       
+        
+        
