@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 642, commit `c07fc17`.
-### "nano: Added option to open ctags definitions in a new window with M-4"
+### Revision No. 651, commit `78d7380`.
+### "genshin-impact: Updated for ease of use, 2.0.0 patches"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -232,9 +232,9 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
 <pre><code><b style="color: #63B0B0;">{AUTHOR}@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1 6.2K   Aug  7 2021 17:19 rev. 109 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.1K   Aug  5 2021 13:30 rev. 65  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
--rw-r--r-- 1  271   Apr 29 2021 21:37 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1 6.2K   Aug 20 2021 15:40 rev. 110 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 1.1K   Aug 26 2021 20:38 rev. 68  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1  200   Aug 19 2021 00:25 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
 -rw-r--r-- 1  732   Jul 17 2021 16:20 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
@@ -258,9 +258,9 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  628   Jan 18 2021 21:56 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 2.8K   Jul 20 2021 23:44 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
--rwxr-xr-x 1 1.6K   Aug  6 2021 16:18 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 1.5K   Aug 26 2021 14:37 rev. 13  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
--rwxr-xr-x 1 2.1K   Jul  4 2021 01:04 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 2.3K   Aug 27 2021 18:52 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29  .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
@@ -269,7 +269,7 @@ lrwxrwxrwx 1   29  .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
 -rwxr-xr-x 1  155   Oct 16 2020 13:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
 -rwxr-xr-x 1  762   Jul 17 2021 22:28 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  656   May 11 2021 15:58 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
--rwxr-xr-x 1  243   Aug 15 2021 00:00 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual">.local/bin/visual</a>
+-rwxr-xr-x 1  247   Aug 19 2021 02:20 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual">.local/bin/visual</a>
 lrwxrwxrwx 1   29  .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
 lrwxrwxrwx 1   27  .local/bin/xwin-decor -> ../../Scripts/xwin_decor.sh
 lrwxrwxrwx 1   26  .local/bin/xwin-statusd -> ../../Scripts/wm_status.sh
@@ -303,7 +303,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  817   Jul 17 2021 16:30 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-dwm-install.sh">.once.d/10-dwm-install.sh</a>
 -rwxr-xr-x 1  611   Apr  6 2021 11:28 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/11-utilities-git.sh">.once.d/11-utilities-git.sh</a>
 -rwxr-xr-x 1 1.2K   Mar 31 2021 22:48 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/12-gnu-nano.sh">.once.d/12-gnu-nano.sh</a>
--rwxr-xr-x 1  289   Mar 29 2021 17:03 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
+-rwxr-xr-x 1  430   Aug 15 2021 15:13 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1  798   Mar 31 2021 20:37 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
 -rwxr-xr-x 1  499   Nov 21 2020 15:41 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/20-xorg-override.sh">.once.d/20-xorg-override.sh</a>
@@ -322,7 +322,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  13K   Aug 15 2021 00:00 rev. 134 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
--rwxr-xr-x 1  20K   Aug 15 2021 00:00 rev. 76  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
+-rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 4.7K   Jul 24 2021 15:29 rev. 41  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   May  4 2021 22:40 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
@@ -332,4 +332,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-08-15 -->
+<!-- updated 2021-08-27 -->
