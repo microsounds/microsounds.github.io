@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 652, commit `4a7ce80`.
-### "Sideloaded proprietary software now goes in ~/.local/opt"
+### Revision No. 653, commit `8b564ac`.
+### "Post-install: Don't redownload if already installed"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -303,8 +303,8 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  817   Jul 17 2021 16:30 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-dwm-install.sh">.once.d/10-dwm-install.sh</a>
 -rwxr-xr-x 1  611   Apr  6 2021 11:28 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/11-utilities-git.sh">.once.d/11-utilities-git.sh</a>
 -rwxr-xr-x 1 1.2K   Mar 31 2021 22:48 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/12-gnu-nano.sh">.once.d/12-gnu-nano.sh</a>
--rwxr-xr-x 1  430   Aug 15 2021 15:13 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
--rwxr-xr-x 1  881   Aug 28 2021 01:08 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
+-rwxr-xr-x 1  568   Aug 28 2021 14:32 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
+-rwxr-xr-x 1 1019   Aug 28 2021 14:32 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
 -rwxr-xr-x 1  499   Nov 21 2020 15:41 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/20-xorg-override.sh">.once.d/20-xorg-override.sh</a>
 -rwxr-xr-x 1  387   Jun 18 2021 00:52 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/21-network-manager.sh">.once.d/21-network-manager.sh</a>
