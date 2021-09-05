@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 653, commit `8b564ac`.
-### "Post-install: Don't redownload if already installed"
+### Revision No. 655, commit `7f04d9d`.
+### "Nothing important"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -318,7 +318,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 2.2K   Jul 27 2021 08:36 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  533   Mar 30 2021 13:19 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
--rw-r--r-- 1  723   Jul 24 2021 15:29 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
+-rw-r--r-- 1  692   Sep  5 2021 13:06 rev. 25  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  13K   Aug 15 2021 00:00 rev. 134 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
@@ -332,4 +332,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-08-28 -->
+<!-- updated 2021-09-05 -->
