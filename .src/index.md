@@ -24,6 +24,6 @@ Sometimes, this is a never-ending process.
 * _(2016)_ command-line stack-based RPN calculator — [`{AUTHOR}/hpsh`]({GIT_REMOTE}/hpsh)
 
 ### Contact me
-If it's about a project, feel free to open an issue.
+If it's about a project or an article on this website, feel free to open an issue or a pull request on Github.
 
 [1]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again

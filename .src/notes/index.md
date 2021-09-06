@@ -1,2 +1,2 @@
 # Notes
-Miscellaneous writings, sorted by date.
+Notes on misc. technical subjects, sorted by date of last update.

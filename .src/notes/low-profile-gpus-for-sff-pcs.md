@@ -2,6 +2,11 @@
 # List of low profile GPUs for small form factor PCs (SFFs)
 {CREATED}
 
+> This list is not obsolete, there have been no new LP cards announced or released since 2020.
+> However, the retail and aftermarket prices of every worthwhile discrete GPU on this list have skyrocketed to obscene levels since this article was first written.
+> Due to market forces, manufacturers have very little incentive to exchange or replace a defective card under warranty, opting to refund your purchase price instead, this will almost certainly be less than the current market value of your card, you have been warned.
+> <br>_**Suggestion: Buy an AMD APU-based SFF system and play your games on low/medium. Add a dGPU down the road if availability and prices ever go back to normal.**_
+
 ![img](assets/low_profile_gpu.jpg)
 
 For our purposes **"low profile"** refers to cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
@@ -69,7 +74,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | AMD Radeon RX 460 | 2016 | 4034 | Available from MSI. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 6398 | ASL makes a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 7866 | ASL makes a [1-slot version][4] for the Chinese market. |
-| _Nvidia Ampere-based LP card_ | 2021? | ? | _Low-end, low profile iterations of RTX 30* series cards will probably be announced by 2021._ |
+| _Nvidia Ampere-based LP card_ | ~2021?~ NEVER EVER | ? | ~_Low-end, low profile iterations of RTX 30* series cards will probably be announced by 2021._~ |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [2]: https://www.gnu.org/philosophy/free-software-even-more-important.html
