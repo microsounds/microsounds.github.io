@@ -45,6 +45,7 @@ function setup_bgm() {
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
 		ctx.type = 'audio/webm';
+		ctx.hidden = true;
 		ctx.loop = true;
 		ctx.src = file;
 		audio.replaceWith(ctx);
