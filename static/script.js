@@ -41,7 +41,7 @@ function setup_bgm() {
 	 * fallback to native <audio> tags with stuttery audio on Safari for iPhone
 	 * and iPad (iOS < 13), as they do not support MediaSource at all
 	 */
-	if ! navigator.userAgent.match('iP(hone|ad|od)') {
+	if (!!navigator.userAgent.match('iP(hone|ad|od)')) {
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
 		ctx.type = 'audio/webm';
