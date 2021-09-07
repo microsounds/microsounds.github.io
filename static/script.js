@@ -130,4 +130,4 @@ function play() {
 		bgm_toggle.innerText = bgm_toggle.innerText.replace('pause', 'play'), audio.pause();
 }
 
-window.onload = setup_bgm
+window.onload = setup_bgm;
