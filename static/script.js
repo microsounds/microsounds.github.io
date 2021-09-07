@@ -20,8 +20,7 @@ var sel = [
 	'wind2',
 	'jealousy'
 ];
-var file = '/static/music/'
-	+ sel[Math.floor(Math.random() * sel.length)] + '.webm';
+var file = 'music/' + sel[Math.floor(Math.random() * sel.length)] + '.webm';
 
 window.onload = function() {
 	var mediaSource;
