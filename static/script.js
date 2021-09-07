@@ -1,33 +1,41 @@
-/*
- * seamless looping background music with native Media Source API
- * adapted from example code found at
- * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
- *
- * Media Source API supports Opus audio in WebM containers, but not Ogg.
- * $ ffmpeg -i wind1.opus -c:a copy -vn wind1.webm
- */
-
 'use strict';
 
-/* constants */
-var duration = 30.0;
-var gc_duration = 2 * duration;
-var CUT_OFF = 0.01;
-
-/* randomly select audio */
-var sel = [
-	'wind1',
-	'wind2',
-	'jealousy'
+/*
+ * refers to sound files in '{DOC_ROOT}/static/music'
+ * Note: Media Source API supports Opus audio in WebM containers, but not Ogg.
+ * $ ffmpeg -i wind1.opus -c:a copy -vn wind1.webm
+ */
+var loops = [
+	[ 'wind1', 'effe - night drive ft. 初音ミク' ],
+	[ 'wind2', 'effe - night drive ft. 初音ミク' ],
+	[ 'jealousy', 'Taquwami - Concealed Jealousy' ],
+	[ 'mirage1', 'Occult You - Mirage Love' ],
+	[ 'mirage2', 'Occult You - Mirage Love' ],
+	[ 'strobo', 'kz/livetune - Strobo Nights ft. 初音ミク' ],
 ];
-var file = '/static/music/' +
-	sel[Math.floor(Math.random() * sel.length)] + '.webm';
 
-window.onload = function() {
+/*
+ * seamless looping background music with native Media Source API
+ * adapted from from example code found at
+ * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
+ */
+function setup_bgm() {
+	/* constants */
+	var duration = 30.0;
+	var gc_duration = 2 * duration;
+	var CUT_OFF = 0.01;
+
+	/* contexts */
 	var mediaSource;
 	var sourceBuffer;
 	var audio = document.getElementById('bgm');
+	var bgm_toggle = document.getElementById('bgm_toggle');
 	var client = new XMLHttpRequest();
+
+	/* randomly select audio and tooltip text */
+	var sel = Math.floor(Math.random() * loops.length);
+	var file = '/static/music/' + loops[sel][0] + '.webm';
+	bgm_toggle.title = loops[sel][1];
 
 	client.onreadystatechange = function() {
 		if (this.readyState !== 4)
@@ -121,3 +129,5 @@ function play() {
 	else
 		bgm_toggle.innerText = bgm_toggle.innerText.replace('pause', 'play'), audio.pause();
 }
+
+window.onload = setup_bgm
