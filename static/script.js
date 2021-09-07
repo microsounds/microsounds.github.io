@@ -13,7 +13,14 @@
 var duration = 30.0;
 var gc_duration = 2 * duration;
 var CUT_OFF = 0.01;
-var file = '/static/music/wind1.webm';
+
+/* randomly select audio */
+var sel = [
+	'wind1',
+	'wind2',
+	'jealousy'
+];
+var file = '/static/music/' + sel[Math.floor(Math.random() * sel.length)];
 
 window.onload = function() {
 	var mediaSource;
