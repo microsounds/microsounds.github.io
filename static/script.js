@@ -42,8 +42,11 @@ function setup_bgm() {
 	 * and iPad (iOS < 13), as they do not support MediaSource at all
 	 */
 	if ! navigator.userAgent.match('iP(hone|ad|od)') {
-		audio.type = 'audio/webm';
-		audio.src = file;
+		var ctx = document.createElement('audio');
+		ctx.id = 'bgm';
+		ctx.type = 'audio/webm';
+		ctx.src = file;
+		audio.replaceWith(ctx);
 		return;
 	 }
 
