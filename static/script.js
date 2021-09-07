@@ -2,7 +2,7 @@
 
 /*
  * refers to sound files in '{DOC_ROOT}/static/music'
- * Note: Media Source API supports Opus audio in WebM containers, but not Ogg.
+ * Note: MediaSource supports Opus audio in WebM containers, but not Ogg.
  * $ ffmpeg -i wind1.opus -c:a copy -vn wind1.webm
  */
 var loops = [
@@ -15,7 +15,7 @@ var loops = [
 ];
 
 /*
- * seamless looping background music with native Media Source API
+ * seamless looping background music with native MediaSource API
  * adapted from from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  */
@@ -36,6 +36,16 @@ function setup_bgm() {
 	var sel = Math.floor(Math.random() * loops.length);
 	var file = '/static/music/' + loops[sel][0] + '.webm';
 	bgm_toggle.title = loops[sel][1];
+
+	/*
+	 * fallback to native <audio> tags with stuttery audio on Safari for iPhone
+	 * and iPad (iOS < 13), as they do not support MediaSource at all
+	 */
+	if ! navigator.userAgent.match('iP(hone|ad|od)') {
+		audio.type = 'audio/webm';
+		audio.src = file;
+		return;
+	 }
 
 	client.onreadystatechange = function() {
 		if (this.readyState !== 4)
@@ -73,7 +83,7 @@ function setup_bgm() {
 			}
 
 			function segmentWatcher() {
-				// There should always be one range by this point...
+ 				// There should always be one range by this point...
 
 				var start = sourceBuffer.buffered.start(0);
 				var end = sourceBuffer.buffered.end(sourceBuffer.buffered.length - 1);
