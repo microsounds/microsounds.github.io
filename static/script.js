@@ -39,7 +39,7 @@ function setup_bgm() {
 
 	/*
 	 * Safari for iPhone and iPad (iOS < 13) do not support MediaSource at all
-	 * fallback to native <audio> tag with stuttery audio and abort
+	 * fallback to native <audio> loop with stuttery audio and abort
 	 */
 	if (navigator.userAgent.match('iP(hone|ad|od)') != null) {
 		var ctx = document.createElement('audio');
