@@ -38,10 +38,10 @@ function setup_bgm() {
 	bgm_toggle.title = loops[sel][1];
 
 	/*
-	 * fallback to native <audio> tags with stuttery audio on Safari for iPhone
-	 * and iPad (iOS < 13), as they do not support MediaSource at all
+	 * Safari for iPhone and iPad (iOS < 13) do not support MediaSource at all
+	 * fallback to native <audio> tag with stuttery audio and abort
 	 */
-	if (navigator.userAgent.match('iP(hone|ad|od)') == null) {
+	if (navigator.userAgent.match('iP(hone|ad|od)') != null) {
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
 		ctx.type = 'audio/webm';
@@ -88,7 +88,7 @@ function setup_bgm() {
 			}
 
 			function segmentWatcher() {
- 				// There should always be one range by this point...
+				// There should always be one range by this point...
 
 				var start = sourceBuffer.buffered.start(0);
 				var end = sourceBuffer.buffered.end(sourceBuffer.buffered.length - 1);
