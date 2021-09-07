@@ -1,5 +1,5 @@
 /*
- * seamless background music playback with native Media Source API
+ * seamless looping background music with native Media Source API
  * adapted from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  *
@@ -51,10 +51,9 @@ window.onload = function() {
 				// It's important to use the reported end point to avoid accidental
 				// overlaps. Use the highest indexed range in the event multiple ranges
 				// get created.
-				var appendTime =
-				sourceBuffer.buffered.length > 0
-				? sourceBuffer.buffered.end(sourceBuffer.buffered.length - 1)
-				: 0;
+				var appendTime = (sourceBuffer.buffered.length > 0)
+					? sourceBuffer.buffered.end(sourceBuffer.buffered.length - 1)
+					: 0;
 
 				// Adjust timestamp offset for cut off the front data.
 				sourceBuffer.timestampOffset = appendTime - CUT_OFF;
