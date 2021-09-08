@@ -11,10 +11,11 @@ var loops = [
 	[ 'jealousy', 'Taquwami - Concealed Jealousy' ],
 	[ 'mirage1', 'Occult You - Mirage Love' ],
 	[ 'mirage2', 'Occult You - Mirage Love' ],
-	[ 'strobo', 'kz/livetune - Strobo Nights ft. 初音ミク' ],
+	[ 'sparkle', 'livetune - Strobo Nights ft. 初音ミク' ],
+	[ 'synthetic', 'FM Skyline - neon paradise' ],
 	[ 'iridescent', 'Occult You - Transition' ],
+	[ 'decay', 'LOONA - Butterfly' ],
 	[ 'ballade', 'Genshin Impact OST - Stormterror Lair' ],
-	[ 'butterfly', '이달의 소녀 - Butterfly' ],
 ];
 
 /*
