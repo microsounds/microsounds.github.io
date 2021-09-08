@@ -21,7 +21,10 @@ var loops = [
 ];
 
 /*
- * seamless looping background music with native MediaSource API
+ * https://bugs.chromium.org/p/chromium/issues/detail?id=353072
+ *
+ * native <audio> tag does not support gapless loops without stutters
+ * implementing seamless looping background music with native MediaSoure API
  * adapted from from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  */
@@ -44,7 +47,7 @@ function setup_bgm() {
 	bgm_toggle.title = loops[sel][1];
 
 	/*
-	 * Safari for iPhone and iPad (iOS < 13) do not support MediaSource at all
+	 * Safari for iPhone and iPad (pre-iOS 13) do not support MediaSource at all
 	 * fallback to native <audio> loop with stuttery audio and abort
 	 */
 	if (navigator.userAgent.match('iP(hone|ad|od)') != null) {
