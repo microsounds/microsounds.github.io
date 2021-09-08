@@ -12,6 +12,7 @@ var loops = [
 	[ 'mirage1', 'Occult You - Mirage Love' ],
 	[ 'mirage2', 'Occult You - Mirage Love' ],
 	[ 'strobo', 'kz/livetune - Strobo Nights ft. 初音ミク' ],
+	[ 'iridescent', 'Occult You - Transition' ],
 ];
 
 /*
