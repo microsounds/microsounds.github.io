@@ -13,6 +13,8 @@ var loops = [
 	[ 'mirage2', 'Occult You - Mirage Love' ],
 	[ 'strobo', 'kz/livetune - Strobo Nights ft. 初音ミク' ],
 	[ 'iridescent', 'Occult You - Transition' ],
+	[ 'ballade', 'Genshin Impact OST - Stormterror Lair' ],
+	[ 'butterfly', '이달의 소녀 - Butterfly' ],
 ];
 
 /*
