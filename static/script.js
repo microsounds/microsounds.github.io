@@ -13,8 +13,8 @@ var loops = [
 	[ 'mirage2', 'Occult You - Mirage Love' ],
 	[ 'sparkle', 'livetune - Strobo Nights ft. 初音ミク' ],
 	[ 'synthetic', 'FM Skyline - neon paradise' ],
-	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ]
-	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ]
+	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
+	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'iridescent', 'Occult You - Transition' ],
 	[ 'decay', 'LOONA - Butterfly' ],
 	[ 'ballade', 'Genshin Impact OST - Stormterror Lair' ],
