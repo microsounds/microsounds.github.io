@@ -55,7 +55,7 @@ function setup_bgm() {
 	 * Deficient browsers like Safari don't support MediaSource API at all
 	 * fallback to native <audio> loop with stuttery audio and abort
 	 */
-	if (!is_compatible())
+	if (!is_compatible()) {
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
 		ctx.type = 'audio/webm';
