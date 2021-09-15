@@ -28,6 +28,11 @@ var loops = [
  * adapted from from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  */
+function is_compatible() {
+	var ctx = new MediaSource();
+	return !!ctx.addSourceBuffer;
+}
+
 function setup_bgm() {
 	/* constants */
 	var duration = 30.0;
@@ -47,10 +52,10 @@ function setup_bgm() {
 	bgm_toggle.title = loops[sel][1];
 
 	/*
-	 * Safari for iPhone and iPad (pre-iOS 13) do not support MediaSource at all
+	 * Deficient browsers like Safari don't support MediaSource API at all
 	 * fallback to native <audio> loop with stuttery audio and abort
 	 */
-	if (navigator.userAgent.match('iP(hone|ad|od)') != null) {
+	if (!is_compatible())
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
 		ctx.type = 'audio/webm';
