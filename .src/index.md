@@ -2,7 +2,7 @@
 ![header]({DOC_ROOT}/static/starry.png)
 
 ### About me
-There isn't much to say about myself, you can call me `microsounds` if you want.
+This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
 I like ~~muted pastels,~~ starry night skies, people watching and the unix programming environment.
 I like to have [this album][album] in the background sometimes.
@@ -12,7 +12,7 @@ Sometimes, this is a never-ending process.
 
 ### Things I've made recently
 * _(2019–present)_ my "graphical shell" computing environment — [`{AUTHOR}/atelier`]({DOC_ROOT}/notes/dotfiles.md)
-	* _A self-contained collection of dotfiles and scripts for Debian GNU/Linux._
+	* _My self-contained and unabridged collection of dotfiles and scripts for Debian GNU/Linux._
 * _(2020–present)_ static microblog processor in POSIX shell — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)
 	* _A user-extensible macro preprocessor and generator for creating static webpages and blog sites._
 * _(2019–present)_ this website and it's kagami template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
