@@ -18,5 +18,5 @@ YEAR="$(date '+%Y')"
 
 # moonphase date function
 # dark background, invert glyphs
-# might backfire if browser uses it's own emoji for moonphases
-DATE_FUNCTION='moonphase-date -iy'
+# append U+FE0E to glyphs to force display as text only
+DATE_FUNCTION='moonphase-date -iyh'
