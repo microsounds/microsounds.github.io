@@ -3,6 +3,18 @@
 <head>
 	<!--idk lol-->
 	<title>404 NOT FOUND</title>
-	<meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=saYQAo9bvRI&t=1381s" />
+<!--	<meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=saYQAo9bvRI&t=1381s" />-->
 </head>
+<body>
+<script>
+	/* distract the user by redirecting to something dumb */
+	var urls = [
+		"https://www.youtube.com/watch?v=saYQAo9bvRI&t=1381s",
+		"https://www.youtube.com/watch?v=UxYaFvzSv2U&t=1946s",
+	];
+	window.location.replace(urls[Math.floor(Math.random() * loops.length)]);
+</script>
+<h1>404 NOT FOUND</h1>
+
+</body>
 </html>
