@@ -51,11 +51,13 @@ function setup_bgm() {
 	var file = '/static/music/' + loops[sel][0] + '.webm';
 	bgm_toggle.title = loops[sel][1];
 
-	/*
-	 * Deficient browsers like Safari don't support MediaSource API at all
-	 * fallback to native <audio> loop with stuttery audio and abort
-	 */
 	if (!is_compatible()) {
+		/* warn user that their browser is garbage */
+		var warn = document.createElement('p');
+		p.textContent = "Note: Your web browser lacks modern features, certain functionality will not work correctly, or at all.";
+		document.body.insertBefore(warn, document.body.firstChild);
+
+		/* fallback to native stuttery <audio> loop if possible */
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
 		ctx.type = 'audio/webm';
