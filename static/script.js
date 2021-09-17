@@ -51,7 +51,7 @@ function setup_bgm() {
 	var file = '/static/music/' + loops[sel][0] + '.webm';
 	bgm_toggle.title = loops[sel][1];
 
-	if (is_compatible()) {
+	if (!is_compatible()) {
 		/*
 		 * warn user that their browser is garbage
 		 * safari seems to be the only modern web browser that lacks MediaSource API
