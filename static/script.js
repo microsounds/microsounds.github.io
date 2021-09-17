@@ -56,9 +56,12 @@ function setup_bgm() {
 		 * warn user that their browser is garbage
 		 * safari seems to be the only modern web browser that lacks MediaSource API
 		 */
+		var doc = document.getElementsByClassName('content')[0];
 		var warn = document.createElement('blockquote');
-		warn.textContent = 'Note: Your web browser is outdated and certain stylesheet and multimedia features may not work correctly.';
-		document.getElementsByClassName('content')[0].prepend(warn);
+		warn.textContent =
+			'Note: Your web browser is outdated and certain stylesheet' +
+			' and multimedia features may not work correctly.';
+		doc.insertBefore(warn, doc.firstChild);
 
 		/* fallback to native stuttery <audio> loop if possible */
 		var ctx = document.createElement('audio');
