@@ -51,11 +51,14 @@ function setup_bgm() {
 	var file = '/static/music/' + loops[sel][0] + '.webm';
 	bgm_toggle.title = loops[sel][1];
 
-	if (!is_compatible()) {
-		/* warn user that their browser is garbage */
-		var warn = document.createElement('p');
-		p.textContent = "Note: Your web browser lacks modern features, certain functionality will not work correctly, or at all.";
-		document.body.insertBefore(warn, document.body.firstChild);
+	if (is_compatible()) {
+		/*
+		 * warn user that their browser is garbage
+		 * safari seems to be the only modern web browser that lacks MediaSource API
+		 */
+		var warn = document.createElement('blockquote');
+		warn.textContent = 'Note: Your web browser is outdated and certain stylesheet and multimedia features may not work correctly.';
+		document.getElementsByClassName('content')[0].prepend(warn);
 
 		/* fallback to native stuttery <audio> loop if possible */
 		var ctx = document.createElement('audio');
