@@ -4,7 +4,7 @@
 ### About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
-I like ~~muted pastels,~~ starry night skies, people watching and the unix programming environment.
+I like ~~muted pastels,~~ starry night skies, people watching and the [unix programming environment][unix].
 I like to have [this album][album] in the background sometimes.
 
 More importantly, I enjoy automating things in such a way that they can be left alone and never thought about again.
@@ -43,3 +43,4 @@ If it's about a project or an article on this website, feel free to open an issu
 </div>
 
 [album]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
+[unix]: http://markburgess.org/unix/unix.html
