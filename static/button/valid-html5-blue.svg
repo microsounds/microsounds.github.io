@@ -1,0 +1,271 @@
+<svg width="88px" height="31px" viewBox="0 0 88 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="83" height="1"></rect>
+        <rect id="path-3" x="0" y="0" width="1" height="31"></rect>
+        <rect id="path-5" x="0" y="0" width="83" height="1"></rect>
+        <rect id="path-7" x="0.16" y="0.005" width="80" height="1"></rect>
+        <rect id="path-9" x="0" y="0" width="83" height="1"></rect>
+        <rect id="path-11" x="0" y="0" width="1" height="31"></rect>
+        <rect id="path-13" x="0" y="0" width="83" height="1"></rect>
+        <rect id="path-15" x="0.806" y="0" width="1" height="30"></rect>
+        <rect id="path-17" x="0" y="0" width="83" height="1"></rect>
+        <rect id="path-19" x="0.16" y="0.005" width="80" height="1"></rect>
+        <rect id="path-21" x="0" y="0" width="83" height="1"></rect>
+        <rect id="path-23" x="0" y="0" width="1" height="31"></rect>
+        <rect id="path-25" x="0" y="0" width="83" height="1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="valid-html40-v">
+            <rect id="Rectangle" x="0" y="0" width="88" height="31"></rect>
+            <rect id="Rectangle" fill="#B3CEE1" x="0" y="0" width="83" height="31"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="0.365" y="0" width="36.443" height="31"></rect>
+            <rect id="Rectangle" x="4.692" y="2.291" width="40.004" height="24.607"></rect>
+            <g id="Group" transform="translate(0.000000, 30.000000)">
+                <g id="XMLID_1123_-link" fill="#504D4C">
+                    <rect id="XMLID_1123_" x="0" y="0" width="83" height="1"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="XMLID_1123_"></g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                            <rect fill="#4E4B3F" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                            <rect fill="#4F4F4F" fill-rule="evenodd" x="0.365" y="0" width="36.443" height="31"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(82.000000, 0.000000)">
+                <g id="XMLID_1125_-link" fill="#504D4C">
+                    <rect id="XMLID_1125_" x="0" y="0" width="1" height="31"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="XMLID_1125_"></g>
+                    <g id="Group" mask="url(#mask-4)">
+                        <g transform="translate(-82.000000, 0.000000)">
+                            <rect id="Rectangle" fill="none" x="0" y="0" width="88" height="31"></rect>
+                            <rect id="Rectangle" fill="#4E4B3F" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                <g id="XMLID_1127_-link" fill="#191919">
+                                    <rect id="XMLID_1127_" x="0" y="0" width="83" height="1"></rect>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-6" fill="white">
+                                        <use xlink:href="#path-5"></use>
+                                    </mask>
+                                    <g id="XMLID_1127_"></g>
+                                    <g id="Group" mask="url(#mask-6)">
+                                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                                            <rect fill="#191917" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                            <rect fill="#191919" fill-rule="evenodd" x="0.366" y="0" width="36.443" height="31"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="#CCCCCC" x="0" y="0" width="1" height="31"></rect>
+            <g id="Group" transform="translate(2.000000, 29.000000)">
+                <g id="XMLID_1129_-link" fill="#9E9C9C">
+                    <rect id="XMLID_1129_" x="0.16" y="0.005" width="80" height="1"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="XMLID_1129_"></g>
+                    <g id="Group" mask="url(#mask-8)">
+                        <g transform="translate(-2.000000, -29.000000)">
+                            <rect id="Rectangle" fill="none" x="0" y="0" width="88" height="31"></rect>
+                            <rect id="Rectangle" fill="#9097A0" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                            <rect id="Rectangle" fill="#B5B5B5" fill-rule="evenodd" x="0.365" y="0" width="36.443" height="31"></rect>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                <g id="XMLID_1131_-link" fill="#383838">
+                                    <rect id="XMLID_1131_" x="0" y="0" width="83" height="1"></rect>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-10" fill="white">
+                                        <use xlink:href="#path-9"></use>
+                                    </mask>
+                                    <g id="XMLID_1131_"></g>
+                                    <g id="Group" mask="url(#mask-10)">
+                                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                                            <rect fill="#383530" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                            <rect fill="#383838" fill-rule="evenodd" x="0.366" y="0" width="36.443" height="31"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(82.000000, 0.000000)">
+                                <g id="XMLID_1133_-link" fill="#383838">
+                                    <rect id="XMLID_1133_" x="0" y="0" width="1" height="31"></rect>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-12" fill="white">
+                                        <use xlink:href="#path-11"></use>
+                                    </mask>
+                                    <g id="XMLID_1133_"></g>
+                                    <g id="Group" mask="url(#mask-12)">
+                                        <g transform="translate(-82.000000, 0.000000)">
+                                            <rect id="Rectangle" fill="none" x="0" y="0" width="88" height="31"></rect>
+                                            <rect id="Rectangle" fill="#383530" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                                <g id="XMLID_1135_-link" fill="#131313">
+                                                    <rect id="XMLID_1135_" x="0" y="0" width="83" height="1"></rect>
+                                                </g>
+                                                <g id="Clipped">
+                                                    <mask id="mask-14" fill="white">
+                                                        <use xlink:href="#path-13"></use>
+                                                    </mask>
+                                                    <g id="XMLID_1135_"></g>
+                                                    <g id="Group" mask="url(#mask-14)">
+                                                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                                                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                                                            <rect fill="#131313" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                                            <rect fill="#131313" fill-rule="evenodd" x="0.366" y="0" width="36.443" height="31"></rect>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(80.000000, 1.000000)">
+                <g id="XMLID_1137_-link"></g>
+                <g id="Clipped">
+                    <mask id="mask-16" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <g id="XMLID_1137_"></g>
+                    <g id="Group" mask="url(#mask-16)">
+                        <g transform="translate(-80.000000, -1.000000)">
+                            <rect id="Rectangle" fill="none" x="0" y="0" width="88" height="31"></rect>
+                            <rect id="Rectangle" fill="#9097A0" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                <g id="XMLID_1139_-link" fill="#383838">
+                                    <rect id="XMLID_1139_" x="0" y="0" width="83" height="1"></rect>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-18" fill="white">
+                                        <use xlink:href="#path-17"></use>
+                                    </mask>
+                                    <g id="XMLID_1139_"></g>
+                                    <g id="Group" mask="url(#mask-18)">
+                                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                                            <rect fill="#383530" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                            <rect fill="#383838" fill-rule="evenodd" x="0.366" y="0" width="36.443" height="31"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(2.000000, 29.000000)">
+                                <g id="XMLID_1141_-link" fill="#818181">
+                                    <rect id="XMLID_1141_" x="0.16" y="0.005" width="80" height="1"></rect>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-20" fill="white">
+                                        <use xlink:href="#path-19"></use>
+                                    </mask>
+                                    <g id="XMLID_1141_"></g>
+                                    <g id="Group" mask="url(#mask-20)">
+                                        <g transform="translate(-2.000000, -29.000000)">
+                                            <rect id="Rectangle" fill="none" x="0" y="0" width="88" height="31"></rect>
+                                            <rect id="Rectangle" fill="#6E7176" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                            <rect id="Rectangle" fill="#818181" fill-rule="evenodd" x="0.365" y="0" width="36.443" height="31"></rect>
+                                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                                <g id="XMLID_1143_-link" fill="#272727">
+                                                    <rect id="XMLID_1143_" x="0" y="0" width="83" height="1"></rect>
+                                                </g>
+                                                <g id="Clipped">
+                                                    <mask id="mask-22" fill="white">
+                                                        <use xlink:href="#path-21"></use>
+                                                    </mask>
+                                                    <g id="XMLID_1143_"></g>
+                                                    <g id="Group" mask="url(#mask-22)">
+                                                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                                                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                                                            <rect fill="#272623" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                                            <rect fill="#272727" fill-rule="evenodd" x="0.366" y="0" width="36.443" height="31"></rect>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(82.000000, 0.000000)">
+                                                <g id="XMLID_1145_-link" fill="#272727">
+                                                    <rect id="XMLID_1145_" x="0" y="0" width="1" height="31"></rect>
+                                                </g>
+                                                <g id="Clipped">
+                                                    <mask id="mask-24" fill="white">
+                                                        <use xlink:href="#path-23"></use>
+                                                    </mask>
+                                                    <g id="XMLID_1145_"></g>
+                                                    <g id="Group" mask="url(#mask-24)">
+                                                        <g transform="translate(-82.000000, 0.000000)">
+                                                            <rect id="Rectangle" fill="none" x="0" y="0" width="88" height="31"></rect>
+                                                            <rect id="Rectangle" fill="#272623" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                                                <g id="XMLID_1147_-link" fill="#101010">
+                                                                    <rect id="XMLID_1147_" x="0" y="0" width="83" height="1"></rect>
+                                                                </g>
+                                                                <g id="Clipped">
+                                                                    <mask id="mask-26" fill="white">
+                                                                        <use xlink:href="#path-25"></use>
+                                                                    </mask>
+                                                                    <g id="XMLID_1147_"></g>
+                                                                    <g id="Group" mask="url(#mask-26)">
+                                                                        <g transform="translate(0.000000, -30.000000)" id="Rectangle">
+                                                                            <rect fill="none" x="0" y="0" width="88" height="31"></rect>
+                                                                            <rect fill="#101010" fill-rule="evenodd" x="0" y="0" width="83" height="31"></rect>
+                                                                            <rect fill="#101010" fill-rule="evenodd" x="0.366" y="0" width="36.443" height="31"></rect>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="#CCCCCC" x="0" y="0" width="83" height="1"></rect>
+            <polyline id="Path" stroke="#005A9C" stroke-width="4.8115" points="68.273 18.845 74.291 24.348 86.001 12.637"></polyline>
+            <g id="Group" transform="translate(39.000000, 5.000000)" fill="#000000" fill-rule="nonzero">
+                <polygon id="Path" points="0.991 0.822 2.871 0.822 2.871 3.601 5.644 3.601 5.644 0.822 7.524 0.822 7.524 8.112 5.644 8.112 5.644 5.021 2.871 5.021 2.871 8.112 0.991 8.112"></polygon>
+                <polygon id="Path" points="8.09 0.822 14.81 0.822 14.81 2.243 12.393 2.243 12.393 8.112 10.513 8.112 10.513 2.243 8.09 2.243"></polygon>
+                <polygon id="Path" points="15.381 0.822 17.773 0.822 19.434 4.724 21.104 0.822 23.491 0.822 23.491 8.112 21.714 8.112 21.714 2.78 20.034 6.711 18.843 6.711 17.163 2.78 17.163 8.112 15.381 8.112"></polygon>
+                <polygon id="Path" points="24.932 0.822 26.812 0.822 26.812 6.691 30.113 6.691 30.113 8.112 24.932 8.112"></polygon>
+                <path d="M36.5538289,5.72411184 C36.5538289,6.09500843 36.4842869,6.43952144 36.3452007,6.75766118 C36.2061144,7.07580093 36.0038829,7.34837386 35.7385,7.57538816 C35.4443406,7.81838937 35.1062223,7.99823955 34.7241349,8.11494408 C34.3420474,8.23164861 33.9064103,8.29 33.4172105,8.29 C32.8448787,8.28680262 32.3612816,8.24124057 31.9664046,8.1533125 C31.5715276,8.06538443 31.249396,7.96706633 31,7.85835526 L31,6.28045395 L31.2014342,6.28045395 C31.4923962,6.45311271 31.8057352,6.59699285 32.1414605,6.71209868 C32.4771859,6.82720452 32.8113075,6.88475658 33.1438355,6.88475658 C33.3452707,6.88475658 33.563489,6.86157589 33.7984967,6.81521382 C34.0335045,6.76885174 34.2197493,6.68492166 34.3572368,6.56342105 C34.4659479,6.46430214 34.5482793,6.36358604 34.6042336,6.26126974 C34.6601878,6.15895344 34.6881645,6.00068528 34.6881645,5.78646053 C34.6881645,5.62019654 34.6505958,5.47711573 34.5754572,5.35721382 C34.5003187,5.2373119 34.4035993,5.14059247 34.2852961,5.06705263 C34.1126373,4.96153895 33.9048104,4.89199688 33.6618092,4.85842434 C33.418808,4.82485181 33.1981918,4.80806579 32.9999539,4.80806579 C32.7121894,4.80806579 32.4364191,4.83284515 32.1726349,4.88240461 C31.9088507,4.93196406 31.6778431,4.98072344 31.4796053,5.02868421 L31.2685789,5.02868421 L31.2685789,1 L36.3475987,1 L36.3475987,2.366875 L32.9999539,2.366875 L32.9999539,3.53231579 C33.0990729,3.52592102 33.2245683,3.52032568 33.3764441,3.51552961 C33.5283198,3.51073353 33.6618086,3.50833553 33.7769145,3.50833553 C34.1701928,3.50833553 34.5211004,3.54590423 34.829648,3.62104276 C35.1381956,3.6961813 35.4043739,3.80089407 35.6281908,3.93518421 C35.9191528,4.11104035 36.1461637,4.34364658 36.3092303,4.63300987 C36.4722969,4.92237316 36.5538289,5.28607018 36.5538289,5.72411184 Z" id="5"></path>
+            </g>
+            <g id="Group" transform="translate(25.000000, 7.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M8.077,0.037 L8.411,2.071 L7.226,4.337 C7.226,4.337 6.771,3.376 6.016,2.844 C5.38,2.396 4.965,2.298 4.317,2.432 C3.484,2.604 2.54,3.599 2.128,4.827 C1.635,6.296 1.63,7.006 1.613,7.659 C1.585,8.706 1.75,9.324 1.75,9.324 C1.75,9.324 1.031,7.994 1.03794922,6.045 C1.043,4.654 1.261,3.393 1.905,2.148 C2.471,1.054 3.312,0.397 4.059,0.32 C4.831,0.24 5.442,0.612 5.913,1.015 C6.408,1.438 6.909,2.363 6.909,2.363 L8.077,0.037 Z" id="Path"></path>
+                <path d="M8.222,11.547 C8.222,11.547 7.699,12.483 7.372,12.843 C7.046,13.203 6.462,13.839 5.742,14.156 C5.021,14.473 4.643,14.533 3.931,14.465 C3.219,14.396 2.558,13.984 2.326,13.813 C2.095,13.641 1.502,13.135 1.167,12.663 C0.832,12.191 0.309,11.247 0.309,11.247 C0.309,11.247 0.601,12.193 0.783,12.594 C0.888,12.825 1.211,13.532 1.669,14.147 C2.096,14.721 2.926,15.709 4.188,15.932 C5.45,16.155 6.316,15.589 6.531,15.452 C6.745,15.315 7.198,14.936 7.484,14.63 C7.783,14.31 8.066,13.902 8.222,13.658 C8.336,13.48 8.523,13.117 8.523,13.117 L8.222,11.547 Z" id="Path"></path>
+            </g>
+            <g id="Group" transform="translate(3.000000, 7.000000)" fill="#005A9C" fill-rule="nonzero">
+                <polygon id="Path" points="8.437 0.127 11.289 9.825 14.141 0.127 16.206 0.127 11.485 16.06 11.288 16.06 8.338 6.185 5.387 16.06 5.191 16.06 0.47 0.127 2.535 0.127 5.388 9.825 7.316 3.294 6.372 0.127"></polygon>
+                <path d="M22.072,10.946 C22.072,12.389 21.688,13.602 20.921,14.585 C20.154,15.568 19.16,16.06 17.941,16.06 C17.023,16.06 16.223,15.768 15.541,15.185 C14.859,14.602 14.354,13.812 14.026,12.815 L15.639,12.147 C15.875,12.75 16.187,13.226 16.574,13.573 C16.961,13.92 17.417,14.094 17.941,14.094 C18.492,14.094 18.957,13.786 19.338,13.17 C19.718,12.554 19.909,11.813 19.909,10.947 C19.909,9.99 19.706,9.249 19.299,8.724 C18.826,8.108 18.085,7.799 17.076,7.799 L16.289,7.799 L16.289,6.855 L19.043,2.094 L15.718,2.094 L14.793,3.668 L14.203,3.668 L14.203,0.127 L21.875,0.127 L21.875,1.091 L18.964,6.107 C19.987,6.435 20.761,7.032 21.285,7.898 C21.809,8.763 22.072,9.779 22.072,10.946 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
