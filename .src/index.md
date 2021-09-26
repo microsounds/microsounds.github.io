@@ -27,7 +27,7 @@ Sometimes, this is a never-ending process.
 If it's about a project or an article on this website, feel free to open an issue or a pull request on Github.
 
 ### Misc
-<div style="width: 50%; margin-left: auto; margin-right: 0px;">
+<div style="width: 70%; margin-left: auto; margin-right: auto;">
 <img alt="filler" src="{DOC_ROOT}/static/button/88x31whitemarble.gif">
 <img alt="filler" src="{DOC_ROOT}/static/button/88x31pinkmarble.gif">
 <a href="https://www.debian.org/distrib"><img alt="debian" src="{DOC_ROOT}/static/button/debian.png"></a>
@@ -36,7 +36,7 @@ If it's about a project or an article on this website, feel free to open an issu
 <a href="https://www.youtube.com/watch?v=3rsBLRFONEs"><img alt="miku1" src="{DOC_ROOT}/static/button/hatsunemiku1.gif"></a>
 <a href="https://www.youtube.com/watch?v=NJAghsisnok"><img alt="miku2" src="{DOC_ROOT}/static/button/miku.gif"></a>
 <a href="https://www.youtube.com/watch?v=KGD-mFTY6mw"><img alt="lucky star" src="{DOC_ROOT}/static/button/konata.gif"></a>
-<a href="https://validator.w3.org/check/referer"><img alt="html" src="{DOC_ROOT}/static/button/valid-html401.png"></a>
+<a href="https://validator.w3.org/check/referer"><img alt="html" src="{DOC_ROOT}/static/button/valid-html5-blue.svg"></a>
 <a href="https://jigsaw.w3.org/css-validator/check/referer"><img alt="css" src="{DOC_ROOT}/static/button/valid-css-blue.png"></a>
 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="cc" src="{DOC_ROOT}/static/button/cc.png"></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img alt="gpl" src="{DOC_ROOT}/static/button/gplv3.gif"></a>
