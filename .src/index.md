@@ -32,7 +32,7 @@ If it's about a project or an article on this website, feel free to open an issu
 <img alt="filler" src="{DOC_ROOT}/static/button/88x31pinkmarble.gif">
 <a href="https://www.debian.org/distrib"><img alt="debian" src="{DOC_ROOT}/static/button/debian.png"></a>
 <a href="https://nano-editor.org"><img alt="nano" src="{DOC_ROOT}/static/button/nano.png"></a>
-<a href="https://www.youtube.com/watch?v=JmvOuyeqoLw&list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_"><img alt="vocaloid" src="{DOC_ROOT}/static/button/vocaloid.gif"></a>
+<a href="https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_"><img alt="vocaloid" src="{DOC_ROOT}/static/button/vocaloid.gif"></a>
 <a href="https://www.youtube.com/watch?v=3rsBLRFONEs"><img alt="miku1" src="{DOC_ROOT}/static/button/hatsunemiku1.gif"></a>
 <a href="https://www.youtube.com/watch?v=NJAghsisnok"><img alt="miku2" src="{DOC_ROOT}/static/button/miku.gif"></a>
 <a href="https://www.youtube.com/watch?v=KGD-mFTY6mw"><img alt="lucky star" src="{DOC_ROOT}/static/button/konata.gif"></a>
