@@ -27,7 +27,7 @@ Sometimes, this is a never-ending process.
 If it's about a project or an article on this website, feel free to open an issue or a pull request on Github.
 
 ### Misc
-<div style="width: 70%; margin-left: auto; margin-right: auto;">
+<div style="width: 70%; margin-left: auto; margin-right: 0px;">
 <img alt="filler" src="{DOC_ROOT}/static/button/88x31whitemarble.gif">
 <img alt="filler" src="{DOC_ROOT}/static/button/88x31pinkmarble.gif">
 <a href="https://www.debian.org/distrib"><img alt="debian" src="{DOC_ROOT}/static/button/debian.png"></a>
