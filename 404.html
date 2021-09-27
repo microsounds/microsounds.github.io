@@ -3,7 +3,7 @@
 <head>
 	<title>404 NOT FOUND</title>
 	<!-- distract the user with something dumb -->
-<!--	<meta http-equiv="refresh" content="1; url=https://www.youtube.com/watch?v=ZOf0K9nFxog" />-->
+	<meta http-equiv="refresh" content="1; url=https://www.youtube.com/watch?v=ZOf0K9nFxog" />
 </head>
 <body>
 <script>
@@ -41,11 +41,8 @@
 		'https://www.youtube.com/watch?v=SzT0dvNrFc4',
 		'https://www.youtube.com/watch?v=zkQUFb4SswY',
 	];
-	for (var i = 0; i < 1000; i++) {
-		var sel = urls[Math.floor(Math.random() * urls.length)];
-		document.body.innerHTML = '<h1>Taking you to ' + sel + '!</h1>';
-	}
-<!--	window.location.replace(urls[Math.floor(Math.random() * urls.length)]);-->
+	var sel = urls[Math.floor(Math.random() * urls.length)];
+	document.body.innerHTML += '<h1>Taking you to ' + sel + '!</h1>';
 	window.location.replace(sel);
 </script>
 <h1>404 NOT FOUND</h1>
