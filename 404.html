@@ -43,9 +43,10 @@
 	];
 	for (var i = 0; i < 100; i++) {
 		var sel = urls[Math.floor(Math.random() * urls.length)];
-		document.body.innerHTML = '<h1>Taking you to ' + sel + '!';
+		document.body.innerHTML = '<h1>Taking you to ' + sel + '!</h1>';
 	}
-	window.location.replace(urls[Math.floor(Math.random() * urls.length)]);
+<!--	window.location.replace(urls[Math.floor(Math.random() * urls.length)]);-->
+	window.location.replace(sel);
 </script>
 <h1>404 NOT FOUND</h1>
 </body>
