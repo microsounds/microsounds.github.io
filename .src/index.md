@@ -28,8 +28,11 @@ If it's about a project or an article on this website, feel free to open an issu
 
 ### Misc
 <div style="width: 70%; margin-left: auto; margin-right: auto;">
-<img alt="filler" src="{DOC_ROOT}/static/button/88x31whitemarble.gif">
-<img alt="filler" src="{DOC_ROOT}/static/button/88x31pinkmarble.gif">
+<!-- distract the user -->
+<a href="/eeeeeeeeeeeeeeeeeeeee">
+	<img alt="filler" src="{DOC_ROOT}/static/button/88x31whitemarble.gif">
+	<img alt="filler" src="{DOC_ROOT}/static/button/88x31pinkmarble.gif">
+</a>
 <a href="https://www.debian.org/distrib"><img alt="debian" src="{DOC_ROOT}/static/button/debian.png"></a>
 <a href="https://nano-editor.org"><img alt="nano" src="{DOC_ROOT}/static/button/nano.png"></a>
 <a href="https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_"><img alt="vocaloid" src="{DOC_ROOT}/static/button/vocaloid.gif"></a>
