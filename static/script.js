@@ -15,6 +15,8 @@ var loops = [
 	[ 'synthetic', 'FM Skyline - neon paradise' ],
 	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ],
+	[ 'waiting', 'Omori OST -  Snow Forest/A Single Flower Blooms' ],
+	[ 'wist', 'Breakbot - Back for More' ],
 	[ 'iridescent', 'Occult You - Transition' ],
 	[ 'decay', 'LOONA - Butterfly' ],
 	[ 'ballade', 'Genshin Impact OST - Stormterror Lair' ],
