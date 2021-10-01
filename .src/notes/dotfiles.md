@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 660, commit `59a677a`.
+### Revision No. 660, commit `b86d13c`.
 ### "Adding pandoc for generating manfiles from markdown documents"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
