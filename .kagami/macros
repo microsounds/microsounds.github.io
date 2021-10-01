@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # execute pre-run scripts
-export DOC_ROOT
+# will probably make a kagami built-in feature later
 for f in "$DOC_ROOT/.scripts/"*; do echo "Pre-run: '$f'"; $f; done
 
 # unsetting document root will rewrite links starting from /
