@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 659, commit `369d38c`.
-### "Documentation"
+### Revision No. 660, commit `59a677a`.
+### "Adding pandoc for generating manfiles from markdown documents"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -233,7 +233,7 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
 # Complete source listing
 <pre><code><b style="color: #63B0B0;">{AUTHOR}@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 6.2K   Aug 20 2021 15:40 rev. 110 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.1K   Aug 26 2021 20:38 rev. 68  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.1K   Sep 30 2021 22:33 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  200   Aug 19 2021 00:25 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
@@ -332,4 +332,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-09-27 -->
+<!-- updated 2021-09-30 -->
