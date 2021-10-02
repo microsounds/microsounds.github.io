@@ -5,7 +5,7 @@
 for f in "$DOC_ROOT/.scripts/"*; do echo "Pre-run: '$f'"; $f; done
 
 # unsetting document root will rewrite links starting from /
-#unset DOC_ROOT
+unset DOC_ROOT
 
 AUTHOR='microsounds'
 SITE_TITLE='sentimental µsounds'
