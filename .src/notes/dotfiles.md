@@ -1,6 +1,6 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 660, commit `b86d13c`.
-### "Adding pandoc for generating manfiles from markdown documents"
+### Revision No. 661, commit `ceb1fc5`.
+### "Nothing important"
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
@@ -35,7 +35,7 @@ Basic installation instructions are provided, along with some documentation for 
 	```shell
 	$ git clone --bare {GIT_REMOTE}/atelier ~/.config/meta
 	$ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
-	# Invoke the login shell to apply changes made to the environment
+	 # Invoke the login shell to apply changes made to the environment
 	$ exec $SHELL -l
 	```
 4. Run `post-install` in the shell to run post-install scripts automatically.
@@ -144,7 +144,7 @@ Post-install scripts will create symlink `/etc/X11/$(id -u)-override` that point
 For use with multi-monitor and/or complicated display setups, you can override the default display layout with one or more commands to `xrandr` saved to _optional_ config file `~/.xrandr`
 
 ```
-# two monitors, right is vertical
+ # two monitors, right is vertical
 --output HDMI-0 --auto --primary --rotate normal
 --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 ```
@@ -319,7 +319,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  13K   Aug 15 2021 00:00 rev. 134 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  13K   Oct  2 2021 00:43 rev. 135 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -332,4 +332,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-09-30 -->
+<!-- updated 2021-10-02 -->

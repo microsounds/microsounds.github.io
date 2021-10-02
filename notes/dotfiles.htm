@@ -4,33 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="Yn_X0a7RyXs1GuMzbXL2g3P-tH1A29W_6yyG6M8oBnk">
-	<link rel="shortcut icon" type="image/x-icon" href="/static/doki.ico">
-	<link rel="stylesheet" type="text/css" href="/static/style.css">
-	<script type="text/javascript" src="/static/script.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/home/microsounds/Git/microsounds.github.io/static/doki.ico">
+	<link rel="stylesheet" type="text/css" href="/home/microsounds/Git/microsounds.github.io/static/style.css">
+	<script type="text/javascript" src="/home/microsounds/Git/microsounds.github.io/static/script.js"></script>
 	<title>Selected documentation and usage notes for my dotfiles | sentimental µsounds</title>
 </head>
 <body>
 <audio hidden id="bgm"></audio>
 <div class="navbar">
-	<a href="/index.htm"><img class="avatar" alt="avatar" src="/static/avatar.png"></a>
+	<a href="/home/microsounds/Git/microsounds.github.io/index.htm"><img class="avatar" alt="avatar" src="/home/microsounds/Git/microsounds.github.io/static/avatar.png"></a>
 	<div class="container">
-		<div class="title"><a href="/index.htm">sentimental µsounds</a></div>
+		<div class="title"><a href="/home/microsounds/Git/microsounds.github.io/index.htm">sentimental µsounds</a></div>
 		<div class="subtitle">the echoes of time stand still</div>
 		<ul>
 			<li><a id="bgm_toggle" href="javascript:play()">♫ play</a></li>
 			<li><a href="https://github.com/microsounds">my github</a></li>
-			<li><a href="/notes/dotfiles.htm">my dotfiles</a></li>
-			<li><a href="/notes/index.htm">notes</a></li>
+			<li><a href="/home/microsounds/Git/microsounds.github.io/notes/dotfiles.htm">my dotfiles</a></li>
+			<li><a href="/home/microsounds/Git/microsounds.github.io/notes/index.htm">notes</a></li>
 		</ul>
 	</div>
 </div>
 <div class="content">
-<!--kagami v0.4.3 — static microblog processor-->
+<!--kagami v0.5.1 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles</h1>
-<h3>Revision No. 660, commit <code>b86d13c</code>.</h3>
-<h3>“Adding pandoc for generating manfiles from markdown documents”</h3>
+<h3>Revision No. 661, commit <code>ceb1fc5</code>.</h3>
+<h3>“Nothing important”</h3>
 <p>This document and repository is also available at <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
-<p>Last updated 🌓&#xFE0E; Thu, Sep 30th, 2021.</p>
+<p>Last updated 🌔&#xFE0E; Sat, Oct 2nd, 2021.</p>
 <h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div></h1>
 <div align="center">
 	<img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
@@ -71,7 +71,7 @@
 <li>Bootstrap the system automatically with a hard git reset from this repo, this is done only once.
 <pre><code class="language-shell">$ git clone --bare https://github.com/microsounds/atelier ~/.config/meta
 $ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
-# Invoke the login shell to apply changes made to the environment
+ # Invoke the login shell to apply changes made to the environment
 $ exec $SHELL -l
 </code></pre>
 </li>
@@ -357,7 +357,7 @@ Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code>
 <h2>Optional X Window configuration</h2>
 <h3><code>~/.xrandr</code></h3>
 <p>For use with multi-monitor and/or complicated display setups, you can override the default display layout with one or more commands to <code>xrandr</code> saved to <em>optional</em> config file <code>~/.xrandr</code></p>
-<pre><code># two monitors, right is vertical
+<pre><code> # two monitors, right is vertical
 --output HDMI-0 --auto --primary --rotate normal
 --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 </code></pre>
@@ -596,7 +596,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  13K   Aug 15 2021 00:00 rev. 134 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.htm">readme.htm</a>
+-rw-r--r-- 1  13K   Oct  2 2021 00:43 rev. 135 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.htm">readme.htm</a>
 -rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -609,13 +609,13 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-09-30 -->
+<!-- updated 2021-10-02 -->
 <hr>
 <div class="footnote">
 <p>
 site text CC BY-SA 4.0, source code GNU GPLv3+ —
 &copy; 2021 microsounds &lt;<a href="https://github.com/microsounds">https://github.com/microsounds</a>&gt;<br>
-Powered by <a href="https://github.com/microsounds/kagami">kagami v0.4.3 — static microblog processor</a>
+Powered by <a href="https://github.com/microsounds/kagami">kagami v0.5.1 — static microblog processor</a>
 </p>
 </div>
 </div>

@@ -60,7 +60,7 @@ html {
 /* links */
 a { color: #F5D6EA; text-decoration: none; }	
 a:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
-a:hover code:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
+code:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
 
 /* blockquotes */
 blockquote {
@@ -106,6 +106,16 @@ pre {
 	padding: 3px;
 }
 
+/* table of contents */
+.toc {
+	font-family: "Liberation Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+	background: rgba(0, 0, 0, 30%);                                                          
+	display: table;                                                                          
+	border: 2px solid #646464;
+	padding: 3px 10px 3px 10px;                                                              
+}                        
+
 /* tables */
 table {
 	margin: 0 30px 0 30px;
@@ -140,6 +150,7 @@ tr:nth-child(even) { background: #777; }
 	.navbar li:not(:last-child):after { content: " | "; } 
 	/* align special elements to edge of display */
 	pre { margin: unset; }
+	.toc { font-size: unset; }
 	table { margin: unset; }
 }
 
