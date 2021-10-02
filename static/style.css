@@ -60,7 +60,7 @@ html {
 /* links */
 a { color: #F5D6EA; text-decoration: none; }	
 a:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
-code:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
+a:hover code:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
 
 /* blockquotes */
 blockquote {
