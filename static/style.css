@@ -59,8 +59,7 @@ html {
 
 /* links */
 a { color: #F5D6EA; text-decoration: none; }	
-a:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
-a:hover code:hover { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
+a:hover, a:hover > * { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
 
 /* blockquotes */
 blockquote {
@@ -109,11 +108,12 @@ pre {
 /* table of contents */
 .toc {
 	font-family: "Liberation Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	background: rgba(0, 0, 0, 30%);                                                          
 	display: table;                                                                          
 	border: 2px solid #646464;
-	padding: 3px 10px 3px 10px;                                                              
+	padding: 3px 10px 3px 10px;
+	margin: 0 0 15px 0;
 }                        
 
 /* tables */
