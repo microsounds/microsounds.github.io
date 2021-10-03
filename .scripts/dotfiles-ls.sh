@@ -11,11 +11,15 @@ mesg="$(git meta log -1 --format=%s)"
 {	echo '# Selected documentation and usage notes for my dotfiles'
 	echo "### Revision No. $ver, commit \`$hash\`."
 	echo "### \"$mesg\""
+	echo '{TOC}'
 	echo 'This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.'
 	echo '\nLast updated {CREATED}.'
 
 	# rewrite relative markdown links
-	cat ~/readme.md | sed -E 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g'
+	# replace tabs with 4-space indents
+	cat ~/readme.md | sed -E \
+		-e 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g' \
+		-e 's/\t/    /g'
 	echo '# Complete source listing'
 	printf '%s' '<pre><code>'
 	cd ~
