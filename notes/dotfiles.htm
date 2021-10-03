@@ -26,21 +26,22 @@
 </div>
 <div class="content">
 <!--kagami v0.5.1 — static microblog processor-->
-<h1>Selected documentation and usage notes for my dotfiles</h1>
-<h3>Revision No. 661, commit <code>ceb1fc5</code>.</h3>
-<h3>“Nothing important”</h3>
-<p>This document and repository is also available at <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
+<h1>Selected documentation and usage notes for my dotfiles <span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
+<h3>Revision No. 661, commit <code>ceb1fc5</code>. <span id="-Revision-No-661-commit-ceb1fc5"></span></h3>
+<h3>“Nothing important” <span id="-Nothing-important"></span></h3>
+<p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a><ul><li><a href="#-Revision-No-661-commit-ceb1fc5">Revision No. 661, commit <code>ceb1fc5</code>.</a></li><li><a href="#-Nothing-important">“Nothing important”</a></li></ul></li><li><a href="#dotfilesateliershimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#-Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#-Using-git-meta">Using <code>git meta</code></a></li><li><a href="#-Using-onced-postinstall-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#-Window-manager">Window manager</a><ul><li><a href="#-Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#-X-server-invocation">X server invocation</a></li><li><a href="#-Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#-xrandr"><code>~/.xrandr</code></a></li><li><a href="#-xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#-X-resources-and-theming">X resources and theming</a><ul><li><a href="#-List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#-Nonstandard-commands">Non-standard commands</a></li><li><a href="#-cd"><code>cd</code></a></li><li><a href="#-chromium"><code>chromium</code></a></li><li><a href="#-nano"><code>nano</code></a></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div>
+This document and repository is also available at <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
 <p>Last updated 🌔&#xFE0E; Sat, Oct 2nd, 2021.</p>
-<h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div></h1>
+<h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div> <span id="dotfilesateliershimeji"></span></h1>
 <div align="center">
-	<img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
-	<img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
-	<a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg"></a>
-	<br>
-	<a href="https://debian.org/distrib/"><img src="https://img.shields.io/badge/Debian-bullseye-%23c70036.svg?logo=debian"></a>
-	<a href="https://dwm.suckless.org/"><img src="https://img.shields.io/badge/suckless-dwm-%23224488?logo=suckless"></a>
-	<a href="https://nano-editor.org/"><img src="https://shields.io/badge/Editor-GNU%20nano-%23440077?logo=windows-terminal"></a>
-	<a href="https://www.youtube.com/watch?v=UL8IpdFGeHU"><img src="https://img.shields.io/badge/theme-night drive-%2363B0B0?logo=github-sponsors"></a>
+    <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
+    <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
+    <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg"></a>
+    <br>
+    <a href="https://debian.org/distrib/"><img src="https://img.shields.io/badge/Debian-bullseye-%23c70036.svg?logo=debian"></a>
+    <a href="https://dwm.suckless.org/"><img src="https://img.shields.io/badge/suckless-dwm-%23224488?logo=suckless"></a>
+    <a href="https://nano-editor.org/"><img src="https://shields.io/badge/Editor-GNU%20nano-%23440077?logo=windows-terminal"></a>
+    <a href="https://www.youtube.com/watch?v=UL8IpdFGeHU"><img src="https://img.shields.io/badge/theme-night drive-%2363B0B0?logo=github-sponsors"></a>
 </div>
 <p>This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.</p>
 <ul>
@@ -56,7 +57,7 @@
 <blockquote>
 <p><em>Pictured: Debian stable, a “graphical shell” environment consisting mostly of Xorg, dwm, sxhkd, and urxvtd.</em></p>
 </blockquote>
-<h1>Quick start</h1>
+<h1>Quick start <span id="Quick-start"></span></h1>
 <ol>
 <li>Install Debian stable, perform a base install with no DE selected and no standard utilities when prompted.
 <ul>
@@ -87,9 +88,9 @@ $ exec $SHELL -l
 </li>
 </ol>
 <a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
-	<img height="150px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
+    <img height="150px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
 </a>
-<h2>Quick start on Termux for Android</h2>
+<h2>Quick start on Termux for Android <span id="-Quick-start-on-Termux-for-Android"></span></h2>
 <p>Currently, only a basic shell environment in single-user mode is supported.</p>
 <ol>
 <li>Install <code>git</code>, and bootstrap the system using <code>git reset --hard</code> as described above.</li>
@@ -99,8 +100,8 @@ $ exec $SHELL -l
 </ul>
 </li>
 </ol>
-<h1>Usage notes</h1>
-<h2>Using <code>git meta</code></h2>
+<h1>Usage notes <span id="Usage-notes"></span></h1>
+<h2>Using <code>git meta</code> <span id="-Using-git-meta"></span></h2>
 <p>For local-scope changes, files in <code>$HOME</code> are versioned and mangled in place using Git.</p>
 <ul>
 <li><code>$HOME</code> is considered the detached working tree for a git <strong>bare repo</strong> located at <code>~/.config/meta</code></li>
@@ -112,7 +113,7 @@ $ exec $SHELL -l
 </ul>
 </li>
 </ul>
-<h2>Using <code>~/.once.d</code> post-install scripts</h2>
+<h2>Using <code>~/.once.d</code> post-install scripts <span id="-Using-onced-postinstall-scripts"></span></h2>
 <p>All system-wide changes are performed through automated scripts located in <a href="https://github.com/microsounds/atelier/blob/master/.once.d"><code>~/.once.d</code></a>, you can run them all at once with shell function <code>post-install</code>. Each script is self-contained, you can run them individually, anytime.</p>
 <ul>
 <li>Some scripts only apply to specific hardware configurations, and will exit even if they are run.</li>
@@ -159,7 +160,7 @@ $ exec $SHELL -l
 </tr>
 </tbody>
 </table>
-<h2>Window manager</h2>
+<h2>Window manager <span id="-Window-manager"></span></h2>
 <p><code>dwm</code> keybinds are the <a href="https://ratfactor.com/dwm">defaults</a> with several exceptions.
 Primary modkey <code>Mod1</code> is super instead of alt.</p>
 <table>
@@ -303,7 +304,7 @@ Primary modkey <code>Mod1</code> is super instead of alt.</p>
 </tr>
 </tbody>
 </table>
-<h3>Reduced layout for Chromebooks</h3>
+<h3>Reduced layout for Chromebooks <span id="-Reduced-layout-for-Chromebooks"></span></h3>
 <p>Search/Everything/Caps lock key serves as the super key. Same as above, with the following changes:</p>
 <table>
 <thead>
@@ -346,16 +347,16 @@ Primary modkey <code>Mod1</code> is super instead of alt.</p>
 </tr>
 </tbody>
 </table>
-<h1>Some environment notes</h1>
-<h2>X server invocation</h2>
+<h1>Some environment notes <span id="Some-environment-notes"></span></h1>
+<h2>X server invocation <span id="-X-server-invocation"></span></h2>
 <p>No login manager is used, login to <code>tty1</code> to start the graphical shell.
 All daemons and services required to support the graphical shell are initialized along with the X server and are terminated when the user terminates the session.</p>
 <p><code>systemd</code> unit services, cronjobs and similar mechanisms are avoided.</p>
 <p>At startup, <code>startx</code> will pass hardware-specific <code>xorg.conf</code> files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.</p>
 <p>Xorg’s security model forbids non-root users from passing arbitrary config files to the X server unless they are located in one of several “blessed” directories.
 Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code> that points to <code>~/.config/xorg</code> to override this behavior.</p>
-<h2>Optional X Window configuration</h2>
-<h3><code>~/.xrandr</code></h3>
+<h2>Optional X Window configuration <span id="-Optional-X-Window-configuration"></span></h2>
+<h3><code>~/.xrandr</code> <span id="-xrandr"></span></h3>
 <p>For use with multi-monitor and/or complicated display setups, you can override the default display layout with one or more commands to <code>xrandr</code> saved to <em>optional</em> config file <code>~/.xrandr</code></p>
 <pre><code> # two monitors, right is vertical
 --output HDMI-0 --auto --primary --rotate normal
@@ -363,14 +364,14 @@ Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code>
 </code></pre>
 <p>Commands in this file are passed to <a href="https://github.com/microsounds/atelier/blob/master/Scripts/xrandr_cycle.sh"><code>xrandr-cycle</code></a> line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.</p>
-<h3><code>~/.xdecor</code></h3>
+<h3><code>~/.xdecor</code> <span id="-xdecor"></span></h3>
 <p>You can designate one or more paths to directories containing images or videos for use as a wallpaper using <em>optional</em> config file <code>~/.xdecor</code></p>
 <pre><code>~/Pictures/some/path
 /media/sd_card/some/path
 </code></pre>
 <p>If it exists, <a href="https://github.com/microsounds/atelier/blob/master/Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper on startup.
 In the case of video files, a random video frame from that file will be taken and set as the wallpaper using <code>ffmpeg</code>.</p>
-<h2>X resources and theming</h2>
+<h2>X resources and theming <span id="-X-resources-and-theming"></span></h2>
 <p>For consistency, <code>xinit</code>, <code>dwm</code> and other scripts make use of the C preprocessor to mangle config files and configure color schemes.</p>
 <p>Theme settings and indivdual color schemes are stored as C header files containing preprocessor macros representing color hex codes in <a href="https://github.com/microsounds/atelier/blob/master/.local/include"><code>~/.local/include</code></a>.
 This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
@@ -381,7 +382,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </ul>
 </li>
 </ul>
-<h3>List of available macros</h3>
+<h3>List of available macros <span id="-List-of-available-macros"></span></h3>
 <ul>
 <li><code>{FG,BG}COLOR</code> for terminal fg/bg colors</li>
 <li><code>{FG,BG}LIGHT</code> for UX highlight colors</li>
@@ -390,7 +391,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <li><code>FN_{TERM,HEADER}_JP</code> for matching fallback fonts</li>
 <li><code>FN_{TERM,HEADER,TEXT}_SIZE</code> for matching font sizes</li>
 </ul>
-<h2>Non-standard commands</h2>
+<h2>Non-standard commands <span id="-Nonstandard-commands"></span></h2>
 <p>Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:</p>
 <ol>
 <li>Interactive shell functions defined in <a href="https://github.com/microsounds/atelier/blob/master/.bashrc"><code>~/.bashrc</code></a></li>
@@ -406,7 +407,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </li>
 <li><code>/usr/bin</code> system-wide executables</li>
 </ol>
-<h2><code>cd</code></h2>
+<h2><code>cd</code> <span id="-cd"></span></h2>
 <ul>
 <li>
 <p>The contents of <code>$OLDPWD</code> is preserved between sessions.</p>
@@ -433,7 +434,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </table>
 </li>
 </ul>
-<h2><code>chromium</code></h2>
+<h2><code>chromium</code> <span id="-chromium"></span></h2>
 <p><em>NOTE: On first-run, <code>chromium</code> will momentarily exit and restart to rebuild configuration and enable use of externally customized color options.</em></p>
 <p><code>chromium</code> was extended to mangle the user-hostile per-profile <code>Preferences</code> and global <code>Local State</code> JSON files with a series of chained <code>jq</code> filters stored in the following files, applying persistent settings in order.</p>
 <ul>
@@ -441,7 +442,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <li><a href="https://github.com/microsounds/atelier/blob/master/.config/chromium/local_state.conf"><code>~/.config/chromium/local_state.conf</code></a></li>
 </ul>
 <p>C preprocessor syntax is also accepted, hex color values in the form <code>#RRGGBB</code> will be converted to a signed integer representing <code>0xBBGGRRAA</code> in two’s complement hexadecimal with <code>AA</code> (alpha channel) always set to <code>0xFF</code></p>
-<h2><code>nano</code></h2>
+<h2><code>nano</code> <span id="-nano"></span></h2>
 <p><em>NOTE: <code>nano</code> keybind macros make use of inline non-printable control characters, you must use <code>nano</code> or <code>cat -v</code> to view <a href="https://github.com/microsounds/atelier/blob/master/.nanorc"><code>~/.nanorc</code></a> correctly.</em></p>
 <ul>
 <li>
@@ -507,7 +508,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </table>
 </li>
 </ul>
-<h1>Complete source listing</h1>
+<h1>Complete source listing <span id="Complete-source-listing"></span></h1>
 <pre><code><b style="color: #63B0B0;">microsounds@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 6.2K   Aug 20 2021 15:40 rev. 110 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Sep 30 2021 22:33 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>

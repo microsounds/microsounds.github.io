@@ -1,25 +1,26 @@
 # Selected documentation and usage notes for my dotfiles
 ### Revision No. 661, commit `ceb1fc5`.
 ### "Nothing important"
+{TOC}
 This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
 <div align="center">
-	<img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
-	<img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
-	<a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg"></a>
-	<br>
-	<a href="https://debian.org/distrib/"><img src="https://img.shields.io/badge/Debian-bullseye-%23c70036.svg?logo=debian"></a>
-	<a href="https://dwm.suckless.org/"><img src="https://img.shields.io/badge/suckless-dwm-%23224488?logo=suckless"></a>
-	<a href="https://nano-editor.org/"><img src="https://shields.io/badge/Editor-GNU%20nano-%23440077?logo=windows-terminal"></a>
-	<a href="https://www.youtube.com/watch?v=UL8IpdFGeHU"><img src="https://img.shields.io/badge/theme-night drive-%2363B0B0?logo=github-sponsors"></a>
+    <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
+    <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
+    <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg"></a>
+    <br>
+    <a href="https://debian.org/distrib/"><img src="https://img.shields.io/badge/Debian-bullseye-%23c70036.svg?logo=debian"></a>
+    <a href="https://dwm.suckless.org/"><img src="https://img.shields.io/badge/suckless-dwm-%23224488?logo=suckless"></a>
+    <a href="https://nano-editor.org/"><img src="https://shields.io/badge/Editor-GNU%20nano-%23440077?logo=windows-terminal"></a>
+    <a href="https://www.youtube.com/watch?v=UL8IpdFGeHU"><img src="https://img.shields.io/badge/theme-night drive-%2363B0B0?logo=github-sponsors"></a>
 </div>
 
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
 * Git is used to maintain an identical and reproducible setup across multiple machines.
 * A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d) document and reproduce system-wide deviations from a fresh install.
-	* _Unit testing ensures a reproducible installation with each new change to post-install scripts._
+    * _Unit testing ensures a reproducible installation with each new change to post-install scripts._
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
 
@@ -28,23 +29,23 @@ Basic installation instructions are provided, along with some documentation for 
 
 # Quick start
 1. Install Debian stable, perform a base install with no DE selected and no standard utilities when prompted.
-	* _Do not perform these steps on `tty1`, `xinit` will launch without `dwm` present and you will be kicked._
+    * _Do not perform these steps on `tty1`, `xinit` will launch without `dwm` present and you will be kicked._
 2. Install `git`, `wget`, and `sudo`, then add yourself to the `sudo` group.
-	* Log back in to apply changes to group membership.
+    * Log back in to apply changes to group membership.
 3. Bootstrap the system automatically with a hard git reset from this repo, this is done only once.
-	```shell
-	$ git clone --bare {GIT_REMOTE}/atelier ~/.config/meta
-	$ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
-	 # Invoke the login shell to apply changes made to the environment
-	$ exec $SHELL -l
-	```
+    ```shell
+    $ git clone --bare {GIT_REMOTE}/atelier ~/.config/meta
+    $ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
+     # Invoke the login shell to apply changes made to the environment
+    $ exec $SHELL -l
+    ```
 4. Run `post-install` in the shell to run post-install scripts automatically.
-	* _Sets up the package manager, installs essential packages, compiles window manager, text editor, etc._
+    * _Sets up the package manager, installs essential packages, compiles window manager, text editor, etc._
 5. Reboot to finish.
-	* _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
+    * _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
 
 <a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
-	<img height="150px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
+    <img height="150px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
 </a>
 
 ## Quick start on Termux for Android
@@ -52,7 +53,7 @@ Currently, only a basic shell environment in single-user mode is supported.
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/blob/master/.once.d/a0-android-termux.sh)
-	* Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
+    * Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
 
 # Usage notes
 ## Using `git meta`
@@ -61,7 +62,7 @@ For local-scope changes, files in `$HOME` are versioned and mangled in place usi
 * The `meta` alias prefixes all git commands with `--git-dir=$HOME/.config/meta --work-tree=$HOME`
 * `meta status` will ignore files not manually added or tracked by this git repo.
 * Invoking `git` outside of a valid git directory will append the `meta` alias automatically.
-	* _`init` and `clone` commands are unaffected._
+    * _`init` and `clone` commands are unaffected._
 
 ## Using `~/.once.d` post-install scripts
 All system-wide changes are performed through automated scripts located in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d), you can run them all at once with shell function `post-install`. Each script is self-contained, you can run them individually, anytime.
@@ -70,9 +71,9 @@ All system-wide changes are performed through automated scripts located in [`~/.
 * Scripts affecting `systemd` or the bootloader will be skipped in virtualized container contexts.
 * Sideloaded software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin) when possible.
 * [`~/.comforts-git`]({GIT_REMOTE}/atelier/blob/master/.comforts-git) describes small sideloaded utilities that will be installed automatically at runtime via git.
-	* Repos must have a valid makefile install recipe using the `$(PREFIX)` metaphor.
+    * Repos must have a valid makefile install recipe using the `$(PREFIX)` metaphor.
 * [`~/.comforts`]({GIT_REMOTE}/atelier/blob/master/.comforts) describes the full list of non-optional package groups that will be installed.
-	* Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.
+    * Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.
 
 | series | function |
 | -- | -- |
@@ -168,7 +169,7 @@ Theme settings and indivdual color schemes are stored as C header files containi
 This directory is appended to `$C_INCLUDE_PATH` at login.
 
 * Invoking shell function `reload` will reload changes to `.xresources` and refresh your terminal instance.
-	* _Optionally, you can temporarily apply another existing color scheme by naming it as an argument._
+    * _Optionally, you can temporarily apply another existing color scheme by naming it as an argument._
 
 ### List of available macros
 * `{FG,BG}COLOR` for terminal fg/bg colors
@@ -183,19 +184,19 @@ Several commands are extended to include impure functions, such as purposefully 
 
 1. Interactive shell functions defined in [`~/.bashrc`]({GIT_REMOTE}/atelier/blob/master/.bashrc)
 2. Non-interactive shell library functions [`~/.local/lib`]({GIT_REMOTE}/atelier/blob/master/.local/lib)
-	* Shell script snippets used by multiple scripts to reduce clutter.
+    * Shell script snippets used by multiple scripts to reduce clutter.
 3. Normal executables and symlinks in [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin)
-	* Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
+    * Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
 4. `/usr/bin` system-wide executables
 
 ## `cd`
 * The contents of `$OLDPWD` is preserved between sessions.
 * `cd` offers the following extensions:
 
-	| opt | function |
-	| -- | -- |
-	| `...`, `....`, etc. | Shorthand for `../../`, `../../../` and so on. |
-	| `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
+    | opt | function |
+    | -- | -- |
+    | `...`, `....`, etc. | Shorthand for `../../`, `../../../` and so on. |
+    | `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
 
 ## `chromium`
 _NOTE: On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
@@ -211,22 +212,22 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
 
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
 
-	| opt | function |
-	| -- | -- |
-	| `-e, --ctags <tag> <#>`  | Jumps into file containing `ctags` definition matching `<tag>`.<br>Optional `<#>` selects from multiple matches, `all` will open all of them. |
-	| `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br>File will be created if it doesn't exist. |
-	| `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br>File will be created if it doesn't exist. |
-	| `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br>File will be created if it doesn't exist. |
-	| `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in `ssh-agent` |
+    | opt | function |
+    | -- | -- |
+    | `-e, --ctags <tag> <#>`  | Jumps into file containing `ctags` definition matching `<tag>`.<br>Optional `<#>` selects from multiple matches, `all` will open all of them. |
+    | `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br>File will be created if it doesn't exist. |
+    | `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br>File will be created if it doesn't exist. |
+    | `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br>File will be created if it doesn't exist. |
+    | `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in `ssh-agent` |
 
 * Once inside the actual `nano`, the following keybind macros are available:
 
-	| key | function |
-	| -- | -- |
-	| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
-	| `M-1` | Execute current line as shell command and paste output in current buffer.<br>_Inline comments ok._ |
-	| `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br>_Requires valid `tags` file in current or a parent directory._ |
-	| `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br>_Requires valid `tags` file in current or a parent directory._ |
+    | key | function |
+    | -- | -- |
+    | `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
+    | `M-1` | Execute current line as shell command and paste output in current buffer.<br>_Inline comments ok._ |
+    | `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br>_Requires valid `tags` file in current or a parent directory._ |
+    | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br>_Requires valid `tags` file in current or a parent directory._ |
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
