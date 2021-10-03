@@ -1,8 +1,10 @@
 # Selected documentation and usage notes for my dotfiles
-### Revision No. 661, commit `ceb1fc5`.
-### "Nothing important"
+**Revision No. 661, commit `ceb1fc5`.**
+
+**"Nothing important"**
 {TOC}
-This document and repository is also available at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
+This document and repository is also available at
+[`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 
 Last updated {CREATED}.
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
