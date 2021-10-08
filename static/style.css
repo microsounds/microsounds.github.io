@@ -125,8 +125,8 @@ table {
 th, td { border: 2px solid #666; }
 th { padding: 10px 5px 10px 5px; background: #777; }
 td { padding: 5px; }
-tr { background: #999; }
-tr:nth-child(even) { background: #777; }
+tr { background: rgba(0, 0, 0, 30%); }
+tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	
 /* end of page footnote */
 .footnote {
