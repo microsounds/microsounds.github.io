@@ -57,6 +57,9 @@ html {
 .navbar ul { margin: unset; padding: unset; list-style: none; }
 .navbar li { border-top: 1px dotted #FFFFFF; }
 
+/* svg icons */
+.icon { height: 0.75em; }
+
 /* links */
 a { color: #F5D6EA; text-decoration: none; }	
 a:hover, a:hover > * { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
