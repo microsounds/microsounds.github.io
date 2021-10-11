@@ -2,10 +2,9 @@
 # List of low profile GPUs for small form factor PCs (SFFs)
 {CREATED}
 
-> This list is not obsolete, there have been no new LP cards announced or released since 2020.
-> However, the retail and aftermarket prices of every worthwhile discrete GPU on this list have skyrocketed to obscene levels since this article was first written.
-> Due to market forces, manufacturers have very little incentive to exchange or replace a defective card under warranty, opting to refund your purchase price instead, this will almost certainly be less than the current market value of your card, you have been warned.
-> <br>_**Suggestion: Buy an AMD APU-based SFF system and play your games on low/medium. Add a dGPU down the road if availability and prices ever go back to normal.**_
+> Due to market forces, there have been no new LP cards announced or released since Q2 2020, this list is still up to date.
+> I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.
+> <br>I recommend buying an AMD APU-based system and running games on low/medium settings until such a time when dGPUs become available at MSRP again, _someday~_
 
 ![img](assets/low_profile_gpu.jpg)
 
