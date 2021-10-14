@@ -27,12 +27,12 @@
 <div class="content">
 <!--kagami v0.5.2 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 662, commit <code>4a3189e</code>.</strong></p>
-<p><strong>“Nothing important”</strong>
+<p><strong>Revision No. 663, commit <code>bc02743</code>.</strong></p>
+<p><strong>“git: Renamed git sync, git sync now synchronizes ~/Git directory”</strong>
 <div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#dotfilesateliershimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#-Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#-Using-git-meta">Using <code>git meta</code></a></li><li><a href="#-Using-onced-postinstall-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#-Window-manager">Window manager</a><ul><li><a href="#-Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#-X-server-invocation">X server invocation</a></li><li><a href="#-Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#-xrandr"><code>~/.xrandr</code></a></li><li><a href="#-xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#-X-resources-and-theming">X resources and theming</a><ul><li><a href="#-List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#-Nonstandard-commands">Non-standard commands</a></li><li><a href="#-cd"><code>cd</code></a></li><li><a href="#-chromium"><code>chromium</code></a></li><li><a href="#-nano"><code>nano</code></a></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div>
 This document and repository is also available at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
-<p>Last updated 🌕&#xFE0E; Mon, Oct 4th, 2021.</p>
+<p>Last updated 🌗&#xFE0E; Wed, Oct 13th, 2021.</p>
 <h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div><span id="dotfilesateliershimeji"></span></h1>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
@@ -511,7 +511,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </ul>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><b style="color: #63B0B0;">microsounds@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1 6.2K   Aug 20 2021 15:40 rev. 110 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 6.4K   Oct 13 2021 18:44 rev. 111 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Sep 30 2021 22:33 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  200   Aug 19 2021 00:25 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -535,7 +535,7 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rw-r--r-- 1  628   Jan 18 2021 21:56 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
+-rw-r--r-- 1  629   Oct 13 2021 18:44 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 2.6K   Aug 28 2021 01:08 rev. 18  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1 1.5K   Aug 26 2021 14:37 rev. 13  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
@@ -611,7 +611,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-10-04 -->
+<!-- updated 2021-10-13 -->
 <hr>
 <div class="footnote">
 <p>
