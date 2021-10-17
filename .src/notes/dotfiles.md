@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 663, commit `bc02743`.**
+**Revision No. 664, commit `0769c7b`.**
 
-**"git: Renamed git sync, git sync now synchronizes ~/Git directory"**
+**"Nothing important"**
 {TOC}
 This document and repository is also available at
 [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
@@ -323,7 +323,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  13K   Oct  4 2021 22:21 rev. 136 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
--rw-r--r-- 1  136   Feb 16 2021 22:46 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
+-rw-r--r-- 1  104   Oct 17 2021 13:21 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 4.7K   Sep 25 2021 19:21 rev. 42  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
@@ -335,4 +335,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-10-13 -->
+<!-- updated 2021-10-17 -->

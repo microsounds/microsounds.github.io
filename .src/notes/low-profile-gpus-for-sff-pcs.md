@@ -33,11 +33,9 @@ Some people might find it appealing to drop a 75W GPU into an existing prebuilt 
 If you do decide to go this route, be aware that ***low-end prebuilt desktops may have inadequate motherboard voltage regulation and can exhibit performance throttling*** due to aggressive cost-cutting decisions made by the OEM. Bad VRMs and inadequate power supplied to the motherboard can turn your CPU into a bottleneck when it proves unable to sustain your CPU's intended boost clock speeds.
 You may very well not be satisfied with the performance gains compared to published benchmarks running on unencumbered hardware.
 
-
 You might also find that some SFF prebuilts have less than ideal PCIe placement.
 In the case of many late model [Dell Optiplex SFFs][5], they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against other components, unable to accomodate most modern cards which are 2 slots at the bare minimum.
 In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of roughly 10% on a GTX 1050/1650, potentially more on more powerful cards.
-
 
 # 1-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Comments |
@@ -65,6 +63,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | Nvidia Quadro P620 | 2018 | 3639 | Workstation card. |
 | AMD Radeon Pro WX 4100 | 2017 | 3758 | Workstation card. |
 | Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
+| Nvidia Quadro T1000 | 2019 | 6472 | Workstation card. |
 
 # 2-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Comments |
