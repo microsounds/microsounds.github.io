@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 667, commit `d4ad236`.**
+**Revision No. 667, commit `e6c9c26`.**
 
 **"More documentation"**
 {TOC}
@@ -214,16 +214,16 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 
 See **Usage Notes** for more information.
 
-_This is a critical component of the graphic shell environment, some aliases are cumulative in nature._
+* _This is a critical component of the graphic shell environment, some aliases are cumulative in nature._
 
-| alias | function |
-| -- | -- |
-| `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command, added implicitly when outside a git directory. |
-| `summary` | Outlines the last 20 commits with a commit graph. |
-| `flatten` | Automatically merges `--fixup` commits out of existence if found within the latest 5 commits. |
-| `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
-| `shove` | Runs `checkin` and pushes immediately. |
-| `sync` | Runs `git meta pull` and then recurses through `~/Git` directory, running `git pull` on every existing `git` repo found. |
+    | alias | function |
+    | -- | -- |
+    | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command, added implicitly when outside a git directory. |
+    | `summary` | Outlines the last 20 commits with a commit graph. |
+    | `flatten` | Automatically merges `--fixup` commits out of existence if found within the latest 5 commits. |
+    | `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
+    | `shove` | Runs `checkin` and pushes immediately. |
+    | `sync` | Runs `git meta pull` and then recurses through `~/Git` directory, running `git pull` on every existing `git` repo found. |
 
 ## `nano`
 _NOTE: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._

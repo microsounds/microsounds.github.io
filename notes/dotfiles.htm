@@ -27,7 +27,7 @@
 <div class="content">
 <!--kagami v0.5.2 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 667, commit <code>d4ad236</code>.</strong></p>
+<p><strong>Revision No. 667, commit <code>e6c9c26</code>.</strong></p>
 <p><strong>“More documentation”</strong>
 <div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#dotfilesateliershimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#-Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#-Using-git-meta">Using <code>git meta</code></a></li><li><a href="#-Using-onced-postinstall-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#-Window-manager">Window manager</a><ul><li><a href="#-Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#-X-server-invocation">X server invocation</a></li><li><a href="#-Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#-xrandr"><code>~/.xrandr</code></a></li><li><a href="#-xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#-X-resources-and-theming">X resources and theming</a><ul><li><a href="#-List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#-Nonstandard-commands">Non-standard commands</a></li><li><a href="#-cd"><code>cd</code></a></li><li><a href="#-chromium"><code>chromium</code></a></li><li><a href="#-git"><code>git</code></a></li><li><a href="#-nano"><code>nano</code></a></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div>
 This document and repository is also available at
@@ -446,6 +446,8 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <h2><code>git</code><span id="-git"></span></h2>
 <p><code>git</code> aliases are defined in <a href="https://github.com/microsounds/atelier/blob/master/.gitconfig"><code>~/.gitconfig</code></a> or implemented in interactive shell function <code>git()</code></p>
 <p>See <strong>Usage Notes</strong> for more information.</p>
+<ul>
+<li>
 <p><em>This is a critical component of the graphic shell environment, some aliases are cumulative in nature.</em></p>
 <table>
 <thead>
@@ -481,6 +483,8 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 <h2><code>nano</code><span id="-nano"></span></h2>
 <p><em>NOTE: <code>nano</code> keybind macros make use of inline non-printable control characters, you must use <code>nano</code> or <code>cat -v</code> to view <a href="https://github.com/microsounds/atelier/blob/master/.nanorc"><code>~/.nanorc</code></a> correctly.</em></p>
 <ul>
