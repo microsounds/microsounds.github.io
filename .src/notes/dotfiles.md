@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 666, commit `802c06d`.**
+**Revision No. 667, commit `d4ad236`.**
 
-**"Documentation"**
+**"More documentation"**
 {TOC}
 This document and repository is also available at
 [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
@@ -210,17 +210,20 @@ _NOTE: On first-run, `chromium` will momentarily exit and restart to rebuild con
 C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xBBGGRRAA` in two's complement hexadecimal with `AA` (alpha channel) always set to `0xFF`
 
 ## `git`
-`git` aliases are defined in [`~/.gitconfig`]({GIT_REMOTE}/atelier/blob/master/.gitconfig) or implemented in interactive shell function `git()`.
+`git` aliases are defined in [`~/.gitconfig`]({GIT_REMOTE}/atelier/blob/master/.gitconfig) or implemented in interactive shell function `git()`
 
-This is a critical component of the graphic shell environment. See *Usage Notes* for more information.
+See **Usage Notes** for more information.
+
+_This is a critical component of the graphic shell environment, some aliases are cumulative in nature._
 
 | alias | function |
 | -- | -- |
+| `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command, added implicitly when outside a git directory. |
 | `summary` | Outlines the last 20 commits with a commit graph. |
-| `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to the `git` command, added implicitly when outside a git directory. |
 | `flatten` | Automatically merges `--fixup` commits out of existence if found within the latest 5 commits. |
 | `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
 | `shove` | Runs `checkin` and pushes immediately. |
+| `sync` | Runs `git meta pull` and then recurses through `~/Git` directory, running `git pull` on every existing `git` repo found. |
 
 ## `nano`
 _NOTE: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
@@ -335,7 +338,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  14K   Oct 17 2021 23:34 rev. 137 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  14K   Oct 17 2021 23:42 rev. 138 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  104   Oct 17 2021 13:21 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
