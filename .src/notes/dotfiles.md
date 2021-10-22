@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 672, commit `f4efd1f`.**
+**Revision No. 673, commit `bf3587c`.**
 
-**"Less harsh default terminal colors for use in sc"**
+**"sc: Enable use of runtime external macro scripts for mangling spreadsheets"**
 {TOC}
 This document and repository is also available at
 [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
@@ -252,11 +252,48 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
     | `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br>_Requires valid `tags` file in current or a parent directory._ |
     | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br>_Requires valid `tags` file in current or a parent directory._ |
 
+## `sc` (spreadsheet calculator)
+`sc` supports macros to some degree, but it's macro documentation is largely non-existent or difficult to understand.
+
+Instead, the shell function `sc()` offers an easier to understand macro system for mangling `.sc` spreadsheet files at runtime.
+* `sc` will automatically run any executable sharing the same initial name as the `.sc` file.
+    * _eg. `sheet1.sc` will run `sheet1.sc.1`, `sheet1.scx`, etc. if they exist in the same directory and are executable at runtime._
+* You can write an arbitrarly complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
+    * _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
+
+Here's en example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.
+```shell
+#!/usr/bin/env sh
+# apply colors to specific strings in column B
+
+file="${0%.*}" # derive .sc file name from name of this script
+
+# remove all instances of color from the file in place
+{ rm "$file"; egrep -v '^color' > "$file"; } < "$file"
+
+cat <<- EOF >> "$file" # set some non-default colors
+    color 3 = @black;@red
+    color 4 = @black;@yellow
+    color 5 = @black;@green
+EOF
+# select only string cells from Column B, apply colors based on string contents
+# sc format: leftstring B2 = "example string"
+egrep '^((left|right)string|label)' < "$file" | while read -r cmd cell _ str; do
+    case "$cell" in B*)
+        case "$str" in
+            *broken*) echo "color $cell:$cell 3";;
+            *bad*) echo "color $cell:$cell 4";;
+            *working*) echo "color $cell:$cell 5";;
+        esac;;
+    esac
+done >> "$file"
+```
+
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
 <pre><code><b style="color: #63B0B0;">{AUTHOR}@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1 6.8K   Oct 21 2021 23:42 rev. 114 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 7.2K   Oct 22 2021 15:52 rev. 115 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Oct 17 2021 22:00 rev. 70  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  200   Aug 19 2021 00:25 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  234   Jul  4 2021 01:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -345,7 +382,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  15K   Oct 21 2021 21:08 rev. 140 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  16K   Oct 22 2021 15:52 rev. 141 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  127   Oct 21 2021 23:42 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -358,4 +395,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-10-21 -->
+<!-- updated 2021-10-22 -->
