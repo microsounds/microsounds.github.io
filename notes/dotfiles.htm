@@ -27,9 +27,9 @@
 <div class="content">
 <!--kagami v0.5.2 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 673, commit <code>bf3587c</code>.</strong></p>
+<p><strong>Revision No. 673, commit <code>fb7bf0a</code>.</strong></p>
 <p><strong>“sc: Enable use of runtime external macro scripts for mangling spreadsheets”</strong>
-<div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#dotfilesateliershimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#-Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#-Using-git-meta">Using <code>git meta</code></a></li><li><a href="#-Using-onced-postinstall-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#-Window-manager">Window manager</a><ul><li><a href="#-Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#-X-server-invocation">X server invocation</a></li><li><a href="#-Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#-xrandr"><code>~/.xrandr</code></a></li><li><a href="#-xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#-X-resources-and-theming">X resources and theming</a><ul><li><a href="#-List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Nonstandard-commands">Non-standard commands</a><ul><li><a href="#-cd"><code>cd</code></a></li><li><a href="#-chromium"><code>chromium</code></a></li><li><a href="#-git"><code>git</code></a></li><li><a href="#-nano"><code>nano</code></a></li><li><a href="#-sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a></li></ul></li><li><a href="#usrbinenv-sh">sh</a></li><li><a href="#apply-colors-to-specific-strings-in-column-B">apply colors to specific strings in column B</a></li><li><a href="#remove-all-instances-of-color-from-the-file-in-place">remove all instances of color from the file in place</a></li><li><a href="#select-only-string-cells-from-Column-B-apply-colors-based-on-string-contents">select only string cells from Column B, apply colors based on string contents</a></li><li><a href="#sc-format-leftstring-B2--example-string">sc format: leftstring B2 = “example string”</a></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div>
+<div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#dotfilesateliershimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#-Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#-Using-git-meta">Using <code>git meta</code></a></li><li><a href="#-Using-onced-postinstall-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#-Window-manager">Window manager</a><ul><li><a href="#-Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#-X-server-invocation">X server invocation</a></li><li><a href="#-Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#-xrandr"><code>~/.xrandr</code></a></li><li><a href="#-xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#-X-resources-and-theming">X resources and theming</a><ul><li><a href="#-List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Nonstandard-commands">Non-standard commands</a><ul><li><a href="#-cd"><code>cd</code></a></li><li><a href="#-chromium"><code>chromium</code></a></li><li><a href="#-git"><code>git</code></a></li><li><a href="#-nano"><code>nano</code></a></li><li><a href="#-sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div>
 This document and repository is also available at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
 <p>Last updated 🌑&#xFE0E; Fri, Oct 22nd, 2021.</p>
@@ -566,12 +566,12 @@ This can be useful when dealing with TUI applications that force their own backg
 </li>
 </ul>
 <p>Here’s en example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.</p>
-<pre><code class="language-shell">#!/usr/bin/env sh&lt;span id=&quot;usrbinenv-sh&quot;&gt;&lt;/span&gt;
-# apply colors to specific strings in column B&lt;span id=&quot;apply-colors-to-specific-strings-in-column-B&quot;&gt;&lt;/span&gt;
+<pre><code class="language-shell"> #!/usr/bin/env sh
+ # apply colors to specific strings in column B
 
 file=&quot;${0%.*}&quot; # derive .sc file name from name of this script
 
-# remove all instances of color from the file in place&lt;span id=&quot;remove-all-instances-of-color-from-the-file-in-place&quot;&gt;&lt;/span&gt;
+ # remove all instances of color from the file in place
 { rm &quot;$file&quot;; egrep -v '^color' &gt; &quot;$file&quot;; } &lt; &quot;$file&quot;
 
 cat &lt;&lt;- EOF &gt;&gt; &quot;$file&quot; # set some non-default colors
@@ -579,8 +579,8 @@ cat &lt;&lt;- EOF &gt;&gt; &quot;$file&quot; # set some non-default colors
     color 4 = @black;@yellow
     color 5 = @black;@green
 EOF
-# select only string cells from Column B, apply colors based on string contents&lt;span id=&quot;select-only-string-cells-from-Column-B-apply-colors-based-on-string-contents&quot;&gt;&lt;/span&gt;
-# sc format: leftstring B2 = &quot;example string&quot;&lt;span id=&quot;sc-format-leftstring-B2--example-string&quot;&gt;&lt;/span&gt;
+ # select only string cells from Column B, apply colors based on string contents
+ # sc format: leftstring B2 = &quot;example string&quot;
 egrep '^((left|right)string|label)' &lt; &quot;$file&quot; | while read -r cmd cell _ str; do
     case &quot;$cell&quot; in B*)
         case &quot;$str&quot; in

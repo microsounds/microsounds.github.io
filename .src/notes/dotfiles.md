@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 673, commit `bf3587c`.**
+**Revision No. 673, commit `fb7bf0a`.**
 
 **"sc: Enable use of runtime external macro scripts for mangling spreadsheets"**
 {TOC}
@@ -263,12 +263,12 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 
 Here's en example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.
 ```shell
-#!/usr/bin/env sh
-# apply colors to specific strings in column B
+ #!/usr/bin/env sh
+ # apply colors to specific strings in column B
 
 file="${0%.*}" # derive .sc file name from name of this script
 
-# remove all instances of color from the file in place
+ # remove all instances of color from the file in place
 { rm "$file"; egrep -v '^color' > "$file"; } < "$file"
 
 cat <<- EOF >> "$file" # set some non-default colors
@@ -276,8 +276,8 @@ cat <<- EOF >> "$file" # set some non-default colors
     color 4 = @black;@yellow
     color 5 = @black;@green
 EOF
-# select only string cells from Column B, apply colors based on string contents
-# sc format: leftstring B2 = "example string"
+ # select only string cells from Column B, apply colors based on string contents
+ # sc format: leftstring B2 = "example string"
 egrep '^((left|right)string|label)' < "$file" | while read -r cmd cell _ str; do
     case "$cell" in B*)
         case "$str" in
