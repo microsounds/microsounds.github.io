@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 673, commit `fb7bf0a`.**
+**Revision No. 673, commit `e756ad0`.**
 
 **"sc: Enable use of runtime external macro scripts for mangling spreadsheets"**
 {TOC}
@@ -261,33 +261,34 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 * You can write an arbitrarly complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
     * _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
 
-Here's en example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.
-```shell
- #!/usr/bin/env sh
- # apply colors to specific strings in column B
+* Here is an example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.
 
-file="${0%.*}" # derive .sc file name from name of this script
+    ```shell
+    #!/usr/bin/env sh
+    # apply colors to specific strings in column B
 
- # remove all instances of color from the file in place
-{ rm "$file"; egrep -v '^color' > "$file"; } < "$file"
+    file="${0%.*}" # derive .sc file name from name of this script
 
-cat <<- EOF >> "$file" # set some non-default colors
-    color 3 = @black;@red
-    color 4 = @black;@yellow
-    color 5 = @black;@green
-EOF
- # select only string cells from Column B, apply colors based on string contents
- # sc format: leftstring B2 = "example string"
-egrep '^((left|right)string|label)' < "$file" | while read -r cmd cell _ str; do
-    case "$cell" in B*)
-        case "$str" in
-            *broken*) echo "color $cell:$cell 3";;
-            *bad*) echo "color $cell:$cell 4";;
-            *working*) echo "color $cell:$cell 5";;
-        esac;;
-    esac
-done >> "$file"
-```
+    # remove all instances of color from the file in place
+    { rm "$file"; egrep -v '^color' > "$file"; } < "$file"
+
+    cat <<- EOF >> "$file" # set some non-default colors
+        color 3 = @black;@red
+        color 4 = @black;@yellow
+        color 5 = @black;@green
+    EOF
+    # select only string cells from column B, apply colors based on string contents
+    # sc format: leftstring B2 = "example string"
+    egrep '^((left|right)string|label)' < "$file" | while read -r cmd cell _ str; do
+        case "$cell" in B*)
+            case "$str" in
+                *broken*) echo "color $cell:$cell 3";;
+                *bad*) echo "color $cell:$cell 4";;
+                *working*) echo "color $cell:$cell 5";;
+            esac;;
+        esac
+    done >> "$file"
+    ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png

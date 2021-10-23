@@ -27,7 +27,7 @@
 <div class="content">
 <!--kagami v0.5.2 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 673, commit <code>fb7bf0a</code>.</strong></p>
+<p><strong>Revision No. 673, commit <code>e756ad0</code>.</strong></p>
 <p><strong>“sc: Enable use of runtime external macro scripts for mangling spreadsheets”</strong>
 <div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#dotfilesateliershimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#-Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#-Using-git-meta">Using <code>git meta</code></a></li><li><a href="#-Using-onced-postinstall-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#-Window-manager">Window manager</a><ul><li><a href="#-Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#-X-server-invocation">X server invocation</a></li><li><a href="#-Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#-xrandr"><code>~/.xrandr</code></a></li><li><a href="#-xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#-X-resources-and-theming">X resources and theming</a><ul><li><a href="#-List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Nonstandard-commands">Non-standard commands</a><ul><li><a href="#-cd"><code>cd</code></a></li><li><a href="#-chromium"><code>chromium</code></a></li><li><a href="#-git"><code>git</code></a></li><li><a href="#-nano"><code>nano</code></a></li><li><a href="#-sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div>
 This document and repository is also available at
@@ -554,24 +554,26 @@ This can be useful when dealing with TUI applications that force their own backg
 <p><code>sc</code> supports macros to some degree, but it’s macro documentation is largely non-existent or difficult to understand.</p>
 <p>Instead, the shell function <code>sc()</code> offers an easier to understand macro system for mangling <code>.sc</code> spreadsheet files at runtime.</p>
 <ul>
-<li><code>sc</code> will automatically run any executable sharing the same initial name as the <code>.sc</code> file.
+<li>
+<p><code>sc</code> will automatically run any executable sharing the same initial name as the <code>.sc</code> file.</p>
 <ul>
 <li><em>eg. <code>sheet1.sc</code> will run <code>sheet1.sc.1</code>, <code>sheet1.scx</code>, etc. if they exist in the same directory and are executable at runtime.</em></li>
 </ul>
 </li>
-<li>You can write an arbitrarly complex pre-run macro script in any language, so long as it is made aware of it’s own filename at runtime.
+<li>
+<p>You can write an arbitrarly complex pre-run macro script in any language, so long as it is made aware of it’s own filename at runtime.</p>
 <ul>
 <li><em>Because the <code>sc</code> file format is plaintext, you can generate <code>sc</code> syntax with just a shell script.</em></li>
 </ul>
 </li>
-</ul>
-<p>Here’s en example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.</p>
-<pre><code class="language-shell"> #!/usr/bin/env sh
- # apply colors to specific strings in column B
+<li>
+<p>Here is an example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.</p>
+<pre><code class="language-shell">#!/usr/bin/env sh
+# apply colors to specific strings in column B
 
 file=&quot;${0%.*}&quot; # derive .sc file name from name of this script
 
- # remove all instances of color from the file in place
+# remove all instances of color from the file in place
 { rm &quot;$file&quot;; egrep -v '^color' &gt; &quot;$file&quot;; } &lt; &quot;$file&quot;
 
 cat &lt;&lt;- EOF &gt;&gt; &quot;$file&quot; # set some non-default colors
@@ -579,8 +581,8 @@ cat &lt;&lt;- EOF &gt;&gt; &quot;$file&quot; # set some non-default colors
     color 4 = @black;@yellow
     color 5 = @black;@green
 EOF
- # select only string cells from Column B, apply colors based on string contents
- # sc format: leftstring B2 = &quot;example string&quot;
+# select only string cells from column B, apply colors based on string contents
+# sc format: leftstring B2 = &quot;example string&quot;
 egrep '^((left|right)string|label)' &lt; &quot;$file&quot; | while read -r cmd cell _ str; do
     case &quot;$cell&quot; in B*)
         case &quot;$str&quot; in
@@ -591,6 +593,8 @@ egrep '^((left|right)string|label)' &lt; &quot;$file&quot; | while read -r cmd c
     esac
 done &gt;&gt; &quot;$file&quot;
 </code></pre>
+</li>
+</ul>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><b style="color: #63B0B0;">microsounds@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.2K   Oct 22 2021 15:52 rev. 115 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
