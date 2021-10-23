@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 673, commit `e756ad0`.**
+**Revision No. 673, commit `023e91c`.**
 
 **"sc: Enable use of runtime external macro scripts for mangling spreadsheets"**
 {TOC}
@@ -152,6 +152,7 @@ For use with multi-monitor and/or complicated display setups, you can override t
 --output HDMI-0 --auto --primary --rotate normal
 --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 ```
+
 Commands in this file are passed to [`xrandr-cycle`]({GIT_REMOTE}/atelier/blob/master/Scripts/xrandr_cycle.sh) line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.
 
@@ -261,7 +262,8 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 * You can write an arbitrarly complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
     * _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
 
-* Here is an example of a conditional macro script for an inventory spreadsheet that color-codes specific strings.
+### `sc` pre-run macro example
+* This is an example of a conditional macro script for an inventory spreadsheet that color-codes cells when specific strings are found.
 
     ```shell
     #!/usr/bin/env sh
