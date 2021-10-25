@@ -295,8 +295,8 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><b style="color: #63B0B0;">{AUTHOR}@effe</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw------- 1 7.1K   Oct 23 2021 20:45 rev. 117 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+<pre><code><b style="color: #63B0B0;">u0_a195@localhost</b>:<b style="color: #5786BC;">~</b>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+-rw------- 1 7.2K   Oct 23 2021 20:45 rev. 117 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw------- 1 1.2K   Oct 17 2021 22:00 rev. 70  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw------- 1  200   Aug 19 2021 00:25 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw------- 1  234   Jul  4 2021 01:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -328,7 +328,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 -rwx------ 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwx------ 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29  .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
--rwx------ 1  728   May  6 2021 00:27 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/qr">.local/bin/qr</a>
+-rwx------ 1  748   May  6 2021 00:27 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/qr">.local/bin/qr</a>
 -rwx------ 1 1020   Jul 23 2021 01:29 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scramble">.local/bin/scramble</a>
 -rwx------ 1  155   Oct 16 2020 13:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
 -rwx------ 1  762   Jul 17 2021 22:28 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
@@ -384,7 +384,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwx------ 1 2.2K   Oct 24 2021 22:04 rev. 13  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwx------ 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwx------ 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
--rw------- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
+-rw------- 1  634   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw------- 1  127   Oct 21 2021 23:42 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rw------- 1 1.4K   Aug  5 2021 13:30 rev. 61  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw------- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>

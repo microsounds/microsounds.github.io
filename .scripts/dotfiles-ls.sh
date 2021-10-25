@@ -7,6 +7,7 @@ RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 ver="$(git meta log --oneline | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
+prompt="$(whoami)@$(uname -n)"
 
 {	# document header
 	cat <<- EOF
@@ -32,7 +33,7 @@ mesg="$(git meta log -1 --format=%s)"
 	printf '%s' '<pre><code>'
 	cd ~
 	printf '%s %s\n' \
-		'<b style="color: #63B0B0;">{AUTHOR}@effe</b>:<b style="color: #5786BC;">~</b>$' \
+		"<b style=\"color: #63B0B0;\">$prompt</b>:<b style=\"color: #5786BC;\">~</b>$" \
 		'git meta ls-tree --name-only -r master | xargs ls -lhgG'
 	git meta ls-tree --name-only -r master \
 		| xargs ls -lhgG --time-style='+' | while read -r line; do

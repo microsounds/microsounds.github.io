@@ -19,4 +19,5 @@ YEAR="$(date '+%Y')"
 # moonphase date function
 # dark background, invert glyphs
 # append U+FE0E to glyphs to force display as text only
+TZ='America/Los_Angeles'
 DATE_FUNCTION='moonphase-date -iyh'
