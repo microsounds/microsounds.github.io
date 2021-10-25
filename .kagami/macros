@@ -12,6 +12,7 @@ SITE_TITLE='sentimental µsounds'
 SITE_SUBTITLE='the echoes of time stand still'
 SITE_HOST='https://microsounds.github.io'
 GIT_REMOTE='https://github.com/microsounds'
+ACCENT_COLOR='#A9D1DF'
 
 # functions
 YEAR="$(date '+%Y')"
