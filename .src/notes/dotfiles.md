@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 680, commit `9582054`.**
+**Revision No. 681, commit `7087ac7`.**
 
-**"git: sync is now multithreaded"**
+**"Documentation, fixed typos"**
 {TOC}
 This document and repository is also available at
 [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
@@ -169,7 +169,7 @@ In the case of video files, a random video frame from that file will be taken an
 ## X resources and theming
 For consistency, `xinit`, `dwm` and other scripts make use of the C preprocessor to mangle config files and configure color schemes.
 
-Theme settings and indivdual color schemes are stored as C header files containing preprocessor macros representing color hex codes in [`~/.local/include`]({GIT_REMOTE}/atelier/blob/master/.local/include).
+Theme settings and individual color schemes are stored as C header files containing preprocessor macros representing color hex codes in [`~/.local/include`]({GIT_REMOTE}/atelier/blob/master/.local/include).
 This directory is appended to `$C_INCLUDE_PATH` at login.
 
 * Using shell function `reload` will reload changes to `.xresources` and hard-reset your current terminal instance.
@@ -224,7 +224,7 @@ See *Usage Notes* for more information.
 
     | alias | function |
     | -- | -- |
-    | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command, added implicitly when outside a git diroctory. |
+    | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command, added implicitly when outside a git directory. |
     | `summary` | Outlines the last 20 commits with a commit graph. |
     | `flatten` | Automatically merges `--fixup` commits out of existence if found within the latest 5 commits. |
     | `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
@@ -259,7 +259,7 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
 Instead, the shell function `sc()` offers an easier to understand macro system for mangling `.sc` spreadsheet files at runtime.
 * `sc` will automatically run any executable sharing the same initial name as the `.sc` file.
     * _eg. `sheet1.sc` will run `sheet1.sc.1`, `sheet1.scx`, etc. if they exist in the same directory and are executable at runtime._
-* You can write an arbitrarly complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
+* You can write an arbitrarily complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
     * _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
 
 ### `sc` pre-run macro example
@@ -385,7 +385,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  626   Sep 27 2021 10:51 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  16K   Oct 24 2021 22:07 rev. 142 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  16K   Nov  1 2021 14:19 rev. 143 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  126   Oct 29 2021 01:13 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
