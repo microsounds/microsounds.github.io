@@ -2,7 +2,9 @@
 **Revision No. 683, commit `8856918`.**
 
 **"git: flatten now traverses entire repo history"**
+
 {TOC}
+
 This document and repository is also available at
 [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on Github.
 

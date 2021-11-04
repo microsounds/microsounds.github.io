@@ -13,7 +13,9 @@ mesg="$(git meta log -1 --format=%s)"
 		**Revision No. $ver, commit \`$hash\`.**
 
 		**"$mesg"**
+
 		{TOC}
+
 		This document and repository is also available at
 		[\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on Github.
 
