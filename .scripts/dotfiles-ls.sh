@@ -4,7 +4,7 @@
 # spit out complete listing of dotfiles with inline links
 
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
-ver="$(git meta log --oneline | wc -l)" # revision count
+ver="$(git meta rev-list HEAD | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
 prompt="$(whoami)@$(uname -n)"
