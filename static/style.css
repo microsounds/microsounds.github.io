@@ -96,6 +96,7 @@ h4 code { font-size: unset; }
 h5 code { font-size: unset; }
 h6 code { font-size: unset; }
 
+/* terminal */
 pre { 
 	margin: 0 30px 0 30px;
 	overflow: auto;
@@ -107,13 +108,15 @@ pre {
 	opacity: 90%;
 	padding: 3px;
 }
+.term-prompt { font-weight: bold; color: #63B0B0; }
+.term-dir { font-weight: bold; color: #5786BC; }
 
 /* table of contents */
 .toc {
 	font-family: "Liberation Sans", "Arial", "Helvetica", sans-serif;
 	font-size: 12px;
-	background: rgba(0, 0, 0, 30%);                                                          
-	display: table;                                                                          
+	background: rgba(0, 0, 0, 30%);
+	display: table;
 	border: 2px solid #646464;
 	padding: 3px 10px 3px 10px;
 	margin: 0 0 15px 0;

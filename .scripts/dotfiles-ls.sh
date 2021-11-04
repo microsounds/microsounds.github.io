@@ -2,12 +2,10 @@
 
 # re-render ~/readme.md for use as a webpage
 # spit out complete listing of dotfiles with inline links
-
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 ver="$(git meta rev-list HEAD | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
-prompt="$(whoami)@$(uname -n)"
 
 {	# document header
 	cat <<- EOF
@@ -29,11 +27,13 @@ prompt="$(whoami)@$(uname -n)"
 		-e 's/\t/    /g'
 
 	# interactive source listing
+	prompt="$(whoami)@$(uname -n)"
+
 	echo '# Complete source listing'
 	printf '%s' '<pre><code>'
 	cd ~
 	printf '%s %s\n' \
-		"<b style=\"color: #63B0B0;\">$prompt</b>:<b style=\"color: #5786BC;\">~</b>$" \
+		"<span class=\"term-prompt\">$prompt</span>:<span class=\"term-dir\">~</span>$" \
 		'git meta ls-tree --name-only -r master | xargs ls -lhgG'
 	git meta ls-tree --name-only -r master \
 		| xargs ls -lhgG --time-style='+' | while read -r line; do
