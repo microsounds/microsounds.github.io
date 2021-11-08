@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 685, commit `22a9b1c`.**
+**Revision No. 685, commit `99991cf`.**
 
 **"chromium: Added first-run message during config regeneration"**
 
