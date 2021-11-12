@@ -46,4 +46,5 @@ If it's about a project or an article on this website, feel free to open an issu
 </div>
 
 [album]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
-[unix]: http://markburgess.org/unix/unix.html
+[unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf
+
