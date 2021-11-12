@@ -14,8 +14,8 @@ Sometimes, this is a never-ending process.
 * _(2019–present)_ my "graphical shell" computing environment — [`{AUTHOR}/atelier`]({DOC_ROOT}/notes/dotfiles.md)
 	* _My self-contained and unabridged collection of dotfiles and scripts for Debian GNU/Linux._
 * _(2020–present)_ static microblog processor in POSIX shell — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)
-	* _A user-extensible macro preprocessor and generator for creating static webpages and blog sites._
-* _(2019–present)_ this website and it's kagami template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
+	* _A user-extensible macro preprocessor and static webpage generator for blog sites like this one._
+* _(2019–present)_ this website and it's `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
 
 ### Old projects
 * _(2016–2017)_ ***[retired]*** lightweight futaba-like messageboard system in C — [`{AUTHOR}/akari-bbs`]({GIT_REMOTE}/akari-bbs)
@@ -46,5 +46,8 @@ If it's about a project or an article on this website, feel free to open an issu
 </div>
 
 [album]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
-[unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf
+<!-- Bell System Technical Journal July-August 1978 Vol. 57, No. 6, Part 2 -->
+<!-- [unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf -->
+[unix]: https://files.catbox.moe/gn20dj.pdf
+
 
