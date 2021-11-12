@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 688, commit `3e9b5a7`.**
+**Revision No. 689, commit `f64ea59`.**
 
-**"Nothing important"**
+**"Documentation, dropped use of 'sideloading' to describe installation"**
 
 {TOC}
 
@@ -81,8 +81,8 @@ All system-wide changes are performed through automated scripts located in [`~/.
 
 | series | function |
 | -- | -- |
-| `0*` | System-wide changes performed **through** the package manager. |
-| `1*` | Changes to [`~/.local`]({GIT_REMOTE}/atelier/blob/master/.local) file hierarchy, such as sideloaded 3rd party software. |
+| `0*` | System-wide changes performed through the package manager. |
+| `1*` | Changes to [`~/.local`]({GIT_REMOTE}/atelier/blob/master/.local) file hierarchy, such as locally installed software and resources. |
 | `2*` | System-wide changes that bypass the package manager, such as changes to `/etc`.<br>_These are hacks._ |
 | `c*` | System-wide changes affecting chromebook hardware only. |
 | `a*` | Android-specific hacks only. |
@@ -372,7 +372,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  810   Aug  5 2021 21:47 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
 -rwxr-xr-x 1  817   Jul 17 2021 16:30 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-dwm-install.sh">.once.d/10-dwm-install.sh</a>
--rwxr-xr-x 1  611   Apr  6 2021 11:28 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/11-utilities-git.sh">.once.d/11-utilities-git.sh</a>
+-rwxr-xr-x 1  610   Nov 11 2021 20:53 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/11-utilities-git.sh">.once.d/11-utilities-git.sh</a>
 -rwxr-xr-x 1 1.2K   Mar 31 2021 22:48 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/12-gnu-nano.sh">.once.d/12-gnu-nano.sh</a>
 -rwxr-xr-x 1  568   Aug 28 2021 14:32 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1 1019   Aug 28 2021 14:32 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
@@ -391,7 +391,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  724   Nov  3 2021 01:08 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  725   Sep  5 2021 20:27 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  16K   Nov  8 2021 12:51 rev. 146 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  16K   Nov 11 2021 20:53 rev. 147 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 -rw-r--r-- 1  126   Oct 29 2021 01:13 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.3K   Mar 15 2021 11:34 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  20K   Aug 20 2021 15:35 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
