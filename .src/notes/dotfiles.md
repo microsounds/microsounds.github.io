@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 694, commit `e1414ad`.**
+**Revision No. 694, commit `2fe1c37`.**
 
 **"Post-install: Created unified scheme for installation from git upstream sources"**
 
