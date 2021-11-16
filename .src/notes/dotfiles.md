@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 694, commit `2fe1c37`.**
+**Revision No. 695, commit `504ad66`.**
 
-**"Post-install: Created unified scheme for installation from git upstream sources"**
+**"Tweaked light theme colors"**
 
 {TOC}
 
@@ -351,7 +351,7 @@ lrwxrwxrwx 1   26  .local/bin/xwin-webm -> ../../Scripts/xwin_webm.sh
 lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1  679   Oct 21 2021 23:42 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/campbell.h">.local/include/colors/campbell.h</a>
 -rw-r--r-- 1  749   Feb 15 2021 00:56 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/nightdrive.h">.local/include/colors/nightdrive.h</a>
--rw-r--r-- 1  690   Feb 15 2021 00:56 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/overcast.h">.local/include/colors/overcast.h</a>
+-rw-r--r-- 1  690   Nov 15 2021 23:00 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/overcast.h">.local/include/colors/overcast.h</a>
 -rw-r--r-- 1  642   Feb 15 2021 00:56 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/xterm.h">.local/include/colors/xterm.h</a>
 -rw-r--r-- 1  468   Apr  6 2021 15:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
@@ -408,4 +408,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.5K   Oct 29 2021 11:47 rev. 62  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-11-14 -->
+<!-- updated 2021-11-15 -->

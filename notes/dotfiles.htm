@@ -28,12 +28,12 @@
 <div class="content">
 <!--kagami v0.5.3 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 694, commit <code>2fe1c37</code>.</strong></p>
-<p><strong>“Post-install: Created unified scheme for installation from git upstream sources”</strong></p>
+<p><strong>Revision No. 695, commit <code>504ad66</code>.</strong></p>
+<p><strong>“Tweaked light theme colors”</strong></p>
 <p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>This document and repository is also available at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
-<p>Last updated 🌘&#xFE0E; Sun, Nov 14th, 2021.</p>
+<p>Last updated 🌘&#xFE0E; Mon, Nov 15th, 2021.</p>
 <h1><div align="center"><em>dotfiles—“atelier”</em><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
@@ -656,7 +656,7 @@ lrwxrwxrwx 1   26  .local/bin/xwin-webm -> ../../Scripts/xwin_webm.sh
 lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1  679   Oct 21 2021 23:42 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/campbell.h">.local/include/colors/campbell.h</a>
 -rw-r--r-- 1  749   Feb 15 2021 00:56 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/nightdrive.h">.local/include/colors/nightdrive.h</a>
--rw-r--r-- 1  690   Feb 15 2021 00:56 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/overcast.h">.local/include/colors/overcast.h</a>
+-rw-r--r-- 1  690   Nov 15 2021 23:00 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/overcast.h">.local/include/colors/overcast.h</a>
 -rw-r--r-- 1  642   Feb 15 2021 00:56 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/xterm.h">.local/include/colors/xterm.h</a>
 -rw-r--r-- 1  468   Apr  6 2021 15:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
@@ -713,7 +713,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.5K   Oct 29 2021 11:47 rev. 62  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- updated 2021-11-14 -->
+<!-- updated 2021-11-15 -->
 <hr>
 <div class="footnote">
 <p>
