@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 698, commit `2c8e83c`.**
+**Revision No. 698, commit `4cb37bb`.**
 
 **"nano_overlay: Added project-wide autocomplete by appending ctags dictionary"**
 
