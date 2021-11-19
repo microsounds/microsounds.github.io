@@ -71,8 +71,8 @@ blockquote {
 	padding: 5px;
 }
 
-/* inline images */
-p img {
+/* inline images/video */
+p img, p video {
 	max-width: 100%;
 	border: 1px solid #CCCCCC;
 }
