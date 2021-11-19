@@ -1,0 +1,35 @@
+name: kagami-build
+on: [ push, pull_request ]
+
+jobs:
+  Push:
+     runs-on: ubuntu-latest
+     container: debian:stable
+     steps:
+       - name: Install prerequisite software
+         run: apt-get update && apt-get install -y git make cmark-gfm bc
+       - name: Checkout dotfiles
+         run: |
+           git clone --bare \
+             "$GITHUB_SERVER_URL/microsounds/atelier" ~/.config/meta
+           git --git-dir=$HOME/.config/meta --work-tree=$HOME \
+             reset --hard
+       - name: Install kagami
+         shell: bash -le {0}
+         run: |
+           git clone "$GITHUB_SERVER_URL/microsounds/kagami" ~/kagami
+           make -C ~/kagami install
+       - name: Generate webpages and push to gh-pages branch
+         shell: bash -le {0}
+         env:
+           GH_PAT: ${{ secrets.GH_PAT }}
+         run: |
+           git clone "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" ~/site
+           cd ~/site
+           kagami
+           rm -rf .git && git init # gh-pages will be regenerated every push
+           git checkout -b gh-pages
+           git add .
+           git commit -m "$(date)"
+           git remote add origin "https://$GH_PAT@github.com/$GITHUB_REPOSITORY"
+           git push -f -u origin gh-pages

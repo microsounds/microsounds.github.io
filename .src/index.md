@@ -1,6 +1,8 @@
 # Homepage
 ![header]({DOC_ROOT}/static/starry.png)
 
+# testing ci automated changes
+
 ### About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
