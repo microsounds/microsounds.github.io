@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 700, commit `a36f65c`.**
+**Revision No. 701, commit `913e957`.**
 
-**"gh-actions: Update documentation on website after push"**
+**"Nothing important"**
 
 {TOC}
 
@@ -24,7 +24,7 @@ Last updated {CREATED}.
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
 * Git is used to maintain an identical and reproducible setup across multiple machines.
 * A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d) document and reproduce system-wide deviations from a fresh install.
-    * _Unit testing ensures a reproducible installation with each new change to post-install scripts._
+    * _A [suite of unit tests]({GIT_REMOTE}/atelier/blob/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
 
@@ -304,7 +304,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@22f7c4d6da39</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@0562c28b1472</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.1K   Nov  1 2021 13:52 rev. 118 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -333,7 +333,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  629   Nov  3 2021 22:52 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 3.0K   Nov 19 2021 18:30 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 3.0K   Nov 19 2021 20:07 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1 2.1K   Nov 11 2021 20:05 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 -rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
@@ -407,6 +407,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.3K   May 11 2021 15:58 rev. 18  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 1.6K   May  5 2021 01:09 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  17K   Nov 18 2021 00:32 rev. 149 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  17K   Nov 19 2021 20:07 rev. 150 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 </code></pre>
 <!-- updated 2021-11-19 -->
