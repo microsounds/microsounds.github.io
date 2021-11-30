@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 706, commit `b6faa1d`.**
+**Revision No. 708, commit `e506fcf`.**
 
-**"Post-install: Stability fix for bay trail chromebooks, 3rd attempt"**
+**"Post-install: Resume should be handled by initramfs, documentation"**
 
 {TOC}
 
@@ -305,7 +305,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@4beb6c8c5c1c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@b256d3e1c692</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.1K   Nov  1 2021 13:52 rev. 118 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -386,16 +386,17 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  499   Nov 21 2020 15:41 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/20-xorg-override.sh">.once.d/20-xorg-override.sh</a>
 -rwxr-xr-x 1  387   Jun 18 2021 00:52 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/21-network-manager.sh">.once.d/21-network-manager.sh</a>
 -rwxr-xr-x 1  720   May 26 2021 16:02 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/22-realtek-rtl8812au.sh">.once.d/22-realtek-rtl8812au.sh</a>
--rwxr-xr-x 1  541   Jul 17 2021 19:41 rev. 14  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/23-grub-config.sh">.once.d/23-grub-config.sh</a>
--rwxr-xr-x 1   58   Nov 21 2020 15:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/24-motd.sh">.once.d/24-motd.sh</a>
+-rwxr-xr-x 1  463   Nov 30 2021 00:48 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/23-grub-config.sh">.once.d/23-grub-config.sh</a>
+-rwxr-xr-x 1  298   Nov 30 2021 00:48 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/24-initramfs-resume.sh">.once.d/24-initramfs-resume.sh</a>
 -rwxr-xr-x 1  747   Mar 30 2021 13:19 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/25-chromium-widevine.sh">.once.d/25-chromium-widevine.sh</a>
 -rwxr-xr-x 1  576   Jul 24 2021 15:03 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-systemd-tweaks.sh">.once.d/26-systemd-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   May 23 2021 23:13 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
 -rwxr-xr-x 1  713   Nov  8 2021 12:51 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
+-rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1 2.2K   Nov 26 2021 14:14 rev. 14  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
--rwxr-xr-x 1  809   Nov 29 2021 23:54 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
+-rwxr-xr-x 1  917   Nov 30 2021 00:48 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  834   Nov 26 2021 14:15 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  126   Oct 29 2021 01:13 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rw-r--r-- 1 1.5K   Oct 29 2021 11:47 rev. 62  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
@@ -410,4 +411,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  17K   Nov 23 2021 14:28 rev. 151 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 </code></pre>
-<!-- updated 2021-11-29 -->
+<!-- updated 2021-11-30 -->
