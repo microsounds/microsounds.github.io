@@ -14,8 +14,8 @@ SITE_HOST='https://microsounds.github.io'
 GIT_REMOTE='https://github.com/microsounds'
 ACCENT_COLOR='#E2FAF9'
 
-# functions
-YEAR="$(date '+%Y')"
+# copyright years
+YEAR="2015-$(date '+%Y')"
 
 # moonphase date function
 # dark background, invert glyphs
