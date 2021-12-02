@@ -1,10 +1,9 @@
-<!--updated 2020/10/22-->
+<!--updated 2021/12/1-->
 # List of low profile GPUs for small form factor PCs (SFFs)
 {CREATED}
 
-> Due to market forces, there have been no new LP cards announced or released since Q2 2020, this list is still up to date.
+> **NOTICE**<br><br>
 > I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.
-> <br>I recommend buying an AMD APU-based system and running games on low/medium settings until such a time when dGPUs become available at MSRP again, _someday~_
 
 ![img](assets/low_profile_gpu.jpg)
 
@@ -44,26 +43,31 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | AMD Radeon HD 8490 | 2014 | 270 | OEM only. |
 | AMD Radeon R5 240 | 2014 | 516 | OEM only. |
 | Nvidia GeForce GT 710 | 2014 | 636 | Zotac, Asus, VisionTek make passively cooled versions. |
-| _Intel HD Graphics 4600_ | 2013 | 640 | _Haswell-era Intel integrated graphics, for reference._ |
+| _**Intel HD Graphics 4600**_ | 2013 | 640 | **\*Reference\*** Intel Core i5 Haswell-era integrated graphics. |
 | Nvidia GeForce GT 730 | 2014 | 794 | Zotac makes passively cooled versions. |
 | Nvidia GeForce GT 635 | 2013 | 826 | |
 | AMD Radeon R7 240 | 2013 | 836 | |
+| _**AMD Radeon Vega 3**_ | 2018 | 886 | **\*Reference\*** AMD Athlon APU integrated graphics. |
 | AMD Radeon HD 8570 | 2013 | 1001 | OEM only. |
 | Nvidia GeForce GT 640 | 2011 | 1153 | |
 | AMD Radeon R7 250 | 2013 | 1181 | |
 | AMD Radeon R7 430 | 2017 | 1200 | OEM only. |
 | AMD Radeon Pro WX 2100 | 2017 | 1581 | Workstation card. |
+| _**AMD Radeon Vega 8**_ | 2018 | 1596 | **\*Reference\*** AMD Ryzen 3 APU integrated graphics. |
 | AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
+| _**AMD Radeon Vega RX 11**_ | 2018 | 2134 | **\*Reference\*** AMD Ryzen 5 APU integrated graphics. |
 | Nvidia GTX 745 | 2014 | 2205 | OEM only. |
 | AMD Radeon RX 550 | 2017 | 2408 | Yeston, MSI, Sapphire, XFX make low profile versions. |
 | AMD Radeon Pro WX 3200 | 2019 | 2560 | Workstation card. |
 | Nvidia GeForce GT 1030 | 2017 | 2607 | Asus, EVGA, MSI make passively cooled versions. |
 | AMD Radeon Pro WX 3100 | 2017 | 2818 | Workstation card. |
 | Nvidia Quadro K1200 | 2015 | 2861 | Workstation card. |
+| Nvidia T400 | 2021 | 3488 | Workstation card. |
 | Nvidia Quadro P620 | 2018 | 3639 | Workstation card. |
 | AMD Radeon Pro WX 4100 | 2017 | 3758 | Workstation card. |
 | Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
-| Nvidia Quadro T1000 | 2019 | 6472 | Workstation card. |
+| Nvidia Quadro T1000 | 2019 | 6484 | Workstation card. |
+| Nvidia T600 | 2021 | 6766 | Workstation card. |
 
 # 2-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Comments |
@@ -72,7 +76,6 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | AMD Radeon RX 460 | 2016 | 4034 | Available from MSI. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 6398 | ASL makes a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 7866 | ASL makes a [1-slot version][4] for the Chinese market. |
-| _Nvidia Ampere-based LP card_ | ~2021?~ NEVER EVER | ? | ~_Low-end, low profile iterations of RTX 30* series cards will probably be announced by 2021._~ |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [2]: https://www.gnu.org/philosophy/free-software-even-more-important.html
