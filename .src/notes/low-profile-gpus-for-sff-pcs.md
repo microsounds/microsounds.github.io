@@ -1,6 +1,6 @@
 <!--updated 2021/12/1-->
 # List of low profile GPUs for small form factor PCs (SFFs)
-{CREATED}
+Last updated {CREATED}.
 
 > **NOTICE**<br><br>
 > I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.
@@ -82,5 +82,4 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 [3]: https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 [4]: https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
 [5]: https://www.dell.com/support/manuals/us/en/19/optiplex-9020-desktop/opt9020sffom-v2/system-board-components?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
-
 

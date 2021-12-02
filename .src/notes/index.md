@@ -1,2 +1,2 @@
 # Notes
-Notes on misc. technical subjects, sorted by date of last update.
+Notes on random topics, sorted by date of last update.
