@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 712, commit `f67ec65`.**
+**Revision No. 712, commit `2e88f0c`.**
 
 **"git: Alias for passing tracked filenames to xargs"**
 
@@ -306,7 +306,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@2298632d98e6</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@3d3cbc1bb06d</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.1K   Nov  1 2021 13:52 rev. 118 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -334,7 +334,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rw-r--r-- 1  729   Dec  2 2021 17:31 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
+-rw-r--r-- 1  741   Dec  2 2021 17:31 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 3.0K   Nov 19 2021 20:07 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1 2.1K   Nov 11 2021 20:05 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
