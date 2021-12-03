@@ -160,7 +160,12 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	table { margin: unset; }
 }
 
-/* keep embedded fonts to a minimum */
+/* force certain consistent fonts for all users */
+@font-face {
+	font-family: Liberation Serif; /* moonphase emoji */
+	src: url("fonts/moonphase.woff") format("woff");
+	font-display: swap;
+}
 @font-face {
 	font-family: "Go Mono"; /* serif monospace font */
 	src: local("Go Mono"), url("fonts/go-mono.woff") format("woff");
