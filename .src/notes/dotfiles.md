@@ -5,11 +5,19 @@
 
 {TOC}
 
-This document, which currently covers about **18.42%** of all
-implemented features and behavior in this repository, is also mirrored
-at [`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on GitHub.
+The verbosity factor of this document compared to comment lines of code
+in this repo is about **5:1**.
+
+If this document is *17KiB*, and the size of all
+comment lines of code is approximately *50KiB*,
+then this document currently covers about **6.88%** of all
+implemented features and behavior in this repository.
+
+This document and repository is also mirrored at
+[`{AUTHOR}/atelier`]({GIT_REMOTE}/atelier) on GitHub.
 
 Last updated {CREATED}.
+
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">

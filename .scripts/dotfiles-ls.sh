@@ -9,12 +9,16 @@ ver="$(git meta rev-list HEAD | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
 
-# estimate documentation completeness
-# divide length of this doc by number of comment lines in repo
+# estimated documentation completeness
+# this document is about 5x more verbose than my comments
+# divide size of document in bytes by 5 and it should be comparable
+# to the size of all comments found in this repo, in bytes
+v_factor=5
 this_doc="$(wc -c < ~/readme.md)"
-comments="$(git meta list-files | xargs grep -I --exclude=readme.md '#'| wc -c)"
-coverage="$(echo "scale=4; ($this_doc / $comments) * 100" | bc)"
+comments="$(git meta list-files | xargs grep -I --exclude=readme.md '#' | sed -E 's/.*(#.*)/\1/g' | wc -c)"
+coverage="$(echo "scale=4; (($this_doc / $v_factor) / $comments) * 100" | bc)"
 coverage="${coverage%??}%"
+
 {	# document header
 	cat <<- EOF
 		# Selected documentation and usage notes for my dotfiles
@@ -24,11 +28,19 @@ coverage="${coverage%??}%"
 
 		{TOC}
 
-		This document, which currently covers about **$coverage** of all
-		implemented features and behavior in this repository, is also mirrored
-		at [\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on GitHub.
+		The verbosity factor of this document compared to comment lines of code
+		in this repo is about **${v_factor}:1**.
+
+		If this document is *$((this_doc / 1024))KiB*, and the size of all
+		comment lines of code is approximately *$((comments / 1024))KiB*,
+		then this document currently covers about **$coverage** of all
+		implemented features and behavior in this repository.
+
+		This document and repository is also mirrored at
+		[\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on GitHub.
 
 		Last updated {CREATED}.
+
 	EOF
 
 	# rewrite relative markdown links
@@ -42,7 +54,6 @@ coverage="${coverage%??}%"
 
 	echo '# Complete source listing'
 	printf '%s' '<pre><code>'
-	cd ~
 	printf '%s %s\n' \
 		"<span class=\"term-prompt\">$prompt</span>:<span class=\"term-dir\">~</span>$" \
 		'git meta ls-tree --name-only -r master | xargs ls -lhgG'
