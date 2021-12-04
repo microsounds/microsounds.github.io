@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+cd ~
+
 # re-render ~/readme.md for use as a webpage
 # spit out complete listing of dotfiles with inline links
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
@@ -7,6 +9,12 @@ ver="$(git meta rev-list HEAD | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
 
+# estimate documentation completeness
+# divide length of this doc by number of comment lines in repo
+this_doc="$(wc -c < ~/readme.md)"
+comments="$(git meta list-files | xargs grep -I --exclude=readme.md '#'| wc -c)"
+coverage="$(echo "scale=4; ($this_doc / $comments) * 100" | bc)"
+coverage="${coverage%??}%"
 {	# document header
 	cat <<- EOF
 		# Selected documentation and usage notes for my dotfiles
@@ -16,8 +24,9 @@ mesg="$(git meta log -1 --format=%s)"
 
 		{TOC}
 
-		This document and repository is also available at
-		[\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on Github.
+		This document, which currently covers about **$coverage** of all
+		implemented features and behavior in this repository, is also mirrored
+		at [\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on GitHub.
 
 		Last updated {CREATED}.
 	EOF
