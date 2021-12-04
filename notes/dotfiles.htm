@@ -28,9 +28,9 @@
 <div class="content">
 <!--kagami v0.5.3 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 718, commit <code>142c776</code>.</strong></p>
-<p><strong>“Nothing important”</strong></p>
-<p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
+<p><strong>Revision No. 719, commit <code>f64dc70</code>.</strong></p>
+<p><strong>“Documentation”</strong></p>
+<p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>This document and repository is also available at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on Github.</p>
 <p>Last updated 🌕&#xFE0E; Fri, Dec 3rd, 2021.</p>
@@ -577,6 +577,11 @@ This can be useful when dealing with TUI applications that force their own backg
 </table>
 </li>
 </ul>
+<h2><code>notify-send</code><span id="notify-send"></span></h2>
+<p>This particular <a href="https://github.com/microsounds/atelier/blob/master/.local/lib/notify-send"><code>notify-send</code></a> implements only <code>-t</code> for expiration time in seconds,
+because it doesn’t tie into any <code>dbus</code>-based notification daemon implementing the <a href="https://www.galago-project.org/specs/notification/0.9/index.html">Desktop Notifications Specification</a>.</p>
+<p>Instead, it’s just a shell script that writes to a named pipe that gets picked up by <a href="https://github.com/microsounds/atelier/blob/master/Scripts/wm_status.sh"><code>xwin-statusd</code></a> as a simple way to implement OSD text and single-line notifications.</p>
+<p>Unlike other implementations, you can pass notifications/OSD text as an argument or via stdin without using <code>xargs</code>.</p>
 <h2><code>sc</code> (spreadsheet calculator)<span id="sc-spreadsheet-calculator"></span></h2>
 <p><code>sc</code> supports macros to some degree, but it’s macro documentation is largely non-existent or difficult to understand.</p>
 <p>Instead, the shell function <code>sc()</code> offers an easier to understand macro system for mangling <code>.sc</code> spreadsheet files at runtime.</p>
@@ -624,7 +629,7 @@ done &gt;&gt; &quot;$file&quot;
 </li>
 </ul>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@c41eae863abf</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@2eccf7de1ec0</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  3 2021 20:24 rev. 119 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -729,7 +734,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 1.6K   May  5 2021 01:09 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  17K   Dec  3 2021 22:08 rev. 154 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.htm">readme.htm</a>
+-rw-r--r-- 1  18K   Dec  3 2021 23:47 rev. 155 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.htm">readme.htm</a>
 </code></pre>
 <!-- updated 2021-12-03 -->
 <hr>

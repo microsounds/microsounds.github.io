@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 718, commit `142c776`.**
+**Revision No. 719, commit `f64dc70`.**
 
-**"Nothing important"**
+**"Documentation"**
 
 {TOC}
 
@@ -268,6 +268,14 @@ _NOTE: `nano` keybind macros make use of inline non-printable control characters
     | `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br>_Requires valid `tags` file in current or a parent directory._ |
     | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br>_Requires valid `tags` file in current or a parent directory._ |
 
+## `notify-send`
+This particular [`notify-send`]({GIT_REMOTE}/atelier/blob/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
+because it doesn't tie into any `dbus`-based notification daemon implementing the [Desktop Notifications Specification](https://www.galago-project.org/specs/notification/0.9/index.html).
+
+Instead, it's just a shell script that writes to a named pipe that gets picked up by [`xwin-statusd`]({GIT_REMOTE}/atelier/blob/master/Scripts/wm_status.sh) as a simple way to implement OSD text and single-line notifications.
+
+Unlike other implementations, you can pass notifications/OSD text as an argument or via stdin without using `xargs`.
+
 ## `sc` (spreadsheet calculator)
 `sc` supports macros to some degree, but it's macro documentation is largely non-existent or difficult to understand.
 
@@ -310,7 +318,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@c41eae863abf</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@2eccf7de1ec0</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  3 2021 20:24 rev. 119 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -415,6 +423,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 1.6K   May  5 2021 01:09 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  17K   Dec  3 2021 22:08 rev. 154 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  18K   Dec  3 2021 23:47 rev. 155 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 </code></pre>
 <!-- updated 2021-12-03 -->
