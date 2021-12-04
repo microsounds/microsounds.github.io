@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 717, commit `c62128b`.**
+**Revision No. 718, commit `142c776`.**
 
-**"sxhkd: Certain commands now emit OSD messages through notify-send"**
+**"Nothing important"**
 
 {TOC}
 
@@ -310,7 +310,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@814c6b57fcf0</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@c41eae863abf</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  3 2021 20:24 rev. 119 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -412,7 +412,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   May  4 2021 22:40 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
--rwxr-xr-x 1 1.3K   May 11 2021 15:58 rev. 18  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
+-rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 1.6K   May  5 2021 01:09 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  17K   Dec  3 2021 22:08 rev. 154 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
