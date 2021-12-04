@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 719, commit `f64dc70`.**
+**Revision No. 719, commit `2d37e62`.**
 
 **"Documentation"**
 
@@ -217,7 +217,8 @@ Several commands are extended to include impure functions, such as purposefully 
     | `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
 
 ## `chromium`
-_NOTE: On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
+> **NOTE**<br>
+>_On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
 
 `chromium` was extended to mangle the user-hostile per-profile `Preferences` and global `Local State` JSON files with a series of chained `jq` filters stored in the following files, applying persistent settings in order.
 * [`~/.config/chromium/preferences.conf`]({GIT_REMOTE}/atelier/blob/master/.config/chromium/preferences.conf)
@@ -239,14 +240,15 @@ See *Usage Notes* for more information.
     | -- | -- |
     | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command.<br>_(Added implicitly when outside a git directory.)_ |
     | `summary` | Outlines the last 20 commits with a commit graph. |
-    | `list-files` | List all tracked filenames in repo, ideally for use with xargs. |
+    | `list-files` | List all tracked filenames in repo, ideally for use with `xargs`. |
     | `flatten` | Automatically melds `--fixup/squash` commits out of existence starting from the root commit. |
     | `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
     | `shove` | Runs `checkin` and pushes immediately. |
     | `sync` | Runs `git meta pull` and then recurses through `~/Git` and runs `git pull` on every existing `git` repo found. |
 
 ## `nano`
-_NOTE: `nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
+> **NOTE**<br>
+> _`nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
 
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
 
@@ -318,7 +320,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@2eccf7de1ec0</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@4b6dacc3edb2</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  3 2021 20:24 rev. 119 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
