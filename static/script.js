@@ -15,6 +15,8 @@ var loops = [
 	[ 'synthetic', 'FM Skyline - neon paradise' ],
 	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ],
+	[ 'leisure1', 'LamazeP - Swimsuit ft. 初音ミク' ],
+	[ 'leisure2', 'LamazeP - Swimsuit ft. 初音ミク' ],
 	[ 'kimochi', 'TeddyLoid - ME!ME!ME! ft. daoko' ],
 	[ 'waiting', 'Omori OST -  Snow Forest/A Single Flower Blooms' ],
 	[ 'wist', 'Breakbot - Back for More' ],
