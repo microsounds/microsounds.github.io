@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 721, commit `6c39473`.**
+**Revision No. 722, commit `03dc500`.**
 
-**"Style changes, prevent word splitting"**
+**"Switching to yt-dlp for ripping videos"**
 
 {TOC}
 
@@ -10,7 +10,7 @@ in this repo is about **5:1**.
 
 If this document is *17KiB*, and the size of all
 comment lines of code is approximately *50KiB*,
-then this document currently covers about **6.88%** of all
+then this document currently covers about **6.86%** of all
 implemented features and behavior in this repository.
 
 This document and repository is also mirrored at
@@ -329,10 +329,10 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@5eea1b16a050</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@bf16a4a1f9e8</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  6 2021 00:36 rev. 120 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
--rw-r--r-- 1  321   Nov 14 2021 20:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1  356   Dec  6 2021 15:22 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  402   Oct 29 2021 01:13 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
 -rw-r--r-- 1  732   Jul 17 2021 16:20 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
@@ -357,6 +357,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
+-rwxr-xr-x 1  235   Dec  6 2021 15:22 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/yt-dlp/post-run">.config/yt-dlp/post-run</a>
 -rw-r--r-- 1  741   Dec  2 2021 17:31 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 3.0K   Nov 19 2021 20:07 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1 2.1K   Nov 11 2021 20:05 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
