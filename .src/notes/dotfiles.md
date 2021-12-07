@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 722, commit `03dc500`.**
+**Revision No. 723, commit `faa0ab3`.**
 
-**"Switching to yt-dlp for ripping videos"**
+**"Post-install: Allow use of {pre,post}-run scripts w/o persistent install"**
 
 {TOC}
 
@@ -9,8 +9,8 @@ The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
 If this document is *17KiB*, and the size of all
-comment lines of code is approximately *50KiB*,
-then this document currently covers about **6.86%** of all
+comment lines of code is approximately *51KiB*,
+then this document currently covers about **6.98%** of all
 implemented features and behavior in this repository.
 
 This document and repository is also mirrored at
@@ -89,12 +89,6 @@ Each script is self-contained, you can run them individually, anytime.
 * Some scripts only apply to specific hardware configurations, and will exit even if they are run.
 * Scripts affecting `systemd` or the bootloader will be skipped in virtualized container contexts.
 * Locally installed software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin) when possible.
-* [`~/.comforts`]({GIT_REMOTE}/atelier/blob/master/.comforts) describes the full list of non-optional package groups that will be installed.
-    * Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.
-* [`~/.comforts-git`]({GIT_REMOTE}/atelier/blob/master/.comforts-git) describes utilities compiled and installed from their upstream git sources.
-    * Sources marked with an *asterisk will be mirrored to `~/.config/${URL##*/}`
-        * Utilities installed this way can utilize existing `pre-run` and `post-run` install ~~hacks~~ scripts.
-    * Repos must have a typical `./configure` and/or `make install PREFIX=...` metaphor to build correctly.
 
 | series | function |
 | -- | -- |
@@ -103,6 +97,20 @@ Each script is self-contained, you can run them individually, anytime.
 | `2*` | System-wide changes that bypass the package manager, such as changes to `/etc`.<br>_These are hacks._ |
 | `c*` | System-wide changes affecting chromebook hardware only. |
 | `a*` | Android-specific hacks only. |
+
+### Essential and *optional package groups
+* [ `~/.comforts` ]({GIT_REMOTE}/atelier/blob/master/.comforts) describes a list of non-optional package groups that will be installed through the package manager.
+    * _Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime._
+
+### Essential and *persistent upstream utilities
+* [`~/.comforts-git`]({GIT_REMOTE}/atelier/blob/master/.comforts-git) describes the full list of utilities compiled and installed from their upstream git sources.
+    * _Repos must have a typical `./configure` and/or `make install PREFIX=...` metaphor to build correctly._
+    * _Sources marked with an *asterisk will be persistently installed to `~/.config/${URL##*/}`_
+
+Installation can be customized with user-provided executable install ~~hacks~~ scripts, named `{pre,post}-run`.
+These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/blob/master/.config/upstream) or at the root of a persistently installed utility's install directory as described above
+
+Rationale for doing things this way is summarized in commit `2fe1c3745`.
 
 ## Window manager
 `dwm` keybinds are the [defaults](https://ratfactor.com/dwm) with several exceptions.
@@ -329,10 +337,10 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@bf16a4a1f9e8</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@94bd9754f32f</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  6 2021 00:36 rev. 120 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
--rw-r--r-- 1  356   Dec  6 2021 15:22 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  402   Oct 29 2021 01:13 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
 -rw-r--r-- 1  732   Jul 17 2021 16:20 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
@@ -353,11 +361,11 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 -rwxr-xr-x 1   77   Nov 14 2021 20:26 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
 -rw-r--r-- 1 2.1K   Dec  3 2021 22:14 rev. 39  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rwxr-xr-x 1  235   Dec  6 2021 18:11 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/yt-dlp/post-run">.config/upstream/yt-dlp/post-run</a>
 -rw-r--r-- 1 1.3K   Sep 14 2020 22:04 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rwxr-xr-x 1  235   Dec  6 2021 15:22 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/yt-dlp/post-run">.config/yt-dlp/post-run</a>
 -rw-r--r-- 1  741   Dec  2 2021 17:31 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 3.0K   Nov 19 2021 20:07 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1 2.1K   Nov 11 2021 20:05 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
@@ -405,7 +413,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.5K   Aug  6 2021 01:10 rev. 18  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  834   Nov 14 2021 20:26 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
--rwxr-xr-x 1 2.0K   Nov 18 2021 00:30 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
+-rwxr-xr-x 1 2.2K   Dec  6 2021 18:11 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
 -rwxr-xr-x 1  568   Aug 28 2021 14:32 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1 1019   Aug 28 2021 14:32 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
@@ -435,6 +443,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 1.6K   May  5 2021 01:09 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  18K   Dec  3 2021 23:47 rev. 155 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
+-rw-r--r-- 1  18K   Dec  6 2021 18:11 rev. 156 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 </code></pre>
 <!-- updated 2021-12-06 -->
