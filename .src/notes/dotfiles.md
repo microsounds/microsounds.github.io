@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 723, commit `faa0ab3`.**
+**Revision No. 723, commit `a276167`.**
 
 **"Post-install: Allow use of {pre,post}-run scripts w/o persistent install"**
 
@@ -10,7 +10,7 @@ in this repo is about **5:1**.
 
 If this document is *17KiB*, and the size of all
 comment lines of code is approximately *51KiB*,
-then this document currently covers about **6.98%** of all
+then this document currently covers about **7.01%** of all
 implemented features and behavior in this repository.
 
 This document and repository is also mirrored at
@@ -110,7 +110,7 @@ Each script is self-contained, you can run them individually, anytime.
 Installation can be customized with user-provided executable install ~~hacks~~ scripts, named `{pre,post}-run`.
 These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/blob/master/.config/upstream) or at the root of a persistently installed utility's install directory as described above
 
-Rationale for doing things this way is summarized in commit `2fe1c3745`.
+Rationale for doing things this way is summarized in commit [`2fe1c3745`](https://github.com/microsounds/atelier/commit/2fe1c3745).
 
 ## Window manager
 `dwm` keybinds are the [defaults](https://ratfactor.com/dwm) with several exceptions.
@@ -337,7 +337,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@94bd9754f32f</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@0066e3aa9a87</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 7.7K   Dec  6 2021 00:36 rev. 120 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
