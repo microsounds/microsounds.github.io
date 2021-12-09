@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 726, commit `65a531c`.**
+**Revision No. 727, commit `ec54a77`.**
 
-**"path-gitstatus: Display unambiguous short-refs on very large projects"**
+**"posix: Added list mode, no longer iterating through results in normal mode"**
 
 {TOC}
 
@@ -10,7 +10,7 @@ in this repo is about **5:1**.
 
 If this document is *17KiB*, and the size of all
 comment lines of code is approximately *51KiB*,
-then this document currently covers about **6.99%** of all
+then this document currently covers about **6.98%** of all
 implemented features and behavior in this repository.
 
 This document and repository is also mirrored at
@@ -337,8 +337,8 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: https://github.com/microsounds/microsounds/raw/master/dotfiles/shimeji.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@c7513b5663da</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1 7.7K   Dec  6 2021 21:04 rev. 121 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+<pre><code><span class="term-prompt">root@5602689d0c8a</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+-rw-r--r-- 1 8.0K   Dec  8 2021 22:04 rev. 122 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  402   Oct 29 2021 01:13 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -445,4 +445,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  18K   Dec  6 2021 18:11 rev. 156 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme.md">readme.md</a>
 </code></pre>
-<!-- updated 2021-12-07 -->
+<!-- updated 2021-12-08 -->
