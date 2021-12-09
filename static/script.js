@@ -63,9 +63,10 @@ function setup_bgm() {
 		 */
 		var doc = document.getElementsByClassName('content')[0];
 		var warn = document.createElement('blockquote');
-		warn.textContent =
-			'Note: Your web browser is outdated and certain stylesheet' +
-			' and multimedia features may not work correctly.';
+		warn.innerHTML =
+			'<p><b>NOTE</b><br>' +
+			'<i>Your web browser is outdated, certain stylesheet' +
+			' and multimedia features may not work as intended.</i></p>';
 		doc.insertBefore(warn, doc.firstChild);
 
 		/* fallback to native stuttery <audio> loop if possible */
