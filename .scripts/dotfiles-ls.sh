@@ -63,12 +63,14 @@ coverage="${coverage%??}%"
 			l*) # skip symlinks
 				echo "$line";;
 			*)
+				printf '%s' "Analyzing $path" 1>&2
 				path="${line##* }"
 				printf "%s %s rev. %-${#ver}d %s\n" \
 					"${line%%$path}" \
 					"$(git meta log -1 --date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
 					"<a href=\"$RAW/$path\">$path</a>"
+				printf '\r\e[K' 1>&2
 		esac
 	done
 	echo '</code></pre>'
