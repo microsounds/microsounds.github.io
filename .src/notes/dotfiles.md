@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 731, commit `3e4043d`.**
+**Revision No. 732, commit `cedb43c`.**
 
-**"Nothing important"**
+**"Termux: '\e' doesn't work in all contexts, swap for '\33'"**
 
 {TOC}
 
@@ -9,8 +9,8 @@ The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
 If this document is *18KiB*, and the size of all
-comment lines of code is approximately *52KiB*,
-then this document currently covers about **6.80%** of all
+comment lines of code is approximately *53KiB*,
+then this document currently covers about **6.79%** of all
 implemented features and behavior in this repository.
 
 This document and repository is also mirrored at
@@ -337,9 +337,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime49.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime4.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@2c55c8a91693</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@ae060188f455</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.0K   Dec  8 2021 22:04 rev. 122 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -430,7 +430,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.5K   May 23 2021 23:13 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
 -rwxr-xr-x 1  713   Nov  8 2021 12:51 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
--rwxr-xr-x 1 2.2K   Nov 26 2021 14:14 rev. 14  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 2.3K   Dec 13 2021 19:17 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  917   Nov 30 2021 00:48 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1  832   Dec 12 2021 10:53 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
