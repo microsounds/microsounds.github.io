@@ -16,6 +16,8 @@ ACCENT_COLOR='#E2FAF9'
 
 # copyright years
 YEAR="2015-$(date '+%Y')"
+CC_BY_SA='https://creativecommons.org/licenses/by-sa/4.0'
+GNU_GPL='https://www.gnu.org/licenses/gpl-3.0'
 
 # moonphase date function
 # dark background, invert glyphs

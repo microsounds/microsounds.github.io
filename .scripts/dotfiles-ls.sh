@@ -2,7 +2,7 @@
 
 cd ~
 
-# re-render ~/readme.md for use as a webpage
+# re-renders ~/readme.md for use as a standalone webpage
 # spit out complete listing of dotfiles with inline links
 RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 ver="$(git meta rev-list HEAD | wc -l)" # revision count
@@ -43,11 +43,17 @@ coverage="${coverage%??}%"
 
 	EOF
 
+	# pick a random shimeji
+	shimeji="$(find $DOC_ROOT/static/shimemiku -type f | shuf | head -n 1)"
+	shimeji="${shimeji#$DOC_ROOT/}"
+
 	# rewrite relative markdown links
 	# replace tabs with 4-space indents
+	# replace inline shimeji with a random one
 	cat ~/readme.md | sed -E \
 		-e 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g' \
-		-e 's/\t/    /g'
+		-e 's/\t/    /g' \
+		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
 
 	# interactive source listing
 	prompt="$(whoami)@$(uname -n)"
@@ -63,7 +69,7 @@ coverage="${coverage%??}%"
 			l*) # skip symlinks
 				echo "$line";;
 			*)
-				printf '%s' "Analyzing $path" 1>&2
+				printf '%s' "mtime/revision tally for '$path'" 1>&2
 				path="${line##* }"
 				printf "%s %s rev. %-${#ver}d %s\n" \
 					"${line%%$path}" \
