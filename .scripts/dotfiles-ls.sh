@@ -44,7 +44,9 @@ coverage="${coverage%??}%"
 	EOF
 
 	# pick a random shimeji
-	shimeji="$(find $DOC_ROOT/static/shimemiku -type f | shuf | head -n 1)"
+	readme="$HOME/readme.md"
+	shimeji="$(find $DOC_ROOT/static/shimemiku -type f \
+		| shuf --random-source "$readme" | head -n 1)"
 	shimeji="${shimeji#$DOC_ROOT/}"
 
 	# rewrite relative markdown links
