@@ -21,6 +21,6 @@ GNU_GPL='https://www.gnu.org/licenses/gpl-3.0'
 
 # moonphase date function
 # dark background, invert glyphs
-# append U+FE0E to glyphs to force display as text only
+# append U+FE0E to glyphs to force display as text only (deprecated)
 TZ='America/Los_Angeles'
 DATE_FUNCTION='moonphase-date -iyh'
