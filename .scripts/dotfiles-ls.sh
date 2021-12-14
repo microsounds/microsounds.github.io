@@ -15,7 +15,8 @@ mesg="$(git meta log -1 --format=%s)"
 # to the size of all comments found in this repo, in bytes
 v_factor=5
 this_doc="$(wc -c < ~/readme.md)"
-comments="$(git meta list-files | xargs grep -I --exclude=readme.md '#' | sed -E 's/.*(#.*)/\1/g' | wc -c)"
+comments="$(git meta list-files \
+	| xargs grep -I --exclude=readme.md '#' | sed -E 's/.*(#.*)/\1/g' | wc -c)"
 coverage="$(echo "scale=4; (($this_doc / $v_factor) / $comments) * 100" | bc)"
 coverage="${coverage%??}%"
 
@@ -31,15 +32,19 @@ coverage="${coverage%??}%"
 		The verbosity factor of this document compared to comment lines of code
 		in this repo is about **${v_factor}:1**.
 
-		If this document is *$((this_doc / 1024))KiB*, and the size of all
-		comment lines of code is approximately *$((comments / 1024))KiB*,
-		then this document currently covers about **$coverage** of all
-		implemented features and behavior in this repository.
+		If this document is *$((this_doc / 1024))KiB* in size, and the
+		approximate size of all comment lines of code is *$((comments / 1024))KiB*,
+		then this document currently covers about
+		<b style="font-size: 20px;">$coverage</b> of all implemented features
+		and behavior in this repository.
+		This is just an [automated guess][1] though.
 
 		This document and repository is also mirrored at
 		[\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on GitHub.
 
 		Last updated {CREATED}.
+
+		[1]: ${RAW%/atelier/master}/microsounds.github.io/master/${0#$DOC_ROOT/}
 
 	EOF
 
@@ -59,23 +64,30 @@ coverage="${coverage%??}%"
 
 	# interactive source listing
 	prompt="$(whoami)@$(uname -n)"
+	command='git meta ls-tree --name-only -r master | xargs ls -lhgG'
 
 	echo '# Complete source listing'
 	printf '%s' '<pre><code>'
-	printf '%s %s\n' \
-		"<span class=\"term-prompt\">$prompt</span>:<span class=\"term-dir\">~</span>$" \
-		'git meta ls-tree --name-only -r master | xargs ls -lhgG'
-	git meta ls-tree --name-only -r master \
-		| xargs ls -lhgG --time-style='+' | while read -r line; do
+	printf '%s:%s %s\n' \
+		"<span class=\"term-prompt\">$prompt</span>" \
+		'<span class="term-dir">~</span>$' \
+		"$command"
+
+	# req'd for use of pipes within a variable expansion
+	# omit on-disk mtimes in actual ls command
+	sh -c "$command --time-style='+'" | while read -r line; do
 		case "$line" in
 			l*) # skip symlinks
 				echo "$line";;
 			*)
-				printf '%s' "mtime/revision tally for '$path'" 1>&2
 				path="${line##* }"
+				printf '%s' "mtime/revision tally for '$path'" 1>&2
+
+				# rwx---	bytes	mtime	rev-count	raw-link
 				printf "%s %s rev. %-${#ver}d %s\n" \
 					"${line%%$path}" \
-					"$(git meta log -1 --date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
+					"$(git meta log -1 \
+						--date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
 					"<a href=\"$RAW/$path\">$path</a>"
 				printf '\r\e[K' 1>&2
