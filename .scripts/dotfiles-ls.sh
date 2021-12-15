@@ -83,13 +83,19 @@ coverage="${coverage%??}%"
 				path="${line##* }"
 				printf '%s' "mtime/revision tally for '$path'" 1>&2
 
+				# escape kagami's *.md => *.htm URL rewrites
+				unset esc_path
+				case "$path" in
+					*.md) esc_path="${path%.*}&period;md";;
+				esac
+
 				# rwx---	bytes	mtime	rev-count	raw-link
 				printf "%s %s rev. %-${#ver}d %s\n" \
 					"${line%%$path}" \
 					"$(git meta log -1 \
 						--date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
-					"<a href=\"$RAW/$path\">$path</a>"
+					"<a href=\"$RAW/${esc_path:-$path}\">${esc_path:-$path}</a>"
 				printf '\r\e[K' 1>&2
 		esac
 	done
