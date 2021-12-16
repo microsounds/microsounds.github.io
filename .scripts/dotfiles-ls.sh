@@ -48,16 +48,17 @@ coverage="${coverage%??}%"
 
 	EOF
 
-	# pick a random shimeji
+	# reproduceably pick random emoji based on commit hash
 	readme="$HOME/readme.md"
+	rseed="$(git meta rev-parse --git-dir)/refs/heads/master"
 	shimeji="$(find $DOC_ROOT/static/shimemiku -type f \
-		| shuf --random-source "$readme" | head -n 1)"
+		| shuf --random-source="$rseed" | head -n 1)"
 	shimeji="${shimeji#$DOC_ROOT/}"
 
 	# rewrite relative markdown links
 	# replace tabs with 4-space indents
 	# replace inline shimeji with a random one
-	cat ~/readme.md | sed -E \
+	cat "$readme" | sed -E \
 		-e 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g' \
 		-e 's/\t/    /g' \
 		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
