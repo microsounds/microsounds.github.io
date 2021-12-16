@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 741, commit `bff2d3f`.**
+**Revision No. 742, commit `8f444d5`.**
 
-**"chromebook: Documentation, redundant keysyms"**
+**"Documentation, platform support"**
 
 {TOC}
 
@@ -11,7 +11,7 @@ in this repo is about **5:1**.
 If this document is *18KiB* in size, and the
 approximate size of all comment lines of code is *54KiB*,
 then this document currently covers about
-<b style="font-size: 20px;">6.88%</b> of all implemented features
+<b style="font-size: 20px;">7.00%</b> of all implemented features
 and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -42,15 +42,6 @@ This is my primary computing setup, a self-contained graphical shell environment
     * _A [suite of unit tests]({GIT_REMOTE}/atelier/blob/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
-
-## Tested and supported platforms
-* Any conventional BIOS/UEFI-compliant x86-based Personal Computer
-* x86-based Chromebooks in Developer Mode (SeaBIOS), or liberated with UEFI firmware (Coreboot).
-    * _See <https://mrchromebox.tech/> for more information on unlocking your bootloader._
-* Virtualized Docker containers for use in CI/CD workflows
-* Next Thing Co. PocketC.H.I.P armhf-based portable ~~toy computer~~ linux handheld
-* Termux terminal emulator and Linux environment for Android
-    * _Currently, only a single-user minimal shell environment is supported._
 
 [![scrot]][scrot]
 > **PICTURED**<br>
@@ -86,6 +77,19 @@ Basic installation instructions are provided, along with some documentation for 
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/blob/master/.once.d/a0-android-termux.sh)
     * Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
 3. When pulling changes from upstream, always stash changes to prevent merge conflicts.
+
+## Notes on platform support
+**Full graphical shell environment**
+* Any conventional BIOS/UEFI-compliant x86-based Personal Computer
+* x86-based Chromebooks in Developer Mode (SeaBIOS), or liberated with UEFI firmware (Coreboot).
+    * _See <https://mrchromebox.tech/> for more information on unlocking your bootloader._
+* [Next Thing Co. PocketC.H.I.P](http://chip.jfpossibilities.com/docs/pocketchip.html) armhf-based portable ~~toy computer~~ linux handheld
+    * _Final NTC-provided Debian 8 (jessie) OS images from 2016 come with out-of-tree `4.4.13-ntc-mlc` kernel pinned, upgradeable to 10 (buster)._
+
+**Single-user minimal shell environment**
+* Bootstrapping in virtualized container instances for use in CI/CD workflows
+* Termux terminal emulator and Linux environment for Android
+    * _Non-standard *NIX environment, currently only supports a subset of available features._
 
 # Usage notes
 ## Using `git meta`
@@ -352,7 +356,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: {DOC_ROOT}/static/shimemiku/shime4.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@9989eba34530</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@e73c342e4797</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -463,6 +467,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  19K   Dec 16 2021 08:35 rev. 158 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  19K   Dec 16 2021 13:28 rev. 159 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- updated 2021-12-16 -->
