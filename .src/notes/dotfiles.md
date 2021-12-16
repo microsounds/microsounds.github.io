@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 740, commit `ebb976e`.**
+**Revision No. 741, commit `bff2d3f`.**
 
-**"ntc-chip: Enable use of all ISO_Level3_Shift special characters"**
+**"chromebook: Documentation, redundant keysyms"**
 
 {TOC}
 
@@ -352,7 +352,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
 [shimeji]: {DOC_ROOT}/static/shimemiku/shime4.png
 # Complete source listing
-<pre><code><span class="term-prompt">root@20d9c22d7d60</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@9989eba34530</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -377,7 +377,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
 -rw-r--r-- 1 2.1K   Dec  3 2021 22:14 rev. 39  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rwxr-xr-x 1  235   Dec  6 2021 18:11 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/yt-dlp/post-run">.config/upstream/yt-dlp/post-run</a>
--rw-r--r-- 1 1.3K   Sep 14 2020 22:04 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
+-rw-r--r-- 1 1019   Dec 16 2021 12:51 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
 -rw-r--r-- 1 2.2K   Dec 16 2021 09:11 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/ntc-chip.xkb">.config/xkb/ntc-chip.xkb</a>
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>

@@ -28,8 +28,8 @@
 <div class="content">
 <!--kagami v0.5.3 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 740, commit <code>ebb976e</code>.</strong></p>
-<p><strong>“ntc-chip: Enable use of all ISO_Level3_Shift special characters”</strong></p>
+<p><strong>Revision No. 741, commit <code>bff2d3f</code>.</strong></p>
+<p><strong>“chromebook: Documentation, redundant keysyms”</strong></p>
 <p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a><ul><li><a href="#Tested-and-supported-platforms">Tested and supported platforms</a></li></ul></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a><ul><li><a href="#Essential-and-optional-package-groups">Essential and *optional package groups</a></li><li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li></ul></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
@@ -670,7 +670,7 @@ done &gt;&gt; &quot;$file&quot;
 </li>
 </ul>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@20d9c22d7d60</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@9989eba34530</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -695,7 +695,7 @@ done &gt;&gt; &quot;$file&quot;
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
 -rw-r--r-- 1 2.1K   Dec  3 2021 22:14 rev. 39  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rwxr-xr-x 1  235   Dec  6 2021 18:11 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/yt-dlp/post-run">.config/upstream/yt-dlp/post-run</a>
--rw-r--r-- 1 1.3K   Sep 14 2020 22:04 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
+-rw-r--r-- 1 1019   Dec 16 2021 12:51 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
 -rw-r--r-- 1 2.2K   Dec 16 2021 09:11 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/ntc-chip.xkb">.config/xkb/ntc-chip.xkb</a>
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
