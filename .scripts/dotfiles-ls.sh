@@ -48,13 +48,12 @@ coverage="${coverage%??}%"
 
 	EOF
 
-	# reproduceably pick random emoji based on current contents of
-	# 'ref/heads/master', make sure it exists before shuffling
+	# reproduceably pick random emoji based on commit hash
 	readme="$HOME/readme.md"
-	rseed="$PWD/.commit-ref"
+	rseed="$DOC_ROOT/.commit-ref"
 	trap 'rm -f "$rseed"' 0 1 2 3 6
 	git meta rev-parse HEAD > "$rseed"
-	shimeji="$(find $DOC_ROOT/static/shimemiku -type f \
+	shimeji="$(find "$DOC_ROOT/static/shimemiku" -type f \
 		| shuf --random-source="$rseed" | head -n 1)"
 	shimeji="${shimeji#$DOC_ROOT/}"
 
