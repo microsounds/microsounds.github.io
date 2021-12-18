@@ -51,8 +51,9 @@ coverage="${coverage%??}%"
 	# reproduceably pick random emoji based on current contents of
 	# 'ref/heads/master', make sure it exists before shuffling
 	readme="$HOME/readme.md"
-	rseed="$(git meta rev-parse --git-dir)/refs/heads/master"
-	[ -f "$rseed" ] || git meta rev-parse master > "$rseed"
+	rseed="$PWD/.commit-ref"
+	trap 'rm -f "$rseed"' 0 1 2 3 6
+	git meta rev-parse HEAD > "$rseed"
 	shimeji="$(find $DOC_ROOT/static/shimemiku -type f \
 		| shuf --random-source="$rseed" | head -n 1)"
 	shimeji="${shimeji#$DOC_ROOT/}"
@@ -99,7 +100,7 @@ coverage="${coverage%??}%"
 						--date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
 					"<a href=\"$RAW/${esc_path:-$path}\">${esc_path:-$path}</a>"
-				printf '\r\e[K' 1>&2
+				printf '\r\33[K' 1>&2
 		esac
 	done
 	echo '</code></pre>'
