@@ -32,11 +32,11 @@ coverage="${coverage%??}%"
 		The verbosity factor of this document compared to comment lines of code
 		in this repo is about **${v_factor}:1**.
 
-		If this document is *$((this_doc / 1024))KiB* in size, and the
-		approximate size of all comment lines of code is *$((comments / 1024))KiB*,
-		then this document currently covers about
-		<b style="font-size: 20px;">$coverage</b> of all implemented features
-		and behavior in this repository.
+		If this document is *$(echo "scale=1; $this_doc / 1024" | bc)KiB* in
+		size, and the approximate size of all comment lines of code is
+		*$(echo "scale=1; $comments / 1024" | bc)KiB* then this document
+		currently covers about <b style="font-size: 20px;">$coverage</b>
+		of all implemented features and behavior in this repository.
 		This is just an [automated guess][1] though.
 
 		This document and repository is also mirrored at
@@ -69,7 +69,17 @@ coverage="${coverage%??}%"
 	prompt="$(whoami)@$(uname -n)"
 	command='git meta ls-tree --name-only -r master | xargs ls -lhgG'
 
-	echo '# Complete source listing'
+	cat <<- EOF
+		# Complete source listing
+		>**STATISTICS**<br>
+		>_Total on-disk size of the current revision is
+		$(echo "scale=2; ($(git meta list-files | xargs ls -l \
+			| tr -s ' ' '\t' | cut -f5 | paste -s -d '+')) / 1024" | bc)KiB
+		out of a total compressed git history size of
+		$(git meta count-objects -vH | fgrep 'size-pack' \
+			| tr -s ' :' '\t' | cut -f2)KiB._
+
+	EOF
 	printf '%s' '<pre><code>'
 	printf '%s:%s %s\n' \
 		"<span class=\"term-prompt\">$prompt</span>" \
