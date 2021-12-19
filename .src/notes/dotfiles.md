@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 744, commit `b095005`.**
+**Revision No. 745, commit `848a2de`.**
 
-**"gh-actions: Quietly check for broken links on page rebuild"**
+**"Nothing important"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *18.9KiB* in
+If this document is *19.0KiB* in
 size, and the approximate size of all comment lines of code is
 *54.1KiB* then this document
-currently covers about <b style="font-size: 20px;">6.99%</b>
+currently covers about <b style="font-size: 20px;">7.03%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -22,6 +22,7 @@ Last updated {CREATED}.
 
 [1]: https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/dotfiles-ls.sh
 
+<!-- header and github badges -->
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
@@ -43,6 +44,7 @@ This is my primary computing setup, a self-contained graphical shell environment
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
 
+<!-- figure 1: desktop screenshot -->
 [![scrot]][scrot]
 > **PICTURED**<br>
 > _Debian stable, a "graphical shell" environment consisting mostly of xorg, dwm, sxhkd and various urxvt clients._
@@ -64,6 +66,7 @@ Basic installation instructions are provided, along with some documentation for 
 5. Reboot to finish.
     * _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
 
+<!-- figure 2: mobile screenshot -->
 <a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
     <img width="125px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot2.png">
 </a>
@@ -354,15 +357,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime16.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-181.17KiB
+181.27KiB
 out of a total compressed git history size of
-699.86KiB._
+700.22KiB._
 
-<pre><code><span class="term-prompt">root@ad04109b1468</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@517ec61e363d</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -473,6 +476,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  19K   Dec 16 2021 13:28 rev. 159 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  20K   Dec 19 2021 12:34 rev. 160 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
-<!-- updated 2021-12-18 -->
+<!-- updated 2021-12-19 -->
