@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 745, commit `848a2de`.**
+**Revision No. 748, commit `1c55c33`.**
 
-**"Nothing important"**
+**"sxhkd: Keybinds for extended mouse buttons on certain mice"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *19.0KiB* in
+If this document is *19.4KiB* in
 size, and the approximate size of all comment lines of code is
-*54.1KiB* then this document
-currently covers about <b style="font-size: 20px;">7.03%</b>
+*54.4KiB* then this document
+currently covers about <b style="font-size: 20px;">7.16%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -86,8 +86,10 @@ Basic installation instructions are provided, along with some documentation for 
 * Any conventional BIOS/UEFI-compliant x86-based Personal Computer
 * x86-based Chromebooks in Developer Mode (SeaBIOS), or liberated with UEFI firmware (Coreboot).
     * _See <https://mrchromebox.tech/> for more information on unlocking your bootloader._
-* [Next Thing Co. PocketC.H.I.P](http://chip.jfpossibilities.com/docs/pocketchip.html) armhf-based portable ~~toy computer~~ linux handheld
+* [Next Thing Co. PocketC.H.I.P][ntc-chip] armhf-based portable ~~toy computer~~ linux handheld
     * _Final NTC-provided Debian 8 (jessie) OS images from 2016 come with out-of-tree `4.4.13-ntc-mlc` kernel pinned, upgradeable to 10 (buster)._
+
+[ntc-chip]: http://chip.jfpossibilities.com/docs/pocketchip.html "Mirrored PocketCHIP documentation"
 
 **Single-user minimal shell environment**
 * Bootstrapping in virtualized container instances for use in CI/CD workflows
@@ -133,11 +135,15 @@ Each script is self-contained, you can run them individually, anytime.
 Installation can be customized with user-provided executable install ~~hacks~~ scripts, named `{pre,post}-run`.
 These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/blob/master/.config/upstream) or at the root of a persistently installed utility's install directory as described above
 
-Rationale for doing things this way is summarized in commit [`2fe1c3745`](https://github.com/microsounds/atelier/commit/2fe1c3745).
+Rationale for doing things this way is summarized in commit [`2fe1c3745`][rat].
+
+[rat]: https://github.com/microsounds/atelier/commit/2fe1c3745 "introduced ~/.once.d/10-git-upstream.sh"
 
 ## Window manager
-`dwm` keybinds are the [defaults](https://ratfactor.com/dwm) with several exceptions.
+`dwm` keybinds are the [defaults][dwm] with several exceptions.
 Primary modkey `Mod1` is super instead of alt.
+
+[dwm]: https://ratfactor.com/dwm "suckless dwm tutorial"
 
 | shift + | alt + | key |
 | --: | --: | :-- |
@@ -266,7 +272,9 @@ Several commands are extended to include impure functions, such as purposefully 
 C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xBBGGRRAA` in two's complement hexadecimal with `AA` (alpha channel) always set to `0xFF`
 
 ### Managed policy overrides
-`chromium` is managed by `/etc/chromium/policies/managed/extensions.json`, set up during [post-install]({GIT_REMOTE}/atelier/blob/master/.once.d/29-chromium-extensions.sh), which automatically installs several useful extensions on first-run, including [uBlock Origin](https://ublockorigin.com).
+`chromium` is managed by `/etc/chromium/policies/managed/extensions.json`, set up during [post-install]({GIT_REMOTE}/atelier/blob/master/.once.d/29-chromium-extensions.sh), which automatically installs several useful extensions on first-run, including [uBlock Origin][].
+
+[uBlock Origin]: https://ublockorigin.com "uBlock Origin homepage"
 
 ## `git`
 `git` aliases are defined in [`~/.gitconfig`]({GIT_REMOTE}/atelier/blob/master/.gitconfig) or implemented in interactive shell function `git()`
@@ -311,16 +319,20 @@ See *Usage Notes* for more information.
 
 ## `notify-send`
 This particular [`notify-send`]({GIT_REMOTE}/atelier/blob/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
-because it doesn't tie into any `dbus`-based notification daemon implementing the [Desktop Notifications Specification](https://www.galago-project.org/specs/notification/0.9/index.html).
+because it doesn't tie into any `dbus`-based notification daemon implementing the [Desktop Notifications spec][notify].
+
+[notify]: https://www.galago-project.org/specs/notification/0.9/index.html "freedesktop.org Desktop Notifications spec"
 
 Instead, it's just a shell script that writes to a named pipe that gets picked up by [`xwin-statusd`]({GIT_REMOTE}/atelier/blob/master/Scripts/wm_status.sh) as a simple way to implement OSD text and single-line notifications.
 
 Unlike other implementations, you can pass notifications/OSD text as an argument or via stdin without using `xargs`.
 
 ## `sc` (spreadsheet calculator)
-`sc` supports macros to some degree, but it's macro documentation is largely non-existent or difficult to understand.
+`sc` is supports macros to some degree, but it's macro implementation is [difficult to understand][sc_macros] and there aren't many examples of it being used successfully anywhere that I've managed to find.
 
-Instead, the shell function `sc()` offers an easier to understand macro system for mangling `.sc` spreadsheet files at runtime.
+[sc_macros]: https://github.com/n-t-roff/sc/blob/master/SC.MACROS "I'm not even sure this was implemented as written."
+
+Instead, the shell function `sc()` offers an easier to understand macro system for statically mangling `.sc` spreadsheet files at runtime.
 * `sc` will automatically run any executable sharing the same initial name as the `.sc` file.
     * _eg. `sheet1.sc` will run `sheet1.sc.1`, `sheet1.scx`, etc. if they exist in the same directory and are executable at runtime._
 * You can write an arbitrarily complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
@@ -357,22 +369,22 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime26.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-181.27KiB
+182.21KiB
 out of a total compressed git history size of
-700.22KiB._
+703.45KiB._
 
-<pre><code><span class="term-prompt">root@517ec61e363d</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@11904ba3b476</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  402   Oct 29 2021 01:13 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
 -rw-r--r-- 1  732   Jul 17 2021 16:20 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
--rw-r--r-- 1 6.1K   Nov 13 2021 22:59 rev. 29  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/config.h">.config/dwm/config.h</a>
+-rw-r--r-- 1 6.2K   Dec 20 2021 13:54 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/config.h">.config/dwm/config.h</a>
 -rw-r--r-- 1  560   Jul 16 2021 00:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/floating-alwayscenter.diff">.config/dwm/patches/floating-alwayscenter.diff</a>
 -rw-r--r-- 1 1.7K   Jul 16 2021 00:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/floating-saveposition.diff">.config/dwm/patches/floating-saveposition.diff</a>
 -rw-r--r-- 1  501   Jul 16 2021 00:35 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/monocle-indicator.diff">.config/dwm/patches/monocle-indicator.diff</a>
@@ -389,6 +401,7 @@ out of a total compressed git history size of
 -rwxr-xr-x 1   77   Nov 14 2021 20:26 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
 -rw-r--r-- 1 2.2K   Dec 17 2021 15:18 rev. 40  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1  401   Dec 20 2021 13:55 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
 -rwxr-xr-x 1  235   Dec  6 2021 18:11 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/yt-dlp/post-run">.config/upstream/yt-dlp/post-run</a>
 -rw-r--r-- 1 1019   Dec 16 2021 12:51 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
 -rw-r--r-- 1 2.2K   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/ntc-chip.xkb">.config/xkb/ntc-chip.xkb</a>
@@ -466,7 +479,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
 -rw-r--r-- 1  832   Dec 12 2021 10:53 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
--rw-r--r-- 1 1.6K   Dec 16 2021 07:15 rev. 63  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 1.6K   Dec 20 2021 13:55 rev. 64  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 3.5K   Dec 14 2021 22:59 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  22K   Nov 18 2021 13:30 rev. 79  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -476,6 +489,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  20K   Dec 19 2021 12:34 rev. 160 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  20K   Dec 20 2021 13:50 rev. 161 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
-<!-- updated 2021-12-19 -->
+<!-- updated 2021-12-20 -->
