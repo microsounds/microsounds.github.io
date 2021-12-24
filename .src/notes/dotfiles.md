@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 749, commit `719400f`.**
+**Revision No. 750, commit `ac5d1bd`.**
 
-**"readme: Style changes, prepending '# comments' in codeblocks with tab"**
+**"path-gitstatus: Ignoring untracked files on large repos to improve latency"**
 
 {TOC}
 
@@ -10,8 +10,8 @@ in this repo is about **5:1**.
 
 If this document is *19.5KiB* in
 size, and the approximate size of all comment lines of code is
-*54.4KiB* then this document
-currently covers about <b style="font-size: 20px;">7.16%</b>
+*54.7KiB* then this document
+currently covers about <b style="font-size: 20px;">7.12%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -366,15 +366,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime20.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-182.22KiB
+182.42KiB
 out of a total compressed git history size of
-680.40KiB._
+681.26KiB._
 
-<pre><code><span class="term-prompt">root@081f5a614253</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@c1e6b4c59f8b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -478,7 +478,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rw-r--r-- 1 1.6K   Dec 20 2021 13:55 rev. 64  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
--rwxr-xr-x 1 3.5K   Dec 14 2021 22:59 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
+-rwxr-xr-x 1 3.7K   Dec 23 2021 21:52 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  22K   Nov 18 2021 13:30 rev. 79  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
@@ -488,4 +488,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  20K   Dec 22 2021 16:40 rev. 162 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
-<!-- updated 2021-12-22 -->
+<!-- updated 2021-12-23 -->
