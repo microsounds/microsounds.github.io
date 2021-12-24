@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 750, commit `1be2302`.**
+**Revision No. 751, commit `f3a9342`.**
 
-**"path-gitstatus: Ignoring untracked files on large repos to improve latency"**
+**"dwm: Ensuring reproducible emoji glyph sizes in header fonts"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *19.5KiB* in
+If this document is *20.2KiB* in
 size, and the approximate size of all comment lines of code is
-*54.7KiB* then this document
-currently covers about <b style="font-size: 20px;">7.12%</b>
+*54.8KiB* then this document
+currently covers about <b style="font-size: 20px;">7.37%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -231,6 +231,16 @@ This directory is appended to `$C_INCLUDE_PATH` at login.
 _Optionally, you can apply another existing color scheme by naming it as an argument.
 This can be useful when dealing with TUI applications that force their own background colors._
 
+> **NOTE**<br>
+> _HiDPI display setups are currently not supported, 96dpi is assumed everywhere.<br>
+> Besides being incredibly wasteful,
+> HiDPI has [innumerable][dpi1] [display issues][dpi2] in Xorg and adjacent components
+> that require polluting scripts and configuration to smooth out issues.<br>
+> See [`~/.local/include/theme.h`]({GIT_REMOTE}/atelier/blob/master/.local/include/theme.h) for more info._
+
+[dpi1]: https://wiki.archlinux.org/title/HiDPI "A laundry list of hacks to have consistent-looking fonts everywhere under HiDPI"
+[dpi2]: https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux "The real HiDPI experience on GNU/Linux"
+
 ### List of available macros
 * `{FG,BG}COLOR` for terminal fg/bg colors
 * `{FG,BG}LIGHT` for UX highlight colors
@@ -238,6 +248,8 @@ This can be useful when dealing with TUI applications that force their own backg
 * `FN_{TERM,HEADER,TEXT}` for specific font faces
 * `FN_{TERM,HEADER}_JP` for matching fallback fonts
 * `FN_{TERM,HEADER,TEXT}_SIZE` for matching font sizes
+* `FN_EMOJI` for specifying fallback emoji glyphs
+* `FN_EMOJI_SIZE` for specifying fallback emoji glyph sizes
 
 # Non-standard commands
 Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:
@@ -366,22 +378,22 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime26.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime7.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-182.43KiB
+184.02KiB
 out of a total compressed git history size of
-704.72KiB._
+707.75KiB._
 
-<pre><code><span class="term-prompt">root@4e2f4266340e</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@1805c83b7dd3</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  402   Oct 29 2021 01:13 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
--rw-r--r-- 1  732   Jul 17 2021 16:20 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
--rw-r--r-- 1 6.2K   Dec 20 2021 13:54 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/config.h">.config/dwm/config.h</a>
+-rw-r--r-- 1  807   Dec 24 2021 12:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
+-rw-r--r-- 1 6.3K   Dec 24 2021 12:04 rev. 31  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/config.h">.config/dwm/config.h</a>
 -rw-r--r-- 1  560   Jul 16 2021 00:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/floating-alwayscenter.diff">.config/dwm/patches/floating-alwayscenter.diff</a>
 -rw-r--r-- 1 1.7K   Jul 16 2021 00:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/floating-saveposition.diff">.config/dwm/patches/floating-saveposition.diff</a>
 -rw-r--r-- 1  501   Jul 16 2021 00:35 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/monocle-indicator.diff">.config/dwm/patches/monocle-indicator.diff</a>
@@ -429,7 +441,7 @@ lrwxrwxrwx 1   29  .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
 -rw-r--r-- 1  749   Feb 15 2021 00:56 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/nightdrive.h">.local/include/colors/nightdrive.h</a>
 -rw-r--r-- 1  690   Nov 15 2021 23:00 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/overcast.h">.local/include/colors/overcast.h</a>
 -rw-r--r-- 1  642   Feb 15 2021 00:56 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/colors/xterm.h">.local/include/colors/xterm.h</a>
--rw-r--r-- 1  811   Dec  2 2021 17:30 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
+-rw-r--r-- 1 1.6K   Dec 24 2021 12:04 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
 -rwxr-xr-x 1  477   Jul 10 2021 23:42 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/extern">.local/lib/extern</a>
 -rwxr-xr-x 1  162   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
@@ -486,6 +498,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  20K   Dec 22 2021 16:40 rev. 162 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Dec 24 2021 12:04 rev. 163 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
-<!-- updated 2021-12-23 -->
+<!-- updated 2021-12-24 -->
