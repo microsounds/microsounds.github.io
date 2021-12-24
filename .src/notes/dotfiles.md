@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 750, commit `ac5d1bd`.**
+**Revision No. 750, commit `1be2302`.**
 
 **"path-gitstatus: Ignoring untracked files on large repos to improve latency"**
 
@@ -366,15 +366,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime26.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-182.42KiB
+182.43KiB
 out of a total compressed git history size of
-681.26KiB._
+704.72KiB._
 
-<pre><code><span class="term-prompt">root@c1e6b4c59f8b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@4e2f4266340e</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
