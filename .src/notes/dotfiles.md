@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 751, commit `f3a9342`.**
+**Revision No. 752, commit `66cc383`.**
 
-**"dwm: Ensuring reproducible emoji glyph sizes in header fonts"**
+**"Nothing important, HiDPI scaling is still painful"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *20.2KiB* in
+If this document is *20.6KiB* in
 size, and the approximate size of all comment lines of code is
 *54.8KiB* then this document
-currently covers about <b style="font-size: 20px;">7.37%</b>
+currently covers about <b style="font-size: 20px;">7.52%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -231,16 +231,6 @@ This directory is appended to `$C_INCLUDE_PATH` at login.
 _Optionally, you can apply another existing color scheme by naming it as an argument.
 This can be useful when dealing with TUI applications that force their own background colors._
 
-> **NOTE**<br>
-> _HiDPI display setups are currently not supported, 96dpi is assumed everywhere.<br>
-> Besides being incredibly wasteful,
-> HiDPI has [innumerable][dpi1] [display issues][dpi2] in Xorg and adjacent components
-> that require polluting scripts and configuration to smooth out issues.<br>
-> See [`~/.local/include/theme.h`]({GIT_REMOTE}/atelier/blob/master/.local/include/theme.h) for more info._
-
-[dpi1]: https://wiki.archlinux.org/title/HiDPI "A laundry list of hacks to have consistent-looking fonts everywhere under HiDPI"
-[dpi2]: https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux "The real HiDPI experience on GNU/Linux"
-
 ### List of available macros
 * `{FG,BG}COLOR` for terminal fg/bg colors
 * `{FG,BG}LIGHT` for UX highlight colors
@@ -250,6 +240,20 @@ This can be useful when dealing with TUI applications that force their own backg
 * `FN_{TERM,HEADER,TEXT}_SIZE` for matching font sizes
 * `FN_EMOJI` for specifying fallback emoji glyphs
 * `FN_EMOJI_SIZE` for specifying fallback emoji glyph sizes
+
+## Issues with HiDPI scaling
+HiDPI display setups are currently **not** supported, 96dpi is assumed everywhere.
+
+HiDPI scaling brings up innumerable display issues in [every category of graphical software][dpi1]
+including [electron-based applications][dpi2] that require polluting scripts and dotfiles to smooth out toolkit scaling issues.
+Maintaining mixed-DPI multi-monitor setups in X11 is [even more painful][dpi3].
+
+Or to put it another way, crisp terminal fonts are not worth peppering my scripts with toolkit-specific global variables and conditional logic just for HiDPI scaling.
+See [`~/.local/include/theme.h`]({GIT_REMOTE}/atelier/blob/master/.local/include/theme.h) for more info.
+
+[dpi1]: https://wiki.archlinux.org/title/HiDPI "A laundry list of hacks to have consistent-looking fonts everywhere under HiDPI"
+[dpi2]: https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux "The real HiDPI experience on GNU/Linux"
+[dpi3]: http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/#mixeddpiinx11 "Workarounds for mixed DPI multi-monitor setups in X11"
 
 # Non-standard commands
 Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:
@@ -378,15 +382,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime7.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime13.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-184.02KiB
+184.42KiB
 out of a total compressed git history size of
-707.75KiB._
+684.45KiB._
 
-<pre><code><span class="term-prompt">root@1805c83b7dd3</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@89c2a293f80b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -498,6 +502,6 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  21K   Dec 24 2021 12:04 rev. 163 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Dec 24 2021 23:50 rev. 164 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- updated 2021-12-24 -->

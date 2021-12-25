@@ -28,22 +28,22 @@
 <div class="content">
 <!--kagami v0.5.4 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 751, commit <code>f3a9342</code>.</strong></p>
-<p><strong>“dwm: Ensuring reproducible emoji glyph sizes in header fonts”</strong></p>
-<p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li><li><a href="#Notes-on-platform-support">Notes on platform support</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a><ul><li><a href="#Essential-and-optional-package-groups">Essential and *optional package groups</a></li><li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li></ul></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
+<p><strong>Revision No. 752, commit <code>66cc383</code>.</strong></p>
+<p><strong>“Nothing important, HiDPI scaling is still painful”</strong></p>
+<p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li><li><a href="#Notes-on-platform-support">Notes on platform support</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a><ul><li><a href="#Essential-and-optional-package-groups">Essential and *optional package groups</a></li><li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li></ul></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#Issues-with-HiDPI-scaling">Issues with HiDPI scaling</a></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>20.2KiB</em> in
+<p>If this document is <em>20.6KiB</em> in
 size, and the approximate size of all comment lines of code is
 <em>54.8KiB</em> then this document
-currently covers about <b style="font-size: 20px;">7.37%</b>
+currently covers about <b style="font-size: 20px;">7.52%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
 <p>Last updated 🌒&#xFE0E; Fri, Dec 24th, 2021.</p>
 <!-- header and github badges -->
-<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime7.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
+<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime13.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
     <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
@@ -443,14 +443,6 @@ This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 </ul>
 <p><em>Optionally, you can apply another existing color scheme by naming it as an argument.
 This can be useful when dealing with TUI applications that force their own background colors.</em></p>
-<blockquote>
-<p><strong>NOTE</strong><br>
-<em>HiDPI display setups are currently not supported, 96dpi is assumed everywhere.<br>
-Besides being incredibly wasteful,
-HiDPI has <a href="https://wiki.archlinux.org/title/HiDPI" title="A laundry list of hacks to have consistent-looking fonts everywhere under HiDPI">innumerable</a> <a href="https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux" title="The real HiDPI experience on GNU/Linux">display issues</a> in Xorg and adjacent components
-that require polluting scripts and configuration to smooth out issues.<br>
-See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/theme.h"><code>~/.local/include/theme.h</code></a> for more info.</em></p>
-</blockquote>
 <h3>List of available macros<span id="List-of-available-macros"></span></h3>
 <ul>
 <li><code>{FG,BG}COLOR</code> for terminal fg/bg colors</li>
@@ -462,6 +454,13 @@ See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/t
 <li><code>FN_EMOJI</code> for specifying fallback emoji glyphs</li>
 <li><code>FN_EMOJI_SIZE</code> for specifying fallback emoji glyph sizes</li>
 </ul>
+<h2>Issues with HiDPI scaling<span id="Issues-with-HiDPI-scaling"></span></h2>
+<p>HiDPI display setups are currently <strong>not</strong> supported, 96dpi is assumed everywhere.</p>
+<p>HiDPI scaling brings up innumerable display issues in <a href="https://wiki.archlinux.org/title/HiDPI" title="A laundry list of hacks to have consistent-looking fonts everywhere under HiDPI">every category of graphical software</a>
+including <a href="https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux" title="The real HiDPI experience on GNU/Linux">electron-based applications</a> that require polluting scripts and dotfiles to smooth out toolkit scaling issues.
+Maintaining mixed-DPI multi-monitor setups in X11 is <a href="http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/#mixeddpiinx11" title="Workarounds for mixed DPI multi-monitor setups in X11">even more painful</a>.</p>
+<p>Or to put it another way, crisp terminal fonts are not worth peppering my scripts with toolkit-specific global variables and conditional logic just for HiDPI scaling.
+See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/theme.h"><code>~/.local/include/theme.h</code></a> for more info.</p>
 <h1>Non-standard commands<span id="Non-standard-commands"></span></h1>
 <p>Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:</p>
 <ol>
@@ -692,11 +691,11 @@ done &gt;&gt; &quot;$file&quot;
 <blockquote>
 <p><strong>STATISTICS</strong><br>
 <em>Total on-disk size of the current revision is
-184.02KiB
+184.42KiB
 out of a total compressed git history size of
-707.75KiB.</em></p>
+684.45KiB.</em></p>
 </blockquote>
-<pre><code><span class="term-prompt">root@1805c83b7dd3</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@89c2a293f80b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.1K   Dec 14 2021 20:37 rev. 123 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -808,7 +807,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  21K   Dec 24 2021 12:04 rev. 163 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Dec 24 2021 23:50 rev. 164 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- updated 2021-12-24 -->
 <hr>
