@@ -144,9 +144,23 @@ th { padding: 10px 5px 10px 5px; background: #777; }
 td { padding: 5px; }
 tr { background: rgba(0, 0, 0, 30%); }
 tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
-	
-/* end of page footnote */
-.footnote {
+
+/* end of page footnotes and references */
+.footnotes:before { content: "Footnotes"; }
+.footnotes {
+	margin: 10px;
+	padding:5px;
+	background: rgba(0,0,0, 10%);
+	font-style: italic;
+	font-size: 14px;
+}
+.footnote-ref {
+	font-size: 15px; 
+	font-style: italic;
+	font-weight: bold;
+}
+
+.footer {
 	font-family: "Liberation Sans", "Arial", "Helvetica", sans-serif;
 	font-style: italic;
 	font-size: 11px;
