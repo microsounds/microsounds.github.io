@@ -65,8 +65,8 @@ If it's about a project or an article on this website, feel free to open an issu
 [![konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
 [![html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
 [![css]({DOC_ROOT}/static/button/valid-css-blue.png)](https://jigsaw.w3.org/css-validator/check/referer)
-[![cc]({DOC_ROOT}/static/button/cc.png)](https://creativecommons.org/licenses/by-sa/4.0)
-[![gpl]({DOC_ROOT}/static/button/gpl.png)](https://www.gnu.org/licenses/gpl-3.0)
+[![cc]({DOC_ROOT}/static/button/cc.png)]({CC_BY_SA})
+[![gpl]({DOC_ROOT}/static/button/gpl.png)]({GNU_GPL})
 
 </div>
 
