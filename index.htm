@@ -30,7 +30,11 @@
 <h1>Homepage</h1>
 <!-- stylesheet override -->
 <!-- prevent borders around transparent inline images on this page only -->
-<style>p img { border: unset; }</style>
+<script>
+	var e = document.createElement('style');
+	e.innerHTML = 'p img { border: unset; }';
+	document.body.insertBefore(e, document.body.firstChild);
+</script>
 <p><img src="/static/starry.png"
 alt="starry night sky"
 style="max-width: 100%; border: 1px solid #CCC;"

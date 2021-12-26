@@ -2,7 +2,11 @@
 
 <!-- stylesheet override -->
 <!-- prevent borders around transparent inline images on this page only -->
-<style>p img { border: unset; }</style>
+<script>
+	var e = document.createElement('style');
+	e.innerHTML = 'p img { border: unset; }';
+	document.body.insertBefore(e, document.body.firstChild);
+</script>
 <img src="{DOC_ROOT}/static/starry.png"
 	alt="starry night sky"
 	style="max-width: 100%; border: 1px solid #CCC;"
@@ -70,5 +74,3 @@ If it's about a project or an article on this website, feel free to open an issu
 <!-- Bell System Technical Journal July-August 1978 Vol. 57, No. 6, Part 2 -->
 <!-- [unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf -->
 [unix]: https://files.catbox.moe/gn20dj.pdf
-
-
