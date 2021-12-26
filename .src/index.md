@@ -1,6 +1,12 @@
 # Homepage
 
-![header]({DOC_ROOT}/static/starry.png)
+<!-- stylesheet override -->
+<!-- prevent borders around transparent inline images on this page only -->
+<style>p img { border: unset; }</style>
+<img src="{DOC_ROOT}/static/starry.png"
+	alt="starry night sky"
+	style="max-width: 100%; border: 1px solid #CCC;"
+/>
 
 ## About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
@@ -11,13 +17,18 @@ I like to have [this album][noise] in the background sometimes.
 More importantly, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
 Sometimes, I'll do this to force myself to try new things.
 
-<div style="filter: grayscale(65%); font-style: italic; text-align: right;">
-For example, this website, the superset of github flavored markdown I built up to author this site, and the static site generator I wrote that ties it all together were a result of me wanting to get into long form writing.
+<div class="right" style="filter: grayscale(65%); font-style: italic;">
+For example, this website,
+the superset of github flavored markdown I built up to author this site,
+and the static site generator I wrote that ties it all together were a result of me wanting to get into long form writing.
 
-That's the excuse I give myself, anyway. I don't actually care for long form writing, I just really like metaprogramming.
+That's the excuse I give myself, anyway.
+I don't actually care for long form writing,
+I just really like metaprogramming.
 
 It's a never-ending process.
-<div><img alt="scripts" src="{DOC_ROOT}/static/shimemiku/shime32.png"></div>
+
+![scripts]({DOC_ROOT}/static/shimemiku/shime32.png)
 </div>
 <hr style="width: 40%">
 
@@ -38,22 +49,21 @@ It's a never-ending process.
 If it's about a project or an article on this website, feel free to open an issue or a pull request on GitHub.
 
 ## Misc
-<div style="width: 70%; margin-left: auto; margin-right: auto;">
-<!-- distract the user -->
-<a href="/eeeeeeeeeeeeeeeeeeeee">
-	<img alt="filler" src="{DOC_ROOT}/static/button/88x31whitemarble.gif">
-	<img alt="filler" src="{DOC_ROOT}/static/button/88x31pinkmarble.gif">
-</a>
-<a href="https://www.debian.org/distrib"><img alt="debian" src="{DOC_ROOT}/static/button/debian.png"></a>
-<a href="https://nano-editor.org"><img alt="nano" src="{DOC_ROOT}/static/button/nano.png"></a>
-<a href="https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_"><img alt="vocaloid" src="{DOC_ROOT}/static/button/vocaloid.gif"></a>
-<a href="https://www.youtube.com/watch?v=3rsBLRFONEs"><img alt="miku1" src="{DOC_ROOT}/static/button/hatsunemiku1.gif"></a>
-<a href="https://www.youtube.com/watch?v=NJAghsisnok"><img alt="miku2" src="{DOC_ROOT}/static/button/miku.gif"></a>
-<a href="https://www.youtube.com/watch?v=KGD-mFTY6mw"><img alt="lucky star" src="{DOC_ROOT}/static/button/konata.gif"></a>
-<a href="https://validator.w3.org/check/referer"><img alt="html" src="{DOC_ROOT}/static/button/valid-html5-blue.svg"></a>
-<a href="https://jigsaw.w3.org/css-validator/check/referer"><img alt="css" src="{DOC_ROOT}/static/button/valid-css-blue.png"></a>
-<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="cc" src="{DOC_ROOT}/static/button/cc.png"></a>
-<a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img alt="gpl" src="{DOC_ROOT}/static/button/gplv3.gif"></a>
+<div class="center" style="width: 70%;">
+
+[![filler1]({DOC_ROOT}/static/button/88x31whitemarble.gif)](/eeeeeeeeeeeeeeeeee)
+[![filler2]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
+[![debian]({DOC_ROOT}/static/button/debian.png)](https://debian.org/distrib)
+[![nano]({DOC_ROOT}/static/button/nano.png)](https://nano-editor.org)
+[![vocaloid]({DOC_ROOT}/static/button/vocaloid.gif)](https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_)
+[![miku1]({DOC_ROOT}/static/button/hatsunemiku1.gif)](https://www.youtube.com/watch?v=3rsBLRFONEs)
+[![miku2]({DOC_ROOT}/static/button/miku.gif)](https://www.youtube.com/watch?v=NJAghsisnok)
+[![konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
+[![html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
+[![css]({DOC_ROOT}/static/button/valid-css-blue.png)](https://jigsaw.w3.org/css-validator/check/referer)
+[![cc]({DOC_ROOT}/static/button/cc.png)](https://creativecommons.org/licenses/by-sa/4.0)
+[![gpl]({DOC_ROOT}/static/button/gpl.png)](https://www.gnu.org/licenses/gpl-3.0)
+
 </div>
 
 [noise]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
