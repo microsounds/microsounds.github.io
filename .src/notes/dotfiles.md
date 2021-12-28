@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 754, commit `f6ad232`.**
+**Revision No. 755, commit `2ebb5be`.**
 
-**"termux: Added httpd to shortlist of comforts"**
+**"chromium: Prevent race conditions rebuilding config on first-run"**
 
 {TOC}
 
@@ -10,8 +10,8 @@ in this repo is about **5:1**.
 
 If this document is *20.6KiB* in
 size, and the approximate size of all comment lines of code is
-*54.8KiB* then this document
-currently covers about <b style="font-size: 20px;">7.51%</b>
+*54.9KiB* then this document
+currently covers about <b style="font-size: 20px;">7.50%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -382,15 +382,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime7.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime51.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-184.55KiB
+184.64KiB
 out of a total compressed git history size of
-708.81KiB._
+710.03KiB._
 
-<pre><code><span class="term-prompt">root@e443a524e569</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@009862a3dd8c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.2K   Dec 26 2021 15:18 rev. 124 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -424,7 +424,7 @@ out of a total compressed git history size of
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  989   Dec  6 2021 19:53 rev. 24  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 3.2K   Dec 18 2021 22:58 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
--rwxr-xr-x 1 2.1K   Nov 11 2021 20:05 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 -rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
