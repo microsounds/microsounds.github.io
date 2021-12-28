@@ -1,6 +1,7 @@
-<!--updated 2021/12/1-->
+<!-- created 2020/10/22 -->
+<!-- updated 2021/12/1 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
-Last updated {CREATED}.
+Last updated {UPDATED}.
 
 > **NOTICE**<br><br>
 > I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.

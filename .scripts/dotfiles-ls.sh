@@ -42,7 +42,7 @@ coverage="${coverage%??}%"
 		This document and repository is also mirrored at
 		[\`{AUTHOR}/atelier\`]({GIT_REMOTE}/atelier) on GitHub.
 
-		Last updated {CREATED}.
+		Last updated {UPDATED}.
 
 		[1]: ${RAW%/atelier/master}/microsounds.github.io/master/${0#$DOC_ROOT/}
 
@@ -113,5 +113,6 @@ coverage="${coverage%??}%"
 		esac
 	done
 	echo '</code></pre>'
+	echo "<!-- created $(git meta log --date=short --format='%ad' -- readme.md | tail -n 1) -->"
 	echo "<!-- updated $(git meta log -1 --date=short --format='%ad') -->"
 } > "$DOC_ROOT/.src/notes/dotfiles.md"
