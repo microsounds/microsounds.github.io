@@ -3,11 +3,19 @@
 cd ~
 
 # re-renders ~/readme.md for use as a standalone webpage
-# spit out complete listing of dotfiles with inline links
-RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
+# spits out complete listing of dotfiles with inline links
 ver="$(git meta rev-list HEAD | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
+
+# github direct URL prefixes
+# raw.githubusercontent.com/<user>/<repo>/<branch>/<path>
+# - very fast
+# - doesn't support directory links, returning 404
+# github.com/<user>/<repo>/{raw,blob}/<branch>/<path>
+# - served much more slowly, */raw/* 302's to the first URL
+# - but it automatically redirects to */blob/* on directory links
+D_RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
 
 # estimated documentation completeness
 # this document is about 5x more verbose than my comments
@@ -20,7 +28,10 @@ comments="$(git meta list-files \
 coverage="$(echo "scale=4; (($this_doc / $v_factor) / $comments) * 100" | bc)"
 coverage="${coverage%??}%"
 
-{	# document header
+# document header
+# this is a chaotic mix of multiple syntaxes, plain shell is evaluated first,
+# then kagami inline macros, then kagami flavored markdown + inline HTML
+{
 	cat <<- EOF
 		# Selected documentation and usage notes for my dotfiles
 		**Revision No. $ver, commit \`$hash\`.**
@@ -35,7 +46,7 @@ coverage="${coverage%??}%"
 		If this document is *$(echo "scale=1; $this_doc / 1024" | bc)KiB* in
 		size, and the approximate size of all comment lines of code is
 		*$(echo "scale=1; $comments / 1024" | bc)KiB* then this document
-		currently covers about <b style="font-size: 20px;">$coverage</b>
+		currently covers about <b style="font-size: 130%;">$coverage</b>
 		of all implemented features and behavior in this repository.
 		This is just an [automated guess][1] though.
 
@@ -44,7 +55,7 @@ coverage="${coverage%??}%"
 
 		Last updated {UPDATED}.
 
-		[1]: ${RAW%/atelier/master}/microsounds.github.io/master/${0#$DOC_ROOT/}
+		[1]: {GIT_REMOTE}/microsounds.github.io/raw/master/${0#$DOC_ROOT/}
 
 	EOF
 
@@ -61,7 +72,7 @@ coverage="${coverage%??}%"
 	# replace tabs with 4-space indents
 	# replace inline shimeji with a random one
 	cat "$readme" | sed -E \
-		-e 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/blob/master/\1\),g' \
+		-e 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
 		-e 's/\t/    /g' \
 		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
 
@@ -108,7 +119,7 @@ coverage="${coverage%??}%"
 					"$(git meta log -1 \
 						--date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
-					"<a href=\"$RAW/${esc_path:-$path}\">${esc_path:-$path}</a>"
+					"<a href=\"$D_RAW/${esc_path:-$path}\">${esc_path:-$path}</a>"
 				printf '\r\33[K' 1>&2
 		esac
 	done

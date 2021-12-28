@@ -34,7 +34,8 @@ It's a never-ending process.
 
 ![scripts]({DOC_ROOT}/static/shimemiku/shime32.png)
 </div>
-<hr style="width: 40%">
+
+{THEMATIC_BREAK}
 
 ## Things I've made recently
 * _(2019–present)_ my "graphical shell" computing environment — [`{AUTHOR}/atelier`]({DOC_ROOT}/notes/dotfiles.md)

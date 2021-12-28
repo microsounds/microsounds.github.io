@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 755, commit `2ebb5be`.**
+**Revision No. 756, commit `5936f8d`.**
 
-**"chromium: Prevent race conditions rebuilding config on first-run"**
+**"Nothing important"**
 
 {TOC}
 
@@ -11,7 +11,7 @@ in this repo is about **5:1**.
 If this document is *20.6KiB* in
 size, and the approximate size of all comment lines of code is
 *54.9KiB* then this document
-currently covers about <b style="font-size: 20px;">7.50%</b>
+currently covers about <b style="font-size: 130%;">7.52%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -20,7 +20,7 @@ This document and repository is also mirrored at
 
 Last updated {UPDATED}.
 
-[1]: https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/dotfiles-ls.sh
+[1]: {GIT_REMOTE}/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh
 
 <!-- header and github badges -->
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
@@ -39,8 +39,8 @@ Last updated {UPDATED}.
 
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
 * Git is used to maintain an identical and reproducible setup across multiple machines.
-* A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d) document and reproduce system-wide deviations from a fresh install.
-    * _A [suite of unit tests]({GIT_REMOTE}/atelier/blob/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
+* A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d) document and reproduce system-wide deviations from a fresh install.
+    * _A [suite of unit tests]({GIT_REMOTE}/atelier/raw/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
 
@@ -63,11 +63,11 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 4. Run `post-install` in the shell to run post-install scripts automatically.
     * _Sets up the package manager, installs essential packages, compiles window manager, text editor, etc._
 5. Reboot to finish.
-    * _[`xinit`]({GIT_REMOTE}/atelier/blob/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
+    * _[`xinit`]({GIT_REMOTE}/atelier/raw/master/.xinitrc) starts automatically upon login to [`tty1`](.profile)._
 
 <!-- figure 2: mobile screenshot -->
-<a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
-    <img width="125px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot2.png">
+<a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot.jpg">
+    <img width="125px" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png">
 </a>
 
 ## Quick start on Termux for Android
@@ -76,7 +76,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 > This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
-2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/blob/master/.once.d/a0-android-termux.sh)
+2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/raw/master/.once.d/a0-android-termux.sh)
     * Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
 3. When pulling changes from upstream, always stash changes to prevent merge conflicts.
 
@@ -106,33 +106,33 @@ For local-scope changes, files in `$HOME` are versioned and mangled in place usi
     * _`init` and `clone` commands are unaffected._
 
 ## Using `~/.once.d` post-install scripts
-All system-wide changes are performed through automated scripts located in [`~/.once.d`]({GIT_REMOTE}/atelier/blob/master/.once.d), you can run them all at once with shell function `post-install`.
+All system-wide changes are performed through automated scripts located in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d), you can run them all at once with shell function `post-install`.
 Each script is self-contained, you can run them individually, anytime.
 
 * Some scripts only apply to specific hardware configurations, and will exit even if they are run.
 * Scripts affecting `systemd` or the bootloader will be skipped in virtualized container contexts.
-* Locally installed software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin) when possible.
+* Locally installed software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/raw/master/.local/bin) when possible.
 
 | series | function |
 | -- | -- |
 | `0*` | System-wide changes performed through the package manager. |
-| `1*` | Changes to [`~/.local`]({GIT_REMOTE}/atelier/blob/master/.local) file hierarchy, such as locally installed software and resources. |
+| `1*` | Changes to [`~/.local`]({GIT_REMOTE}/atelier/raw/master/.local) file hierarchy, such as locally installed software and resources. |
 | `2*` | System-wide changes that bypass the package manager, such as changes to `/etc`.<br>_These are hacks._ |
 | `c*` | System-wide changes affecting chromebook hardware only. |
 | `a*` | Android-specific hacks only. |
 | `p*` | NTC PocketCHIP-specific hacks only. |
 
 ### Essential and *optional package groups
-* [ `~/.comforts` ]({GIT_REMOTE}/atelier/blob/master/.comforts) describes a list of non-optional package groups that will be installed through the package manager.
+* [ `~/.comforts` ]({GIT_REMOTE}/atelier/raw/master/.comforts) describes a list of non-optional package groups that will be installed through the package manager.
     * _Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime._
 
 ### Essential and *persistent upstream utilities
-* [`~/.comforts-git`]({GIT_REMOTE}/atelier/blob/master/.comforts-git) describes the full list of utilities compiled and installed from their upstream git sources.
+* [`~/.comforts-git`]({GIT_REMOTE}/atelier/raw/master/.comforts-git) describes the full list of utilities compiled and installed from their upstream git sources.
     * _Repos must have a typical `./configure` and/or `make install PREFIX=...` metaphor to build correctly._
     * _Sources marked with an *asterisk will be persistently installed to `~/.config/${URL##*/}`_
 
 Installation can be customized with user-provided executable install ~~hacks~~ scripts, named `{pre,post}-run`.
-These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/blob/master/.config/upstream) or at the root of a persistently installed utility's install directory as described above
+These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/raw/master/.config/upstream) or at the root of a persistently installed utility's install directory as described above
 
 Rationale for doing things this way is summarized in commit [`2fe1c3745`][rat].
 
@@ -206,7 +206,7 @@ For use with multi-monitor and/or complicated display setups, you can override t
     --output HDMI-0 --auto --primary --rotate normal
     --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 
-Commands in this file are passed to [`xrandr-cycle`]({GIT_REMOTE}/atelier/blob/master/Scripts/xrandr_cycle.sh) line by line at startup if it exists.
+Commands in this file are passed to [`xrandr-cycle`]({GIT_REMOTE}/atelier/raw/master/Scripts/xrandr_cycle.sh) line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.
 
 ### `~/.xdecor`
@@ -216,13 +216,13 @@ You can designate one or more paths to directories containing images or videos f
     ~/Pictures/some/path
     /media/sd_card/some/path
 
-If it exists, [`xwin-decor`]({GIT_REMOTE}/atelier/blob/master/Scripts/xwin_decor.sh) will randomly pick a directory and file within it and set it as the wallpaper on startup.
+If it exists, [`xwin-decor`]({GIT_REMOTE}/atelier/raw/master/Scripts/xwin_decor.sh) will randomly pick a directory and file within it and set it as the wallpaper on startup.
 In the case of video files, a random video frame from that file will be taken and set as the wallpaper using `ffmpeg`.
 
 ## X resources and theming
 For consistency, `xinit`, `dwm` and other scripts make use of the C preprocessor to mangle config files and configure color schemes.
 
-Theme settings and individual color schemes are stored as C header files containing preprocessor macros representing color hex codes in [`~/.local/include`]({GIT_REMOTE}/atelier/blob/master/.local/include).
+Theme settings and individual color schemes are stored as C header files containing preprocessor macros representing color hex codes in [`~/.local/include`]({GIT_REMOTE}/atelier/raw/master/.local/include).
 This directory is appended to `$C_INCLUDE_PATH` at login.
 
 * Using shell function `reload` will reload changes to `.xresources` and hard-reset your current terminal instance.
@@ -249,7 +249,7 @@ including [electron-based applications][dpi2] that require polluting scripts and
 Maintaining mixed-DPI multi-monitor setups in X11 is [even more painful][dpi3].
 
 Or to put it another way, crisp terminal fonts are not worth peppering my scripts with toolkit-specific global variables and conditional logic just for HiDPI scaling.
-See [`~/.local/include/theme.h`]({GIT_REMOTE}/atelier/blob/master/.local/include/theme.h) for more info.
+See [`~/.local/include/theme.h`]({GIT_REMOTE}/atelier/raw/master/.local/include/theme.h) for more info.
 
 [dpi1]: https://wiki.archlinux.org/title/HiDPI "A laundry list of hacks to have consistent-looking fonts everywhere under HiDPI"
 [dpi2]: https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux "The real HiDPI experience on GNU/Linux"
@@ -258,10 +258,10 @@ See [`~/.local/include/theme.h`]({GIT_REMOTE}/atelier/blob/master/.local/include
 # Non-standard commands
 Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:
 
-1. Interactive shell functions defined in [`~/.bashrc`]({GIT_REMOTE}/atelier/blob/master/.bashrc)
-2. Non-interactive shell library executables in [`~/.local/lib`]({GIT_REMOTE}/atelier/blob/master/.local/lib)
+1. Interactive shell functions defined in [`~/.bashrc`]({GIT_REMOTE}/atelier/raw/master/.bashrc)
+2. Non-interactive shell library executables in [`~/.local/lib`]({GIT_REMOTE}/atelier/raw/master/.local/lib)
     * Shell script snippets used by multiple scripts to reduce clutter.
-3. Normal executables and symlinks in [`~/.local/bin`]({GIT_REMOTE}/atelier/blob/master/.local/bin)
+3. Normal executables and symlinks in [`~/.local/bin`]({GIT_REMOTE}/atelier/raw/master/.local/bin)
     * Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
 4. `/usr/bin` system-wide executables
 
@@ -279,18 +279,18 @@ Several commands are extended to include impure functions, such as purposefully 
 >_On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
 
 `chromium` was extended to mangle the user-hostile per-profile `Preferences` and global `Local State` JSON files with a series of chained `jq` filters stored in the following files, applying persistent settings in order.
-* [`~/.config/chromium/preferences.conf`]({GIT_REMOTE}/atelier/blob/master/.config/chromium/preferences.conf)
-* [`~/.config/chromium/local_state.conf`]({GIT_REMOTE}/atelier/blob/master/.config/chromium/local_state.conf)
+* [`~/.config/chromium/preferences.conf`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/preferences.conf)
+* [`~/.config/chromium/local_state.conf`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/local_state.conf)
 
 C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xBBGGRRAA` in two's complement hexadecimal with `AA` (alpha channel) always set to `0xFF`
 
 ### Managed policy overrides
-`chromium` is managed by `/etc/chromium/policies/managed/extensions.json`, set up during [post-install]({GIT_REMOTE}/atelier/blob/master/.once.d/29-chromium-extensions.sh), which automatically installs several useful extensions on first-run, including [uBlock Origin][].
+`chromium` is managed by `/etc/chromium/policies/managed/extensions.json`, set up during [post-install]({GIT_REMOTE}/atelier/raw/master/.once.d/29-chromium-extensions.sh), which automatically installs several useful extensions on first-run, including [uBlock Origin][].
 
 [uBlock Origin]: https://ublockorigin.com "uBlock Origin homepage"
 
 ## `git`
-`git` aliases are defined in [`~/.gitconfig`]({GIT_REMOTE}/atelier/blob/master/.gitconfig) or implemented in interactive shell function `git()`
+`git` aliases are defined in [`~/.gitconfig`]({GIT_REMOTE}/atelier/raw/master/.gitconfig) or implemented in interactive shell function `git()`
 
 See *Usage Notes* for more information.
 
@@ -308,9 +308,9 @@ See *Usage Notes* for more information.
 
 ## `nano`
 > **NOTE**<br>
-> _`nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/blob/master/.nanorc) correctly._
+> _`nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/raw/master/.nanorc) correctly._
 
-* `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/blob/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
+* `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/raw/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
 
     | opt | function |
     | -- | -- |
@@ -331,12 +331,12 @@ See *Usage Notes* for more information.
     | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br>_Requires valid `tags` file in current or a parent directory._ |
 
 ## `notify-send`
-This particular [`notify-send`]({GIT_REMOTE}/atelier/blob/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
+This particular [`notify-send`]({GIT_REMOTE}/atelier/raw/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
 because it doesn't tie into any `dbus`-based notification daemon implementing the [Desktop Notifications spec][notify].
 
 [notify]: https://www.galago-project.org/specs/notification/0.9/index.html "freedesktop.org Desktop Notifications spec"
 
-Instead, it's just a shell script that writes to a named pipe that gets picked up by [`xwin-statusd`]({GIT_REMOTE}/atelier/blob/master/Scripts/wm_status.sh) as a simple way to implement OSD text and single-line notifications.
+Instead, it's just a shell script that writes to a named pipe that gets picked up by [`xwin-statusd`]({GIT_REMOTE}/atelier/raw/master/Scripts/wm_status.sh) as a simple way to implement OSD text and single-line notifications.
 
 Unlike other implementations, you can pass notifications/OSD text as an argument or via stdin without using `xargs`.
 
@@ -381,12 +381,12 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     done >> "$file"
     ```
 
-[scrot]: https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime8.png
+[scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime44.png
 # Complete source listing
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
-184.64KiB
+184.68KiB
 out of a total compressed git history size of
 591.99KiB._
 
@@ -491,7 +491,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  917   Nov 30 2021 00:48 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
 -rw-r--r-- 1  832   Dec 12 2021 10:53 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  21K   Dec 24 2021 23:50 rev. 164 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Dec 28 2021 15:10 rev. 165 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.7K   Dec 23 2021 21:52 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  22K   Nov 18 2021 13:30 rev. 79  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -505,4 +505,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
 <!-- created 2019-08-19 -->
-<!-- updated 2021-12-27 -->
+<!-- updated 2021-12-28 -->

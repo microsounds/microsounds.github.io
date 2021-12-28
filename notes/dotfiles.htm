@@ -28,22 +28,22 @@
 <div class="content">
 <!--kagami v0.5.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 755, commit <code>2ebb5be</code>.</strong></p>
-<p><strong>“chromium: Prevent race conditions rebuilding config on first-run”</strong></p>
+<p><strong>Revision No. 756, commit <code>5936f8d</code>.</strong></p>
+<p><strong>“Nothing important”</strong></p>
 <p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li><li><a href="#Notes-on-platform-support">Notes on platform support</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a><ul><li><a href="#Essential-and-optional-package-groups">Essential and *optional package groups</a></li><li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li></ul></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#Issues-with-HiDPI-scaling">Issues with HiDPI scaling</a></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
 <p>If this document is <em>20.6KiB</em> in
 size, and the approximate size of all comment lines of code is
 <em>54.9KiB</em> then this document
-currently covers about <b style="font-size: 20px;">7.50%</b>
+currently covers about <b style="font-size: 130%;">7.52%</b>
 of all implemented features and behavior in this repository.
-This is just an <a href="https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
+This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌓&#xFE0E; Mon, Dec 27th, 2021.</p>
+<p>Last updated 🌔&#xFE0E; Tue, Dec 28th, 2021.</p>
 <!-- header and github badges -->
-<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime8.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
+<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime44.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
     <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
@@ -59,15 +59,15 @@ This is just an <a href="https://raw.githubusercontent.com/microsounds/microsoun
 <p>This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.</p>
 <ul>
 <li>Git is used to maintain an identical and reproducible setup across multiple machines.</li>
-<li>A series of post-install scripts in <a href="https://github.com/microsounds/atelier/blob/master/.once.d"><code>~/.once.d</code></a> document and reproduce system-wide deviations from a fresh install.
+<li>A series of post-install scripts in <a href="https://github.com/microsounds/atelier/raw/master/.once.d"><code>~/.once.d</code></a> document and reproduce system-wide deviations from a fresh install.
 <ul>
-<li><em>A <a href="https://github.com/microsounds/atelier/blob/master/.github/workflows/ci.yml">suite of unit tests</a> ensures a reproducible installation with each revision.</em></li>
+<li><em>A <a href="https://github.com/microsounds/atelier/raw/master/.github/workflows/ci.yml">suite of unit tests</a> ensures a reproducible installation with each revision.</em></li>
 </ul>
 </li>
 </ul>
 <p>Basic installation instructions are provided, along with some documentation for the most essential components.</p>
 <!-- figure 1: desktop screenshot -->
-<p><a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png"><img src="https://github.com/microsounds/microsounds/raw/master/dotfiles/scrot.png" alt="scrot" /></a>
+<p><a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png"><img src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png" alt="scrot" /></a>
 <em>Pictured: Debian stable, a “graphical shell” environment consisting mostly of xorg, dwm, sxhkd and various urxvt clients.</em></p>
 <h1>Quick start<span id="Quick-start"></span></h1>
 <ol>
@@ -95,13 +95,13 @@ $ exec $SHELL -l
 </li>
 <li>Reboot to finish.
 <ul>
-<li><em><a href="https://github.com/microsounds/atelier/blob/master/.xinitrc"><code>xinit</code></a> starts automatically upon login to <a href=".profile"><code>tty1</code></a>.</em></li>
+<li><em><a href="https://github.com/microsounds/atelier/raw/master/.xinitrc"><code>xinit</code></a> starts automatically upon login to <a href=".profile"><code>tty1</code></a>.</em></li>
 </ul>
 </li>
 </ol>
 <!-- figure 2: mobile screenshot -->
-<a href="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot.jpg">
-    <img width="125px" align="right" src="https://github.com/microsounds/microsounds/raw/master/dotfiles/mobile-scrot2.png">
+<a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot.jpg">
+    <img width="125px" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png">
 </a>
 <h2>Quick start on Termux for Android<span id="Quick-start-on-Termux-for-Android"></span></h2>
 <blockquote>
@@ -111,7 +111,7 @@ This is meant to be a lightweight port with modifications, do not initiate a ful
 </blockquote>
 <ol>
 <li>Install <code>git</code>, and bootstrap the system using <code>git reset --hard</code> as described above.</li>
-<li>Post-install: Run only <a href="https://github.com/microsounds/atelier/blob/master/.once.d/a0-android-termux.sh"><code>~/.once.d/a0-android-termux.sh</code></a>
+<li>Post-install: Run only <a href="https://github.com/microsounds/atelier/raw/master/.once.d/a0-android-termux.sh"><code>~/.once.d/a0-android-termux.sh</code></a>
 <ul>
 <li>Applies android-specific hacks and termux specific dotfiles for theming and softkeys.</li>
 </ul>
@@ -160,12 +160,12 @@ This is meant to be a lightweight port with modifications, do not initiate a ful
 </li>
 </ul>
 <h2>Using <code>~/.once.d</code> post-install scripts<span id="Using-.once.d-post-install-scripts"></span></h2>
-<p>All system-wide changes are performed through automated scripts located in <a href="https://github.com/microsounds/atelier/blob/master/.once.d"><code>~/.once.d</code></a>, you can run them all at once with shell function <code>post-install</code>.
+<p>All system-wide changes are performed through automated scripts located in <a href="https://github.com/microsounds/atelier/raw/master/.once.d"><code>~/.once.d</code></a>, you can run them all at once with shell function <code>post-install</code>.
 Each script is self-contained, you can run them individually, anytime.</p>
 <ul>
 <li>Some scripts only apply to specific hardware configurations, and will exit even if they are run.</li>
 <li>Scripts affecting <code>systemd</code> or the bootloader will be skipped in virtualized container contexts.</li>
-<li>Locally installed software is installed to <a href="https://github.com/microsounds/atelier/blob/master/.local/bin"><code>~/.local/bin</code></a> when possible.</li>
+<li>Locally installed software is installed to <a href="https://github.com/microsounds/atelier/raw/master/.local/bin"><code>~/.local/bin</code></a> when possible.</li>
 </ul>
 <table>
 <thead>
@@ -181,7 +181,7 @@ Each script is self-contained, you can run them individually, anytime.</p>
 </tr>
 <tr>
 <td><code>1*</code></td>
-<td>Changes to <a href="https://github.com/microsounds/atelier/blob/master/.local"><code>~/.local</code></a> file hierarchy, such as locally installed software and resources.</td>
+<td>Changes to <a href="https://github.com/microsounds/atelier/raw/master/.local"><code>~/.local</code></a> file hierarchy, such as locally installed software and resources.</td>
 </tr>
 <tr>
 <td><code>2*</code></td>
@@ -203,7 +203,7 @@ Each script is self-contained, you can run them individually, anytime.</p>
 </table>
 <h3>Essential and *optional package groups<span id="Essential-and-optional-package-groups"></span></h3>
 <ul>
-<li><a href="https://github.com/microsounds/atelier/blob/master/.comforts"> <code>~/.comforts</code> </a> describes a list of non-optional package groups that will be installed through the package manager.
+<li><a href="https://github.com/microsounds/atelier/raw/master/.comforts"> <code>~/.comforts</code> </a> describes a list of non-optional package groups that will be installed through the package manager.
 <ul>
 <li><em>Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime.</em></li>
 </ul>
@@ -211,7 +211,7 @@ Each script is self-contained, you can run them individually, anytime.</p>
 </ul>
 <h3>Essential and *persistent upstream utilities<span id="Essential-and-persistent-upstream-utilities"></span></h3>
 <ul>
-<li><a href="https://github.com/microsounds/atelier/blob/master/.comforts-git"><code>~/.comforts-git</code></a> describes the full list of utilities compiled and installed from their upstream git sources.
+<li><a href="https://github.com/microsounds/atelier/raw/master/.comforts-git"><code>~/.comforts-git</code></a> describes the full list of utilities compiled and installed from their upstream git sources.
 <ul>
 <li><em>Repos must have a typical <code>./configure</code> and/or <code>make install PREFIX=...</code> metaphor to build correctly.</em></li>
 <li><em>Sources marked with an *asterisk will be persistently installed to <code>~/.config/${URL##*/}</code></em></li>
@@ -219,7 +219,7 @@ Each script is self-contained, you can run them individually, anytime.</p>
 </li>
 </ul>
 <p>Installation can be customized with user-provided executable install <del>hacks</del> scripts, named <code>{pre,post}-run</code>.
-These can be placed in <a href="https://github.com/microsounds/atelier/blob/master/.config/upstream"><code>~/.config/upstream</code></a> or at the root of a persistently installed utility’s install directory as described above</p>
+These can be placed in <a href="https://github.com/microsounds/atelier/raw/master/.config/upstream"><code>~/.config/upstream</code></a> or at the root of a persistently installed utility’s install directory as described above</p>
 <p>Rationale for doing things this way is summarized in commit <a href="https://github.com/microsounds/atelier/commit/2fe1c3745" title="introduced ~/.once.d/10-git-upstream.sh"><code>2fe1c3745</code></a>.</p>
 <h2>Window manager<span id="Window-manager"></span></h2>
 <p><code>dwm</code> keybinds are the <a href="https://ratfactor.com/dwm" title="suckless dwm tutorial">defaults</a> with several exceptions.
@@ -423,7 +423,7 @@ Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code>
 --output HDMI-0 --auto --primary --rotate normal
 --output HDMI-1 --auto --right-of HDMI-0 --rotate right
 </code></pre>
-<p>Commands in this file are passed to <a href="https://github.com/microsounds/atelier/blob/master/Scripts/xrandr_cycle.sh"><code>xrandr-cycle</code></a> line by line at startup if it exists.
+<p>Commands in this file are passed to <a href="https://github.com/microsounds/atelier/raw/master/Scripts/xrandr_cycle.sh"><code>xrandr-cycle</code></a> line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.</p>
 <h3><code>~/.xdecor</code><span id=".xdecor"></span></h3>
 <p>You can designate one or more paths to directories containing images or videos for use as a wallpaper using <em>optional</em> config file <code>~/.xdecor</code></p>
@@ -431,11 +431,11 @@ For example, this configuration would suit a 2 monitor layout with the right mon
 ~/Pictures/some/path
 /media/sd_card/some/path
 </code></pre>
-<p>If it exists, <a href="https://github.com/microsounds/atelier/blob/master/Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper on startup.
+<p>If it exists, <a href="https://github.com/microsounds/atelier/raw/master/Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper on startup.
 In the case of video files, a random video frame from that file will be taken and set as the wallpaper using <code>ffmpeg</code>.</p>
 <h2>X resources and theming<span id="X-resources-and-theming"></span></h2>
 <p>For consistency, <code>xinit</code>, <code>dwm</code> and other scripts make use of the C preprocessor to mangle config files and configure color schemes.</p>
-<p>Theme settings and individual color schemes are stored as C header files containing preprocessor macros representing color hex codes in <a href="https://github.com/microsounds/atelier/blob/master/.local/include"><code>~/.local/include</code></a>.
+<p>Theme settings and individual color schemes are stored as C header files containing preprocessor macros representing color hex codes in <a href="https://github.com/microsounds/atelier/raw/master/.local/include"><code>~/.local/include</code></a>.
 This directory is appended to <code>$C_INCLUDE_PATH</code> at login.</p>
 <ul>
 <li>Using shell function <code>reload</code> will reload changes to <code>.xresources</code> and hard-reset your current terminal instance.</li>
@@ -460,17 +460,17 @@ This can be useful when dealing with TUI applications that force their own backg
 including <a href="https://blog.yossarian.net/2020/12/24/A-few-HiDPI-tricks-for-Linux" title="The real HiDPI experience on GNU/Linux">electron-based applications</a> that require polluting scripts and dotfiles to smooth out toolkit scaling issues.
 Maintaining mixed-DPI multi-monitor setups in X11 is <a href="http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/#mixeddpiinx11" title="Workarounds for mixed DPI multi-monitor setups in X11">even more painful</a>.</p>
 <p>Or to put it another way, crisp terminal fonts are not worth peppering my scripts with toolkit-specific global variables and conditional logic just for HiDPI scaling.
-See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/theme.h"><code>~/.local/include/theme.h</code></a> for more info.</p>
+See <a href="https://github.com/microsounds/atelier/raw/master/.local/include/theme.h"><code>~/.local/include/theme.h</code></a> for more info.</p>
 <h1>Non-standard commands<span id="Non-standard-commands"></span></h1>
 <p>Several commands are extended to include impure functions, such as purposefully mangling config files, and have the following precedence when multiple versions exist:</p>
 <ol>
-<li>Interactive shell functions defined in <a href="https://github.com/microsounds/atelier/blob/master/.bashrc"><code>~/.bashrc</code></a></li>
-<li>Non-interactive shell library executables in <a href="https://github.com/microsounds/atelier/blob/master/.local/lib"><code>~/.local/lib</code></a>
+<li>Interactive shell functions defined in <a href="https://github.com/microsounds/atelier/raw/master/.bashrc"><code>~/.bashrc</code></a></li>
+<li>Non-interactive shell library executables in <a href="https://github.com/microsounds/atelier/raw/master/.local/lib"><code>~/.local/lib</code></a>
 <ul>
 <li>Shell script snippets used by multiple scripts to reduce clutter.</li>
 </ul>
 </li>
-<li>Normal executables and symlinks in <a href="https://github.com/microsounds/atelier/blob/master/.local/bin"><code>~/.local/bin</code></a>
+<li>Normal executables and symlinks in <a href="https://github.com/microsounds/atelier/raw/master/.local/bin"><code>~/.local/bin</code></a>
 <ul>
 <li>Some are shell functions promoted to scripts so they’ll work in <code>dmenu</code> or outside of a terminal context.</li>
 </ul>
@@ -511,14 +511,14 @@ See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/t
 </blockquote>
 <p><code>chromium</code> was extended to mangle the user-hostile per-profile <code>Preferences</code> and global <code>Local State</code> JSON files with a series of chained <code>jq</code> filters stored in the following files, applying persistent settings in order.</p>
 <ul>
-<li><a href="https://github.com/microsounds/atelier/blob/master/.config/chromium/preferences.conf"><code>~/.config/chromium/preferences.conf</code></a></li>
-<li><a href="https://github.com/microsounds/atelier/blob/master/.config/chromium/local_state.conf"><code>~/.config/chromium/local_state.conf</code></a></li>
+<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/preferences.conf"><code>~/.config/chromium/preferences.conf</code></a></li>
+<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/local_state.conf"><code>~/.config/chromium/local_state.conf</code></a></li>
 </ul>
 <p>C preprocessor syntax is also accepted, hex color values in the form <code>#RRGGBB</code> will be converted to a signed integer representing <code>0xBBGGRRAA</code> in two’s complement hexadecimal with <code>AA</code> (alpha channel) always set to <code>0xFF</code></p>
 <h3>Managed policy overrides<span id="Managed-policy-overrides"></span></h3>
-<p><code>chromium</code> is managed by <code>/etc/chromium/policies/managed/extensions.json</code>, set up during <a href="https://github.com/microsounds/atelier/blob/master/.once.d/29-chromium-extensions.sh">post-install</a>, which automatically installs several useful extensions on first-run, including <a href="https://ublockorigin.com" title="uBlock Origin homepage">uBlock Origin</a>.</p>
+<p><code>chromium</code> is managed by <code>/etc/chromium/policies/managed/extensions.json</code>, set up during <a href="https://github.com/microsounds/atelier/raw/master/.once.d/29-chromium-extensions.sh">post-install</a>, which automatically installs several useful extensions on first-run, including <a href="https://ublockorigin.com" title="uBlock Origin homepage">uBlock Origin</a>.</p>
 <h2><code>git</code><span id="git"></span></h2>
-<p><code>git</code> aliases are defined in <a href="https://github.com/microsounds/atelier/blob/master/.gitconfig"><code>~/.gitconfig</code></a> or implemented in interactive shell function <code>git()</code></p>
+<p><code>git</code> aliases are defined in <a href="https://github.com/microsounds/atelier/raw/master/.gitconfig"><code>~/.gitconfig</code></a> or implemented in interactive shell function <code>git()</code></p>
 <p>See <em>Usage Notes</em> for more information.</p>
 <ul>
 <li>
@@ -566,11 +566,11 @@ See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/t
 <h2><code>nano</code><span id="nano"></span></h2>
 <blockquote>
 <p><strong>NOTE</strong><br>
-<em><code>nano</code> keybind macros make use of inline non-printable control characters, you must use <code>nano</code> or <code>cat -v</code> to view <a href="https://github.com/microsounds/atelier/blob/master/.nanorc"><code>~/.nanorc</code></a> correctly.</em></p>
+<em><code>nano</code> keybind macros make use of inline non-printable control characters, you must use <code>nano</code> or <code>cat -v</code> to view <a href="https://github.com/microsounds/atelier/raw/master/.nanorc"><code>~/.nanorc</code></a> correctly.</em></p>
 </blockquote>
 <ul>
 <li>
-<p><code>nano</code> is an alias for <a href="https://github.com/microsounds/atelier/blob/master/Scripts/nano_overlay.sh"><code>nano-overlay</code></a> which mangles config files and offers the following extended options:</p>
+<p><code>nano</code> is an alias for <a href="https://github.com/microsounds/atelier/raw/master/Scripts/nano_overlay.sh"><code>nano-overlay</code></a> which mangles config files and offers the following extended options:</p>
 <table>
 <thead>
 <tr>
@@ -637,9 +637,9 @@ See <a href="https://github.com/microsounds/atelier/blob/master/.local/include/t
 </li>
 </ul>
 <h2><code>notify-send</code><span id="notify-send"></span></h2>
-<p>This particular <a href="https://github.com/microsounds/atelier/blob/master/.local/lib/notify-send"><code>notify-send</code></a> implements only <code>-t</code> for expiration time in seconds,
+<p>This particular <a href="https://github.com/microsounds/atelier/raw/master/.local/lib/notify-send"><code>notify-send</code></a> implements only <code>-t</code> for expiration time in seconds,
 because it doesn’t tie into any <code>dbus</code>-based notification daemon implementing the <a href="https://www.galago-project.org/specs/notification/0.9/index.html" title="freedesktop.org Desktop Notifications spec">Desktop Notifications spec</a>.</p>
-<p>Instead, it’s just a shell script that writes to a named pipe that gets picked up by <a href="https://github.com/microsounds/atelier/blob/master/Scripts/wm_status.sh"><code>xwin-statusd</code></a> as a simple way to implement OSD text and single-line notifications.</p>
+<p>Instead, it’s just a shell script that writes to a named pipe that gets picked up by <a href="https://github.com/microsounds/atelier/raw/master/Scripts/wm_status.sh"><code>xwin-statusd</code></a> as a simple way to implement OSD text and single-line notifications.</p>
 <p>Unlike other implementations, you can pass notifications/OSD text as an argument or via stdin without using <code>xargs</code>.</p>
 <h2><code>sc</code> (spreadsheet calculator)<span id="sc-spreadsheet-calculator"></span></h2>
 <p><code>sc</code> is supports macros to some degree, but it’s macro implementation is <a href="https://github.com/n-t-roff/sc/blob/master/SC.MACROS" title="I'm not even sure this was implemented as written.">difficult to understand</a> and there aren’t many examples of it being used successfully anywhere that I’ve managed to find.</p>
@@ -691,7 +691,7 @@ done &gt;&gt; &quot;$file&quot;
 <blockquote>
 <p><strong>STATISTICS</strong><br>
 <em>Total on-disk size of the current revision is
-184.64KiB
+184.68KiB
 out of a total compressed git history size of
 591.99KiB.</em></p>
 </blockquote>
@@ -796,7 +796,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  917   Nov 30 2021 00:48 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
 -rw-r--r-- 1  832   Dec 12 2021 10:53 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
--rw-r--r-- 1  21K   Dec 24 2021 23:50 rev. 164 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Dec 28 2021 15:10 rev. 165 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 3.7K   Dec 23 2021 21:52 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  22K   Nov 18 2021 13:30 rev. 79  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -810,7 +810,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
 <!-- created 2019-08-19 -->
-<!-- updated 2021-12-27 -->
+<!-- updated 2021-12-28 -->
 <hr>
 <div class="footer">
 <p>
