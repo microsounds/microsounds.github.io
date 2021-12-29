@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 757, commit `1dc3561`.**
+**Revision No. 758, commit `9397700`.**
 
-**"git: Added shortcut for running git gc over ~/Git directory"**
+**"path-gitstatus: Fixed issue where script exited early on newly init'ed repos"**
 
 {TOC}
 
@@ -10,8 +10,8 @@ in this repo is about **5:1**.
 
 If this document is *20.7KiB* in
 size, and the approximate size of all comment lines of code is
-*54.9KiB* then this document
-currently covers about <b style="font-size: 130%;">7.55%</b>
+*55.3KiB* then this document
+currently covers about <b style="font-size: 130%;">7.51%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -383,7 +383,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime26.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime44.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -391,14 +391,26 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 [tar]: {GIT_REMOTE}/atelier/archive/refs/heads/master.tar.gz
 
 >**STATISTICS**<br>
+> _Version numbers for selected long-lived components
+> found in the current revision:_
+> * `chromium_widevine.sh v0.2`
+> * `git_status.sh v0.7`
+> * `moonphase-date v0.2`
+> * `nano_overlay.sh v1.1 `
+> * `wm_status.sh v0.4`
+> * `xrandr_cycle.sh v0.2`
+> * `xwin_decor.sh v0.8`
+> * `xwin_webm.sh v0.5`
+> * `xwin_widgets.sh v0.4`
+>
 >_Total on-disk size of the current revision is
-184.95KiB
+185.09KiB
 out of a total compressed git history size of
-711.48KiB._
+711.40KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@399a4792e4cd</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@5ab30bd4320c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -502,7 +514,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rw-r--r-- 1 1.6K   Dec 20 2021 13:55 rev. 64  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
--rwxr-xr-x 1 3.7K   Dec 23 2021 21:52 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
+-rwxr-xr-x 1 3.9K   Dec 29 2021 02:01 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  22K   Nov 18 2021 13:30 rev. 79  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
@@ -513,4 +525,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  21K   Dec 28 2021 23:10 rev. 166 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- created 2019-08-19 -->
-<!-- updated 2021-12-28 -->
+<!-- updated 2021-12-29 -->
