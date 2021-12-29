@@ -88,6 +88,11 @@ coverage="${coverage%??}%"
 		[tar]: {GIT_REMOTE}/atelier/archive/refs/heads/master.tar.gz
 
 		>**STATISTICS**<br>
+		> _Version numbers for selected long-lived components
+		> found in the current revision:_
+		$(git meta list-files | xargs egrep -Iho '[a-z._-]+ v([0-9].?)+' \
+			| sort | uniq | xargs -I '{}' echo '> * `{}`')
+		>
 		>_Total on-disk size of the current revision is
 		$(echo "scale=2; ($(git meta list-files | xargs ls -l \
 			| tr -s ' ' '\t' | cut -f5 | paste -s -d '+')) / 1024" | bc)KiB
