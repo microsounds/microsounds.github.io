@@ -76,12 +76,17 @@ coverage="${coverage%??}%"
 		-e 's/\t/    /g' \
 		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
 
-	# interactive source listing
+	# downloads and interactive source listing
 	prompt="$(whoami)@$(uname -n)"
 	command='git meta ls-tree --name-only -r master | xargs ls -lhgG'
 
 	cat <<- EOF
-		# Complete source listing
+		# Downloads
+		* \`git clone {GIT_REMOTE}/atelier\`
+		* Alternatively, [download latest revision as a \`gzip\`'d tarball][tar].
+
+		[tar]: {GIT_REMOTE}/atelier/archive/refs/heads/master.tar.gz
+
 		>**STATISTICS**<br>
 		>_Total on-disk size of the current revision is
 		$(echo "scale=2; ($(git meta list-files | xargs ls -l \
@@ -89,6 +94,8 @@ coverage="${coverage%??}%"
 		out of a total compressed git history size of
 		$(git meta count-objects -vH | fgrep 'size-pack' \
 			| tr -s ' :' '\t' | cut -f2)KiB._
+
+		# Complete source listing
 
 	EOF
 	printf '%s' '<pre><code>'
