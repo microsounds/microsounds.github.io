@@ -383,12 +383,19 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
 [shimeji]: {DOC_ROOT}/static/shimemiku/shime44.png
-# Complete source listing
+# Downloads
+* `git clone {GIT_REMOTE}/atelier`
+* Alternatively, [download latest revision as a `gzip`'d tarball][tar].
+
+[tar]: {GIT_REMOTE}/atelier/archive/refs/heads/master.tar.gz
+
 >**STATISTICS**<br>
 >_Total on-disk size of the current revision is
 184.68KiB
 out of a total compressed git history size of
 591.99KiB._
+
+# Complete source listing
 
 <pre><code><span class="term-prompt">microsounds@effe</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.2K   Dec 26 2021 15:18 rev. 124 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
