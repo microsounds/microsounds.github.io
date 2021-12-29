@@ -76,8 +76,6 @@ coverage="${coverage%??}%"
 		-e 's/\t/    /g' \
 		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
 
-#		-e 's,\]\(([^http]\w*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
-
 	# interactive source listing
 	prompt="$(whoami)@$(uname -n)"
 	command='git meta ls-tree --name-only -r master | xargs ls -lhgG'
