@@ -7,6 +7,7 @@
 	e.innerHTML = 'p img { border: unset; }';
 	document.body.insertBefore(e, document.body.firstChild);
 </script>
+<!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
 <img src="{DOC_ROOT}/static/starry.png"
 	alt="starry night sky"
 	style="max-width: 100%; border: 1px solid #CCC;"
@@ -32,7 +33,7 @@ I just really like metaprogramming.
 
 It's a never-ending process.
 
-![scripts]({DOC_ROOT}/static/shimemiku/shime32.png)
+[![scripts]({DOC_ROOT}/static/shimemiku/shime32.png)](notes/dotfiles.md "It's pretty fun though.")
 </div>
 
 {THEMATIC_BREAK}
