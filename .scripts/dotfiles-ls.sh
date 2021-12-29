@@ -72,9 +72,11 @@ coverage="${coverage%??}%"
 	# replace tabs with 4-space indents
 	# replace inline shimeji with a random one
 	cat "$readme" | sed -E \
-		-e 's,\]\(([^http].*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
+		-e 's,\]\(([^http][a-zA-Z0-9._\/-]*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
 		-e 's/\t/    /g' \
 		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
+
+#		-e 's,\]\(([^http]\w*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
 
 	# interactive source listing
 	prompt="$(whoami)@$(uname -n)"
