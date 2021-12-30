@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 761, commit `bd4d6ed`.**
+**Revision No. 762, commit `8901ea3`.**
 
-**"Termux: Maintain patchset to quickly restore if git stash is lost, Style"**
+**"Documentation"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *20.7KiB* in
+If this document is *20.8KiB* in
 size, and the approximate size of all comment lines of code is
 *55.5KiB* then this document
-currently covers about <b style="font-size: 130%;">7.47%</b>
+currently covers about <b style="font-size: 130%;">7.50%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -78,7 +78,8 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/raw/master/.once.d/a0-android-termux.sh)
     * Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
-3. When pulling changes from upstream, always stash changes to prevent merge conflicts.
+3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
+    * Use `patch -p1 < ~/.termux/termux-diff.patch` to restore changes if stash is lost.
 
 ## Notes on platform support
 **Full graphical shell environment**
@@ -383,7 +384,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime16.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -405,13 +406,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-185.62KiB
+185.71KiB
 out of a total compressed git history size of
-690.76KiB._
+714.54KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@1088e868451c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@e2fe687f8a83</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -523,7 +524,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  21K   Dec 28 2021 23:10 rev. 166 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Dec 29 2021 20:08 rev. 167 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- created 2019-08-19 -->
 <!-- updated 2021-12-29 -->
