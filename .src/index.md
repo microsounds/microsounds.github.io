@@ -55,7 +55,7 @@ It's a never-ending process.
 If it's about a project or an article on this website, feel free to open an issue or a pull request on GitHub.
 
 ## Misc
-<div class="center" style="width: 70%;">
+<div class="center">
 
 [![filler1]({DOC_ROOT}/static/button/88x31whitemarble.gif)](/eeeeeeeeeeeeeeeeee)
 [![filler2]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
