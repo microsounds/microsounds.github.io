@@ -54,17 +54,17 @@ It's a never-ending process.
 ## Contact me
 If it's about a project or an article on this website, feel free to open an issue or a pull request on GitHub.
 
-## Misc
+## Links
 <div class="center">
 
-[![filler1]({DOC_ROOT}/static/button/88x31whitemarble.gif)](/eeeeeeeeeeeeeeeeee)
-[![filler2]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
 [![debian]({DOC_ROOT}/static/button/debian.png)](https://debian.org/distrib)
 [![nano]({DOC_ROOT}/static/button/nano.png)](https://nano-editor.org)
 [![vocaloid]({DOC_ROOT}/static/button/vocaloid.gif)](https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_)
+[![miku3]({DOC_ROOT}/static/button/mikuproved.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
 [![miku1]({DOC_ROOT}/static/button/hatsunemiku1.gif)](https://www.youtube.com/watch?v=3rsBLRFONEs)
 [![miku2]({DOC_ROOT}/static/button/miku.gif)](https://www.youtube.com/watch?v=NJAghsisnok)
 [![konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
+[![filler1]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/eeeeeeeeeeeeeeeeee)
 [![html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
 [![css]({DOC_ROOT}/static/button/valid-css-blue.png)](https://jigsaw.w3.org/css-validator/check/referer)
 [![cc]({DOC_ROOT}/static/button/cc.png)]({CC_BY_SA})
