@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<lastBuildDate>Sat, 01 Jan 2022 00:00:00 -0800</lastBuildDate>
+<ttl>1</ttl>
+<generator>kagami v0.6 — static microblog processor</generator>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<atom:link href="https://microsounds.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+<link>https://microsounds.github.io</link>
+<title>sentimental µsounds</title>
+<description>the echoes of time stand still</description>
+<item>
+<title>Selected documentation and usage notes for my dotfiles</title>
+<description>
+<![CDATA[Revision No. 765, commit 0c0401f. “Style” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.8KiB in size, and the approximate size of all comment lines of code is 55.7KiB then this document currently covers about 7.49% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier on GitHub. Last updated . [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
+</description>
+<link>https://microsounds.github.io/notes/dotfiles.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
+<pubDate>Sat, 01 Jan 2022 00:00:00 -0800</pubDate>
+</item>
+<item>
+<title>List of low profile GPUs for small form factor PCs (SFFs)</title>
+<description>
+<![CDATA[ Last updated . NOTICE I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market. For our purposes “low profile” refers to cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases. Think space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</a>.]]>
+</description>
+<link>https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</guid>
+<pubDate>Wed, 01 Dec 2021 00:00:00 -0800</pubDate>
+</item>
+</channel>
+</rss>
