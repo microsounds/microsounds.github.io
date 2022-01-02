@@ -28,8 +28,8 @@
 <div class="content">
 <!--kagami v0.5.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 764, commit <code>a3e3b15</code>.</strong></p>
-<p><strong>“nano_overlay: Recreate $SHLVL functionality in strictly POSIX shells”</strong></p>
+<p><strong>Revision No. 765, commit <code>0c0401f</code>.</strong></p>
+<p><strong>“Style”</strong></p>
 <p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li><li><a href="#Notes-on-platform-support">Notes on platform support</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a><ul><li><a href="#Essential-and-optional-package-groups">Essential and *optional package groups</a></li><li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li></ul></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#Issues-with-HiDPI-scaling">Issues with HiDPI scaling</a></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Downloads">Downloads</a></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
@@ -43,7 +43,7 @@ This is just an <a href="https://github.com/microsounds/microsounds.github.io/ra
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
 <p>Last updated 🌕 Sat, Jan 1st, 2022.</p>
 <!-- header and github badges -->
-<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime3.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
+<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime22.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
     <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
@@ -589,27 +589,27 @@ See <a href="https://github.com/microsounds/atelier/raw/master/.local/include/th
 <tbody>
 <tr>
 <td><code>-e, --ctags &lt;tag&gt; &lt;#&gt;</code></td>
-<td>Jumps into file containing <code>ctags</code> definition matching <code>&lt;tag&gt;</code>.<br>Optional <code>&lt;#&gt;</code> selects from multiple matches, <code>all</code> will open all of them.</td>
+<td>Jumps into file containing <code>ctags</code> definition matching <code>&lt;tag&gt;</code>. <br><em>Optional <code>&lt;#&gt;</code> selects from multiple matches, <code>all</code> will open all of them.</em></td>
 </tr>
 <tr>
 <td><code>-c, --ctags-dict &lt;file1&gt;...</code></td>
-<td>Enable project-wide autocomplete by appending condensed dictionary of all <code>ctags</code> keywords to all files.<br>Dictionary will be removed upon exiting.</td>
+<td>Enable project-wide autocomplete by appending condensed dictionary of all <code>ctags</code> keywords to all files. <br><em>Dictionary will be removed upon exiting.</em></td>
 </tr>
 <tr>
 <td><code>-f, --encrypt &lt;file&gt;</code></td>
-<td>Open AES encrypted text file with a plaintext password. <br>File will be created if it doesn’t exist.</td>
+<td>Open AES encrypted text file with a plaintext password. <br><em>File will be created if it doesn’t exist.</em></td>
 </tr>
 <tr>
 <td><code>-j, --rsa &lt;file&gt;</code></td>
-<td>Open AES encrypted text file with generic RSA keypair in PEM format. <br>File will be created if it doesn’t exist.</td>
+<td>Open AES encrypted text file with generic RSA keypair in PEM format. <br><em>File will be created if it doesn’t exist.</em></td>
 </tr>
 <tr>
 <td><code>-s, --ssh-sign &lt;file&gt;</code></td>
-<td>Open AES encrypted text file with a nonce value signed with SSH private key. <br>File will be created if it doesn’t exist.</td>
+<td>Open AES encrypted text file with a nonce value signed with SSH private key. <br><em>File will be created if it doesn’t exist.</em></td>
 </tr>
 <tr>
 <td><code>-i, --identity &lt;key&gt;</code></td>
-<td>Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in <code>ssh-agent</code></td>
+<td>Use an OpenSSL compatible keypair to encrypt/decrypt. <br><em>Can be a private key or a public key with private half stored in <code>ssh-agent</code></em></td>
 </tr>
 </tbody>
 </table>
@@ -717,12 +717,12 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-185.82KiB
+185.83KiB
 out of a total compressed git history size of
-715.85KiB.</em></p>
+716.16KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@1069f0f40789</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@e55604354147</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -834,7 +834,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  21K   Dec 29 2021 20:08 rev. 167 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Jan  1 2022 22:08 rev. 168 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- created 2019-08-19 -->
 <!-- updated 2022-01-01 -->

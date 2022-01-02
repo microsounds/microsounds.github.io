@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 764, commit `a3e3b15`.**
+**Revision No. 765, commit `0c0401f`.**
 
-**"nano_overlay: Recreate $SHLVL functionality in strictly POSIX shells"**
+**"Style"**
 
 {TOC}
 
@@ -316,12 +316,12 @@ See *Usage Notes* for more information.
 
     | opt | function |
     | -- | -- |
-    | `-e, --ctags <tag> <#>`  | Jumps into file containing `ctags` definition matching `<tag>`.<br>Optional `<#>` selects from multiple matches, `all` will open all of them. |
-    | `-c, --ctags-dict <file1>...` | Enable project-wide autocomplete by appending condensed dictionary of all `ctags` keywords to all files.<br>Dictionary will be removed upon exiting. |
-    | `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br>File will be created if it doesn't exist. |
-    | `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br>File will be created if it doesn't exist. |
-    | `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br>File will be created if it doesn't exist. |
-    | `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>Can be a private key or a public key with private half stored in `ssh-agent` |
+    | `-e, --ctags <tag> <#>` | Jumps into file containing `ctags` definition matching `<tag>`. <br>_Optional `<#>` selects from multiple matches, `all` will open all of them._ |
+    | `-c, --ctags-dict <file1>...` | Enable project-wide autocomplete by appending condensed dictionary of all `ctags` keywords to all files. <br>_Dictionary will be removed upon exiting._ |
+    | `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br>_File will be created if it doesn't exist._ |
+    | `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br>_File will be created if it doesn't exist._ |
+    | `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br>_File will be created if it doesn't exist._ |
+    | `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>_Can be a private key or a public key with private half stored in `ssh-agent`_ |
 
 * Once inside the actual `nano`, the following keybind macros are available:
 
@@ -384,7 +384,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime22.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -406,13 +406,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-185.82KiB
+185.83KiB
 out of a total compressed git history size of
-715.85KiB._
+716.16KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@1069f0f40789</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@e55604354147</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -524,7 +524,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  21K   Dec 29 2021 20:08 rev. 167 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  21K   Jan  1 2022 22:08 rev. 168 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- created 2019-08-19 -->
 <!-- updated 2022-01-01 -->
