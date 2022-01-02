@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 763, commit `10c5892`.**
+**Revision No. 764, commit `f62b065`.**
 
-**"nano_overlay; Fixed issues with subshelled nanos in jump to definition (M-2)"**
+**"nano_overlay: Conditionally define $SHLVL in strictly POSIX shells"**
 
 {TOC}
 
@@ -384,7 +384,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime26.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime7.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -406,13 +406,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-185.93KiB
+185.98KiB
 out of a total compressed git history size of
-715.24KiB._
+692.55KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@bfab8985b616</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@6f50cc379361</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -517,7 +517,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.6K   Dec 20 2021 13:55 rev. 64  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 3.9K   Dec 29 2021 02:01 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
--rwxr-xr-x 1  22K   Jan  1 2022 20:46 rev. 80  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
+-rwxr-xr-x 1  22K   Jan  1 2022 21:28 rev. 81  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>

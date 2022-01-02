@@ -28,8 +28,8 @@
 <div class="content">
 <!--kagami v0.5.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 763, commit <code>10c5892</code>.</strong></p>
-<p><strong>“nano_overlay; Fixed issues with subshelled nanos in jump to definition (M-2)”</strong></p>
+<p><strong>Revision No. 764, commit <code>f62b065</code>.</strong></p>
+<p><strong>“nano_overlay: Conditionally define $SHLVL in strictly POSIX shells”</strong></p>
 <p><div class="toc"><p>Table of Contents</p><ul><li><a href="#Selected-documentation-and-usage-notes-for-my-dotfiles">Selected documentation and usage notes for my dotfiles</a></li><li><a href="#_dotfilesatelier_shimeji"><em>dotfiles—“atelier”</em>![shimeji]</a></li><li><a href="#Quick-start">Quick start</a><ul><li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li><li><a href="#Notes-on-platform-support">Notes on platform support</a></li></ul></li><li><a href="#Usage-notes">Usage notes</a><ul><li><a href="#Using-git-meta">Using <code>git meta</code></a></li><li><a href="#Using-.once.d-post-install-scripts">Using <code>~/.once.d</code> post-install scripts</a><ul><li><a href="#Essential-and-optional-package-groups">Essential and *optional package groups</a></li><li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li></ul></li><li><a href="#Window-manager">Window manager</a><ul><li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li></ul></li></ul></li><li><a href="#Some-environment-notes">Some environment notes</a><ul><li><a href="#X-server-invocation">X server invocation</a></li><li><a href="#Optional-X-Window-configuration">Optional X Window configuration</a><ul><li><a href="#.xrandr"><code>~/.xrandr</code></a></li><li><a href="#.xdecor"><code>~/.xdecor</code></a></li></ul></li><li><a href="#X-resources-and-theming">X resources and theming</a><ul><li><a href="#List-of-available-macros">List of available macros</a></li></ul></li><li><a href="#Issues-with-HiDPI-scaling">Issues with HiDPI scaling</a></li></ul></li><li><a href="#Non-standard-commands">Non-standard commands</a><ul><li><a href="#cd"><code>cd</code></a></li><li><a href="#chromium"><code>chromium</code></a><ul><li><a href="#Managed-policy-overrides">Managed policy overrides</a></li></ul></li><li><a href="#git"><code>git</code></a></li><li><a href="#nano"><code>nano</code></a></li><li><a href="#notify-send"><code>notify-send</code></a></li><li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a><ul><li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li></ul></li></ul></li><li><a href="#Downloads">Downloads</a></li><li><a href="#Complete-source-listing">Complete source listing</a></li></ul></div></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
@@ -43,7 +43,7 @@ This is just an <a href="https://github.com/microsounds/microsounds.github.io/ra
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
 <p>Last updated 🌕 Sat, Jan 1st, 2022.</p>
 <!-- header and github badges -->
-<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime26.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
+<h1><div align="center"><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime7.png" alt="shimeji" /></div><span id="_dotfilesatelier_shimeji"></span></h1>
 <div align="center">
     <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
     <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
@@ -717,12 +717,12 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-185.93KiB
+185.98KiB
 out of a total compressed git history size of
-715.24KiB.</em></p>
+692.55KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@bfab8985b616</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@6f50cc379361</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -827,7 +827,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.6K   Dec 20 2021 13:55 rev. 64  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 3.9K   Dec 29 2021 02:01 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
--rwxr-xr-x 1  22K   Jan  1 2022 20:46 rev. 80  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
+-rwxr-xr-x 1  22K   Jan  1 2022 21:28 rev. 81  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
