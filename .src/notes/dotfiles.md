@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 764, commit `f62b065`.**
+**Revision No. 764, commit `a3e3b15`.**
 
-**"nano_overlay: Conditionally define $SHLVL in strictly POSIX shells"**
+**"nano_overlay: Recreate $SHLVL functionality in strictly POSIX shells"**
 
 {TOC}
 
@@ -10,8 +10,8 @@ in this repo is about **5:1**.
 
 If this document is *20.8KiB* in
 size, and the approximate size of all comment lines of code is
-*55.8KiB* then this document
-currently covers about <b style="font-size: 130%;">7.47%</b>
+*55.7KiB* then this document
+currently covers about <b style="font-size: 130%;">7.49%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -384,7 +384,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime7.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -406,13 +406,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-185.98KiB
+185.82KiB
 out of a total compressed git history size of
-692.55KiB._
+715.85KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@6f50cc379361</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@1069f0f40789</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Nov 14 2021 21:07 rev. 72  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
