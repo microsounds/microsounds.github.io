@@ -526,5 +526,5 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 1.6K   Dec 20 2021 13:55 rev. 64  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
-<!-- created 2019-08-19 -->
-<!-- updated 2022-01-01 -->
+<!--created Mon, 19 Aug 2019 22:48:18 -0700 -->
+<!--updated Sat, 1 Jan 2022 22:08:15 -0800 -->

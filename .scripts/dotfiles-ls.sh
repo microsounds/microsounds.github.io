@@ -136,6 +136,6 @@ coverage="${coverage%??}%"
 		esac
 	done
 	echo '</code></pre>'
-	echo "<!-- created $(git meta log --date=short --format='%ad' -- readme.md | tail -n 1) -->"
-	echo "<!-- updated $(git meta log -1 --date=short --format='%ad') -->"
+	echo "<!-- created $(git meta log --date=rfc --format='%ad' -- readme.md | tail -n 1) -->"
+	echo "<!-- updated $(git meta log -1 --date=rfc --format='%ad') -->"
 } > "$DOC_ROOT/.src/notes/dotfiles.md"
