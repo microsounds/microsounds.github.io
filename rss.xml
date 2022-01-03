@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sat, 01 Jan 2022 22:08:15 -0800</lastBuildDate>
+<lastBuildDate>Mon, 03 Jan 2022 14:26:33 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 765, commit 0c0401f. “Style” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.8KiB in size, and the approximate size of all comment lines of code is 55.7KiB then this document currently covers about 7.49% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier on GitHub. Last updated . [..]]]>
+<![CDATA[Revision No. 767, commit cd7d80b. “nano: Allow running shell commands from different inline comment syntaxes” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.8KiB in size, and the approximate size of all comment lines of code is 55.8KiB then this document currently covers about 7.48% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Sat, 01 Jan 2022 22:08:15 -0800</pubDate>
+<pubDate>Mon, 03 Jan 2022 14:26:33 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
