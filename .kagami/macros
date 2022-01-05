@@ -15,7 +15,7 @@ GIT_REMOTE='https://github.com/microsounds'
 ACCENT_COLOR='#E2FAF9'
 
 # page elements
-THEMATIC_BREAK='<hr style="width: 40%;" />'
+THEMATIC_BREAK='<hr style="width: 40%;"/>'
 
 # copyright years
 YEAR="2015-$(date '+%Y')"
