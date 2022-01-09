@@ -166,6 +166,23 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	font-size: 11px;
 }
 
+/* force certain consistent fonts for all users */
+@font-face {
+	font-family: Liberation Serif; /* moonphase emoji */
+	src: url("fonts/moonphase.woff") format("woff");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Go Mono"; /* serif monospace font */
+	src: local("Go Mono"), url("fonts/go-mono.woff") format("woff");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Dejima Mincho"; /* serif japanese fallback font */
+	src: local("Dejima Mincho"), url("fonts/dejima-mincho.woff") format("woff");
+	font-display: swap;
+}
+
 /* changes for mobile devices */
 @media only screen and (max-width: 1160px) {
 	/* background pic */
@@ -183,21 +200,29 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	pre { margin: unset; }
 	.toc { font-size: unset; float: unset; }
 	table { margin: unset; }
-}
 
-/* force certain consistent fonts for all users */
-@font-face {
-	font-family: Liberation Serif; /* moonphase emoji */
-	src: url("fonts/moonphase.woff") format("woff");
-	font-display: swap;
-}
-@font-face {
-	font-family: "Go Mono"; /* serif monospace font */
-	src: local("Go Mono"), url("fonts/go-mono.woff") format("woff");
-	font-display: swap;
-}
-@font-face {
-	font-family: "Dejima Mincho"; /* serif japanese fallback font */
-	src: local("Dejima Mincho"), url("fonts/dejima-mincho.woff") format("woff");
-	font-display: swap;
+	/* readability on extra small screens  */
+	@media (max-width: 480px) {
+		.content, .navbar { font-size: 15px; }
+	}
+
+	/* add fake desktop tooltips on hover */
+	@media (pointer: coarse) {
+		[title] {
+			position: relative;
+			display: inline-flex;
+			justify-content: center;
+		}
+		[title]:hover:before {
+			content: attr(title);
+			z-index: 1;
+			position: absolute;
+			top: 90%;
+			background-color: #646464;
+			color: #FFF;
+			border: 1px solid;
+			width: fit-content;
+			padding: 3px;
+		}
+	}
 }
