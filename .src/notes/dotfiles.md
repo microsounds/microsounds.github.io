@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 774, commit `faad3aa`.**
+**Revision No. 774, commit `e72a8e9`.**
 
 **"nano-overlay: Reworked help and version screens"**
 
@@ -384,7 +384,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime7.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime34.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -406,13 +406,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-187.84KiB
+187.86KiB
 out of a total compressed git history size of
-722.23KiB._
+699.09KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@d49c0d659758</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@90a0666cd6f3</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Jan  6 2022 15:30 rev. 73  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>

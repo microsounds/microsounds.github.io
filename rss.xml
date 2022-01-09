@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 774, commit faad3aa. “nano-overlay: Reworked help and version screens” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.3KiB then this document currently covers about 7.28% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier [..]]]>
+<![CDATA[Revision No. 774, commit e72a8e9. “nano-overlay: Reworked help and version screens” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.3KiB then this document currently covers about 7.28% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
