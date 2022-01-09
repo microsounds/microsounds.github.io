@@ -16,7 +16,7 @@
 ## About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
-I like ~~muted pastels,~~ starry night skies, people watching and the [unix programming environment][unix].
+I like ~~muted pastels,~~ starry night skies, people watching and the [unix][unix1] [programming][unix2] [environment][unix3].
 I like to have [this album][noise] in the background sometimes.
 
 More importantly, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
@@ -72,7 +72,14 @@ If it's about a project or an article on this website, feel free to open an issu
 
 </div>
 
-[noise]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
-<!-- Bell System Technical Journal July-August 1978 Vol. 57, No. 6, Part 2 -->
+<!-- extended reading on unix and adjacent topics -->
 <!-- [unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf -->
-[unix]: https://files.catbox.moe/gn20dj.pdf
+[unix1]: https://files.catbox.moe/gn20dj.pdf
+       "Bell System Technical Journal Vol. 57, No. 6, Part 2, pp. 1905- (July-Aug. 1978), Dennis Ritchie, Ken Thompson"
+[unix2]: http://files.catwell.info/misc/mirror/the-unix-programming-environment-kernighan-pike.pdf
+       "The Unix Programming Environment (1984), Brian Kernighan, Rob Pike"
+[unix3]: http://www.catb.org/~esr/writings/taoup/html/
+       "The Art of Unix Programming (2003), Eric S. Raymond"
+
+[noise]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
+       "from 4jyo​-​han to everywhere (2011), effe"
