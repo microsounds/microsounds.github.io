@@ -210,7 +210,6 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	@media (pointer: coarse) {
 		[title] {
 			position: relative;
-			display: inline-flex;
 			justify-content: center;
 		}
 		[title]:hover:before {
@@ -221,7 +220,7 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 			background-color: #646464;
 			color: #FFF;
 			border: 1px solid;
-			width: fit-content;
+			width: 150px;
 			padding: 3px;
 		}
 	}
