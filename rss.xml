@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sat, 08 Jan 2022 20:02:53 -0800</lastBuildDate>
+<lastBuildDate>Mon, 10 Jan 2022 12:15:44 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 774, commit e72a8e9. “nano-overlay: Reworked help and version screens” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.3KiB then this document currently covers about 7.28% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier [..]]]>
+<![CDATA[Revision No. 775, commit 5e53e29. “Nothing important” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.3KiB then this document currently covers about 7.28% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier on GitHub. Last updated [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Sat, 08 Jan 2022 20:02:53 -0800</pubDate>
+<pubDate>Mon, 10 Jan 2022 12:15:44 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
