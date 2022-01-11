@@ -26,6 +26,48 @@ var loops = [
 ];
 
 /*
+ * warn user that their browser is garbage
+ * desktop and mobile safari are regularly missing the following features
+ */
+function is_compatible() {
+	var issues = [];
+	if (MediaSource) {
+		if (!MediaSource.isTypeSupported('audio/webm;codecs=opus'))
+			issues.push('playback of Opus format audio');
+		if (!MediaSource.isTypeSupported('video/webm;codecs=vp8'))
+			issues.push('playback of VP8 format video');
+	}
+	else
+		issues.push('No MediaSource API support, audio loops will stutter or not work at all.');
+	if (CSS.supports) {
+		if (!CSS.supports('transform', 'rotate(0deg)'))
+			issues.push('image rotation and transform');
+		if (!CSS.supports('background-blend-mode', 'screen'))
+			issues.push('background compositing');
+		if (!CSS.supports('background-color', 'rgba(0,0,0,100%)'))
+			issues.push('alpha transparency in background colors');
+	}
+	else
+		issues.push('No way to query stylesheet features, get a real web browser!!');
+
+	if (issues.length > 0) {
+		var doc = document.getElementsByClassName('content')[0];
+		var warn = document.createElement('blockquote');
+		warn.innerHTML += '<p><b>NOTE</b><br/>';
+		warn.innerHTML += '<i>Your web browser is <b>outdated</b>' +
+			' and is missing the following feature(s):<br/><ul>';
+		for (var i in issues) {
+			warn.innerHTML += '<li><i>' + issues[i] + '</i></li>';
+		}
+		warn.innerHTML += '</ul></p>';
+		doc.insertBefore(warn, doc.firstChild);
+	}
+
+	var ctx = new MediaSource();
+	return !!ctx.addSourceBuffer;
+}
+
+/*
  * https://bugs.chromium.org/p/chromium/issues/detail?id=353072
  *
  * native <audio> tag does not support gapless loops without stutters
@@ -33,11 +75,6 @@ var loops = [
  * adapted from from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  */
-function is_compatible() {
-	var ctx = new MediaSource();
-	return !!ctx.addSourceBuffer;
-}
-
 function setup_bgm() {
 	/* constants */
 	var duration = 30.0;
@@ -57,18 +94,6 @@ function setup_bgm() {
 	bgm_toggle.title = loops[sel][1];
 
 	if (!is_compatible()) {
-		/*
-		 * warn user that their browser is garbage
-		 * safari seems to be the only modern web browser that lacks MediaSource API
-		 */
-		var doc = document.getElementsByClassName('content')[0];
-		var warn = document.createElement('blockquote');
-		warn.innerHTML =
-			'<p><b>NOTE</b><br>' +
-			'<i>Your web browser is outdated, certain stylesheet' +
-			' and multimedia features may not work as intended.</i></p>';
-		doc.insertBefore(warn, doc.firstChild);
-
 		/* fallback to native stuttery <audio> loop if possible */
 		var ctx = document.createElement('audio');
 		ctx.id = 'bgm';
