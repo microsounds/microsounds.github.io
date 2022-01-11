@@ -40,10 +40,12 @@ function is_compatible() {
 	else
 		issues.push('No MediaSource API support, audio loops will stutter or not work at all.');
 	if (CSS.supports) {
+		if (!CSS.supports('filter', 'grayscale(0%)'))
+			issues.push('image filtering and desaturation');
 		if (!CSS.supports('transform', 'rotate(0deg)'))
 			issues.push('image rotation and transform');
 		if (!CSS.supports('background-blend-mode', 'screen'))
-			issues.push('background compositing');
+			issues.push('layered background compositing');
 		if (!CSS.supports('background-color', 'rgba(0,0,0,100%)'))
 			issues.push('alpha transparency in background colors');
 	}
