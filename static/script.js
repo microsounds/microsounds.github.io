@@ -13,6 +13,8 @@ var loops = [
 	[ 'mirage2', 'Occult You - Mirage Love' ],
 	[ 'sparkle', 'livetune - Strobo Nights ft. 初音ミク' ],
 	[ 'synthetic', 'FM Skyline - neon paradise' ],
+	[ 'eternity1', 'Tatsuro Yamashita - 僕の中の少年' ],
+	[ 'eternity2', 'Tatsuro Yamashita - 僕の中の少年' ],
 	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'leisure1', 'LamazeP - Swimsuit ft. 初音ミク' ],
