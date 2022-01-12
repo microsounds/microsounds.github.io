@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 776, commit 93c32e2. “Termux: Prevent sourcing bash-completion twice every login” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.4KiB then this document currently covers about 7.27% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at [..]]]>
+<![CDATA[Revision No. 776, commit bec12f2. “Termux: Prevent sourcing bash-completion twice every login” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.4KiB then this document currently covers about 7.27% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
