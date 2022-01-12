@@ -4,6 +4,14 @@
 # will probably make a kagami built-in feature later
 for f in "$DOC_ROOT/.scripts/"*; do echo "Pre-run: '$f'"; $f; done
 
+# generate keyword list (probably useless)
+IFS='
+'
+for f in $(cat "$DOC_ROOT/.kagami/keywords"); do
+	KEYWORDS="$KEYWORDS$f, "
+done; unset IFS
+KEYWORDS="${KEYWORDS%, }"
+
 # unsetting document root will rewrite links starting from /
 unset DOC_ROOT
 
