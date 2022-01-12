@@ -28,50 +28,6 @@ var loops = [
 ];
 
 /*
- * warn user that their browser is garbage
- * desktop and mobile safari are regularly missing the following features
- */
-function is_compatible() {
-	var issues = [];
-	if (MediaSource) {
-		if (!MediaSource.isTypeSupported('audio/webm;codecs=opus'))
-			issues.push('playback of Opus format audio');
-		if (!MediaSource.isTypeSupported('video/webm;codecs=vp8'))
-			issues.push('playback of VP8 format video');
-	}
-	else
-		issues.push('No MediaSource API support, audio loops will stutter or not work at all.');
-	if (CSS.supports) {
-		if (!CSS.supports('filter', 'grayscale(0%)'))
-			issues.push('image filtering and desaturation');
-		if (!CSS.supports('transform', 'rotate(0deg)'))
-			issues.push('image rotation and transform');
-		if (!CSS.supports('background-blend-mode', 'screen'))
-			issues.push('layered background compositing');
-		if (!CSS.supports('background-color', 'rgba(0,0,0,100%)'))
-			issues.push('alpha transparency in background colors');
-	}
-	else
-		issues.push('No way to query stylesheet features, get a real web browser!!');
-
-	if (issues.length > 0) {
-		var doc = document.getElementsByClassName('content')[0];
-		var warn = document.createElement('blockquote');
-		warn.innerHTML += '<p><b>NOTE</b><br/>';
-		warn.innerHTML += '<i>Your web browser is <b>outdated</b>' +
-			' and is missing the following feature(s):<br/><ul>';
-		for (var i in issues) {
-			warn.innerHTML += '<li><i>' + issues[i] + '</i></li>';
-		}
-		warn.innerHTML += '</ul></p>';
-		doc.insertBefore(warn, doc.firstChild);
-	}
-
-	var ctx = new MediaSource();
-	return !!ctx.addSourceBuffer;
-}
-
-/*
  * https://bugs.chromium.org/p/chromium/issues/detail?id=353072
  *
  * native <audio> tag does not support gapless loops without stutters
@@ -79,6 +35,12 @@ function is_compatible() {
  * adapted from from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  */
+
+function is_compatible() {
+	var ctx = new MediaSource();
+	return !!ctx.addSourceBuffer;
+}
+
 function setup_bgm() {
 	/* constants */
 	var duration = 30.0;
@@ -193,13 +155,97 @@ function setup_bgm() {
 	client.send();
 }
 
+/*
+ * warn user that their browser is garbage
+ * desktop and mobile safari are regularly missing the following features
+ */
+
+function spawn_warning(heading, body, list) {
+		var doc = document.getElementsByClassName('content')[0];
+		var warn = document.createElement('blockquote');
+		warn.innerHTML += '<p><b>' + heading + '</b><br/>';
+		warn.innerHTML += '<i>' + body + '</i><br/>';
+		if (list) {
+			warn.innerHTML += '<ul>';
+			for (var i in list) {
+				warn.innerHTML += '<li><i>' + list[i] + '</i></li>';
+			}
+			warn.innerHTML += '</ul>'
+		}
+		warn.innerHTML += '</p>'
+		doc.insertBefore(warn, doc.firstChild);
+}
+
+function browser_check() {
+	var issues = [];
+	if (MediaSource) {
+		if (!MediaSource.isTypeSupported('audio/webm;codecs=opus'))
+			issues.push('playback of Opus format audio');
+		if (!MediaSource.isTypeSupported('video/webm;codecs=vp8'))
+			issues.push('playback of VP8 format video');
+	}
+	else
+		issues.push('No MediaSource API support, audio loops will stutter or not work at all.');
+	if (CSS.supports) {
+		if (!CSS.supports('filter', 'grayscale(0%)'))
+			issues.push('image filtering and desaturation');
+		if (!CSS.supports('transform', 'rotate(0deg)'))
+			issues.push('image rotation and transform');
+		if (!CSS.supports('background-blend-mode', 'screen'))
+			issues.push('layered background compositing');
+		if (!CSS.supports('background-color', 'rgba(0,0,0,100%)'))
+			issues.push('alpha transparency in background colors');
+	}
+	else
+		issues.push('No way to query stylesheet features, get a real web browser!!');
+
+	if (!!issues.length)
+		spawn_warning('NOTE', 'Your web browser is <b>outdated</b>' +
+			' and is missing the following feature(s):',
+			issues
+		);
+}
+
+/*
+ * make an attempt to playback audio
+ * there's plenty of reasons why this won't work as expected
+ * on post-2018 browsers, some are described below
+ */
 function play() {
 	var audio = document.getElementById('bgm');
 	var bgm_toggle = document.getElementById('bgm_toggle');
-	if (audio.paused)
-		bgm_toggle.innerText = bgm_toggle.innerText.replace('play', 'pause'), audio.play();
-	else
-		bgm_toggle.innerText = bgm_toggle.innerText.replace('pause', 'play'), audio.pause();
+	if (audio.paused) {
+		var promise = audio.play();
+		promise.then(function() {
+			document.cookie = 'bgm=1;path=/';
+			bgm_toggle.innerText = bgm_toggle.innerText.replace('play', 'pause');
+		}).catch(function() {
+			/*
+			 * on chromium-based browsers, persistent playback
+			 * settings only work for the current session after
+			 * the user has interacted with the page unless
+			 * autoplay is explicitly enabled
+			 */
+			document.cookie = 'bgm=0;path=/';
+			var hints = [];
+			if (navigator.userAgent.includes('Firefox')) {
+				hints.push('Did you know that Firefox requires you to enable autoplay explicitly?');
+				spawn_warning('NOTE', 'Your browser is blocking persistent autoplay.', hints);
+			}
+		});
+	}
+	else {
+		audio.pause();
+		document.cookie = 'bgm=0;path=/';
+		bgm_toggle.innerText = bgm_toggle.innerText.replace('pause', 'play');
+	}
 }
 
-window.onload = setup_bgm;
+window.onload = function() {
+	browser_check();
+	setup_bgm();
+
+	/* persist playback settings */
+	if (document.cookie.includes('bgm=1'))
+		play();
+}
