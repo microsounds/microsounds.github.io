@@ -215,8 +215,8 @@ function play() {
 	var audio = document.getElementById('bgm');
 	var bgm_toggle = document.getElementById('bgm_toggle');
 	if (audio.paused) {
-		var promise = audio.play();
-		promise.then(function() {
+		/* if successful, persist settings */
+		audio.play().then(function() {
 			document.cookie = 'bgm=1;path=/';
 			bgm_toggle.innerText = bgm_toggle.innerText.replace('play', 'pause');
 		}).catch(function() {
