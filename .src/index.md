@@ -66,7 +66,7 @@ If it's about a project or an article on this website, feel free to open an issu
 [![konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
 [![filler1]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/eeeeeeeeeeeeeeeeee)
 [![html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
-[![css]({DOC_ROOT}/static/button/valid-css-blue.png)](https://jigsaw.w3.org/css-validator/check/referer)
+[![css]({DOC_ROOT}/static/button/valid-css-blue.svg)](https://jigsaw.w3.org/css-validator/check/referer)
 [![cc]({DOC_ROOT}/static/button/cc.png)]({CC_BY_SA})
 [![gpl]({DOC_ROOT}/static/button/gpl.png)]({GNU_GPL})
 
