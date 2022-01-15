@@ -31,19 +31,13 @@
 </div>
 <div class="content">
 <!--kagami v0.6 — static microblog processor-->
+<style scoped>
+/* disable borders around transparent images on this page only */
+p img:not([alt="heading"]) { border: unset; }
+</style>
 <h1>Homepage</h1>
-<!-- stylesheet override -->
-<!-- prevent borders around transparent inline images on this page only -->
-<script>
-	var e = document.createElement('style');
-	e.innerHTML = 'p img { border: unset; }';
-	document.body.insertBefore(e, document.body.firstChild);
-</script>
 <!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
-<p><img src="/static/starry.png"
-alt="starry night sky"
-style="max-width: 100%; border: 1px solid #CCC;"
-/></p>
+<p><img src="/static/starry.png" alt="heading" /></p>
 <h2>About me</h2>
 <p>This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me <code>microsounds</code> if you want.</p>
 <p>I like <del>muted pastels,</del> starry night skies, people watching and the <a href="https://files.catbox.moe/gn20dj.pdf" title="Bell System Technical Journal Vol. 57, No. 6, Part 2, pp. 1905- (July-Aug. 1978), Dennis Ritchie, Ken Thompson">unix</a> <a href="http://files.catwell.info/misc/mirror/the-unix-programming-environment-kernighan-pike.pdf" title="The Unix Programming Environment (1984), Brian Kernighan, Rob Pike">programming</a> <a href="http://www.catb.org/~esr/writings/taoup/html/" title="The Art of Unix Programming (2003), Eric S. Raymond">environment</a>.
@@ -51,9 +45,9 @@ I like to have <a href="https://effexxx.bandcamp.com/album/from-4jyo-han-to-ever
 <p>More importantly, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
 Sometimes, I’ll do this to force myself to try new things.</p>
 <div class="right" style="filter: grayscale(65%); font-style: italic;">
-For example, this website,
+<p>For example, this website,
 the superset of github flavored markdown I built up to author this site,
-and the static site generator I wrote that ties it all together were a result of me wanting to get into long form writing.
+and the static site generator I wrote that ties it all together were a result of me wanting to get into long form writing.</p>
 <p>That’s the excuse I give myself, anyway.
 I don’t actually care for long form writing,
 I just really like metaprogramming.</p>
