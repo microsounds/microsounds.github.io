@@ -1,4 +1,4 @@
-<style scoped>
+<style scoped type="text/css">
 /* disable borders around transparent images on this page only */
 p img:not([alt="heading"]) { border: unset; }
 </style>
