@@ -1,17 +1,12 @@
+<style scoped>
+/* disable borders around transparent images on this page only */
+p img:not([alt="heading"]) { border: unset; }
+</style>
+
 # Homepage
 
-<!-- stylesheet override -->
-<!-- prevent borders around transparent inline images on this page only -->
-<script>
-	var e = document.createElement('style');
-	e.innerHTML = 'p img { border: unset; }';
-	document.body.insertBefore(e, document.body.firstChild);
-</script>
 <!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
-<img src="{DOC_ROOT}/static/starry.png"
-	alt="starry night sky"
-	style="max-width: 100%; border: 1px solid #CCC;"
-/>
+![heading]({DOC_ROOT}/static/starry.png)
 
 ## About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
@@ -23,6 +18,7 @@ More importantly, I enjoy designing/writing my own tools and extending existing 
 Sometimes, I'll do this to force myself to try new things.
 
 <div class="right" style="filter: grayscale(65%); font-style: italic;">
+
 For example, this website,
 the superset of github flavored markdown I built up to author this site,
 and the static site generator I wrote that ties it all together were a result of me wanting to get into long form writing.
@@ -34,6 +30,7 @@ I just really like metaprogramming.
 It's a never-ending process.
 
 [![scripts]({DOC_ROOT}/static/shimemiku/shime32.png)](notes/dotfiles.md "It's pretty fun though.")
+
 </div>
 
 {THEMATIC_BREAK}
