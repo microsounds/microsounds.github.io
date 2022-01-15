@@ -33,7 +33,7 @@ It's a never-ending process.
 
 </div>
 
-{THEMATIC_BREAK}
+<hr style="width: 40%;"/>
 
 ## Things I've made recently
 * _(2019–present)_ my "graphical shell" computing environment — [`{AUTHOR}/atelier`]({DOC_ROOT}/notes/dotfiles.md)
