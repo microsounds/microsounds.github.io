@@ -1,5 +1,8 @@
 http://crbug.com/396634.:
 https://bugs.chromium.org/p/chromium/issues/detail?id=353072:
+https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&template=simple&background=647975&charset=25:
+https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&template=simple&background=647975&charset=25:
+2022-01-18 02:07:27 ERROR 501: Not Implemented.
 https://jigsaw.w3.org/css-validator/check/referer:
 https://raw.githubusercontent.com/microsounds/atelier/master:
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual:
