@@ -191,6 +191,8 @@ function browser_check() {
 			issues.push('image filtering and desaturation');
 		if (!CSS.supports('transform', 'rotate(0deg)'))
 			issues.push('image rotation and transform');
+		if (!CSS.supports('animation-duration', '1s'))
+			issues.push('animated backgrounds');
 		if (!CSS.supports('background-blend-mode', 'screen'))
 			issues.push('layered background compositing');
 		if (!CSS.supports('background-color', 'rgba(0,0,0,100%)'))
@@ -207,6 +209,50 @@ function browser_check() {
 }
 
 /*
+ * ┌──────────┐
+ * │🌑        │
+ * │    🌑    │
+ * │        🌑│
+ * └──────────┘
+ * insert parallax animated background during music playback
+ * ensure animation always runs at 15px/sec to avoid nauseating visitors
+ */
+function insert_animation() {
+	/* calculate duration */
+	var secs = Math.floor(document.documentElement.scrollHeight / 15);
+
+	var ins = document.createElement('style');
+	ins.id = 'moonrise';
+	ins.type = 'text/css';
+	ins.innerHTML += `
+		@keyframes moonrise {
+			0% { background-position: 132% 100%; }
+			50% { background-position: -32% 0%; }
+			100% { background-position: 132% 100%; }
+		}
+		html {
+			background:
+				url("/static/nightsky.png") repeat,
+				url("/static/moon_crop.png") no-repeat 132% 100%,
+				linear-gradient(270deg, #809F88, #0B6672);
+			background-size: auto, 40%, auto;
+			animation: moonrise ` + secs + `s ease infinite;
+		}
+
+		 /* mobile version scrolls straight up */
+		@media only screen and (max-width: 1160px) {
+			html { background-size: auto, 100%, auto; }
+		}
+	`;
+	document.body.appendChild(ins);
+}
+
+function delete_animation() {
+	var ins = document.getElementById('moonrise');
+	ins.parentNode.removeChild(ins);
+}
+
+/*
  * make an attempt to playback audio
  * there's plenty of reasons why this won't work as expected
  * on post-2018 browsers, some are described below
@@ -219,6 +265,7 @@ function play() {
 		audio.play().then(function() {
 			document.cookie = 'bgm=1;path=/';
 			bgm_toggle.innerText = bgm_toggle.innerText.replace('play', 'pause');
+			insert_animation();
 		}).catch(function() {
 			/*
 			 * on chromium-based browsers, persistent playback
@@ -238,6 +285,7 @@ function play() {
 		audio.pause();
 		document.cookie = 'bgm=0;path=/';
 		bgm_toggle.innerText = bgm_toggle.innerText.replace('pause', 'play');
+		delete_animation();
 	}
 }
 
