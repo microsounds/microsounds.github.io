@@ -1,1 +1,4 @@
-*.md linguist-detectable=true
+*.htm linguist-generated
+
+*.md linguist-detectable
+.kagami/*.htm linguist-detectable
