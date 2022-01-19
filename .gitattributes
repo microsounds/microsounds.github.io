@@ -4,4 +4,4 @@
 # source code
 *.md linguist-detectable
 .kagami/* linguist-detectable
-404.html linguist-detectable
+404.html -linguist-generated
