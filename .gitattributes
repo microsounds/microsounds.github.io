@@ -2,6 +2,6 @@
 *.htm linguist-generated
 
 # source code
-.src/** linguist-detectable
-.kagami/** linguist-detectable
+*.md linguist-detectable
+.kagami/* linguist-detectable
 404.html linguist-detectable
