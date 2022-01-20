@@ -3,5 +3,5 @@
 
 # source code
 *.md linguist-detectable
-.kagami/* linguist-detectable
-# 404.html linguist-detectable
+.kagami/*.htm linguist-detectable
+404.html linguist-detectable
