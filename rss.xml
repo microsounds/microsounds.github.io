@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Wed, 19 Jan 2022 20:26:40 -0800</lastBuildDate>
+<lastBuildDate>Sat, 22 Jan 2022 23:50:29 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 780, commit ef7ff09. “gh-actions: Improved crawling URLs on website” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.6KiB then this document currently covers about 7.25% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier [..]]]>
+<![CDATA[Revision No. 781, commit 91c50e2. “Nothing important” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.6KiB then this document currently covers about 7.25% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier on GitHub. Last updated [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Wed, 19 Jan 2022 20:26:40 -0800</pubDate>
+<pubDate>Sat, 22 Jan 2022 23:50:29 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
