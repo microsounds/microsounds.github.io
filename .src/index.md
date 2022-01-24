@@ -49,7 +49,7 @@ It's a never-ending process.
 * _(2016)_ command-line stack-based RPN calculator — [`{AUTHOR}/hpsh`]({GIT_REMOTE}/hpsh)
 
 ## Contact me
-If it's about a project or an article on this website, feel free to open an issue or a pull request on GitHub.
+If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
 
 ## Links
 <div class="center">
@@ -67,6 +67,10 @@ If it's about a project or an article on this website, feel free to open an issu
 [![cc]({DOC_ROOT}/static/button/cc.png)]({CC_BY_SA})
 [![gpl]({DOC_ROOT}/static/button/gpl.png)]({GNU_GPL})
 
+[![badge]({DOC_ROOT}/static/button/badge.png)]({DOC_ROOT}/static/button/badge.png "static version")
+[![badge]({DOC_ROOT}/static/button/badge.gif)]({DOC_ROOT}/static/button/badge.gif "animated version")
+
+<span class="aside">If you enjoyed my website and you'd like to link here, feel free to use my badge on your own site.</span>
 </div>
 
 <!-- extended reading on unix and adjacent topics -->

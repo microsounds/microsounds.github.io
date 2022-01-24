@@ -1,4 +1,5 @@
-# microsounds.github.io
+
+# ![badge](static/button/badge.png) microsounds.github.io
 This is a [`kagami`][kagami] template and and accompanying source code that renders my personal site at <https://microsounds.github.io/>
 
 ## Deploying
