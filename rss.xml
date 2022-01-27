@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 781, commit 3c3b05a. “GTK2/3: Generating commonly used bookmarks at startup” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.7KiB then this document currently covers about 7.24% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at [..]]]>
+<![CDATA[Revision No. 781, commit d454740. “GTK2/3: Generating commonly used bookmarks at startup” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 20.9KiB in size, and the approximate size of all comment lines of code is 57.7KiB then this document currently covers about 7.24% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
