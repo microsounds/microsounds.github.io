@@ -149,7 +149,7 @@ function setup_bgm() {
 
 			addCopy();
 		}
-	}
+	};
 	client.open('GET', file);
 	client.responseType = "arraybuffer";
 	client.send();
@@ -170,9 +170,9 @@ function spawn_warning(heading, body, list) {
 			for (var i in list) {
 				warn.innerHTML += '<li><i>' + list[i] + '</i></li>';
 			}
-			warn.innerHTML += '</ul>'
+			warn.innerHTML += '</ul>';
 		}
-		warn.innerHTML += '</p>'
+		warn.innerHTML += '</p>';
 		doc.insertBefore(warn, doc.firstChild);
 }
 
@@ -296,4 +296,4 @@ window.onload = function() {
 	/* persist playback settings */
 	if (document.cookie.includes('bgm=1'))
 		play();
-}
+};
