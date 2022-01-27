@@ -79,6 +79,11 @@ html {
 a { color: #F5D6EA; text-decoration: none; }	
 a:hover, a:hover > * { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
 
+/* highlighting */
+.highlight {
+	background-color: #BB67A170;
+}
+
 /* blockquotes */
 blockquote {
 	border-left: 5px solid #646464;
