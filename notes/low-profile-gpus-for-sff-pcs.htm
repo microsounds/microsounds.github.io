@@ -32,34 +32,35 @@
 <div class="content">
 <!--kagami v0.6 — static microblog processor-->
 <!-- created 2020/10/22 -->
-<!-- updated 2021/12/1 -->
+<!-- updated 2022/1/26 -->
 <h1>List of low profile GPUs for small form factor PCs (SFFs)</h1>
-<p>Last updated 🌔 Wed, Dec 1st, 2021.</p>
+<p>Last updated 🌓 Wed, Jan 26th, 2022.</p>
 <blockquote>
 <p><strong>NOTICE</strong><br><br>
-I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.</p>
+<em>I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.</em></p>
 </blockquote>
 <p><img src="assets/low_profile_gpu.jpg" alt="img" /></p>
-<p>For our purposes <strong>“low profile”</strong> refers to cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
-Think space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors.</p>
+<p>Most GPU marketing materials will use the term <strong>LP</strong> or <strong>“low profile”</strong> to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
+These are ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors where size is a constraining factor.</p>
 <p><em><strong>This is a shortlist of common, rare and/or discontinued low profile 75W PCIe GPUs up to 2 slots wide introduced since 2013.</strong></em>
-Cards older than this are most likely worse than your onboard graphics.</p>
+Cards older than this are most likely worse than your onboard graphics.
+<em>Cards older than <strong>2014</strong> may have their driver support discontinued by the vendor, check compatibility with your operating system before purchasing.</em></p>
 <p>PCIe cards with power requirements below 75W can be powered from the PCIe slot alone and don’t require additional PSU power.</p>
-<p>Most of these cards are older than 3 years old, many are now discontinued.
-You might still be able to find new-old stock online or where you live.
-Don’t be afraid to buy a used card if the price is acceptable, you’re not likely to buy a heat-damaged GPU from an overclocking or cryptomining enthusiast as these demographics aren’t likely to buy weak SFF cards.</p>
-<p>This list also includes workstation cards for completeness.
-They tend to offer a worse price-to-performance ratio compared to cards meant for gaming.
-If you’re not looking to drive 4x DisplayPort monitors with a single card, don’t bother.
-They have no other ports.</p>
+<p>These cards are generally not well promoted, nearly all are discontinued, some models and configurations may be quite rare in your part of the world.
+However, you might still be able to find new-old stock online or where you live.
+<del>Don’t be afraid to buy a used card if the price is acceptable, you’re not likely to buy a heat-damaged GPU from an overclocking or cryptomining enthusiast as these demographics aren’t likely to buy weak SFF cards.</del></p>
+<p>In order to illustrate that many users can potentially avoid avoid the present-day GPU supply hell, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
+This list also includes workstation cards for completeness.
+They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming.
+If you’re not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don’t bother, as they have no other ports.</p>
 <p><em><strong>If you intend to run a <a href="https://en.wikipedia.org/wiki/Hackintosh">hackintosh</a> system or you refuse to use non-free graphics drivers on GNU/Linux, then your only real options are AMD cards and you will have to live with a worse price-to-performance ratio compared to existing Nvidia low profile cards.</strong></em></p>
 <h2>A note on “upgrading” prebuilt desktop PCs</h2>
 <p>Some people might find it appealing to drop a 75W GPU into an existing prebuilt desktop PC to make an entry-level gaming PC, as these can have difficult to swap proprietary PSUs and no additional power cables for expansion cards.</p>
 <p>If you do decide to go this route, be aware that <em><strong>low-end prebuilt desktops may have inadequate motherboard voltage regulation and can exhibit performance throttling</strong></em> due to aggressive cost-cutting decisions made by the OEM. Bad VRMs and inadequate power supplied to the motherboard can turn your CPU into a bottleneck when it proves unable to sustain your CPU’s intended boost clock speeds.
 You may very well not be satisfied with the performance gains compared to published benchmarks running on unencumbered hardware.</p>
 <p>You might also find that some SFF prebuilts have less than ideal PCIe placement.
-In the case of many late model <a href="https://www.dell.com/support/manuals/us/en/19/optiplex-9020-desktop/opt9020sffom-v2/system-board-components?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7">Dell Optiplex SFFs</a>, they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against other components, unable to accomodate most modern cards which are 2 slots at the bare minimum.
-In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of roughly 10% on a GTX 1050/1650, potentially more on more powerful cards.</p>
+In the case of many late model <a href="https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7">Dell Optiplex SFFs</a>, they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against the power supply, unable to accomodate most modern cards which are 2 slots at the bare minimum.
+In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of at least 10% on a GTX 1050/1650, potentially more on more powerful cards.</p>
 <h1>1-slot Low Profile under 75W</h1>
 <table>
 <thead>
@@ -67,7 +68,7 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <th align="left">Name</th>
 <th align="center">Released</th>
 <th align="center">PassMark G3D Score</th>
-<th align="left">Comments</th>
+<th align="left">Remarks</th>
 </tr>
 </thead>
 <tbody>
@@ -75,7 +76,7 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">Nvidia GeForce 210</td>
 <td align="center">2009</td>
 <td align="center">98</td>
-<td align="left">Still sold new, worse than integrated.</td>
+<td align="left"><del>Still sold new</del>, worse than integrated.</td>
 </tr>
 <tr>
 <td align="left">AMD Radeon HD 8490</td>
@@ -93,19 +94,19 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">Nvidia GeForce GT 710</td>
 <td align="center">2014</td>
 <td align="center">636</td>
-<td align="left">Zotac, Asus, VisionTek make passively cooled versions.</td>
+<td align="left">Zotac, Asus, VisionTek made passively cooled versions.</td>
 </tr>
 <tr>
-<td align="left"><em><strong>Intel HD Graphics 4600</strong></em></td>
+<td align="left"><span class="highlight">Intel HD Graphics 4600</span></td>
 <td align="center">2013</td>
 <td align="center">640</td>
-<td align="left"><strong>*Reference*</strong> Intel Core i5 Haswell-era integrated graphics.</td>
+<td align="left">Intel Core i5 Haswell-era integrated graphics.</td>
 </tr>
 <tr>
 <td align="left">Nvidia GeForce GT 730</td>
 <td align="center">2014</td>
 <td align="center">794</td>
-<td align="left">Zotac makes passively cooled versions.</td>
+<td align="left">Zotac made passively cooled versions.</td>
 </tr>
 <tr>
 <td align="left">Nvidia GeForce GT 635</td>
@@ -120,10 +121,10 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><em><strong>AMD Radeon Vega 3</strong></em></td>
+<td align="left"><span class="highlight">AMD Radeon Vega 3</span></td>
 <td align="center">2018</td>
 <td align="center">886</td>
-<td align="left"><strong>*Reference*</strong> AMD Athlon APU integrated graphics.</td>
+<td align="left">AMD Athlon APU integrated graphics.</td>
 </tr>
 <tr>
 <td align="left">AMD Radeon HD 8570</td>
@@ -156,10 +157,10 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">Workstation card.</td>
 </tr>
 <tr>
-<td align="left"><em><strong>AMD Radeon Vega 8</strong></em></td>
+<td align="left"><span class="highlight">AMD Radeon Vega 8</span></td>
 <td align="center">2018</td>
 <td align="center">1596</td>
-<td align="left"><strong>*Reference*</strong> AMD Ryzen 3 APU integrated graphics.</td>
+<td align="left">AMD Ryzen 3 APU integrated graphics.</td>
 </tr>
 <tr>
 <td align="left">AMD Radeon HD 7750</td>
@@ -168,10 +169,10 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">VisionTek low profile card.</td>
 </tr>
 <tr>
-<td align="left"><em><strong>AMD Radeon Vega RX 11</strong></em></td>
+<td align="left"><span class="highlight">AMD Radeon Vega RX 11</span></td>
 <td align="center">2018</td>
 <td align="center">2134</td>
-<td align="left"><strong>*Reference*</strong> AMD Ryzen 5 APU integrated graphics.</td>
+<td align="left">AMD Ryzen 5 APU integrated graphics.</td>
 </tr>
 <tr>
 <td align="left">Nvidia GTX 745</td>
@@ -183,7 +184,7 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">AMD Radeon RX 550</td>
 <td align="center">2017</td>
 <td align="center">2408</td>
-<td align="left">Yeston, MSI, Sapphire, XFX make low profile versions.</td>
+<td align="left">Yeston, MSI, Sapphire, XFX made low profile versions.</td>
 </tr>
 <tr>
 <td align="left">AMD Radeon Pro WX 3200</td>
@@ -195,7 +196,7 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">Nvidia GeForce GT 1030</td>
 <td align="center">2017</td>
 <td align="center">2607</td>
-<td align="left">Asus, EVGA, MSI make passively cooled versions.</td>
+<td align="left">Asus, EVGA, MSI made passively cooled versions.</td>
 </tr>
 <tr>
 <td align="left">AMD Radeon Pro WX 3100</td>
@@ -208,6 +209,12 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="center">2015</td>
 <td align="center">2861</td>
 <td align="left">Workstation card.</td>
+</tr>
+<tr>
+<td align="left">Nvidia GeForce GTX 750</td>
+<td align="center">2014</td>
+<td align="center">3405</td>
+<td align="left">MQX made a low profile single-slot version.</td>
 </tr>
 <tr>
 <td align="left">Nvidia T400</td>
@@ -254,7 +261,7 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <th align="left">Name</th>
 <th align="center">Released</th>
 <th align="center">PassMark G3D Score</th>
-<th align="left">Comments</th>
+<th align="left">Remarks</th>
 </tr>
 </thead>
 <tbody>
@@ -265,22 +272,40 @@ In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe 
 <td align="left">Available from MSI, VisionTek (workstation 1-slot card)</td>
 </tr>
 <tr>
+<td align="left">Nvidia GeForce GTX 750 Ti</td>
+<td align="center">2014</td>
+<td align="center">3923</td>
+<td align="left">MQX made a low profile single-slot version.</td>
+</tr>
+<tr>
 <td align="left">AMD Radeon RX 460</td>
 <td align="center">2016</td>
 <td align="center">4034</td>
 <td align="left">Available from MSI.</td>
 </tr>
 <tr>
+<td align="left">Nvidia GeForce GTX 950</td>
+<td align="center">2015</td>
+<td align="center">5399</td>
+<td align="left">Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market.</td>
+</tr>
+<tr>
 <td align="left">Nvidia GeForce GTX 1050 Ti</td>
 <td align="center">2016</td>
 <td align="center">6398</td>
-<td align="left">ASL makes a <a href="https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag">1-slot version</a> for the Chinese market.</td>
+<td align="left">ASL made a <a href="https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag">1-slot version</a> for the Chinese market.</td>
 </tr>
 <tr>
 <td align="left">Nvidia GeForce GTX 1650</td>
 <td align="center">2019</td>
 <td align="center">7866</td>
-<td align="left">ASL makes a <a href="https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife">1-slot version</a> for the Chinese market.</td>
+<td align="left">ASL made a <a href="https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife">1-slot version</a> for the Chinese market.</td>
+</tr>
+<tr>
+<td align="left">Nvidia RTX A2000</td>
+<td align="center">2021</td>
+<td align="center">12988</td>
+<td align="left">Workstation card.</td>
 </tr>
 </tbody>
 </table>
