@@ -1,4 +1,3 @@
-
 # ![badge](static/button/badge.png) microsounds.github.io
 This is a [`kagami`][kagami] template and and accompanying source code that renders my personal site at <https://microsounds.github.io/>
 
@@ -48,4 +47,4 @@ The default GitHub Actions token `${{ secrets.GITHUB_TOKEN }}` will not work her
 > I'd rather just spawn a debian container and don't want to do things in some
 > vendor-specific way.
 
-![img](static/starry.png)
+![img](static/starry.jpg)
