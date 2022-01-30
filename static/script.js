@@ -290,11 +290,11 @@ function play() {
 	}
 }
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', function() {
 	browser_check();
 	setup_bgm();
 
 	/* persist playback settings */
 	if (document.cookie.includes('bgm=1'))
 		play();
-};
+});
