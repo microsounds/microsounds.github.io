@@ -58,7 +58,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | <span class="highlight">AMD Radeon Vega 8</span> | 2018 | 1596 | AMD Ryzen 3 APU integrated graphics. |
 | AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
 | <span class="highlight">AMD Radeon Vega RX 11</span> | 2018 | 2134 | AMD Ryzen 5 APU integrated graphics. |
-| Nvidia GTX 745 | 2014 | 2205 | OEM only. |
+| Nvidia GeForce GTX 745 | 2014 | 2205 | OEM only. |
 | AMD Radeon RX 550 | 2017 | 2408 | Yeston, MSI, Sapphire, XFX made low profile versions. |
 | AMD Radeon Pro WX 3200 | 2019 | 2560 | Workstation card. |
 | Nvidia GeForce GT 1030 | 2017 | 2607 | Asus, EVGA, MSI made passively cooled versions. |
