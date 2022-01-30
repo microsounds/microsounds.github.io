@@ -6,7 +6,7 @@ p img:not([alt="heading"]) { border: unset; }
 # Homepage
 
 <!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
-![heading]({DOC_ROOT}/static/starry.png)
+![heading]({DOC_ROOT}/static/starry.jpg)
 
 ## About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.

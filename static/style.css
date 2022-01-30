@@ -13,7 +13,7 @@ html {
 	min-height: 100%;
 	background:
 		url("nightsky.png") repeat,
-		url("moon_crop2.png") no-repeat bottom right,
+		url("moon_crop2.jpg") no-repeat bottom right,
 		linear-gradient(270deg, #809F88, #0B6672);
 	background-blend-mode: screen, screen, normal;
 	background-size: auto, 20%, auto;

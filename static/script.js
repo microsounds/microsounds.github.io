@@ -234,7 +234,7 @@ function insert_animation() {
 		html {
 			background:
 				url("/static/nightsky.png") repeat,
-				url("/static/moon_crop.png") no-repeat 132% 100%,
+				url("/static/moon_crop.jpg") no-repeat 132% 100%,
 				linear-gradient(270deg, #809F88, #0B6672);
 			background-size: auto, 40%, auto;
 			animation: moonrise ` + secs + `s ease infinite;
