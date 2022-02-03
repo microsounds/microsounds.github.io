@@ -91,11 +91,15 @@ blockquote {
 	padding: 5px;
 }
 
-/* inline images/video */
-p img, p video {
+/*
+ * inline images and video
+ * markdown images starting with ![ico-*] are treated as icons
+ */
+p img:not([alt^=ico-]), p video {
 	max-width: 100%;
 	border: 1px solid #CCCCCC;
 }
+
 
 /* automatically generated page index */
 .index { font-size: 18px; }

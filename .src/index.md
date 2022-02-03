@@ -1,8 +1,3 @@
-<style scoped type="text/css">
-/* disable borders around transparent images on this page only */
-p img:not([alt="heading"]) { border: unset; }
-</style>
-
 # Homepage
 
 <!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
@@ -29,7 +24,7 @@ I just really like metaprogramming.
 
 It's a never-ending process.
 
-[![scripts]({DOC_ROOT}/static/shimemiku/shime32.png)](notes/dotfiles.md "It's pretty fun though.")
+[![ico-scripts]({DOC_ROOT}/static/shimemiku/shime32.png)](notes/dotfiles.md "It's pretty fun though.")
 
 </div>
 
@@ -54,21 +49,21 @@ If it's about a project or a page on this website, open an issue or a pull reque
 ## Links
 <div class="center">
 
-[![debian]({DOC_ROOT}/static/button/debian.png)](https://debian.org/distrib)
-[![nano]({DOC_ROOT}/static/button/nano.png)](https://nano-editor.org)
-[![vocaloid]({DOC_ROOT}/static/button/vocaloid.gif)](https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_)
-[![miku3]({DOC_ROOT}/static/button/mikuproved.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
-[![miku1]({DOC_ROOT}/static/button/hatsunemiku1.gif)](https://www.youtube.com/watch?v=3rsBLRFONEs)
-[![miku2]({DOC_ROOT}/static/button/miku.gif)](https://www.youtube.com/watch?v=NJAghsisnok)
-[![konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
-[![filler1]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/eeeeeeeeeeeeeeeeee)
-[![html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
-[![css]({DOC_ROOT}/static/button/valid-css-blue.svg)](https://jigsaw.w3.org/css-validator/check/referer)
-[![cc]({DOC_ROOT}/static/button/cc.png)]({CC_BY_SA})
-[![gpl]({DOC_ROOT}/static/button/gpl.png)]({GNU_GPL})
+[![ico-debian]({DOC_ROOT}/static/button/debian.png)](https://debian.org/distrib)
+[![ico-nano]({DOC_ROOT}/static/button/nano.png)](https://nano-editor.org)
+[![ico-vocaloid]({DOC_ROOT}/static/button/vocaloid.gif)](https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_)
+[![ico-miku3]({DOC_ROOT}/static/button/mikuproved.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
+[![ico-miku1]({DOC_ROOT}/static/button/hatsunemiku1.gif)](https://www.youtube.com/watch?v=3rsBLRFONEs)
+[![ico-miku2]({DOC_ROOT}/static/button/miku.gif)](https://www.youtube.com/watch?v=NJAghsisnok)
+[![ico-konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
+[![ico-filler1]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/eeeeeeeeeeeeeeeeee)
+[![ico-html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
+[![ico-css]({DOC_ROOT}/static/button/valid-css-blue.svg)](https://jigsaw.w3.org/css-validator/check/referer)
+[![ico-cc]({DOC_ROOT}/static/button/cc.png)]({CC_BY_SA})
+[![ico-gpl]({DOC_ROOT}/static/button/gpl.png)]({GNU_GPL})
 
-[![badge]({DOC_ROOT}/static/button/badge.png)]({DOC_ROOT}/static/button/badge.png "static version")
-[![badge]({DOC_ROOT}/static/button/badge.gif)]({DOC_ROOT}/static/button/badge.gif "animated version")
+[![ico-badge]({DOC_ROOT}/static/button/badge.png)]({DOC_ROOT}/static/button/badge.png "static version")
+[![ico-badge]({DOC_ROOT}/static/button/badge.gif)]({DOC_ROOT}/static/button/badge.gif "animated version")
 
 <span class="aside">If you enjoyed my website and you'd like to link here, feel free to use my badge on your own site.</span>
 </div>
