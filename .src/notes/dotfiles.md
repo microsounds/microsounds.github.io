@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 784, commit `b9569e8`.**
+**Revision No. 786, commit `b4da834`.**
 
-**"xinit: Avoid race condition with xwin-widgets while applying ~/.xrandr"**
+**"Style changes, readme header is now markdown"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *20.9KiB* in
+If this document is *21.1KiB* in
 size, and the approximate size of all comment lines of code is
 *57.8KiB* then this document
-currently covers about <b style="font-size: 130%;">7.23%</b>
+currently covers about <b style="font-size: 130%;">7.30%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -25,17 +25,27 @@ Last updated {UPDATED}.
 <!-- header and github badges -->
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
 <div align="center">
-    <img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github">
-    <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github">
-    <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg"></a>
-    <br>
-    <a href="https://debian.org/distrib/"><img src="https://img.shields.io/badge/Debian-bullseye-%23c70036.svg?logo=debian"></a>
-    <a href="https://dwm.suckless.org/"><img src="https://img.shields.io/badge/suckless-dwm-%23224488?logo=suckless"></a>
-    <a href="https://nano-editor.org/"><img src="https://shields.io/badge/Editor-GNU%20nano-%23440077?logo=windows-terminal"></a>
-    <a href="https://www.youtube.com/watch?v=UL8IpdFGeHU"><img src="https://img.shields.io/badge/theme-night drive-%2363B0B0?logo=github-sponsors"></a>
-    <br>
-    <a href="http://canarypop.ciao.jp/shimehatsune.htm"><sup><i>shimeji miku &copy; 2010 canary yellow</i></sup></a>
+
+![ico-freq](https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github)
+![ico-size](https://img.shields.io/github/repo-size/microsounds/atelier?logo=github)
+[![ico-ci](https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg)][actions]
+<br/>
+[![ico-os](https://img.shields.io/badge/Debian-bullseye-%23c70036.svg?logo=debian)][debian]
+[![ico-wm](https://img.shields.io/badge/suckless-dwm-%23224488?logo=suckless)][dwm]
+[![ico-editor](https://shields.io/badge/Editor-GNU%20nano-%23440077?logo=windows-terminal)][nano]
+[![ico-theme](https://img.shields.io/badge/theme-night%20drive-%2363B0B0?logo=github-sponsors)][song]
+<br/>
+<sup>[_shimeji miku &copy; 2010 canary yellow_][miku]</sup>
 </div>
+
+[actions]: https://github.com/microsounds/atelier/actions/workflows/ci.yml "unit tests"
+[debian]: https://debian.org/distrib/ "Debian GNU/Linux homepage"
+[dwm]: https://dwm.suckless.org/ "suckless dwm homepage"
+[nano]: https://nano-editor.org/ "GNU nano homepage"
+[song]: https://www.youtube.com/watch?v=UL8IpdFGeHU "effe - night drive ft. 初音ミク"
+[miku]: http://canarypop.ciao.jp/shimehatsune.htm "Shimeji Miku homepage"
+
+<!-- start of document -->
 
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
 * Git is used to maintain an identical and reproducible setup across multiple machines.
@@ -71,8 +81,8 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 </a>
 
 ## Quick start on Termux for Android
-> **NOTE**<br>
-> _Currently, only a basic shell environment in single-user mode is supported.<br>
+> **NOTE**<br/>
+> _Currently, only a basic shell environment in single-user mode is supported.<br/>
 > This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
@@ -118,7 +128,7 @@ Each script is self-contained, you can run them individually, anytime.
 | -- | -- |
 | `0*` | System-wide changes performed through the package manager. |
 | `1*` | Changes to [`~/.local`]({GIT_REMOTE}/atelier/raw/master/.local) file hierarchy, such as locally installed software and resources. |
-| `2*` | System-wide changes that bypass the package manager, such as changes to `/etc`.<br>_These are hacks._ |
+| `2*` | System-wide changes that bypass the package manager, such as changes to `/etc`.<br/>_These are hacks._ |
 | `c*` | System-wide changes affecting chromebook hardware only. |
 | `a*` | Android-specific hacks only. |
 | `p*` | NTC PocketCHIP-specific hacks only. |
@@ -276,7 +286,7 @@ Several commands are extended to include impure functions, such as purposefully 
     | `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
 
 ## `chromium`
-> **NOTE**<br>
+> **NOTE**<br/>
 >_On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
 
 `chromium` was extended to mangle the user-hostile per-profile `Preferences` and global `Local State` JSON files with a series of chained `jq` filters stored in the following files, applying persistent settings in order.
@@ -299,7 +309,7 @@ See *Usage Notes* for more information.
 
     | alias | function |
     | -- | -- |
-    | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command.<br>_(Added implicitly when outside a git directory.)_ |
+    | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command.<br/>_(Added implicitly when outside a git directory.)_ |
     | `summary` | Outlines the last 20 commits with a commit graph. |
     | `list-files` | List all tracked filenames in repo, ideally for use with `xargs`. |
     | `flatten` | Automatically melds `--fixup/squash` commits out of existence starting from the root commit. |
@@ -309,28 +319,28 @@ See *Usage Notes* for more information.
     | `vacuum` | Runs `git meta gc` and then recurses through `~/Git` and runs `git gc` on every existing `git` repo found. |
 
 ## `nano`
-> **NOTE**<br>
+> **NOTE**<br/>
 > _`nano` keybind macros make use of inline non-printable control characters, you must use `nano` or `cat -v` to view [`~/.nanorc`]({GIT_REMOTE}/atelier/raw/master/.nanorc) correctly._
 
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/raw/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
 
     | opt | function |
     | -- | -- |
-    | `-e, --ctags <tag> <#>` | Jumps into file containing `ctags` definition matching `<tag>`. <br>_Optional `<#>` selects from multiple matches, `all` will open all of them._ |
-    | `-c, --ctags-dict <file1>...` | Enable project-wide autocomplete by appending condensed dictionary of all `ctags` keywords to all files. <br>_Dictionary will be removed upon exiting._ |
-    | `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br>_File will be created if it doesn't exist._ |
-    | `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br>_File will be created if it doesn't exist._ |
-    | `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br>_File will be created if it doesn't exist._ |
-    | `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br>_Can be a private key or a public key with private half stored in `ssh-agent`_ |
+    | `-e, --ctags <tag> <#>` | Jumps into file containing `ctags` definition matching `<tag>`. <br/>_Optional `<#>` selects from multiple matches, `all` will open all of them._ |
+    | `-c, --ctags-dict <file1>...` | Enable project-wide autocomplete by appending condensed dictionary of all `ctags` keywords to all files. <br/>_Dictionary will be removed upon exiting._ |
+    | `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br/>_File will be created if it doesn't exist._ |
+    | `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br/>_File will be created if it doesn't exist._ |
+    | `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br/>_File will be created if it doesn't exist._ |
+    | `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br/>_Can be a private key or a public key with private half stored in `ssh-agent`_ |
 
 * Once inside the actual `nano`, the following keybind macros are available:
 
     | key | function |
     | -- | -- |
-    | `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br>_Destructively replaces entire contents of buffer, useful for formatting._ |
-    | `M-1` | Execute current line as shell command and paste output in current buffer.<br>_Commands within inline comments are accepted._ |
-    | `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br>_Requires valid `tags` file in current or a parent directory._ |
-    | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br>_Requires valid `tags` file in current or a parent directory._ |
+    | `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br/>_Destructively replaces entire contents of buffer, useful for formatting._ |
+    | `M-1` | Execute current line as shell command and paste output in current buffer.<br/>_Commands within inline comments are accepted._ |
+    | `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br/>_Requires valid `tags` file in current or a parent directory._ |
+    | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br/>_Requires valid `tags` file in current or a parent directory._ |
 
 ## `notify-send`
 This particular [`notify-send`]({GIT_REMOTE}/atelier/raw/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
@@ -384,7 +394,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
     ```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime21.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime44.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -406,13 +416,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-188.93KiB
+189.13KiB
 out of a total compressed git history size of
-728.40KiB._
+706.31KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@3c813da5cd5c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@5a21fdf0f997</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jan 19 2022 13:00 rev. 74  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -525,7 +535,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  21K   Jan  6 2022 15:30 rev. 169 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1  22K   Feb  2 2022 22:38 rev. 171 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 31 Jan 2022 00:39:18 -0800 -->
+<!-- updated Wed, 2 Feb 2022 22:38:21 -0800 -->
