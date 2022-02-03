@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Wed, 02 Feb 2022 22:38:21 -0800</lastBuildDate>
+<lastBuildDate>Wed, 02 Feb 2022 22:18:18 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 786, commit b4da834. “Style changes, readme header is now markdown” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 21.1KiB in size, and the approximate size of all comment lines of code is 57.8KiB then this document currently covers about 7.30% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at [..]]]>
+<![CDATA[Revision No. 785, commit 7087a40. “XHTML5 and markdown changes to documentation” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 21.1KiB in size, and the approximate size of all comment lines of code is 57.8KiB then this document currently covers about 7.30% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Wed, 02 Feb 2022 22:38:21 -0800</pubDate>
+<pubDate>Wed, 02 Feb 2022 22:18:18 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
