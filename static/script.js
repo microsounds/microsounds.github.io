@@ -36,7 +36,6 @@ var loops = [
  * adapted from from example code found at
  * http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
  */
-
 function is_compatible() {
 	var ctx = new MediaSource();
 	return !!ctx.addSourceBuffer;
@@ -160,7 +159,6 @@ function setup_bgm() {
  * warn user that their browser is garbage
  * desktop and mobile safari are regularly missing the following features
  */
-
 function spawn_warning(heading, body, list) {
 		var doc = document.getElementsByClassName('content')[0];
 		var warn = document.createElement('blockquote');
