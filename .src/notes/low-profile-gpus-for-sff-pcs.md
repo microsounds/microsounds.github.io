@@ -21,7 +21,7 @@ These cards are generally not well promoted, nearly all are discontinued, some m
 However, you might still be able to find new-old stock online or where you live.
 ~~Don't be afraid to buy a used card if the price is acceptable, you're not likely to buy a heat-damaged GPU from an overclocking or cryptomining enthusiast as these demographics aren't likely to buy weak SFF cards.~~
 
-In order to illustrate that many users can potentially avoid avoid the present-day GPU supply hell, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
+In order to illustrate that many users can potentially avoid the present-day GPU supply hell, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
 This list also includes workstation cards for completeness.
 They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming.
 If you're not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don't bother, as they have no other ports.
