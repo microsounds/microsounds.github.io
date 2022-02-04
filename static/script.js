@@ -240,7 +240,7 @@ function insert_animation() {
 
 		 /* mobile version scrolls straight up */
 		@media only screen and (max-width: 1160px) {
-			html { background-size: auto, 100%, auto; }
+			html { background-size: auto, 600px, auto; }
 		}
 	`;
 	document.body.appendChild(ins);
