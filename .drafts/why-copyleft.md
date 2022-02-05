@@ -1,4 +1,4 @@
-<!-- posted 2022/2/4 -->
+<!-- posted 2022/2/5 -->
 <span class="right">{UPDATED}</span>
 
 # On Copyleft and why I use GPLv3
@@ -32,18 +32,18 @@ I won't harp on you for choosing the ideological ***"easy way out"*** by licensi
 You should note that this is the equivalent of putting your work in the public domain, with extra steps.
 
 In practice, you can take anything from the ~~public~~ permissive domain, and not be required to contribute the resultant derivative work back into the same ~~public~~ permissive domain for others to use and benefit from, like you did initially.
-Re-licensing permissive works allows you to subscribe to the [Fuck You,][disney] [I Got Mine&trade;][sonny bono act] school of creative freedom.
+Re-licensing permissive works allows you to subscribe to the [Fuck You,][disney] [I Got Mine&trade;][sonny bono act] school of creative freedom---the legal equivalent of pulling up the ladder up behind you.
 
 When you remove all legal barriers for re-licensing of creative works, [people will do so][minix], and feel so emboldened they won't even attribute you.
 
-So long as intellectual property law continues to exist in it's current form, this is the very thing that that copyleft licenses aim to correct.
+So long as intellectual property law continues to exist in its current form, this is the very thing that that copyleft licenses aim to correct.
 Unless your work is trivial in nature, you should reject permissive licenses, and spit on all their advocates!
 
 [copyleft]: https://en.wikipedia.org/wiki/Copyleft
 [permissive]: https://en.wikipedia.org/wiki/Permissive_software_license
 
 [disney]: https://derekkhanna.medium.com/disney-works-based-on-public-domain-eb49ac34c3da
-	"Disney made it's fortune by plundering the public domain for stories and characters."
+	"Disney made its billions by plundering the public domain for stories and characters."
 [sonny bono act]: https://en.wikipedia.org/wiki/Copyright_Term_Extension_Act
 	"Disney then made it legally impossible for anyone to do what they did ever again."
 [minix]: https://www.cs.vu.nl/~ast/intel/
