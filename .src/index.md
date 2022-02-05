@@ -35,7 +35,7 @@ It's a never-ending process.
 	* _My self-contained and unabridged collection of dotfiles and scripts for Debian GNU/Linux._
 * _(2020–present)_ static microblog processor in POSIX shell — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)
 	* _A user-extensible macro preprocessor and static webpage generator for blog sites like this one._
-* _(2019–present)_ this website and it's `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
+* _(2019–present)_ this website and its `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
 
 ## Old projects
 * _(2016–2017)_ ***[retired]*** lightweight futaba-like messageboard system in C — [`{AUTHOR}/akari-bbs`]({GIT_REMOTE}/akari-bbs)
