@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 04 Feb 2022 11:57:07 -0800</lastBuildDate>
+<lastBuildDate>Sat, 05 Feb 2022 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
-<generator>kagami v0.6 — static microblog processor</generator>
+<generator>kagami v0.6.1 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <atom:link href="https://microsounds.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 <link>https://microsounds.github.io</link>
@@ -12,8 +12,8 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 786, commit 93ab918. “xinit: Fixed nav cluster regression on chromebook from last rewrite” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 21.1KiB in size, and the approximate size of all comment lines of code is 57.8KiB then this document currently covers about 7.30% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is [..]]]>
-<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>.]]>
+<![CDATA[Revision No. 786, commit 93ab918. “xinit: Fixed nav cluster regression on chromebook from last rewrite” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 21.1KiB in size, and the approximate size of all comment lines of code is 57.6KiB then this document currently covers about 7.32% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
@@ -23,11 +23,21 @@
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
 <description>
 <![CDATA[ Last updated . NOTICE I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market. Most GPU marketing materials will use the term LP or “low profile” to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases. These are ideal for use in space-saving PCs, small [..]]]>
-<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</a>.]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</guid>
 <pubDate>Wed, 26 Jan 2022 00:00:00 -0800</pubDate>
+</item>
+<item>
+<title>On Copyleft and why I use GPLv3</title>
+<description>
+<![CDATA[ This is a short outline on guaranteeing creative freedom to users of your works through copyleft. Licensing of creative works is an extremely tiresome topic and I don’t want to put more thought into it than whatever is contained on this page. You can use the term “software” in place of “creative works” and it should have the same gist. I release my creative works under a strong [copyleft license][copyleft] with an attribution and sharealike requirement for several reasons— [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/why-copyleft.htm">https://microsounds.github.io/notes/why-copyleft.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/why-copyleft.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/why-copyleft.htm</guid>
+<pubDate>Sat, 05 Feb 2022 00:00:00 -0800</pubDate>
 </item>
 </channel>
 </rss>

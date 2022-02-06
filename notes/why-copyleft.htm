@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="theme-color" content="#E2FAF9"/>
+	<meta name="description" content="the echoes of time stand still"/>
+	<meta name="keywords" content="unix, linux, gnu/linux, debian, computers, computing, shell scripting, dotfiles, scripting, programming, metaprogramming, documentation, foss, open source, free software, git, github, moon phase, teal, cyan, pink, starry night skies, pastel, anime, music, iridescent, sibilant, sentimental, microsounds, eternity, jealosy, decay, 2007 is eternal, now and forever, lucky star, vocaloid, hatsune miku, 初音ミク, 39, sankyuu, shimeji, japan, weeaboo, weeb, old web, web 1.0, neocities, geocities, blog, microblog, static website, personal website"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="google-site-verification" content="Yn_X0a7RyXs1GuMzbXL2g3P-tH1A29W_6yyG6M8oBnk"/>
+	<link rel="shortcut icon" type="image/x-icon" href="/static/sky.ico"/>
+	<link rel="stylesheet" type="text/css" href="/static/style.css"/>
+	<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="sentimental µsounds"/>
+	<script type="text/javascript" src="/static/script.js"></script>
+	<title>On Copyleft and why I use GPLv3 | sentimental µsounds</title>
+</head>
+<body>
+<audio hidden id="bgm"></audio>
+<div class="navbar">
+	<a href="/index.htm"><img class="avatar" alt="avatar" src="/static/avatar.png"/></a>
+	<div class="container">
+		<div class="title"><a href="/index.htm">sentimental µsounds</a></div>
+		<div class="subtitle">the echoes of time stand still</div>
+		<ul>
+			<li><a id="bgm_toggle" href="javascript:play()">♫ play</a></li>
+			<li><a href="https://github.com/microsounds">my github</a></li>
+			<li><a href="/notes/dotfiles.htm">my dotfiles</a></li>
+			<li><a href="/notes/index.htm">my notes</a></li>
+			<li><a href="/rss.xml">rss <img alt="rss" class="icon" src="/static/button/rss.svg"/></a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+<!--kagami v0.6.1 — static microblog processor-->
+<!-- posted 2022/2/5 -->
+<p><span class="right">🌖 Sat, Feb 5th, 2022</span></p>
+<h1>On Copyleft and why I use GPLv3<span id="On-Copyleft-and-why-I-use-GPLv3"></span></h1>
+<p>This is a short outline on guaranteeing creative freedom to users of your works through copyleft.
+Licensing of creative works is an <em><strong>extremely</strong></em> tiresome topic and I don’t want to put more thought into it than whatever is contained on this page.</p>
+<p>You can use the term <em><strong>“software”</strong></em> in place of <em><strong>“creative works”</strong></em> and it should have the same gist.</p>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-ShareAlike 4.0"><img src="/static/button/cc.png" alt="ico-cc" /></a>
+<a href="https://www.gnu.org/licenses/gpl-3.0" title="GNU General Public License version 3 or later"><img src="/static/button/gpl.png" alt="ico-gpl" /></a></p>
+<p>I release my creative works under a strong <a href="https://en.wikipedia.org/wiki/Copyleft">copyleft license</a> with an <strong>attribution</strong> and <strong>sharealike</strong> requirement for several reasons—</p>
+<ol>
+<li>
+<p><em>I want future users of my work (and derivative versions thereof) to be <strong>afforded the same creative freedoms</strong> I granted them when they first took delivery of my work, no matter the context.</em></p>
+<p><em>In the most general sense, these <a href="https://www.gnu.org/philosophy/free-sw.en.html#four-freedoms" title="FSF definition of free software">creative freedoms</a> include—</em></p>
+<ol start="0">
+<li><em>The freedom to use the work.</em></li>
+<li><em>The freedom to study the work.</em></li>
+<li><em>The freedom to copy and share the work with others.</em></li>
+<li><em>The freedom to modify the work and share derivative versions with others.</em></li>
+</ol>
+</li>
+<li>
+<p><em>This includes <strong>commercial works</strong> derived in whole or in part from copylefted works. Users of that work must be afforded the same freedoms enjoyed by the author of that derivative work.</em></p>
+</li>
+<li>
+<p><em>Attribution becomes less important as the original work becomes unrecognizable through multiple iterations of changes, but omitting attribution altogether makes <strong>spreading awareness</strong> of your creative freedoms granted by the copyleft license far more difficult, which is why it is a requirement.</em></p>
+</li>
+<li>
+<p><em>In an ideal world, intellectual property law <strong>would not exist</strong> and neither would the need for copyleft licenses that use copyright law to enforce their terms, this is the next best thing. <sup>(Yes, I hate it too.)</sup></em></p>
+</li>
+</ol>
+<h2>On permissive licenses and the public domain<span id="On-permissive-licenses-and-the-public-domain"></span></h2>
+<p>Oftentimes, creators <em>(usually programmers)</em>, will take the ideological <em><strong>“easy way out”</strong></em> by licensing their work under a more <a href="https://en.wikipedia.org/wiki/Permissive_software_license">permissive license</a>—a license which releases all <strong>practical</strong> copyright interest in their creative works, usually with one or two token restrictions such as requiring attribution.</p>
+<p>Permissive licenses that require only attribution are as good as public domain when derivative versions of your work can be re-licensed and be made legally unavailable for you to study, share and modify freely.</p>
+<p>As it stands, you can take anything from the <del>public</del> permissive domain, and not be required to contribute the resultant derivative work back into the same <del>public</del> permissive domain for others to use and benefit from, like you did initially.
+Re-licensing permissive works allows you to subscribe to the <em><strong>FYIGM™</strong></em> school of creative freedom—the legal equivalent of pulling up the ladder up behind you.</p>
+<p>Copyleft licenses give you the legal framework to prevent this from happening to you.</p>
+<div style="border-right: 2px;" class="aside right">
+<p>The most prominent example is Disney,
+who made their billions by <a href="https://derekkhanna.medium.com/disney-works-based-on-public-domain-eb49ac34c3da" title="Disney works based on the public domain">plundering public domain stories</a> and characters throughout the 20th century
+and then successfully lobbied to extend US copyright protections
+so that no person or company in this century could ever do the same with Disney’s works through the <a href="https://en.wikipedia.org/wiki/Copyright_Term_Extension_Act" title="Sonny Bono Copyright Term Extension Act of 1998">Sonny Bono Act of 1998</a>.</p>
+</div>
+<p>When you remove all legal barriers for re-licensing of creative works, <a href="https://www.cs.vu.nl/~ast/intel/" title="Permissively licensed OS is used by Intel in the most prolific spyware implementation in the world.">people will do so</a>, and some might feel so emboldened they won’t even attribute you.</p>
+<p>So long as intellectual property law continues to exist in its current form, copyleft licenses are the key to guaranteeing creative freedoms to users of your work, no matter how trivial.
+You should reject permissive licenses in all their forms, and spit on all their advocates!</p>
+<hr/>
+<div class="footer">
+	<span class="right" style="padding-left: 5px">
+		<a title="visitors since 2022" href="https://digits.net">
+			<img style="height: 1.3em;" alt="counter"
+				src="https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25"/>
+			vistors
+		</a>
+	</span>
+	<p>written materials <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, source code <a href="https://www.gnu.org/licenses/gpl-3.0">GNU GPLv3+</a>
+	— &copy; 2015-2022 microsounds &lt;<a href="https://github.com/microsounds">https://github.com/microsounds</a>&gt;<br/>
+	Powered by <a href="https://github.com/microsounds/kagami">kagami v0.6.1 — static microblog processor</a></p>
+</div>
+</div> <!-- end of content -->
+</body>
+</html>

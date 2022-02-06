@@ -10,8 +10,8 @@ in this repo is about **5:1**.
 
 If this document is *21.1KiB* in
 size, and the approximate size of all comment lines of code is
-*57.8KiB* then this document
-currently covers about <b style="font-size: 130%;">7.30%</b>
+*57.6KiB* then this document
+currently covers about <b style="font-size: 130%;">7.32%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -50,7 +50,7 @@ Last updated {UPDATED}.
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
 * Git is used to maintain an identical and reproducible setup across multiple machines.
 * A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d) document and reproduce system-wide deviations from a fresh install.
-    * _A [suite of unit tests]({GIT_REMOTE}/atelier/raw/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
+	* _A [suite of unit tests]({GIT_REMOTE}/atelier/raw/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
 
 Basic installation instructions are provided, along with some documentation for the most essential components.
 
@@ -60,24 +60,24 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 
 # Quick start
 1. Install Debian stable, perform a base install with no DE selected and no standard utilities when prompted.
-    * _Do not perform these steps on `tty1`, `xinit` will launch without `dwm` present and you will be kicked._
+	* _Do not perform these steps on `tty1`, `xinit` will launch without `dwm` present and you will be kicked._
 2. Install `git`, `wget`, and `sudo`, then add yourself to the `sudo` group.
-    * Log back in to apply changes to group membership.
+	* Log back in to apply changes to group membership.
 3. Bootstrap the system automatically with a hard git reset from this repo, this is done only once.
-    ```shell
-    $ git clone --bare {GIT_REMOTE}/atelier ~/.config/meta
-    $ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
-    # Invoke the login shell to apply changes made to the environment
-    $ exec $SHELL -l
-    ```
+	```shell
+	$ git clone --bare {GIT_REMOTE}/atelier ~/.config/meta
+	$ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
+	# Invoke the login shell to apply changes made to the environment
+	$ exec $SHELL -l
+	```
 4. Run `post-install` in the shell to run post-install scripts automatically.
-    * _Sets up the package manager, installs essential packages, compiles window manager, text editor, etc._
+	* _Sets up the package manager, installs essential packages, compiles window manager, text editor, etc._
 5. Reboot to finish.
-    * _[`xinit`]({GIT_REMOTE}/atelier/raw/master/.xinitrc) starts automatically upon login to [`tty1`]({GIT_REMOTE}/atelier/raw/master/.profile)._
+	* _[`xinit`]({GIT_REMOTE}/atelier/raw/master/.xinitrc) starts automatically upon login to [`tty1`]({GIT_REMOTE}/atelier/raw/master/.profile)._
 
 <!-- figure 2: mobile screenshot -->
 <a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot.jpg">
-    <img width="125px" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png">
+	<img width="125px" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png">
 </a>
 
 ## Quick start on Termux for Android
@@ -87,24 +87,24 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/raw/master/.once.d/a0-android-termux.sh)
-    * Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
+	* Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
-    * Use `patch -p1 < ~/.termux/termux-diff.patch` to restore changes if stash is lost.
+	* Use `patch -p1 < ~/.termux/termux-diff.patch` to restore changes if stash is lost.
 
 ## Notes on platform support
 **Full graphical shell environment**
 * Any conventional BIOS/UEFI-compliant x86-based Personal Computer
 * x86-based Chromebooks in Developer Mode (SeaBIOS), or liberated with UEFI firmware (Coreboot).
-    * _See <https://mrchromebox.tech/> for more information on unlocking your bootloader._
+	* _See <https://mrchromebox.tech/> for more information on unlocking your bootloader._
 * [Next Thing Co. PocketC.H.I.P][ntc-chip] armhf-based portable ~~toy computer~~ linux handheld
-    * _Final NTC-provided Debian 8 (jessie) OS images from 2016 come with out-of-tree `4.4.13-ntc-mlc` kernel pinned, upgradeable to 10 (buster)._
+	* _Final NTC-provided Debian 8 (jessie) OS images from 2016 come with out-of-tree `4.4.13-ntc-mlc` kernel pinned, upgradeable to 10 (buster)._
 
 [ntc-chip]: http://chip.jfpossibilities.com/docs/pocketchip.html "Mirrored PocketCHIP documentation"
 
 **Single-user minimal shell environment**
 * Bootstrapping in virtualized container instances for use in CI/CD workflows
 * Termux terminal emulator and Linux environment for Android
-    * _Non-standard *NIX environment, currently only supports a subset of available features._
+	* _Non-standard *NIX environment, currently only supports a subset of available features._
 
 # Usage notes
 ## Using `git meta`
@@ -112,9 +112,9 @@ For local-scope changes, files in `$HOME` are versioned and mangled in place usi
 * `$HOME` is considered the detached working tree for a git **bare repo** located at `~/.config/meta`
 * The `meta` alias prefixes all git commands with `--git-dir=$HOME/.config/meta --work-tree=$HOME`
 * `meta status` will ignore files not manually added or tracked by this git repo.
-    * _This is achieved using the `status.showUntrackedFiles` option and not via manually updating `~/.gitignore` as is commonly done._
+	* _This is achieved using the `status.showUntrackedFiles` option and not via manually updating `~/.gitignore` as is commonly done._
 * Invoking `git` outside of a valid git directory will append the `meta` alias automatically.
-    * _`init` and `clone` commands are unaffected._
+	* _`init` and `clone` commands are unaffected._
 
 ## Using `~/.once.d` post-install scripts
 All system-wide changes are performed through automated scripts located in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d), you can run them all at once with shell function `post-install`.
@@ -135,12 +135,12 @@ Each script is self-contained, you can run them individually, anytime.
 
 ### Essential and *optional package groups
 * [ `~/.comforts` ]({GIT_REMOTE}/atelier/raw/master/.comforts) describes a list of non-optional package groups that will be installed through the package manager.
-    * _Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime._
+	* _Optional package groups are marked with an *asterisk, you will be prompted to approve these at runtime._
 
 ### Essential and *persistent upstream utilities
 * [`~/.comforts-git`]({GIT_REMOTE}/atelier/raw/master/.comforts-git) describes the full list of utilities compiled and installed from their upstream git sources.
-    * _Repos must have a typical `./configure` and/or `make install PREFIX=...` metaphor to build correctly._
-    * _Sources marked with an *asterisk will be persistently installed to `~/.config/${URL##*/}`_
+	* _Repos must have a typical `./configure` and/or `make install PREFIX=...` metaphor to build correctly._
+	* _Sources marked with an *asterisk will be persistently installed to `~/.config/${URL##*/}`_
 
 Installation can be customized with user-provided executable install ~~hacks~~ scripts, named `{pre,post}-run`.
 These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/raw/master/.config/upstream) or at the root of a persistently installed utility's install directory as described above
@@ -213,9 +213,9 @@ Post-install scripts will create symlink `/etc/X11/$(id -u)-override` that point
 ### `~/.xrandr`
 For use with multi-monitor and/or complicated display setups, you can override the default display layout with one or more commands to `xrandr` saved to _optional_ config file `~/.xrandr`
 
-    # e.g. two monitors, right is mounted vertically
-    --output HDMI-0 --auto --primary --rotate normal
-    --output HDMI-1 --auto --right-of HDMI-0 --rotate right
+	# e.g. two monitors, right is mounted vertically
+	--output HDMI-0 --auto --primary --rotate normal
+	--output HDMI-1 --auto --right-of HDMI-0 --rotate right
 
 Commands in this file are passed to [`xrandr-cycle`]({GIT_REMOTE}/atelier/raw/master/Scripts/xrandr_cycle.sh) line by line at startup if it exists.
 For example, this configuration would suit a 2 monitor layout with the right monitor mounted vertically.
@@ -223,9 +223,9 @@ For example, this configuration would suit a 2 monitor layout with the right mon
 ### `~/.xdecor`
 You can designate one or more paths to directories containing images or videos for use as a wallpaper using _optional_ config file `~/.xdecor`
 
-    # prefixing with ~/ is acceptable
-    ~/Pictures/some/path
-    /media/sd_card/some/path
+	# prefixing with ~/ is acceptable
+	~/Pictures/some/path
+	/media/sd_card/some/path
 
 If it exists, [`xwin-decor`]({GIT_REMOTE}/atelier/raw/master/Scripts/xwin_decor.sh) will randomly pick a directory and file within it and set it as the wallpaper on startup.
 In the case of video files, a random video frame from that file will be taken and set as the wallpaper using `ffmpeg`.
@@ -271,19 +271,19 @@ Several commands are extended to include impure functions, such as purposefully 
 
 1. Interactive shell functions defined in [`~/.bashrc`]({GIT_REMOTE}/atelier/raw/master/.bashrc)
 2. Non-interactive shell library executables in [`~/.local/lib`]({GIT_REMOTE}/atelier/raw/master/.local/lib)
-    * Shell script snippets used by multiple scripts to reduce clutter.
+	* Shell script snippets used by multiple scripts to reduce clutter.
 3. Normal executables and symlinks in [`~/.local/bin`]({GIT_REMOTE}/atelier/raw/master/.local/bin)
-    * Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
+	* Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
 4. `/usr/bin` system-wide executables
 
 ## `cd`
 * The contents of `$OLDPWD` is preserved between sessions.
 * `cd` offers the following extensions:
 
-    | opt | function |
-    | -- | -- |
-    | `...`, `....`, etc. | Shorthand for `../../`, `../../../` and so on. |
-    | `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
+	| opt | function |
+	| -- | -- |
+	| `...`, `....`, etc. | Shorthand for `../../`, `../../../` and so on. |
+	| `-e <dirname>` | Fuzzy find and jump into a sub-directory. |
 
 ## `chromium`
 > **NOTE**<br/>
@@ -307,16 +307,16 @@ See *Usage Notes* for more information.
 
 * _This is a critical component of the graphic shell environment, some aliases are cumulative in nature._
 
-    | alias | function |
-    | -- | -- |
-    | `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command.<br/>_(Added implicitly when outside a git directory.)_ |
-    | `summary` | Outlines the last 20 commits with a commit graph. |
-    | `list-files` | List all tracked filenames in repo, ideally for use with `xargs`. |
-    | `flatten` | Automatically melds `--fixup/squash` commits out of existence starting from the root commit. |
-    | `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
-    | `shove` | Runs `checkin` and pushes immediately. |
-    | `sync` | Runs `git meta pull` and then recurses through `~/Git` and runs `git pull` on every existing `git` repo found. |
-    | `vacuum` | Runs `git meta gc` and then recurses through `~/Git` and runs `git gc` on every existing `git` repo found. |
+	| alias | function |
+	| -- | -- |
+	| `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command.<br/>_(Added implicitly when outside a git directory.)_ |
+	| `summary` | Outlines the last 20 commits with a commit graph. |
+	| `list-files` | List all tracked filenames in repo, ideally for use with `xargs`. |
+	| `flatten` | Automatically melds `--fixup/squash` commits out of existence starting from the root commit. |
+	| `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
+	| `shove` | Runs `checkin` and pushes immediately. |
+	| `sync` | Runs `git meta pull` and then recurses through `~/Git` and runs `git pull` on every existing `git` repo found. |
+	| `vacuum` | Runs `git meta gc` and then recurses through `~/Git` and runs `git gc` on every existing `git` repo found. |
 
 ## `nano`
 > **NOTE**<br/>
@@ -324,23 +324,23 @@ See *Usage Notes* for more information.
 
 * `nano` is an alias for [`nano-overlay`]({GIT_REMOTE}/atelier/raw/master/Scripts/nano_overlay.sh) which mangles config files and offers the following extended options:
 
-    | opt | function |
-    | -- | -- |
-    | `-e, --ctags <tag> <#>` | Jumps into file containing `ctags` definition matching `<tag>`. <br/>_Optional `<#>` selects from multiple matches, `all` will open all of them._ |
-    | `-c, --ctags-dict <file1>...` | Enable project-wide autocomplete by appending condensed dictionary of all `ctags` keywords to all files. <br/>_Dictionary will be removed upon exiting._ |
-    | `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br/>_File will be created if it doesn't exist._ |
-    | `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br/>_File will be created if it doesn't exist._ |
-    | `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br/>_File will be created if it doesn't exist._ |
-    | `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br/>_Can be a private key or a public key with private half stored in `ssh-agent`_ |
+	| opt | function |
+	| -- | -- |
+	| `-e, --ctags <tag> <#>` | Jumps into file containing `ctags` definition matching `<tag>`. <br/>_Optional `<#>` selects from multiple matches, `all` will open all of them._ |
+	| `-c, --ctags-dict <file1>...` | Enable project-wide autocomplete by appending condensed dictionary of all `ctags` keywords to all files. <br/>_Dictionary will be removed upon exiting._ |
+	| `-f, --encrypt <file>` | Open AES encrypted text file with a plaintext password. <br/>_File will be created if it doesn't exist._ |
+	| `-j, --rsa <file>` | Open AES encrypted text file with generic RSA keypair in PEM format. <br/>_File will be created if it doesn't exist._ |
+	| `-s, --ssh-sign <file>` | Open AES encrypted text file with a nonce value signed with SSH private key. <br/>_File will be created if it doesn't exist._ |
+	| `-i, --identity <key>` | Use an OpenSSL compatible keypair to encrypt/decrypt. <br/>_Can be a private key or a public key with private half stored in `ssh-agent`_ |
 
 * Once inside the actual `nano`, the following keybind macros are available:
 
-    | key | function |
-    | -- | -- |
-    | `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br/>_Destructively replaces entire contents of buffer, useful for formatting._ |
-    | `M-1` | Execute current line as shell command and paste output in current buffer.<br/>_Commands within inline comments are accepted._ |
-    | `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br/>_Requires valid `tags` file in current or a parent directory._ |
-    | `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br/>_Requires valid `tags` file in current or a parent directory._ |
+	| key | function |
+	| -- | -- |
+	| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br/>_Destructively replaces entire contents of buffer, useful for formatting._ |
+	| `M-1` | Execute current line as shell command and paste output in current buffer.<br/>_Commands within inline comments are accepted._ |
+	| `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br/>_Requires valid `tags` file in current or a parent directory._ |
+	| `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br/>_Requires valid `tags` file in current or a parent directory._ |
 
 ## `notify-send`
 This particular [`notify-send`]({GIT_REMOTE}/atelier/raw/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
@@ -359,42 +359,42 @@ Unlike other implementations, you can pass notifications/OSD text as an argument
 
 Instead, the shell function `sc()` offers an easier to understand macro system for statically mangling `.sc` spreadsheet files at runtime.
 * `sc` will automatically run any executable sharing the same initial name as the `.sc` file.
-    * _eg. `sheet1.sc` will run `sheet1.sc.1`, `sheet1.scx`, etc. if they exist in the same directory and are executable at runtime._
+	* _eg. `sheet1.sc` will run `sheet1.sc.1`, `sheet1.scx`, etc. if they exist in the same directory and are executable at runtime._
 * You can write an arbitrarily complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
-    * _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
+	* _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
 
 ### `sc` pre-run macro example
 * This is an example of a conditional macro script for an inventory spreadsheet that color-codes cells when specific strings are found.
 
-    ```shell
-    #!/usr/bin/env sh
-    # apply colors to specific strings in column B
+	```shell
+	#!/usr/bin/env sh
+	# apply colors to specific strings in column B
 
-    file="${0%.*}" # derive .sc file name from name of this script
+	file="${0%.*}" # derive .sc file name from name of this script
 
-    # remove all instances of color from the file in place
-    { rm "$file"; egrep -v '^color' > "$file"; } < "$file"
+	# remove all instances of color from the file in place
+	{ rm "$file"; egrep -v '^color' > "$file"; } < "$file"
 
-    cat <<- EOF >> "$file" # set some non-default colors
-        color 3 = @black;@red
-        color 4 = @black;@yellow
-        color 5 = @black;@green
-    EOF
-    # select only string cells from column B, apply colors based on string contents
-    # sc format: leftstring B2 = "example string"
-    egrep '^((left|right)string|label)' < "$file" | while read -r cmd cell _ str; do
-        case "$cell" in B*)
-            case "$str" in
-                *broken*) echo "color $cell:$cell 3";;
-                *bad*) echo "color $cell:$cell 4";;
-                *working*) echo "color $cell:$cell 5";;
-            esac;;
-        esac
-    done >> "$file"
-    ```
+	cat <<- EOF >> "$file" # set some non-default colors
+		color 3 = @black;@red
+		color 4 = @black;@yellow
+		color 5 = @black;@green
+	EOF
+	# select only string cells from column B, apply colors based on string contents
+	# sc format: leftstring B2 = "example string"
+	egrep '^((left|right)string|label)' < "$file" | while read -r cmd cell _ str; do
+		case "$cell" in B*)
+			case "$str" in
+				*broken*) echo "color $cell:$cell 3";;
+				*bad*) echo "color $cell:$cell 4";;
+				*working*) echo "color $cell:$cell 5";;
+			esac;;
+		esac
+	done >> "$file"
+	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime1.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -416,13 +416,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-189.14KiB
+188.20KiB
 out of a total compressed git history size of
-729.89KiB._
+640.39KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@f734f9a024e3</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">microsounds@celes</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jan 19 2022 13:00 rev. 74  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -440,7 +440,7 @@ out of a total compressed git history size of
 -rw-r--r-- 1  387   Apr  3 2021 21:51 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/fm/pcmanfm.conf">.config/fm/pcmanfm.conf</a>
 -rw-r--r-- 1  155   Apr  6 2021 15:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk2.conf">.config/gtk/gtk2.conf</a>
 -rw-r--r-- 1  263   Apr  6 2021 15:35 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk3.conf">.config/gtk/gtk3.conf</a>
--rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
+-rw-r--r-- 1    0   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  710   Nov 30 2021 13:05 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rwxr-xr-x 1  320   Nov 14 2021 20:26 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  151   Jan 19 2022 17:24 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
@@ -494,11 +494,11 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  181   Aug  2 2021 15:47 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-play">.local/lib/sfx-play</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
 -rwxr-xr-x 1  247   Oct 21 2021 21:08 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/visual">.local/lib/visual</a>
--rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  280   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/applications/mimeapps.list">.local/share/applications/mimeapps.list</a>
 -rw-r--r-- 1   80   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/applications/nano.desktop">.local/share/applications/nano.desktop</a>
 -rw-r--r-- 1  685   Mar 31 2021 21:37 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/md-kagami.nanorc">.local/share/nano/md-kagami.nanorc</a>
 -rw-r--r-- 1  291   Jul 15 2020 16:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/stdc.syntax">.local/share/nano/stdc.syntax</a>
+-rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  44K   Dec 17 2019 22:28 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip">.minecraft/resourcepacks/HatsuneMiku.zip</a>
 -rw-r--r-- 1 1.7K   Jan  6 2022 15:30 rev. 33  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Jan 19 2022 13:00 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
@@ -524,9 +524,8 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  917   Nov 30 2021 00:48 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
 -rw-r--r-- 1  832   Dec 12 2021 10:53 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
+-rw-r--r-- 1  22K   Feb  2 2022 22:18 rev. 170 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
--rw-r--r-- 1 2.0K   Feb  4 2022 11:57 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
--rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.0K   Jan  3 2022 20:50 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jan 10 2022 12:15 rev. 87  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
@@ -535,7 +534,8 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1  965   Jan 28 2020 18:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb  2 2022 22:18 rev. 170 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&period;md">readme&period;md</a>
+-rw-r--r-- 1 2.0K   Feb  4 2022 11:57 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 1.7K   May  3 2021 17:14 rev. 22  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
 <!-- updated Fri, 4 Feb 2022 11:57:07 -0800 -->
