@@ -1,10 +1,15 @@
 # ![badge](static/button/badge.png) microsounds.github.io
 This is a [`kagami`][kagami] template and accompanying source code that renders my personal site at <https://microsounds.github.io/>
 
+## On XHTML
+For fun, markup also validates as XHTML5 when served as `application/xhtml+xml`, but this results in worse page draw performance in every browser I've tried this in.
+If I didn't make use of HTML5 features like `audio` tags, it would probably also [validate as XHTML 1.0 Strict][xml2].
+
+[xml2]: https://validator.w3.org/check?uri=https%3A%2F%2Fmicrosounds.github.io&charset=%28detect+automatically%29&doctype=XHTML+1.0+Strict&group=0
+
 ## Deploying
-Normally, I'm running `kagami` and committing build artifacts in `master`
-by hand.
-It's portable and it works anywhere.
+Normally, I'm running `kagami` and committing build artifacts in `master` by hand.
+It's portable and it works anywhere, even on my phone.
 
 * Scripts in `.kagami/macros` and `.scripts/` have hard dependencies on my userland environment located [here][atelier].
 	* `.local/lib/moonphase-date` — timestamp conversion routines, requires GNU `date`, `bc`.
