@@ -233,47 +233,20 @@ function browser_check() {
 }
 
 /*
- * ┌──────────┐
- * │🌑        │
- * │    🌑    │
- * │        🌑│
- * └──────────┘
- * insert parallax animated background during music playback
+ * calculate parallax animation duration
  * ensure animation always runs at 15px/sec to avoid nauseating visitors
  */
-function insert_animation() {
-	/* calculate duration */
-	var secs = Math.floor(document.documentElement.scrollHeight / 15);
-
-	var ins = document.createElement('style');
-	ins.id = 'moonrise';
-	ins.type = 'text/css';
-	ins.innerHTML += `
-		@keyframes moonrise {
-			0% { background-position: 132% 100%; }
-			50% { background-position: -32% 0%; }
-			100% { background-position: 132% 100%; }
-		}
-		html {
-			background:
-				url("/static/nightsky.png") repeat,
-				url("/static/moon_crop.jpg") no-repeat 132% 100%,
-				linear-gradient(270deg, #809F88, #0B6672);
-			background-size: auto, 40%, auto;
-			animation: moonrise ` + secs + `s ease infinite;
-		}
-
-		 /* mobile version scrolls straight up */
-		@media only screen and (max-width: 1160px) {
-			html { background-size: auto, 600px, auto; }
-		}
-	`;
-	document.body.appendChild(ins);
-}
-
-function delete_animation() {
-	var ins = document.getElementById('moonrise');
-	ins.parentNode.removeChild(ins);
+function toggle_animation() {
+	var root = document.documentElement;
+	if (!root.classList.contains('moonrise')) {
+		var secs = Math.floor(root.scrollHeight / 15);
+		root.classList.add('moonrise');
+		root.style.animation='moonrise ' + secs + 's ease infinite';
+	}
+	else {
+		root.removeAttribute('style');
+		root.removeAttribute('class');
+	}
 }
 
 /*
@@ -289,7 +262,7 @@ function play() {
 		audio.play().then(function() {
 			document.cookie = 'bgm=1;path=/';
 			bgm_toggle.innerText = bgm_toggle.innerText.replace('play', 'pause');
-			insert_animation();
+			toggle_animation();
 		}).catch(function() {
 			/*
 			 * on chromium-based browsers, persistent playback
@@ -309,7 +282,7 @@ function play() {
 		audio.pause();
 		document.cookie = 'bgm=0;path=/';
 		bgm_toggle.innerText = bgm_toggle.innerText.replace('pause', 'play');
-		delete_animation();
+		toggle_animation();
 	}
 }
 

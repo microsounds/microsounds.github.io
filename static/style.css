@@ -19,6 +19,29 @@ html {
 	background-size: auto, 20%, auto;
 }
 
+/*
+ * ┌──────────┐
+ * │🌑        │
+ * │    🌑    │
+ * │        🌑│
+ * └──────────┘
+ * parallax animated background enabled during music playback
+ * animation speed is calculated at runtime to maintain consistent 15px/sec
+ */
+.moonrise {
+	background:
+		url("nightsky.png") repeat,
+		url("moon_crop.jpg") no-repeat 132% 100%,
+		linear-gradient(270deg, #809F88, #0B6672);
+	background-size: auto, 40%, auto;
+}
+
+@keyframes moonrise {
+	0% { background-position: 132% 100%; }
+	50% { background-position: -32% 0%; }
+	100% { background-position: 132% 100%; }
+}
+
 /* 2-column layout [150px navbar] [ page content ]
  *  content margin |----150px---->
  */
@@ -201,6 +224,8 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 @media only screen and (max-width: 1160px) {
 	/* background pic */
 	html { background-size: auto, 300px, auto; }
+	/* animates straight upwards */
+	.moonrise { background-size: auto, 600px, auto; }
 	/* flatten to single column layout */
 	.content { margin: 10px 0 0 0; padding: 15px; max-width: unset; border: unset; }
 	/* unpin navbar */
