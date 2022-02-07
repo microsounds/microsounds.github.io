@@ -294,5 +294,3 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (document.cookie.includes('bgm=1'))
 		play();
 });
-
-/* @license-end */
