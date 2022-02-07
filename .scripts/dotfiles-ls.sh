@@ -88,7 +88,7 @@ coverage="${coverage%??}%"
 
 		[tar]: {GIT_REMOTE}/atelier/archive/refs/heads/master.tar.gz
 
-		>**STATISTICS**<br>
+		>**STATISTICS**<br/>
 		> _Version numbers for selected long-lived components
 		> found in the current revision:_
 		$(git meta list-files | xargs egrep -Iho '[a-z._-]+ v([0-9].?)+' \
@@ -123,7 +123,7 @@ coverage="${coverage%??}%"
 				# escape kagami's *.md => *.htm URL rewrites
 				unset esc_path
 				case "$path" in
-					*.md) esc_path="${path%.*}&period;md";;
+					*.md) esc_path="${path%.*}&#46;md";;
 				esac
 
 				# rwx---	bytes	mtime	rev-count	raw-link
