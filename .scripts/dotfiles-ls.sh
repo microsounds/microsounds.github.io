@@ -5,7 +5,7 @@
 
 cd ~
 
-# re-renders ~/readme.md for use as a standalone webpage
+# re-renders ~/readme.md for use as self-contained webpage
 # spits out complete listing of dotfiles with inline links
 ver="$(git meta rev-list HEAD | wc -l)" # revision count
 hash="$(git meta rev-parse --short HEAD)"
@@ -62,7 +62,7 @@ coverage="${coverage%??}%"
 
 	EOF
 
-	# reproduceably pick random emoji based on commit hash
+	# reproducibly pick random emoji based on commit hash
 	readme="$HOME/readme.md"
 	rseed="$DOC_ROOT/.commit-ref"
 	trap 'rm -f "$rseed"' 0 1 2 3 6
@@ -110,7 +110,7 @@ coverage="${coverage%??}%"
 		'<span class="term-dir">~</span>$' \
 		"$command"
 
-	# req'd for use of pipes within a variable expansion
+	# required for use of pipes within a variable expansion
 	# omit on-disk mtimes in actual ls command
 	sh -c "$command --time-style='+'" | while read -r line; do
 		case "$line" in
