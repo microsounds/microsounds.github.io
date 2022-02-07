@@ -1,5 +1,5 @@
 <!-- posted 2022/2/5 -->
-<span class="right">{UPDATED}</span>
+<span class="right">{CREATED}</span>
 
 # On Copyleft and why I use GPLv3
 This is a short outline on guaranteeing creative freedom to users of your works through copyleft.
