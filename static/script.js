@@ -1,7 +1,8 @@
 'use strict';
 
 /*
- * @licstart for turboweenies who use LibreJS unironically
+ * @licstart The following is the entire license notice for the
+ * javascript code in this page.
  *
  * static/script.js — interactive webpage elements
  * (c) 2022 microsounds <https://github.com/microsounds>, GPLv3+
@@ -20,7 +21,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA  02110-1335, USA.
  *
- * @licend
+ * @licend The above is the entire license notice for the
+ * javascript code in this page.
  */
 
 /*
@@ -319,3 +321,5 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (document.cookie.includes('bgm=1'))
 		play();
 });
+
+/* @license-end */
