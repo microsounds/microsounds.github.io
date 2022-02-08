@@ -202,6 +202,9 @@ function spawn_warning(heading, body, list) {
 
 function browser_check() {
 	var issues = [];
+	if (navigator.userAgent.match('(Macintosh|iP(hone|[oa]d))')) {
+		issues.push('Apple Safari regularly has issues displaying this site correctly.');
+	}
 	if (MediaSource) {
 		if (!MediaSource.isTypeSupported('audio/webm;codecs=opus'))
 			issues.push('playback of Opus format audio');
@@ -273,7 +276,7 @@ function play() {
 			document.cookie = 'bgm=0;path=/';
 			var hints = [];
 			if (navigator.userAgent.includes('Firefox')) {
-				hints.push('Did you know that Firefox requires you to enable autoplay explicitly?');
+				hints.push('Mozilla Firefox requires you to enable autoplay explicitly on this page.');
 				spawn_warning('NOTE', 'Your browser is blocking persistent autoplay.', hints);
 			}
 		});
