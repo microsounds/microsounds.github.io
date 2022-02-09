@@ -36,6 +36,7 @@ It's a never-ending process.
 * _(2020–present)_ static microblog processor in POSIX shell — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)
 	* _A user-extensible macro preprocessor and static webpage generator for blog sites like this one._
 * _(2019–present)_ this website and its `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
+	* _<span id="gh-update">View list of [recent changes]({GIT_REMOTE}/microsounds.github.io/commits).</span>_
 
 ## Old projects
 * _(2016–2017)_ ***[retired]*** lightweight futaba-like messageboard system in C — [`{AUTHOR}/akari-bbs`]({GIT_REMOTE}/akari-bbs)
@@ -44,6 +45,7 @@ It's a never-ending process.
 * _(2016)_ command-line stack-based RPN calculator — [`{AUTHOR}/hpsh`]({GIT_REMOTE}/hpsh)
 
 ## Contact me
+
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
 
 ## Links
@@ -67,6 +69,20 @@ If it's about a project or a page on this website, open an issue or a pull reque
 
 <span class="aside">If you enjoyed my website and you'd like to link here, feel free to use my badge on your own site.</span>
 </div>
+
+<script type="text/javascript">
+	/* fetch date of last update */
+	var api = 'https://api.github.com/repos/{AUTHOR}/microsounds.github.io/branches/master';
+	var req = new XMLHttpRequest();
+	req.open('GET', api, true);
+	req.onload = function() {
+		if (this.status == 200) {
+			document.getElementById('gh-update').innerHTML += ' Last updated on ' +
+				new Date(JSON.parse(this.response).commit.commit.author.date).toLocaleDateString() + '.';
+		}
+	};
+	req.send();
+</script>
 
 <!-- extended reading on unix and adjacent topics -->
 <!-- [unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf -->

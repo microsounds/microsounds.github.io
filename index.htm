@@ -63,7 +63,11 @@ I just really like metaprogramming.</p>
 <li><em>A user-extensible macro preprocessor and static webpage generator for blog sites like this one.</em></li>
 </ul>
 </li>
-<li><em>(2019–present)</em> this website and its <code>kagami</code> template — <a href="https://github.com/microsounds/microsounds.github.io"><code>microsounds/microsounds.github.io</code></a></li>
+<li><em>(2019–present)</em> this website and its <code>kagami</code> template — <a href="https://github.com/microsounds/microsounds.github.io"><code>microsounds/microsounds.github.io</code></a>
+<ul>
+<li><em><span id="gh-update">View list of <a href="https://github.com/microsounds/microsounds.github.io/commits">recent changes</a>.</span></em></li>
+</ul>
+</li>
 </ul>
 <h2>Old projects<span id="Old-projects"></span></h2>
 <ul>
@@ -92,6 +96,19 @@ I just really like metaprogramming.</p>
 <a href="/static/button/badge.gif" title="animated version"><img src="/static/button/badge.gif" alt="ico-badge" /></a></p>
 <p><span class="aside">If you enjoyed my website and you’d like to link here, feel free to use my badge on your own site.</span></p>
 </div>
+<script type="text/javascript">
+	/* fetch date of last update */
+	var api = 'https://api.github.com/repos/microsounds/microsounds.github.io/branches/master';
+	var req = new XMLHttpRequest();
+	req.open('GET', api, true);
+	req.onload = function() {
+		if (this.status == 200) {
+			document.getElementById('gh-update').innerHTML += ' Last updated on ' +
+				new Date(JSON.parse(this.response).commit.commit.author.date).toLocaleDateString() + '.';
+		}
+	};
+	req.send();
+</script>
 <!-- extended reading on unix and adjacent topics -->
 <!-- [unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf -->
 <div class="index">
