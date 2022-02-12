@@ -1,22 +1,42 @@
---2022-02-12 09:04:26--  http://crbug.com/396634.
+--2022-02-12 10:03:11--  http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
---2022-02-12 09:04:28--  https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
+--2022-02-12 10:03:14--  https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
---2022-02-12 09:04:28--  https://bugs.chromium.org/p/chromium/issues/detail?id=353072
+--2022-02-12 10:03:14--  https://bugs.chromium.org/p/chromium/issues/detail?id=353072
 HTTP request sent, awaiting response... 405 Method Not Allowed
---2022-02-12 09:04:28--  https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
+--2022-02-12 10:03:14--  https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
 HTTP request sent, awaiting response... 501 Not Implemented
---2022-02-12 09:04:30--  (try: 2)  https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
+--2022-02-12 10:03:15--  (try: 2)  https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
 HTTP request sent, awaiting response... 501 Not Implemented
---2022-02-12 09:04:51--  https://jigsaw.w3.org/css-validator/check/referer
+--2022-02-12 10:03:33--  https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 
---2022-02-12 09:04:53--  https://raw.githubusercontent.com/microsounds/atelier/master
+--2022-02-12 10:03:35--  https://raw.githubusercontent.com/microsounds/atelier/master
 HTTP request sent, awaiting response... 400 Bad Request
---2022-02-12 09:04:57--  https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
+--2022-02-12 10:03:38--  https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
---2022-02-12 09:05:02--  https://raw.githubusercontent.com/microsounds/atelier/master/readme&
+--2022-02-12 10:03:42--  https://raw.githubusercontent.com/microsounds/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
---2022-02-12 09:05:04--  https://validator.w3.org/check?uri=referer
+--2022-02-12 10:03:44--  https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 
---2022-02-12 09:05:07--  https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
+--2022-02-12 10:03:47--  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:05:59--  (try: 2)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:08:11--  (try: 3)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:10:25--  (try: 4)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:12:39--  (try: 5)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:14:55--  (try: 6)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:17:11--  (try: 7)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:19:27--  (try: 8)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:21:46--  (try: 9)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:24:04--  (try:10)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:26:24--  (try:11)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:28:43--  (try:12)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:31:03--  (try:13)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:33:22--  (try:14)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:35:41--  (try:15)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:38:00--  (try:16)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:40:20--  (try:17)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:42:39--  (try:18)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:44:58--  (try:19)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:47:17--  (try:20)  https://www.cs.vu.nl/~ast/intel/
+--2022-02-12 10:49:27--  https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 404 Not Found
