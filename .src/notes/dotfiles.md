@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 790, commit `0ad0306`.**
+**Revision No. 792, commit `c9009f8`.**
 
-**"vimium: Split config into plaintext, JSON generated before use"**
+**"ci: Prevent process hanging during link crawling"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *21.1KiB* in
+If this document is *21.8KiB* in
 size, and the approximate size of all comment lines of code is
-*58.0KiB* then this document
-currently covers about <b style="font-size: 130%;">7.26%</b>
+*58.2KiB* then this document
+currently covers about <b style="font-size: 130%;">7.52%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -300,6 +300,24 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 
 [uBlock Origin]: https://ublockorigin.com "uBlock Origin homepage"
 
+### Configuring Vimium
+Use of Vimium is considered optional, as I haven't figured out a way to configure it automatically on first-run.
+It's configuration resides in [`~/.config/chromium/vimium`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/vimium)
+
+Run `configure.sh` to rebuild `vimium-options.json` for importing back into Vimium by hand.
+
+### An ongoing experiment
+`chromium` has proven difficult to configure non-interactively time and time again.
+Plaintext `chromium` configuration is an ongoing experiment of mine.
+
+| non-interactive functionality | status |
+| -- | :--: |
+| first-run config rebuild | works |
+| applying persistent chromium settings | works |
+| applying persistent chromium flags | works |
+| extension install on first-run | works _(via group policy)_ |
+| applying persistent extension settings | **no** |
+
 ## `git`
 `git` aliases are defined in [`~/.gitconfig`]({GIT_REMOTE}/atelier/raw/master/.gitconfig) or implemented in interactive shell function `git()`
 
@@ -394,7 +412,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime24.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime9.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -416,21 +434,21 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-192.10KiB
+193.06KiB
 out of a total compressed git history size of
-734.04KiB._
+737.06KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@6ec089f6c499</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@dc05f1e60ee3</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jan 19 2022 13:00 rev. 74  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
--rwxr-xr-x 1  406   Feb 12 2022 01:57 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/configure.sh">.config/chromium/vimium/configure.sh</a>
+-rwxr-xr-x 1  465   Feb 13 2022 22:53 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/configure.sh">.config/chromium/vimium/configure.sh</a>
+-rw-r--r-- 1  639   Feb 13 2022 22:53 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/general.json">.config/chromium/vimium/general.json</a>
 -rw-r--r-- 1  608   Feb 12 2022 01:57 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/keybinds.conf">.config/chromium/vimium/keybinds.conf</a>
--rw-r--r-- 1  639   Feb 12 2022 01:57 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/settings.json">.config/chromium/vimium/settings.json</a>
 -rw-r--r-- 1  442   Feb 12 2022 01:57 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/style.css">.config/chromium/vimium/style.css</a>
 -rw-r--r-- 1  807   Dec 24 2021 12:04 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dmenu/config.h">.config/dmenu/config.h</a>
 -rw-r--r-- 1 6.3K   Dec 24 2021 12:04 rev. 31  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/config.h">.config/dwm/config.h</a>
@@ -459,7 +477,7 @@ out of a total compressed git history size of
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1  989   Dec  6 2021 19:53 rev. 24  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 3.6K   Jan 19 2022 20:26 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 3.6K   Feb 13 2022 23:25 rev. 24  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 -rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
@@ -521,7 +539,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  576   Jul 24 2021 15:03 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-systemd-tweaks.sh">.once.d/26-systemd-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   May 23 2021 23:13 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
--rwxr-xr-x 1  713   Nov  8 2021 12:51 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
+-rwxr-xr-x 1  808   Feb 13 2022 22:53 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1 3.0K   Jan 11 2022 19:27 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
@@ -539,7 +557,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb  7 2022 04:01 rev. 171 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  22K   Feb 13 2022 22:53 rev. 172 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 12 Feb 2022 01:57:31 -0800 -->
+<!-- updated Sun, 13 Feb 2022 23:25:52 -0800 -->
