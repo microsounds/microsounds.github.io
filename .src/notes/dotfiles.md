@@ -1,14 +1,14 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 796, commit `2f4fee9`.**
+**Revision No. 797, commit `9e83e29`.**
 
-**"cups: Enabled styling of plaintext dumps piped to lpr"**
+**"Documentation, changes for clarity, typos"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *21.8KiB* in
+If this document is *21.9KiB* in
 size, and the approximate size of all comment lines of code is
 *58.9KiB* then this document
 currently covers about <b style="font-size: 130%;">7.42%</b>
@@ -71,7 +71,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 	$ exec $SHELL -l
 	```
 4. Run `post-install` in the shell to run post-install scripts automatically.
-	* _Sets up the package manager, installs essential packages, compiles window manager, text editor, etc._
+	* _Sets up the package manager, installs and compiles essential packages, window manager, text editor, etc._
 5. Reboot to finish.
 	* _[`xinit`]({GIT_REMOTE}/atelier/raw/master/.xinitrc) starts automatically upon login to [`tty1`]({GIT_REMOTE}/atelier/raw/master/.profile)._
 
@@ -109,7 +109,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 # Usage notes
 ## Using `git meta`
 For local-scope changes, files in `$HOME` are versioned and mangled in place using Git.
-* `$HOME` is considered the detached working tree for a git **bare repo** located at `~/.config/meta`
+* `$HOME` is treated as the detached working tree for a git **bare repo** located at `~/.config/meta`
 * The `meta` alias prefixes all git commands with `--git-dir=$HOME/.config/meta --work-tree=$HOME`
 * `meta status` will ignore files not manually added or tracked by this git repo.
 	* _This is achieved using the `status.showUntrackedFiles` option and not via manually updating `~/.gitignore` as is commonly done._
@@ -120,7 +120,7 @@ For local-scope changes, files in `$HOME` are versioned and mangled in place usi
 All system-wide changes are performed through automated scripts located in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d), you can run them all at once with shell function `post-install`.
 Each script is self-contained, you can run them individually, anytime.
 
-* Some scripts only apply to specific hardware configurations, and will exit even if they are run.
+* Some scripts apply only to specific hardware configurations, and will exit even if they are run.
 * Scripts affecting `systemd` or the bootloader will be skipped in virtualized container contexts.
 * Locally installed software is installed to [`~/.local/bin`]({GIT_REMOTE}/atelier/raw/master/.local/bin) when possible.
 
@@ -206,7 +206,7 @@ All daemons and services required to support the graphical shell are initialized
 
 At startup, `startx` will pass hardware-specific `xorg.conf` files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.
 
-Xorg's security model forbids non-root users from passing arbitrary config files to the X server unless they are located in one of several "blessed" directories.
+Xorg's security model forbids non-root users from passing arbitrary config files to the X server unless said configs are located in one of several "blessed" directories.
 Post-install scripts will create symlink `/etc/X11/$(id -u)-override` that points to `~/.config/xorg` to override this behavior.
 
 ## Optional X Window configuration
@@ -277,7 +277,7 @@ Several commands are extended to include impure functions, such as purposefully 
 4. `/usr/bin` system-wide executables
 
 ## `cd`
-* The contents of `$OLDPWD` is preserved between sessions.
+* The contents of `$OLDPWD` is preserved across `bash` sessions.
 * `cd` offers the following extensions:
 
 	| opt | function |
@@ -302,7 +302,7 @@ C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` w
 
 ### Configuring Vimium
 Use of Vimium is considered optional, as I haven't figured out a way to configure it automatically on first-run.
-It's configuration resides in [`~/.config/chromium/vimium`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/vimium)
+Its configuration resides in [`~/.config/chromium/vimium`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/vimium)
 
 Run `configure.sh` to rebuild `vimium-options.json` for importing back into Vimium by hand.
 
@@ -357,8 +357,8 @@ See *Usage Notes* for more information.
 	| -- | -- |
 	| `M-0` | Execute current line as shell command and pipe contents of buffer as stdin.<br/>_Destructively replaces entire contents of buffer, useful for formatting._ |
 	| `M-1` | Execute current line as shell command and paste output in current buffer.<br/>_Commands within inline comments are accepted._ |
-	| `M-2` | Select token underneath cursor and jump into it's `ctags` definition(s) within the same shell.<br/>_Requires valid `tags` file in current or a parent directory._ |
-	| `M-4` | Select token underneath cursor and jump into it's `ctags` definition(s) in a new terminal window.<br/>_Requires valid `tags` file in current or a parent directory._ |
+	| `M-2` | Select token underneath cursor and jump into its `ctags` definition(s) within the same shell.<br/>_Requires valid `tags` file in current or a parent directory._ |
+	| `M-4` | Select token underneath cursor and jump into its `ctags` definition(s) in a new terminal window.<br/>_Requires valid `tags` file in current or a parent directory._ |
 
 ## `notify-send`
 This particular [`notify-send`]({GIT_REMOTE}/atelier/raw/master/.local/lib/notify-send) implements only `-t` for expiration time in seconds,
@@ -371,14 +371,14 @@ Instead, it's just a shell script that writes to a named pipe that gets picked u
 Unlike other implementations, you can pass notifications/OSD text as an argument or via stdin without using `xargs`.
 
 ## `sc` (spreadsheet calculator)
-`sc` supports macros to some degree, but it's macro implementation is [difficult to understand][sc_macros] and there aren't many examples of it being used successfully anywhere that I've managed to find.
+`sc` supports macros to some degree, but its macro implementation is [difficult to understand][sc_macros] and there aren't many examples of it being used successfully anywhere that I've managed to find.
 
 [sc_macros]: https://github.com/n-t-roff/sc/blob/master/SC.MACROS "I'm not even sure this was implemented as written."
 
 Instead, the shell function `sc()` offers an easier to understand macro system for statically mangling `.sc` spreadsheet files at runtime.
 * `sc` will automatically run any executable sharing the same initial name as the `.sc` file.
 	* _eg. `sheet1.sc` will run `sheet1.sc.1`, `sheet1.scx`, etc. if they exist in the same directory and are executable at runtime._
-* You can write an arbitrarily complex pre-run macro script in any language, so long as it is made aware of it's own filename at runtime.
+* You can write an arbitrarily complex pre-run macro script in any language, so long as it's made aware of its own filename at runtime.
 	* _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
 
 ### `sc` pre-run macro example
@@ -412,7 +412,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime22.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime55.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -434,13 +434,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-195.55KiB
+195.56KiB
 out of a total compressed git history size of
-740.85KiB._
+741.62KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@0eb3e16dd157</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@108362257c87</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Feb 18 2022 00:39 rev. 75  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -552,14 +552,14 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1 2.0K   Feb  4 2022 11:57 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.7K   Feb 18 2022 00:39 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.0K   Jan  3 2022 20:50 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
--rwxr-xr-x 1  23K   Jan 10 2022 12:15 rev. 87  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
+-rwxr-xr-x 1  23K   Feb 21 2022 23:35 rev. 88  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb 13 2022 22:53 rev. 172 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  22K   Feb 21 2022 23:35 rev. 173 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 18 Feb 2022 00:39:49 -0800 -->
+<!-- updated Mon, 21 Feb 2022 23:35:31 -0800 -->
