@@ -41,6 +41,8 @@ var loops = [
 	[ 'starlight', 'Pleasant Specter (快い亡霊) OST - Menu Screen' ],
 	[ 'eternity1', 'Tatsuro Yamashita - 僕の中の少年' ],
 	[ 'eternity2', 'Tatsuro Yamashita - 僕の中の少年' ],
+	[ 'touch1', 'imprintafter - Tell Me Baby (ft. stillsound)' ],
+	[ 'touch2', 'imprintafter - Tell Me Baby (ft. stillsound)' ],
 	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'leisure1', 'LamazeP - Swimsuit ft. 初音ミク' ],
