@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 801, commit `9e4075f`.**
+**Revision No. 802, commit `6247ddf`.**
 
-**"CI: Style changes, reinstating pull request CI/CD, documentation"**
+**"Nothing important"**
 
 {TOC}
 
@@ -11,7 +11,7 @@ in this repo is about **5:1**.
 If this document is *21.9KiB* in
 size, and the approximate size of all comment lines of code is
 *59.1KiB* then this document
-currently covers about <b style="font-size: 130%;">7.40%</b>
+currently covers about <b style="font-size: 130%;">7.42%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -23,6 +23,7 @@ Last updated {UPDATED}.
 [1]: {GIT_REMOTE}/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh
 
 <!-- header and github badges -->
+<!-- github readmes only support align attributes for styling -->
 # <div align="center">_dotfiles—"atelier"_![shimeji]</div>
 <div align="center">
 
@@ -77,7 +78,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 
 <!-- figure 2: mobile screenshot -->
 <a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot.jpg">
-	<img width="125px" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png"/>
+	<img width="125" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png"/>
 </a>
 
 ## Quick start on Termux for Android
@@ -412,7 +413,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime55.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime1.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -434,13 +435,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-195.55KiB
+195.62KiB
 out of a total compressed git history size of
-723.02KiB._
+723.51KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@b32e69c686e2</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@1479f6e65185</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Feb 18 2022 00:39 rev. 75  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -559,7 +560,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb 21 2022 23:35 rev. 173 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  22K   Feb 26 2022 14:00 rev. 174 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 25 Feb 2022 20:11:29 -0800 -->
+<!-- updated Sat, 26 Feb 2022 14:00:21 -0800 -->
