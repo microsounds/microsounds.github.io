@@ -21,6 +21,4 @@ HTTP request sent, awaiting response... 403
 https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+HTTP request sent, awaiting response... 404 Not Found
