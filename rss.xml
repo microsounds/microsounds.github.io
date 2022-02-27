@@ -3,7 +3,7 @@
 <channel>
 <lastBuildDate>Sat, 26 Feb 2022 14:00:21 -0800</lastBuildDate>
 <ttl>1</ttl>
-<generator>kagami v0.6.2 — static microblog processor</generator>
+<generator>kagami v0.6.3 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <atom:link href="https://microsounds.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 <link>https://microsounds.github.io</link>
