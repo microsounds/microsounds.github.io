@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 802, commit `6247ddf`.**
+**Revision No. 803, commit `d7a22ab`.**
 
-**"Nothing important"**
+**"Nothing important, documentation markup validation fixes"**
 
 {TOC}
 
@@ -11,7 +11,7 @@ in this repo is about **5:1**.
 If this document is *21.9KiB* in
 size, and the approximate size of all comment lines of code is
 *59.1KiB* then this document
-currently covers about <b style="font-size: 130%;">7.42%</b>
+currently covers about <b style="font-size: 130%;">7.43%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -24,9 +24,9 @@ Last updated {UPDATED}.
 
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
-# <div align="center">_dotfiles—"atelier"_![shimeji]</div>
 <div align="center">
 
+# _dotfiles—"atelier"_![shimeji]
 ![ico-freq](https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github)
 ![ico-size](https://img.shields.io/github/repo-size/microsounds/atelier?logo=github)
 [![ico-ci](https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg)][actions]
@@ -77,9 +77,12 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 	* _[`xinit`]({GIT_REMOTE}/atelier/raw/master/.xinitrc) starts automatically upon login to [`tty1`]({GIT_REMOTE}/atelier/raw/master/.profile)._
 
 <!-- figure 2: mobile screenshot -->
+<span style="float: right;">
 <a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot.jpg">
-	<img width="125" align="right" src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png"/>
+<img alt="mobile scrot" width="125" align="right"
+	src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/mobile-scrot2.png"/>
 </a>
+</span>
 
 ## Quick start on Termux for Android
 > **NOTE**<br/>
@@ -413,7 +416,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime1.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime3b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -435,13 +438,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-195.62KiB
+195.64KiB
 out of a total compressed git history size of
-723.51KiB._
+746.71KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@1479f6e65185</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@64308a4c4d4d</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Feb 18 2022 00:39 rev. 75  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -560,7 +563,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb 26 2022 14:00 rev. 174 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  22K   Feb 27 2022 21:31 rev. 175 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 26 Feb 2022 14:00:21 -0800 -->
+<!-- updated Sun, 27 Feb 2022 21:31:13 -0800 -->

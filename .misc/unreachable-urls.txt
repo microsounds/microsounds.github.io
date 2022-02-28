@@ -1,5 +1,7 @@
 http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
+http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/
+(try: 2)  http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://bugs.chromium.org/p/chromium/issues/detail?id=353072
@@ -18,5 +20,7 @@ https://raw.githubusercontent.com/microsounds/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
 https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 
+https://www.cs.vu.nl/~ast/intel/
+(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 404 Not Found
