@@ -11,6 +11,7 @@
 
 html {
 	min-height: 100%;
+	background-color: #639183; /* fallback */
 	background:
 		url("nightsky.png") repeat,
 		url("moon_crop2.jpg") no-repeat bottom right,
@@ -50,7 +51,8 @@ html {
 	max-width: 800px;
 	padding: 0 30px 10px 30px;
 	border-top: 5px double #E2FAF9;
-	background: rgba(0, 0, 0, 30%);
+	background-color: #647975; /* fallback */
+	background-color: #0000004D; /* rgba 30% transparency */
 	color: #FFFFFF;
 	font-family: "Liberation Serif", "Times New Roman", serif, "Dejima Mincho"; 
 	text-shadow: 2px 1px #646464;
@@ -60,6 +62,7 @@ html {
 	position: static;
 	width: 130px;
 	float: left;
+	background-color: #E2FAF9; /* fallback */
 	background: linear-gradient(145deg, #FFFFFF, #E2FAF9);
 	border: 1px solid #646464;
 	box-shadow: 3px 3px #646464;
@@ -110,7 +113,8 @@ a:hover, a:hover > * { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
 /* blockquotes */
 blockquote {
 	border-left: 5px solid #646464;
-	background: #BB67A170;
+	background-color: #BB67A1; /* fallback */
+	background-color: #BB67A170;
 	padding: 5px;
 }
 
