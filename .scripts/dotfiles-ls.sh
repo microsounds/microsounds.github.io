@@ -72,9 +72,11 @@ coverage="${coverage%??}%"
 	shimeji="${shimeji#$DOC_ROOT/}"
 
 	# rewrite relative markdown links
+	# rewrite block-level align attributes with CSS
 	# replace inline shimeji with a random one
 	cat "$readme" | sed -E \
 		-e 's,\]\(([^http][a-zA-Z0-9._\/-]*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
+		-e 's,align="(.*)",style="text-align: \1;",g' \
 		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
 
 	# downloads and interactive source listing
