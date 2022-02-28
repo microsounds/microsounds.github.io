@@ -70,6 +70,7 @@ If it's about a project or a page on this website, open an issue or a pull reque
 </div>
 
 <script type="text/javascript">
+/* <![CDATA[ */
 	/* fetch date of last update */
 	var api = 'https://api.github.com/repos/{AUTHOR}/microsounds.github.io/branches/master';
 	var req = new XMLHttpRequest();
@@ -81,6 +82,7 @@ If it's about a project or a page on this website, open an issue or a pull reque
 		}
 	};
 	req.send();
+/* ]]> */
 </script>
 
 <!-- extended reading on unix and adjacent topics -->
