@@ -50,7 +50,7 @@ could keep only source code in `master` and automatically `push -f` build
 artifacts to a different orphan branch not unlike what GitHub does for pages
 using Jekyll.
 
-If you want to avoid cluttering your commit history with CI commits comming from your account,
+If you want to avoid cluttering your commit history with CI commits coming from your account,
 use the `github-action` bot's `git` username `github-actions` and email address `github-actions@github.com` when committing.
 
 ### Committing to a different repo
