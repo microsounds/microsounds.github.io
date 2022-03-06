@@ -1,17 +1,17 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 804, commit `fcb4a87`.**
+**Revision No. 805, commit `ad2e908`.**
 
-**"Post-install: Fixed enscript font setup"**
+**"Updated installation docs to start from debootstrap"**
 
 {TOC}
 
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *21.9KiB* in
+If this document is *25.7KiB* in
 size, and the approximate size of all comment lines of code is
 *59.1KiB* then this document
-currently covers about <b style="font-size: 130%;">7.43%</b>
+currently covers about <b style="font-size: 130%;">8.71%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -53,13 +53,90 @@ This is my primary computing setup, a self-contained graphical shell environment
 * A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d) document and reproduce system-wide deviations from a fresh install.
 	* _A [suite of unit tests]({GIT_REMOTE}/atelier/raw/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
 
-Basic installation instructions are provided, along with some documentation for the most essential components.
+Detailed installation instructions are provided, along with some documentation for the most essential components.
 
 <!-- figure 1: desktop screenshot -->
 [![scrot]][scrot]
 _Pictured: Debian stable, a "graphical shell" environment consisting mostly of xorg, dwm, sxhkd and various urxvt clients._
 
 # Quick start
+<details style="background-color: #0000001C; padding: 3px;">
+<summary><strong>[OPTIONAL] Instructions for a Debian base install with <code>debootstrap</code> for BIOS/UEFI x86 systems.</strong></summary>
+
+## Installing Debian using `debootstrap`
+> **WARNING**<br/>
+> _This is a quick reference on using `debootstrap` to install Debian manually without using the official Debian installer.
+> Use your common sense, this does not claim to be a comprehensive tutorial to installing Debian.
+> You should have some familiarity with GNU/Linux before continuing._
+
+1. Boot into a Debian Live CD environment with any DE and partition your boot disk with `gparted`.
+
+	You should always keep a Live CD install media around for use as a rescue disk, regardless of installation method.
+	I only do it this way because I don't feel like using `fdisk`.
+
+	_To install packages in the live environment, `apt-get update` first and then `apt-get install gparted`._
+
+	Suggested boot disk layouts:
+	* Legacy BIOS systems that support MBR/`msdos` partition tables
+	```
+	# MBR disks support a maximum of 4 primary partitions
+	[ primary part. (root) ] [ extended partition                            ]
+	                         [ logical part. (swap) ] [ logical part. (home) ]
+	# example /etc/fstab
+	/dev/sda1	/       ext4	defaults	0	1
+	/dev/sda5	none    swap	defaults	0	0
+	/dev/sda6	/home   ext4	defaults	0	2
+	```
+
+	* Modern UEFI systems that support GPT/`gpt` partition tables
+	```
+	# EFI partition must be FAT32 and at least 32MiB
+	[ EFI partition ] [ root partition ] [ swap partition ] [ home partition ]
+
+	# example /etc/fstab
+	/dev/sda1	/boot/efi   vfat	defaults	0	2
+	/dev/sda2	/           ext4	defaults	0	1
+	/dev/sda3	none        swap	defaults	0	0
+	/dev/sda3	/home       ext4	defaults	0	2
+	```
+
+	> **NOTE**<br/>
+	> _If your machine uses a slow eMMC-based boot disk, I recommend `f2fs` for modestly improved performance instead of `ext4`.
+	> Support for booting from `f2fs` is not provided by default in Debian.<br/>
+	> See [this tutorial][f2fs] on adding required `f2fs` modules to `initramfs` for more info._
+
+	[f2fs]: https://howtos.davidsebek.com/debian-f2fs.html#:~:text=Booting%20From%20F2FS
+		"Install Debian 10 Buster on an F2FS Partition"
+
+2. Mount your newly created filesystem in `/mnt`, including your home partition to `/mnt/home` if you made one.
+3. Install `debootstrap` and install the Debian base system into `/mnt`.
+	* `debootstrap --arch [eg. i386, amd64] stable /mnt https://deb.debian.org/debian`
+		* _See <https://www.debian.org/ports/> for full list of platforms available._
+4. Chroot into your new system, _all actions from this point onward are within your chrooted system_.
+	```sh
+	$ sudo su -
+	$ for f in proc sys dev run; do mount --make-rslave --rbind /$f /mnt/$f; done
+	$ chroot /mnt /bin/bash
+	```
+5. Configure your `/etc/fstab` to taste.
+	* Try `lsblk -f >> /etc/fstab` to identify disks by `UUID=...` instead of device name.
+6. Customize your locale by installing and `dpkg-reconfigure`'ng `locales`, and `tzdata`.
+7. Edit `/etc/hostname` and `/etc/hosts` with your preferred hostname.
+8. Install a suitable linux kernel.
+	* Find a suitable kernel meta-package to install with `apt-cache search ^linux-image | grep 'meta'`.
+9. Install `network-manager` and the bootloader package `grub2`.
+
+	`grub2` does not install to your boot disk automatically, use the following:
+	* BIOS (installs to magic sector at start of disk)
+		* `install-grub2 --root-directory=/ /dev/sda`
+	* UEFI (installs to EFI partition mounted in `/boot/efi`)
+		* `install-grub2 --root-directory=/ --efi-directory=/boot/efi /dev/sda`
+10. Give your `root` user a password and create your normal user.
+	* eg. `useradd -m USERNAME -m /bin/bash`
+11. _Reboot and you should have a working system, skip to Step 2 in the **Quick start** installation below._
+
+</details>
+
 1. Install Debian stable, perform a base install with no DE selected and no standard utilities when prompted.
 	* _Do not perform these steps on `tty1`, `xinit` will launch without `dwm` present and you will be kicked._
 2. Install `git`, `wget`, and `sudo`, then add yourself to the `sudo` group.
@@ -95,7 +172,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
 	* Use `patch -p1 < ~/.termux/termux-diff.patch` to restore changes if stash is lost.
 
-## Notes on platform support
+## List of supported platforms
 **Full graphical shell environment**
 * Any conventional BIOS/UEFI-compliant x86-based Personal Computer
 * x86-based Chromebooks in Developer Mode (SeaBIOS), or liberated with UEFI firmware (Coreboot).
@@ -416,7 +493,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime29.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime19.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -438,13 +515,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-195.65KiB
+199.41KiB
 out of a total compressed git history size of
-724.52KiB._
+749.21KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@c71e8858b257</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@b127fc3d819c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Feb 18 2022 00:39 rev. 75  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -563,7 +640,7 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb 27 2022 21:31 rev. 175 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  26K   Mar  4 2022 19:58 rev. 176 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 2 Mar 2022 12:39:54 -0800 -->
+<!-- updated Fri, 4 Mar 2022 19:58:46 -0800 -->

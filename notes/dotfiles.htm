@@ -34,8 +34,8 @@
 <div class="content">
 <!--kagami v0.6.4 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 804, commit <code>fcb4a87</code>.</strong></p>
-<p><strong>“Post-install: Fixed enscript font setup”</strong></p>
+<p><strong>Revision No. 805, commit <code>ad2e908</code>.</strong></p>
+<p><strong>“Updated installation docs to start from debootstrap”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -43,8 +43,9 @@
 <li><a href="#_dotfilesatelier_"><em>dotfiles—“atelier”</em></a></li>
 <li><a href="#Quick-start">Quick start</a>
 <ul>
+<li><a href="#Installing-Debian-using-debootstrap">Installing Debian using <code>debootstrap</code></a></li>
 <li><a href="#Quick-start-on-Termux-for-Android">Quick start on Termux for Android</a></li>
-<li><a href="#Notes-on-platform-support">Notes on platform support</a></li>
+<li><a href="#List-of-supported-platforms">List of supported platforms</a></li>
 </ul>
 </li>
 <li><a href="#Usage-notes">Usage notes</a>
@@ -107,19 +108,19 @@
 
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>21.9KiB</em> in
+<p>If this document is <em>25.7KiB</em> in
 size, and the approximate size of all comment lines of code is
 <em>59.1KiB</em> then this document
-currently covers about <b style="font-size: 130%;">7.43%</b>
+currently covers about <b style="font-size: 130%;">8.71%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌕 Wed, Mar 2nd, 2022.</p>
+<p>Last updated 🌕 Fri, Mar 4th, 2022.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime29.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime19.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -141,11 +142,122 @@ This is just an <a href="https://github.com/microsounds/microsounds.github.io/ra
 </ul>
 </li>
 </ul>
-<p>Basic installation instructions are provided, along with some documentation for the most essential components.</p>
+<p>Detailed installation instructions are provided, along with some documentation for the most essential components.</p>
 <!-- figure 1: desktop screenshot -->
 <p><a href="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png"><img src="https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png" alt="scrot" /></a>
 <em>Pictured: Debian stable, a “graphical shell” environment consisting mostly of xorg, dwm, sxhkd and various urxvt clients.</em></p>
 <h1>Quick start<span id="Quick-start"></span></h1>
+<details style="background-color: #0000001C; padding: 3px;">
+<summary><strong>[OPTIONAL] Instructions for a Debian base install with <code>debootstrap</code> for BIOS/UEFI x86 systems.</strong></summary>
+<h2>Installing Debian using <code>debootstrap</code><span id="Installing-Debian-using-debootstrap"></span></h2>
+<blockquote>
+<p><strong>WARNING</strong><br/>
+<em>This is a quick reference on using <code>debootstrap</code> to install Debian manually without using the official Debian installer.
+Use your common sense, this does not claim to be a comprehensive tutorial to installing Debian.
+You should have some familiarity with GNU/Linux before continuing.</em></p>
+</blockquote>
+<ol>
+<li>
+<p>Boot into a Debian Live CD environment with any DE and partition your boot disk with <code>gparted</code>.</p>
+<p>You should always keep a Live CD install media around for use as a rescue disk, regardless of installation method.
+I only do it this way because I don’t feel like using <code>fdisk</code>.</p>
+<p><em>To install packages in the live environment, <code>apt-get update</code> first and then <code>apt-get install gparted</code>.</em></p>
+<p>Suggested boot disk layouts:</p>
+<ul>
+<li>Legacy BIOS systems that support MBR/<code>msdos</code> partition tables</li>
+</ul>
+<pre><code># MBR disks support a maximum of 4 primary partitions
+[ primary part. (root) ] [ extended partition                            ]
+                         [ logical part. (swap) ] [ logical part. (home) ]
+# example /etc/fstab
+/dev/sda1	/       ext4	defaults	0	1
+/dev/sda5	none    swap	defaults	0	0
+/dev/sda6	/home   ext4	defaults	0	2
+</code></pre>
+<ul>
+<li>Modern UEFI systems that support GPT/<code>gpt</code> partition tables</li>
+</ul>
+<pre><code># EFI partition must be FAT32 and at least 32MiB
+[ EFI partition ] [ root partition ] [ swap partition ] [ home partition ]
+
+# example /etc/fstab
+/dev/sda1	/boot/efi   vfat	defaults	0	2
+/dev/sda2	/           ext4	defaults	0	1
+/dev/sda3	none        swap	defaults	0	0
+/dev/sda3	/home       ext4	defaults	0	2
+</code></pre>
+<blockquote>
+<p><strong>NOTE</strong><br/>
+<em>If your machine uses a slow eMMC-based boot disk, I recommend <code>f2fs</code> for modestly improved performance instead of <code>ext4</code>.
+Support for booting from <code>f2fs</code> is not provided by default in Debian.<br/>
+See <a href="https://howtos.davidsebek.com/debian-f2fs.html#:~:text=Booting%20From%20F2FS" title="Install Debian 10 Buster on an F2FS Partition">this tutorial</a> on adding required <code>f2fs</code> modules to <code>initramfs</code> for more info.</em></p>
+</blockquote>
+</li>
+<li>
+<p>Mount your newly created filesystem in <code>/mnt</code>, including your home partition to <code>/mnt/home</code> if you made one.</p>
+</li>
+<li>
+<p>Install <code>debootstrap</code> and install the Debian base system into <code>/mnt</code>.</p>
+<ul>
+<li><code>debootstrap --arch [eg. i386, amd64] stable /mnt https://deb.debian.org/debian</code>
+<ul>
+<li><em>See <a href="https://www.debian.org/ports/">https://www.debian.org/ports/</a> for full list of platforms available.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Chroot into your new system, <em>all actions from this point onward are within your chrooted system</em>.</p>
+<pre><code class="language-sh">$ sudo su -
+$ for f in proc sys dev run; do mount --make-rslave --rbind /$f /mnt/$f; done
+$ chroot /mnt /bin/bash
+</code></pre>
+</li>
+<li>
+<p>Configure your <code>/etc/fstab</code> to taste.</p>
+<ul>
+<li>Try <code>lsblk -f &gt;&gt; /etc/fstab</code> to identify disks by <code>UUID=...</code> instead of device name.</li>
+</ul>
+</li>
+<li>
+<p>Customize your locale by installing and <code>dpkg-reconfigure</code>’ng <code>locales</code>, and <code>tzdata</code>.</p>
+</li>
+<li>
+<p>Edit <code>/etc/hostname</code> and <code>/etc/hosts</code> with your preferred hostname.</p>
+</li>
+<li>
+<p>Install a suitable linux kernel.</p>
+<ul>
+<li>Find a suitable kernel meta-package to install with <code>apt-cache search ^linux-image | grep 'meta'</code>.</li>
+</ul>
+</li>
+<li>
+<p>Install <code>network-manager</code> and the bootloader package <code>grub2</code>.</p>
+<p><code>grub2</code> does not install to your boot disk automatically, use the following:</p>
+<ul>
+<li>BIOS (installs to magic sector at start of disk)
+<ul>
+<li><code>install-grub2 --root-directory=/ /dev/sda</code></li>
+</ul>
+</li>
+<li>UEFI (installs to EFI partition mounted in <code>/boot/efi</code>)
+<ul>
+<li><code>install-grub2 --root-directory=/ --efi-directory=/boot/efi /dev/sda</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Give your <code>root</code> user a password and create your normal user.</p>
+<ul>
+<li>eg. <code>useradd -m USERNAME -m /bin/bash</code></li>
+</ul>
+</li>
+<li>
+<p><em>Reboot and you should have a working system, skip to Step 2 in the <strong>Quick start</strong> installation below.</em></p>
+</li>
+</ol>
+</details>
 <ol>
 <li>Install Debian stable, perform a base install with no DE selected and no standard utilities when prompted.
 <ul>
@@ -201,7 +313,7 @@ This is meant to be a lightweight port with modifications, do not initiate a ful
 </ul>
 </li>
 </ol>
-<h2>Notes on platform support<span id="Notes-on-platform-support"></span></h2>
+<h2>List of supported platforms<span id="List-of-supported-platforms"></span></h2>
 <p><strong>Full graphical shell environment</strong></p>
 <ul>
 <li>Any conventional BIOS/UEFI-compliant x86-based Personal Computer</li>
@@ -833,12 +945,12 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-195.65KiB
+199.41KiB
 out of a total compressed git history size of
-724.52KiB.</em></p>
+749.21KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@c71e8858b257</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@b127fc3d819c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Feb 18 2022 00:39 rev. 75  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  354   Dec  6 2021 18:11 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -957,10 +1069,10 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  22K   Feb 27 2022 21:31 rev. 175 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  26K   Mar  4 2022 19:58 rev. 176 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 2 Mar 2022 12:39:54 -0800 -->
+<!-- updated Fri, 4 Mar 2022 19:58:46 -0800 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
