@@ -291,11 +291,30 @@ function play() {
 	}
 }
 
-window.addEventListener('DOMContentLoaded', function() {
-	browser_check();
-	setup_bgm();
+/*
+ * wrap every inline image with a clickable link to itself
+ * markdown images starting with ![ico-*] are excluded
+ * inline videos within galleries are also wrapped
+ * this is to avoid having to double-link images manually in markdown
+ */
+function linkify_images() {
+	var imgs = document.querySelectorAll('p img:not([alt^=ico-]), .gallery video');
+	for (var i in imgs) {
+		if (imgs[i].outerHTML) {
+			imgs[i].outerHTML =
+				'<a target="_blank" href="' + imgs[i].src + '">' +
+					imgs[i].outerHTML +
+				'</a>';
+		}
+	}
+}
 
+window.addEventListener('DOMContentLoaded', function() {
 	/* persist playback settings */
+	setup_bgm();
 	if (document.cookie.includes('bgm=1'))
 		play();
+
+	linkify_images();
+	browser_check();
 });

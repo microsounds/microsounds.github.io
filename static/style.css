@@ -119,15 +119,26 @@ blockquote {
 }
 
 /*
- * inline images and video
- * markdown images starting with ![ico-*] are treated as icons
+ * inline markdown image/video
+ * markdown images starting with ![ico-*] are excluded
  */
-p img:not([alt^=ico-]), p video {
+p img:not([alt^=ico-]), video {
 	max-width: 100%;
 	border: 1px solid #CCCCCC;
 }
 
-/* automatically generated page index */
+/* inline markdown image/video gallery */
+.gallery {
+	column-count: 4;
+	column-gap: 5px;
+}
+.gallery p img,
+.gallery video {
+	width: 100%;
+	height: auto;
+}
+
+/* kagami generated page index */
 .index { font-size: 18px; }
 
 /* code blocks */
@@ -238,6 +249,8 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	.navbar li { display: inline; color: #646464; border: unset;  }
 	/* horizontal menu separator */
 	.navbar li:not(:last-child):after { content: " | "; } 
+	/* reduce gallery density */
+	.gallery { column-count: 3; }
 	/* align special elements to edge of display */
 	pre { margin: unset; }
 	.toc { font-size: unset; float: unset; }
@@ -246,6 +259,7 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	/* readability on extra small screens  */
 	@media (max-width: 480px) {
 		.content, .navbar { font-size: 15px; }
+		.gallery { column-count: 2; }
 	}
 
 	/* add fake desktop tooltips on hover */
