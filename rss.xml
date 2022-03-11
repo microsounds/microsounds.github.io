@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 04 Mar 2022 19:58:46 -0800</lastBuildDate>
+<lastBuildDate>Thu, 10 Mar 2022 18:26:21 -0800</lastBuildDate>
 <ttl>1</ttl>
-<generator>kagami v0.6.4 — static microblog processor</generator>
+<generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <atom:link href="https://microsounds.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 <link>https://microsounds.github.io</link>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 805, commit ad2e908. “Updated installation docs to start from debootstrap” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 25.7KiB in size, and the approximate size of all comment lines of code is 59.1KiB then this document currently covers about 8.71% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at [..]]]>
+<![CDATA[Revision No. 809, commit 009b056. “x48: Added required build dependencies” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 25.7KiB in size, and the approximate size of all comment lines of code is 59.2KiB then this document currently covers about 8.68% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored at /atelier on [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 04 Mar 2022 19:58:46 -0800</pubDate>
+<pubDate>Thu, 10 Mar 2022 18:26:21 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
