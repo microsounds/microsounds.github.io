@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 809, commit `009b056`.**
+**Revision No. 810, commit `b847420`.**
 
-**"x48: Added required build dependencies"**
+**"Post-install: Removing dependency on deb-src functionality"**
 
 {TOC}
 
@@ -493,7 +493,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime24.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime8.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -515,13 +515,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-200.08KiB
+200.13KiB
 out of a total compressed git history size of
-753.94KiB._
+731.16KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@987639929c0b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@a26b779bf60a</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.2K   Mar 10 2022 17:55 rev. 76  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -546,7 +546,7 @@ out of a total compressed git history size of
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  710   Nov 30 2021 13:05 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rwxr-xr-x 1  320   Nov 14 2021 20:26 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
--rwxr-xr-x 1  151   Jan 19 2022 17:24 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
+-rwxr-xr-x 1  206   Mar 10 2022 18:52 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
 -rw-r--r-- 1 2.2K   Mar 10 2022 17:55 rev. 41  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1  401   Dec 20 2021 13:55 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
@@ -645,4 +645,4 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rw-r--r-- 1  26K   Mar  4 2022 19:58 rev. 176 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 10 Mar 2022 18:26:21 -0800 -->
+<!-- updated Thu, 10 Mar 2022 18:52:32 -0800 -->
