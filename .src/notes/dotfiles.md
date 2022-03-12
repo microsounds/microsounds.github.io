@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 811, commit `e4bf0de`.**
+**Revision No. 812, commit `5d5fe1e`.**
 
-**"Post-install: Simplified checking for build prereqs with is-installed"**
+**"xwin-decor: Reworked random timestamp selection, now skips over OPs/EDs"**
 
 {TOC}
 
@@ -10,8 +10,8 @@ in this repo is about **5:1**.
 
 If this document is *25.7KiB* in
 size, and the approximate size of all comment lines of code is
-*59.5KiB* then this document
-currently covers about <b style="font-size: 130%;">8.65%</b>
+*59.9KiB* then this document
+currently covers about <b style="font-size: 130%;">8.59%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -493,7 +493,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime37.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime14.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -510,18 +510,18 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `nano_overlay.sh v1.2 `
 > * `wm_status.sh v0.4`
 > * `xrandr_cycle.sh v0.2`
-> * `xwin_decor.sh v0.8`
+> * `xwin_decor.sh v0.9`
 > * `xwin_webm.sh v0.5`
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-200.47KiB
+200.85KiB
 out of a total compressed git history size of
-757.11KiB._
+757.92KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@db0290a197c5</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@4401aad4986e</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.3K   Dec 28 2021 23:10 rev. 125 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -640,11 +640,11 @@ lrwxrwxrwx 1   27  .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  23K   Feb 21 2022 23:35 rev. 88  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 5.1K   Dec  3 2021 22:08 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
--rwxr-xr-x 1 1.7K   May  5 2021 14:33 rev. 27  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
+-rwxr-xr-x 1 2.1K   Mar 12 2022 02:38 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 1.9K   Feb 11 2022 01:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  26K   Mar  4 2022 19:58 rev. 176 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 11 Mar 2022 22:34:37 -0800 -->
+<!-- updated Sat, 12 Mar 2022 02:38:01 -0800 -->
