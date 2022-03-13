@@ -116,9 +116,16 @@ coverage="${coverage%??}%"
 	# omit on-disk mtimes in actual ls command
 	sh -c "$command --time-style='+'" | while read -r line; do
 		case "$line" in
-			l*) # skip symlinks
-				echo "$line";;
-			*)
+			l*) # symlinks with placeholder metadata
+				link="${line% ->*}"
+				link="${link##* }"
+				target="${line##* }"
+				printf "%s %s rev. %-${#ver}d %s\n" \
+					"${line%$link -> $target}" \
+					'(symbolic link)  ' \
+					'' \
+					"$link -> $target";;
+			*) # normal files with metadata taken from git
 				path="${line##* }"
 				printf '%s' "mtime/revision tally for '$path'" 1>&2
 
@@ -135,7 +142,7 @@ coverage="${coverage%??}%"
 						--date='format:%b %_d %Y %H:%M' --format='%ad' -- $path)" \
 					"$(git meta log --follow --oneline $path | wc -l)" \
 					"<a href=\"$D_RAW/${esc_path:-$path}\">${esc_path:-$path}</a>"
-				printf '\r\33[K' 1>&2
+				printf '\r\33[K' 1>&2;;
 		esac
 	done
 	echo '</code></pre>'
