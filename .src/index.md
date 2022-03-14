@@ -1,4 +1,7 @@
 # Homepage
+<noscript>
+	<em>You have JavaScript disabled, certain multimedia elements will not work as expected.</em>
+</noscript>
 
 <!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
 ![heading]({DOC_ROOT}/static/starry.jpg)
