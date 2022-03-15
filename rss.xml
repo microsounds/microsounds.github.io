@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sat, 12 Mar 2022 17:16:11 -0800</lastBuildDate>
+<lastBuildDate>Mon, 14 Mar 2022 22:10:09 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 813, commit d7637ac. “youtube_screenshot: Fixed timestamps for runtimes over 2 hours” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 25.7KiB in size, and the approximate size of all comment lines of code is 59.9KiB then this document currently covers about 8.59% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository is also mirrored [..]]]>
+<![CDATA[Revision No. 815, commit 8fc8e60. “cd: Rewrote fuzzy find + jump into subdirectory to use fzf” The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 25.7KiB in size, and the approximate size of all comment lines of code is 59.9KiB then this document currently covers about 8.59% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and repository [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Sat, 12 Mar 2022 17:16:11 -0800</pubDate>
+<pubDate>Mon, 14 Mar 2022 22:10:09 -0700</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
