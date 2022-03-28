@@ -4,6 +4,7 @@
  * upon 404, distract the user with something dumb
  * there's some miku songs in here somewhere, mostly just old videos
  */
+
 var urls = [
 	'https://www.youtube.com/watch?v=xbFfz13gch4&t=40s', /* MLG Sonic */
 	'https://www.youtube.com/watch?v=3znxiNxSQN4', /* Miku Hatune animation movie "TAPIPAN" */
@@ -48,10 +49,13 @@ var urls = [
 ];
 var sel = urls[Math.floor(Math.random() * urls.length)];
 
-var msg = document.createElement('h2');
-msg.innerHTML = 'Taking you to ' + sel + '!';
-
-setTimeout(function() {
+window.addEventListener('DOMContentLoaded', function() {
+	var msg = document.createElement('ins');
+	msg.innerHTML = 'Taking you back to ' + sel;
 	document.getElementsByTagName('body')[0].appendChild(msg);
-	window.location.replace(sel);
-}, 500);
+
+	setTimeout(function() {
+		window.location.replace(sel);
+	},
+	1500);
+});
