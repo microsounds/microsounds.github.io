@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 818, commit `cad3b96`.**
+**Revision No. 819, commit `4f84d8d`.**
 
-**"trap: Catching SIGTERM everywhere where trap is currently used"**
+**"git: Added relative commit dates to summary alias, added mailmap"**
 
 {TOC}
 
@@ -10,7 +10,7 @@ in this repo is about **5:1**.
 
 If this document is *25.7KiB* in
 size, and the approximate size of all comment lines of code is
-*60.1KiB* then this document
+*60.2KiB* then this document
 currently covers about <b style="font-size: 130%;">8.56%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
@@ -493,7 +493,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime9.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -515,13 +515,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-201.22KiB
+201.35KiB
 out of a total compressed git history size of
-740.48KiB._
+765.47KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@08a64ec7da78</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@2862f53d8ded</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   Mar 14 2022 22:10 rev. 127 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -560,7 +560,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rw-r--r-- 1 1.3K   Feb 25 2022 17:21 rev. 25  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
+-rw-r--r-- 1 1.3K   Mar 26 2022 20:37 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 3.4K   Feb 25 2022 20:11 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.3K   Feb 16 2022 16:25 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
@@ -607,6 +607,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1   80   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/applications/nano.desktop">.local/share/applications/nano.desktop</a>
 -rw-r--r-- 1  685   Mar 31 2021 21:37 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/md-kagami.nanorc">.local/share/nano/md-kagami.nanorc</a>
 -rw-r--r-- 1  291   Jul 15 2020 16:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/nano/stdc.syntax">.local/share/nano/stdc.syntax</a>
+-rw-r--r-- 1   84   Mar 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.mailmap">.mailmap</a>
 -rw-r--r-- 1  44K   Dec 17 2019 22:28 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip">.minecraft/resourcepacks/HatsuneMiku.zip</a>
 -rw-r--r-- 1 1.7K   Jan  6 2022 15:30 rev. 33  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Mar 21 2022 23:26 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
@@ -647,4 +648,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  26K   Mar 14 2022 22:10 rev. 177 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 21 Mar 2022 23:26:42 -0700 -->
+<!-- updated Sat, 26 Mar 2022 20:37:58 -0700 -->
