@@ -43,6 +43,8 @@ coverage="${coverage%??}%"
 
 		{TOC}
 
+		View changelog since the last revision as [ \`diff HEAD~1...HEAD\`][2]
+
 		The verbosity factor of this document compared to comment lines of code
 		in this repo is about **${v_factor}:1**.
 
@@ -59,6 +61,7 @@ coverage="${coverage%??}%"
 		Last updated {UPDATED}.
 
 		[1]: {GIT_REMOTE}/microsounds.github.io/raw/master/${0#$DOC_ROOT/}
+		[2]: {GIT_REMOTE}/atelier/compare/HEAD~1...HEAD
 
 	EOF
 
