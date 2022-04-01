@@ -30,7 +30,6 @@ It's a never-ending process.
 [![ico-scripts]({DOC_ROOT}/static/shimemiku/shime32.png)](notes/dotfiles.md "It's pretty fun though.")
 
 </div>
-
 <hr style="width: 40%;"/>
 
 ## Things I've made recently
@@ -49,6 +48,16 @@ It's a never-ending process.
 
 ## Contact me
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
+
+<span class="blink" style="color: #FFFF00;"><em>New!</em></span> ---
+If you prefer e-mail or discord, my contact info is below.
+I'll congratulate you if your e-mail scraper can read POSIX shell command language.
+
+<pre><code><span class="term-prompt">{AUTHOR}@effe</span>:<span class="term-dir">~</span>$ cat contact_info.txt | gzip | base64 -w 0 \
+&gt;	| sed -E -e 's/(.)(.)/\\\\2\\\\1/g' -e 's/.&#123;4&#125;/&amp; /g' | fold -s
+4HIs AAAA AACA 9AVP QhLA yGRC FXiq 5maF Alkp qcmX mJmb CWkm uFnQ xJbp qODS HuJr
+b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
+</code></pre>
 
 ## Links
 <div class="center">

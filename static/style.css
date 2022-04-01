@@ -105,6 +105,12 @@ html {
 a { color: #F5D6EA; text-decoration: none; }	
 a:hover, a:hover > * { color: transparent; text-shadow: 0 0 3px #F0F0F0; }
 
+/* blinking text */
+.blink { animation: blink 0.2s linear infinite; }
+@keyframes blink {
+  50% { opacity: 50%; }
+}
+
 /* highlighting */
 .highlight {
 	background-color: #BB67A170;
