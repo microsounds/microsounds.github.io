@@ -30,6 +30,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=kYI6bR251T0', /* desire 初音ミク */
 	'https://www.youtube.com/watch?v=S1XPW9eruds', /* Hatsune Miku "NEL" English subtitles 初音ミク */
 	'https://www.youtube.com/watch?v=ydMYdtCCc4s', /* Kagamine Rin - noiz are nel (English & romaji subs) */
+	'https://www.nicovideo.jp/watch/sm8378059', /* 【初音ミク】天の川【PV】*/
 	'https://www.youtube.com/watch?v=wI6fGWFJijw', /* MineCraft - Earth */
 	'https://www.youtube.com/watch?v=QBdbWhrviwU', /* "Smiley*Smiley" (Vocaloid Hatsune Miku Original Song) */
 	'https://www.youtube.com/watch?v=SKfumaKBYZY', /* I missed the last train! Stranded in #VRChat Hwabon Night world */
