@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 820, commit `7f10631`.**
+**Revision No. 821, commit `4f44f2f`.**
 
-**"bash: Nothing important"**
+**"Documentation, updated debootstrap install instructions"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *25.7KiB* in
+If this document is *25.9KiB* in
 size, and the approximate size of all comment lines of code is
 *60.2KiB* then this document
-currently covers about <b style="font-size: 130%;">8.56%</b>
+currently covers about <b style="font-size: 130%;">8.62%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -69,8 +69,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 ## Installing Debian using `debootstrap`
 > **WARNING**<br/>
 > _This is a quick reference on using `debootstrap` to install Debian manually without using the official Debian installer.
-> Use your common sense, this does not claim to be a comprehensive tutorial to installing Debian.
-> You should have some familiarity with GNU/Linux before continuing._
+> This is not a comprehensive tutorial on *NIX concepts, you should have some familiarity with administrating a GNU/Linux system before continuing._
 
 1. Boot into a Debian Live CD environment with any DE and partition your boot disk with `gparted`.
 
@@ -130,13 +129,15 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 9. Install `network-manager` and the bootloader package `grub2`.
 
 	`grub2` does not install to your boot disk automatically, use the following:
-	* BIOS (installs to magic sector at start of disk)
-		* `install-grub2 --root-directory=/ /dev/sda`
-	* UEFI (installs to EFI partition mounted in `/boot/efi`)
-		* `install-grub2 --root-directory=/ --efi-directory=/boot/efi /dev/sda`
-10. Give your `root` user a password and create your normal user.
-	* eg. `useradd -m USERNAME -m /bin/bash`
-11. _Reboot and you should have a working system, skip to Step 2 in the **Quick start** installation below._
+	* Build initial grub configuration with `/sbin/update-grub`
+	* For BIOS (installs to magic sector at start of disk)
+		* `/sbin/grub-install --root-directory=/ /dev/sda`
+	* For UEFI (installs to EFI partition mounted in `/boot/efi`)
+		* `/sbin/grub-install --root-directory=/ --efi-directory=/boot/efi /dev/sda`
+10. Give your `root` user a password, create your normal user, and assign it a password also.
+	* eg. `useradd -m USERNAME -s /bin/bash; passwd USERNAME`
+11. _You should now have a working system, **login as your user** and skip to Step 2 in the **Quick start** below._
+	* _You can reboot at this point to check your handiwork but it's not required._
 
 </details>
 
@@ -151,8 +152,8 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 	# Invoke the login shell to apply changes made to the environment
 	$ exec $SHELL -l
 	```
-4. Run `post-install` in the shell to run post-install scripts automatically.
-	* _Sets up the package manager, installs and compiles essential packages, window manager, text editor, etc._
+4. Run `post-install` in the shell to run post-install scripts automatically. Do not run as `root`
+	* _Sets up the package manager, installs essential packages, window manager, text editor, etc._
 5. Reboot to finish.
 	* _[`xinit`]({GIT_REMOTE}/atelier/raw/master/.xinitrc) starts automatically upon login to [`tty1`]({GIT_REMOTE}/atelier/raw/master/.profile)._
 
@@ -496,7 +497,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime43.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime50.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -518,13 +519,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-201.33KiB
+201.52KiB
 out of a total compressed git history size of
-765.80KiB._
+766.52KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@138b032616e0</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@724b0c826e52</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   Apr  1 2022 14:24 rev. 128 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -648,7 +649,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  26K   Mar 14 2022 22:10 rev. 177 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  26K   Apr  7 2022 16:51 rev. 178 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 1 Apr 2022 14:24:03 -0700 -->
+<!-- updated Thu, 7 Apr 2022 16:51:41 -0700 -->
