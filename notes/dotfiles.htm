@@ -34,7 +34,7 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 821, commit <code>4f44f2f</code>.</strong></p>
+<p><strong>Revision No. 821, commit <code>a1c4c31</code>.</strong></p>
 <p><strong>“Documentation, updated debootstrap install instructions”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
@@ -111,7 +111,7 @@ in this repo is about <strong>5:1</strong>.</p>
 <p>If this document is <em>25.9KiB</em> in
 size, and the approximate size of all comment lines of code is
 <em>60.2KiB</em> then this document
-currently covers about <b style="font-size: 130%;">8.62%</b>
+currently covers about <b style="font-size: 130%;">8.63%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
@@ -120,7 +120,7 @@ This is just an <a href="https://github.com/microsounds/microsounds.github.io/ra
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime50.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime5.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -200,7 +200,7 @@ See <a href="https://howtos.davidsebek.com/debian-f2fs.html#:~:text=Booting%20Fr
 <ul>
 <li><code>debootstrap --arch [eg. i386, amd64] stable /mnt https://deb.debian.org/debian</code>
 <ul>
-<li><em>See <a href="https://www.debian.org/ports/">https://www.debian.org/ports/</a> for full list of platforms available.</em></li>
+<li><em>See <a href="https://www.debian.org/ports/">https://www.debian.org/ports/</a> for a full list of platforms available.</em></li>
 </ul>
 </li>
 </ul>
@@ -254,9 +254,9 @@ $ chroot /mnt /bin/bash
 </ul>
 </li>
 <li>
-<p><em>You should now have a working system, <strong>login as your user</strong> and skip to Step 2 in the <strong>Quick start</strong> below.</em></p>
+<p>You should now have a working system, <strong>login as your user</strong> and skip to Step 2 in the <strong>Quick start</strong> below.</p>
 <ul>
-<li><em>You can reboot at this point to check your handiwork but it’s not required.</em></li>
+<li><em>You can reboot from the Live CD environment at this point to check your work but it’s not required.</em></li>
 </ul>
 </li>
 </ol>
@@ -279,7 +279,7 @@ $ git --git-dir=$HOME/.config/meta --work-tree=$HOME reset --hard
 $ exec $SHELL -l
 </code></pre>
 </li>
-<li>Run <code>post-install</code> in the shell to run post-install scripts automatically. Do not run as <code>root</code>
+<li>Run <code>post-install</code> in the shell to run post-install scripts automatically. Do not run as root.
 <ul>
 <li><em>Sets up the package manager, installs essential packages, window manager, text editor, etc.</em></li>
 </ul>
@@ -948,12 +948,12 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-201.52KiB
+201.54KiB
 out of a total compressed git history size of
-766.52KiB.</em></p>
+742.20KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@724b0c826e52</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@f2e0b0b91d6d</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   Apr  1 2022 14:24 rev. 128 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
