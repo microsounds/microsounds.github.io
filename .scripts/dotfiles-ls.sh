@@ -61,7 +61,7 @@ coverage="${coverage%??}%"
 		Last updated {UPDATED}.
 
 		[1]: {GIT_REMOTE}/microsounds.github.io/raw/master/${0#$DOC_ROOT/}
-		[2]: {GIT_REMOTE}/atelier/compare/HEAD~1...HEAD
+		[2]: {GIT_REMOTE}/atelier/compare/HEAD~1...HEAD.diff
 
 	EOF
 
