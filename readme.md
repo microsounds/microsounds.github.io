@@ -7,9 +7,10 @@ This site aims for **polyglot HTML5** compliance, a robust well-formed subset of
 This is sometimes referred to as XHTML5.
 
 Documents should render identically when served as `text/html` or `application/xhtml+xml`.
-In practice, serving as XHTML results in worse initial stylesheet draw in every browser I've tried this in.
-You can test this yourself using [Schneegan's XHTML Proxy][proxy].
+In practice, modern browsers will render the stylesheet last on webpages served as XHTML,
+flashing an unstyled page on every page load which browser caching does not seem to fix.
 
+You can verify this yourself using `busybox httpd` or using [Schneegan's XHTML Proxy][proxy].
 Use of modern features such as `audio` elements prevents validating as true [XHTML 1.0 Strict][xml].
 
 [polyglot]: https://dev.w3.org/html5/html-polyglot/html-polyglot.html
@@ -19,9 +20,8 @@ Use of modern features such as `audio` elements prevents validating as true [XHT
 
 ## Deploying
 Normally, I run `kagami` and commit build artifacts in `master`.
-It's just easier and works everywhere, even on my phone.
 
-* Use something simple like `busybox httpd` to preview changes before pushing, it's what I use.
+* Use something simple like `busybox httpd` in the document root to preview changes before pushing.
 * You could also comment out `unset DOC_ROOT` in `.kagami/macros` if you want to build for local viewing only.
 	* AJAX calls to `file://` URIs will silently fail due to CORS restrictions in modern web browsers.
 
