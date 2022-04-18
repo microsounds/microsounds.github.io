@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2022/1/26 -->
+<!-- updated 2022/4/17 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -71,6 +71,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
 | Nvidia Quadro T1000 | 2019 | 6484 | Workstation card. |
 | Nvidia T600 | 2021 | 6766 | Workstation card. |
+| AMD Radeon RX 6400 | 2022 |  _unknown_ | Unreleased as of posting, available from Sapphire |
 
 # 2-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Remarks |
