@@ -5,9 +5,6 @@ HTTP request sent, awaiting response... 404 Not Found
 https://bugs.chromium.org/p/chromium/issues/detail?id=353072
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
-HTTP request sent, awaiting response... 501 Not Implemented
-(try: 2)  https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
-HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
 https://jigsaw.w3.org/css-validator/check/referer
