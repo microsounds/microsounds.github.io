@@ -293,12 +293,14 @@ function play() {
 
 /*
  * wrap every inline image with a clickable link to itself
- * markdown images starting with ![ico-*] are excluded
+ * markdown images starting with ![ico-*] and ![nolink] are excluded
  * inline videos within galleries are also wrapped
  * this is to avoid having to double-link images manually in markdown
  */
 function linkify_images() {
-	var imgs = document.querySelectorAll('p img:not([alt^=ico-]), .gallery video');
+	var imgs = document.querySelectorAll(
+		'p img:not([alt^=ico-]):not([alt^=nolink]), .gallery video'
+	);
 	for (var i in imgs) {
 		if (imgs[i].outerHTML) {
 			imgs[i].outerHTML =
