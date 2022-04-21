@@ -32,7 +32,10 @@ It's a never-ending process.
 </div>
 <hr style="width: 40%;"/>
 
+
 ## Things I've made recently
+I have a collection of notes and writings located at [`/notes`](notes/index.md) if you're interested.
+
 * _(2019–present)_ my "graphical shell" computing environment — [`{AUTHOR}/atelier`]({DOC_ROOT}/notes/dotfiles.md)
 	* _My self-contained and unabridged collection of dotfiles and scripts for Debian GNU/Linux._
 * _(2020–present)_ static microblog processor in POSIX shell — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)

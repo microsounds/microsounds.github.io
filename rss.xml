@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sun, 17 Apr 2022 21:33:14 -0700</lastBuildDate>
+<lastBuildDate>Thu, 21 Apr 2022 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -18,6 +18,16 @@
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
 <pubDate>Sun, 17 Apr 2022 21:33:14 -0700</pubDate>
+</item>
+<item>
+<title>My Figurine Collection</title>
+<description>
+<![CDATA[ Last updated Here’s my small collection of figurines and other assorted cute things. Most are prize figures of the variety you could win from a Japanese crane machine. I don’t feel like actually making an account on myfigurecollection.net to tell people about them though. This page will do for now, links take you to their catalog entry on mfc. They’re in no particular order, only sorted by date I remember getting it, probably. NOTE 	This page requires JavaScript to [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/figures.htm">https://microsounds.github.io/notes/figures.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/figures.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
+<pubDate>Thu, 21 Apr 2022 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
