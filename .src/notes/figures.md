@@ -1,16 +1,19 @@
 <!-- started 2022/4/21 -->
 
-# My Figurine Collection
+# My Collection of Assorted Figurines
 Last updated {CREATED}
 
+
 Here's my small collection of figurines and other assorted cute things.
-Most are prize figures of the variety you could win from a Japanese crane machine.
+Most are "prize figures" of the variety you could win from a Japanese "skill" claw machine,
+but I do no such thing because I don't live anywhere near one stocked with prize figures I would actually like.
+
+<!-- Did you know that limited run collectible lumps of PVC and ABS appreciate in value over time the longer they've been out of production? -->
 I don't feel like actually making an account on _[myfigurecollection.net](https://myfigurecollection.net)_ to tell people about them though.
 This page will do for now, links take you to their catalog entry on _mfc_.
 
+## Collection
 _They're in no particular order, only sorted by date I remember getting it, probably._
-
-<!-- _Sorted by date I unboxed it, probably._ -->
 
 <div id="fig-thumbs">
 <noscript>
@@ -22,11 +25,19 @@ _They're in no particular order, only sorted by date I remember getting it, prob
 
 </div>
 
-## Key
+<div class="aside right">
+
 | Key | Meaning |
 | -- | -- |
-| <img alt="ico-fig" src="https://static.myfigurecollection.net/pics/figure/186.jpg"/> | **Owned** |
-| <img alt="ico-fig-fake" src="https://static.myfigurecollection.net/pics/figure/186.jpg"/> | **Fake/Knockoff** |
+| ![ico-fig](https://static.myfigurecollection.net/pics/figure/186.jpg) | **Owned** |
+| ![ico-fig-fake](https://static.myfigurecollection.net/pics/figure/186.jpg) | **Fake/Knockoff** |
+
+</div>
+
+## On Counterfeits
+If you're into figure collecting, take care not to fall for counterfeits, these are figures of varying quality sold at abnormal prices and/or designs that are years out of production being sold new.
+Do not assume that physical outlets located in shopping malls, indoor or outdoor swap meets are honest or have any clue what they are selling, they can and will play dumb if it suits them.
+_Understand that even if the price is right, with counterfeits, you will get exactly what you pay for._
 
 ## Bonus Gallery
 This gallery is automatically generated, click images to see more user-submitted images on _myfigurecollection.net_!

@@ -32,7 +32,6 @@ It's a never-ending process.
 </div>
 <hr style="width: 40%;"/>
 
-
 ## Things I've made recently
 I have a collection of notes and writings located at [`/notes`](notes/index.md) if you're interested.
 
