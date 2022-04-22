@@ -255,6 +255,9 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	.navbar li { display: inline; color: #646464; border: unset;  }
 	/* horizontal menu separator */
 	.navbar li:not(:last-child):after { content: " | "; } 
+	/* asides */
+	.left { float: unset; }
+	.right { float: unset; }
 	/* reduce gallery density */
 	.gallery { column-count: 3; }
 	/* align special elements to edge of display */
