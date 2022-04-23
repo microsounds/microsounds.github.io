@@ -3,12 +3,10 @@
 # My Collection of Assorted Figurines
 Last updated {CREATED}
 
-
-Here's my small collection of figurines and other assorted cute things.
+Here's my small IRL collection of figurines and other assorted cute things.
 Most are "prize figures" of the variety you could win from a Japanese "skill" claw machine,
 but I do no such thing because I don't live anywhere near one stocked with prize figures I would actually like.
 
-<!-- Did you know that limited run collectible lumps of PVC and ABS appreciate in value over time the longer they've been out of production? -->
 I don't feel like actually making an account on _[myfigurecollection.net](https://myfigurecollection.net)_ to tell people about them though.
 This page will do for now, links take you to their catalog entry on _mfc_.
 
