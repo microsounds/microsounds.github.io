@@ -27,8 +27,8 @@ _They're in no particular order, only sorted by date I remember getting it, prob
 
 | Key | Meaning |
 | -- | -- |
-| ![ico-fig](https://static.myfigurecollection.net/pics/figure/186.jpg) | **Owned** |
-| ![ico-fig-fake](https://static.myfigurecollection.net/pics/figure/186.jpg) | **Fake/Knockoff** |
+| ![ico-fig](https://static.myfigurecollection.net/upload/items/186.jpg) | **Owned** |
+| ![ico-fig-fake](https://static.myfigurecollection.net/upload/items/186.jpg) | **Fake/Knockoff** |
 
 </div>
 
@@ -109,7 +109,7 @@ for (var i in figs) {
 		l2 = document.createElement('img');
 		l2.alt = alt;
 		l2.title = title;
-		l2.src = "https://static.myfigurecollection.net/pics/figure/" + id + ".jpg";
+		l2.src = "https://static.myfigurecollection.net/upload/items/" + id + ".jpg";
 		l1.appendChild(l2);
 
 	thumbs.appendChild(l1);
@@ -121,7 +121,7 @@ for (var i in figs) {
 		l2.href = "https://myfigurecollection.net/pictures.php?itemId=" + id;
 
 			l3 = document.createElement('img');
-			l3.src = "https://static.myfigurecollection.net/pics/figure/big/" + id + ".jpg";
+			l3.src = "https://static.myfigurecollection.net/upload/items/big/" + id + ".jpg";
 			l3.title = title;
 			l3.alt = 'nolink';
 			l2.appendChild(l3);
