@@ -69,7 +69,7 @@ b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 [![ico-vocaloid]({DOC_ROOT}/static/button/vocaloid.gif)](https://www.youtube.com/watch?v=JmvOuyeqoLw&amp;list=PLJQumuuts49qC9sbhf4Deky0-XZuY09A_)
 [![ico-miku3]({DOC_ROOT}/static/button/mikuproved.gif)](/EEEEEEEEEEEEEEEEEEEEEEE)
 [![ico-miku1]({DOC_ROOT}/static/button/hatsunemiku1.gif)](https://www.youtube.com/watch?v=3rsBLRFONEs)
-[![ico-miku2]({DOC_ROOT}/static/button/miku.gif)](https://www.youtube.com/watch?v=NJAghsisnok)
+[![ico-miku2]({DOC_ROOT}/static/button/miku.gif)](https://www.youtube.com/watch?v=Z7VnvCWCOww)
 [![ico-konata]({DOC_ROOT}/static/button/konata.gif)](https://www.youtube.com/watch?v=KGD-mFTY6mw)
 [![ico-filler1]({DOC_ROOT}/static/button/88x31pinkmarble.gif)](/eeeeeeeeeeeeeeeeee)
 [![ico-html]({DOC_ROOT}/static/button/valid-html5-blue.svg)](https://validator.w3.org/check/referer)
