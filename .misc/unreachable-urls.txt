@@ -11,7 +11,7 @@ HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
 https://jigsaw.w3.org/css-validator/check/referer
-HTTP request sent, awaiting response... 403 Forbidden
+HTTP request sent, awaiting response... 403 
 https://raw.githubusercontent.com/microsounds/atelier/master
 HTTP request sent, awaiting response... 400 Bad Request
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -22,12 +22,14 @@ https://static.myfigurecollection.net/upload/items/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/big/
 HTTP request sent, awaiting response... 403 Forbidden
-https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjfulk4%2FExercise%2FFulk-Activity8.html
-HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://wiki.whatwg.org/wiki/HTML_vs._XHTML
+HTTP request sent, awaiting response... 504 Gateway Time-out
+(try: 2)  https://wiki.whatwg.org/wiki/HTML_vs._XHTML
+HTTP request sent, awaiting response... 504 Gateway Time-out
 https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7

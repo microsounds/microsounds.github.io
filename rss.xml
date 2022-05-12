@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Wed, 11 May 2022 21:09:06 -0700</lastBuildDate>
+<lastBuildDate>Wed, 11 May 2022 19:36:10 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 826, commit 2e55a77. “termux: Adding imagemagick to shortlist of comforts” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 25.9KiB in size, and the approximate size of all comment lines of code is 60.4KiB then this document currently covers about 8.60% of all implemented features and behavior in this repository. This is just an [automated [..]]]>
+<![CDATA[Revision No. 826, commit 0cf4051. “path-gitstatus: Resolve relative topdir for git repos within symlinked dirs” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 25.9KiB in size, and the approximate size of all comment lines of code is 60.4KiB then this document currently covers about 8.59% of all implemented features and behavior in this repository. This is [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Wed, 11 May 2022 21:09:06 -0700</pubDate>
+<pubDate>Wed, 11 May 2022 19:36:10 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>

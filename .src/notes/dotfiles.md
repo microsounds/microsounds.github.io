@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 826, commit `2e55a77`.**
+**Revision No. 826, commit `0cf4051`.**
 
-**"termux: Adding imagemagick to shortlist of comforts"**
+**"path-gitstatus: Resolve relative topdir for git repos within symlinked dirs"**
 
 {TOC}
 
@@ -13,7 +13,7 @@ in this repo is about **5:1**.
 If this document is *25.9KiB* in
 size, and the approximate size of all comment lines of code is
 *60.4KiB* then this document
-currently covers about <b style="font-size: 130%;">8.60%</b>
+currently covers about <b style="font-size: 130%;">8.59%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -497,7 +497,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime52.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -519,14 +519,14 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-201.80KiB
+201.81KiB
 out of a total compressed git history size of
-707.91KiB._
+717.10KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@3f0596dfaef1</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1 8.4K   Apr 17 2022 21:33 rev. 129 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+<pre><code><span class="term-prompt">root@493d27961cf2</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+-rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -652,4 +652,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  26K   Apr  7 2022 16:51 rev. 178 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 12 May 2022 04:09:06 +0000 -->
+<!-- updated Thu, 12 May 2022 02:36:10 +0000 -->
