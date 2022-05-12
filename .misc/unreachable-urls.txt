@@ -5,17 +5,24 @@ HTTP request sent, awaiting response... 404 Not Found
 https://bugs.chromium.org/p/chromium/issues/detail?id=353072
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
+HTTP request sent, awaiting response... 501 Not Implemented
+(try: 2)  https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
+HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
 https://jigsaw.w3.org/css-validator/check/referer
-HTTP request sent, awaiting response... 403 Forbidden
+HTTP request sent, awaiting response... 403 
 https://raw.githubusercontent.com/microsounds/atelier/master
 HTTP request sent, awaiting response... 400 Bad Request
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
-https://validator.w3.org/check?uri=referer
+https://static.myfigurecollection.net/upload/items/
+HTTP request sent, awaiting response... 403 Forbidden
+https://static.myfigurecollection.net/upload/items/big/
+HTTP request sent, awaiting response... 403 Forbidden
+https://validator.w3.org/nu/?doc=http%3A%2F%2Ftobybartels.name%2F
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
@@ -24,4 +31,6 @@ HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
+HTTP request sent, awaiting response... 404 Not Found
+https://www.galago-project.org/specs/notification/0.9/index.html
 HTTP request sent, awaiting response... 404 Not Found
