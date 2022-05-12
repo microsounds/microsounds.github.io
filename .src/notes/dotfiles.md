@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 825, commit `11b0724`.**
+**Revision No. 826, commit `2e55a77`.**
 
-**"path-gitstatus: Resolve relative topdir for git repos within symlinked dirs"**
+**"termux: Adding imagemagick to shortlist of comforts"**
 
 {TOC}
 
@@ -497,7 +497,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime28.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -519,13 +519,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-201.78KiB
+201.80KiB
 out of a total compressed git history size of
-705.03KiB._
+707.91KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@4c15abc0489c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@3f0596dfaef1</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   Apr 17 2022 21:33 rev. 129 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -633,7 +633,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  808   Feb 13 2022 22:53 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
--rwxr-xr-x 1 3.0K   Apr 14 2022 16:49 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 3.0K   May 12 2022 04:09 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Feb 25 2022 18:12 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
@@ -652,4 +652,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  26K   Apr  7 2022 16:51 rev. 178 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 12 May 2022 02:36:10 +0000 -->
+<!-- updated Thu, 12 May 2022 04:09:06 +0000 -->
