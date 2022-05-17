@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 827, commit `750fa57`.**
+**Revision No. 828, commit `84b6e1a`.**
 
-**"path-gitstatus: Documenting known issues with symlink abuse"**
+**"Documentation, interactive shell"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *25.9KiB* in
+If this document is *26.4KiB* in
 size, and the approximate size of all comment lines of code is
 *60.8KiB* then this document
-currently covers about <b style="font-size: 130%;">8.53%</b>
+currently covers about <b style="font-size: 130%;">8.70%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -174,7 +174,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/raw/master/.once.d/a0-android-termux.sh)
 	* Applies android-specific hacks and termux specific dotfiles for theming and softkeys.
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
-	* Use `patch -p1 < ~/.termux/termux-diff.patch` to restore changes if stash is lost.
+	* Use `patch -p1 < ~/.termux/diff.patch` to restore changes if stash is lost.
 
 ## List of supported platforms
 **Full graphical shell environment**
@@ -361,6 +361,13 @@ Several commands are extended to include impure functions, such as purposefully 
 	* Some are shell functions promoted to scripts so they'll work in `dmenu` or outside of a terminal context.
 4. `/usr/bin` system-wide executables
 
+## Interactive shell
+![path-gitstatus](https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/path-gitstatus.png)
+
+The prompt path will feature embedded `git` information provided by [`path-gitstatus`]({GIT_REMOTE}/atelier/raw/master/Scripts/git_status.sh) highlighting the root of a `git` worktree and it's status.
+
+Outside of `git` worktrees, the path component will be mangled by [`path-shorthand`]({GIT_REMOTE}/atelier/raw/master/.local/lib/path-shorthand) and be truncated to the last `$PATH_WIDTH` characters _(default is 50)_ for improved usability.
+
 ## `cd`
 * The contents of `$OLDPWD` is preserved across `bash` sessions.
 * `cd` offers the following extensions:
@@ -497,7 +504,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime30.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime2.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -519,13 +526,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-202.02KiB
+202.52KiB
 out of a total compressed git history size of
-717.85KiB._
+728.91KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@6863048a20fe</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@3234c233fd8f</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Mar 11 2022 22:34 rev. 77  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -649,7 +656,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  26K   Apr  7 2022 16:51 rev. 178 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  27K   May 16 2022 17:16 rev. 179 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sun, 15 May 2022 23:36:17 -0700 -->
+<!-- updated Mon, 16 May 2022 17:16:24 -0700 -->

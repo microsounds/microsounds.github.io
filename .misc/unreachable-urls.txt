@@ -22,16 +22,12 @@ https://static.myfigurecollection.net/upload/items/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/big/
 HTTP request sent, awaiting response... 403 Forbidden
-https://validator.w3.org/check?uri=referer
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fbiblioteca.unmsm.edu.pe%2F
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
-https://wiki.whatwg.org/wiki/HTML_vs._XHTML
-HTTP request sent, awaiting response... 504 Gateway Time-out
-(try: 2)  https://wiki.whatwg.org/wiki/HTML_vs._XHTML
-HTTP request sent, awaiting response... 504 Gateway Time-out
 https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
