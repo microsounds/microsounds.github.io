@@ -11,11 +11,11 @@ In practice, modern browsers will render the stylesheet last on webpages served 
 flashing an unstyled page on every page load which browser caching does not seem to fix.
 
 You can verify this yourself using `busybox httpd` or using [Schneegan's XHTML Proxy][proxy].
-Use of modern features such as `audio` elements prevents validating as true [XHTML 1.0 Strict][xml].
+Use of modern features such as `audio` elements prevents validating as "true" [XHTML 1.0 Strict][xml].
 
 [polyglot]: https://dev.w3.org/html5/html-polyglot/html-polyglot.html
 [polyglot2]: https://wiki.whatwg.org/wiki/HTML_vs._XHTML
-[proxy]: https://schneegans.de/xp/
+[proxy]: https://schneegans.de/xp/?url=https%3A%2F%2Fmicrosounds.github.io&ct=application%2Fxhtml%2Bxml
 [xml]: https://validator.w3.org/check?uri=https%3A%2F%2Fmicrosounds.github.io&charset=%28detect+automatically%29&doctype=XHTML+1.0+Strict&group=0
 
 ## Deploying

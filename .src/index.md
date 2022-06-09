@@ -80,8 +80,14 @@ b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 [![ico-badge]({DOC_ROOT}/static/button/badge.png)]({DOC_ROOT}/static/button/badge.png "static version")
 [![ico-badge]({DOC_ROOT}/static/button/badge.gif)]({DOC_ROOT}/static/button/badge.gif "animated version")
 
-<span class="aside">If you enjoyed my website and you'd like to link here, feel free to use my badge on your own site.</span>
+<span class="aside">If you enjoyed my site and you wish to experience Neocities-style camaraderie, feel free to use my badge on your own site.</span>
+<br/>
+<span class="aside">A member site of [1MB Club][1mb], written in [polyglot HTML5][xhtml], reject JS frameworks and spit on all their advocates!</span>
+
 </div>
+
+[1mb]: https://1mb.club
+[xhtml]: {GIT_REMOTE}/microsounds.github.io#-validation
 
 <script type="text/javascript">
 /* <![CDATA[ */
