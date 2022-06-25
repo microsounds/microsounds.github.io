@@ -22,7 +22,7 @@ https://static.myfigurecollection.net/upload/items/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/big/
 HTTP request sent, awaiting response... 403 Forbidden
-https://validator.w3.org/nu/?doc=http%3A%2F%2Fbiblioteca.unmsm.edu.pe%2F
+https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
@@ -31,6 +31,6 @@ HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
-HTTP request sent, awaiting response... 404 Not Found
+HTTP request sent, awaiting response... 405 Method Not Allowed
 https://www.galago-project.org/specs/notification/0.9/index.html
 HTTP request sent, awaiting response... 404 Not Found
