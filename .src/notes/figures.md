@@ -1,7 +1,8 @@
 <!-- started 2022/4/21 -->
+<!-- updated 2022/7/4 -->
 
 # My Collection of Assorted Figurines
-Last updated {CREATED}
+Last updated {UPDATED}
 
 Here's my small IRL collection of figurines and other assorted cute things.
 Most are "prize figures" of the variety you could win from a Japanese ["skill" claw machine][claw].
@@ -66,6 +67,11 @@ This gallery is automatically generated, click images to see more user-submitted
 
 var figs = [
 	/* ids prepended with x are knockoffs */
+	[ '944728', 'furyu miku bicute bunnies' ],
+	[ '1311067', 'miku artist masterpiece princess alice' ],
+	[ '1268909', 'miku artist masterpiece 14th anniv.' ],
+	[ '1293291', 'furyu sakura miku noodle stopper' ],
+	[ '886807', 'taito sakura miku 2020 ver.' ],
 	[ '1216990', 'racing miku 2021 espresto' ],
 	[ '1035745', "mega 39's breathe you SPM miku" ],
 	[ '1112719', 'miku big nuigurumi plush' ],
