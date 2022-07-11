@@ -3,8 +3,8 @@
 	<em>You have JavaScript disabled, certain multimedia elements will not work as expected.</em>
 </noscript>
 
-<!-- original: https://gelbooru.com/index.php?page=post&s=view&id=3757995 -->
 ![heading]({DOC_ROOT}/static/starry.jpg)
+<span class="aside"><sup>_Original illustration [&copy; 2015 tanakatam][illust]_</sup></span>
 
 ## About me
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
@@ -116,3 +116,5 @@ b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 
 [noise]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
        "from 4jyo​-​han to everywhere (2011), effe"
+
+[illust]: https://gelbooru.com/index.php?page=post&s=view&id=3757995
