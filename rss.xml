@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Tue, 12 Jul 2022 00:21:03 -0700</lastBuildDate>
+<lastBuildDate>Wed, 13 Jul 2022 15:29:30 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 834, commit a25bc01. “magnet-dl: Fixed IPv6 issues, allow for bundling multiple magnet URIs” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 26.4KiB in size, and the approximate size of all comment lines of code is 60.9KiB then this document currently covers about 8.69% of all implemented features and behavior in this repository. This is [..]]]>
+<![CDATA[Revision No. 835, commit f1366bd. “magnet-dl: Added better progress indication” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 26.4KiB in size, and the approximate size of all comment lines of code is 60.9KiB then this document currently covers about 8.69% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Tue, 12 Jul 2022 00:21:03 -0700</pubDate>
+<pubDate>Wed, 13 Jul 2022 15:29:30 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
