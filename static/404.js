@@ -30,9 +30,11 @@ var urls = [
 	'https://www.youtube.com/watch?v=nj8GLCdmskA', /* DDR - True Love (Double) */
 	'https://www.youtube.com/watch?v=YwDuZEXF-XQ', /* DDR TSUYOSHI＆AKANE SUNKISS DROP */
 	'https://www.youtube.com/watch?v=kYI6bR251T0', /* desire 初音ミク */
+	'https://www.youtube.com/watch?v=5W6k0MELdwY', /* 「Jewel Colors」 Hatsune Miku - true my heart -HATSUNE mix- (HD and Lyrics) */
 	'https://www.youtube.com/watch?v=S1XPW9eruds', /* Hatsune Miku "NEL" English subtitles 初音ミク */
 	'https://www.youtube.com/watch?v=6vhzlYsWvuM', /* 06E 巡音ルカ */
 	'https://www.youtube.com/watch?v=ydMYdtCCc4s', /* Kagamine Rin - noiz are nel (English & romaji subs) */
+	'https://www.youtube.com/watch?v=mYp77tBIYtE', /* ACID NEL 初音ミク */
 	'https://www.nicovideo.jp/watch/sm8378059', /* 【初音ミク】天の川【PV】*/
 	'https://www.youtube.com/watch?v=wI6fGWFJijw', /* MineCraft - Earth */
 	'https://www.youtube.com/watch?v=QBdbWhrviwU', /* "Smiley*Smiley" (Vocaloid Hatsune Miku Original Song) */
