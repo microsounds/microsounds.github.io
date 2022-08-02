@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 837, commit `69f86b8`.**
+**Revision No. 837, commit `065f100`.**
 
-**"Termux: Nothing important, removing motd during post-install"**
+**"Termux: Removing motd, enabling online docs"**
 
 {TOC}
 
@@ -504,7 +504,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime50.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime27.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -528,11 +528,11 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 >_Total on-disk size of the current revision is
 202.57KiB
 out of a total compressed git history size of
-740.51KiB._
+740.50KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@96ca413be023</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@bdbc52373c52</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
