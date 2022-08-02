@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 837, commit 065f100. “Termux: Removing motd, enabling online docs” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 26.4KiB in size, and the approximate size of all comment lines of code is 60.9KiB then this document currently covers about 8.69% of all implemented features and behavior in this repository. This is just an [automated guess][1] [..]]]>
+<![CDATA[Revision No. 837, commit 41f867b. “Termux: Removing motd, enabling online docs” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 26.4KiB in size, and the approximate size of all comment lines of code is 60.9KiB then this document currently covers about 8.69% of all implemented features and behavior in this repository. This is just an [automated guess][1] [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
