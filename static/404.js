@@ -58,6 +58,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=SzT0dvNrFc4', /* Gigi D'Agostino - La Passion ( Official Video ) */
 	'https://www.youtube.com/watch?v=zkQUFb4SswY', /* Japanese Commercial ~ Superflat Monogram */
 	'https://www.youtube.com/watch?v=HgjyQ0_coJo', /* Nyan~ Neko Sugar Girls: All Episodes */
+	'https://www.youtube.com/watch?v=4p1XlWtOC0Q', /* shamishami */
 ];
 var sel = urls[Math.floor(Math.random() * urls.length)];
 

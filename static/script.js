@@ -34,6 +34,8 @@ var loops = [
 	[ 'wind1', 'effe - night drive ft. 初音ミク' ],
 	[ 'wind2', 'effe - night drive ft. 初音ミク' ],
 	[ 'jealousy', 'Taquwami - Concealed Jealousy' ],
+	[ 'fmtowns1', 'FM-TOWNS　の世界　紹介ビデオ（1989年）' ],
+	[ 'fmtowns2', 'FM-TOWNS　の世界　紹介ビデオ（1989年）' ],
 	[ 'mirage1', 'Occult You - Mirage Love' ],
 	[ 'mirage2', 'Occult You - Mirage Love' ],
 	[ 'sparkle', 'livetune - Strobo Nights ft. 初音ミク' ],
