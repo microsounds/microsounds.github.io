@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 839, commit `2a8b90f`.**
+**Revision No. 839, commit `4d9ee3e`.**
 
 **"Termux: Changes for Android 11+, ssh-agent no longer daemonized"**
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *26.8KiB* in
 size, and the approximate size of all comment lines of code is
-*60.9KiB* then this document
-currently covers about <b style="font-size: 130%;">8.80%</b>
+*61.0KiB* then this document
+currently covers about <b style="font-size: 130%;">8.79%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -508,7 +508,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime49.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime42.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -530,13 +530,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-203.08KiB
+203.09KiB
 out of a total compressed git history size of
 747.47KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@d1f84b769016</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@91b01fa7cf6b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -648,7 +648,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Feb 25 2022 18:12 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
--rw-r--r-- 1  834   Aug 28 2022 22:58 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
+-rw-r--r-- 1  844   Aug 28 2022 22:58 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rw-r--r-- 1 2.0K   Feb  4 2022 11:57 rev. 69  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.9K   Mar 10 2022 18:15 rev. 25  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>

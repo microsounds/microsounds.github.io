@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 839, commit 2a8b90f. “Termux: Changes for Android 11+, ssh-agent no longer daemonized” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 26.8KiB in size, and the approximate size of all comment lines of code is 60.9KiB then this document currently covers about 8.80% of all implemented features and behavior in this repository. This is just [..]]]>
+<![CDATA[Revision No. 839, commit 4d9ee3e. “Termux: Changes for Android 11+, ssh-agent no longer daemonized” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 26.8KiB in size, and the approximate size of all comment lines of code is 61.0KiB then this document currently covers about 8.79% of all implemented features and behavior in this repository. This is just [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>

@@ -33,3 +33,4 @@ https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://www.galago-project.org/specs/notification/0.9/index.html
+https://www.gnu.org/licenses/gpl-3.0
