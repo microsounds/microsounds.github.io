@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 840, commit `e50b33c`.**
+**Revision No. 841, commit `5a266f7`.**
 
-**"Termux: Dropped termux-chroot for 5x improved performance"**
+**"Termux: Removed $OLDPWD persistence between shells"**
 
 {TOC}
 
@@ -175,7 +175,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
 	* Use `patch -p1 < ~/.termux/diff.patch` to restore changes if stash is lost.
 
-See [attached notes]({GIT_REMOTE}/atelier/raw/master/#Termux_for_Android) for explanations of changes from a standard Linux environment.
+See [attached notes]({GIT_REMOTE}/atelier/raw/master/#termux-for-android) for explanations of changes from a standard Linux environment.
 
 ## List of supported platforms
 **Full graphical shell environment**
@@ -377,8 +377,8 @@ Post-install scripts make these adjustments statically for existing scripts.
 ### Standard file descriptors
 Shell scripts on Android systems without root access have no access to standard file descriptors `/dev/std{in,out,err}`, use `/proc/self/fd/{0,1,2}` instead.
 
-### Shell escapes in `sh`
-`\e` to insert shell escape literals works in some circumstances but not all, use `\33` when in doubt.
+### `ESC` sequences
+`<backslash>e` to insert escape literals in scripts works for some OSC codes, but not all, use octal `<backslash>33` when in doubt.
 
 ### `$PREFIX`
 Previously, `termux-chroot` was used to ensure a FHS-compliant environment, but it introduces unacceptable performance drawbacks in my tests.
@@ -527,7 +527,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime28.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime35b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -549,13 +549,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-204.28KiB
+204.37KiB
 out of a total compressed git history size of
-743.79KiB._
+744.63KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@e8e0bc30707a</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@49115936f409</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -663,7 +663,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  808   Feb 13 2022 22:53 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
--rwxr-xr-x 1 3.3K   Sep  6 2022 09:31 rev. 25  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 3.4K   Sep  6 2022 12:08 rev. 26  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Feb 25 2022 18:12 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
@@ -679,7 +679,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  28K   Sep  6 2022 09:31 rev. 182 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Tue, 6 Sep 2022 09:31:17 -0700 -->
+<!-- updated Tue, 6 Sep 2022 12:08:38 -0700 -->
