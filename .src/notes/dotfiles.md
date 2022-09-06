@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 841, commit `5a266f7`.**
+**Revision No. 841, commit `67fcbff`.**
 
 **"Termux: Removed $OLDPWD persistence between shells"**
 
@@ -167,7 +167,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 
 ## Quick start on Termux for Android
 > **NOTE**<br/>
-> This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
+> _This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/raw/master/.once.d/a0-android-termux.sh)
@@ -175,7 +175,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
 	* Use `patch -p1 < ~/.termux/diff.patch` to restore changes if stash is lost.
 
-See [attached notes]({GIT_REMOTE}/atelier/raw/master/#termux-for-android) for explanations of changes from a standard Linux environment.
+See [attached notes](#Termux-for-Android) for explanations of changes from a standard Linux environment.
 
 ## List of supported platforms
 **Full graphical shell environment**
@@ -370,9 +370,8 @@ The prompt path will feature embedded `git` information provided by [`path-gitst
 Outside of `git` worktrees, the path component will be mangled by [`path-shorthand`]({GIT_REMOTE}/atelier/raw/master/.local/lib/path-shorthand) and be truncated to the last `$PATH_WIDTH` characters _(default is 50)_ for improved usability.
 
 ## Termux for Android
-Single-user shell environment should work as expected on Termux without root access or changes to `$PREFIX/etc` with several caveats described below:
-
-Post-install scripts make these adjustments statically for existing scripts.
+Single-user shell environment should work as expected on Termux without root access or changes to `$PREFIX/etc` with several caveats described below.
+Post-install scripts make the following adjustments statically for existing scripts.
 
 ### Standard file descriptors
 Shell scripts on Android systems without root access have no access to standard file descriptors `/dev/std{in,out,err}`, use `/proc/self/fd/{0,1,2}` instead.
@@ -527,7 +526,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime35b.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime53.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -549,13 +548,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-204.37KiB
+204.38KiB
 out of a total compressed git history size of
-744.63KiB._
+749.76KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@49115936f409</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@65bb8a16315c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>

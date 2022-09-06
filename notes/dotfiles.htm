@@ -34,7 +34,7 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 841, commit <code>5a266f7</code>.</strong></p>
+<p><strong>Revision No. 841, commit <code>67fcbff</code>.</strong></p>
 <p><strong>“Termux: Removed $OLDPWD persistence between shells”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
@@ -129,7 +129,7 @@ This is just an <a href="https://github.com/microsounds/microsounds.github.io/ra
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime35b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime53.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -309,7 +309,7 @@ $ exec $SHELL -l
 <h2>Quick start on Termux for Android<span id="Quick-start-on-Termux-for-Android"></span></h2>
 <blockquote>
 <p><strong>NOTE</strong><br/>
-This is meant to be a lightweight port with modifications, do not initiate a full <code>post-install</code>._</p>
+<em>This is meant to be a lightweight port with modifications, do not initiate a full <code>post-install</code>.</em></p>
 </blockquote>
 <ol>
 <li>Install <code>git</code>, and bootstrap the system using <code>git reset --hard</code> as described above.</li>
@@ -324,7 +324,7 @@ This is meant to be a lightweight port with modifications, do not initiate a ful
 </ul>
 </li>
 </ol>
-<p>See <a href="https://github.com/microsounds/atelier/raw/master/#termux-for-android">attached notes</a> for explanations of changes from a standard Linux environment.</p>
+<p>See <a href="#Termux-for-Android">attached notes</a> for explanations of changes from a standard Linux environment.</p>
 <h2>List of supported platforms<span id="List-of-supported-platforms"></span></h2>
 <p><strong>Full graphical shell environment</strong></p>
 <ul>
@@ -689,8 +689,8 @@ See <a href="https://github.com/microsounds/atelier/raw/master/.local/include/th
 <p>The prompt path will feature embedded <code>git</code> information provided by <a href="https://github.com/microsounds/atelier/raw/master/Scripts/git_status.sh"><code>path-gitstatus</code></a> highlighting the root of a <code>git</code> worktree and it’s status.</p>
 <p>Outside of <code>git</code> worktrees, the path component will be mangled by <a href="https://github.com/microsounds/atelier/raw/master/.local/lib/path-shorthand"><code>path-shorthand</code></a> and be truncated to the last <code>$PATH_WIDTH</code> characters <em>(default is 50)</em> for improved usability.</p>
 <h2>Termux for Android<span id="Termux-for-Android"></span></h2>
-<p>Single-user shell environment should work as expected on Termux without root access or changes to <code>$PREFIX/etc</code> with several caveats described below:</p>
-<p>Post-install scripts make these adjustments statically for existing scripts.</p>
+<p>Single-user shell environment should work as expected on Termux without root access or changes to <code>$PREFIX/etc</code> with several caveats described below.
+Post-install scripts make the following adjustments statically for existing scripts.</p>
 <h3>Standard file descriptors<span id="Standard-file-descriptors"></span></h3>
 <p>Shell scripts on Android systems without root access have no access to standard file descriptors <code>/dev/std{in,out,err}</code>, use <code>/proc/self/fd/{0,1,2}</code> instead.</p>
 <h3><code>ESC</code> sequences<span id="ESC-sequences"></span></h3>
@@ -975,12 +975,12 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-204.37KiB
+204.38KiB
 out of a total compressed git history size of
-744.63KiB.</em></p>
+749.76KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@49115936f409</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@65bb8a16315c</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>

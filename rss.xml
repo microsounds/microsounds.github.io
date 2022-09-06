@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 841, commit 5a266f7. “Termux: Removed $OLDPWD persistence between shells” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 61.0KiB then this document currently covers about 9.15% of all implemented features and behavior in this repository. This is just an [automated guess][1] [..]]]>
+<![CDATA[Revision No. 841, commit 67fcbff. “Termux: Removed $OLDPWD persistence between shells” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 61.0KiB then this document currently covers about 9.15% of all implemented features and behavior in this repository. This is just an [automated guess][1] [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
