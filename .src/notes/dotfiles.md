@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 839, commit `4d9ee3e`.**
+**Revision No. 840, commit `e50b33c`.**
 
-**"Termux: Changes for Android 11+, ssh-agent no longer daemonized"**
+**"Termux: Dropped termux-chroot for 5x improved performance"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *26.8KiB* in
+If this document is *27.9KiB* in
 size, and the approximate size of all comment lines of code is
 *61.0KiB* then this document
-currently covers about <b style="font-size: 130%;">8.79%</b>
+currently covers about <b style="font-size: 130%;">9.15%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -167,7 +167,6 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 
 ## Quick start on Termux for Android
 > **NOTE**<br/>
-> _Currently, only a basic shell environment in single-user mode is supported.<br/>
 > This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
@@ -176,9 +175,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
 	* Use `patch -p1 < ~/.termux/diff.patch` to restore changes if stash is lost.
 
-### Notes on Android 11 or later
-Many manufacturer distributions of Android since version 11 have become far more aggressive in pruning "phantom" processes (daemons) in the pursuit of battery life optimization.
-In order to prevent Android from prematurely pruning `ssh-agent` while multitasking, it is called as the parent process for the current shell.
+See [attached notes]({GIT_REMOTE}/atelier/raw/master/#Termux_for_Android) for explanations of changes from a standard Linux environment.
 
 ## List of supported platforms
 **Full graphical shell environment**
@@ -372,6 +369,28 @@ The prompt path will feature embedded `git` information provided by [`path-gitst
 
 Outside of `git` worktrees, the path component will be mangled by [`path-shorthand`]({GIT_REMOTE}/atelier/raw/master/.local/lib/path-shorthand) and be truncated to the last `$PATH_WIDTH` characters _(default is 50)_ for improved usability.
 
+## Termux for Android
+Single-user shell environment should work as expected on Termux without root access or changes to `$PREFIX/etc` with several caveats described below:
+
+Post-install scripts make these adjustments statically for existing scripts.
+
+### Standard file descriptors
+Shell scripts on Android systems without root access have no access to standard file descriptors `/dev/std{in,out,err}`, use `/proc/self/fd/{0,1,2}` instead.
+
+### Shell escapes in `sh`
+`\e` to insert shell escape literals works in some circumstances but not all, use `\33` when in doubt.
+
+### `$PREFIX`
+Previously, `termux-chroot` was used to ensure a FHS-compliant environment, but it introduces unacceptable performance drawbacks in my tests.
+
+Use Termux's own environment `$PREFIX` to refer to standard filesystem locations within scripts, e.g. `$PREFIX/tmp` which expands to `/data/data/com.termux/files/usr/tmp`
+
+### Background processes on Android 11 and later
+Many manufacturer distros of Android since version 11 have become far more aggressive in pruning "phantom" processes (daemons) in the pursuit of battery life optimization.
+In order to prevent Android from prematurely pruning `ssh-agent` while multitasking, it is called as the parent process for the current shell.
+
+Termux developers recommend their own non-standard startup method or running daemons in the foreground without forking and with wakelock acquired if you wish to run a long-running task.
+
 ## `cd`
 * The contents of `$OLDPWD` is preserved across `bash` sessions.
 * `cd` offers the following extensions:
@@ -508,7 +527,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime42.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime28.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -530,13 +549,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-203.09KiB
+204.28KiB
 out of a total compressed git history size of
-747.47KiB._
+743.79KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@91b01fa7cf6b</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@e8e0bc30707a</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -644,7 +663,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  808   Feb 13 2022 22:53 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
--rwxr-xr-x 1 3.2K   Aug 28 2022 22:58 rev. 24  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 3.3K   Sep  6 2022 09:31 rev. 25  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Feb 25 2022 18:12 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rwxr-xr-x 1  195   Dec 16 2021 07:15 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
@@ -660,7 +679,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  27K   Aug 28 2022 22:58 rev. 181 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  28K   Sep  6 2022 09:31 rev. 182 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sun, 28 Aug 2022 22:58:16 -0500 -->
+<!-- updated Tue, 6 Sep 2022 09:31:17 -0700 -->
