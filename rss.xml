@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Tue, 06 Sep 2022 12:08:38 -0700</lastBuildDate>
+<lastBuildDate>Sat, 10 Sep 2022 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -42,12 +42,12 @@
 <item>
 <title>On Copyleft and why I use GPLv3</title>
 <description>
-<![CDATA[ This is a short outline on guaranteeing creative freedom to users of your works through copyleft. Licensing of creative works is an extremely tiresome topic and I don’t want to put more thought into it than whatever is contained on this page. You can use the term “software” in place of “creative works” and it should have the same gist. I release my creative works under a strong [copyleft license][copyleft] with an attribution and sharealike requirement for several reasons— [..]]]>
+<![CDATA[ This is a short outline on guaranteeing creative freedom to users of your works through copyleft. Licensing of creative works is an extremely tiresome topic so I keep all my opinions on intellectual property law contained to this page. You can use the term “software” in place of “creative works” and it should have the same gist. I release my creative works under a strong [copyleft license][copyleft] with an attribution and sharealike requirement for several reasons— I want future [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/why-copyleft.htm">https://microsounds.github.io/notes/why-copyleft.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/why-copyleft.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/why-copyleft.htm</guid>
-<pubDate>Sat, 05 Feb 2022 00:00:00 -0800</pubDate>
+<pubDate>Sat, 10 Sep 2022 00:00:00 -0700</pubDate>
 </item>
 </channel>
 </rss>
