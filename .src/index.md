@@ -10,27 +10,41 @@
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
 I like ~~muted pastels,~~ starry night skies, people watching and the [unix][unix1] [programming][unix2] [environment][unix3].
-I like to have [this album][noise] in the background sometimes.
+
+<div class="aside right">
+
+*"I bet you have soft hands and have trouble in loud environments"*<br/>
+--- [/g/ post No.85561792](https://desuarchive.org/g/thread/85512771/#85561792)
+
+</div>
+
+The echoes of the old world I once loved and lost have grown dissonant and almost unrecognizable,
+and even though the world I used to know has all but bitrotted away,
+I can still make out the last remnants of those dreamlike days,
+the _sentimental microsounds_ and the [sweet nothings][noise] spared the ravages of time.
 
 More importantly, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
 Sometimes, I'll do this to force myself to try new things.
 
 <div class="right" style="filter: grayscale(65%); font-style: italic;">
 
-For example, this website,
-the superset of github flavored markdown I built up to author this site,
-and the static site generator I wrote that ties it all together were a result of me wanting to get into long form writing.
+I wanted to encourage others to share their knowledge, their lived experiences, dreams and desires through the low tech and pseudononymous nature of the free and open web.
+So I wrote a static site generator and rolled my own superset of markdown to author this site as my personal sandbox.
 
-That's the excuse I give myself, anyway.
-I don't actually care for long form writing,
-I just really like metaprogramming.
+I would be lying if I said I was interested in long form writing, I want to share what I like through the lens of metaprogramming and have fun doing it.
 
 It's a never-ending process.
 
-[![ico-scripts]({DOC_ROOT}/static/shimemiku/shime32.png)](notes/dotfiles.md "It's pretty fun though.")
+[![ico-scripts]({DOC_ROOT}/static/shimemiku/shime33.png)](notes/dotfiles.md "It's pretty fun though.")
 
+<!-- firefox renders this hr element above this entire floated div if not placed here -->
+<hr style="width: 70%;
+    border-style: line none none;
+    border-width: 5px;
+    color: #FFF;
+	transform: rotate(120deg);
+	opacity: 40%;"/>
 </div>
-<hr style="width: 40%;"/>
 
 ## Things I've made recently
 I have a collection of notes and writings located at [`/notes`](notes/index.md) if you're interested.
@@ -42,6 +56,7 @@ I have a collection of notes and writings located at [`/notes`](notes/index.md) 
 * _(2019–present)_ this website and its `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
 	* _<span id="gh-update">View the [`git` changelog]({GIT_REMOTE}/microsounds.github.io/commits) or [RSS feed]({SITE_HOSTNAME}/rss.xml) to see most recent changes.</span>_
 
+
 ## Old projects
 * _(2016–2017)_ ***[retired]*** lightweight futaba-like messageboard system in C — [`{AUTHOR}/akari-bbs`]({GIT_REMOTE}/akari-bbs)
 * _(2016)_ CPU-based tripcode generator for futaba-like imageboards — [`{AUTHOR}/tripforce`]({GIT_REMOTE}/tripforce)
@@ -52,11 +67,11 @@ I have a collection of notes and writings located at [`/notes`](notes/index.md) 
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
 
 <span class="blink" style="color: #FFFF00;"><em>New!</em></span> ---
-If you prefer e-mail or discord, my contact info is below.
-I'll congratulate you if your e-mail scraper can read POSIX shell command language.
+If you want to contact me directly over e-mail or discord, my contact info is below.
+It's not really a puzzle, just remove spaces and newlines and swap the place of every pair of characters and decode as `base64`, then `gzip`.
 
-<pre><code><span class="term-prompt">{AUTHOR}@effe</span>:<span class="term-dir">~</span>$ cat contact_info.txt | gzip | base64 -w 0 \
-&gt;	| sed -E -e 's/(.)(.)/\\\\2\\\\1/g' -e 's/.&#123;4&#125;/&amp; /g' | fold -s
+<pre><code><span class="term-prompt">{AUTHOR}@{PCNAME}</span>:<span class="term-dir">~</span>$ cat contact.txt | gzip -c | base64 -w 0 \
+&gt;	| sed -E -e 's/(.)(.)/\\\\2\\\\1/g' -e 's/.&#123;4&#125;/&amp; /g' | fold -s | tee <a href="{DOC_ROOT}/info.txt">info.txt</a>
 4HIs AAAA AACA 9AVP QhLA yGRC FXiq 5maF Alkp qcmX mJmb CWkm uFnQ xJbp qODS HuJr
 b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 </code></pre>
