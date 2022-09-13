@@ -212,8 +212,6 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	font-size: 14px;
 }
 .footnote-ref {
-	font-size: 15px; 
-	font-style: italic;
 	font-weight: bold;
 }
 

@@ -27,7 +27,7 @@ ACCENT_COLOR='#E2FAF9'
 THEMATIC_BREAK='<hr style="width: 40%;"/>'
 
 # copyright years
-YEAR="<del>2009</del> 2015-$(date '+%Y')"
+YEAR="2015-$(date '+%Y')"
 CC_BY_SA='https://creativecommons.org/licenses/by-sa/4.0'
 GNU_GPL='https://www.gnu.org/licenses/gpl-3.0'
 
