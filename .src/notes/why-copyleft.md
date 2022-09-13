@@ -1,5 +1,5 @@
 <!-- posted 2022/2/5 -->
-<!-- updated 2022/9/10 -->
+<!-- updated 2022/9/12 -->
 <span class="right">{UPDATED}</span>
 
 # On Copyleft and why I use GPLv3
@@ -47,15 +47,23 @@ Permissive licenses that require only attribution are as good as public domain w
 As it stands, you can take anything from the ~~public~~ permissive domain, and not be required to contribute the resultant derivative work back into the same ~~public~~ permissive domain for others to use and benefit from, like you did initially.
 Re-licensing permissive works allows you to subscribe to the ***"fuck you, got mine&trade;"*** school of creative freedom---the legal equivalent of pulling up the ladder up behind you.
 
-Copyleft licenses give you the legal framework to prevent this from happening to you or any future users of your works.
-
 <div style="border-right: 2px;" class="aside right">
 
-By far, the most prominent and egregious example is The Walt Disney Company
-who made their billions by [plundering public domain stories][disney] and characters throughout the 20th century
-and then successfully lobbied to extend US copyright protections well past the practical limits of human lifespan---so that no individual or company in this century could ever do the same with Disney's own works through the [Sonny Bono Act of 1998][sonny-bono].
+By far, the most prominent and egregious example is The Walt Disney Company,
+who, throughout the 20th century, made billions through the plundering and retelling of [public domain stories and characters][disney]. Then they paid it forward by successfully lobbying to extend US copyright protections through the [Sonny Bono Act of 1998][sonny-bono], pushing enforcable copyright terms well past the practical limits of human lifespan[^forever], all so no one in this century or the next could ever do the same with Disney's own cultural works.
+
+[^forever]:
+
+	As it turned out, extending copyright terms to "forever" wasn't considered constiutional,
+	and "forever minus one day" would be legally difficult to define, so they settled for 120 years for corporate authorship.
+
+	--- [October 7, 1998, Congressional Record Vol. 144, No. 139, pp. H9952][H9952]
+
+	[H9952]: https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1#:~:text=Actually%2C%20Sonny%20wanted,that%20next%20Congress.
 
 </div>
+
+Copyleft licenses give you the legal framework to prevent this from happening to you or any future users of your works.
 
 When you remove all legal barriers for re-licensing of creative works, [people will do so][minix], and some might feel so emboldened they won't even attribute you.
 
