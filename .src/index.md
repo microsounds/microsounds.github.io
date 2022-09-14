@@ -39,9 +39,8 @@ It's a never-ending process.
 
 <!-- firefox renders this hr element above this entire floated div if not placed here -->
 <hr style="width: 70%;
-    border-style: line none none;
-    border-width: 5px;
-    color: #FFF;
+	border-width: 5px;
+	color: #FFF;
 	transform: rotate(120deg);
 	opacity: 40%;"/>
 </div>
