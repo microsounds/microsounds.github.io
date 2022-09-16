@@ -39,6 +39,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=ydMYdtCCc4s', /* Kagamine Rin - noiz are nel (English & romaji subs) */
 	'https://www.youtube.com/watch?v=mYp77tBIYtE', /* ACID NEL 初音ミク */
 	'https://www.nicovideo.jp/watch/sm8378059', /* 【初音ミク】天の川【PV】*/
+	'https://www.youtube.com/watch?v=422VbQry9Aw', /* 初音ミク　ワタシアナライザー　3ＤＰＶ */
 	'https://www.youtube.com/watch?v=wI6fGWFJijw', /* MineCraft - Earth */
 	'https://www.youtube.com/watch?v=QBdbWhrviwU', /* "Smiley*Smiley" (Vocaloid Hatsune Miku Original Song) */
 	'https://www.youtube.com/watch?v=SKfumaKBYZY', /* I missed the last train! Stranded in #VRChat Hwabon Night world */
