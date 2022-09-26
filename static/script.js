@@ -27,7 +27,7 @@
 
 /*
  * refers to sound files in '{DOC_ROOT}/static/music'
- * Note: MediaSource supports Opus audio in WebM containers, but not Ogg.
+ * Note: MediaSource supports Opus streams in WebM containers, but not Ogg.
  * $ ffmpeg -i wind1.opus -c:a copy -vn wind1.webm
  */
 var loops = [
@@ -36,14 +36,19 @@ var loops = [
 	[ 'jealousy', 'Taquwami - Concealed Jealousy' ],
 	[ 'fmtowns1', 'FM-TOWNS　の世界　紹介ビデオ（1989年）' ],
 	[ 'fmtowns2', 'FM-TOWNS　の世界　紹介ビデオ（1989年）' ],
+	[ 'grand1', 'Taquwami - Long Kigo III' ],
+	[ 'grand2', 'Taquwami - Long Kigo III' ],
 	[ 'mirage1', 'Occult You - Mirage Love' ],
 	[ 'mirage2', 'Occult You - Mirage Love' ],
+	[ 'darkness', 'Mr. Kitty - After Dark (Astrophysics cover ft. 初音ミク)' ],
 	[ 'sparkle', 'livetune - Strobo Nights ft. 初音ミク' ],
 	[ 'synthetic', 'FM Skyline - neon paradise' ],
 	[ 'starlight', 'Pleasant Specter (快い亡霊) OST - Menu Screen' ],
 	[ 'eternity1', 'Tatsuro Yamashita - 僕の中の少年' ],
 	[ 'eternity2', 'Tatsuro Yamashita - 僕の中の少年' ],
-	[ 'watashi', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
+	[ 'watashi1', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
+	[ 'watashi2', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
+	[ 'watashi3', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
 	[ 'touch1', 'imprintafter - Tell Me Baby (ft. stillsound)' ],
 	[ 'touch2', 'imprintafter - Tell Me Baby (ft. stillsound)' ],
 	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
@@ -51,7 +56,8 @@ var loops = [
 	[ 'leisure1', 'LamazeP - Swimsuit ft. 初音ミク' ],
 	[ 'leisure2', 'LamazeP - Swimsuit ft. 初音ミク' ],
 	[ 'kimochi', 'TeddyLoid - ME!ME!ME! ft. daoko' ],
-	[ 'waiting', 'Omori OST -  Snow Forest/A Single Flower Blooms' ],
+	[ 'pipo1', 'TeddyLoid - Pipo Password' ],
+	[ 'waiting', 'OMORI Sound Team -  Snow Forest/A Single Flower Blooms' ],
 	[ 'wist', 'Breakbot - Back for More' ],
 	[ 'iridescent', 'Occult You - Transition' ],
 	[ 'decay', 'LOONA - Butterfly' ],
@@ -73,7 +79,7 @@ function is_compatible() {
 
 function setup_bgm() {
 	/* constants */
-	var duration = 30.0;
+	var duration = 60.0;
 	var gc_duration = 2 * duration;
 	var CUT_OFF = 0.01;
 
