@@ -56,6 +56,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=-DnrPwD-fus', /* CVLTVRΣ - ☯TempleＧｏｌｄ☯ */
 	'https://www.youtube.com/watch?v=jHMi2OJU06k', /* Laserdisc Visions - Alien TV (MV) */
 	'https://www.youtube.com/watch?v=6CPU2aKDWoo', /* 【初音ミク - Hatsune Miku】Far Away【Add Up Remix】*/
+	'https://www.youtube.com/watch?v=6c2E6wiMIck', /* Hatsune Miku - La gata bajo la lluvia (Cover Japones) */
 	'https://www.youtube.com/watch?v=DPsccKjAf2I', /* Fuji Grid TV - Prism Genesis (VISUAL ALBUM) */
 	'https://www.youtube.com/watch?v=5RaDIBXkU3U', /* Japan Computer Graphics Lab (1984) */
 	'https://www.youtube.com/watch?v=QDsDOlfz-QU', /* pae & sarah */
