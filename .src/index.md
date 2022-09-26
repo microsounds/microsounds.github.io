@@ -13,7 +13,7 @@ I like ~~muted pastels,~~ starry night skies, people watching and the [unix][uni
 
 <div class="aside right">
 
-*"I bet you have soft hands and have trouble in loud environments"*<br/>
+"I bet you have soft hands and have trouble in loud environments"<br/>
 --- [/g/ post No.85561792](https://desuarchive.org/g/thread/85512771/#85561792)
 
 </div>
@@ -31,11 +31,18 @@ Sometimes, I'll do this to force myself to try new things.
 I wanted to encourage others to share their knowledge, their lived experiences, dreams and desires through the low tech and pseudononymous nature of the free and open web.
 So I wrote a static site generator and rolled my own superset of markdown to author this site as my personal sandbox.
 
+<div class="aside">
+
+"This is a website for a person who is nostalgic for the past. They remember fondly the world they used to know, and although it has all but disappeared, they can still make out the last remnants of it. They want to share their memories with others who may feel the same way and create a community of like-minded people." <br/>
+--- **OpenAI GPT-3** after being [prompt injected](https://simonwillison.net/2022/Sep/12/prompt-injection/) with this website.
+
+</div>
+
 I would be lying if I said I was interested in long form writing, I want to share what I like through the lens of metaprogramming and have fun doing it.
 
 It's a never-ending process.
 
-[![ico-scripts]({DOC_ROOT}/static/shimemiku/shime33.png)](notes/dotfiles.md "It's pretty fun though.")
+[![ico-scripts]({DOC_ROOT}/static/shimemiku/miku.gif)](notes/dotfiles.md "It's pretty fun though.")
 
 <!-- firefox renders this hr element above this entire floated div if not placed here -->
 <hr style="width: 70%;
