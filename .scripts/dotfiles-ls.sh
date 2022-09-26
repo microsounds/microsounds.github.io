@@ -37,7 +37,7 @@ coverage="${coverage%??}%"
 {
 	cat <<- EOF
 		# Selected documentation and usage notes for my dotfiles
-		**Revision No. $ver, commit \`$hash\`.**
+		**Revision No. <b style="font-size: 130%">$ver</b>, commit \`$hash\`.**
 
 		**"$mesg"**
 
