@@ -6,9 +6,9 @@ This is a [`kagami`][kagami] template and accompanying source code that renders 
 This site aims for **polyglot HTML5** compliance, a robust well-formed subset of HTML5 and XHTML as defined by [W3C][polyglot] and [WHATWG][polyglot2] for more rigorous syntax validation.
 This is sometimes referred to as XHTML5.
 
-Documents should render identically when served as `text/html` or `application/xhtml+xml`.
-In practice, modern browsers will render the stylesheet last on webpages served as XHTML,
-flashing an unstyled page on every page load which browser caching does not seem to fix.
+Documents should render identically when served as `text/html` or `application/xhtml+xml` on the last 2 relevant web browsers, Chromium and Firefox.
+~~In practice, Chromium-based browsers will render the stylesheet last on webpages served as XHTML,
+flashing an unstyled page on every page load which browser caching does not seem to fix.~~ I haven't noticed this in a while.
 
 You can verify this yourself using `busybox httpd` or using [Schneegan's XHTML Proxy][proxy].
 Use of modern features such as `audio` elements prevents validating as "true" [XHTML 1.0 Strict][xml].
@@ -29,7 +29,7 @@ Normally, I run `kagami` and commit build artifacts in `master`.
 > This part is not kept up to date.
 
 Scripts in `.kagami/macros` and `.scripts/` have hard dependencies on my userland environment located [here][atelier],
-and operate under the assumption that you are me and you have a copy of all my dotfiles sitting in your `$HOME`
+and operate under the assumption that you are me and you (me) have a copy of all my dotfiles sitting in your `$HOME`
 * Some examples include:
 	* `.kagami/macros` expects my `~/.local/lib/moonphase-date` — timestamp conversion routines, requires GNU `date`, `bc`
 	* `.scripts/dotfiles-ls.sh` expects every single file in my userland environment to properly build `notes/dotfiles.md`
