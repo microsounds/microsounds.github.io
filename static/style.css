@@ -10,6 +10,9 @@
  */
 
 html {
+	/* preferred fonts go for typical linux, windows and macOS in that order */
+	font-family: "Liberation Serif", "Times New Roman",	"Times", serif, "Dejima Mincho";
+
 	min-height: 100%;
 	background-color: #639183; /* fallback */
 	background:
@@ -54,7 +57,6 @@ html {
 	background-color: #647975; /* fallback */
 	background-color: #0000004D; /* rgba 30% transparency */
 	color: #FFFFFF;
-	font-family: "Liberation Serif", "Times New Roman", serif, "Dejima Mincho"; 
 	text-shadow: 2px 1px #646464;
 }
 
