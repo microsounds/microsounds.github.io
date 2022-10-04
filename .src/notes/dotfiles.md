@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. 844, commit `73370c3`.**
+**Revision No. <b style="font-size: 130%">845</b>, commit `81c4b29`.**
 
-**"grep: Rewrote legacy grep aliases as symlinks"**
+**"Post-install: Ensure git merges will apply in a patched state"**
 
 {TOC}
 
@@ -526,7 +526,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime23.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime37.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -548,13 +548,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-204.61KiB
+204.63KiB
 out of a total compressed git history size of
-752.38KiB._
+748.82KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@ef703fd16633</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@bedc24057031</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -649,7 +649,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.7K   Mar 21 2022 23:26 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  687   Mar 11 2022 22:34 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
--rwxr-xr-x 1 2.3K   Mar 21 2022 23:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
+-rwxr-xr-x 1 2.3K   Oct  4 2022 16:15 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
 -rwxr-xr-x 1  568   Aug 28 2021 14:32 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1 1022   Mar 21 2022 23:26 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
@@ -684,4 +684,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sun, 25 Sep 2022 23:41:58 -0700 -->
+<!-- updated Tue, 4 Oct 2022 16:15:31 -0700 -->

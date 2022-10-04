@@ -34,8 +34,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. 844, commit <code>73370c3</code>.</strong></p>
-<p><strong>“grep: Rewrote legacy grep aliases as symlinks”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">845</b>, commit <code>81c4b29</code>.</strong></p>
+<p><strong>“Post-install: Ensure git merges will apply in a patched state”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -125,11 +125,11 @@ of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌕 Sun, Sep 25th, 2022.</p>
+<p>Last updated 🌘 Tue, Oct 4th, 2022.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime23.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime37.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -975,12 +975,12 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-204.61KiB
+204.63KiB
 out of a total compressed git history size of
-752.38KiB.</em></p>
+748.82KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
-<pre><code><span class="term-prompt">root@ef703fd16633</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@bedc24057031</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -1075,7 +1075,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.7K   Mar 21 2022 23:26 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  687   Mar 11 2022 22:34 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
--rwxr-xr-x 1 2.3K   Mar 21 2022 23:26 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
+-rwxr-xr-x 1 2.3K   Oct  4 2022 16:15 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
 -rwxr-xr-x 1  568   Aug 28 2021 14:32 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1 1022   Mar 21 2022 23:26 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
@@ -1110,7 +1110,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sun, 25 Sep 2022 23:41:58 -0700 -->
+<!-- updated Tue, 4 Oct 2022 16:15:31 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
