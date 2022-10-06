@@ -55,6 +55,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | AMD Radeon R7 250 | 2013 | 1181 | |
 | AMD Radeon R7 430 | 2017 | 1200 | OEM only. |
 | AMD Radeon Pro WX 2100 | 2017 | 1581 | Workstation card. |
+| Nvidia Quadro P400 | 2018 | 1586 | Workstation card. |
 | <span class="highlight">AMD Radeon Vega 8</span> | 2018 | 1596 | AMD Ryzen 3 APU integrated graphics. |
 | AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
 | <span class="highlight">AMD Radeon Vega RX 11</span> | 2018 | 2134 | AMD Ryzen 5 APU integrated graphics. |
@@ -67,6 +68,7 @@ In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe sl
 | Nvidia GeForce GTX 750 | 2014 | 3405 | MQX made a low profile single-slot version. |
 | Nvidia T400 | 2021 | 3488 | Workstation card. |
 | Nvidia Quadro P620 | 2018 | 3639 | Workstation card. |
+| Nvidia Quadro P640 | 2018 | 3624 | Workstation card. |
 | AMD Radeon Pro WX 4100 | 2017 | 3758 | Workstation card. |
 | Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
 | Nvidia Quadro T1000 | 2019 | 6484 | Workstation card. |
