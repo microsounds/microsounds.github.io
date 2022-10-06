@@ -34,9 +34,9 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <!-- created 2020/10/22 -->
-<!-- updated 2022/4/26 -->
+<!-- updated 2022/10/6 -->
 <h1>List of low profile GPUs for small form factor PCs (SFFs)<span id="List-of-low-profile-GPUs-for-small-form-factor-PCs-SFFs"></span></h1>
-<p>Last updated 🌔 Tue, Apr 26th, 2022.</p>
+<p>Last updated 🌘 Thu, Oct 6th, 2022.</p>
 <blockquote>
 <p><strong>NOTICE</strong><br/><br/>
 <em>I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market.</em></p>
@@ -50,7 +50,7 @@ Cards older than this are most likely worse than your onboard graphics.
 <p>PCIe cards with power requirements below 75W can be powered from the PCIe slot alone and don’t require additional PSU power.</p>
 <p>These cards are generally not well promoted, nearly all are discontinued, some models and configurations may be quite rare in your part of the world.
 However, you might still be able to find new-old stock online or where you live.
-~~Don’t be afraid to buy a used card if the price is acceptable, you’re not likely to buy a heat-damaged GPU from an overclocking or cryptomining enthusiast as these demographics aren’t likely to buy weak SFF cards.~~</p>
+<del>Don’t be afraid to buy a used card if the price is acceptable, you’re not likely to buy a heat-damaged GPU from an overclocking or cryptomining enthusiast as these demographics aren’t likely to buy weak SFF cards.</del></p>
 <p>In order to illustrate that many users can potentially avoid the present-day GPU supply hell, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
 This list also includes workstation cards for completeness.
 They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming.
@@ -64,51 +64,271 @@ You may very well not be satisfied with the performance gains compared to publis
 In the case of many late model <a href="https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7">Dell Optiplex SFFs</a>, they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against the power supply, unable to accomodate most modern cards which are 2 slots at the bare minimum.
 In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of at least 10% on a GTX 1050/1650, potentially more on more powerful cards.</p>
 <h1>1-slot Low Profile under 75W<span id="1-slot-Low-Profile-under-75W"></span></h1>
-<p>| Name | Released | PassMark G3D Score | Remarks |
-| :– | :–: | :–: | :– |
-| Nvidia GeForce 210 | 2009 | 98 | ~~Still sold new~~, worse than integrated. |
-| AMD Radeon HD 8490 | 2014 | 270 | OEM only. |
-| AMD Radeon R5 240 | 2014 | 516 | OEM only. |
-| Nvidia GeForce GT 710 | 2014 | 636 | Zotac, Asus, VisionTek made passively cooled versions. |
-| <span class="highlight">Intel HD Graphics 4600</span> | 2013 | 640 | Intel Core i5 Haswell-era integrated graphics. |
-| Nvidia GeForce GT 730 | 2014 | 794 | Zotac made passively cooled versions. |
-| Nvidia GeForce GT 635 | 2013 | 826 | |
-| AMD Radeon R7 240 | 2013 | 836 | |
-| <span class="highlight">AMD Radeon Vega 3</span> | 2018 | 886 | AMD Athlon APU integrated graphics. |
-| AMD Radeon HD 8570 | 2013 | 1001 | OEM only. |
-| Nvidia GeForce GT 640 | 2011 | 1153 | |
-| AMD Radeon R7 250 | 2013 | 1181 | |
-| AMD Radeon R7 430 | 2017 | 1200 | OEM only. |
-| AMD Radeon Pro WX 2100 | 2017 | 1581 | Workstation card. |
-| Nvidia Quadro P400 | 2018 | 1586 | Workstation card. |
-| <span class="highlight">AMD Radeon Vega 8</span> | 2018 | 1596 | AMD Ryzen 3 APU integrated graphics. |
-| AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
-| <span class="highlight">AMD Radeon Vega RX 11</span> | 2018 | 2134 | AMD Ryzen 5 APU integrated graphics. |
-| Nvidia GeForce GTX 745 | 2014 | 2205 | OEM only. |
-| AMD Radeon RX 550 | 2017 | 2408 | Yeston, MSI, Sapphire, XFX made low profile versions. |
-| AMD Radeon Pro WX 3200 | 2019 | 2560 | Workstation card. |
-| Nvidia GeForce GT 1030 | 2017 | 2607 | Asus, EVGA, MSI made passively cooled versions. |
-| AMD Radeon Pro WX 3100 | 2017 | 2818 | Workstation card. |
-| Nvidia Quadro K1200 | 2015 | 2861 | Workstation card. |
-| Nvidia GeForce GTX 750 | 2014 | 3405 | MQX made a low profile single-slot version. |
-| Nvidia T400 | 2021 | 3488 | Workstation card. |
-| Nvidia Quadro P620 | 2018 | 3639 | Workstation card. |
-| Nvidia Quadro P640 | 2018 | 3624 | Workstation card. |
-| AMD Radeon Pro WX 4100 | 2017 | 3758 | Workstation card. |
-| Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
-| Nvidia Quadro T1000 | 2019 | 6484 | Workstation card. |
-| Nvidia T600 | 2021 | 6766 | Workstation card. |
-| AMD Radeon RX 6400 | 2022 | 6966 | Available from Sapphire. |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Name</th>
+<th style="text-align: center">Released</th>
+<th style="text-align: center">PassMark G3D Score</th>
+<th style="text-align: left">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">Nvidia GeForce 210</td>
+<td style="text-align: center">2009</td>
+<td style="text-align: center">98</td>
+<td style="text-align: left"><del>Still sold new</del>, worse than integrated.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon HD 8490</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">270</td>
+<td style="text-align: left">OEM only.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon R5 240</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">516</td>
+<td style="text-align: left">OEM only.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GT 710</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">636</td>
+<td style="text-align: left">Zotac, Asus, VisionTek made passively cooled versions.</td>
+</tr>
+<tr>
+<td style="text-align: left"><span class="highlight">Intel HD Graphics 4600</span></td>
+<td style="text-align: center">2013</td>
+<td style="text-align: center">640</td>
+<td style="text-align: left">Intel Core i5 Haswell-era integrated graphics.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GT 730</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">794</td>
+<td style="text-align: left">Zotac made passively cooled versions.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GT 635</td>
+<td style="text-align: center">2013</td>
+<td style="text-align: center">826</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon R7 240</td>
+<td style="text-align: center">2013</td>
+<td style="text-align: center">836</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left"><span class="highlight">AMD Radeon Vega 3</span></td>
+<td style="text-align: center">2018</td>
+<td style="text-align: center">886</td>
+<td style="text-align: left">AMD Athlon APU integrated graphics.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon HD 8570</td>
+<td style="text-align: center">2013</td>
+<td style="text-align: center">1001</td>
+<td style="text-align: left">OEM only.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GT 640</td>
+<td style="text-align: center">2011</td>
+<td style="text-align: center">1153</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon R7 250</td>
+<td style="text-align: center">2013</td>
+<td style="text-align: center">1181</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon R7 430</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">1200</td>
+<td style="text-align: left">OEM only.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon Pro WX 2100</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">1581</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia Quadro P400</td>
+<td style="text-align: center">2018</td>
+<td style="text-align: center">1586</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left"><span class="highlight">AMD Radeon Vega 8</span></td>
+<td style="text-align: center">2018</td>
+<td style="text-align: center">1596</td>
+<td style="text-align: left">AMD Ryzen 3 APU integrated graphics.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon HD 7750</td>
+<td style="text-align: center">2012</td>
+<td style="text-align: center">1676</td>
+<td style="text-align: left">VisionTek low profile card.</td>
+</tr>
+<tr>
+<td style="text-align: left"><span class="highlight">AMD Radeon Vega RX 11</span></td>
+<td style="text-align: center">2018</td>
+<td style="text-align: center">2134</td>
+<td style="text-align: left">AMD Ryzen 5 APU integrated graphics.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GTX 745</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">2205</td>
+<td style="text-align: left">OEM only.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon RX 550</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">2408</td>
+<td style="text-align: left">Yeston, MSI, Sapphire, XFX made low profile versions.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon Pro WX 3200</td>
+<td style="text-align: center">2019</td>
+<td style="text-align: center">2560</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GT 1030</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">2607</td>
+<td style="text-align: left">Asus, EVGA, MSI made passively cooled versions.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon Pro WX 3100</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">2818</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia Quadro K1200</td>
+<td style="text-align: center">2015</td>
+<td style="text-align: center">2861</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GTX 750</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">3405</td>
+<td style="text-align: left">MQX made a low profile single-slot version.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia T400</td>
+<td style="text-align: center">2021</td>
+<td style="text-align: center">3488</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia Quadro P620</td>
+<td style="text-align: center">2018</td>
+<td style="text-align: center">3639</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia Quadro P640</td>
+<td style="text-align: center">2018</td>
+<td style="text-align: center">3624</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon Pro WX 4100</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">3758</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia Quadro P1000</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">4345</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia Quadro T1000</td>
+<td style="text-align: center">2019</td>
+<td style="text-align: center">6484</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia T600</td>
+<td style="text-align: center">2021</td>
+<td style="text-align: center">6766</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon RX 6400</td>
+<td style="text-align: center">2022</td>
+<td style="text-align: center">6966</td>
+<td style="text-align: left">Available from Sapphire.</td>
+</tr>
+</tbody>
+</table>
 <h1>2-slot Low Profile under 75W<span id="2-slot-Low-Profile-under-75W"></span></h1>
-<p>| Name | Released | PassMark G3D Score | Remarks |
-| :– | :–: | :–: | :– |
-| AMD Radeon RX 560 | 2017 | 3672 | Available from MSI, VisionTek (workstation 1-slot card) |
-| Nvidia GeForce GTX 750 Ti | 2014 | 3923 | MQX made a low profile single-slot version. |
-| AMD Radeon RX 460 | 2016 | 4034 | Available from MSI. |
-| Nvidia GeForce GTX 950 | 2015 | 5399 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
-| Nvidia GeForce GTX 1050 Ti | 2016 | 6398 | ASL made a <a href="https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag">1-slot version</a> for the Chinese market. |
-| Nvidia GeForce GTX 1650 | 2019 | 7866 | ASL made a <a href="https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife">1-slot version</a> for the Chinese market. |
-| Nvidia RTX A2000 | 2021 | 12988 | Workstation card. |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Name</th>
+<th style="text-align: center">Released</th>
+<th style="text-align: center">PassMark G3D Score</th>
+<th style="text-align: left">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">AMD Radeon RX 560</td>
+<td style="text-align: center">2017</td>
+<td style="text-align: center">3672</td>
+<td style="text-align: left">Available from MSI, VisionTek (workstation 1-slot card)</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GTX 750 Ti</td>
+<td style="text-align: center">2014</td>
+<td style="text-align: center">3923</td>
+<td style="text-align: left">MQX made a low profile single-slot version.</td>
+</tr>
+<tr>
+<td style="text-align: left">AMD Radeon RX 460</td>
+<td style="text-align: center">2016</td>
+<td style="text-align: center">4034</td>
+<td style="text-align: left">Available from MSI.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GTX 950</td>
+<td style="text-align: center">2015</td>
+<td style="text-align: center">5399</td>
+<td style="text-align: left">Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GTX 1050 Ti</td>
+<td style="text-align: center">2016</td>
+<td style="text-align: center">6398</td>
+<td style="text-align: left">ASL made a <a href="https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag">1-slot version</a> for the Chinese market.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce GTX 1650</td>
+<td style="text-align: center">2019</td>
+<td style="text-align: center">7866</td>
+<td style="text-align: left">ASL made a <a href="https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife">1-slot version</a> for the Chinese market.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia RTX A2000</td>
+<td style="text-align: center">2021</td>
+<td style="text-align: center">12988</td>
+<td style="text-align: left">Workstation card.</td>
+</tr>
+</tbody>
+</table>
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">

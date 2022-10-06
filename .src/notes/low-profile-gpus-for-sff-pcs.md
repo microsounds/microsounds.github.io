@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2022/4/26 -->
+<!-- updated 2022/10/6 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
