@@ -1,6 +1,5 @@
 http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
-http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://bugs.chromium.org/p/chromium/issues/detail?id=353072
