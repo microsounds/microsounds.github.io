@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2022/7/4 -->
+<!-- updated 2022/10/8 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -68,6 +68,7 @@ This gallery is automatically generated, click images to see more user-submitted
 
 var figs = [
 	/* ids prepended with x are knockoffs */
+	[ '1251026', 'bandai q posket miku type a' ],
 	[ '944728', 'furyu miku bicute bunnies' ],
 	[ '1311067', 'miku artist masterpiece princess alice' ],
 	[ '1268909', 'miku artist masterpiece 14th anniv.' ],
