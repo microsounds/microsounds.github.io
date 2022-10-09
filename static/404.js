@@ -26,6 +26,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=1uUTM4OMNMk', /* PROOF I am 日本人  ラムネ好き！ Pretty intense animation */
 	'https://www.youtube.com/watch?v=YZfwXt8naAc', /* Perfume - Perfume */
 	'https://www.youtube.com/watch?v=dFDiekVNy6I', /* モバイリ：センセーション（修正版）*/
+	'https://www.youtube.com/watch?v=Y5bean7G1a8', /* Hatsune Miku - Boom, Boom, Boom, Boom!! (Cover) */
 	'https://www.youtube.com/watch?v=vnhQ4yBH5ww', /* 【鏡音リン】 moon 【VOCALOIDカバー】 */
 	'https://www.youtube.com/watch?v=4tuiyCLzrsQ', /* 【Miku Miku Dance】 vocaloid love and joy */
 	'https://www.youtube.com/watch?v=0IkovhJYHUg', /* Hatsune Miku - I am programmer's song ( full song) */
