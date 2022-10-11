@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">846</b>, commit `fb9afbf`.**
+**Revision No. <b style="font-size: 130%">847</b>, commit `52de66f`.**
 
-**"Termux: Workaround to make full use of display in landscape"**
+**"Added some utility scripts"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *27.9KiB* in
 size, and the approximate size of all comment lines of code is
-*61.5KiB* then this document
-currently covers about <b style="font-size: 130%;">9.08%</b>
+*62.0KiB* then this document
+currently covers about <b style="font-size: 130%;">9.01%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -526,7 +526,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime28.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime19.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -548,13 +548,13 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-204.73KiB
+205.80KiB
 out of a total compressed git history size of
-754.42KiB._
+750.69KiB._
 
 # Complete source listing
 
-<pre><code><span class="term-prompt">root@e243ccaeab52</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
+<pre><code><span class="term-prompt">root@737c1bea8d3e</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 8.4K   May 12 2022 02:36 rev. 130 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.1K   Jun 29 2022 14:52 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
@@ -605,12 +605,14 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
 -rwxr-xr-x 1  423   Jan  7 2022 18:03 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/pprofiler">.local/bin/pprofiler</a>
+-rwxr-xr-x 1  907   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/psp-h264">.local/bin/psp-h264</a>
 -rwxr-xr-x 1  731   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/qr">.local/bin/qr</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1 1.0K   Dec  6 2021 00:36 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scramble">.local/bin/scramble</a>
 -rwxr-xr-x 1  155   Oct 16 2020 13:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
 -rwxr-xr-x 1  661   Dec 15 2021 19:58 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
+-rwxr-xr-x 1  192   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
 lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/bin/xwin-decor -> ../../Scripts/xwin_decor.sh
 lrwxrwxrwx 1   26   (symbolic link)   rev. 0   .local/bin/xwin-statusd -> ../../Scripts/wm_status.sh
@@ -684,4 +686,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 5 Oct 2022 20:49:22 -0700 -->
+<!-- updated Mon, 10 Oct 2022 21:50:00 -0700 -->
