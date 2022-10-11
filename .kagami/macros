@@ -18,7 +18,7 @@ unset DOC_ROOT
 AUTHOR='microsounds'
 PCNAME='shami'
 SITE_TITLE='sentimental µsounds'
-SITE_DESCRIPTION='the echoes of time stand still'
+SITE_DESCRIPTION="unix and post-ironic anemoia, µsounds' starlit diary"
 SITE_HOSTNAME='https://microsounds.github.io'
 GIT_REMOTE='https://github.com/microsounds'
 ACCENT_COLOR='#E2FAF9'

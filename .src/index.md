@@ -59,7 +59,7 @@ I have a collection of notes and writings located at [`/notes`](notes/index.md) 
 	* _My self-contained and unabridged collection of dotfiles and scripts for Debian GNU/Linux._
 * _(2020–present)_ static microblog processor in POSIX shell — [`{AUTHOR}/kagami`]({GIT_REMOTE}/kagami)
 	* _A user-extensible macro preprocessor and static webpage generator for blog sites like this one._
-* _(2019–present)_ this website and its `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
+* _(2018–present)_ this website and its `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
 	* _<span id="gh-update">View the [`git` changelog]({GIT_REMOTE}/microsounds.github.io/commits) or [RSS feed]({SITE_HOSTNAME}/rss.xml) to see most recent changes.</span>_
 
 

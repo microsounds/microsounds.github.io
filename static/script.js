@@ -25,6 +25,34 @@
  * javascript code in this page.
  */
 
+/* randomly selected subtitle text */
+var platitudes = [
+	'the echoes of time stand still',
+	'なんて<b>好き</b>になったの？',
+	'comfort is a color vt102 emulator',
+	'why did i come to like you?',
+	'returning to the aether in slow motion',
+	'n-no, it\'s supposed to look like that',
+	'the last love song at the end of time',
+	'can i feel nostalgic for a time i never knew?',
+	'post-post-post-ironic internet anemoia',
+	'sweet nothings i don\'t understand',
+	'i shiver from thrills i\'ve never known',
+	'hello. lucky star ruined my life.',
+	'dancing all night, staying up all night',
+	'i wanna refresh the catalog all night',
+	'nothing exciting ever happens',
+	'aqua is still my favorite color',
+	'aqua, slate and CDE salmon pink',
+	'iridescent moonlit haze at 3am',
+	(new Date().getDay() != 1) ? 'do you like flower music?' :
+		'hhhey guess what? Itdst MIKU MONDAY!!!',
+	'synthesized love songs from the future',
+	'lurid and indecent memories',
+	'google doesn\'t go this far back',
+	'AI generated lyrical nothings',
+];
+
 /*
  * refers to sound files in '{DOC_ROOT}/static/music'
  * Note: MediaSource supports Opus streams in WebM containers, but not Ogg.
@@ -320,8 +348,19 @@ function linkify_images() {
 	}
 }
 
+function random_subtitle() {
+	if (new Date().getMonth() == 7 && new Date().getDate() == 31)
+		document.getElementById('subtitle').innerHTML =
+			'happy ' + (new Date().getYear() - (2007 - 1900)) + 'th anniversary, miku!';
+	else
+		document.getElementById('subtitle').innerHTML =
+			platitudes[Math.floor(Math.random() * platitudes.length)];
+
+}
+
 window.addEventListener('DOMContentLoaded', function() {
 	/* persist playback settings */
+	random_subtitle();
 	setup_bgm();
 	if (document.cookie.includes('bgm=1'))
 		play();
