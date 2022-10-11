@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sat, 08 Oct 2022 00:00:00 -0700</lastBuildDate>
+<lastBuildDate>Mon, 10 Oct 2022 21:50:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 846, commit fb9afbf. “Termux: Workaround to make full use of display in landscape” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 61.5KiB then this document currently covers about 9.08% of all implemented features and behavior in this repository. This is [..]]]>
+<![CDATA[Revision No. 847, commit 52de66f. “Added some utility scripts” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 62.0KiB then this document currently covers about 9.01% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Wed, 05 Oct 2022 20:49:22 -0700</pubDate>
+<pubDate>Mon, 10 Oct 2022 21:50:00 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
