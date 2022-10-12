@@ -131,8 +131,7 @@ b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 </script>
 
 <!-- extended reading on unix and adjacent topics -->
-<!-- [unix]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf -->
-[unix1]: https://files.catbox.moe/gn20dj.pdf
+[unix1]: http://emulator.pdp-11.org.ru/misc/1978.07_-_Bell_System_Technical_Journal.pdf
        "Bell System Technical Journal Vol. 57, No. 6, Part 2, pp. 1905- (July-Aug. 1978), Dennis Ritchie, Ken Thompson"
 [unix2]: http://files.catwell.info/misc/mirror/the-unix-programming-environment-kernighan-pike.pdf
        "The Unix Programming Environment (1984), Brian Kernighan, Rob Pike"
