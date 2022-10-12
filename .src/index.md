@@ -62,12 +62,16 @@ I have a collection of notes and writings located at [`/notes`](notes/index.md) 
 * _(2018–present)_ this website and its `kagami` template — [`{AUTHOR}/microsounds.github.io`]({GIT_REMOTE}/microsounds.github.io)
 	* _<span id="gh-update">View the [`git` changelog]({GIT_REMOTE}/microsounds.github.io/commits) or [RSS feed]({SITE_HOSTNAME}/rss.xml) to see most recent changes.</span>_
 
-
 ## Old projects
 * _(2016–2017)_ ***[retired]*** lightweight futaba-like messageboard system in C — [`{AUTHOR}/akari-bbs`]({GIT_REMOTE}/akari-bbs)
 * _(2016)_ CPU-based tripcode generator for futaba-like imageboards — [`{AUTHOR}/tripforce`]({GIT_REMOTE}/tripforce)
 * _(2016)_ ***[retired]*** command-line utility for scraping Bandcamp albums — [`{AUTHOR}/bc-dl`]({GIT_REMOTE}/bc-dl)
 * _(2016)_ command-line stack-based RPN calculator — [`{AUTHOR}/hpsh`]({GIT_REMOTE}/hpsh)
+
+## Even older
+* _(2012-2015)_ <span class="blink" style="color: #FFA5B5;"><em>NSFW!</em></span>
+a collection of _"About Mes"_ previously published on Last.fm
+— [`/misc/last-fm.htm`](/misc/last-fm.htm)
 
 ## Contact me
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
