@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Tue, 11 Oct 2022 16:25:26 -0700</lastBuildDate>
+<lastBuildDate>Sun, 16 Oct 2022 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -32,12 +32,12 @@
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
 <description>
-<![CDATA[ Last updated . NOTICE I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market. Most GPU marketing materials will use the term LP or “low profile” to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases. These are ideal for use in space-saving PCs, small [..]]]>
+<![CDATA[ Last updated . Most GPU marketing materials will use the term LP or “low profile” to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases. As far as discrete graphics go, these are the most space and energy-efficient GPUs that money can buy, ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</guid>
-<pubDate>Thu, 06 Oct 2022 00:00:00 -0700</pubDate>
+<pubDate>Sun, 16 Oct 2022 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>On Copyleft and why I use GPLv3</title>

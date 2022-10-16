@@ -1,42 +1,52 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2022/10/6 -->
+<!-- updated 2022/10/16 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
-
-> **NOTICE**<br/><br/>
-> _I cannot recommend going the SFF route at this time, or even the discrete GPU route in general, every worthwhile card on this list has skyrocketed in price on the used market._
 
 ![img](assets/low_profile_gpu.jpg)
 
 Most GPU marketing materials will use the term **LP** or **"low profile"** to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
-These are ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors where size is a constraining factor.
+As far as discrete graphics go, these are the most space and energy-efficient GPUs that money can buy, ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors where size and/or power is a constraining factor.
+Low profile PCIe cards with power requirements below 75W can be powered from the PCIe slot alone and do not require require additional PSU power connections.
 
-***This is a shortlist of common, rare and/or discontinued low profile 75W PCIe GPUs up to 2 slots wide introduced since 2013.***
+{TOC}
+
+***This is a reference list of common, rare and/or discontinued low profile 75W PCIe GPUs up to 2 slots wide introduced since 2013.***
 Cards older than this are most likely worse than your onboard graphics.
 _Cards older than **2014** may have their driver support discontinued by the vendor, check compatibility with your operating system before purchasing._
+<hr/>
 
-PCIe cards with power requirements below 75W can be powered from the PCIe slot alone and don't require additional PSU power.
+## Notes on upgrading an existing prebuilt desktop PC
+> **NOTE**<br/>
+> _This was written before September 2020, this may no longer be the appealing entry-level gaming PC route it once was._
 
-These cards are generally not well promoted, nearly all are discontinued, some models and configurations may be quite rare in your part of the world.
-However, you might still be able to find new-old stock online or where you live.
-~~Don't be afraid to buy a used card if the price is acceptable, you're not likely to buy a heat-damaged GPU from an overclocking or cryptomining enthusiast as these demographics aren't likely to buy weak SFF cards.~~
-
-In order to illustrate that many users can potentially avoid the present-day GPU supply hell, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
-This list also includes workstation cards for completeness.
-They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming.
-If you're not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don't bother, as they have no other ports.
-
-***If you intend to run a [hackintosh][1] system or you refuse to use non-free graphics drivers on GNU/Linux, then your only real options are AMD cards and you will have to live with a worse price-to-performance ratio compared to existing Nvidia low profile cards.***
-
-## A note on "upgrading" prebuilt desktop PCs
 Some people might find it appealing to drop a 75W GPU into an existing prebuilt desktop PC to make an entry-level gaming PC, as these can have difficult to swap proprietary PSUs and no additional power cables for expansion cards.
 
 If you do decide to go this route, be aware that ***low-end prebuilt desktops may have inadequate motherboard voltage regulation and can exhibit performance throttling*** due to aggressive cost-cutting decisions made by the OEM. Bad VRMs and inadequate power supplied to the motherboard can turn your CPU into a bottleneck when it proves unable to sustain your CPU's intended boost clock speeds.
 You may very well not be satisfied with the performance gains compared to published benchmarks running on unencumbered hardware.
 
 You might also find that some SFF prebuilts have less than ideal PCIe placement.
-In the case of many late model [Dell Optiplex SFFs][5], they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against the power supply, unable to accomodate most modern cards which are 2 slots at the bare minimum.
+In the case of many late model [Dell Optiplex SFFs][5], they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against the power supply, unable to accommodate most modern cards which are 2 slots at the bare minimum.
 In this case, you'd have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of at least 10% on a GTX 1050/1650, potentially more on more powerful cards.
+
+***If you intend to run a [hackintosh][1] system or you refuse to use non-free graphics drivers on GNU/Linux, then your only real options are AMD cards and you will have to live with a slightly worse price-to-performance ratio compared to existing Nvidia low profile cards.***
+
+## A dying breed of graphics card?
+Low-profile card launches regularly go unannounced, they are not well promoted because they've historically represented a terrible value proposition for the companies making them.
+
+In the last several years, manufacturers have had little incentive to make "budget", or "low-end" iterations of their latest GPU architectures because they have no problem finding a market for their high end products,
+
+Due to an unprecedented quadruple-threat from gamers, ~~AI-generated erotic artwork~~ "data science" enthusiasts, data centers and crypto mining operations alike, manufacturers have been unable to keep their products in stock with their silicon fabs operating at full throttle. With such ideal market conditions, why bother introducing budget cards?
+More people are willing to buy low-end binned GPU dies soldered to a gaming laptop than a sub-$250 USD discrete GPU for their existing hardware.
+
+As such, nearly every card on this list is discontinued, some models and configurations may be limited to specific markets.
+
+You might still be able to find new-old stock online or where you live, if you want to take your chances with a used mining GPU, I don't recommend it, but feel free.
+
+In order to illustrate that many users can potentially avoid having to buy a discrete GPU at all, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
+This list also includes workstation cards for completeness.
+They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming.
+If you're not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don't bother, as they have no other ports.
 
 # 1-slot Low Profile under 75W
 | Name | Released | PassMark G3D Score | Remarks |
