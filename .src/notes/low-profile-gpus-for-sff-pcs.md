@@ -36,7 +36,7 @@ Low-profile card launches regularly go unannounced, they are not well promoted b
 
 In the last several years, manufacturers have had little incentive to make "budget", or "low-end" iterations of their latest GPU architectures because they have no problem finding a market for their high end products,
 
-Due to an unprecedented quadruple-threat from gamers, ~~AI-generated erotic artwork~~ "data science" enthusiasts, data centers and crypto mining operations alike, manufacturers have been unable to keep their products in stock with their silicon fabs operating at full throttle. With such ideal market conditions, why bother introducing budget cards?
+Due to an unprecedented quadruple-threat from gamers, ~~AI-generated erotic artwork~~ _"data science"_ enthusiasts, data centers and crypto mining operations alike, manufacturers have been unable to keep their products in stock with their silicon fabs operating at full throttle. With such ideal market conditions, why bother introducing budget cards?
 More people are willing to buy low-end binned GPU dies soldered to a gaming laptop than a sub-$250 USD discrete GPU for their existing hardware.
 
 As such, nearly every card on this list is discontinued, some models and configurations may be limited to specific markets.
@@ -49,52 +49,53 @@ They tend to offer a much worse price-to-performance ratio compared to cards mea
 If you're not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don't bother, as they have no other ports.
 
 # 1-slot Low Profile under 75W
-| Name | Released | PassMark G3D Score | Remarks |
-| :-- | :--: | :--: | :-- |
-| Nvidia GeForce 210 | 2009 | 98 | ~~Still sold new~~, worse than integrated. |
-| AMD Radeon HD 8490 | 2014 | 270 | OEM only. |
-| AMD Radeon R5 240 | 2014 | 516 | OEM only. |
-| Nvidia GeForce GT 710 | 2014 | 636 | Zotac, Asus, VisionTek made passively cooled versions. |
-| <span class="highlight">Intel HD Graphics 4600</span> | 2013 | 640 | Intel Core i5 Haswell-era integrated graphics. |
-| Nvidia GeForce GT 730 | 2014 | 794 | Zotac made passively cooled versions. |
-| Nvidia GeForce GT 635 | 2013 | 826 | |
-| AMD Radeon R7 240 | 2013 | 836 | |
-| <span class="highlight">AMD Radeon Vega 3</span> | 2018 | 886 | AMD Athlon APU integrated graphics. |
-| AMD Radeon HD 8570 | 2013 | 1001 | OEM only. |
-| Nvidia GeForce GT 640 | 2011 | 1153 | |
-| AMD Radeon R7 250 | 2013 | 1181 | |
-| AMD Radeon R7 430 | 2017 | 1200 | OEM only. |
-| AMD Radeon Pro WX 2100 | 2017 | 1581 | Workstation card. |
-| Nvidia Quadro P400 | 2018 | 1586 | Workstation card. |
-| <span class="highlight">AMD Radeon Vega 8</span> | 2018 | 1596 | AMD Ryzen 3 APU integrated graphics. |
-| AMD Radeon HD 7750 | 2012 | 1676 | VisionTek low profile card. |
-| <span class="highlight">AMD Radeon Vega RX 11</span> | 2018 | 2134 | AMD Ryzen 5 APU integrated graphics. |
-| Nvidia GeForce GTX 745 | 2014 | 2205 | OEM only. |
-| AMD Radeon RX 550 | 2017 | 2408 | Yeston, MSI, Sapphire, XFX made low profile versions. |
-| AMD Radeon Pro WX 3200 | 2019 | 2560 | Workstation card. |
-| Nvidia GeForce GT 1030 | 2017 | 2607 | Asus, EVGA, MSI made passively cooled versions. |
-| AMD Radeon Pro WX 3100 | 2017 | 2818 | Workstation card. |
-| Nvidia Quadro K1200 | 2015 | 2861 | Workstation card. |
-| Nvidia GeForce GTX 750 | 2014 | 3405 | MQX made a low profile single-slot version. |
-| Nvidia T400 | 2021 | 3488 | Workstation card. |
-| Nvidia Quadro P620 | 2018 | 3639 | Workstation card. |
-| Nvidia Quadro P640 | 2018 | 3624 | Workstation card. |
-| AMD Radeon Pro WX 4100 | 2017 | 3758 | Workstation card. |
-| Nvidia Quadro P1000 | 2017 | 4345 | Workstation card. |
-| Nvidia Quadro T1000 | 2019 | 6484 | Workstation card. |
-| Nvidia T600 | 2021 | 6766 | Workstation card. |
-| AMD Radeon RX 6400 | 2022 | 6966 | Available from Sapphire. |
+| Name | Released | TDP | PassMark G3D Score | Remarks |
+| :-- | :--: | :--: |:--: | :-- |
+| Nvidia GeForce 210 | 2009 | 26W | 98 | ~~Still sold new~~, worse than integrated. |
+| AMD Radeon HD 8490 | 2014 | 35W | 263 | OEM only. |
+| Nvidia GeForce GT 610 | 2012 | 29W | 302 | |
+| AMD Radeon R5 240 | 2014 | 50W | 519 | OEM only. |
+| Nvidia GeForce GT 710 | 2014 | 25W | 636 | Zotac, Asus, VisionTek made passively cooled versions. |
+| <span class="highlight">Intel HD Graphics 4600</span> | 2013 | _N/A_ | 630 | Intel Core i5 Haswell-era integrated graphics. |
+| AMD Radeon HD 6670 | 2011 | 66W | 748 | |
+| Nvidia GeForce GT 730 | 2014 | 49W | 821 | Zotac made passively cooled versions. |
+| Nvidia GeForce GT 635 | 2013 | _N/A_ | 831 | |
+| AMD Radeon R7 240 | 2013 | 30W  | 869 | |
+| <span class="highlight">AMD Radeon Vega 3</span> | 2018 | _N/A_ | 886 | AMD Athlon APU integrated graphics. |
+| AMD Radeon HD 8570 | 2013 | 66W | 984 | OEM only. |
+| Nvidia GeForce GT 640 | 2011 | 65W | 1187 | |
+| AMD Radeon R7 250 | 2013 | 75W | 1106 | |
+| AMD Radeon R7 430 | 2017 | _N/A_ | 1102 | OEM only. |
+| <span class="highlight">AMD Radeon Vega 8</span> | 2018 | _N/A_ | 1586 | AMD Ryzen 3 APU integrated graphics. |
+| Nvidia Quadro P400 | 2018 | 30W | 1591 | Workstation card. |
+| AMD Radeon HD 7750 | 2012 | 55W | 1712 | VisionTek low profile card. |
+| AMD Radeon Pro WX 2100 | 2017 | 35W | 1771 | Workstation card. |
+| <span class="highlight">AMD Radeon Vega RX 11</span> | 2018 | _N/A_ | 2125 | AMD Ryzen 5 APU integrated graphics. |
+| Nvidia GeForce GTX 745 | 2014 | 55W | 2173 | OEM only. |
+| AMD Radeon Pro WX 3200 | 2019 | 65W | 2473 | Workstation card. |
+| Nvidia GeForce GT 1030 | 2017 | 30W | 2525 | Asus, EVGA, MSI made passively cooled versions. |
+| AMD Radeon Pro WX 3100 | 2017 | 50W | 2609 | Workstation card. |
+| AMD Radeon RX 550 | 2017 | 50W | 2711 | Yeston, MSI, Sapphire, XFX made low profile versions. |
+| Nvidia Quadro K1200 | 2015 | 45W | 2854 | Workstation card. |
+| Nvidia GeForce GTX 750 | 2014 | 55W | 3374 | MQX made a low profile single-slot version. |
+| Nvidia Quadro P620 | 2018 | 40W | 3616 | Workstation card. |
+| Nvidia T400 | 2021 | _N/A_ | 3651 | Workstation card. |
+| AMD Radeon Pro WX 4100 | 2017 | 50W | 3730 | Workstation card. |
+| Nvidia Quadro P1000 | 2017 | 47W | 4439 | Workstation card. |
+| Nvidia T600 | 2021 | _N/A_ | 6505 | Workstation card. |
+| Nvidia Quadro T1000 | 2019 | _N/A_ | 6533 | Workstation card. |
+| AMD Radeon RX 6400 | 2022 | 53W | 6906 | Available in single/dual slot. |
 
 # 2-slot Low Profile under 75W
-| Name | Released | PassMark G3D Score | Remarks |
-| :-- | :--: | :--: | :-- |
-| AMD Radeon RX 560 | 2017 | 3672 | Available from MSI, VisionTek (workstation 1-slot card) |
-| Nvidia GeForce GTX 750 Ti | 2014 | 3923 | MQX made a low profile single-slot version. |
-| AMD Radeon RX 460 | 2016 | 4034 | Available from MSI. |
-| Nvidia GeForce GTX 950 | 2015 | 5399 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
-| Nvidia GeForce GTX 1050 Ti | 2016 | 6398 | ASL made a [1-slot version][3] for the Chinese market. |
-| Nvidia GeForce GTX 1650 | 2019 | 7866 | ASL made a [1-slot version][4] for the Chinese market. |
-| Nvidia RTX A2000 | 2021 | 12988 | Workstation card. |
+| Name | Released | TDP | PassMark G3D Score | Remarks |
+| :-- | :--: | :--: |:--: | :-- |
+| AMD Radeon RX 560 | 2017 | 75W | 3604 | Available from MSI, VisionTek (workstation 1-slot card) |
+| Nvidia GeForce GTX 750 Ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
+| AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
+| Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
+| Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
+| Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
+| Nvidia RTX A2000 | 2021 | _N/A_ | 13228 | Workstation card. |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [3]: https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
