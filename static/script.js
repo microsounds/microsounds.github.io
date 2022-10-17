@@ -278,12 +278,13 @@ function browser_check() {
  * calculate parallax animation duration
  * ensure animation always runs at 15px/sec to avoid nauseating visitors
  */
+
 function toggle_animation() {
 	var root = document.documentElement;
 	if (!root.classList.contains('moonrise')) {
 		var secs = Math.floor(root.scrollHeight / 15);
 		root.classList.add('moonrise');
-		root.style.animation='moonrise ' + secs + 's ease infinite';
+		root.style.animation = 'moonrise ' + secs + 's ease infinite';
 	}
 	else {
 		root.removeAttribute('style');
@@ -348,6 +349,10 @@ function linkify_images() {
 	}
 }
 
+/* randomize subtitle text
+ * celebrate miku's birthday if it's Aug 31st!
+ * TODO: account for ordinal numbers other than *th, though this won't be a problem until 2028
+ */
 function random_subtitle() {
 	if (new Date().getMonth() == 7 && new Date().getDate() == 31)
 		document.getElementById('subtitle').innerHTML =
@@ -358,10 +363,48 @@ function random_subtitle() {
 
 }
 
+/* calculate random cloud cover placement using SVG filters, but only on desktop
+ * adapted from example code found at https://css-tricks.com/drawing-realistic-clouds-with-svg-and-css/
+ * TODO: this is incredibly taxing even on desktops, may tweak later
+ */
+function generate_clouds() {
+	/* clamped random int */
+	var random_int = function(min, max) {
+		return Math.floor(Math.random() * ((max - min) + 1) + min);
+	};
+	var random_arg = function(args) {
+		return args[random_int(0, args.length - 1)];
+	};
+
+	/* randomly generate box shadows
+	 * box-shadow: off-x off-y blur-radius blur-minimum color;
+	 */
+	var root = document.documentElement;
+	var box_shadow = function(max) {
+		var arr = [];
+		for (let i = 0; i < max; i++) {
+			arr.push(
+				random_int(1, root.scrollWidth) + 'px ' +
+				random_int(1, root.scrollHeight) + 'px ' +
+				random_int(20, 40) + 'vmin ' +
+				random_int(1, 20) + 'vmin ' +
+				random_arg([ '#CCCCCC', '#FFFFFF', '#E2FAF9' ])
+			);
+			console.log(arr[i]);
+		}
+		return arr.join(',');
+	};
+	if (!navigator.userAgent.match('([Aa]ndroid|iP(hone|[oa]d|[Mm]obile))'))
+		document.getElementsByClassName('cloud-cover')[0].style.boxShadow =
+			box_shadow(10 * Math.floor(root.scrollHeight / root.clientHeight));
+}
+
 window.addEventListener('DOMContentLoaded', function() {
-	/* persist playback settings */
+	generate_clouds();
 	random_subtitle();
 	setup_bgm();
+
+	/* persist playback settings */
 	if (document.cookie.includes('bgm=1'))
 		play();
 

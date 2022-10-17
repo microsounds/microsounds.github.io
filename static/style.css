@@ -46,6 +46,19 @@ html {
 	100% { background-position: 132% 100%; }
 }
 
+
+/* sparse cloud cover SVG filter
+ * opacity is avoided because it slows desktop chromium to a crawl
+ */
+.cloud-cover {
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	filter: url(#cloud-filter);
+	z-index: -1;
+	position: relative;
+}
+
 /* 2-column layout [150px navbar] [ page content ]
  *  content margin |----150px---->
  */
@@ -59,7 +72,6 @@ html {
 	color: #FFFFFF;
 	text-shadow: 2px 1px #646464;
 }
-
 .navbar {
 	position: static;
 	width: 130px;
