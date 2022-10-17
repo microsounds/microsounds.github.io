@@ -278,7 +278,6 @@ function browser_check() {
  * calculate parallax animation duration
  * ensure animation always runs at 15px/sec to avoid nauseating visitors
  */
-
 function toggle_animation() {
 	var root = document.documentElement;
 	if (!root.classList.contains('moonrise')) {
@@ -381,8 +380,8 @@ function generate_clouds() {
 	 */
 	var root = document.documentElement;
 	var box_shadow = function(max) {
-		var arr = [];
-		for (let i = 0; i < max; i++) {
+		var i, arr = [];
+		for (i = 0; i < max; i++) {
 			arr.push(
 				random_int(1, root.scrollWidth) + 'px ' +
 				random_int(1, root.scrollHeight) + 'px ' +
@@ -390,10 +389,10 @@ function generate_clouds() {
 				random_int(1, 20) + 'vmin ' +
 				random_arg([ '#CCCCCC', '#FFFFFF', '#E2FAF9' ])
 			);
-			console.log(arr[i]);
 		}
 		return arr.join(',');
 	};
+	/* density of 10 clouds per screenful of content */
 	if (!navigator.userAgent.match('([Aa]ndroid|iP(hone|[oa]d|[Mm]obile))'))
 		document.getElementsByClassName('cloud-cover')[0].style.boxShadow =
 			box_shadow(10 * Math.floor(root.scrollHeight / root.clientHeight));
