@@ -4,4 +4,5 @@
 # source code
 .src/** linguist-detectable
 .kagami/** linguist-detectable
+misc/**
 404.html linguist-detectable
