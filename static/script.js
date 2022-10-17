@@ -1,7 +1,6 @@
 'use strict';
 
-/*
- * @licstart The following is the entire license notice for the
+/* @licstart The following is the entire license notice for the
  * javascript code in this page.
  *
  * static/script.js — interactive webpage elements
@@ -53,8 +52,7 @@ var platitudes = [
 	'AI generated lyrical nothings',
 ];
 
-/*
- * refers to sound files in '{DOC_ROOT}/static/music'
+/* refers to sound files in '{DOC_ROOT}/static/music'
  * Note: MediaSource supports Opus streams in WebM containers, but not Ogg.
  * $ ffmpeg -i wind1.opus -c:a copy -vn wind1.webm
  */
@@ -92,8 +90,7 @@ var loops = [
 	[ 'ballade', 'Genshin Impact OST - Stormterror Lair' ],
 ];
 
-/*
- * https://bugs.chromium.org/p/chromium/issues/detail?id=353072
+/* https://bugs.chromium.org/p/chromium/issues/detail?id=353072
  *
  * native <audio> tag does not support gapless loops without stutters
  * implementing seamless looping background music with native MediaSoure API
@@ -219,8 +216,7 @@ function setup_bgm() {
 	client.send();
 }
 
-/*
- * warn user that their browser is garbage
+/* warn user that their browser is garbage
  * desktop and mobile safari are regularly missing the following features
  */
 function spawn_warning(heading, body, list) {
@@ -274,9 +270,11 @@ function browser_check() {
 		);
 }
 
-/*
- * calculate parallax animation duration
+/* calculate parallax animation duration
  * ensure animation always runs at 15px/sec to avoid nauseating visitors
+ * TODO: rewrite animation as 4 separate backround layers using transform: translate()
+ * sky / moon / gradient / clouds
+ * animating background-position is CPU-bound
  */
 function toggle_animation() {
 	var root = document.documentElement;
@@ -291,8 +289,7 @@ function toggle_animation() {
 	}
 }
 
-/*
- * make an attempt to playback audio
+/* make an attempt to playback audio
  * there's plenty of reasons why this won't work as expected
  * on post-2018 browsers, some are described below
  */
@@ -306,8 +303,7 @@ function play() {
 			bgm_toggle.innerText = bgm_toggle.innerText.replace('play', 'pause');
 			toggle_animation();
 		}).catch(function() {
-			/*
-			 * on chromium-based browsers, persistent playback
+			/* on chromium-based browsers, persistent playback
 			 * settings only work for the current session after
 			 * the user has interacted with the page unless
 			 * autoplay is explicitly enabled
@@ -328,8 +324,7 @@ function play() {
 	}
 }
 
-/*
- * wrap every inline image with a clickable link to itself
+/* wrap every inline image with a clickable link to itself
  * markdown images starting with ![ico-*] and ![nolink] are excluded
  * inline videos within galleries are also wrapped
  * this is to avoid having to double-link images manually in markdown
@@ -364,7 +359,7 @@ function random_subtitle() {
 
 /* calculate random cloud cover placement using SVG filters, but only on desktop
  * adapted from example code found at https://css-tricks.com/drawing-realistic-clouds-with-svg-and-css/
- * TODO: this is incredibly taxing even on desktops, may tweak later
+ * TODO: this is incredibly taxing even on desktop, firefox slows to a crawl
  */
 function generate_clouds() {
 	/* clamped random int */
@@ -393,7 +388,7 @@ function generate_clouds() {
 		return arr.join(',');
 	};
 	/* density of 10 clouds per screenful of content */
-	if (!navigator.userAgent.match('([Aa]ndroid|iP(hone|[oa]d|[Mm]obile))'))
+	if (!navigator.userAgent.match('(Firefox|[Aa]ndroid|iP(hone|[oa]d|[Mm]obile))'))
 		document.getElementsByClassName('cloud-cover')[0].style.boxShadow =
 			box_shadow(10 * Math.floor(root.scrollHeight / root.clientHeight));
 }

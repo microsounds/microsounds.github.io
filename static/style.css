@@ -54,7 +54,7 @@ html {
 	overflow: hidden;
 	width: 1px;
 	height: 1px;
-	filter: url(#cloud-filter);
+	filter: url("filters.svg#cloud-filter");
 	z-index: -1;
 	position: relative;
 }
