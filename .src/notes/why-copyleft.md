@@ -50,11 +50,11 @@ Re-licensing permissive works allows you to subscribe to the ***"fuck you, got m
 <div style="border-right: 2px;" class="aside right">
 
 By far, the most prominent and egregious example is The Walt Disney Company,
-who, throughout the 20th century, made billions through the plundering and retelling of [public domain stories and characters][disney]. Then they paid it forward by successfully lobbying to extend US copyright protections through the [Sonny Bono Act of 1998][sonny-bono], pushing enforcable copyright terms well past the practical limits of human lifespan[^forever], all so no one in this century or the next could ever do the same with Disney's own cultural works.
+who, throughout the 20th century, made billions through the plundering and retelling of [public domain stories and characters][disney]. Then they paid it forward by successfully lobbying to extend US copyright protections through the [Sonny Bono Act of 1998][sonny-bono], pushing enforceable copyright terms well past the practical limits of human lifespan[^forever], all so no one in this century or the next could ever do the same with Disney's own cultural works.
 
 [^forever]:
 
-	As it turned out, extending copyright terms to "forever" wasn't considered constiutional,
+	As it turned out, extending copyright terms to "forever" wasn't considered constitutional,
 	and "forever minus one day" would be legally difficult to define, so they settled for 120 years for corporate authorship.
 
 	--- [October 7, 1998, Congressional Record Vol. 144, No. 139, pp. H9952][H9952]
