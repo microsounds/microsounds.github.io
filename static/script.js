@@ -345,16 +345,27 @@ function linkify_images() {
 
 /* randomize subtitle text
  * celebrate miku's birthday if it's Aug 31st!
- * TODO: account for ordinal numbers other than *th, though this won't be a problem until 2028
  */
 function random_subtitle() {
+	var ordinal = function(num) {
+		num = num | 0;
+		var str = num.toString();
+		var digit = parseInt((str.length == 1) ? str[0] : str[str.length - 1]);
+		if ((num % 100) < 11 || (num % 100) > 13) {
+			switch (digit) {
+				case 1: return num + 'st';
+				case 2: return num + 'nd';
+				case 3: return num + 'rd';
+			};
+		}
+		return num + 'th';
+	};
 	if (new Date().getMonth() == 7 && new Date().getDate() == 31)
 		document.getElementById('subtitle').innerHTML =
-			'happy ' + (new Date().getYear() - (2007 - 1900)) + 'th anniversary, miku!';
+			'happy ' + ordinal(new Date().getYear() - (2007 - 1900)) + ' birthday, miku! ✨';
 	else
 		document.getElementById('subtitle').innerHTML =
 			platitudes[Math.floor(Math.random() * platitudes.length)];
-
 }
 
 /* calculate random cloud cover placement using SVG filters, but only on desktop
