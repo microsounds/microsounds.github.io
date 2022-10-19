@@ -1,6 +1,6 @@
 # Homepage
 <noscript>
-	<em>You have JavaScript disabled, certain multimedia elements will not work as expected.</em>
+	<p><em>You have JavaScript disabled, certain multimedia elements will not work as expected.</em></p>
 </noscript>
 
 ![heading]({DOC_ROOT}/static/starry.jpg)
