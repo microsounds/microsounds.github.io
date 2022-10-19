@@ -2,7 +2,6 @@
 This is a [`kagami`][kagami] template and accompanying source code that renders my personal site at <https://microsounds.github.io/>
 
 ## ![w3c](static/button/valid-html5-blue.svg) Validation
-
 This site aims for **polyglot HTML5** compliance, a robust well-formed subset of HTML5 and XHTML as defined by [W3C][polyglot] and [WHATWG][polyglot2] for more rigorous syntax validation.
 This is sometimes referred to as XHTML5.
 
@@ -12,6 +11,8 @@ flashing an unstyled page on every page load which browser caching does not seem
 
 You can verify this yourself using `busybox httpd` or using [Schneegan's XHTML Proxy][proxy].
 Use of modern features such as `audio` elements prevents validating as "true" [XHTML 1.0 Strict][xml].
+
+**Note that some visual effects are disabled in mobile browsers for performance reasons**, Firefox hangs completely when using SVG `feTurbulance` filters through CSS.
 
 [polyglot]: https://web.archive.org/web/20220616202318/https://dev.w3.org/html5/html-polyglot/html-polyglot.html
 [polyglot2]: https://wiki.whatwg.org/wiki/HTML_vs._XHTML
