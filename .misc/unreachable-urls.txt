@@ -1,4 +1,3 @@
-http://canarypop.ciao.jp/shimehatsune.htm
 http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
@@ -18,6 +17,8 @@ HTTP request sent, awaiting response... 400 Bad Request
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
+HTTP request sent, awaiting response... 404 Not Found
+https://soundcloud.com/-redacted-
 HTTP request sent, awaiting response... 404 Not Found
 https://static.myfigurecollection.net/upload/items/
 HTTP request sent, awaiting response... 403 Forbidden
