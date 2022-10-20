@@ -77,10 +77,15 @@ coverage="${coverage%??}%"
 	# rewrite relative markdown links
 	# rewrite block-level align attributes with CSS
 	# replace inline shimeji with a random one
+	# replace screenshot with an embedded webm
+	webm="<video alt=\"scrot\" loop=\"loop\" autoplay=\"autoplay\" muted=\"muted\" \
+		type=\"video/webm\" src=\"${D_RAW%/*/*}/microsounds/master/dotfiles/scrot.webm\" /><br/>"
+
 	cat "$readme" | sed -E \
 		-e 's,\]\(([^#http][a-zA-Z0-9._\/-]*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
 		-e 's,align="(.*)",style="text-align: \1;",g' \
-		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g"
+		-e "s,\[shimeji\]:.*,\[shimeji\]: {DOC_ROOT}/$shimeji,g" \
+		-e "s,.*\!\[scrot\].*,$webm,g"
 
 	# downloads and interactive source listing
 	prompt="$(whoami)@$(uname -n)"
