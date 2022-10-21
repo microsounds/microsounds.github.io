@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Wed, 19 Oct 2022 14:48:37 -0700</lastBuildDate>
+<lastBuildDate>Fri, 21 Oct 2022 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -22,12 +22,12 @@
 <item>
 <title>My Collection of Assorted Figurines</title>
 <description>
-<![CDATA[ Last updated Here’s my small IRL collection of figurines and other assorted cute things. Most are “prize figures” of the variety you could win from a Japanese [“skill” claw machine][claw]. Unfortunately, I live an ocean away from a UFO catcher full of figurines of my [one and only muse][muse], so I can only buy them. I don’t feel like actually making an account on [myfigurecollection.net][mfc] to tell people about them though. This page will do for now, links take [..]]]>
+<![CDATA[ Last updated Here’s my small, yet growing IRL collection of figurines and other assorted cute things. Most are “prize figures” of the variety you could win from a Japanese [“skill” claw machine][claw]. Unfortunately, I live an ocean away from a UFO catcher full of figurines of my favorite [virtual idol][micker], so I can only buy them. I don’t feel like actually making an account on [myfigurecollection.net][mfc] to tell people about them though. This page will do for now, links [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/figures.htm">https://microsounds.github.io/notes/figures.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/figures.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
-<pubDate>Sat, 08 Oct 2022 00:00:00 -0700</pubDate>
+<pubDate>Fri, 21 Oct 2022 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>

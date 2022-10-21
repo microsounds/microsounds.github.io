@@ -1,18 +1,18 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2022/10/8 -->
+<!-- updated 2022/10/21 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
 
-Here's my small IRL collection of figurines and other assorted cute things.
-Most are "prize figures" of the variety you could win from a Japanese ["skill" claw machine][claw].
-Unfortunately, I live an ocean away from a _UFO catcher_ full of figurines of my [one and only muse][muse], so I can only buy them.
+Here's my small, yet growing IRL collection of figurines and other assorted cute things.
+Most are _"prize figures"_ of the variety you could win from a Japanese ["skill" claw machine][claw].
+Unfortunately, I live an ocean away from a _UFO catcher_ full of figurines of my favorite [virtual idol][micker], so I can only buy them.
 
 I don't feel like actually making an account on _[myfigurecollection.net][mfc]_ to tell people about them though.
 This page will do for now, links take you to their catalog entry on _mfc_.
 
 [claw]: https://www.youtube.com/watch?v=93c9oTU7ut0
-[muse]: https://www.youtube.com/watch?v=NzEKNzlhJSU
+[micker]: https://www.youtube.com/watch?v=NzEKNzlhJSU
 [mfc]: https://myfigurecollection.net
 
 ## Collection
@@ -33,14 +33,27 @@ _They're in no particular order, only sorted by date I remember getting it, prob
 | Key | Meaning |
 | -- | -- |
 | ![ico-fig](https://static.myfigurecollection.net/upload/items/186.jpg) | **Owned** |
-| ![ico-fig-fake](https://static.myfigurecollection.net/upload/items/186.jpg) | **Fake/Knockoff** |
+| ![ico-fig-fake](https://static.myfigurecollection.net/upload/items/186.jpg) | **Fake/Bootleg** |
 
 </div>
 
 ## On Counterfeits
-If you're into figure collecting, take care not to fall for counterfeits, these are figures of varying quality sold at abnormal prices and/or designs that are years out of production being sold new.
-Do not assume that physical outlets located in shopping malls, indoor or outdoor swap meets are honest or have any clue what they are selling, they can and will play dumb if it suits them.
-_Understand that even if the price is right, with counterfeits, you will get exactly what you pay for._
+If you're into figure collecting, take care not to fall for counterfeit figures of varying quality sold at abnormally low prices, usually imitating designs that are years out of production, yet being sold new in box.
+
+In years past, only elaborate and expensive lines of figures would see bootlegging but now even inexpensive prize figures quickly get imitations mere months after release.
+I remember when _"replica"_ nendoroids were a fringe hobby good relegated to the depths of untrustworthy Chinese e-commerce sites, they only cost 20% what a real one would cost, including the shipping.
+
+Do not assume that physical outlets located in shopping malls, indoor or outdoor swap meets are honest or have any clue what they are selling, they can and will play dumb if it suits them. Some are egregious enough to sell fakes at genuine prices to low-information buyers.
+
+Some tell-tale signs include:
+* box artwork that omits manufacturer logos and brand names
+* screenprinted eyes that have a bizarre skew or just look "off"
+* individual parts that won't fit together correctly or won't stay snug
+* paint fading quickly even in interior lights from store displays
+* ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky
+* sloppy paint, gloppy paint and paint overspray, a complete disregard for quality
+
+Quality can vary varies wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, they have no resale or collectible value if you care about that sort of thing, you get what you pay for, generally.
 
 ## Bonus Gallery
 This gallery is automatically generated, click images to see more user-submitted images on _myfigurecollection.net_!
