@@ -16,7 +16,7 @@ KEYWORDS="${KEYWORDS%, }"
 unset DOC_ROOT
 
 AUTHOR='microsounds'
-PCNAME='shami'
+PC_NAME='shami'
 SITE_TITLE='sentimental µsounds'
 SITE_DESCRIPTION="unix and post-ironic anemoia, µsounds' starlit diary"
 SITE_HOSTNAME='https://microsounds.github.io'

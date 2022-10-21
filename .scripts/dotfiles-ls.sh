@@ -18,7 +18,7 @@ mesg="$(git meta log -1 --format=%s)"
 # github.com/<user>/<repo>/{raw,blob}/<branch>/<path>
 # - served much more slowly, */raw/* 302's to the first URL
 # - but it automatically redirects to */blob/* on directory links
-D_RAW='https://raw.githubusercontent.com/microsounds/atelier/master'
+D_RAW='https://raw.githubusercontent.com/{AUTHOR}/atelier/master'
 
 # estimated documentation completeness
 # this document is about 5x more verbose than my comments
@@ -78,8 +78,8 @@ coverage="${coverage%??}%"
 	# rewrite block-level align attributes with CSS
 	# replace inline shimeji with a random one
 	# replace screenshot with an embedded webm
-	webm="<video alt=\"scrot\" loop=\"loop\" autoplay=\"autoplay\" muted=\"muted\" \
-		type=\"video/webm\" src=\"${D_RAW%/*/*}/microsounds/master/dotfiles/scrot.webm\" /><br/>"
+	webm="<video loop=\"loop\" autoplay=\"autoplay\" muted=\"muted\"> \
+		<source type=\"video/webm\" src=\"${D_RAW%/*/*}/{AUTHOR}/master/dotfiles/scrot.webm\" /></video>"
 
 	cat "$readme" | sed -E \
 		-e 's,\]\(([^#http][a-zA-Z0-9._\/-]*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
@@ -88,7 +88,7 @@ coverage="${coverage%??}%"
 		-e "s,.*\!\[scrot\].*,$webm,g"
 
 	# downloads and interactive source listing
-	prompt="$(whoami)@$(uname -n)"
+	prompt='{AUTHOR}@{PC_NAME}'
 	command='git meta ls-tree --name-only -r master | xargs ls -lhgG'
 
 	cat <<- EOF
