@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2022/10/16 -->
+<!-- updated 2022/10/22 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -49,6 +49,8 @@ They tend to offer a much worse price-to-performance ratio compared to cards mea
 If you're not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don't bother, as they have no other ports.
 
 # 1-slot Low Profile under 75W
+These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PCIe slot.
+
 | Name | Released | TDP | PassMark G3D Score | Remarks |
 | :-- | :--: | :--: |:--: | :-- |
 | Nvidia GeForce 210 | 2009 | 26W | 98 | ~~Still sold new~~, worse than integrated. |
@@ -87,11 +89,14 @@ If you're not looking to drive 4x DisplayPort monitors with a single card, and y
 | AMD Radeon RX 6400 | 2022 | 53W | 6906 | Available in single/dual slot. |
 
 # 2-slot Low Profile under 75W
+These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide.
+
 | Name | Released | TDP | PassMark G3D Score | Remarks |
 | :-- | :--: | :--: |:--: | :-- |
 | AMD Radeon RX 560 | 2017 | 75W | 3604 | Available from MSI, VisionTek (workstation 1-slot card) |
 | Nvidia GeForce GTX 750 Ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
 | AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
+| Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | |
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
