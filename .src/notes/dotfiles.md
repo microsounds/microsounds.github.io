@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">850</b>, commit `b63ecc7`.**
+**Revision No. <b style="font-size: 130%">850</b>, commit `70acad3`.**
 
 **"ntc-chip: Upgraded to bullseye, codified post-install hacks"**
 
@@ -526,7 +526,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime18.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime17.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -548,9 +548,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-207.48KiB
+207.68KiB
 out of a total compressed git history size of
-759.28KiB._
+759.36KiB._
 
 # Complete source listing
 
@@ -671,7 +671,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 3.5K   Oct  5 2022 20:49 rev. 27  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Feb 25 2022 18:12 rev. 11  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
--rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
+-rw-r--r-- 1 1.3K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
 -rwxr-xr-x 1  199   Oct 22 2022 22:48 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  844   Aug 28 2022 22:58 rev. 30  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.profile">.profile</a>
