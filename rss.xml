@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 850, commit ec16532. “ntc-chip: Documented post-install hacks and fixes” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 62.7KiB then this document currently covers about 8.91% of all implemented features and behavior in this repository. This is just an [automated guess][1] [..]]]>
+<![CDATA[Revision No. 850, commit b63ecc7. “ntc-chip: Upgraded to bullseye, codified post-install hacks” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 62.6KiB then this document currently covers about 8.91% of all implemented features and behavior in this repository. This is just an [automated [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
