@@ -46,14 +46,18 @@ I remember when _"replica"_ nendoroids were a fringe hobby good relegated to the
 Do not assume that physical outlets located in shopping malls, indoor or outdoor swap meets are honest or have any clue what they are selling, they can and will play dumb if it suits them. Some are egregious enough to sell fakes at genuine prices to low-information buyers.
 
 Some tell-tale signs include:
-* box artwork that omits manufacturer logos and brand names
-* screenprinted eyes that have a bizarre skew or just look "off"
+* box artwork that [omits manufacturer logos and brand names](https://myfigurecollection.net/picture/2402764)
+* faces that just look "off", screenprinted eyes that have a [bizarre skew](https://myfigurecollection.net/picture/2182516)
 * individual parts that won't fit together correctly or won't stay snug
+* designs that [don't actually exist](https://myfigurecollection.net/picture/3267308), combinations of 2 or more characters at the same time[^rem]
 * paint fading quickly even in interior lights from store displays
-* ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky
-* sloppy paint, gloppy paint and paint overspray, a complete disregard for quality
+* visible molding seams, ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky
+* [sloppy paint, gloppy paint](https://myfigurecollection.net/picture/2529349) and paint overspray, a complete disregard for quality
 
 Quality can vary varies wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, they have no resale or collectible value if you care about that sort of thing, you get what you pay for, generally.
+
+[^rem]: A wild new frontier in bootlegs, this is a combination of
+	[this Miku](https://myfigurecollection.net/item/1047417) and [this Rem](https://myfigurecollection.net/item/944728).
 
 ## Bonus Gallery
 This gallery is automatically generated, click images to see more user-submitted images on _myfigurecollection.net_!
