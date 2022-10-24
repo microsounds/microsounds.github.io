@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2022/10/21 -->
+<!-- updated 2022/10/23 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -81,6 +81,8 @@ This gallery is automatically generated, click images to see more user-submitted
 
 var figs = [
 	/* ids prepended with x are knockoffs */
+	[ '401018', 'sega project diva innocent SPM miku' ],
+	[ '718192', 'hatsune miku 2nd season Winter ver.' ],
 	[ '1251026', 'bandai q posket miku type a' ],
 	[ '944728', 'furyu miku bicute bunnies' ],
 	[ '1311067', 'miku artist masterpiece princess alice' ],
@@ -88,7 +90,7 @@ var figs = [
 	[ '1293291', 'furyu sakura miku noodle stopper' ],
 	[ '886807', 'taito sakura miku 2020 ver.' ],
 	[ '1216990', 'racing miku 2021 espresto' ],
-	[ '1035745', "mega 39's breathe you SPM miku" ],
+	[ '1035745', "sega mega 39's breathe you SPM miku" ],
 	[ '1112719', 'miku big nuigurumi plush' ],
 	[ '756832', 'hatsune miku 2nd season Spring ver.' ],
 	[ '776143', 'hatsune miku 2nd season Summer ver.' ],
