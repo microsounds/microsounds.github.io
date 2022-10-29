@@ -72,6 +72,7 @@ I have a collection of notes and writings located at [`/notes`](notes/index.md) 
 * _(2012-2015)_ <span class="blink" style="color: #FFA5B5;"><em>NSFW!</em></span>
 a collection of _"About Mes"_ previously published on Last.fm
 — [`/misc/last-fm.htm`](/misc/last-fm.htm)
+	* _Warning: 45,056K of animated images._
 
 ## Contact me
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
