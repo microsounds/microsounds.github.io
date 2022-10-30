@@ -113,6 +113,13 @@ html {
 .right { float: right; text-align: right; }
 .center { margin: 0 auto 0 auto; text-align: center; }
 
+/* collapsing details */
+details {
+	background-color: #0000001C;
+	padding: 3px;
+	margin: 5px;
+}
+
 /* svg icons */
 .icon { height: 0.75em; }
 
