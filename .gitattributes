@@ -1,8 +1,8 @@
-# automatically generated
-*.htm linguist-generated
-
 # source code
 .src/** linguist-detectable
 .kagami/** linguist-detectable
-misc/**
+misc/** linguist-detectable
 404.html linguist-detectable
+
+# automatically generated
+*.htm linguist-generated
