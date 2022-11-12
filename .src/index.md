@@ -10,6 +10,9 @@
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
 I like ~~muted pastels,~~ starry night skies, people watching and the [unix][unix1] [programming][unix2] [environment][unix3].
+This site is my ongoing effort to rekindle my lived and [potentially imagined][nostalgia] experiences from the recent past.
+
+[nostalgia]: https://en.wiktionary.org/wiki/anemoia
 
 <div class="aside right">
 
@@ -23,13 +26,23 @@ and even though the world I used to know has all but bitrotted away,
 I can still make out the last remnants of those dreamlike days,
 the _sentimental microsounds_ and the [sweet nothings][noise] spared the ravages of time.
 
-More importantly, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
-Sometimes, I'll do this to force myself to try new things.
+But aside from that, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
+Both as a form of puzzle solving, and sometimes to force myself to try new things.
 
 <div class="right" style="filter: grayscale(65%); font-style: italic;">
+<h2 class="center"><em>"The promise and wonder of sharing what we know"</em></h2>
 
-I wanted to encourage others to share their knowledge, their lived experiences, dreams and desires through the low tech and pseudononymous nature of the free and open web.
-So I wrote a static site generator and rolled my own superset of markdown to author this site as my personal sandbox.
+Personally written web pages where individuals can share their knowledge, dreams and desires through the low tech, open and psuedononymous nature of the world wide web have all but disappeared.
+Unfettered access to the world's useful information is slowly being eroded in the pursuit of user data analytics and short term financial gain at the expense of everyone else.
+
+I rolled my own static site generator and my own superset of markdown to author this site and to show that things don't have to end this way.
+Anyone can create their own personal sandbox on the web and put as much or as little effort into it as they'd like.
+
+I would be lying if I said I was interested in long form writing, I want to share what I like through the lens of metaprogramming and have fun doing it.
+
+It's a never-ending process.
+
+[![ico-scripts]({DOC_ROOT}/static/shimemiku/miku.gif)](notes/dotfiles.md "It's pretty fun though.")
 
 <div class="aside">
 
@@ -37,12 +50,6 @@ So I wrote a static site generator and rolled my own superset of markdown to aut
 --- **OpenAI GPT-3** after being [prompt injected](https://simonwillison.net/2022/Sep/12/prompt-injection/) with this website.
 
 </div>
-
-I would be lying if I said I was interested in long form writing, I want to share what I like through the lens of metaprogramming and have fun doing it.
-
-It's a never-ending process.
-
-[![ico-scripts]({DOC_ROOT}/static/shimemiku/miku.gif)](notes/dotfiles.md "It's pretty fun though.")
 
 <!-- firefox renders this hr element above this entire floated div if not placed here -->
 <hr style="width: 70%;
