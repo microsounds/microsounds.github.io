@@ -33,7 +33,7 @@ _They're in no particular order, only sorted by date I remember getting it, prob
 | Key | Meaning |
 | -- | -- |
 | ![ico-fig](https://static.myfigurecollection.net/upload/items/186.jpg) | **Owned** |
-| ![ico-fig-fake](https://static.myfigurecollection.net/upload/items/186.jpg) | **Fake/Bootleg** |
+| ![ico-fig-fake](https://static.myfigurecollection.net/upload/items/186.jpg) | **Owned (Fake/Bootleg)** |
 
 </div>
 
@@ -45,19 +45,24 @@ I remember when _"replica"_ nendoroids were a fringe hobby good relegated to the
 
 Do not assume that physical outlets located in shopping malls, indoor or outdoor swap meets are honest or have any clue what they are selling, they can and will play dumb if it suits them. Some are egregious enough to sell fakes at genuine prices to low-information buyers.
 
+Be wary of online listings on e-commerce sites using only official promo shots or photoshopping faces.
+
 Some tell-tale signs include:
 * box artwork that [omits manufacturer logos and brand names](https://myfigurecollection.net/picture/2402764)
 * faces that just look "off", screenprinted eyes that have a [bizarre skew](https://myfigurecollection.net/picture/2182516)
 * individual parts that won't fit together correctly or won't stay snug
+* designs standing on one leg that cannot hold their own weight and bend at a steep angle
 * designs that [don't actually exist](https://myfigurecollection.net/picture/3267308), combinations of 2 or more characters at the same time[^rem]
 * paint fading quickly even in interior lights from store displays
-* visible molding seams, ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky
+* visible molding seams _(flash)_, ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky
 * [sloppy paint, gloppy paint](https://myfigurecollection.net/picture/2529349) and paint overspray, a complete disregard for quality
 
-Quality can vary varies wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, they have no resale or collectible value if you care about that sort of thing, you get what you pay for, generally.
+Quality can vary wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, with few exceptions.
+The best possible case is coming across "quality rejects" from the genuine production run, but in general, they have no resale or collectible value if you care about that sort of thing.
+That being said, I won't advise against buying them willingly and deliberately if you accept the drawbacks.
 
 [^rem]: A wild new frontier in bootlegs, this is a combination of
-	[this Miku](https://myfigurecollection.net/item/1047417) and [this Rem](https://myfigurecollection.net/item/944728).
+	[this Rem](https://myfigurecollection.net/item/1047417) and [this Miku](https://myfigurecollection.net/item/944728).
 
 ## Bonus Gallery
 This gallery is automatically generated, click images to see more user-submitted images on _myfigurecollection.net_!
@@ -85,6 +90,26 @@ This gallery is automatically generated, click images to see more user-submitted
 
 var figs = [
 	/* ids prepended with x are knockoffs */
+
+/*
+	[ '1536230', 're-ment miku miku ♪ room miniature #1 of 8' ],
+	[ '1536252', 're-ment miku miku ♪ room miniature #2 of 8' ],
+	[ '1536231', 're-ment miku miku ♪ room miniature #3 of 8' ],
+	[ '1536233', 're-ment miku miku ♪ room miniature #4 of 8' ],
+	[ '1536234', 're-ment miku miku ♪ room miniature #5 of 8' ],
+	[ '1536236', 're-ment miku miku ♪ room miniature #6 of 8' ],
+	[ '1536237', 're-ment miku miku ♪ room miniature #7 of 8' ],
+	[ '1536238', 're-ment miku miku ♪ room miniature #8 of 8' ],
+
+	[ 'x1214387', 'knockoff taito miku wonderland rapunzel' ],
+	[ 'x186', 'knockoff good smile miku nendoroid #039' ],
+	[ 'x314683', 'knockoff sega miku fuwa fuwa nuigurumi plush (strap)' ],
+	[ 'x370088', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
+	[ 'x514129', 'knockoff sega nyanko miku fuwa fuwa mega jumbo nuigurumi plush' ],
+	[ 'x809190', 'knockoff furyu miku noodle stopper figure' ],
+	[ 'x2987', 'knockoff max factory figma miku #014' ],
+*/
+
 	[ '401018', 'sega project diva innocent SPM miku' ],
 	[ '718192', 'hatsune miku 2nd season Winter ver.' ],
 	[ '1251026', 'bandai q posket miku type a' ],
@@ -98,8 +123,8 @@ var figs = [
 	[ '1112719', 'miku big nuigurumi plush' ],
 	[ '756832', 'hatsune miku 2nd season Spring ver.' ],
 	[ '776143', 'hatsune miku 2nd season Summer ver.' ],
-	[ '4741', 'hatsune miku EX figure 2009' ],
-	[ '1150601', 'miku nesoberi nuigurumi (extra tiny)' ],
+	[ '4741', 'hatsune miku piano EX figure 2009' ],
+	[ '1150601', 'miku nesoberi nuigurumi (strap)' ],
 	[ '798190', 'sega sakura miku SPM' ],
 	[ '720383', 'sega fate/extella link astolfo SPM' ],
 	[ '693275', 'miku mega jumbo nuigurumi plush 2018' ],
@@ -110,8 +135,8 @@ var figs = [
 	[ '583734', 'izayoi sakuya prize figure' ],
 	[ '200768', 'funko pop rocks miku #39' ],
 	[ '246546', 'sega project diva F2nd miku' ],
-	[ 'x287774', 'umaru-chan nendoroid #524' ],
-	[ 'x26113', 'snow miku nendoroid #150' ],
+	[ 'x287774', 'knockoff good smile umaru-chan nendoroid #524' ],
+	[ 'x26113', 'knockoff good smile snow miku nendoroid #150' ],
 	[ '198604', 'sega project diva 2nd miku' ],
 	[ '47413', 'kogami akira lucky star banpresto' ],
 	[ '167123', 'sega project diva arcade miku 2012' ],
