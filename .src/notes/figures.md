@@ -6,13 +6,13 @@ Last updated {UPDATED}
 
 Here's my small, yet growing IRL collection of figurines and other assorted cute things.
 Most are _"prize figures"_ of the variety you could win from a Japanese ["skill" claw machine][claw].
-Unfortunately, I live an ocean away from a _UFO catcher_ full of figurines of my favorite [virtual idol][micker], so I can only buy them.
+Unfortunately, I live an ocean away from a _UFO catcher_ full of figurines of everyone's favorite [virtual idol][micker], so I can only buy them.
 
 I don't feel like actually making an account on _[myfigurecollection.net][mfc]_ to tell people about them though.
 This page will do for now, links take you to their catalog entry on _mfc_.
 
 [claw]: https://www.youtube.com/watch?v=93c9oTU7ut0
-[micker]: https://www.youtube.com/watch?v=NzEKNzlhJSU
+[micker]: https://www.youtube.com/watch?v=f91sM4rI76w&hl=en
 [mfc]: https://myfigurecollection.net
 
 ## Collection
@@ -66,6 +66,8 @@ That being said, I won't advise against buying them willingly and deliberately i
 
 ## Bonus Gallery
 This gallery is automatically generated, click images to see more user-submitted images on _myfigurecollection.net_!
+
+_(I keep this gallery around mostly so I can gawk at people's gigantic miku collections, they have so much money!)_
 
 <div class="gallery" id="fig-gallery">
 </div>
