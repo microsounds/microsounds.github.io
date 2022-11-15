@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2022/10/23 -->
+<!-- updated 2022/11/14 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -109,9 +109,8 @@ var figs = [
 	[ 'x370088', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
 	[ 'x514129', 'knockoff sega nyanko miku fuwa fuwa mega jumbo nuigurumi plush' ],
 	[ 'x809190', 'knockoff furyu miku noodle stopper figure' ],
-	[ 'x2987', 'knockoff max factory figma miku #014' ],
 */
-
+	[ 'x2987', 'knockoff max factory figma miku #014' ],
 	[ '401018', 'sega project diva innocent SPM miku' ],
 	[ '718192', 'hatsune miku 2nd season Winter ver.' ],
 	[ '1251026', 'bandai q posket miku type a' ],
