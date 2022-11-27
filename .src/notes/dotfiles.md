@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">852</b>, commit `3960a9e`.**
+**Revision No. <b style="font-size: 130%">853</b>, commit `15b6f8e`.**
 
-**"git: Alias for amending commits"**
+**"btusb: Added workaround for clone csr8510 USB bluetooth dongles"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *27.9KiB* in
 size, and the approximate size of all comment lines of code is
-*62.8KiB* then this document
-currently covers about <b style="font-size: 130%;">8.90%</b>
+*63.2KiB* then this document
+currently covers about <b style="font-size: 130%;">8.84%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -526,7 +526,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime33.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime15.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -548,9 +548,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-207.69KiB
+208.25KiB
 out of a total compressed git history size of
-760.94KiB._
+756.62KiB._
 
 # Complete source listing
 
@@ -668,6 +668,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  808   Feb 13 2022 22:53 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
+-rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
 -rwxr-xr-x 1 3.5K   Oct  5 2022 20:49 rev. 27  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Feb 25 2022 18:12 rev. 11  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
@@ -689,4 +690,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 24 Oct 2022 00:54:26 -0700 -->
+<!-- updated Sat, 26 Nov 2022 20:37:00 -0800 -->

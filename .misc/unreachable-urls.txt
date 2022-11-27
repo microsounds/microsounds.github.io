@@ -224,6 +224,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2a-remove-
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2b-enscript-fonts.sh
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2c-csr8510-bluetooth.sh
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/a0-android-termux.sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/c0-chromebook-delete-key.sh
@@ -273,9 +275,9 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
-HTTP request sent, awaiting response... 403 Forbidden
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
-HTTP request sent, awaiting response... 403 Forbidden
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/
