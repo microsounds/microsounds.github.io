@@ -47,6 +47,7 @@ var platitudes = [
 	(new Date().getDay() != 1) ? 'do you like flower music?' :
 		'hhhey guess what? Itdst MIKU MONDAY!!!',
 	'synthesized love songs from the future',
+	'music that felt nostalgic when it was new',
 	'lurid and indecent memories',
 	'google doesn\'t go this far back',
 	'AI generated lyrical nothings',
@@ -69,6 +70,8 @@ var loops = [
 	[ 'darkness', 'Mr. Kitty - After Dark (Astrophysics cover ft. 初音ミク)' ],
 	[ 'sparkle', 'livetune - Strobo Nights ft. 初音ミク' ],
 	[ 'synthetic', 'FM Skyline - neon paradise' ],
+	[ 'sorrows1', 'sasakure.UK - to Asteroid B-612 ft. lasah' ],
+	[ 'sorrows2', 'sasakure.UK - to Asteroid B-612 ft. lasah' ],
 	[ 'starlight', 'Pleasant Specter (快い亡霊) OST - Menu Screen' ],
 	[ 'eternity1', 'Tatsuro Yamashita - 僕の中の少年' ],
 	[ 'eternity2', 'Tatsuro Yamashita - 僕の中の少年' ],
