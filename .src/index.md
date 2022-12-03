@@ -24,7 +24,7 @@ This site is my ongoing effort to rekindle my lived, neglected and [potentially 
 The echoes of the old world I once loved and lost have grown dissonant and almost unrecognizable,
 and even though the world I used to know has all but bitrotted away,
 I can still make out the last remnants of those dreamlike days,
-the _sentimental microsounds_ and the [sweet nothings][noise] spared the ravages of time.
+the [_sentimental microsounds_][sasakure.uk] and the [sweet nothings][effe] spared the ravages of time.
 
 But aside from that, I enjoy designing/writing my own tools and extending existing tools to automate things I would otherwise be doing by hand.
 Both as a form of puzzle solving, and sometimes to force myself to try new things.
@@ -154,7 +154,10 @@ copy-pasted directly from someone's website.</em>
 [unix3]: http://www.catb.org/~esr/writings/taoup/html/
        "The Art of Unix Programming (2003), Eric S. Raymond"
 
-[noise]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
+<!-- two of my all-time favorite musical albums -->
+[effe]: https://effexxx.bandcamp.com/album/from-4jyo-han-to-everywhere-again
        "from 4jyo​-​han to everywhere (2011), effe"
+[sasakure.uk]: https://www.youtube.com/watch?v=NHmghVWPdQU&list=OLAK5uy_khzI0hCPcRjfp3VWqqpTD1UwPxtvWntbE
+	"Do Vocaloids Dream of Doomsday Birds? (2011), sasakure.UK"
 
 [illust]: https://gelbooru.com/index.php?page=post&s=view&id=3757995
