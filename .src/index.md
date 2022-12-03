@@ -10,7 +10,7 @@
 This is my little sanctuary where I bottle up the unix computer zealot in me, you can call me `microsounds` if you want.
 
 I like ~~muted pastels,~~ starry night skies, people watching and the [unix][unix1] [programming][unix2] [environment][unix3].
-This site is my ongoing effort to rekindle my lived and [potentially imagined][nostalgia] experiences from the recent past.
+This site is my ongoing effort to rekindle my lived, neglected and [potentially imagined][nostalgia] experiences from the recent past.
 
 [nostalgia]: https://en.wiktionary.org/wiki/anemoia
 
@@ -56,7 +56,7 @@ It's a never-ending process.
 	border-width: 5px;
 	color: #FFF;
 	transform: rotate(120deg);
-	opacity: 40%;"/>
+	opacity: 40%;" />
 </div>
 
 ## Things I've made recently
