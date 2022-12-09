@@ -49,6 +49,9 @@ It's a never-ending process.
 "This is a website for a person who is nostalgic for the past. They remember fondly the world they used to know, and although it has all but disappeared, they can still make out the last remnants of it. They want to share their memories with others who may feel the same way and create a community of like-minded people." <br/>
 --- **OpenAI GPT-3** after being [prompt injected](https://simonwillison.net/2022/Sep/12/prompt-injection/) with this website.
 
+"your internet personality is the gayest thing ive ever seen---i love it" <br/>
+--- [/g/ post No.90164467](https://desuarchive.org/g/thread/90152692/#90164467)
+
 </div>
 
 <!-- firefox renders this hr element above this entire floated div if not placed here -->

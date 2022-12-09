@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Wed, 07 Dec 2022 19:20:46 -0800</lastBuildDate>
+<lastBuildDate>Thu, 08 Dec 2022 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -27,7 +27,7 @@
 </description>
 <link>https://microsounds.github.io/notes/figures.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
-<pubDate>Fri, 18 Nov 2022 00:00:00 -0800</pubDate>
+<pubDate>Thu, 08 Dec 2022 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
@@ -38,6 +38,16 @@
 <link>https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</guid>
 <pubDate>Sat, 22 Oct 2022 00:00:00 -0700</pubDate>
+</item>
+<item>
+<title>Fun and Useful Links to Elsewhere</title>
+<description>
+<![CDATA[ Startpage Links **4channel** NSFW! --- [/g/](https://boards.4channel.org/g/catalog) *[desu](https://desuarchive.org/g/)* · [/ck/](https://boards.4channel.org/ck/catalog) *[warosu](https://warosu.org/ck/)* · [/o/](https://boards.4channel.org/o/catalog) *[4plebs](https://archive.4plebs.org/o/)* · [[s4s]](https://boards.4chan.org/s4s/catalog) *[4plebs](https://archive.4plebs.org/s4s/)* **4channel shit-tier** NSFW! --- [/a/](https://boards.4channel.org/a/catalog) *[desu](https://desuarchive.org/a/)* · [/v/](https://boards.4channel.org/v/catalog) *[b4k](https://arch.b4k.co/v/)* · [/vg/](https://boards.4channel.org/vg/catalog) *[b4k](https://arch.b4k.co/vg/)* · [/x/](https://boards.4channel.org/x/catalog) *[4plebs](https://archive.4plebs.org/x/)* · [/cgl/](https://boards.4channel.org/cgl/catalog) *[desu](https://desuarchive.org/cgl/)* · [/fa/](https://boards.4channel.org/fa/catalog) *[warosu](https://warosu.org/fa/)* · [/lgbt/](https://boards.4channel.org/lgbt/catalog) *[archived](https://archived.moe/lgbt/)* · [/fit/](https://boards.4channel.org/fit/catalog) *[desu](https://desuarchive.org/fit/)* · [/jp/](https://boards.4channel.org/jp/catalog) *[warosu](https://warosu.org/jp/)* **fanart/doujinshi** NSFW! --- [gelbooru](https://gelbooru.com) · [nhentai](https://nhentai.net) · [pixiv](https://www.pixiv.net/en/tags/初音ミク) **alt. frontends** --- 	 		Users 		Tweets 	 **sauce** --- [iqdb](https://iqdb.org) · [saucenao](https://saucenao.com) · [trace.moe](https://trace.moe) · [google](https://www.google.com/imghp) · [yandex](https://yandex.com/images) **streaming** --- [youtube](https://youtube.com) · [niconico](https://nicovideo.jp) · [animixplay](https://animixplay.to) [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/useful-links.htm">https://microsounds.github.io/notes/useful-links.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/useful-links.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/useful-links.htm</guid>
+<pubDate>Thu, 08 Dec 2022 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>On Copyleft and why I use GPLv3</title>

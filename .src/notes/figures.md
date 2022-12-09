@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2022/11/18 -->
+<!-- updated 2022/12/8 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -103,12 +103,12 @@ var figs = [
 	[ '1536237', 're-ment miku miku ♪ room miniature #7 of 8' ],
 	[ '1536238', 're-ment miku miku ♪ room miniature #8 of 8' ],
 
-	[ 'x1214387', 'knockoff taito miku wonderland rapunzel' ],
 	[ 'x186', 'knockoff good smile miku nendoroid #039' ],
+*/
+	[ 'x1214387', 'knockoff taito miku wonderland rapunzel' ],
 	[ 'x314683', 'knockoff sega miku fuwa fuwa nuigurumi plush (strap)' ],
 	[ 'x370088', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
 	[ 'x514129', 'knockoff sega nyanko miku fuwa fuwa mega jumbo nuigurumi plush' ],
-*/
 
 	[ 'x809190', 'knockoff furyu miku noodle stopper figure' ],
 	[ 'x2987', 'knockoff max factory figma miku #014' ],
