@@ -1,6 +1,20 @@
 http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
+https://www.amazon.com/
+HTTP request sent, awaiting response... 503 Service Unavailable
+https://www.amazon.co.jp/
+HTTP request sent, awaiting response... 405 Method Not Allowed
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
+HTTP request sent, awaiting response... 404 Not Found
+https://archive.4plebs.org/o/
+HTTP request sent, awaiting response... 403 Forbidden
+https://archive.4plebs.org/s4s/
+HTTP request sent, awaiting response... 403 Forbidden
+https://archive.4plebs.org/x/
+HTTP request sent, awaiting response... 403 Forbidden
+https://cdromance.com/
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/docs/ControlSequences&
 HTTP request sent, awaiting response... 404 Not Found
 https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
 HTTP request sent, awaiting response... 501 Not Implemented
@@ -8,8 +22,32 @@ HTTP request sent, awaiting response... 501 Not Implemented
 HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
+https://www.ebay.com/n/error
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
+https://mangadex.org/
+HTTP request sent, awaiting response... 405 Method Not Allowed
+https://nhentai.net/
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://nitter.eda.gay/search
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
@@ -119,6 +157,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/scrot
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/startx
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/to-chromium
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/twopass
 HTTP request sent, awaiting response... 404 Not Found
@@ -270,11 +310,18 @@ https://static.myfigurecollection.net/upload/items/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/big/
 HTTP request sent, awaiting response... 403 Forbidden
+https://u1lib.org/
 https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://warosu.org/ck/
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://warosu.org/fa/
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://warosu.org/jp/
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden

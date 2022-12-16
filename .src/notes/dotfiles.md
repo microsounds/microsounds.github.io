@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">855</b>, commit `67b9068`.**
+**Revision No. <b style="font-size: 130%">856</b>, commit `80c06da`.**
 
-**"mpv: Restore non-interactive use of mpv"**
+**"Added wrapper function for piping rendered markdown to chromium"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *27.9KiB* in
 size, and the approximate size of all comment lines of code is
-*63.2KiB* then this document
-currently covers about <b style="font-size: 130%;">8.84%</b>
+*63.4KiB* then this document
+currently covers about <b style="font-size: 130%;">8.80%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -526,7 +526,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime19.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -548,9 +548,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-208.28KiB
+208.64KiB
 out of a total compressed git history size of
-762.70KiB._
+763.50KiB._
 
 # Complete source listing
 
@@ -611,6 +611,7 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1 1.0K   Dec  6 2021 00:36 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/scramble">.local/bin/scramble</a>
 -rwxr-xr-x 1  155   Oct 16 2020 13:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
 -rwxr-xr-x 1  661   Dec 15 2021 19:58 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/startx">.local/bin/startx</a>
+-rwxr-xr-x 1  367   Dec 16 2022 12:16 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/to-chromium">.local/bin/to-chromium</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
 -rwxr-xr-x 1  192   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
@@ -690,4 +691,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 7 Dec 2022 19:20:46 -0800 -->
+<!-- updated Fri, 16 Dec 2022 12:16:19 -0800 -->
