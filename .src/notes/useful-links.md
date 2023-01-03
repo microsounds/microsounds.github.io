@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2022/12/8 -->
+<!-- updated 2023/1/2 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -72,7 +72,8 @@
 [aliexpress](https://aliexpress.com) ·
 [walmart](https://walmart.com) ·
 [ebay](https://ebay.com) ·
-[amazon](https://amazon.com) <sup>*[jp](https://amazon.jp)*</sup>
+[amazon](https://amazon.com) <sup>*[jp](https://amazon.jp)*</sup> ·
+[mandarake](https://order.mandarake.co.jp/order/?lang=en)
 
 </details>
 
@@ -93,6 +94,7 @@
 	* _Over 2,000 pages of writings on learning and memory retention, along with opinions on "toxic learning"._
 
 **guides** ---
+* [MyAnimeList: Seasonal Anime Guide](https://myanimelist.net/anime/season)
 * [A crash course in `sc`](http://blog.startaylor.net/2016/08/29/sc)
 	* _Useful reference guide to the obsolescent *NIX spreadsheet tool `sc`._
 * [Guide to Google Dorking](https://kit.exposingtheinvisible.org/en/how/google-dorking.html)
