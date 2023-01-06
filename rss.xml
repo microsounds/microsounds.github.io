@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Mon, 02 Jan 2023 00:00:00 -0800</lastBuildDate>
+<lastBuildDate>Thu, 05 Jan 2023 18:36:22 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 857, commit 4aed6ff. “bash: Alias for rendering markdown in the browser” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 63.5KiB then this document currently covers about 8.80% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 858, commit e1786ec. “Added wrapper script to convert plaintext to postscript for printing” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 27.9KiB in size, and the approximate size of all comment lines of code is 63.6KiB then this document currently covers about 8.78% of all implemented features and behavior in this repository. This is [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 30 Dec 2022 15:47:53 -0800</pubDate>
+<pubDate>Thu, 05 Jan 2023 18:36:22 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
