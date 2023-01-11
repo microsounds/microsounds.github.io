@@ -1,15 +1,14 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2022/12/8 -->
+<!-- updated 2023/1/10 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
 
-Here's my small, yet growing IRL collection of figurines and other assorted cute things.
+Here's my ~~small, yet~~ growing IRL collection of figurines and other assorted cute things.
 Most are _"prize figures"_ of the variety you could win from a Japanese ["skill" claw machine][claw].
 Unfortunately, I live an ocean away from a _UFO catcher_ full of figurines of everyone's favorite [virtual idol][micker], so I can only buy them.
 
-I don't feel like actually making an account on _[myfigurecollection.net][mfc]_ to tell people about them though.
-This page will do for now, links take you to their catalog entry on _mfc_.
+Since I don't feel like actually making an account on _[myfigurecollection.net][mfc]_ to tell people about them, this page that piggybacks off their API will do for now. Links will take you to their catalog entry on _mfc_.
 
 [claw]: https://www.youtube.com/watch?v=93c9oTU7ut0
 [micker]: https://www.youtube.com/watch?v=f91sM4rI76w&hl=en
@@ -22,7 +21,7 @@ _They're in no particular order, only sorted by date I remember getting it, prob
 <noscript>
 <blockquote>
 <p><strong>NOTE</strong><br/>
-	This page requires JavaScript to function, because I don't feel like using a shell script to generate it statically.</p>
+	This page requires JavaScript to function, because any shell script I could write to generate it statically would get ugly very quickly.</p>
 </blockquote>
 </noscript>
 
@@ -91,7 +90,7 @@ _(I keep this gallery around mostly so I can gawk at people's gigantic miku coll
 'use strict';
 
 var figs = [
-	/* ids prepended with x are knockoffs */
+	/* MFC ids prepended with x are knockoffs */
 
 /*
 	[ '1536230', 're-ment miku miku ♪ room miniature #1 of 8' ],
@@ -103,21 +102,27 @@ var figs = [
 	[ '1536237', 're-ment miku miku ♪ room miniature #7 of 8' ],
 	[ '1536238', 're-ment miku miku ♪ room miniature #8 of 8' ],
 
-	[ 'x186', 'knockoff good smile miku nendoroid #039' ],
 */
+	[ '1571286', 'sega miku christmas 2022 SPM' ],
+	[ '1479579', 'sega miku 15th anniversary kei ver. SPM' ],
+	[ '1549222', 'sega miku 15th anniversary zhou ver. SPM' ],
+	[ '1275355', 'sega preciality special nuigurumi sakura miku' ],
+	[ '1213389', 'good smile genshin impact venti nendoroid #1795' ],
+	[ '1189088', 'good smile hatsune miku nt nendoroid #1701' ],
+	[ '1499800', 'taito miku artist masterpiece latidos 2022 ver.' ],
+	[ '1220581', 'taito miku artist masterpiece pricess arabian ver.' ],
 	[ 'x1214387', 'knockoff taito miku wonderland rapunzel' ],
 	[ 'x314683', 'knockoff sega miku fuwa fuwa nuigurumi plush (strap)' ],
 	[ 'x370088', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
 	[ 'x514129', 'knockoff sega nyanko miku fuwa fuwa mega jumbo nuigurumi plush' ],
-
 	[ 'x809190', 'knockoff furyu miku noodle stopper figure' ],
 	[ 'x2987', 'knockoff max factory figma miku #014' ],
 	[ '401018', 'sega project diva innocent SPM miku' ],
 	[ '718192', 'hatsune miku 2nd season Winter ver.' ],
 	[ '1251026', 'bandai q posket miku type a' ],
 	[ '944728', 'furyu miku bicute bunnies' ],
-	[ '1311067', 'miku artist masterpiece princess alice' ],
-	[ '1268909', 'miku artist masterpiece 14th anniv.' ],
+	[ '1311067', 'taito miku artist masterpiece princess alice' ],
+	[ '1268909', 'taito miku artist masterpiece 14th anniv.' ],
 	[ '1293291', 'furyu sakura miku noodle stopper' ],
 	[ '886807', 'taito sakura miku 2020 ver.' ],
 	[ '1216990', 'racing miku 2021 espresto' ],
@@ -130,17 +135,17 @@ var figs = [
 	[ '798190', 'sega sakura miku SPM' ],
 	[ '720383', 'sega fate/extella link astolfo SPM' ],
 	[ '693275', 'miku mega jumbo nuigurumi plush 2018' ],
-	[ '675904', 'gochiusa sxarp nendoroid #929' ],
-	[ '689123', 'snow princess miku nendoroid #1000' ],
-	[ '464596', 'konosuba megumin nendoroid #725' ],
+	[ '675904', 'good smile gochiusa sxarp nendoroid #929' ],
+	[ '689123', 'good smile snow princess miku nendoroid #1000' ],
+	[ '464596', 'good smile konosuba megumin nendoroid #725' ],
 	[ '440687', 'sega project diva X SPM miku' ],
-	[ '583734', 'izayoi sakuya prize figure' ],
+	[ '583734', 'sega izayoi sakuya prize figure' ],
 	[ '200768', 'funko pop rocks miku #39' ],
 	[ '246546', 'sega project diva F2nd miku' ],
 	[ 'x287774', 'knockoff good smile umaru-chan nendoroid #524' ],
 	[ 'x26113', 'knockoff good smile snow miku nendoroid #150' ],
 	[ '198604', 'sega project diva 2nd miku' ],
-	[ '47413', 'kogami akira lucky star banpresto' ],
+	[ '47413', 'banpresto kogami akira lucky star' ],
 	[ '167123', 'sega project diva arcade miku 2012' ],
 	[ '100292', 'hatsune miku plush great eastern 2012' ],
 ];
