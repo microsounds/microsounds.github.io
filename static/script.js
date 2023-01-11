@@ -48,7 +48,7 @@ var platitudes = [
 		'hhhey guess what? Itdst MIKU MONDAY!!!',
 	'synthesized love songs from the future',
 	'music that felt nostalgic when it was new',
-	'you\'re my shining star, my grand illusion',
+	'you\'re my shining star, my beautiful fantasy',
 	'lurid and indecent memories',
 	'google doesn\'t go this far back',
 	'AI generated lyrical nothings',
