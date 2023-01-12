@@ -80,7 +80,7 @@
 <img class="right" style="width: 150px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/WWW-LetShare.svg" />
 
 **/g/ friends** ---
-* ![ico]({DOC_ROOT}/static/button/affiliates/poopingpenis.gif) [poopingpenis's igloo](https://poopingpenis.web.fc2.com/)
+* ![ico]({DOC_ROOT}/static/button/affiliates/poopingpenis.gif) [poopingpenis's igloo](https://poopingpenis.netlify.app/)
 	* _PC-98 computing enthusiast from Puerto Rico, (escrito en español)._
 
 **docs** ---
