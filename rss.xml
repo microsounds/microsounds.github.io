@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 20 Jan 2023 11:38:53 -0800</lastBuildDate>
+<lastBuildDate>Fri, 20 Jan 2023 11:59:21 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 859, commit fc28952. “docs: Updated notes on Termux use in Android 11 or later” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.4KiB in size, and the approximate size of all comment lines of code is 63.6KiB then this document currently covers about 8.93% of all implemented features and behavior in this repository. This [..]]]>
+<![CDATA[Revision No. 860, commit 0cc2c5d. “Nothing important, post-install validation is now on a timer” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.4KiB in size, and the approximate size of all comment lines of code is 63.6KiB then this document currently covers about 8.93% of all implemented features and behavior in this repository. This is just [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 20 Jan 2023 11:38:53 -0800</pubDate>
+<pubDate>Fri, 20 Jan 2023 11:59:21 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
