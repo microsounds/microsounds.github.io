@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">858</b>, commit `e1786ec`.**
+**Revision No. <b style="font-size: 130%">859</b>, commit `fc28952`.**
 
-**"Added wrapper script to convert plaintext to postscript for printing"**
+**"docs: Updated notes on Termux use in Android 11 or later"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *27.9KiB* in
+If this document is *28.4KiB* in
 size, and the approximate size of all comment lines of code is
 *63.6KiB* then this document
-currently covers about <b style="font-size: 130%;">8.78%</b>
+currently covers about <b style="font-size: 130%;">8.93%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -380,15 +380,19 @@ Shell scripts on Android systems without root access have no access to standard 
 `<backslash>e` to insert escape literals in scripts works for some OSC codes, but not all, use octal `<backslash>33` when in doubt.
 
 ### `$PREFIX`
-Previously, `termux-chroot` was used to ensure a FHS-compliant environment, but it introduces unacceptable performance drawbacks in my tests.
+Previously, `termux-chroot` was used to ensure FHS-compliance, but it introduced unacceptable performance speed.
 
-Use Termux's own environment `$PREFIX` to refer to standard filesystem locations within scripts, e.g. `$PREFIX/tmp` which expands to `/data/data/com.termux/files/usr/tmp`
+Use Termux's own provided envvar `$PREFIX` to refer to standard filesystem locations within scripts or interactively, e.g. `$PREFIX/tmp` which expands to `/data/data/com.termux/files/usr/tmp`.
+In practice, shell script shebangs don't need to be rewritten, Termux already rewrites these with some hidden voodoo I don't care to understand.
 
-### Background processes on Android 11 and later
-Many manufacturer distros of Android since version 11 have become far more aggressive in pruning "phantom" processes (daemons) in the pursuit of battery life optimization.
+### Background processes since Android 11
+The customized Android images that ship from [Chinese and Korean manufacturers](https://dontkillmyapp.com/) since version 11 have become far more aggressive in pruning "phantom" processes (daemons) in the pursuit of better battery life.
+Backgrounding processes in the shell with the `&` operator will no longer work, launching daemons will be killed immediately if not in foreground mode.
+
 In order to prevent Android from prematurely pruning `ssh-agent` while multitasking, it is called as the parent process for the current shell.
 
-Termux developers recommend their own non-standard startup method or running daemons in the foreground without forking and with wakelock acquired if you wish to run a long-running task.
+Termux developers recommend their very own [termux-services](https://wiki.termux.com/wiki/Termux-services) for running common daemons.
+Launch daemons in foreground mode without forking and preferably with wakelock acquired from the notification bar if you wish to run a long-running task without being throttled by the operating system.
 
 ## `cd`
 * The contents of `$OLDPWD` is preserved across `bash` sessions.
@@ -526,7 +530,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime3b.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime45.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -548,9 +552,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-209.00KiB
+209.49KiB
 out of a total compressed git history size of
-764.81KiB._
+766.12KiB._
 
 # Complete source listing
 
@@ -689,7 +693,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  29K   Jan 20 2023 11:38 rev. 184 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 5 Jan 2023 18:36:22 -0800 -->
+<!-- updated Fri, 20 Jan 2023 11:38:53 -0800 -->

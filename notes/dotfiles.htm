@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">858</b>, commit <code>e1786ec</code>.</strong></p>
-<p><strong>“Added wrapper script to convert plaintext to postscript for printing”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">859</b>, commit <code>fc28952</code>.</strong></p>
+<p><strong>“docs: Updated notes on Termux use in Android 11 or later”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -91,7 +91,7 @@
 <li><a href="#Standard-file-descriptors">Standard file descriptors</a></li>
 <li><a href="#ESC-sequences"><code>ESC</code> sequences</a></li>
 <li><a href="#PREFIX"><code>$PREFIX</code></a></li>
-<li><a href="#Background-processes-on-Android-11-and-later">Background processes on Android 11 and later</a></li>
+<li><a href="#Background-processes-since-Android-11">Background processes since Android 11</a></li>
 </ul>
 </li>
 <li><a href="#cd"><code>cd</code></a></li>
@@ -119,19 +119,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>27.9KiB</em> in
+<p>If this document is <em>28.4KiB</em> in
 size, and the approximate size of all comment lines of code is
 <em>63.6KiB</em> then this document
-currently covers about <b style="font-size: 130%;">8.78%</b>
+currently covers about <b style="font-size: 130%;">8.93%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌑 Thu, Jan 5th, 2023.</p>
+<p>Last updated 🌕 Fri, Jan 20th, 2023.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime3b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime45.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -698,12 +698,15 @@ Post-install scripts make the following adjustments statically for existing scri
 <h3><code>ESC</code> sequences<span id="ESC-sequences"></span></h3>
 <p><code>&lt;backslash&gt;e</code> to insert escape literals in scripts works for some OSC codes, but not all, use octal <code>&lt;backslash&gt;33</code> when in doubt.</p>
 <h3><code>$PREFIX</code><span id="PREFIX"></span></h3>
-<p>Previously, <code>termux-chroot</code> was used to ensure a FHS-compliant environment, but it introduces unacceptable performance drawbacks in my tests.</p>
-<p>Use Termux’s own environment <code>$PREFIX</code> to refer to standard filesystem locations within scripts, e.g. <code>$PREFIX/tmp</code> which expands to <code>/data/data/com.termux/files/usr/tmp</code></p>
-<h3>Background processes on Android 11 and later<span id="Background-processes-on-Android-11-and-later"></span></h3>
-<p>Many manufacturer distros of Android since version 11 have become far more aggressive in pruning “phantom” processes (daemons) in the pursuit of battery life optimization.
-In order to prevent Android from prematurely pruning <code>ssh-agent</code> while multitasking, it is called as the parent process for the current shell.</p>
-<p>Termux developers recommend their own non-standard startup method or running daemons in the foreground without forking and with wakelock acquired if you wish to run a long-running task.</p>
+<p>Previously, <code>termux-chroot</code> was used to ensure FHS-compliance, but it introduced unacceptable performance speed.</p>
+<p>Use Termux’s own provided envvar <code>$PREFIX</code> to refer to standard filesystem locations within scripts or interactively, e.g. <code>$PREFIX/tmp</code> which expands to <code>/data/data/com.termux/files/usr/tmp</code>.
+In practice, shell script shebangs don’t need to be rewritten, Termux already rewrites these with some hidden voodoo I don’t care to understand.</p>
+<h3>Background processes since Android 11<span id="Background-processes-since-Android-11"></span></h3>
+<p>The customized Android images that ship from <a href="https://dontkillmyapp.com/">Chinese and Korean manufacturers</a> since version 11 have become far more aggressive in pruning “phantom” processes (daemons) in the pursuit of better battery life.
+Backgrounding processes in the shell with the <code>&amp;</code> operator will no longer work, launching daemons will be killed immediately if not in foreground mode.</p>
+<p>In order to prevent Android from prematurely pruning <code>ssh-agent</code> while multitasking, it is called as the parent process for the current shell.</p>
+<p>Termux developers recommend their very own <a href="https://wiki.termux.com/wiki/Termux-services">termux-services</a> for running common daemons.
+Launch daemons in foreground mode without forking and preferably with wakelock acquired from the notification bar if you wish to run a long-running task without being throttled by the operating system.</p>
 <h2><code>cd</code><span id="cd"></span></h2>
 <ul>
 <li>
@@ -977,9 +980,9 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-209.00KiB
+209.49KiB
 out of a total compressed git history size of
-764.81KiB.</em></p>
+766.12KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
@@ -1117,10 +1120,10 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  28K   Sep  6 2022 12:08 rev. 183 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  29K   Jan 20 2023 11:38 rev. 184 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 5 Jan 2023 18:36:22 -0800 -->
+<!-- updated Fri, 20 Jan 2023 11:38:53 -0800 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
