@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">861</b>, commit `907435e`.**
+**Revision No. <b style="font-size: 130%">861</b>, commit `a5bf41e`.**
 
 **"xwin-decor: Fixed timestamp selection for videos shorter than 150sec"**
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *28.4KiB* in
+If this document is *28.5KiB* in
 size, and the approximate size of all comment lines of code is
 *63.8KiB* then this document
-currently covers about <b style="font-size: 130%;">8.91%</b>
+currently covers about <b style="font-size: 130%;">8.94%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -449,6 +449,7 @@ See *Usage Notes* for more information.
 	| `summary` | Outlines the last 20 commits with a commit graph. |
 	| `list-files` | List all tracked filenames in repo, ideally for use with `xargs`. |
 	| `flatten` | Automatically melds `--fixup/squash` commits out of existence starting from the root commit. |
+	| `recommit` | Stages changes to worktree and `commit --amend`s them as part of the last commit. |
 	| `checkin` | Commit all changes immediately with a generic timestamp and hostname commit message. |
 	| `shove` | Runs `checkin` and pushes immediately. |
 	| `sync` | Runs `git meta pull` and then recurses through `~/Git` and runs `git pull` on every existing `git` repo found. |
@@ -530,7 +531,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime1b.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime40.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -552,9 +553,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-209.61KiB
+209.71KiB
 out of a total compressed git history size of
-770.21KiB._
+769.11KiB._
 
 # Complete source listing
 
@@ -693,7 +694,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  29K   Jan 20 2023 11:38 rev. 184 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  29K   Jan 20 2023 22:38 rev. 185 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
 <!-- updated Fri, 20 Jan 2023 22:38:32 -0800 -->

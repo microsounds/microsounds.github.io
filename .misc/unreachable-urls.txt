@@ -4,8 +4,8 @@ http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
 HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
-https://www.amazon.co.jp/
-HTTP request sent, awaiting response... 405 Method Not Allowed
+https://amazon.jp/
+HTTP request sent, awaiting response... 503 Service Unavailable
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -14,10 +14,6 @@ https://archive.4plebs.org/s4s/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
-https://archived.moe/lgbt/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://archived.moe/lgbt/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://cdromance.com/
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/docs/ControlSequences&
@@ -46,6 +42,8 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
+https://howtos.davidsebek.com/debian-f2fs.html
+(try: 2)  https://howtos.davidsebek.com/debian-f2fs.html
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 (try: 2)  https://jigsaw.w3.org/css-validator/check/referer
