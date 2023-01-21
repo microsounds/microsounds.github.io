@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 861, commit ae153a4. “xwin-decor: Fixed timestamp selection for videos shorter than 150sec” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.4KiB in size, and the approximate size of all comment lines of code is 63.8KiB then this document currently covers about 8.91% of all implemented features and behavior in this repository. This is just [..]]]>
+<![CDATA[Revision No. 861, commit 907435e. “xwin-decor: Fixed timestamp selection for videos shorter than 150sec” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.4KiB in size, and the approximate size of all comment lines of code is 63.8KiB then this document currently covers about 8.91% of all implemented features and behavior in this repository. This is just [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>

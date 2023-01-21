@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">861</b>, commit `ae153a4`.**
+**Revision No. <b style="font-size: 130%">861</b>, commit `907435e`.**
 
 **"xwin-decor: Fixed timestamp selection for videos shorter than 150sec"**
 
@@ -530,7 +530,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime40.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime1b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -554,7 +554,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 >_Total on-disk size of the current revision is
 209.61KiB
 out of a total compressed git history size of
-770.22KiB._
+770.21KiB._
 
 # Complete source listing
 
