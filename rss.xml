@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 20 Jan 2023 11:59:21 -0800</lastBuildDate>
+<lastBuildDate>Fri, 20 Jan 2023 22:38:32 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 860, commit d9275c0. “Nothing important, post-install validation is now on a timer” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.4KiB in size, and the approximate size of all comment lines of code is 63.7KiB then this document currently covers about 8.92% of all implemented features and behavior in this repository. This is just [..]]]>
+<![CDATA[Revision No. 861, commit ae153a4. “xwin-decor: Fixed timestamp selection for videos shorter than 150sec” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.4KiB in size, and the approximate size of all comment lines of code is 63.8KiB then this document currently covers about 8.91% of all implemented features and behavior in this repository. This is just [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 20 Jan 2023 11:59:21 -0800</pubDate>
+<pubDate>Fri, 20 Jan 2023 22:38:32 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
