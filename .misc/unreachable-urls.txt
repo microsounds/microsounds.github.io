@@ -43,7 +43,9 @@ HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
-HTTP request sent, awaiting response... 403 Forbidden
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://jigsaw.w3.org/css-validator/check/referer
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nitter.eda.gay/search
