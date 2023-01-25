@@ -4,8 +4,8 @@ http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
 HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
-https://amazon.jp/
-HTTP request sent, awaiting response... 503 Service Unavailable
+https://www.amazon.co.jp/
+HTTP request sent, awaiting response... 405 Method Not Allowed
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -42,14 +42,12 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
-https://howtos.davidsebek.com/debian-f2fs.html
-(try: 2)  https://howtos.davidsebek.com/debian-f2fs.html
 https://jigsaw.w3.org/css-validator/check/referer
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://jigsaw.w3.org/css-validator/check/referer
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+HTTP request sent, awaiting response... 403 Forbidden
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
+https://nhentai.net/
+HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://nitter.eda.gay/search
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -147,6 +145,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/feh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/genshin-impact
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/getquote
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/make
 HTTP request sent, awaiting response... 404 Not Found
@@ -331,6 +331,8 @@ https://warosu.org/jp/
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
+https://www.cs.vu.nl/~ast/intel/
+(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://www.galago-project.org/specs/notification/0.9/index.html

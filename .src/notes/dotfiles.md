@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">861</b>, commit `a5bf41e`.**
+**Revision No. <b style="font-size: 130%">862</b>, commit `4cee871`.**
 
-**"xwin-decor: Fixed timestamp selection for videos shorter than 150sec"**
+**"ledger: Added utility for fetching stock quotes from Yahoo! Finance"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *28.5KiB* in
 size, and the approximate size of all comment lines of code is
-*63.8KiB* then this document
-currently covers about <b style="font-size: 130%;">8.94%</b>
+*64.3KiB* then this document
+currently covers about <b style="font-size: 130%;">8.87%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -531,7 +531,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime40.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime17.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -543,6 +543,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > found in the current revision:_
 > * `android-termux.sh v1.0`
 > * `chromium_widevine.sh v0.2`
+> * `getquote v0.1`
 > * `git_status.sh v0.7`
 > * `moonphase-date v0.2`
 > * `nano_overlay.sh v1.2 `
@@ -553,9 +554,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-209.71KiB
+210.79KiB
 out of a total compressed git history size of
-769.11KiB._
+765.52KiB._
 
 # Complete source listing
 
@@ -607,6 +608,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
 -rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 1.1K   Jan 24 2023 19:39 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
@@ -697,4 +699,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  29K   Jan 20 2023 22:38 rev. 185 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 20 Jan 2023 22:38:32 -0800 -->
+<!-- updated Tue, 24 Jan 2023 19:39:38 -0800 -->

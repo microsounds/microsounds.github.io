@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">861</b>, commit <code>a5bf41e</code>.</strong></p>
-<p><strong>“xwin-decor: Fixed timestamp selection for videos shorter than 150sec”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">862</b>, commit <code>4cee871</code>.</strong></p>
+<p><strong>“ledger: Added utility for fetching stock quotes from Yahoo! Finance”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -121,17 +121,17 @@
 in this repo is about <strong>5:1</strong>.</p>
 <p>If this document is <em>28.5KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>63.8KiB</em> then this document
-currently covers about <b style="font-size: 130%;">8.94%</b>
+<em>64.3KiB</em> then this document
+currently covers about <b style="font-size: 130%;">8.87%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌕 Fri, Jan 20th, 2023.</p>
+<p>Last updated 🌖 Tue, Jan 24th, 2023.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime40.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime17.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -974,6 +974,7 @@ found in the current revision:</em></p>
 <ul>
 <li><code>android-termux.sh v1.0</code></li>
 <li><code>chromium_widevine.sh v0.2</code></li>
+<li><code>getquote v0.1</code></li>
 <li><code>git_status.sh v0.7</code></li>
 <li><code>moonphase-date v0.2</code></li>
 <li><code>nano_overlay.sh v1.2 </code></li>
@@ -984,9 +985,9 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-209.71KiB
+210.79KiB
 out of a total compressed git history size of
-769.11KiB.</em></p>
+765.52KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
@@ -1037,6 +1038,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
 -rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 1.1K   Jan 24 2023 19:39 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
@@ -1127,7 +1129,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  29K   Jan 20 2023 22:38 rev. 185 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 20 Jan 2023 22:38:32 -0800 -->
+<!-- updated Tue, 24 Jan 2023 19:39:38 -0800 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
