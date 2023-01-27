@@ -42,6 +42,8 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
+https://fitgirl-repacks.site/
+HTTP request sent, awaiting response... 403 Forbidden
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://mangadex.org/
