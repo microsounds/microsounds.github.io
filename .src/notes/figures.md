@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/1/10 -->
+<!-- updated 2023/1/28 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -103,6 +103,7 @@ var figs = [
 	[ '1536238', 're-ment miku miku ♪ room miniature #8 of 8' ],
 
 */
+	[ '1335582', 'sega sakura miku v3 SPM' ],
 	[ '1571286', 'sega miku christmas 2022 SPM' ],
 	[ '1479579', 'sega miku 15th anniversary kei ver. SPM' ],
 	[ '1549222', 'sega miku 15th anniversary zhou ver. SPM' ],
