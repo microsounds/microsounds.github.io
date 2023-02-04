@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 03 Feb 2023 18:05:10 -0800</lastBuildDate>
+<lastBuildDate>Fri, 03 Feb 2023 18:17:46 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 866, commit 1c9564d. “bash: Disable path-gitstatus after detecting 500ms of latency” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.7KiB in size, and the approximate size of all comment lines of code is 64.6KiB then this document currently covers about 8.89% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 867, commit 9edc480. “x48: Enable use of XShm extension” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.7KiB in size, and the approximate size of all comment lines of code is 64.6KiB then this document currently covers about 8.89% of all implemented features and behavior in this repository. This is just an [automated guess][1] [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 03 Feb 2023 18:05:10 -0800</pubDate>
+<pubDate>Fri, 03 Feb 2023 18:17:46 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
