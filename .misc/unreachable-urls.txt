@@ -42,14 +42,12 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
-https://fitgirl-repacks.site/
-HTTP request sent, awaiting response... 403 Forbidden
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -331,6 +329,8 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+https://web.archive.org/web/20150205231954/http://omori-game.com/
+(try: 2)  https://web.archive.org/web/20150205231954/http://omori-game.com/
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/
