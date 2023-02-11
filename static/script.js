@@ -4,7 +4,7 @@
  * javascript code in this page.
  *
  * static/script.js — interactive webpage elements
- * (c) 2022 microsounds <https://github.com/microsounds>, GPLv3+
+ * (c) 2023 microsounds <https://github.com/microsounds>, GPLv3+
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -49,6 +49,7 @@ var platitudes = [
 	'synthesized love songs from the future',
 	'music that felt nostalgic when it was new',
 	'you\'re my shining star, my beautiful fantasy',
+	'you\'ll always be real in my heart',
 	'lurid and indecent memories',
 	'google doesn\'t go this far back',
 	'AI generated lyrical nothings',

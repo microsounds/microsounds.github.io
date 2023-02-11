@@ -130,7 +130,7 @@ copy-pasted directly from someone's website.</em>
 
 </div>
 
-[1mb]: https://1mb.club
+[1mb]: https://1mb.club#:~:text=microsounds.github.io
 [xhtml]: {GIT_REMOTE}/microsounds.github.io#-validation
 
 <script type="text/javascript">
