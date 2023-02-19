@@ -119,7 +119,7 @@ a collection of <em>“About Mes”</em> previously published on Last.fm
 If you want to contact me directly over e-mail or discord, my contact info is below.<br/>
 It’s not really a puzzle, just remove spaces and newlines and swap the places of every 2 characters like this, <code>1MUk -&gt; M1kU</code>, and decode the resultant mess as <code>base64</code>, then <code>gzip</code>.</p>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ cat contact.txt | gzip -c | base64 -w 0 \
-&gt;	| sed -E -e 's/(.)(.)/\2\1/g' -e 's/.&#123;4&#125;/&amp; /g' | fold -s | tee <a href="/info.txt">info.txt</a>
+&gt;	| sed -E -e 's/(.)(.)/\2\1/g' -e 's/.&#123;4&#125;/&amp; /g' | fold -s
 4HIs AAAA AACA 9AVP QhLA yGRC FXiq 5maF Alkp qcmX mJmb CWkm uFnQ xJbp qODS HuJr
 b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 </code></pre>
@@ -128,7 +128,7 @@ b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
 <em>Never run unknown or <a href="http://thejh.net/misc/website-terminal-copy-paste">untrusted shell commands</a>
 copy-pasted directly from someone's website.</em>
 <br/>
-<code>wget -qO - https://microsounds.github.io/<a href="/info.txt">info.txt</a> | tr -d '\n ' | sed -E 's/(.)(.)/\2\1/g' | base64 -d | zcat</code>
+<code>wget -qO- https://microsounds.github.io | sed -n '/^4HIs/{N;p}' | tr -d '\n ' | sed -E 's/(.)(.)/\2\1/g' | base64 -d | zcat</code>
 </details>
 <h2>Links<span id="Links"></span></h2>
 <div class="center">
