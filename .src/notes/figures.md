@@ -15,7 +15,8 @@ Since I don't feel like actually making an account on _[myfigurecollection.net][
 [mfc]: https://myfigurecollection.net
 
 ## Collection
-_They're in no particular order, only sorted by date I remember getting it, probably._
+_Sorted by when I remember getting it, from newest to oldest.<br/>
+If images are broken it means MFC is down again._
 
 <div id="fig-thumbs">
 <noscript>
