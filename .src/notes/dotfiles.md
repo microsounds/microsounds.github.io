@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">868</b>, commit `7f2c9cb`.**
+**Revision No. <b style="font-size: 130%">868</b>, commit `87b8940`.**
 
 **"gh-actions: Nothing important"**
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *28.7KiB* in
 size, and the approximate size of all comment lines of code is
-*64.7KiB* then this document
-currently covers about <b style="font-size: 130%;">8.88%</b>
+*64.8KiB* then this document
+currently covers about <b style="font-size: 130%;">8.87%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -534,7 +534,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime6.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime33.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -557,9 +557,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-212.25KiB
+212.54KiB
 out of a total compressed git history size of
-770.61KiB._
+770.77KiB._
 
 # Complete source listing
 
@@ -603,7 +603,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1 1.4K   Oct 24 2022 00:54 rev. 27  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 3.6K   Feb 24 2023 12:01 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 3.9K   Feb 24 2023 12:01 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
 -rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
