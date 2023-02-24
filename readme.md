@@ -34,12 +34,12 @@ and operate under the assumption that you are me and you (me) have a copy of all
 * Some examples include:
 	* `.kagami/macros` expects my `~/.local/lib/moonphase-date` — timestamp conversion routines, requires GNU `date`, `bc`
 	* `.scripts/dotfiles-ls.sh` expects every single file in my userland environment to properly build `notes/dotfiles.md`
-	* `.scripts/unreachable.sh` expects git alias `list-files` to spider through this repo to check for broken links.
+	* `.scripts/unreachable.sh` expects git alias `list-files` and `wget` to spider through this repo to report broken links.
+	* `.scripts/fetch-figure-pics.sh` expects `wget` to spider through _myfigurecollection.net_ to fix broken links.
 
 ### External build processes pushing to this repo
-Updates to my [userland environment][atelier] trigger an Actions workflow that
-performs a simplified version fo the CI/CD behavior described below as a side
-effect of testing my dotfiles on every revision.
+An Actions workflow from my [userland environment repo][atelier] is triggered on every push and on a cron job timer that performs a simplified version fo the CI/CD behavior described below,
+both as a side effect of testing my dotfiles on every revision and as a convenient way to have dynamically updated static webpages.
 
 [kagami]: https://github.com/microsounds/kagami
 [atelier]: https://github.com/microsounds/atelier
