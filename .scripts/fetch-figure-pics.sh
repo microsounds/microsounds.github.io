@@ -18,12 +18,13 @@ echo "Scraping current filename keys for MFC figure pics" 1>&2
 		# strip leading 'x'
 		[ "${id%${id#?}}" = 'x' ] && id="${id#?}"
 
-		# scrape for new filename keys
-		new_key="$(wget -qO - https://myfigurecollection.net/item/$id \
-			| egrep -o "$id-[a-z0-9]+" | head -n 1)"
-		new_key="${new_key#*-}"
-
-		# search and replace keys
+		# scrape for new filename keys and rewrite in place
+		unset new_key
+		while [ -z "$new_key" ]; do
+			new_key="$(wget -qO - https://myfigurecollection.net/item/$id \
+				| egrep -o "$id-[a-z0-9]+" | head -n 1)"
+			new_key="${new_key#*-}"
+		done
 		sed "s/'$key'/'$new_key'/g" -i "$TARGET"
 		echo "fetching entry $id" "old: $key" "new: $new_key" 1>&2
 	done
