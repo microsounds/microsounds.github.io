@@ -5,7 +5,7 @@ HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
-HTTP request sent, awaiting response... 405 Method Not Allowed
+HTTP request sent, awaiting response... 503 Service Unavailable
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -14,8 +14,10 @@ https://archive.4plebs.org/s4s/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
+https://blahaj.quest/
+(try: 2)  https://blahaj.quest/
 https://cdromance.com/
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/docs/ControlSequences&
 HTTP request sent, awaiting response... 404 Not Found
 https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
@@ -44,6 +46,8 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
+https://maki.cafe/
+(try: 2)  https://maki.cafe/
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
@@ -312,25 +316,24 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scro
 HTTP request sent, awaiting response... 404 Not Found
 https://soundcloud.com/-redacted-
 HTTP request sent, awaiting response... 404 Not Found
-https://static.myfigurecollection.net/upload/items/
+https://static.myfigurecollection.net/upload/items/0/
 HTTP request sent, awaiting response... 403 Forbidden
-https://static.myfigurecollection.net/upload/items/big/
+https://static.myfigurecollection.net/upload/items/1/
 HTTP request sent, awaiting response... 403 Forbidden
 https://u1lib.org/
 https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/ck/
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/fa/
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
-HTTP request sent, awaiting response... 503 Service Temporarily Unavailable
+HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
-https://www.galago-project.org/specs/notification/0.9/index.html

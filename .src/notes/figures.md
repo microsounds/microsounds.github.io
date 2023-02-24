@@ -117,7 +117,7 @@ var figs = [
 	[ '1275355', 'cead8', 'sega preciality special nuigurumi sakura miku' ],
 	[ '1213389', '66d9e', 'good smile genshin impact venti nendoroid #1795' ],
 	[ '1189088', 'f9b14', 'good smile hatsune miku nt nendoroid #1701' ],
-	[ '1499800', '3a8d0', 'taito miku artist masterpiece latidos 2022 ver.' ],
+	[ '1499800', '', 'taito miku artist masterpiece latidos 2022 ver.' ],
 	[ '1220581', '63347', 'taito miku artist masterpiece pricess arabian ver.' ],
 	[ 'x1214387', 'ea438', 'knockoff taito miku wonderland rapunzel' ],
 	[ 'x314683', 'a7e6a', 'knockoff sega miku fuwa fuwa nuigurumi plush (strap)' ],
