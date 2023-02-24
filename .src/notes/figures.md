@@ -36,8 +36,8 @@ _Sorted by when I remember getting it, from newest to oldest._
 
 | Key | Meaning |
 | -- | -- |
-| ![ico-fig]($DOC_ROOT/notes/assets/miku-nendo.jpg) | **Owned** |
-| ![ico-fig-fake]($DOC_ROOT/notes/assets/miku-nendo.jpg) | **Owned (Fake/Bootleg)** |
+| ![ico-fig]({DOC_ROOT}/notes/assets/miku-nendo.jpg) | **Owned** |
+| ![ico-fig-fake]({DOC_ROOT}/notes/assets/miku-nendo.jpg) | **Owned (Fake/Bootleg)** |
 
 </div>
 
