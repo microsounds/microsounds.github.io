@@ -13,7 +13,11 @@ Since I don't feel like actually making an account on _[myfigurecollection.net][
 [claw]: https://www.youtube.com/watch?v=93c9oTU7ut0
 [micker]: https://www.youtube.com/watch?v=f91sM4rI76w&hl=en
 [mfc]: https://myfigurecollection.net
-[^api]: Note: If images are broken it means mfc [changed their API endpoints again](https://github.com/microsounds/microsounds.github.io/commit/10c49ea).
+[^api]:
+	Note: mfc likes to [change their API endpoints][1] a lot, if images are broken, it's not for [a lack of trying][2].
+
+	[1]: https://github.com/microsounds/microsounds.github.io/commit/10c49ea
+	[2]: https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/fetch-figure-pics.sh
 
 ## Collection
 _Sorted by when I remember getting it, from newest to oldest._
@@ -32,8 +36,8 @@ _Sorted by when I remember getting it, from newest to oldest._
 
 | Key | Meaning |
 | -- | -- |
-| ![ico-fig](https://static.myfigurecollection.net/upload/items/0/186-f9170.jpg) | **Owned** |
-| ![ico-fig-fake](https://static.myfigurecollection.net/upload/items/0/186-f9170.jpg) | **Owned (Fake/Bootleg)** |
+| ![ico-fig]($DOC_ROOT/notes/assets/miku-nendo.jpg) | **Owned** |
+| ![ico-fig-fake]($DOC_ROOT/notes/assets/miku-nendo.jpg) | **Owned (Fake/Bootleg)** |
 
 </div>
 
