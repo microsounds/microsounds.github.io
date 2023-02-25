@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 868, commit 87b8940. “gh-actions: Nothing important” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.7KiB in size, and the approximate size of all comment lines of code is 64.8KiB then this document currently covers about 8.87% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document [..]]]>
+<![CDATA[Revision No. 868, commit a6e2a9b. “gh-actions: Nothing important” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 28.7KiB in size, and the approximate size of all comment lines of code is 64.7KiB then this document currently covers about 8.87% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>

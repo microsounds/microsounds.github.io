@@ -1,5 +1,5 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">868</b>, commit `87b8940`.**
+**Revision No. <b style="font-size: 130%">868</b>, commit `a6e2a9b`.**
 
 **"gh-actions: Nothing important"**
 
@@ -12,7 +12,7 @@ in this repo is about **5:1**.
 
 If this document is *28.7KiB* in
 size, and the approximate size of all comment lines of code is
-*64.8KiB* then this document
+*64.7KiB* then this document
 currently covers about <b style="font-size: 130%;">8.87%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
@@ -534,7 +534,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime33.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime11.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -557,9 +557,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-212.54KiB
+212.55KiB
 out of a total compressed git history size of
-770.77KiB._
+775.62KiB._
 
 # Complete source listing
 
