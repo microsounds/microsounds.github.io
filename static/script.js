@@ -86,6 +86,8 @@ var loops = [
 	[ 'cycles2', 'Totomoni - Don\'t Stop/Take Me' ],
 	[ 'leisure1', 'LamazeP - Swimsuit ft. 初音ミク' ],
 	[ 'leisure2', 'LamazeP - Swimsuit ft. 初音ミク' ],
+	[ 'teardrop1', 'Hoobastank - The Reason (bo en remix)' ],
+	[ 'teardrop2', 'Hoobastank - The Reason (bo en remix)' ],
 	[ 'kimochi', 'TeddyLoid - ME!ME!ME! ft. daoko' ],
 	[ 'pipo1', 'TeddyLoid - Pipo Password' ],
 	[ 'waiting', 'OMORI Sound Team -  Snow Forest/A Single Flower Blooms' ],
