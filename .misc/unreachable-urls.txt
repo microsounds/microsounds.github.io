@@ -14,8 +14,6 @@ https://archive.4plebs.org/s4s/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
-https://blahaj.quest/
-(try: 2)  https://blahaj.quest/
 https://cdromance.com/
 HTTP request sent, awaiting response... 403 Forbidden
 https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/docs/ControlSequences&
@@ -46,8 +44,6 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
-https://maki.cafe/
-(try: 2)  https://maki.cafe/
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
@@ -320,6 +316,7 @@ https://static.myfigurecollection.net/upload/items/0/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/1/
 HTTP request sent, awaiting response... 403 Forbidden
+https://supermemo.guru/wiki/SuperMemo_Guru
 https://u1lib.org/
 https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 Forbidden
