@@ -79,6 +79,8 @@ I have a collection of notes and writings located at [`/notes`](notes/index.md) 
 * _(2016)_ command-line stack-based RPN calculator — [`{AUTHOR}/hpsh`]({GIT_REMOTE}/hpsh)
 
 ## Even older
+* _(2015-2018)_ An older, abandoned iteration of this website — [`microsounds.neocities.org`](https://microsounds.neocities.org)
+	* _I was never much for writing then either._
 * _(2012-2015)_ <span class="blink" style="color: #FFA5B5;"><em>NSFW!</em></span>
 a collection of _"About Mes"_ previously published on Last.fm
 — [`/misc/last-fm.htm`](/misc/last-fm.htm)
