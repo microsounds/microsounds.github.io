@@ -72,6 +72,14 @@ var urls = [
 	'https://www.youtube.com/watch?v=HgjyQ0_coJo', /* Nyan~ Neko Sugar Girls: All Episodes */
 	'https://www.youtube.com/watch?v=4p1XlWtOC0Q', /* shamishami */
 	'https://www.youtube.com/watch?v=7UFLY9bwhV8', /* CVLTVRE : NEW */
+	'https://www.youtube.com/watch?v=3lkyJKGhjxM', /* [MMD]Ninja re bang bang - Hatsune Miku (GUMI Vocal) */
+	'https://www.youtube.com/watch?v=yVkDAJ-zQck', /* [MMD]Happy Synthesizer - Hatsune Miku */
+	'https://www.youtube.com/watch?v=hwR_w0gNVNU', /* [Vocaloid] Hatsune Miku - El mundo es mío (World is Mine - Español) (スペイン語 サルサ) */
+	'https://www.youtube.com/watch?v=3k_ZwRa1PaI', /* [Vocaloid] Hatsune Miku 初音ミク - PoPiPo - Merengue Version - メレンゲバージョン */
+	'https://www.youtube.com/watch?v=mUmoly7sulY', /* 【Hatsune Miku】Electric Chair【VOCALOID Parody】*/
+	'https://www.youtube.com/watch?v=SRam9zcijao', /* [Hatsune Miku became a robot] "Believe (ver.HD)" [MMD anime PV] */
+	'https://www.youtube.com/watch?v=IEYpfnSf0yc', /* 【VOCALOID】Hatsune Miku - Júrame (Cover) El lobo y la Sociedad Privada */
+	'https://www.youtube.com/watch?v=8HZM6plwEuI', /* 【Cumbia】Diganle 【Hatsune Miku】*/
 ];
 var sel = urls[Math.floor(Math.random() * urls.length)];
 
