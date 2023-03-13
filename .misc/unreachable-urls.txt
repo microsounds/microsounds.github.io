@@ -5,7 +5,7 @@ HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
-HTTP request sent, awaiting response... 503 Service Unavailable
+HTTP request sent, awaiting response... 405 Method Not Allowed
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -331,7 +331,5 @@ https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
-https://www.cs.vu.nl/~ast/intel/
-(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
