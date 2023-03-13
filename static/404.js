@@ -1,8 +1,9 @@
 'use strict';
 
 /*
- * upon 404, distract the user with something dumb
- * there's some miku songs in here somewhere, mostly just old videos
+ * upon 404, distract the user with old videos
+ * some are nostalgic, others are just for fun
+ * this feature mostly exists so I can reseed my youtube recs with my favorite topics
  */
 
 var urls = [
@@ -78,6 +79,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=7j0mQH0BtEU', /* "FUTURE EVE" feat.HatsuneMiku / sasakure.‌UK + UKRampage */
 	'https://www.youtube.com/watch?v=c-P7PiDBb6g', /* 【初音ミク - Hatsune Miku】Flowertone【Original】*/
 	'https://www.youtube.com/watch?v=bU5rv7WfK30', /* Japanese Man Who Married Hatsune Miku */
+	'https://www.youtube.com/watch?v=YaUpRcrJKTg', /* FM-TOWNS　の世界　紹介ビデオ（1989年）*/
 
 //	'https://www.youtube.com/watch?v=3lkyJKGhjxM', /* [MMD]Ninja re bang bang - Hatsune Miku (GUMI Vocal) */
 //	'https://www.youtube.com/watch?v=yVkDAJ-zQck', /* [MMD]Happy Synthesizer - Hatsune Miku */
