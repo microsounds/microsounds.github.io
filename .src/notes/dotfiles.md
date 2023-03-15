@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">868</b>, commit `7434efb`.**
+**Revision No. <b style="font-size: 130%">869</b>, commit `e62ed3f`.**
 
-**"gh-actions: Nothing important"**
+**"git: Added git aliases for edge cases in detached HEAD mode"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *28.7KiB* in
+If this document is *28.9KiB* in
 size, and the approximate size of all comment lines of code is
-*64.8KiB* then this document
-currently covers about <b style="font-size: 130%;">8.87%</b>
+*65.0KiB* then this document
+currently covers about <b style="font-size: 130%;">8.91%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -448,7 +448,10 @@ See *Usage Notes* for more information.
 	| alias | function |
 	| -- | -- |
 	| `meta` | Appends `--git-dir=$HOME/.config/meta --work-tree=$HOME` to a `git` command.<br/>_(Added implicitly when outside a git directory.)_ |
-	| `summary` | Outlines the last 20 commits with a commit graph. |
+	| `past` | Outlines the last 17 commits made before `HEAD` with a commit graph. |
+	| `future` | Outlines the next 17 commits made after `HEAD` with a commit graph. |
+	| `rw` | `checkout` 1 commit backward, alias for `checkout HEAD~1` |
+	| `ff` | `checkout` 1 commit forward toward `master` |
 	| `list-files` | List all tracked filenames in repo, ideally for use with `xargs`. |
 	| `flatten` | Automatically melds `--fixup/squash` commits out of existence starting from the root commit. |
 	| `recommit` | Stages changes to worktree and `commit --amend`s them as part of the last commit. |
@@ -534,7 +537,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime50.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime46.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -557,9 +560,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-212.65KiB
+213.40KiB
 out of a total compressed git history size of
-770.82KiB._
+777.03KiB._
 
 # Complete source listing
 
@@ -602,8 +605,8 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rw-r--r-- 1 1.4K   Oct 24 2022 00:54 rev. 27  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 4.0K   Feb 24 2023 12:01 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 1.9K   Mar 14 2023 20:54 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
+-rw-r--r-- 1 4.0K   Mar 14 2023 20:54 rev. 29  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
 -rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
@@ -699,7 +702,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  29K   Feb 24 2023 12:01 rev. 187 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  29K   Mar 14 2023 20:54 rev. 188 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 24 Feb 2023 12:01:54 -0800 -->
+<!-- updated Tue, 14 Mar 2023 20:54:46 -0700 -->
