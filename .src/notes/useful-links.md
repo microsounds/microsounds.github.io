@@ -108,6 +108,8 @@
 * [Logical Increments: GPU Comparison](https://www.logicalincrements.com/articles/graphicscardcomparison)
 
 **misc** ---
+* [disk prices](https://diskprices.com)
+	* _Automatically curated list of new/used disk storage prices on Amazon.com for various countries._
 * [sudomemo](https://www.sudomemo.net)
 	* _A revival of [Flipnote Hatena](https://en.wikipedia.org/wiki/Flipnote_Studio), a 2010s online hosting service for Nintendo DSi/3DS Flipnote Studio animations._
 * [poyopoyo gif maker](https://poyopoyo.gifanimaker.com)
