@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/1/2 -->
+<!-- updated 2023/3/17 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -122,6 +122,8 @@
 * [TDEE Calculator](https://tdeecalculator.net)
 * [BLÅHAJ Finder](https://blahaj.quest/)
 	* _So you can buy a stuffed IKEA shark and immediately derail any thread on 4chan._
+* [The World Wide Web Project](http://info.cern.ch/)
+	* _Browse the first ever web page, romanticized history and opinions on the creation of the WWW at CERN between 1989-1993._
 
 **web 1.0-esque inspirations for this website** <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span> ---
 * [/g/'s Based Sites](https://based.coom.tech)
