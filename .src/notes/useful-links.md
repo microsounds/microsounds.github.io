@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/3/17 -->
+<!-- updated 2023/4/6 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -131,7 +131,8 @@
 * [The Cyber Vanguard](https://cyber.dabamos.de)
 * [Dennis M. Ritchie](https://www.bell-labs.com/usr/dmr/www)
 * [getgle](https://getgle.org)
-* [dokodemo](https://web.archive.org/web/20220731061144/https://dokodemo.neocities.org/)
+* [dokodemo](https://dokode.moe)
+* [dokodemo _(pre-2023)_](https://web.archive.org/web/20220731061144/https://dokodemo.neocities.org/)
 * [eden's site](https://eda.gay)
 * [maki.cafe](https://maki.cafe)
 * [allyratworld](https://allyratworld.neocities.org/home.html)
