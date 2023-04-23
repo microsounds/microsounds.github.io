@@ -80,6 +80,8 @@ var loops = [
 	[ 'watashi1', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
 	[ 'watashi2', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
 	[ 'watashi3', 'KnuthP - ワタシアナライザー ft. 初音ミク' ],
+	[ 'anemoia1', 'MAYUKI - CURUS (Pop\'n Cafe Edition)' ],
+	[ 'anemoia2', 'MAYUKI - CURUS (Pop\'n Cafe Edition)' ],
 	[ 'touch1', 'imprintafter - Tell Me Baby (ft. stillsound)' ],
 	[ 'touch2', 'imprintafter - Tell Me Baby (ft. stillsound)' ],
 	[ 'cycles1', 'Totomoni - Don\'t Stop/Take Me' ],
