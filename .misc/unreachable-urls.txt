@@ -4,8 +4,8 @@ http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
 HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
-https://amazon.jp/
-HTTP request sent, awaiting response... 503 Service Unavailable
+https://www.amazon.co.jp/
+HTTP request sent, awaiting response... 405 Method Not Allowed
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -91,6 +91,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/patches/status-allmonitors.diff
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/pre-run
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/fcitx5/profile
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/fm/libfm.conf
 HTTP request sent, awaiting response... 404 Not Found
