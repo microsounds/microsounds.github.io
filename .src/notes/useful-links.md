@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/4/6 -->
+<!-- updated 2023/4/30 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -106,6 +106,8 @@
 * [Crimp/Jumper Connector Names](https://www.mattmillman.com/info/crimpconnectors)
 	* _Standard names for breadboard jumpers and crimp connections._
 * [Logical Increments: GPU Comparison](https://www.logicalincrements.com/articles/graphicscardcomparison)
+* [Japanese Arcade IC card FAQ](https://old.reddit.com/r/rhythmgames/comments/w8cxcs/arcade_ic_card_faq/)
+	* _Westerner's guide to IC cards for Japanese arcade games, Aime, e-Amusement, Banapass, NESiCA, etc._
 
 **misc** ---
 * [disk prices](https://diskprices.com)
@@ -124,6 +126,10 @@
 	* _So you can buy a stuffed IKEA shark and immediately derail any thread on 4chan._
 * [The World Wide Web Project](http://info.cern.ch/)
 	* _Browse the first ever web page, romanticized history and opinions on the creation of the WWW at CERN between 1989-1993._
+* [ADS-B Exchange](https://globe.adsbexchange.com/)
+	* _View live air traffic and aircraft flight paths in your area, or anywhere in the world._
+* [Zenius-I-vanisher.com Arcade Machine Locator](https://zenius-i-vanisher.com/v5.2/arcades.php)
+	* _Database of arcade businesses and arcade machine locations, covers a wide variety of eastern and western game series._
 
 **web 1.0-esque inspirations for this website** <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span> ---
 * [/g/'s Based Sites](https://based.coom.tech)
