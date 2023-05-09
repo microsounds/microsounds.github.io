@@ -28,6 +28,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=KGD-mFTY6mw', /* THE MOST SUPER KAWAII-EST LUCKY STAR FANDUB EVER. */
 	'https://www.youtube.com/watch?v=25fsQofab9c', /* I'm So Lucky Lucky - Nightcore */
 	'https://www.youtube.com/watch?v=1uUTM4OMNMk', /* PROOF I am 日本人  ラムネ好き！ Pretty intense animation */
+	'https://www.youtube.com/watch?v=DnD_SvDdDkA', /* 【初音ミク】 ＬＩＮＫ 【オリジナル曲】*/
 	'https://www.youtube.com/watch?v=YZfwXt8naAc', /* Perfume - Perfume */
 	'https://www.youtube.com/watch?v=dFDiekVNy6I', /* モバイリ：センセーション（修正版）*/
 	'https://www.youtube.com/watch?v=Y5bean7G1a8', /* Hatsune Miku - Boom, Boom, Boom, Boom!! (Cover) */
