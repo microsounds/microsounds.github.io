@@ -81,6 +81,11 @@ var urls = [
 	'https://www.youtube.com/watch?v=c-P7PiDBb6g', /* 【初音ミク - Hatsune Miku】Flowertone【Original】*/
 	'https://www.youtube.com/watch?v=bU5rv7WfK30', /* Japanese Man Who Married Hatsune Miku */
 	'https://www.youtube.com/watch?v=YaUpRcrJKTg', /* FM-TOWNS　の世界　紹介ビデオ（1989年）*/
+	'https://www.youtube.com/watch?v=76W7n5UyWvE', /* 【MAD】Time to Kira【 Death Note × Time to Air 】*/
+	'https://www.youtube.com/watch?v=JALbemLw3G4', /* Kasane Teto - Teto territory */
+	'https://www.youtube.com/watch?v=l62uUZqz0Z8', /* livetune - ストロボナイツ */
+	'https://www.youtube.com/watch?v=92cXTK4MtaM', /* [COMPLETE SERIES] It's not my fault that Sand Canyon is not popular */
+	'https://www.youtube.com/watch?v=Ts9zAazWIzM', /* BAKAYARO + Po Pi Po 【Miku Hatsune x Death Note】*/
 
 //	'https://www.youtube.com/watch?v=3lkyJKGhjxM', /* [MMD]Ninja re bang bang - Hatsune Miku (GUMI Vocal) */
 //	'https://www.youtube.com/watch?v=yVkDAJ-zQck', /* [MMD]Happy Synthesizer - Hatsune Miku */
