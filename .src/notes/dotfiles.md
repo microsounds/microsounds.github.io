@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">878</b>, commit `30ad95b`.**
+**Revision No. <b style="font-size: 130%">881</b>, commit `cc1cc6b`.**
 
-**"Nothing important"**
+**"misc: Preparing for upgrade to debian 12 (bookworm)"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *29.3KiB* in
+If this document is *29.7KiB* in
 size, and the approximate size of all comment lines of code is
-*65.4KiB* then this document
-currently covers about <b style="font-size: 130%;">8.97%</b>
+*65.6KiB* then this document
+currently covers about <b style="font-size: 130%;">9.06%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -417,11 +417,16 @@ _Launch daemons in foreground mode in another terminal instance without forking 
 > **NOTE**<br/>
 >_On first-run, `chromium` will momentarily exit and restart to rebuild configuration and enable use of externally customized color options._
 
-`chromium` was extended to mangle the user-hostile per-profile `Preferences` and global `Local State` JSON files with a series of chained `jq` filters stored in the following files, applying persistent settings in order.
+`chromium` is not meant to be user-serviceable or configurable through plaintext without using system-wide group policy features, `chromium` is a shell script extended to mangle user-hostile internal state files to match the persistent plaintext configs described below:
 * [`~/.config/chromium/preferences.conf`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/preferences.conf)
+	* _Main browser preferences stored as JSON in `Default/Preferences`._
 * [`~/.config/chromium/local_state.conf`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/local_state.conf)
+	* _Chromium experiment flags stored as JSON in `Local State`._
 
 C preprocessor syntax is also accepted, hex color values in the form `#RRGGBB` will be converted to a signed integer representing `0xBBGGRRAA` in two's complement hexadecimal with `AA` (alpha channel) always set to `0xFF`
+
+* [`~/.config/chromium/omnibox.sql`]({GIT_REMOTE}/atelier/raw/master/.config/chromium/omnibox.sql)
+	* _Omnibox settings and Tab-to-search keyword shortcuts stored as SQLite in `Default/Web Data`._
 
 ### Managed policy overrides
 `chromium` is managed by `/etc/chromium/policies/managed/extensions.json`, set up during [post-install]({GIT_REMOTE}/atelier/raw/master/.once.d/29-chromium-extensions.sh), which automatically installs several useful extensions on first-run, including [uBlock Origin][].
@@ -443,6 +448,7 @@ Plaintext `chromium` configuration is an ongoing experiment of mine.
 | first-run config rebuild | works |
 | applying persistent chromium settings | works |
 | applying persistent chromium flags | works |
+| applying persistent omnibox settings | works |
 | extension install on first-run | works _(via group policy)_ |
 | applying persistent extension settings | **no** |
 
@@ -546,7 +552,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime43.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime21.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -569,18 +575,19 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-215.01KiB
+222.16KiB
 out of a total compressed git history size of
-789.64KiB._
+792.05KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 9.9K   Feb  3 2023 18:05 rev. 137 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.1K   Apr 28 2023 22:37 rev. 81  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.2K   May 25 2023 19:52 rev. 82  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
--rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
+-rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
+-rw-r--r-- 1  427   May 25 2023 19:28 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
 -rwxr-xr-x 1  465   Feb 13 2022 22:53 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/vimium/configure.sh">.config/chromium/vimium/configure.sh</a>
 -rw-r--r-- 1  639   Feb 13 2022 22:53 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/vimium/general.json">.config/chromium/vimium/general.json</a>
 -rw-r--r-- 1  608   Feb 12 2022 01:57 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/vimium/keybinds.conf">.config/chromium/vimium/keybinds.conf</a>
@@ -619,7 +626,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1 4.0K   Mar 14 2023 20:54 rev. 29  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
--rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 2.3K   May 25 2023 19:52 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
@@ -712,7 +719,8 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  30K   Apr 28 2023 21:47 rev. 191 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1 3.1K   May 25 2023 23:50 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/bookworm-changes.diff">bookworm-changes.diff</a>
+-rw-r--r-- 1  30K   May 25 2023 19:52 rev. 192 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 29 Apr 2023 09:35:34 -0700 -->
+<!-- updated Thu, 25 May 2023 23:50:22 -0700 -->

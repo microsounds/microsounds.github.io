@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">878</b>, commit <code>30ad95b</code>.</strong></p>
-<p><strong>“Nothing important”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">881</b>, commit <code>cc1cc6b</code>.</strong></p>
+<p><strong>“misc: Preparing for upgrade to debian 12 (bookworm)”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -119,19 +119,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>29.3KiB</em> in
+<p>If this document is <em>29.7KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>65.4KiB</em> then this document
-currently covers about <b style="font-size: 130%;">8.97%</b>
+<em>65.6KiB</em> then this document
+currently covers about <b style="font-size: 130%;">9.06%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌘 Sat, Apr 29th, 2023.</p>
+<p>Last updated 🌗 Thu, May 25th, 2023.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime43.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime21.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -757,12 +757,27 @@ In practice, shell script shebangs don’t need to be rewritten, Termux already 
 <p><strong>NOTE</strong><br/>
 <em>On first-run, <code>chromium</code> will momentarily exit and restart to rebuild configuration and enable use of externally customized color options.</em></p>
 </blockquote>
-<p><code>chromium</code> was extended to mangle the user-hostile per-profile <code>Preferences</code> and global <code>Local State</code> JSON files with a series of chained <code>jq</code> filters stored in the following files, applying persistent settings in order.</p>
+<p><code>chromium</code> is not meant to be user-serviceable or configurable through plaintext without using system-wide group policy features, <code>chromium</code> is a shell script extended to mangle user-hostile internal state files to match the persistent plaintext configs described below:</p>
 <ul>
-<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/preferences.conf"><code>~/.config/chromium/preferences.conf</code></a></li>
-<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/local_state.conf"><code>~/.config/chromium/local_state.conf</code></a></li>
+<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/preferences.conf"><code>~/.config/chromium/preferences.conf</code></a>
+<ul>
+<li><em>Main browser preferences stored as JSON in <code>Default/Preferences</code>.</em></li>
+</ul>
+</li>
+<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/local_state.conf"><code>~/.config/chromium/local_state.conf</code></a>
+<ul>
+<li><em>Chromium experiment flags stored as JSON in <code>Local State</code>.</em></li>
+</ul>
+</li>
 </ul>
 <p>C preprocessor syntax is also accepted, hex color values in the form <code>#RRGGBB</code> will be converted to a signed integer representing <code>0xBBGGRRAA</code> in two’s complement hexadecimal with <code>AA</code> (alpha channel) always set to <code>0xFF</code></p>
+<ul>
+<li><a href="https://github.com/microsounds/atelier/raw/master/.config/chromium/omnibox.sql"><code>~/.config/chromium/omnibox.sql</code></a>
+<ul>
+<li><em>Omnibox settings and Tab-to-search keyword shortcuts stored as SQLite in <code>Default/Web Data</code>.</em></li>
+</ul>
+</li>
+</ul>
 <h3>Managed policy overrides<span id="Managed-policy-overrides"></span></h3>
 <p><code>chromium</code> is managed by <code>/etc/chromium/policies/managed/extensions.json</code>, set up during <a href="https://github.com/microsounds/atelier/raw/master/.once.d/29-chromium-extensions.sh">post-install</a>, which automatically installs several useful extensions on first-run, including <a href="https://ublockorigin.com" title="uBlock Origin homepage">uBlock Origin</a>.</p>
 <h3>Configuring Vimium<span id="Configuring-Vimium"></span></h3>
@@ -790,6 +805,10 @@ Plaintext <code>chromium</code> configuration is an ongoing experiment of mine.<
 </tr>
 <tr>
 <td>applying persistent chromium flags</td>
+<td style="text-align: center">works</td>
+</tr>
+<tr>
+<td>applying persistent omnibox settings</td>
 <td style="text-align: center">works</td>
 </tr>
 <tr>
@@ -1019,17 +1038,18 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-215.01KiB
+222.16KiB
 out of a total compressed git history size of
-789.64KiB.</em></p>
+792.05KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 9.9K   Feb  3 2023 18:05 rev. 137 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.1K   Apr 28 2023 22:37 rev. 81  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.2K   May 25 2023 19:52 rev. 82  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
--rw-r--r-- 1  393   Jul  3 2021 23:09 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
+-rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
+-rw-r--r-- 1  427   May 25 2023 19:28 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
 -rwxr-xr-x 1  465   Feb 13 2022 22:53 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/configure.sh">.config/chromium/vimium/configure.sh</a>
 -rw-r--r-- 1  639   Feb 13 2022 22:53 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/general.json">.config/chromium/vimium/general.json</a>
 -rw-r--r-- 1  608   Feb 12 2022 01:57 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/vimium/keybinds.conf">.config/chromium/vimium/keybinds.conf</a>
@@ -1068,7 +1088,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1 4.0K   Mar 14 2023 20:54 rev. 29  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
--rwxr-xr-x 1 2.2K   Dec 27 2021 16:17 rev. 16  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 2.3K   May 25 2023 19:52 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
@@ -1161,10 +1181,11 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  30K   Apr 28 2023 21:47 rev. 191 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1 3.1K   May 25 2023 23:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/bookworm-changes.diff">bookworm-changes.diff</a>
+-rw-r--r-- 1  30K   May 25 2023 19:52 rev. 192 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 29 Apr 2023 09:35:34 -0700 -->
+<!-- updated Thu, 25 May 2023 23:50:22 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
