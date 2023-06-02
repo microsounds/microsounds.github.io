@@ -87,10 +87,16 @@ a collection of _"About Mes"_ previously published on Last.fm
 	* _Warning: 45,056K of animated images._
 
 ## Contact me
+Feel free to message me over d*scord anytime, I receive push notifications even when doing offline stuff.
+
+[![nolink](https://discord.c99.nl/widget/theme-6/194678252806078466.png)](https://discord.com/users/194678252806078466)
+
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
 
+<span id="discord-update"></span>
+
 <span class="blink" style="color: #FFFF00;"><em>New!</em></span> ---
-If you want to contact me directly over e-mail or discord, my contact info is below.<br/>
+If you want to contact me by e-mail, my contact info is below.<br/>
 It's not really a puzzle, just remove spaces and newlines and swap the places of every 2 characters like this, `1MUk -> M1kU`, and decode the resultant mess as `base64`, then `gzip`.
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ cat contact.txt | gzip -c | base64 -w 0 \
@@ -145,6 +151,16 @@ copy-pasted directly from someone's website.</em>
 		if (this.status == 200) {
 			document.getElementById('gh-update').innerHTML += ' Last updated on ' +
 				new Date(JSON.parse(this.response).commit.commit.author.date).toLocaleDateString() + '.';
+		}
+	};
+	req.send();
+
+	/* fetch discord information */
+	api = 'https://api.lanyard.rest/v1/users/194678252806078466'
+	req = new XMLHttpRequest();
+	req.open('GET, api, true);
+	req.onload = function() {
+		if (this.status == 200) {
 		}
 	};
 	req.send();
