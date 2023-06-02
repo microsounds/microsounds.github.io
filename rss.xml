@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sun, 30 Apr 2023 00:00:00 -0700</lastBuildDate>
+<lastBuildDate>Thu, 25 May 2023 23:50:22 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 878, commit 30ad95b. “Nothing important” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 29.3KiB in size, and the approximate size of all comment lines of code is 65.4KiB then this document currently covers about 8.97% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This document and [..]]]>
+<![CDATA[Revision No. 881, commit cc1cc6b. “misc: Preparing for upgrade to debian 12 (bookworm)” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 29.7KiB in size, and the approximate size of all comment lines of code is 65.6KiB then this document currently covers about 9.06% of all implemented features and behavior in this repository. This is just an [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Sat, 29 Apr 2023 09:35:34 -0700</pubDate>
+<pubDate>Thu, 25 May 2023 23:50:22 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines</title>
