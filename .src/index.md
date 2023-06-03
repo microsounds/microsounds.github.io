@@ -89,6 +89,7 @@ a collection of _"About Mes"_ previously published on Last.fm
 ## Contact me
 I'm <span id="discord-name"></span> on d*scord, feel free to message me anytime, I receive push notifications even when offline.
 Currently <span id="discord-status"></span>.
+<span class="footer" style="color: #CCC;">Powered by [Lanyard API](https://github.com/Phineas/lanyard)</span>
 
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
 
