@@ -1,6 +1,6 @@
 # Homepage
 <noscript>
-	<p><em>You have JavaScript disabled, certain multimedia elements will not work as expected.</em></p>
+	<p><em>You have JavaScript disabled, dynamic content and multimedia will not work.</em></p>
 </noscript>
 
 ![heading]({DOC_ROOT}/static/starry.jpg)
@@ -87,13 +87,10 @@ a collection of _"About Mes"_ previously published on Last.fm
 	* _Warning: 45,056K of animated images._
 
 ## Contact me
-Feel free to message me over d*scord anytime, I receive push notifications even when doing offline stuff.
-
-[![nolink](https://discord.c99.nl/widget/theme-6/194678252806078466.png)](https://discord.com/users/194678252806078466)
+I'm <span id="discord-name"></span> on d*scord, feel free to message me anytime, I receive push notifications even when offline.
+Currently <span id="discord-status"></span>.
 
 If it's about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.
-
-<span id="discord-update"></span>
 
 <span class="blink" style="color: #FFFF00;"><em>New!</em></span> ---
 If you want to contact me by e-mail, my contact info is below.<br/>
@@ -141,9 +138,12 @@ copy-pasted directly from someone's website.</em>
 [1mb]: https://1mb.club#:~:text=microsounds.github.io
 [xhtml]: {GIT_REMOTE}/microsounds.github.io#-validation
 
+<!-- TODO: if this gets any bigger this should be it's own .js file -->
 <script type="text/javascript">
 /* <![CDATA[ */
-	/* fetch date of last update */
+	/* fetch date of last site commit
+	 * github API rate limits to 60 GETs per hour
+	 */
 	var api = 'https://api.github.com/repos/{AUTHOR}/microsounds.github.io/branches/master';
 	var req = new XMLHttpRequest();
 	req.open('GET', api, true);
@@ -155,13 +155,59 @@ copy-pasted directly from someone's website.</em>
 	};
 	req.send();
 
-	/* fetch discord information */
-	api = 'https://api.lanyard.rest/v1/users/194678252806078466'
+	/* fetch discord presence with lanyard API
+	 * https://github.com/Phineas/lanyard
+	 */
+	uid = '194678252806078466';
+	api = 'https://api.lanyard.rest/v1/users/' + uid;
 	req = new XMLHttpRequest();
-	req.open('GET, api, true);
+	req.open('GET', api, true);
 	req.onload = function() {
 		if (this.status == 200) {
+			/* name and avatar */
+			document.getElementById('discord-name').innerHTML +=
+				'<em><a title="Click to add me directly!" href="https://discord.com/users/' + uid + '">' +
+				'<img src="https://cdn.discordapp.com/avatars/' + uid +
+				'/' + JSON.parse(this.response).data.discord_user.avatar + '.png?size=40" /> ' +
+				JSON.parse(this.response).data.discord_user.username + '#' +
+				JSON.parse(this.response).data.discord_user.discriminator + '</a></em>';
+
+			/* presence */
+			var f = document.getElementById('discord-status');
+			switch (JSON.parse(this.response).data.discord_status) {
+				case 'online': f.innerHTML += '<span class="blink" style="color: #BDFFB9;"><strong>online</strong></span>'; break;
+				case 'idle': f.innerHTML += '<span class="blink" style="color: #FFFAB9;"><strong>idle</strong></span>'; break;
+				case 'dnd': f.innerHTML += '<span class="blink" style="color: #FFB9CF;"><strong>busy</strong></span>'; break;
+				case 'offline': f.innerHTML += '<strong>offline</strong>'; return;
+			}
+
+			/* activities
+			 * https://discord.com/developers/docs/game-sdk/activities
+			 */
+			var act = JSON.parse(this.response).data.activities;
+			if (act.length > 0)
+				f.innerHTML += ', last seen';
+			else {
+				f.innerHTML += ' and not doing anything';
+				return;
+			}
+			for (var i in act) {
+				switch (act[i].type) {
+					case 0: f.innerHTML += ' playing '; break;
+					case 1: f.innerHTML += ' streaming '; break;
+					case 2: f.innerHTML += ' listening to '; break;
+					case 3: f.innerHTML += ' watching '; break;
+					case 5: f.innerHTML += ' competing in '; break; /* ??? */
+					/* custom status */
+					case 4: f.innerHTML += ' saying '; act[i].name = '"' + act[i].state + '"'; break;
+				}
+				f.innerHTML += '<em><strong>' + act[i].name + '</strong></em>';
+				if (act.length > 1 && i != act.length - 1)
+					f.innerHTML += ' and';
+			}
 		}
+		else
+			document.getElementById('discord-status').innerHTML += 'Lanyard API is down and this feature is broken..';
 	};
 	req.send();
 /* ]]> */

@@ -37,7 +37,7 @@
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Homepage<span id="Homepage"></span></h1>
 <noscript>
-	<p><em>You have JavaScript disabled, certain multimedia elements will not work as expected.</em></p>
+	<p><em>You have JavaScript disabled, dynamic content and multimedia will not work.</em></p>
 </noscript>
 <p><img src="/static/starry.jpg" alt="heading" />
 <span class="aside"><sup><em>Original illustration <a href="https://gelbooru.com/index.php?page=post&amp;s=view&amp;id=3757995">© 2015 tanakatam</a></em></sup></span></p>
@@ -119,10 +119,9 @@ a collection of <em>“About Mes”</em> previously published on Last.fm
 </li>
 </ul>
 <h2>Contact me<span id="Contact-me"></span></h2>
-<p>Feel free to message me over d*scord anytime, I receive push notifications even when doing offline stuff.</p>
-<p><a href="https://discord.com/users/194678252806078466"><img src="https://discord.c99.nl/widget/theme-6/194678252806078466.png" alt="nolink" /></a></p>
+<p>I’m <span id="discord-name"></span> on d*scord, feel free to message me anytime, I receive push notifications even when offline.
+Currently <span id="discord-status"></span>.</p>
 <p>If it’s about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.</p>
-<p><span id="discord-update"></span></p>
 <p><span class="blink" style="color: #FFFF00;"><em>New!</em></span> —
 If you want to contact me by e-mail, my contact info is below.<br/>
 It’s not really a puzzle, just remove spaces and newlines and swap the places of every 2 characters like this, <code>1MUk -&gt; M1kU</code>, and decode the resultant mess as <code>base64</code>, then <code>gzip</code>.</p>
@@ -158,9 +157,12 @@ copy-pasted directly from someone's website.</em>
 <br/>
 <span class="aside">A member site of <a href="https://1mb.club#:~:text=microsounds.github.io">1MB Club</a>, written in <a href="https://github.com/microsounds/microsounds.github.io#-validation">polyglot HTML5</a>, reject JS frameworks and spit on all their advocates!</span></p>
 </div>
+<!-- TODO: if this gets any bigger this should be it's own .js file -->
 <script type="text/javascript">
 /* <![CDATA[ */
-	/* fetch date of last update */
+	/* fetch date of last site commit
+	 * github API rate limits to 60 GETs per hour
+	 */
 	var api = 'https://api.github.com/repos/microsounds/microsounds.github.io/branches/master';
 	var req = new XMLHttpRequest();
 	req.open('GET', api, true);
@@ -172,13 +174,59 @@ copy-pasted directly from someone's website.</em>
 	};
 	req.send();
 
-	/* fetch discord information */
-	api = 'https://api.lanyard.rest/v1/users/194678252806078466'
+	/* fetch discord presence with lanyard API
+	 * https://github.com/Phineas/lanyard
+	 */
+	uid = '194678252806078466';
+	api = 'https://api.lanyard.rest/v1/users/' + uid;
 	req = new XMLHttpRequest();
-	req.open('GET, api, true);
+	req.open('GET', api, true);
 	req.onload = function() {
 		if (this.status == 200) {
+			/* name and avatar */
+			document.getElementById('discord-name').innerHTML +=
+				'<em><a title="Click to add me directly!" href="https://discord.com/users/' + uid + '">' +
+				'<img src="https://cdn.discordapp.com/avatars/' + uid +
+				'/' + JSON.parse(this.response).data.discord_user.avatar + '.png?size=40" /> ' +
+				JSON.parse(this.response).data.discord_user.username + '#' +
+				JSON.parse(this.response).data.discord_user.discriminator + '</a></em>';
+
+			/* presence */
+			var f = document.getElementById('discord-status');
+			switch (JSON.parse(this.response).data.discord_status) {
+				case 'online': f.innerHTML += '<span class="blink" style="color: #BDFFB9;"><strong>online</strong></span>'; break;
+				case 'idle': f.innerHTML += '<span class="blink" style="color: #FFFAB9;"><strong>idle</strong></span>'; break;
+				case 'dnd': f.innerHTML += '<span class="blink" style="color: #FFB9CF;"><strong>busy</strong></span>'; break;
+				case 'offline': f.innerHTML += '<strong>offline</strong>'; return;
+			}
+
+			/* activities
+			 * https://discord.com/developers/docs/game-sdk/activities
+			 */
+			var act = JSON.parse(this.response).data.activities;
+			if (act.length > 0)
+				f.innerHTML += ', last seen';
+			else {
+				f.innerHTML += ' and not doing anything';
+				return;
+			}
+			for (var i in act) {
+				switch (act[i].type) {
+					case 0: f.innerHTML += ' playing '; break;
+					case 1: f.innerHTML += ' streaming '; break;
+					case 2: f.innerHTML += ' listening to '; break;
+					case 3: f.innerHTML += ' watching '; break;
+					case 5: f.innerHTML += ' competing in '; break; /* ??? */
+					/* custom status */
+					case 4: f.innerHTML += ' saying '; act[i].name = '"' + act[i].state + '"'; break;
+				}
+				f.innerHTML += '<em><strong>' + act[i].name + '</strong></em>';
+				if (act.length > 1 && i != act.length - 1)
+					f.innerHTML += ' and';
+			}
 		}
+		else
+			document.getElementById('discord-status').innerHTML += 'Lanyard API is down and this feature is broken..';
 	};
 	req.send();
 /* ]]> */
