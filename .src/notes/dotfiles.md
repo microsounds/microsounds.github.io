@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">881</b>, commit `cc1cc6b`.**
+**Revision No. <b style="font-size: 130%">883</b>, commit `82081e5`.**
 
-**"misc: Preparing for upgrade to debian 12 (bookworm)"**
+**"xinit: Persist cursor size on multi-monitor setups"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *29.7KiB* in
 size, and the approximate size of all comment lines of code is
-*65.6KiB* then this document
-currently covers about <b style="font-size: 130%;">9.06%</b>
+*65.7KiB* then this document
+currently covers about <b style="font-size: 130%;">9.05%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -552,7 +552,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime21.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime38.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -575,15 +575,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-222.16KiB
+222.25KiB
 out of a total compressed git history size of
-792.05KiB._
+793.02KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1 9.9K   Feb  3 2023 18:05 rev. 137 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   May 25 2023 19:52 rev. 82  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.2K   Jun  3 2023 18:44 rev. 83  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  395   Mar 10 2022 17:55 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -709,7 +709,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  844   Aug 28 2022 22:58 rev. 30  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.scrc">.scrc</a>
--rw-r--r-- 1 2.2K   Apr 28 2023 21:47 rev. 70  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 2.3K   Jun  4 2023 00:09 rev. 71  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.9K   Feb  3 2023 18:17 rev. 26  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -723,4 +723,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  30K   May 25 2023 19:52 rev. 192 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 25 May 2023 23:50:22 -0700 -->
+<!-- updated Sun, 4 Jun 2023 00:09:11 -0700 -->

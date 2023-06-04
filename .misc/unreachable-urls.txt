@@ -8,12 +8,16 @@ https://www.amazon.co.jp/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
 HTTP request sent, awaiting response... 404 Not Found
+https://api.lanyard.rest/v1/users/
+HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/s4s/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
+https://cdn.discordapp.com/avatars/
+HTTP request sent, awaiting response... 404 Not Found
 https://cdromance.com/
 HTTP request sent, awaiting response... 403 Forbidden
 https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/docs/ControlSequences&
@@ -42,6 +46,8 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
+https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
 https://mangadex.org/
@@ -341,3 +347,4 @@ https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
+https://www.losertown.org/eats/cal.php
