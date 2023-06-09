@@ -87,7 +87,7 @@ a collection of _"About Mes"_ previously published on Last.fm
 	* _Warning: 45,056K of animated images._
 
 ## Contact me
-I'm <span id="discord-name"></span> on d*scord, feel free to message me anytime, I receive push notifications even when offline.
+I'm <span id="discord-name"></span> on d*scord, feel free to message me anytime, I receive push notifications even when offline.<br/>
 Currently <span id="discord-status"></span>.
 <span class="footer" style="color: #CCC;">Powered by [Lanyard API](https://github.com/Phineas/lanyard)</span>
 
@@ -166,12 +166,12 @@ copy-pasted directly from someone's website.</em>
 	req.onload = function() {
 		if (this.status == 200) {
 			/* name and avatar */
+			var user = JSON.parse(this.response).data.discord_user;
 			document.getElementById('discord-name').innerHTML +=
 				'<em><a title="Click to add me directly!" href="https://discord.com/users/' + uid + '">' +
 				'<img src="https://cdn.discordapp.com/avatars/' + uid +
-				'/' + JSON.parse(this.response).data.discord_user.avatar + '.png?size=40" /> ' +
-				JSON.parse(this.response).data.discord_user.username + '#' +
-				JSON.parse(this.response).data.discord_user.discriminator + '</a></em>';
+				'/' + user.avatar + '.png?size=40" /> ' +
+				user.username + ((!!!user.discriminator) ? '#' + user.discriminator : '') + '</a></em>';
 
 			/* presence */
 			var f = document.getElementById('discord-status');
