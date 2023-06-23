@@ -15,8 +15,8 @@ echo "Scraping current filename keys for MFC figure pics" 1>&2
 {
 	egrep -o "\[ .* \]," | tr -s "[]\', " '\t' | cut -f2,3 \
 		| while read -r id key; do
-		# strip leading 'x'
-		[ "${id%${id#?}}" = 'x' ] && id="${id#?}"
+		# strip leading identifiers
+		case "${id%${id#?}}" in [a-z]) id="${id#?}"; esac
 
 		# scrape for new filename keys and rewrite in place
 		unset new_key

@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/1/28 -->
+<!-- updated 2023/6/23 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -20,7 +20,8 @@ Since I don't feel like actually making an account on _[myfigurecollection.net][
 	[2]: https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/fetch-figure-pics.sh
 
 ## Collection
-_Sorted by when I remember getting it, from newest to oldest._
+_Sorted by when I remember getting it, from newest to oldest.
+<br />Abstract entries like figures that have yet to ship or release are at the beginning, stuff I'll find someday is at the very end._
 
 <div id="fig-thumbs">
 <noscript>
@@ -38,11 +39,27 @@ _Sorted by when I remember getting it, from newest to oldest._
 | -- | -- |
 | ![ico-fig]({DOC_ROOT}/notes/assets/miku-nendo.jpg) | **Owned** |
 | ![ico-fig-fake]({DOC_ROOT}/notes/assets/miku-nendo.jpg) | **Owned (Fake/Bootleg)** |
+| ![ico-fig-pre]({DOC_ROOT}/notes/assets/miku-nendo.jpg) | **Ordered/Pre-order** |
+| ![ico-fig-wish]({DOC_ROOT}/notes/assets/miku-nendo.jpg) | **Wishlist** |
 
 </div>
 
-## On Counterfeits
-If you're into figure collecting, take care not to fall for counterfeit figures of varying quality sold at abnormally low prices, usually imitating designs that are years out of production, yet being sold new in box.
+## If you plan to buy or preorder unreleased figures from Japan
+If collecting figures well ahead of their release is something that interests you, be warned that the domestic industry surrounding it is a _predatory one_ that uses gambling mechanics, preorders, small production runs, and long lead times of 6 months or more to dull the impact of irresponsible purchases and maximize your FOMO in order to get you to impulse purchase figures you might have otherwise ignored if they weren't in danger of selling out during the preorder stage and being immediately scalped in the secondary market!
+
+If a figure is desirable enough, preorders can sell out before the figure has even been finalized, it might just be that the figure is an overpriced, unpopular dud and immediately goes for half the preorder price as a used figure, or it could be that the finished figure looks far better than it did in production shots and you lucked out!
+
+It's not uncommon to see gacha-tier mechanics like exclusive accessories or face plates for ordering from specific shops.
+I'm fully expecting outright abusive figure gacha mechanics in the near future, which such tactics like:
+* _preorders being done away with in favor of lottery systems, like kujis but worse!_
+* _store exclusive rare accessories or variants like face plates for every 1 in 50 paying customers!_
+* _figures limited to 3,000 sales FOREVER with no-rerelease guarantees!_
+
+***Do not fall for their tricks!***
+
+
+## If you're a casual, low-information buyer of figures
+As a more uninformed figure collector, take care not to fall for counterfeit figures of varying quality sold at abnormally low prices, usually imitating designs that are years out of production, yet being sold new in box.
 
 In years past, only elaborate and expensive lines of figures would see bootlegging but now even inexpensive prize figures quickly get imitations mere months after release.
 I remember when _"replica"_ nendoroids were a fringe hobby good relegated to the depths of untrustworthy Chinese e-commerce sites, they only cost 20% what a real one would cost, including the shipping.
@@ -62,7 +79,7 @@ Some tell-tale signs include:
 * [sloppy paint, gloppy paint](https://myfigurecollection.net/picture/2529349) and paint overspray, a complete disregard for quality
 
 Quality can vary wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, with few exceptions.
-The best possible case is coming across "quality rejects" from the genuine production run, but in general, they have no resale or collectible value if you care about that sort of thing.
+The best possible case is coming across "quality rejects" from the genuine production run, but in general, they have no residual resale or collectible value if you care about that sort of thing.
 That being said, I won't advise against buying them willingly and deliberately if you accept the drawbacks.
 
 [^rem]: A wild new frontier in bootlegs, this is a combination of
@@ -79,15 +96,16 @@ _(I keep this gallery around mostly so I can gawk at people's gigantic miku coll
 <style type="text/css">
 	[alt*="fig"] {
 		border-radius: 10px;
-		border: 3px #6b9f5b solid;
+		border: 3px #6B9F5B solid;
 		padding: 2px;
 		margin: 2px;
 		height: 64px;
 		width: 64px;
 	}
-	[alt*="fake"] {
-		border: 3px #932525 solid;
-	}
+	[alt*="fig"]:hover { opacity: unset; }
+	[alt*="fake"] {	border: #932525 solid;	}
+	[alt*="pre"] {	border: #E1D97A dashed;	opacity: 65%; }
+	[alt*="wish"] {	border: #86CDCD dashed;	opacity: 65%; }
 </style>
 
 <script type="text/javascript">
@@ -99,7 +117,31 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
-/*
+	/* preorders */
+	[ 'p1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861' ],
+	[ 'p1473759', '82d19', 'good smile nekomata okayu nendoroid #1860' ],
+	[ 'p1782785', '17fdb', 'furyu exc∞d creative miku cyber future ver.' ],
+	[ 'p1618453', '9b371', 'good smile pop up parade OMGkawaiiAngel' ],
+	[ 'p1780064', '4d72e', 'taito miku artist masterpiece birthday 2023 ver.' ],
+	[ 'p1873722', '4bef0', 'taito miku fashion figure uniform ver.' ],
+	[ 'p1696654', '98c36', 'furyu miku flower fairy noodle stopper' ],
+	[ 'p945860', '328b2', 'good smile miku nendoroid doll' ],
+	[ 'p1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll' ],
+	[ 'p1616455', '1154b', 'good smile pop up parade miku DECO*27 the vampire ver. L' ],
+	[ 'p1779734', 'e4220', 'taito miku fashion figure subculture ver.' ],
+
+	[ '1335582', '0d57a', 'sega sakura miku v3 SPM' ],
+	[ '1571286', '62065', 'sega miku christmas 2022 SPM' ],
+	[ '1479579', '350f9', 'sega miku 15th anniversary kei ver. SPM' ],
+	[ '1549222', '43de2', 'sega miku 15th anniversary zhou ver. SPM' ],
+	[ '1376115', '30a86', 'good smile racing AMG 2021 SUPER GT round 3' ],
+	[ '1275355', '94c12', 'sega preciality special nuigurumi sakura miku' ],
+	[ '1213389', '85cfa', 'good smile genshin impact venti nendoroid #1795' ],
+	[ '1189088', 'f9b14', 'good smile hatsune miku nt nendoroid #1701' ],
+	[ '1499800', '04668', 'taito miku artist masterpiece latidos 2022 ver.' ],
+	[ '1220581', '696bc', 'taito miku artist masterpiece pricess arabian ver.' ],
+
+	/* this is bloat
 	[ '1536230', 'b1904', 're-ment miku miku ♪ room miniature #1 of 8' ],
 	[ '1536252', 'a8865', 're-ment miku miku ♪ room miniature #2 of 8' ],
 	[ '1536231', '5efb0', 're-ment miku miku ♪ room miniature #3 of 8' ],
@@ -108,17 +150,8 @@ var figs = [
 	[ '1536236', '07d51', 're-ment miku miku ♪ room miniature #6 of 8' ],
 	[ '1536237', 'aea78', 're-ment miku miku ♪ room miniature #7 of 8' ],
 	[ '1536238', 'a3e5c', 're-ment miku miku ♪ room miniature #8 of 8' ],
-*/
+	*/
 
-	[ '1335582', '0d57a', 'sega sakura miku v3 SPM' ],
-	[ '1571286', '62065', 'sega miku christmas 2022 SPM' ],
-	[ '1479579', '350f9', 'sega miku 15th anniversary kei ver. SPM' ],
-	[ '1549222', '43de2', 'sega miku 15th anniversary zhou ver. SPM' ],
-	[ '1275355', '94c12', 'sega preciality special nuigurumi sakura miku' ],
-	[ '1213389', '85cfa', 'good smile genshin impact venti nendoroid #1795' ],
-	[ '1189088', 'f9b14', 'good smile hatsune miku nt nendoroid #1701' ],
-	[ '1499800', '04668', 'taito miku artist masterpiece latidos 2022 ver.' ],
-	[ '1220581', '696bc', 'taito miku artist masterpiece pricess arabian ver.' ],
 	[ 'x1214387', 'ea438', 'knockoff taito miku wonderland rapunzel' ],
 	[ 'x314683', 'e7d29', 'knockoff sega miku fuwa fuwa nuigurumi plush (strap)' ],
 	[ 'x370088', '27dfa', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
@@ -156,6 +189,17 @@ var figs = [
 	[ '47413', 'd5289', 'banpresto kogami akira lucky star' ],
 	[ '167123', '00cd8', 'sega project diva arcade miku 2012' ],
 	[ '100292', '0bb7d', 'hatsune miku plush great eastern 2012' ],
+
+	/* wishlist */
+	[ 'w861021', 'c00c8', 'sega miku preciality special nuigurumi plush' ],
+	[ 'w370088', '27dfa', 'sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
+	[ 'w548722', '507c3', 'good smile hatsune miku v4x 1/8 scale' ],
+	[ 'w187', '7888c', 'good smile hatsune miku 1/8 scale (2008)' ],
+	[ 'w78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
+	[ 'w61333', '3b529', 'good smile miku 1/8 scale lat-type ver.' ],
+	[ 'w136444', '8be06', 'good smile miku 2.0 nendoroid #300 (2013)' ],
+	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
+	[ 'w186', '94494', 'good smile miku nendoroid #33 (2008)' ],
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
@@ -166,9 +210,10 @@ for (var i in figs) {
 	var hash = figs[i][1];
 	var title = figs[i][2];
 	var alt = 'ico-fig';
-	if (id.charAt(0) == 'x') {
-		id = id.slice(1);
-		alt = alt + '-fake';
+	switch (id.charAt(0)) {
+		case 'x': id = id.slice(1); alt = alt + '-fake'; break;
+		case 'p': id = id.slice(1); alt = alt + '-pre'; break;
+		case 'w': id = id.slice(1); alt = alt + '-wish'; break;
 	}
 
 	var l1, l2, l3;
@@ -186,21 +231,23 @@ for (var i in figs) {
 
 	thumbs.appendChild(l1);
 
-	/* gallery */
-	l1 = document.createElement('p');
+	/* gallery, don't include entries I don't have */
+	if (alt == 'ico-fig') {
+		l1 = document.createElement('p');
 
-		l2 = document.createElement('a');
-		l2.href = 'https://myfigurecollection.net/pictures.php?itemId=' + id;
+			l2 = document.createElement('a');
+			l2.href = 'https://myfigurecollection.net/pictures.php?itemId=' + id;
 
-			l3 = document.createElement('img');
-			l3.src = 'https://static.myfigurecollection.net/upload/items/1/'
-				+ id + '-' + hash + ".jpg";
-			l3.title = title;
-			l3.alt = 'nolink';
-			l2.appendChild(l3);
+				l3 = document.createElement('img');
+				l3.src = 'https://static.myfigurecollection.net/upload/items/1/'
+					+ id + '-' + hash + ".jpg";
+				l3.title = title;
+				l3.alt = 'nolink';
+				l2.appendChild(l3);
 
-	l1.appendChild(l2);
-	gallery.appendChild(l1);
+		l1.appendChild(l2);
+		gallery.appendChild(l1);
+	}
 }
 
 /* ]]> */
