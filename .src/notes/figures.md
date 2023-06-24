@@ -163,7 +163,7 @@ var figs = [
 	[ '1251026', 'e36e0', 'bandai q posket miku type a' ],
 	[ '944728', 'c98b0', 'furyu miku bicute bunnies' ],
 	[ '1311067', '82a91', 'taito miku artist masterpiece princess alice' ],
-	[ '1268909', 'f4650', 'taito miku artist masterpiece 14th anniv.' ],
+	[ '1141381', 'fe94b', 'taito miku artist masterpiece 14th anniv.' ],
 	[ '1293291', 'c95e9', 'furyu sakura miku noodle stopper' ],
 	[ '886807', '5b4b2', 'taito sakura miku 2020 ver.' ],
 	[ '1216990', '90105', 'racing miku 2021 espresto' ],
