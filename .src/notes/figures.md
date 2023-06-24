@@ -103,9 +103,9 @@ _(I keep this gallery around mostly so I can gawk at people's gigantic miku coll
 		width: 64px;
 	}
 	[alt*="fig"]:hover { opacity: unset; }
-	[alt*="fake"] {	border: #932525 solid;	}
-	[alt*="pre"] {	border: #E1D97A dashed;	opacity: 65%; }
-	[alt*="wish"] {	border: #86CDCD dashed;	opacity: 65%; }
+	[alt*="fake"] {	border: 3px #932525 solid; }
+	[alt*="pre"] {	border: 3px #E1D97A dashed; opacity: 65%; }
+	[alt*="wish"] {	border: 3px #86CDCD dashed; opacity: 65%; }
 </style>
 
 <script type="text/javascript">
