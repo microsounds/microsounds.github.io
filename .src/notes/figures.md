@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/6/23 -->
+<!-- updated 2023/6/26 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -124,10 +124,10 @@ var figs = [
 	[ 'p1618453', '9b371', 'good smile pop up parade OMGkawaiiAngel' ],
 	[ 'p1780064', '4d72e', 'taito miku artist masterpiece birthday 2023 ver.' ],
 	[ 'p1873722', '4bef0', 'taito miku fashion figure uniform ver.' ],
-	[ 'p1696654', '98c36', 'furyu miku flower fairy noodle stopper' ],
+	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll' ],
-	[ 'p1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll' ],
-	[ 'p1616455', '1154b', 'good smile pop up parade miku DECO*27 the vampire ver. L' ],
+	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll' ],
+	[ '1616455', '1154b', 'good smile pop up parade miku DECO*27 the vampire ver. L' ],
 	[ 'p1779734', 'e4220', 'taito miku fashion figure subculture ver.' ],
 
 	[ '1335582', '0d57a', 'sega sakura miku v3 SPM' ],
