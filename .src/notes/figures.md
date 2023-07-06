@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/6/26 -->
+<!-- updated 2023/7/5 -->
 
 # My Collection of Assorted Figurines
 Last updated {UPDATED}
@@ -117,12 +117,23 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
-	/* preorders */
+	[ '289034', '83d4b', 'sega infinity module miku SPM' ],
+	[ '1370076', '897d0', 'furyu bicute bunnies miku street ver.' ],
+	[ '1006896', '2847c', 'furyu bicute bunnies miku white bunny ver.' ],
+	[ '1419501', '06f2e', 'good smile racing miku 2022 nendoroid #1839' ],
+	[ '1503807', '58c20', 'good smile magical mirai 2021 miku nendoroid #1940' ],
+	[ '1407723', 'd9878', 'taito big nuigurumi miku winter ver. (type B)' ],
+	[ '1635003', 'ca57b', 'taito wonderland puss in boots miku' ],
+	[ '36788', '5b203', 'sega kagamine len EX figure (2010)' ],
+	[ '1495055', 'eda04', 'bandai q posket miku v4x type a' ],
+	[ '1796930', 'b42da', 'max limited yurayura head miku nt' ],
+	[ '1796928', '0dc70', 'max limited yurayura head miku' ],
+
 	[ 'p1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861' ],
 	[ 'p1473759', '82d19', 'good smile nekomata okayu nendoroid #1860' ],
 	[ 'p1782785', '17fdb', 'furyu exc∞d creative miku cyber future ver.' ],
-	[ 'p1618453', '9b371', 'good smile pop up parade OMGkawaiiAngel' ],
-	[ 'p1780064', '4d72e', 'taito miku artist masterpiece birthday 2023 ver.' ],
+	[ 'p1618453', '9b371', 'good smile pop up parade needy girl overdose kangel' ],
+	[ 'p1780064', 'ff15b', 'taito miku artist masterpiece birthday 2023 ver.' ],
 	[ 'p1873722', '4bef0', 'taito miku fashion figure uniform ver.' ],
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll' ],
@@ -138,6 +149,7 @@ var figs = [
 	[ '1275355', '94c12', 'sega preciality special nuigurumi sakura miku' ],
 	[ '1213389', '85cfa', 'good smile genshin impact venti nendoroid #1795' ],
 	[ '1189088', 'f9b14', 'good smile hatsune miku nt nendoroid #1701' ],
+	[ '1662862', '12eb0', 'moeyu miku blanket hoodie' ],
 	[ '1499800', '04668', 'taito miku artist masterpiece latidos 2022 ver.' ],
 	[ '1220581', '696bc', 'taito miku artist masterpiece pricess arabian ver.' ],
 
@@ -161,34 +173,34 @@ var figs = [
 	[ '401018', 'bfb66', 'sega project diva innocent SPM miku' ],
 	[ '718192', '29017', 'hatsune miku 2nd season Winter ver.' ],
 	[ '1251026', 'e36e0', 'bandai q posket miku type a' ],
-	[ '944728', 'c98b0', 'furyu miku bicute bunnies' ],
+	[ '944728', 'c98b0', 'furyu miku bicute bunnies original ver.' ],
 	[ '1311067', '82a91', 'taito miku artist masterpiece princess alice' ],
 	[ '1141381', 'fe94b', 'taito miku artist masterpiece 14th anniv.' ],
 	[ '1293291', 'c95e9', 'furyu sakura miku noodle stopper' ],
 	[ '886807', '5b4b2', 'taito sakura miku 2020 ver.' ],
 	[ '1216990', '90105', 'racing miku 2021 espresto' ],
 	[ '1035745', 'ba361', "sega mega 39's breathe you SPM miku" ],
-	[ '1112719', '82ba8', 'miku big nuigurumi plush' ],
-	[ '756832', 'd4634', 'hatsune miku 2nd season Spring ver.' ],
-	[ '776143', '679aa', 'hatsune miku 2nd season Summer ver.' ],
-	[ '4741', '3b1b2', 'hatsune miku piano EX figure 2009' ],
-	[ '1150601', '1e1ef', 'miku nesoberi nuigurumi (strap)' ],
+	[ '1112719', '82ba8', 'taito miku big nuigurumi plush' ],
+	[ '756832', 'd4634', 'taito hatsune miku 2nd season Spring ver.' ],
+	[ '776143', '679aa', 'taito hatsune miku 2nd season Summer ver.' ],
+	[ '4741', '3b1b2', 'sega hatsune miku EX figure (2009)' ],
+	[ '1631369', '25b00', 'sega smiling miku nesoberi nuigurumi (strap)' ],
 	[ '798190', 'f61e7', 'sega sakura miku SPM' ],
 	[ '720383', '21905', 'sega fate/extella link astolfo SPM' ],
 	[ '693275', 'f40e6', 'miku mega jumbo nuigurumi plush 2018' ],
 	[ '675904', '1161e', 'good smile gochiusa sxarp nendoroid #929' ],
 	[ '689123', '2750f', 'good smile snow princess miku nendoroid #1000' ],
 	[ '464596', 'd0803', 'good smile konosuba megumin nendoroid #725' ],
-	[ '440687', 'be7e3', 'sega project diva X SPM miku' ],
-	[ '583734', 'ccf32', 'sega izayoi sakuya prize figure' ],
+	[ '440687', 'be7e3', 'sega project diva X miku SPM' ],
+	[ '583734', 'ccf32', 'sega izayoi sakuya PM figure' ],
 	[ '200768', '28f48', 'funko pop rocks miku #39' ],
-	[ '246546', '9cbfc', 'sega project diva F2nd miku' ],
+	[ '246546', '9cbfc', 'sega project diva F2nd miku PM' ],
 	[ 'x287774', 'f7c92', 'knockoff good smile umaru-chan nendoroid #524' ],
 	[ 'x26113', 'a69e3', 'knockoff good smile snow miku nendoroid #150' ],
-	[ '198604', '64215', 'sega project diva 2nd miku' ],
-	[ '47413', 'd5289', 'banpresto kogami akira lucky star' ],
-	[ '167123', '00cd8', 'sega project diva arcade miku 2012' ],
-	[ '100292', '0bb7d', 'hatsune miku plush great eastern 2012' ],
+	[ '198604', '64215', 'sega project diva 2nd miku PM figure' ],
+	[ '47413', 'd5289', 'banpresto akira kogami ichiban kuji H prize kyun-chara' ],
+	[ '167123', '00cd8', 'sega project diva arcade miku PM figure (2012)' ],
+	[ '100292', '0bb7d', 'hatsune miku plush great eastern (2012)' ],
 
 	/* wishlist */
 	[ 'w861021', 'c00c8', 'sega miku preciality special nuigurumi plush' ],
