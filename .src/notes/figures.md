@@ -1,27 +1,36 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/7/5 -->
+<!-- updated 2023/7/8 -->
 
-# My Collection of Assorted Figurines
+# My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
 
-Here's my ~~small, yet~~ growing IRL collection of figurines and other assorted cute things.
-Most are _"prize figures"_ of the variety you could win from a Japanese ["skill" claw machine][claw].
-Unfortunately, I live an ocean away from a _UFO catcher_ full of figurines of everyone's favorite [virtual idol][micker], so I can only buy them.
+Here's my ~~small, yet~~ growing IRL collection of figurines and other assorted cute things that I'm slowly running out of room for.
+Most of my collection consists of inexpensive _"prize figures"_ of the type you could win from a Japanese ["skill" claw machine][claw], these are more modest and less ambitious in detail, size, and/or paintwork quality than much higher priced _"scale figures,"_ though these days, it's not uncommon to find prizes that rival more expensive figures in one or more of these categories.
 
-Since I don't feel like actually making an account on _[myfigurecollection.net][mfc]_ to tell people about them, this page that piggybacks off their API will do for now. Links will take you to their catalog entry on _mfc_[^api].
+I live an ocean away from the eastern archipelago where they speak the anime girl language and physical arcades with _UFO catchers_ still dot the landscape, so I end up buying endless variations of [my electric angel][micker] anywhere I spot them in the wild. Recently, the [historically weak yen][jpy] has me importing[^import] far more often than I used to.
+
+I don't feel like making an account on _[myfigurecollection.net][mfc]_ to keep track of my collection, so this page piggybacks off their API, links will take you to their catalog entry on _mfc_[^api].
 
 [claw]: https://www.youtube.com/watch?v=93c9oTU7ut0
 [micker]: https://www.youtube.com/watch?v=f91sM4rI76w&hl=en
 [mfc]: https://myfigurecollection.net
+[jpy]: https://www.google.com/finance/quote/USD-JPY?window=5Y
 [^api]:
 	Note: mfc likes to [change their API endpoints][1] a lot, if images are broken, it's not for [a lack of trying][2].
 
 	[1]: https://github.com/microsounds/microsounds.github.io/commit/10c49ea
 	[2]: https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/fetch-figure-pics.sh
+[^import]:
+	For people in the U.S., you can put a decimal point to the left of the 2nd least significant digit in **JPY** prices and you should have an approximation of the cost in **USD** after international shipping,
+	_for example ¥2,800 becomes $28.00_.
+
+	This assumes you are shipping multiple items in one order, preferably more than 3 in the case of low value items such as prize figures.
+	Most timely shipping options from Japan start at ¥4,000, single item shipments are rarely cost effective unless they exceed ¥16,000.
 
 ## Collection
-_Sorted by when I remember getting it, from newest to oldest.
-<br />Abstract entries like figures that have yet to ship or release are at the beginning, stuff I'll find someday is at the very end._
+_Sorted by when I remember getting it, from newest to oldest._
+<br />_Abstract entries like figures that have yet to ship or release are in dotted yellow, Mikus I'll find someday are at the very end._
+
 
 <div id="fig-thumbs">
 <noscript>
@@ -117,9 +126,13 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p546853', 'be182', 'bandai figure-rise bust miku model kit' ],
+	[ 'p1875244', '2f1ce', 'furyu noodle stopper miku autumn date' ],
+	[ 'p1840070', 'c98a3', 'good smile needy girl overdose kangel nendoroid #2201' ],
+
 	[ '289034', '83d4b', 'sega infinity module miku SPM' ],
 	[ '1370076', '897d0', 'furyu bicute bunnies miku street ver.' ],
-	[ '1006896', '2847c', 'furyu bicute bunnies miku white bunny ver.' ],
+	[ '1210391', 'ebe3e', 'furyu bicute bunnies miku white bunny pearl ver.' ],
 	[ '1419501', '06f2e', 'good smile racing miku 2022 nendoroid #1839' ],
 	[ '1503807', '58c20', 'good smile magical mirai 2021 miku nendoroid #1940' ],
 	[ '1407723', 'd9878', 'taito big nuigurumi miku winter ver. (type B)' ],
@@ -138,7 +151,7 @@ var figs = [
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll' ],
-	[ '1616455', '1154b', 'good smile pop up parade miku DECO*27 the vampire ver. L' ],
+	[ '1616455', '1154b', 'good smile pop up parade DECO*27 vampire miku ver. L' ],
 	[ 'p1779734', 'e4220', 'taito miku fashion figure subculture ver.' ],
 
 	[ '1335582', '0d57a', 'sega sakura miku v3 SPM' ],
@@ -170,6 +183,7 @@ var figs = [
 	[ 'x514129', '00fa6', 'knockoff sega nyanko miku fuwa fuwa mega jumbo nuigurumi plush' ],
 	[ 'x809190', '8d2a0', 'knockoff furyu miku noodle stopper figure' ],
 	[ 'x2987', '9fa5f', 'knockoff max factory figma miku #014' ],
+
 	[ '401018', 'bfb66', 'sega project diva innocent SPM miku' ],
 	[ '718192', '29017', 'hatsune miku 2nd season Winter ver.' ],
 	[ '1251026', 'e36e0', 'bandai q posket miku type a' ],

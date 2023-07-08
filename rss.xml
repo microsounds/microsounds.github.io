@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Wed, 05 Jul 2023 00:00:00 -0700</lastBuildDate>
+<lastBuildDate>Sat, 08 Jul 2023 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -20,14 +20,14 @@
 <pubDate>Fri, 16 Jun 2023 14:55:58 -0700</pubDate>
 </item>
 <item>
-<title>My Collection of Assorted Figurines</title>
+<title>My Collection of Assorted Figurines (oops all miku!)</title>
 <description>
-<![CDATA[ Last updated Here’s my small, yet growing IRL collection of figurines and other assorted cute things. Most are “prize figures” of the variety you could win from a Japanese [“skill” claw machine][claw]. Unfortunately, I live an ocean away from a UFO catcher full of figurines of everyone’s favorite [virtual idol][micker], so I can only buy them. Since I don’t feel like actually making an account on [myfigurecollection.net][mfc] to tell people about them, this page that piggybacks off their API [..]]]>
+<![CDATA[ Last updated Here’s my small, yet growing IRL collection of figurines and other assorted cute things that I’m slowly running out of room for. Most of my collection consists of inexpensive “prize figures” of the type you could win from a Japanese [“skill” claw machine][claw], these are more modest and less ambitious in detail, size, and/or paintwork quality than much higher priced “scale figures,” though these days, it’s not uncommon to find prizes that rival more expensive figures in [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/figures.htm">https://microsounds.github.io/notes/figures.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/figures.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
-<pubDate>Wed, 05 Jul 2023 00:00:00 -0700</pubDate>
+<pubDate>Sat, 08 Jul 2023 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
