@@ -1,17 +1,18 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/7/8 -->
+<!-- updated 2023/7/22 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
 
 Here's my ~~small, yet~~ growing IRL collection of figurines and other assorted cute things that I'm slowly running out of room for.
-Most of my collection consists of inexpensive _"prize figures"_ of the type you could win from a Japanese ["skill" claw machine][claw], these are more modest and less ambitious in detail, size, and/or paintwork quality than much higher priced _"scale figures,"_ though these days, it's not uncommon to find prizes that rival more expensive figures in one or more of these categories.
+Most of my collection consists of inexpensive _"prize figures"_ of the type you could win from a Japanese ["skill" claw machine][claw], these are more modest and less ambitious in detail, character pose, and/or paintwork quality than much higher priced _"scale figures,"_ though these days, it's not uncommon to find prizes that rival more far more expensive figures in one or more of these categories.
 
-I live an ocean away from the eastern archipelago where they speak the anime girl language and physical arcades with _UFO catchers_ still dot the landscape, so I end up buying endless variations of [my electric angel][micker] anywhere I spot them in the wild. Recently, the [historically weak yen][jpy] has me importing[^import] far more often than I used to.
+I live an ocean away from the easternmost archipelago where they speak the anime girl language and physical arcades with _UFO catchers_ dot the landscape, so I end up buying endless variations of [my electric angel][micker] anywhere I spot them in the wild.
+All the while, a [historically weak yen][jpy] has me importing[^import] far more often than I used to.
 
 I don't feel like making an account on _[myfigurecollection.net][mfc]_ to keep track of my collection, so this page piggybacks off their API, links will take you to their catalog entry on _mfc_[^api].
 
-[claw]: https://www.youtube.com/watch?v=93c9oTU7ut0
+[claw]: https://www.youtube.com/watch?v=0Nh-k8OXhCo
 [micker]: https://www.youtube.com/watch?v=f91sM4rI76w&hl=en
 [mfc]: https://myfigurecollection.net
 [jpy]: https://www.google.com/finance/quote/USD-JPY?window=5Y
@@ -25,9 +26,15 @@ I don't feel like making an account on _[myfigurecollection.net][mfc]_ to keep t
 	_for example ¥2,800 becomes $28.00_.
 
 	This assumes you are shipping multiple items in one order, preferably more than 3 in the case of low value items such as prize figures.
-	Most timely shipping options from Japan start at ¥4,000, single item shipments are rarely cost effective unless they exceed ¥16,000.
+	Most, if not all air shipping options from Japan start at ¥4,000, single item shipments are rarely cost effective unless they exceed ¥16,000.
+
+	Consider surface shipping _(a.k.a ocean freight)_ if you care to save several hundred dollars on shipping costs for [very voluminous shipments][coffin] and add 1-4 months to your shipping speed.
+
+	[coffin]: https://www.google.com/search?q=amiami+shipping+%28200%7Ccoffin%29+box+site%3Areddit.com&tbm=isch
 
 ## Collection
+<em><strong><span id="fig-count" style="font-size: 150%"></span></strong> entries,
+	<strong><span id="fig-abs-count" style="font-size: 120%"></span></strong> of which are abstract.</em>
 _Sorted by when I remember getting it, from newest to oldest._
 <br />_Abstract entries like figures that have yet to ship or release are in dotted yellow, Mikus I'll find someday are at the very end._
 
@@ -56,7 +63,8 @@ _Sorted by when I remember getting it, from newest to oldest._
 ## If you plan to buy or preorder unreleased figures from Japan
 If collecting figures well ahead of their release is something that interests you, be warned that the domestic industry surrounding it is a _predatory one_ that uses gambling mechanics, preorders, small production runs, and long lead times of 6 months or more to dull the impact of irresponsible purchases and maximize your FOMO in order to get you to impulse purchase figures you might have otherwise ignored if they weren't in danger of selling out during the preorder stage and being immediately scalped in the secondary market!
 
-If a figure is desirable enough, preorders can sell out before the figure has even been finalized, it might just be that the figure is an overpriced, unpopular dud and immediately goes for half the preorder price as a used figure, or it could be that the finished figure looks far better than it did in production shots and you lucked out!
+If a figure's concept is desirable enough, preorders can sell out before the figure has even been finalized.
+It might just be that the figure is overpriced and not very compelling, immediately going for half the preorder price as a barely even touched or displayed preowned figure, or it could be that the finished figure looks far better than it did in promotional shots and you stumbled upon a future classic you won't want to part with at any price.
 
 It's not uncommon to see gacha-tier mechanics like exclusive accessories or face plates for ordering from specific shops.
 I'm fully expecting outright abusive figure gacha mechanics in the near future, which such tactics like:
@@ -70,29 +78,37 @@ I'm fully expecting outright abusive figure gacha mechanics in the near future, 
 ## If you're a casual, low-information buyer of figures
 As a more uninformed figure collector, take care not to fall for counterfeit figures of varying quality sold at abnormally low prices, usually imitating designs that are years out of production, yet being sold new in box.
 
-In years past, only elaborate and expensive lines of figures would see bootlegging but now even inexpensive prize figures quickly get imitations mere months after release.
+In years past, only elaborate and expensive lines of figures would see bootlegging but now even inexpensive prize figures get imitations mere months after release, sometimes as quickly as ocean shipping can make its way across the Pacific.
 I remember when _"replica"_ nendoroids were a fringe hobby good relegated to the depths of untrustworthy Chinese e-commerce sites, they only cost 20% what a real one would cost, including the shipping.
 
 Do not assume that physical outlets located in shopping malls, indoor or outdoor swap meets are honest or have any clue what they are selling, they can and will play dumb if it suits them. Some are egregious enough to sell fakes at genuine prices to low-information buyers.
 
-Be wary of online listings on e-commerce sites using only official promo shots or photoshopping faces.
+I highly recommend you stick to reputable [online shops dedicated to hobby goods](https://www.buyfags.moe/Full_guide#List_of_shops) if you don't want to be scammed.
+Be extremely wary of online listings on general e-commerce sites using only official promotional pictures but refuing to mention brand names, figure product line trademarks, etc.
+The general rule is that sites like Amazon, eBay and AliExpress are capable of selling genuine new figures, but listings that use terms such as _"China ver."_ or listings that don't include the word _"original"_ in the listing title, they are almost certainly fake.
+Amazon makes it easier to spot fakes, they will all have incomprehensible word soup _"brand names"_ to avoid getting caught.
 
 Some tell-tale signs include:
 * box artwork that [omits manufacturer logos and brand names](https://myfigurecollection.net/picture/2402764)
-* faces that just look "off", screenprinted eyes that have a [bizarre skew](https://myfigurecollection.net/picture/2182516)
+* faces that just look "off", pad printed eyes that have a [bizarre skew](https://myfigurecollection.net/picture/2182516)
 * individual parts that won't fit together correctly or won't stay snug
-* designs standing on one leg that cannot hold their own weight and bend at a steep angle
+* designs standing on one leg that cannot hold their own weight and bend at a steep angle[^fotsjapan]
 * designs that [don't actually exist](https://myfigurecollection.net/picture/3267308), combinations of 2 or more characters at the same time[^rem]
 * paint fading quickly even in interior lights from store displays
 * visible molding seams _(flash)_, ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky
+* visible seams and outright separation of parts between thigh-highs, bare skin, shoes, detached sleeves, etc.
 * [sloppy paint, gloppy paint](https://myfigurecollection.net/picture/2529349) and paint overspray, a complete disregard for quality
 
 Quality can vary wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, with few exceptions.
-The best possible case is coming across "quality rejects" from the genuine production run, but in general, they have no residual resale or collectible value if you care about that sort of thing.
-That being said, I won't advise against buying them willingly and deliberately if you accept the drawbacks.
+The best possible case is coming across _"quality control rejects"_ from the genuine production run, but in general, they have no residual resale or collectible value if you care about that sort of thing.
+That being said, I won't advise against buying them willingly and deliberately for fun and curiosity.
 
 [^rem]: A wild new frontier in bootlegs, this is a combination of
 	[this Rem](https://myfigurecollection.net/item/1047417) and [this Miku](https://myfigurecollection.net/item/944728).
+
+[^fotsjapan]:
+	Figures leaning on their own isn't limited to bootlegs, FOTS Japan is infamous for their use of hollow legs that cannot support their own weight and slowly fall over, even while
+	[standing on BOTH LEGS](https://old.reddit.com/r/AnimeFigures/comments/if2feq/just_dont_buy_how_heavy_are_the_dumbbells_you/).
 
 ## Bonus Gallery
 This gallery is automatically generated, click images to see more user-submitted images on _myfigurecollection.net_!
@@ -126,6 +142,20 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1258843', '55d3c', 'furyu f:nex hatsune miku chronicle 1/7 scale' ],
+	[ 'p926772', '68615', 'good smile racing miku 2020 nendoroid #1293' ],
+	[ 'p1711391', '32d0d', 'taito kuji miku 39 no hi kinen kuji B prize' ],
+	[ 'p998275', 'e47b6', 'taito miku 3rd season autumn ver.' ],
+	[ 'p144335', '72a4a', 'max factory figma miku 2.0 #200' ],
+	[ 'p604387', '623bc', 'good smile miku 10th anniv. ver. nendoroid #831' ],
+	[ 'p12040', '74b0d', 'good smile hatsune miku CM ver. 1/8 scale (2009)' ],
+	[ 'p29253', '8664a', 'max factory miku tony ver. 1/7 scale (2011)' ],
+	[ 'p186', '94494', 'good smile miku nendoroid #33 (2008)' ],
+	[ 'p136444', '8be06', 'good smile miku 2.0 nendoroid #300 (2013)' ],
+	[ 'p61333', '3b529', 'good smile miku 1/8 scale lat-type ver.' ],
+	[ 'p548722', '507c3', 'good smile hatsune miku v4x 1/8 scale' ],
+	[ 'p187', '7888c', 'good smile hatsune miku 1/8 scale (2008)' ],
+
 	[ 'p546853', 'be182', 'bandai figure-rise bust miku model kit' ],
 	[ 'p1875244', '2f1ce', 'furyu noodle stopper miku autumn date' ],
 	[ 'p1840070', 'c98a3', 'good smile needy girl overdose kangel nendoroid #2201' ],
@@ -145,8 +175,8 @@ var figs = [
 	[ 'p1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861' ],
 	[ 'p1473759', '82d19', 'good smile nekomata okayu nendoroid #1860' ],
 	[ 'p1782785', '17fdb', 'furyu exc∞d creative miku cyber future ver.' ],
-	[ 'p1618453', '9b371', 'good smile pop up parade needy girl overdose kangel' ],
-	[ 'p1780064', 'ff15b', 'taito miku artist masterpiece birthday 2023 ver.' ],
+	[ 'p1618453', 'f7702', 'good smile pop up parade needy girl overdose kangel' ],
+	[ 'p1780064', '5d409', 'taito miku artist masterpiece birthday 2023 ver.' ],
 	[ 'p1873722', '4bef0', 'taito miku fashion figure uniform ver.' ],
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll' ],
@@ -219,17 +249,16 @@ var figs = [
 	/* wishlist */
 	[ 'w861021', 'c00c8', 'sega miku preciality special nuigurumi plush' ],
 	[ 'w370088', '27dfa', 'sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
-	[ 'w548722', '507c3', 'good smile hatsune miku v4x 1/8 scale' ],
-	[ 'w187', '7888c', 'good smile hatsune miku 1/8 scale (2008)' ],
+	[ 'w287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
 	[ 'w78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
-	[ 'w61333', '3b529', 'good smile miku 1/8 scale lat-type ver.' ],
-	[ 'w136444', '8be06', 'good smile miku 2.0 nendoroid #300 (2013)' ],
 	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
-	[ 'w186', '94494', 'good smile miku nendoroid #33 (2008)' ],
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
 var gallery = document.getElementById('fig-gallery');
+
+/* item count */
+document.getElementById('fig-count').innerHTML = figs.length;
 
 for (var i in figs) {
 	var id = figs[i][0];
@@ -273,6 +302,11 @@ for (var i in figs) {
 
 		l1.appendChild(l2);
 		gallery.appendChild(l1);
+	}
+	else {
+		/* abstract item count */
+		document.getElementById('fig-abs-count').innerHTML =
+			(document.getElementById('fig-abs-count').innerHTML | 0) + 1;
 	}
 }
 
