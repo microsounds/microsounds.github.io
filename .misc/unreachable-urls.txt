@@ -2,6 +2,8 @@ http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
 http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
 HTTP request sent, awaiting response... 404 Not Found
+http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/
+(try: 2)  http://wok.oblomov.eu/tecnologia/mixed-dpi-x11/
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
@@ -53,7 +55,7 @@ HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
-HTTP request sent, awaiting response... 404 Not Found
+HTTP request sent, awaiting response... 502 Bad Gateway
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
@@ -339,8 +341,10 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
-https://wowana.me/
-(try: 2)  https://wowana.me/
+https://www.buyfags.moe/Full_guide
+HTTP request sent, awaiting response... 500 Internal Server Error
+(try: 2)  https://www.buyfags.moe/Full_guide
+HTTP request sent, awaiting response... 500 Internal Server Error
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/
