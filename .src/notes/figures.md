@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/7/22 -->
+<!-- updated 2023/7/24 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -249,6 +249,8 @@ var figs = [
 	/* wishlist */
 	[ 'w861021', 'c00c8', 'sega miku preciality special nuigurumi plush' ],
 	[ 'w370088', '27dfa', 'sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
+	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309' ],
+	[ 'w1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ 'w287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
 	[ 'w78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
 	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
