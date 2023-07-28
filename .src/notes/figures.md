@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/7/24 -->
+<!-- updated 2023/7/27 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -8,7 +8,7 @@ Here's my ~~small, yet~~ growing IRL collection of figurines and other assorted 
 Most of my collection consists of inexpensive _"prize figures"_ of the type you could win from a Japanese ["skill" claw machine][claw], these are more modest and less ambitious in detail, character pose, and/or paintwork quality than much higher priced _"scale figures,"_ though these days, it's not uncommon to find prizes that rival more far more expensive figures in one or more of these categories.
 
 I live an ocean away from the easternmost archipelago where they speak the anime girl language and physical arcades with _UFO catchers_ dot the landscape, so I end up buying endless variations of [my electric angel][micker] anywhere I spot them in the wild.
-All the while, a [historically weak yen][jpy] has me importing[^import] far more often than I used to.
+All the while, a [historically cheap yen][jpy] has me importing[^import] far more often than I used to.
 
 I don't feel like making an account on _[myfigurecollection.net][mfc]_ to keep track of my collection, so this page piggybacks off their API, links will take you to their catalog entry on _mfc_[^api].
 
@@ -25,10 +25,12 @@ I don't feel like making an account on _[myfigurecollection.net][mfc]_ to keep t
 	For people in the U.S., you can put a decimal point to the left of the 2nd least significant digit in **JPY** prices and you should have an approximation of the cost in **USD** after international shipping,
 	_for example ¥2,800 becomes $28.00_.
 
-	This assumes you are shipping multiple items in one order, preferably more than 3 in the case of low value items such as prize figures.
+	This gives you insight into the markup percentage that domestic hobby good shops tend to have over Japanese ones.
+
+	This also assumes you are shipping multiple items in one order, preferably more than 3 in the case of low value items such as prize figures.
 	Most, if not all air shipping options from Japan start at ¥4,000, single item shipments are rarely cost effective unless they exceed ¥16,000.
 
-	Consider surface shipping _(a.k.a ocean freight)_ if you care to save several hundred dollars on shipping costs for [very voluminous shipments][coffin] and add 1-4 months to your shipping speed.
+	Consider surface shipping _(a.k.a ocean freight)_ if you care to save several hundred dollars on shipping costs for [very voluminous shipments][coffin], but note that it does add 1-4 months to your shipping speed, don't forget the insurance.
 
 	[coffin]: https://www.google.com/search?q=amiami+shipping+%28200%7Ccoffin%29+box+site%3Areddit.com&tbm=isch
 
@@ -99,7 +101,7 @@ Some tell-tale signs include:
 * visible seams and outright separation of parts between thigh-highs, bare skin, shoes, detached sleeves, etc.
 * [sloppy paint, gloppy paint](https://myfigurecollection.net/picture/2529349) and paint overspray, a complete disregard for quality
 
-Quality can vary wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, with few exceptions.
+Quality can vary wildly with knockoffs, they consistently teeter the line between **garbage** and **barely acceptable** _(from one viewing angle)_, with few exceptions. Even if everything else is acceptable, the face will always give it away.
 The best possible case is coming across _"quality control rejects"_ from the genuine production run, but in general, they have no residual resale or collectible value if you care about that sort of thing.
 That being said, I won't advise against buying them willingly and deliberately for fun and curiosity.
 
@@ -142,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ 'p1258843', '55d3c', 'furyu f:nex hatsune miku chronicle 1/7 scale' ],
 	[ 'p926772', '68615', 'good smile racing miku 2020 nendoroid #1293' ],
 	[ 'p1711391', '32d0d', 'taito kuji miku 39 no hi kinen kuji B prize' ],
@@ -250,7 +253,6 @@ var figs = [
 	[ 'w861021', 'c00c8', 'sega miku preciality special nuigurumi plush' ],
 	[ 'w370088', '27dfa', 'sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309' ],
-	[ 'w1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ 'w287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
 	[ 'w78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
 	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
