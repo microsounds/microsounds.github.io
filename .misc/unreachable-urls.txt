@@ -16,6 +16,8 @@ https://archive.4plebs.org/s4s/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
+https://archived.moe/lgbt/
+HTTP request sent, awaiting response... 403 Forbidden
 https://cdn.discordapp.com/avatars/
 HTTP request sent, awaiting response... 404 Not Found
 https://cdromance.com/
@@ -28,10 +30,6 @@ HTTP request sent, awaiting response... 501 Not Implemented
 HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
-https://desuarchive.org/fit/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://desuarchive.org/fit/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://www.ebay.com/n/error
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
@@ -127,6 +125,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/x48/post-run
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/x48/pre-run
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/xdiskusage/pre-run
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/yt-dlp/post-run
 HTTP request sent, awaiting response... 404 Not Found
@@ -326,6 +326,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scro
 HTTP request sent, awaiting response... 404 Not Found
 https://soundcloud.com/-redacted-
 HTTP request sent, awaiting response... 404 Not Found
+https://static.myfigurecollection.net/upload/items/0
+HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/0/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/1/
@@ -346,6 +348,6 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/
-(try: 2)  https://www.cs.vu.nl/~ast/intel/
+HTTP request sent, awaiting response... 403 Forbidden
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
