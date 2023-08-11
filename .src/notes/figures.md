@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/7/28 -->
+<!-- updated 2023/8/10 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,7 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
-	[ 'p78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
+/*	[ 'p78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
 	[ 'p104300', '65180', 'good smile sakura miku nendoroid #274' ],
 	[ 'p41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129' ],
 	[ 'p153162', '8abda', 'good smile snow miku 2014 nendoroid #380' ],
@@ -156,6 +156,7 @@ var figs = [
 	[ 'p66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
 	[ 'p59755', '4a5b2', 'max factory miku append figma #100' ],
 	[ 'p78582', '5dc32', 'good smike miku append nendoroid #194' ],
+*/
 
 	[ 'p1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ 'p1258843', '55d3c', 'furyu f:nex hatsune miku chronicle 1/7 scale' ],
