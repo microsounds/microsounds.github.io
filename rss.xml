@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Thu, 10 Aug 2023 00:00:00 -0700</lastBuildDate>
+<lastBuildDate>Fri, 11 Aug 2023 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -27,7 +27,7 @@
 </description>
 <link>https://microsounds.github.io/notes/figures.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
-<pubDate>Thu, 10 Aug 2023 00:00:00 -0700</pubDate>
+<pubDate>Fri, 11 Aug 2023 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
@@ -38,6 +38,16 @@
 <link>https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</guid>
 <pubDate>Sat, 22 Oct 2022 00:00:00 -0700</pubDate>
+</item>
+<item>
+<title>Thoughts on the disrespectful Suruga-ya.com (not suruga-ya.jp)</title>
+<description>
+<![CDATA[ TL;DR Do NOT buy from suruya-ga.com, order from suruga-ya.jp with a forwarding service of your choice. Established in 19481, Suruga-ya (駿河屋) is a Japanese used goods retailer specializing in physical media, electronics and collectibles in a similar vein to Book-Off, Mandarake and AmiAmi (pre-owned), they operate physical shops all throughout Japan and also offer domestic mail order through suruga-ya.jp, and most recently suruga-ya.com for international customers outside of Japan. Previously, you needed to employ the use of a proxy [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/suruga-ya-intl.htm">https://microsounds.github.io/notes/suruga-ya-intl.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/suruga-ya-intl.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/suruga-ya-intl.htm</guid>
+<pubDate>Fri, 11 Aug 2023 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>Fun and Useful Links to Elsewhere</title>

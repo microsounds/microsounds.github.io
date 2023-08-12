@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/8/10 -->
+<!-- updated 2023/8/11 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -157,6 +157,8 @@ var figs = [
 	[ 'p59755', '4a5b2', 'max factory miku append figma #100' ],
 	[ 'p78582', '5dc32', 'good smike miku append nendoroid #194' ],
 */
+
+	[ 'p1876348', '49ca1', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222' ],
 
 	[ 'p1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ 'p1258843', '55d3c', 'furyu f:nex hatsune miku chronicle 1/7 scale' ],
