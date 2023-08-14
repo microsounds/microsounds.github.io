@@ -50,10 +50,6 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
-https://litterbox.catbox.moe/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://litterbox.catbox.moe/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
@@ -336,6 +332,8 @@ https://static.myfigurecollection.net/upload/items/0/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/1/
 HTTP request sent, awaiting response... 403 Forbidden
+https://suruga-ya.jp/
+https://suruya-ga.com/
 https://u1lib.org/
 https://validator.w3.org/check?uri=referer
 HTTP request sent, awaiting response... 403 Forbidden
@@ -348,6 +346,8 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
+HTTP request sent, awaiting response... 403 Forbidden
+https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
