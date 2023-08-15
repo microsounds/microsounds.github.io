@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/4/30 -->
+<!-- updated 2023/8/14 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -110,6 +110,8 @@
 	* _Westerner's guide to IC cards for Japanese arcade games, Aime, e-Amusement, Banapass, NESiCA, etc._
 
 **misc** ---
+* [twofactor.date](https://twofactor.date)
+	* _Generate TOTP codes from 2FA keys in QR or `otpauth://` format in your web browser without any authenticator phone app._
 * [disk prices](https://diskprices.com)
 	* _Automatically curated list of new/used disk storage prices on Amazon.com for various countries._
 * [sudomemo](https://www.sudomemo.net)
