@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">887</b>, commit `e04a164`.**
+**Revision No. <b style="font-size: 130%">894</b>, commit `abb4b33`.**
 
-**"Post-install: Allow ~/.comfort-git entries with program names after URL"**
+**"xwin-statusd: Nothing important, 8.8.8.8 uptime is too spotty"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *29.7KiB* in
 size, and the approximate size of all comment lines of code is
-*66.0KiB* then this document
-currently covers about <b style="font-size: 130%;">9.01%</b>
+*66.3KiB* then this document
+currently covers about <b style="font-size: 130%;">8.96%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -552,7 +552,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime24.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime29.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -564,26 +564,26 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > found in the current revision:_
 > * `android-termux.sh v1.0`
 > * `chromium_widevine.sh v0.2`
-> * `getquote v0.2`
+> * `getquote v0.3`
 > * `git_status.sh v0.7`
 > * `moonphase-date v0.2`
 > * `nano_overlay.sh v1.2 `
 > * `wm_status.sh v0.4`
-> * `xrandr_cycle.sh v0.2`
+> * `xrandr_cycle.sh v0.3`
 > * `xwin_decor.sh v0.9`
 > * `xwin_webm.sh v0.5`
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-222.90KiB
+223.45KiB
 out of a total compressed git history size of
-793.10KiB._
+806.42KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1 9.9K   Jun 16 2023 14:55 rev. 138 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Jun  3 2023 18:44 rev. 83  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 9.9K   Aug 22 2023 14:45 rev. 139 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 1.2K   Aug 22 2023 23:27 rev. 85  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  445   Aug  4 2023 16:41 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -632,7 +632,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
 -rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
--rwxr-xr-x 1 1.2K   Jul 16 2023 20:27 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
+-rwxr-xr-x 1 1.6K   Aug 23 2023 23:59 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
@@ -682,10 +682,10 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Dec 17 2019 22:28 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip">.minecraft/resourcepacks/HatsuneMiku.zip</a>
 -rw-r--r-- 1 1.7K   Jun 25 2022 15:12 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Oct 22 2022 22:48 rev. 22  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
--rwxr-xr-x 1  687   Mar 11 2022 22:34 rev. 20  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
+-rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
 -rwxr-xr-x 1  213   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/0p-pocketchip-dpi.sh">.once.d/0p-pocketchip-dpi.sh</a>
--rwxr-xr-x 1 2.5K   Aug  4 2023 16:41 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
+-rwxr-xr-x 1 2.5K   Aug 20 2023 20:43 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
 -rwxr-xr-x 1  657   Apr 29 2023 09:35 rev. 10  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1 1022   Mar 21 2022 23:26 rev. 11  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
@@ -702,7 +702,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
--rwxr-xr-x 1 3.5K   Oct  5 2022 20:49 rev. 27  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 3.5K   Aug 21 2023 22:33 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
 -rwxr-xr-x 1  818   Apr 29 2023 09:35 rev. 12  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c1-chromebook-i915.sh">.once.d/c1-chromebook-i915.sh</a>
 -rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
@@ -710,13 +710,13 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  844   Aug 28 2022 22:58 rev. 30  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.scrc">.scrc</a>
--rw-r--r-- 1 2.3K   Jun  4 2023 00:09 rev. 71  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 2.3K   Aug 20 2023 20:12 rev. 72  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.9K   Feb  3 2023 18:17 rev. 26  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
--rwxr-xr-x 1 5.3K   Mar 21 2022 23:23 rev. 45  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
--rwxr-xr-x 1 1.8K   Dec  6 2021 00:10 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
--rwxr-xr-x 1 2.2K   Jun 16 2023 14:55 rev. 31  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
+-rwxr-xr-x 1 5.3K   Aug 25 2023 12:19 rev. 47  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
+-rwxr-xr-x 1 1.7K   Aug 20 2023 20:43 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
+-rwxr-xr-x 1 2.3K   Aug 20 2023 20:43 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
@@ -724,4 +724,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  30K   May 25 2023 19:52 rev. 192 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 4 Aug 2023 16:41:49 -0700 -->
+<!-- updated Fri, 25 Aug 2023 12:19:33 -0700 -->
