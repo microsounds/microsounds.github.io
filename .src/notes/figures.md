@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/8/11 -->
+<!-- updated 2023/9/3 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -158,6 +158,8 @@ var figs = [
 	[ 'p78582', '5dc32', 'good smike miku append nendoroid #194' ],
 */
 
+	[ '861021', 'c00c8', 'sega miku preciality special nuigurumi (fuwafuwa mega jumbo) plush' ],
+	[ 'p1849001', '3fba5', 'gift hatsune miku nt fumo plush' ],
 	[ 'p1876348', '49ca1', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222' ],
 
 	[ 'p1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
@@ -266,8 +268,7 @@ var figs = [
 	[ '100292', '0bb7d', 'hatsune miku plush great eastern (2012)' ],
 
 	/* wishlist */
-	[ 'w861021', 'c00c8', 'sega miku preciality special nuigurumi plush' ],
-	[ 'w370088', '27dfa', 'sega miku fuwa fuwa mega jumbo nuigurumi plush' ],
+	[ 'w370088', '27dfa', 'sega miku fuwafuwa mega jumbo nuigurumi plush' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309' ],
 ];
 
@@ -329,4 +330,3 @@ for (var i in figs) {
 
 /* ]]> */
 </script>
-
