@@ -50,6 +50,10 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
+https://litterbox.catbox.moe/
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://litterbox.catbox.moe/
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
@@ -222,6 +226,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/path-sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/sfx-play
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/sfx-synth
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/user-confirm
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/visual
@@ -270,7 +276,7 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/24-initram
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/25-chromium-widevine.sh
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/26-systemd-tweaks.sh
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/26-freedesktop-tweaks.sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/27-libvirt-rootless.sh
 HTTP request sent, awaiting response... 404 Not Found
@@ -320,8 +326,6 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/Scripts/xwin_widge
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/Userscripts/youtube_screenshot.user.js
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/bookworm-changes.diff
-HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scrot.webm
@@ -350,7 +354,7 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
-HTTP request sent, awaiting response... 403 Forbidden
+(try: 2)  https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/
