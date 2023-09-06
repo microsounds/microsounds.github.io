@@ -42,8 +42,8 @@
 <p>Here’s my <del>small, yet</del> growing IRL collection of figurines and other assorted cute things that I’m slowly running out of room for.
 Most of my collection consists of inexpensive <em>“prize figures”</em> of the type you could win from a Japanese <a href="https://www.youtube.com/watch?v=0Nh-k8OXhCo">“skill” claw machine</a>, these are more modest and less ambitious in detail, character pose, and/or paintwork quality than much higher priced <em>“scale figures,”</em> though these days, it’s not uncommon to find prizes that rival more far more expensive figures in one or more of these categories.</p>
 <p>I live an ocean away from the easternmost archipelago where they speak the anime girl language and physical arcades with <em>UFO catchers</em> dot the landscape, so I end up buying endless variations of <a href="https://www.youtube.com/watch?v=f91sM4rI76w&amp;hl=en">my electric angel</a> anywhere I spot them in the wild.
-All the while, a <a href="https://www.google.com/finance/quote/USD-JPY?window=5Y">historically cheap yen</a> has me importing<sup class="footnote-ref"><a href="#fn-import" id="fnref-import" data-footnote-ref>1</a></sup> far more often than I used to.</p>
-<p>I don’t feel like making an account on <em><a href="https://myfigurecollection.net">myfigurecollection.net</a></em> to keep track of my collection, so this page piggybacks off their API, links will take you to their catalog entry on <em>mfc</em><sup class="footnote-ref"><a href="#fn-api" id="fnref-api" data-footnote-ref>2</a></sup>.</p>
+All the while, a <a href="https://www.google.com/finance/quote/USD-JPY?window=5Y">historically cheap yen</a> has me importing<sup class="footnote-ref"><a href="#fn-import" id="fnref-import" data-footnote-ref="data-footnote-ref">1</a></sup> far more often than I used to.</p>
+<p>I don’t feel like making an account on <em><a href="https://myfigurecollection.net">myfigurecollection.net</a></em> to keep track of my collection, so this page piggybacks off their API, links will take you to their catalog entry on <em>mfc</em><sup class="footnote-ref"><a href="#fn-api" id="fnref-api" data-footnote-ref="data-footnote-ref">2</a></sup>.</p>
 <h2>Collection<span id="Collection"></span></h2>
 <p><em><strong><span id="fig-count" style="font-size: 150%"></span></strong> entries,
 <strong><span id="fig-abs-count" style="font-size: 120%"></span></strong> of which are abstract.</em>
@@ -111,8 +111,8 @@ Amazon makes it easier to spot fakes, they will all have incomprehensible word s
 <li>box artwork that <a href="https://myfigurecollection.net/picture/2402764">omits manufacturer logos and brand names</a></li>
 <li>faces that just look “off”, pad printed eyes that have a <a href="https://myfigurecollection.net/picture/2182516">bizarre skew</a></li>
 <li>individual parts that won’t fit together correctly or won’t stay snug</li>
-<li>designs standing on one leg that cannot hold their own weight and bend at a steep angle<sup class="footnote-ref"><a href="#fn-fotsjapan" id="fnref-fotsjapan" data-footnote-ref>3</a></sup></li>
-<li>designs that <a href="https://myfigurecollection.net/picture/3267308">don’t actually exist</a>, combinations of 2 or more characters at the same time<sup class="footnote-ref"><a href="#fn-rem" id="fnref-rem" data-footnote-ref>4</a></sup></li>
+<li>designs standing on one leg that cannot hold their own weight and bend at a steep angle<sup class="footnote-ref"><a href="#fn-fotsjapan" id="fnref-fotsjapan" data-footnote-ref="data-footnote-ref">3</a></sup></li>
+<li>designs that <a href="https://myfigurecollection.net/picture/3267308">don’t actually exist</a>, combinations of 2 or more characters at the same time<sup class="footnote-ref"><a href="#fn-rem" id="fnref-rem" data-footnote-ref="data-footnote-ref">4</a></sup></li>
 <li>paint fading quickly even in interior lights from store displays</li>
 <li>visible molding seams <em>(flash)</em>, ABS plastics yellowing, PVC vinyls leaking plasticizer and turning sticky</li>
 <li>visible seams and outright separation of parts between thigh-highs, bare skin, shoes, detached sleeves, etc.</li>
@@ -149,20 +149,24 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
-/*	[ 'p78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
-	[ 'p104300', '65180', 'good smile sakura miku nendoroid #274' ],
-	[ 'p41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129' ],
-	[ 'p153162', '8abda', 'good smile snow miku 2014 nendoroid #380' ],
+	[ 'p23566', '8126f', 'volks moekore plus #03.9 miku encore 1/6 scale' ],
+	[ 'p331720', '1ff7c', 'good smile project diva ha2ne miku co-de' ],
+	[ 'p22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
+	[ 'p266283', 'f0162', 'taito hatsune miku mamama style api miku (2015)' ],
 	[ 'p12037', 'bbc47', 'max factory miku live stage wonfes 2009 ver. figma #EX-003' ],
+	[ 'p153162', '8abda', 'good smile snow miku 2014 nendoroid #380' ],
 	[ 'p5737', '2e05d', 'good smile kagami hiiragi lucky star OVA nendoroid #062' ],
-	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299' ],
-	[ 'p1251028', '79b76', 'bandai q posket sakura miku type a' ],
-	[ 'p287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
-	[ 'p66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
 	[ 'p59755', '4a5b2', 'max factory miku append figma #100' ],
 	[ 'p78582', '5dc32', 'good smike miku append nendoroid #194' ],
-*/
+	[ 'p757554', '0b003', 'good smile miku cheerful ver. nendoroid #1001' ],
+	[ 'p287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
+	[ 'p41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129' ],
 
+/* from cancelled suruga-ya order 2023/7/26
+	[ 'p104300', '65180', 'good smile sakura miku nendoroid #274' ],
+	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299' ],
+	[ 'p1251028', '79b76', 'bandai q posket sakura miku type a' ],
+*/
 	[ '861021', 'c00c8', 'sega miku preciality special nuigurumi (fuwafuwa mega jumbo) plush' ],
 	[ 'p1849001', '3fba5', 'gift hatsune miku nt fumo plush' ],
 	[ 'p1876348', '49ca1', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222' ],
@@ -264,17 +268,22 @@ var figs = [
 	[ '440687', 'be7e3', 'sega project diva X miku SPM' ],
 	[ '583734', 'ccf32', 'sega izayoi sakuya PM figure' ],
 	[ '200768', '28f48', 'funko pop rocks miku #39' ],
-	[ '246546', '9cbfc', 'sega project diva F2nd miku PM' ],
+	[ '246546', '9cbfc', 'sega project diva F2nd miku PM figure' ],
 	[ 'x287774', 'f7c92', 'knockoff good smile umaru-chan nendoroid #524' ],
 	[ 'x26113', 'a69e3', 'knockoff good smile snow miku nendoroid #150' ],
 	[ '198604', '64215', 'sega project diva 2nd miku PM figure' ],
 	[ '47413', 'd5289', 'banpresto akira kogami ichiban kuji H prize kyun-chara' ],
 	[ '167123', '00cd8', 'sega project diva arcade miku PM figure (2012)' ],
-	[ '100292', '0bb7d', 'hatsune miku plush great eastern (2012)' ],
+	[ '100292', '0bb7d', 'great eastern entertainment hatsune miku plush (2012)' ],
 
-	/* wishlist */
+	/* they're not hard to find but some of them are expensive */
+	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
 	[ 'w370088', '27dfa', 'sega miku fuwafuwa mega jumbo nuigurumi plush' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309' ],
+	[ 'w1085480', 'f2b12', 'furyu f:nex miku nekomimi headphove ver. 1/7 scale' ],
+	[ 'w198011', '69a8c', 'max factory project diva 2nd mikuzukin miku 1/7 scale' ],
+	[ 'w236245', '829af', 'good smile tell your world miku 1/8 scale' ],
+	[ 'w78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
@@ -335,7 +344,7 @@ for (var i in figs) {
 
 /* ]]> */
 </script>
-<section class="footnotes" data-footnotes>
+<section class="footnotes" data-footnotes="data-footnotes">
 <ol>
 <li id="fn-import">
 <p>For people in the U.S., you can put a decimal point to the left of the 2nd least significant digit in <strong>JPY</strong> prices and you should have an approximation of the cost in <strong>USD</strong> after international shipping,
@@ -343,18 +352,18 @@ for (var i in figs) {
 <p>This gives you insight into the markup percentage that domestic hobby good shops tend to have over Japanese ones.</p>
 <p>This also assumes you are shipping multiple items in one order, preferably more than 3 in the case of low value items such as prize figures.
 Most, if not all air shipping options from Japan start at ¥4,000, single item shipments are rarely cost effective unless they exceed ¥16,000.</p>
-<p>Consider surface shipping <em>(a.k.a ocean freight)</em> if you care to save several hundred dollars on shipping costs for <a href="https://www.google.com/search?q=amiami+shipping+%28200%7Ccoffin%29+box+site%3Areddit.com&amp;tbm=isch">very voluminous shipments</a>, but note that it does add 1-4 months to your shipping speed, don’t forget the insurance. <a href="#fnref-import" class="footnote-backref" data-footnote-backref aria-label="Back to content">↩</a></p>
+<p>Consider surface shipping <em>(a.k.a ocean freight)</em> if you care to save several hundred dollars on shipping costs for <a href="https://www.google.com/search?q=amiami+shipping+%28200%7Ccoffin%29+box+site%3Areddit.com&amp;tbm=isch">very voluminous shipments</a>, but note that it does add 1-4 months to your shipping speed, don’t forget the insurance. <a href="#fnref-import" class="footnote-backref" data-footnote-backref="data-footnote-backref" data-footnote-backref-idx="1" aria-label="Back to reference 1">↩</a></p>
 </li>
 <li id="fn-api">
-<p>Note: mfc likes to <a href="https://github.com/microsounds/microsounds.github.io/commit/10c49ea">change their API endpoints</a> a lot, if images are broken, it’s not for <a href="https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/fetch-figure-pics.sh">a lack of trying</a>. <a href="#fnref-api" class="footnote-backref" data-footnote-backref aria-label="Back to content">↩</a></p>
+<p>Note: mfc likes to <a href="https://github.com/microsounds/microsounds.github.io/commit/10c49ea">change their API endpoints</a> a lot, if images are broken, it’s not for <a href="https://raw.githubusercontent.com/microsounds/microsounds.github.io/master/.scripts/fetch-figure-pics.sh">a lack of trying</a>. <a href="#fnref-api" class="footnote-backref" data-footnote-backref="data-footnote-backref" data-footnote-backref-idx="2" aria-label="Back to reference 2">↩</a></p>
 </li>
 <li id="fn-fotsjapan">
 <p>Figures leaning on their own isn’t limited to bootlegs, FOTS Japan is infamous for their use of hollow legs that cannot support their own weight and slowly fall over, even while
-<a href="https://old.reddit.com/r/AnimeFigures/comments/if2feq/just_dont_buy_how_heavy_are_the_dumbbells_you/">standing on BOTH LEGS</a>. <a href="#fnref-fotsjapan" class="footnote-backref" data-footnote-backref aria-label="Back to content">↩</a></p>
+<a href="https://old.reddit.com/r/AnimeFigures/comments/if2feq/just_dont_buy_how_heavy_are_the_dumbbells_you/">standing on BOTH LEGS</a>. <a href="#fnref-fotsjapan" class="footnote-backref" data-footnote-backref="data-footnote-backref" data-footnote-backref-idx="3" aria-label="Back to reference 3">↩</a></p>
 </li>
 <li id="fn-rem">
 <p>A wild new frontier in bootlegs, this is a combination of
-<a href="https://myfigurecollection.net/item/1047417">this Rem</a> and <a href="https://myfigurecollection.net/item/944728">this Miku</a>. <a href="#fnref-rem" class="footnote-backref" data-footnote-backref aria-label="Back to content">↩</a></p>
+<a href="https://myfigurecollection.net/item/1047417">this Rem</a> and <a href="https://myfigurecollection.net/item/944728">this Miku</a>. <a href="#fnref-rem" class="footnote-backref" data-footnote-backref="data-footnote-backref" data-footnote-backref-idx="4" aria-label="Back to reference 4">↩</a></p>
 </li>
 </ol>
 </section>

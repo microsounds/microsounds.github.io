@@ -144,20 +144,24 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
-/*	[ 'p78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
-	[ 'p104300', '65180', 'good smile sakura miku nendoroid #274' ],
-	[ 'p41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129' ],
-	[ 'p153162', '8abda', 'good smile snow miku 2014 nendoroid #380' ],
+	[ 'p23566', '8126f', 'volks moekore plus #03.9 miku encore 1/6 scale' ],
+	[ 'p331720', '1ff7c', 'good smile project diva ha2ne miku co-de' ],
+	[ 'p22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
+	[ 'p266283', 'f0162', 'taito hatsune miku mamama style api miku (2015)' ],
 	[ 'p12037', 'bbc47', 'max factory miku live stage wonfes 2009 ver. figma #EX-003' ],
+	[ 'p153162', '8abda', 'good smile snow miku 2014 nendoroid #380' ],
 	[ 'p5737', '2e05d', 'good smile kagami hiiragi lucky star OVA nendoroid #062' ],
-	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299' ],
-	[ 'p1251028', '79b76', 'bandai q posket sakura miku type a' ],
-	[ 'p287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
-	[ 'p66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
 	[ 'p59755', '4a5b2', 'max factory miku append figma #100' ],
 	[ 'p78582', '5dc32', 'good smike miku append nendoroid #194' ],
-*/
+	[ 'p757554', '0b003', 'good smile miku cheerful ver. nendoroid #1001' ],
+	[ 'p287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
+	[ 'p41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129' ],
 
+/* from cancelled suruga-ya order 2023/7/26
+	[ 'p104300', '65180', 'good smile sakura miku nendoroid #274' ],
+	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299' ],
+	[ 'p1251028', '79b76', 'bandai q posket sakura miku type a' ],
+*/
 	[ '861021', 'c00c8', 'sega miku preciality special nuigurumi (fuwafuwa mega jumbo) plush' ],
 	[ 'p1849001', '3fba5', 'gift hatsune miku nt fumo plush' ],
 	[ 'p1876348', '49ca1', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222' ],
@@ -259,17 +263,22 @@ var figs = [
 	[ '440687', 'be7e3', 'sega project diva X miku SPM' ],
 	[ '583734', 'ccf32', 'sega izayoi sakuya PM figure' ],
 	[ '200768', '28f48', 'funko pop rocks miku #39' ],
-	[ '246546', '9cbfc', 'sega project diva F2nd miku PM' ],
+	[ '246546', '9cbfc', 'sega project diva F2nd miku PM figure' ],
 	[ 'x287774', 'f7c92', 'knockoff good smile umaru-chan nendoroid #524' ],
 	[ 'x26113', 'a69e3', 'knockoff good smile snow miku nendoroid #150' ],
 	[ '198604', '64215', 'sega project diva 2nd miku PM figure' ],
 	[ '47413', 'd5289', 'banpresto akira kogami ichiban kuji H prize kyun-chara' ],
 	[ '167123', '00cd8', 'sega project diva arcade miku PM figure (2012)' ],
-	[ '100292', '0bb7d', 'hatsune miku plush great eastern (2012)' ],
+	[ '100292', '0bb7d', 'great eastern entertainment hatsune miku plush (2012)' ],
 
-	/* wishlist */
+	/* they're not hard to find but some of them are expensive */
+	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
 	[ 'w370088', '27dfa', 'sega miku fuwafuwa mega jumbo nuigurumi plush' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309' ],
+	[ 'w1085480', 'f2b12', 'furyu f:nex miku nekomimi headphove ver. 1/7 scale' ],
+	[ 'w198011', '69a8c', 'max factory project diva 2nd mikuzukin miku 1/7 scale' ],
+	[ 'w236245', '829af', 'good smile tell your world miku 1/8 scale' ],
+	[ 'w78591', '17fbf', 'max factory miku 1/7 scale HSP ver. (2012)' ],
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
