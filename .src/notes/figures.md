@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/9/3 -->
+<!-- updated 2023/9/6 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
