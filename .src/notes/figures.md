@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/9/6 -->
+<!-- updated 2023/9/7 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -274,6 +274,7 @@ var figs = [
 	/* they're not hard to find but some of them are expensive */
 	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170' ],
 	[ 'w370088', '27dfa', 'sega miku fuwafuwa mega jumbo nuigurumi plush' ],
+	[ 'w451821', '07e74', 'good smile hatsune miku (2.0) nendoroid JUMBO (2016)' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309' ],
 	[ 'w1085480', 'f2b12', 'furyu f:nex miku nekomimi headphove ver. 1/7 scale' ],
 	[ 'w198011', '69a8c', 'max factory project diva 2nd mikuzukin miku 1/7 scale' ],
