@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/9/7 -->
+<!-- updated 2023/9/10 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,12 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p186', '94494', 'good smile miku nendoroid #33 (2008)' ],
+	[ 'p1656', 'ca554', 'good smile hachune miku nendoroid #042 (2008)' ],
+	[ 'p1009', '633df', 'good smile kagamine len nendoroid #40' ],
+	[ 'p1008', 'cbcc1', 'good smile kagamine rin nendoroid #39' ],
+	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299' ],
+
 	[ 'p23566', '8126f', 'volks moekore plus #03.9 miku encore 1/6 scale' ],
 	[ 'p331720', '1ff7c', 'good smile project diva ha2ne miku co-de' ],
 	[ 'p22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
@@ -159,7 +165,6 @@ var figs = [
 
 /* from cancelled suruga-ya order 2023/7/26
 	[ 'p104300', '65180', 'good smile sakura miku nendoroid #274' ],
-	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299' ],
 	[ 'p1251028', '79b76', 'bandai q posket sakura miku type a' ],
 */
 	[ '861021', 'c00c8', 'sega miku preciality special nuigurumi (fuwafuwa mega jumbo) plush' ],
