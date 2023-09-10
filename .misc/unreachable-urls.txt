@@ -18,6 +18,8 @@ https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archived.moe/lgbt/
 HTTP request sent, awaiting response... 403 Forbidden
+https://catbox.moe/
+(try: 2)  https://catbox.moe/
 https://cdn.discordapp.com/avatars/
 HTTP request sent, awaiting response... 404 Not Found
 https://cdromance.com/
@@ -50,10 +52,6 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
-https://litterbox.catbox.moe/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://litterbox.catbox.moe/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://maki.cafe/
 HTTP request sent, awaiting response... 307 Temporary Redirect
 https://mangadex.org/
@@ -356,7 +354,7 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
-HTTP request sent, awaiting response... 403 Forbidden
+(try: 2)  https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
