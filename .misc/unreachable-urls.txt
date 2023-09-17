@@ -18,8 +18,6 @@ https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archived.moe/lgbt/
 HTTP request sent, awaiting response... 403 Forbidden
-https://catbox.moe/
-(try: 2)  https://catbox.moe/
 https://cdn.discordapp.com/avatars/
 HTTP request sent, awaiting response... 404 Not Found
 https://cdromance.com/
@@ -32,10 +30,6 @@ HTTP request sent, awaiting response... 501 Not Implemented
 HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
-https://desuarchive.org/fit/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
-(try: 2)  https://desuarchive.org/fit/
-HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://www.ebay.com/n/error
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
@@ -63,7 +57,7 @@ HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
-HTTP request sent, awaiting response... 502 Bad Gateway
+HTTP request sent, awaiting response... 404 Not Found
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -359,6 +353,7 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
+https://web.archive.org/web/20150205231954/http://omori-game.com/
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1

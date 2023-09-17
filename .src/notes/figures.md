@@ -184,7 +184,7 @@ var figs = [
 	[ '289034', '83d4b', 'sega project diva arcade miku infinity module SPM (2015)' ],
 	[ '1370076', '897d0', 'furyu bicute bunnies miku street ver. (2022)' ],
 	[ '1210391', 'ebe3e', 'furyu bicute bunnies miku white bunny pearl ver. (2022)' ],
-	[ '1419501', '06f2e', 'good smile racing miku 2022 nendoroid #1839 (2022)' ],
+	[ '1419501', '49579', 'good smile racing miku 2022 nendoroid #1839 (2022)' ],
 	[ '1503807', '58c20', 'good smile magical mirai 2021 miku nendoroid #1940 (2022)' ],
 	[ '1407723', 'd9878', 'taito big nuigurumi miku winter ver. (type B) (2021)' ],
 	[ '1635003', 'ca57b', 'taito wonderland puss in boots miku (2023)' ],
