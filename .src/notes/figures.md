@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/9/10 -->
+<!-- updated 2023/9/17 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,11 +144,11 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
-	[ 'p186', '94494', 'good smile miku nendoroid #033 (2008)' ],
-	[ 'p1656', 'ca554', 'good smile hachune miku nendoroid #042 (2008)' ],
-	[ 'p1009', '633df', 'good smile kagamine len nendoroid #040 (2008)' ],
-	[ 'p1008', 'cbcc1', 'good smile kagamine rin nendoroid #039 (2008)' ],
-	[ 'p117503', 'e371a', 'good smile mikudayo nendoroid #299 (2013)' ],
+	[ '186', '94494', 'good smile miku nendoroid #033 (2008)' ],
+	[ '1656', 'ca554', 'good smile hachune miku nendoroid #042 (2008)' ],
+	[ '1009', '633df', 'good smile kagamine len nendoroid #040 (2008)' ],
+	[ '1008', 'cbcc1', 'good smile kagamine rin nendoroid #039 (2008)' ],
+	[ '117503', 'e371a', 'good smile mikudayo nendoroid #299 (2013)' ],
 	[ 'p23566', '8126f', 'volks moekore plus miku encore #03.9 1/6 scale (2010)' ],
 	[ 'p331720', '1ff7c', 'good smile project diva ha2ne miku nendoroid co-de (2016)' ],
 	[ 'p22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
