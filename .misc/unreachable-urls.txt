@@ -353,9 +353,10 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
-https://web.archive.org/web/20150205231954/http://omori-game.com/
+https://wowana.me/
+(try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
-HTTP request sent, awaiting response... 403 Forbidden
+(try: 2)  https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/
