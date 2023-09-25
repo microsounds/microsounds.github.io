@@ -244,7 +244,19 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/share/nano/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.mailmap
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/assets/minecraft/textures/entity/alex.png
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/assets/minecraft/textures/entity/steve.png
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/pack.mcmeta
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/pack.png
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.png
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.nanorc
 HTTP request sent, awaiting response... 404 Not Found
@@ -330,6 +342,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scrot.webm
 HTTP request sent, awaiting response... 404 Not Found
+https://saucenao.com/
+HTTP request sent, awaiting response... 523 
 https://soundcloud.com/-redacted-
 HTTP request sent, awaiting response... 404 Not Found
 https://static.myfigurecollection.net/upload/items/0
@@ -353,10 +367,8 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
-https://wowana.me/
-(try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
-(try: 2)  https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
+HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.cs.vu.nl/~ast/intel/

@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">906</b>, commit `7c2a0a9`.**
+**Revision No. <b style="font-size: 130%">907</b>, commit `09bf6f6`.**
 
-**"chromium: Web Scrobbler now installed on first-run"**
+**"minecraft: Fixed transparency on miku player skin for v1.9 or later"**
 
 {TOC}
 
@@ -552,7 +552,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime4.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime32.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -576,9 +576,9 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-222.64KiB
+280.98KiB
 out of a total compressed git history size of
-820.98KiB._
+924.39KiB._
 
 # Complete source listing
 
@@ -682,7 +682,13 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  685   Mar 31 2021 21:37 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/nano/md-kagami.nanorc">.local/share/nano/md-kagami.nanorc</a>
 -rw-r--r-- 1  291   Jul 15 2020 16:41 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/nano/stdc.syntax">.local/share/nano/stdc.syntax</a>
 -rw-r--r-- 1   84   Mar 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.mailmap">.mailmap</a>
--rw-r--r-- 1  44K   Dec 17 2019 22:28 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku.zip">.minecraft/resourcepacks/HatsuneMiku.zip</a>
+-rw-r--r-- 1 1.8K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/assets/minecraft/textures/entity/alex.png">.minecraft/resourcepacks/HatsuneMiku_2015/assets/minecraft/textures/entity/alex.png</a>
+-rw-r--r-- 1 1.8K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/assets/minecraft/textures/entity/steve.png">.minecraft/resourcepacks/HatsuneMiku_2015/assets/minecraft/textures/entity/steve.png</a>
+-rw-r--r-- 1  114   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/pack.mcmeta">.minecraft/resourcepacks/HatsuneMiku_2015/pack.mcmeta</a>
+-rw-r--r-- 1  32K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2015/pack.png">.minecraft/resourcepacks/HatsuneMiku_2015/pack.png</a>
+-rw-r--r-- 1 2.0K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png">.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png</a>
+-rw-r--r-- 1  106   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta">.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta</a>
+-rw-r--r-- 1  65K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.png">.minecraft/resourcepacks/HatsuneMiku_2023/pack.png</a>
 -rw-r--r-- 1 1.7K   Jun 25 2022 15:12 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Aug 26 2023 09:38 rev. 23  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
@@ -726,4 +732,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  30K   Aug 26 2023 09:38 rev. 193 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 18 Sep 2023 23:12:27 -0700 -->
+<!-- updated Mon, 25 Sep 2023 02:10:11 -0700 -->
