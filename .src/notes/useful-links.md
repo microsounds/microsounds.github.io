@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/8/14 -->
+<!-- updated 2023/9/27 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -119,6 +119,10 @@
 * [poyopoyo gif maker](https://poyopoyo.gifanimaker.com)
 * [NOAA GOES](https://www.star.nesdis.noaa.gov/GOES)
 	* _Near-live weather animations from US NOAA weather satellites._
+* [PassMark CPU Benchmarks](https://www.cpubenchmark.net/singleCompare.php)
+	* _Compare CPU single and multi-threaded performance for CPUs released since 1999._
+* [Project Sekai Stickers](https://st.ayaka.one/)
+	* _Create your own messenger emotes/stickers based on those found in mobile rhythm gacha [Project SEKAI](https://projectsekai.fandom.com/wiki/Project_SEKAI_COLORFUL_STAGE!)._
 * [hikaku sitatter](https://hikaku-sitatter.com/en/)
 	* _Estimate and compare heights of real people and/or fictional characters._
 * [Losertown CICO Calculator](https://www.losertown.org/eats/cal.php)
