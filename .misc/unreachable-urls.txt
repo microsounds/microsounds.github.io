@@ -50,6 +50,10 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
+https://litterbox.catbox.moe/
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://litterbox.catbox.moe/
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://maki.cafe/
 HTTP request sent, awaiting response... 307 Temporary Redirect
 https://mangadex.org/
@@ -342,8 +346,6 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scrot.webm
 HTTP request sent, awaiting response... 404 Not Found
-https://saucenao.com/
-HTTP request sent, awaiting response... 523 
 https://soundcloud.com/-redacted-
 HTTP request sent, awaiting response... 404 Not Found
 https://static.myfigurecollection.net/upload/items/0
