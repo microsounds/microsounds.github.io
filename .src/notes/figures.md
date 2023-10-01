@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/9/25 -->
+<!-- updated 2023/9/30 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -219,6 +219,7 @@ var figs = [
 	[ 'x370088', '27dfa', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush (2016)' ],
 	[ 'x514129', '00fa6', 'knockoff sega nyanko miku fuwafuwa nuigurumi plush (2017)' ],
 	[ 'x809190', '8d2a0', 'knockoff furyu miku noodle stopper figure (2019)' ],
+	[ '1536233', '7215f', 're-ment miku miku room miniature diorama trading fig 8/8 set (2022)' ],
 	[ 'x2987', '9fa5f', 'knockoff max factory figma miku #014 (2008)' ],
 	[ '401018', 'bfb66', 'sega project diva innocent SPM miku (2016)' ],
 	[ '718192', '29017', 'hatsune miku 2nd season Winter ver. (2018)' ],
