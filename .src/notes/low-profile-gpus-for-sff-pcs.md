@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2022/10/22 -->
+<!-- updated 2023/10/2 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -100,7 +100,8 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide.
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
-| Nvidia RTX A2000 | 2021 | _N/A_ | 13228 | Workstation card. |
+| Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card. |
+| Nvidia GeForce RTX 4060 | 2023 | 75W | 19444 | Listed at 115W, available in 75W low profile. |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [3]: https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
