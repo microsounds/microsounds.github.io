@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/9/30 -->
+<!-- updated 2023/10/7 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1941969', '725da', 'good smile DECO*27 vampire jirai miku nendoroid #2239 (2024)' ],
 	[ '186', '94494', 'good smile miku nendoroid #033 (2008)' ],
 	[ '1656', 'ca554', 'good smile hachune miku nendoroid #042 (2008)' ],
 	[ '1009', '633df', 'good smile kagamine len nendoroid #040 (2008)' ],
@@ -201,7 +202,7 @@ var figs = [
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper (2023)' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll (2020)' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll (2023)' ],
-	[ '1616455', '1154b', 'good smile pop up parade ver. L DECO*27 vampire miku (2023)' ],
+	[ '1616455', '1154b', 'good smile pop up parade ver. L DECO*27 vampire jirai miku (2023)' ],
 	[ 'p1779734', '8e024', 'taito miku fashion figure subculture ver. (2023)' ],
 	[ '1335582', '0d57a', 'sega sakura miku v3 SPM (2022)' ],
 	[ '1571286', '62065', 'sega miku christmas 2022 SPM (2022)' ],
