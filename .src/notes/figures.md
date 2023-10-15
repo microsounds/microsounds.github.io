@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/10/7 -->
+<!-- updated 2023/10/14 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1911915', 'a30de', 'good smile komi-san maid outfit pop up parade (2024)' ],
 	[ 'p1941969', '725da', 'good smile DECO*27 vampire jirai miku nendoroid #2239 (2024)' ],
 	[ '186', '94494', 'good smile miku nendoroid #033 (2008)' ],
 	[ '1656', 'ca554', 'good smile hachune miku nendoroid #042 (2008)' ],
