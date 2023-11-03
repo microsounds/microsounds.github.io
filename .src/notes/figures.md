@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/10/14 -->
+<!-- updated 2023/11/3 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,10 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1781933', 'ecbab', 'design coco miku senbonzakura 10th anniv. ver 1/7 scale (2025)' ],
+	[ 'p1974911', '9c191', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
+	[ 'p2004539', '226b3', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
+	[ 'p236103', '20356', 'freeing b-style hatsune miku V3 1/4 scale (2016)' ],
 	[ 'p1911915', 'a30de', 'good smile komi-san maid outfit pop up parade (2024)' ],
 	[ 'p1941969', '725da', 'good smile DECO*27 vampire jirai miku nendoroid #2239 (2024)' ],
 	[ '186', '94494', 'good smile miku nendoroid #033 (2008)' ],
@@ -151,19 +155,19 @@ var figs = [
 	[ '1009', '633df', 'good smile kagamine len nendoroid #040 (2008)' ],
 	[ '1008', 'cbcc1', 'good smile kagamine rin nendoroid #039 (2008)' ],
 	[ '117503', 'e371a', 'good smile mikudayo nendoroid #299 (2013)' ],
-	[ 'p23566', '8126f', 'volks moekore plus miku encore #03.9 1/6 scale (2010)' ],
-	[ 'p331720', '1ff7c', 'good smile project diva ha2ne miku nendoroid co-de (2016)' ],
-	[ 'p22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
-	[ 'p266283', 'f0162', 'taito hatsune miku mamama style api miku (2015)' ],
-	[ 'p12037', 'bbc47', 'max factory miku live stage ver. (wonfes 2009) figma #EX-003 (2009)' ],
-	[ 'p153162', '8abda', 'good smile snow miku 2014 rabbit yukine nendoroid #380 (2014)' ],
-	[ 'p5737', '2e05d', 'good smile kagami hiiragi MikkuMiku lucky star OVA nendoroid #062 (2009)' ],
-	[ 'p59755', '4a5b2', 'max factory hatsune miku append figma #100 (2011)' ],
-	[ 'p78582', '5dc32', 'good smile hatsune miku append nendoroid #194 (2012)' ],
-	[ 'p757554', '0b003', 'good smile miku cheerful ver. nendoroid #1001 (2011)' ],
-	[ 'p287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
-	[ 'p41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129 (2011)' ],
-	[ '861021', 'c00c8', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
+	[ '23566', '8126f', 'volks moekore plus miku encore #03.9 1/6 scale (2010)' ],
+	[ '331720', '1ff7c', 'good smile project diva ha2ne miku nendoroid co-de (2016)' ],
+	[ '22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
+	[ '266283', 'f0162', 'taito hatsune miku mamama style api miku (2015)' ],
+	[ '12037', 'bbc47', 'max factory miku live stage ver. (wonfes 2009) figma #EX-003 (2009)' ],
+	[ '153162', '8abda', 'good smile snow miku 2014 rabbit yukine nendoroid #380 (2014)' ],
+	[ '5737', '2e05d', 'good smile kagami hiiragi \'MikkuMiku\' lucky star OVA nendoroid #062 (2009)' ],
+	[ '59755', '4a5b2', 'max factory hatsune miku append figma #100 (2011)' ],
+	[ '78582', '5dc32', 'good smile hatsune miku append nendoroid #194 (2012)' ],
+	[ '757554', '0b003', 'good smile miku cheerful ver. nendoroid #1001 (2011)' ],
+	[ '287701', 'ad644', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
+	[ '41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129 (2011)' ],
+	[ '861021', '93e28', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
 	[ 'p1849001', '3fba5', 'gift hatsune miku nt fumo plush (2023)' ],
 	[ 'p1876348', '49ca1', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222 (2023)' ],
 	[ 'p1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
@@ -181,7 +185,6 @@ var figs = [
 	[ '548722', '507c3', 'good smile hatsune miku v4x 1/8 scale (2018)' ],
 	[ '187', '7888c', 'good smile hatsune miku 1/8 scale (2008)' ],
 	[ 'p546853', 'be182', 'bandai figure-rise bust miku model kit (2017)' ],
-	[ 'p1875244', 'cf10e', 'furyu noodle stopper miku autumn date (2023)' ],
 	[ 'p1840070', 'c98a3', 'good smile needy girl overdose kangel nendoroid #2201 (2023)' ],
 	[ '289034', '83d4b', 'sega project diva arcade miku infinity module SPM (2015)' ],
 	[ '1370076', '897d0', 'furyu bicute bunnies miku street ver. (2022)' ],
@@ -199,7 +202,7 @@ var figs = [
 	[ 'p1782785', 'bcbe3', 'furyu exceed creative miku cyber future ver. (2023)' ],
 	[ 'p1618453', 'd327e', 'good smile pop up parade needy girl overdose kangel (2023)' ],
 	[ 'p1780064', 'bf4ff', 'taito miku artist masterpiece+ birthday 2023 ver. (2023)' ],
-	[ 'p1873722', '5103d', 'taito miku fashion figure uniform ver. (2024)' ],
+	[ 'p1873722', '4dabb', 'taito miku fashion figure uniform ver. (2024)' ],
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper (2023)' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll (2020)' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll (2023)' ],
@@ -258,10 +261,13 @@ var figs = [
 	[ 'w370088', '27dfa', 'sega fuwafuwa mega jumbo miku plush (2016)' ],
 	[ 'w451821', '07e74', 'good smile hatsune miku nendoroid JUMBO (2016)' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309 (2020)' ],
-	[ 'w1085480', 'f2b12', 'furyu f:nex miku nekomimi headphove ver. 1/7 scale (2022)' ],
+	[ 'w1085480', 'f2b12', 'furyu f:nex miku nekomimi headphone ver. 1/7 scale (2022)' ],
 	[ 'w198011', '69a8c', 'max factory project diva 2nd mikuzukin miku 1/7 scale (2015)' ],
 	[ 'w236245', '829af', 'good smile tell your world miku 1/8 scale (2015)' ],
 	[ 'w78591', '17fbf', 'max factory miku HSP ver. 1/7 scale (2012)' ],
+	[ 'w1917313', '23eaf', 'sega miku x cinnamoroll premium noodle stopper (2024)' ],
+	[ 'w1954286', '75f37', 'sega luminasta miku x cinnamoroll (2024)' ],
+
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
