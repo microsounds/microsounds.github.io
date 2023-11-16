@@ -145,7 +145,7 @@ var figs = [
 	 */
 
 	[ 'p1781933', 'ecbab', 'design coco miku senbonzakura 10th anniv. ver 1/7 scale (2025)' ],
-	[ 'p1974911', '9c191', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
+	[ 'p1974911', '8f1ef', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
 	[ 'p2004539', '226b3', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
 	[ 'p236103', '20356', 'freeing b-style hatsune miku V3 1/4 scale (2016)' ],
 	[ 'p1911915', 'a30de', 'good smile komi-san maid outfit pop up parade (2024)' ],
@@ -192,7 +192,7 @@ var figs = [
 	[ '1419501', '49579', 'good smile racing miku 2022 nendoroid #1839 (2022)' ],
 	[ '1503807', '58c20', 'good smile magical mirai 2021 miku nendoroid #1940 (2022)' ],
 	[ '1407723', 'd9878', 'taito big nuigurumi miku winter ver. (type B) (2021)' ],
-	[ '1635003', 'ca57b', 'taito wonderland puss in boots miku (2023)' ],
+	[ '1635003', '44866', 'taito wonderland puss in boots miku (2023)' ],
 	[ '36788', '5b203', 'sega kagamine len EX figure (2010)' ],
 	[ '1495055', 'eda04', 'bandai q posket miku v4x type a (2022)' ],
 	[ '1796930', '5b192', 'max limited yurayura head miku nt (2023)' ],
@@ -207,7 +207,7 @@ var figs = [
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll (2020)' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll (2023)' ],
 	[ '1616455', '1154b', 'good smile pop up parade ver. L DECO*27 vampire jirai miku (2023)' ],
-	[ 'p1779734', '8e024', 'taito miku fashion figure subculture ver. (2023)' ],
+	[ 'p1779734', '5b94a', 'taito miku fashion figure subculture ver. (2023)' ],
 	[ '1335582', '0d57a', 'sega sakura miku v3 SPM (2022)' ],
 	[ '1571286', '62065', 'sega miku christmas 2022 SPM (2022)' ],
 	[ '1479579', '350f9', 'sega miku 15th anniversary kei ver. SPM (2022)' ],

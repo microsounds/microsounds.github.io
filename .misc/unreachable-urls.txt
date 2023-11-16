@@ -128,6 +128,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/sxhkd/mous
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/cmark-gfm-xhtml/pre-run
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/sc/pre-run
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/x48/post-run
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/x48/pre-run
@@ -169,6 +171,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/make
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/mpv
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/nyaa-magnet
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/bin/pprofiler
 HTTP request sent, awaiting response... 404 Not Found
