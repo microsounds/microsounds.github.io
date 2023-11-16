@@ -1,0 +1,7 @@
+# required to extract specific ranges from TTF fonts
+# used specifically to allow @font-face'ing specific moonphase emoji from Deja
+# Vu Sans, I can't even remember where I got it but it took lots of trial and
+# error, not deleting this ever
+
+pyftsubset /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf --unicodes=U+1F311-1F318 --layout-features= --flavor=woff --output-file=poop.woff --no-subset-tables+=FFTM
+
