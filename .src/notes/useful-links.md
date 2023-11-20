@@ -103,6 +103,7 @@
 * [Chrome Platform Roadmap](https://chromestatus.com/roadmap)
 * [Chromebook Board Names](https://chromiumdash.appspot.com/serving-builds?deviceCategory=ChromeOS)
 * [MrChromebox: Supported Devices](https://mrchromebox.tech/#devices)
+	* _List of x86 Chromebook hardware that can be reflashed with Coreboot to support any UEFI-compliant OS._
 * [Crimp/Jumper Connector Names](https://www.mattmillman.com/info/crimpconnectors)
 	* _Standard names for breadboard jumpers and crimp connections._
 * [Logical Increments: GPU Comparison](https://www.logicalincrements.com/articles/graphicscardcomparison)
