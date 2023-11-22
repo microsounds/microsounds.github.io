@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/9/27 -->
+<!-- updated 2023/11/21 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -97,7 +97,8 @@
 * [MyAnimeList: Seasonal Anime Guide](https://myanimelist.net/anime/season)
 * [A crash course in `sc`](http://blog.startaylor.net/2016/08/29/sc)
 	* _Useful reference guide to the obsolescent *NIX spreadsheet tool `sc`._
-* [Guide to Google Dorking](https://kit.exposingtheinvisible.org/en/how/google-dorking.html)
+* [Guide to Google Dorking](https://kit.exposingtheinvisible.org/en/google-dorking.html)
+	* _Taking advantage of lesser known Google search operators (dorking) to improve search results._
 * [Atelier Series Guide](https://barrelwisdom.com/blog/atelier-series-guide)
 	* _A guide for getting into GUST's slice of life alchemy simulator JRPG series._
 * [Chrome Platform Roadmap](https://chromestatus.com/roadmap)
@@ -107,8 +108,15 @@
 * [Crimp/Jumper Connector Names](https://www.mattmillman.com/info/crimpconnectors)
 	* _Standard names for breadboard jumpers and crimp connections._
 * [Logical Increments: GPU Comparison](https://www.logicalincrements.com/articles/graphicscardcomparison)
+	* _Relative power ranking of graphics cards released since 2010._
 * [Japanese Arcade IC card FAQ](https://old.reddit.com/r/rhythmgames/comments/w8cxcs/arcade_ic_card_faq/)
 	* _Westerner's guide to IC cards for Japanese arcade games, Aime, e-Amusement, Banapass, NESiCA, etc._
+* [Technical Guide to Anal](https://github.com/regdude/anal) <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span>
+	* _Technical guide on the ins and outs of anal sex, exploring the mechanics of the male and female orgasm._
+* [`regdude/anal`](https://github.com/regdude/anal) <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span>
+	* _Technical guide on the ins and outs of anal sex, exploring the mechanics of the male and female orgasm._
+* [Bad Licenses](https://github.com/ErikMcClure/bad-licenses)
+	* _A list of legally dubious and incomprensible "FOSS" software licenses found in the wild._
 
 **misc** ---
 * [twofactor.date](https://twofactor.date)
@@ -133,6 +141,8 @@
 	* _So you can buy a stuffed IKEA shark and immediately derail any thread on 4chan._
 * [The World Wide Web Project](http://info.cern.ch/)
 	* _Browse the first ever web page, romanticized history and opinions on the creation of the WWW at CERN between 1989-1993._
+* [Neal.fun: Internet Artifacts](https://neal.fun/internet-artifacts/)
+	* _Interactive exhibit of cultural milestones in the early days of the World Wide Web._
 * [ADS-B Exchange](https://globe.adsbexchange.com/)
 	* _View live air traffic and aircraft flight paths in your area, or anywhere in the world._
 * [Zenius-I-vanisher.com Arcade Machine Locator](https://zenius-i-vanisher.com/v5.2/arcades.php)
