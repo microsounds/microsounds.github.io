@@ -113,8 +113,6 @@
 	* _Westerner's guide to IC cards for Japanese arcade games, Aime, e-Amusement, Banapass, NESiCA, etc._
 * [Technical Guide to Anal](https://github.com/regdude/anal) <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span>
 	* _Technical guide on the ins and outs of anal sex, exploring the mechanics of the male and female orgasm._
-* [`regdude/anal`](https://github.com/regdude/anal) <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span>
-	* _Technical guide on the ins and outs of anal sex, exploring the mechanics of the male and female orgasm._
 * [Bad Licenses](https://github.com/ErikMcClure/bad-licenses)
 	* _A list of legally dubious and incomprensible "FOSS" software licenses found in the wild._
 
