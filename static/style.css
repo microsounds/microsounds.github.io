@@ -59,6 +59,17 @@ html {
 	position: relative;
 }
 
+/* animated obfuscated email feature */
+.obfuscated-email {
+	font-size: 200%;
+	color: #F5D6EA;
+	text-shadow: 0 0 3px #F0F0F0;
+}
+@keyframes ellipse {
+	0% { transform: skew(-50deg,5deg) scale(1.1) rotate(10deg) translate(10px, 10px); }
+	100% { transform: skew(50deg,-5deg) scale(0.9) rotate(-10deg) translate(-10px, -10px); }
+}
+
 /* 2-column layout [150px navbar] [ page content ]
  *  content margin |----150px---->
  */

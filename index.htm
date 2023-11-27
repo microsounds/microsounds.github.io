@@ -124,20 +124,36 @@ Currently <span id="discord-status"></span>.
 <span class="footer" style="color: #CCC;">Powered by <a href="https://github.com/Phineas/lanyard">Lanyard API</a></span></p>
 <p>If it’s about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.</p>
 <p><span class="blink" style="color: #FFFF00;"><em>New!</em></span> —
-If you want to contact me by e-mail, my contact info is below.<br/>
-It’s not really a puzzle, just remove spaces and newlines and swap the places of every 2 characters like this, <code>1MUk -&gt; M1kU</code>, and decode the resultant mess as <code>base64</code>, then <code>gzip</code>.</p>
-<pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ cat contact.txt | gzip -c | base64 -w 0 \
-&gt;	| sed -E -e 's/(.)(.)/\2\1/g' -e 's/.&#123;4&#125;/&amp; /g' | fold -s
-4HIs AAAA AACA 9AVP QhLA yGRC FXiq 5maF Alkp qcmX mJmb CWkm uFnQ xJbp qODS HuJr
-b+cl ZKFn fyFl VKKY SxFU Yq5m pymZ pBcZ JAR/ fkH1 AAAA
-</code></pre>
-<details>
-<summary>Click here for a hint if you're stuck.</summary>
-<em>Never run unknown or <a href="http://thejh.net/misc/website-terminal-copy-paste">untrusted shell commands</a>
-copy-pasted directly from someone's website.</em>
-<br/>
-<code>wget -qO- https://microsounds.github.io | sed -n '/^4HIs/{N;p}' | tr -d '\n ' | sed -E 's/(.)(.)/\2\1/g' | base64 -d | zcat</code>
-</details>
+You can also contact me by e-mail at the following address:</p>
+<div class="center obfuscated-email">
+	<span style="display: inline-block; animation: ellipse 3.0s ease -20s infinite alternate;">m</span>
+	<!-- this is for HTML scrapers mailto:dsajf@jsadkfkdsjfklksdljf.com -->
+	<span style="display: inline-block; animation: ellipse 3.3s ease -20s infinite alternate;">i</span>
+	<span style="opacity: 0; font-size: 0px;">jdlskjfldsjfjAAAAAAAAAAAAAdklsafjdsjf</span>
+	<span style="display: inline-block; animation: ellipse 3.5s ease -20s infinite alternate;">c</span>
+	<span style="display: inline-block; animation: ellipse 3.7s ease -20s infinite alternate;">r</span>
+	<span style="opacity: 0; font-size: 0px;">sdfakjlfkjsalfjkldsjfkljsklKJKLDJPOOOOOOOOOOOOP</span>
+	<span style="display: inline-block; animation: ellipse 3.9s ease -20s infinite alternate;">o</span>
+	<span style="display: inline-block; animation: ellipse 4.1s ease -20s infinite alternate;">s</span>
+	<span style="display: inline-block; animation: ellipse 4.3s ease -20s infinite alternate;">o</span>
+	<!-- mailto:plsdontspam@woootwttsopoop.com -->
+	<span style="display: inline-block; animation: ellipse 4.5s ease -20s infinite alternate;">u</span>
+	<span style="display: inline-block; animation: ellipse 4.7s ease -20s infinite alternate;">n</span>
+	<span style="display: inline-block; animation: ellipse 4.9s ease -20s infinite alternate;">d</span>
+	<span style="opacity: 0; font-size: 0px;">908903849082398498fasjclaj skd jaklsjjldajljdj ></span>
+	<span style="display: inline-block; animation: ellipse 5.1s ease -20s infinite alternate;">s</span>
+	<span style="display: inline-block; animation: ellipse 3.3s ease -20s infinite alternate;">@</span>
+	<span style="display: inline-block; animation: ellipse 3.5s ease -20s infinite alternate;">c</span>
+	<span style="display: inline-block; animation: ellipse 3.7s ease -20s infinite alternate;">o</span>
+	<span style="display: inline-block; animation: ellipse 3.9s ease -20s infinite alternate;">c</span>
+	<span style="opacity: 0; font-size: 0px;">kajskdjklasjkljakJZKLJLJJJJJLLLSLS:LLSLSLSLSLSLSLLSL ></span>
+	<span style="display: inline-block; animation: ellipse 4.1s ease -20s infinite alternate;">k</span>
+	<span style="display: inline-block; animation: ellipse 4.3s ease -20s infinite alternate;">.</span>
+	<span style="display: inline-block; animation: ellipse 4.5s ease -20s infinite alternate;">l</span>
+	<span style="display: inline-block; animation: ellipse 4.7s ease -20s infinite alternate;">i</span>
+</div>
+<p><em>Please type it out manually, this address cannot be copy pasted.<br/>
+You should also know better than to paste <a href="http://thejh.net/misc/website-terminal-copy-paste">untrusted text from a web page</a> anyway.</em></p>
 <h2>Links<span id="Links"></span></h2>
 <div class="center">
 <p><a href="https://debian.org/distrib"><img src="/static/button/debian.png" alt="ico-debian" /></a>
