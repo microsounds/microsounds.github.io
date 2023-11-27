@@ -306,11 +306,11 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2b-enscrip
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2c-csr8510-bluetooth.sh
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2d-intel-bay-trail.sh
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/a0-android-termux.sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/c0-chromebook-delete-key.sh
-HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/c1-chromebook-i915.sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/ntc-chip.patch
 HTTP request sent, awaiting response... 404 Not Found
