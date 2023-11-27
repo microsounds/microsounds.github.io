@@ -6,8 +6,6 @@ https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
 HTTP request sent, awaiting response... 503 Service Unavailable
-https://api.github.com/repos/%7BAUTHOR%7D/microsounds.github.io/branches/master
-HTTP request sent, awaiting response... 404 Not Found
 https://api.lanyard.rest/v1/users/
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/

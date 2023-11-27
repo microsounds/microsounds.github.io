@@ -579,7 +579,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 >_Total on-disk size of the current revision is
 282.66KiB
 out of a total compressed git history size of
-931.38KiB._
+926.54KiB._
 
 # Complete source listing
 
