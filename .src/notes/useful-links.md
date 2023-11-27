@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/11/21 -->
+<!-- updated 2023/11/27 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -105,6 +105,8 @@
 * [Chromebook Board Names](https://chromiumdash.appspot.com/serving-builds?deviceCategory=ChromeOS)
 * [MrChromebox: Supported Devices](https://mrchromebox.tech/#devices)
 	* _List of x86 Chromebook hardware that can be reflashed with Coreboot to support any UEFI-compliant OS._
+* [Chrultrabook Docs](https://chrultrabook.github.io/docs/)
+	* _Detailed guide for converting x86 Chromebooks to run any UEFI-compliant OS._
 * [Crimp/Jumper Connector Names](https://www.mattmillman.com/info/crimpconnectors)
 	* _Standard names for breadboard jumpers and crimp connections._
 * [Logical Increments: GPU Comparison](https://www.logicalincrements.com/articles/graphicscardcomparison)
