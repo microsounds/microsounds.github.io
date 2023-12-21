@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Tue, 19 Dec 2023 23:01:53 -0800</lastBuildDate>
+<lastBuildDate>Thu, 21 Dec 2023 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -48,6 +48,16 @@
 <link>https://microsounds.github.io/notes/suruga-ya-intl.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/suruga-ya-intl.htm</guid>
 <pubDate>Fri, 11 Aug 2023 00:00:00 -0700</pubDate>
+</item>
+<item>
+<title>Termux: SSH fingerprint authentication using Android Keystore</title>
+<description>
+<![CDATA[ Written on . If you’re unfamiliar with Termux, it’s an extensible Android terminal emulator that papers over the user-hostile quirks of the Android operating system to provide a mostly faithful Linux environment for running familiar *nix software. It comes with an extensive APT package repository cross-compiled for ARM devices. You can install it from F-Droid or from upstream. Does this turn your unrooted Android smartphone into a handheld Linux terminal? Yes. Does this ascend your smartphone from a toy [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/termux-ssh-fingerprint.htm">https://microsounds.github.io/notes/termux-ssh-fingerprint.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/termux-ssh-fingerprint.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/termux-ssh-fingerprint.htm</guid>
+<pubDate>Thu, 21 Dec 2023 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>Fun and Useful Links to Elsewhere</title>

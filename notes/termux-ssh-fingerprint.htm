@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="theme-color" content="#E2FAF9" />
+	<meta name="description" content="unix and post-ironic anemoia, µsounds' starlit diary" />
+	<meta name="keywords" content="unix, linux, gnu/linux, debian, computers, computing, shell scripting, dotfiles, scripting, programming, metaprogramming, documentation, foss, open source, free software, git, github, moon phase, teal, cyan, pink, starry night skies, pastel, anime, music, iridescent, sibilant, sentimental, microsounds, eternity, jealosy, decay, 2007 is eternal, now and forever, lucky star, vocaloid, hatsune miku, 初音ミク, 39, sankyuu, shimeji, japan, weeaboo, weeb, old web, web 1.0, neocities, geocities, blog, microblog, static website, personal website" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="google-site-verification" content="Yn_X0a7RyXs1GuMzbXL2g3P-tH1A29W_6yyG6M8oBnk" />
+	<link rel="shortcut icon" type="image/x-icon" href="/static/sky.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/style.css" />
+	<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="sentimental µsounds" />
+	<script type="text/javascript" src="/static/script.js"></script>
+	<title>Termux: SSH fingerprint authentication using Android Keystore | sentimental µsounds</title>
+</head>
+<body>
+<audio hidden="hidden" id="bgm"></audio>
+<div class="navbar">
+	<a href="/">
+		<img class="avatar" alt="avatar" src="/static/avatar.png" />
+	</a>
+	<div class="container">
+		<div class="title"><a href="/">sentimental µsounds</a></div>
+		<div class="subtitle" id="subtitle">unix and post-ironic anemoia, µsounds' starlit diary</div>
+		<ul>
+			<li><a id="bgm_toggle" href="javascript:play()">♫ play</a></li>
+			<li><a href="https://github.com/microsounds">my github</a></li>
+			<li><a href="/notes/dotfiles.htm">my dotfiles</a></li>
+			<li><a href="/notes/index.htm">my notes</a></li>
+			<li><a href="/notes/useful-links.htm">useful links</a></li>
+			<li><a href="/rss.xml">rss <img alt="rss" class="icon" src="/static/button/rss.svg" /></a></li>
+		</ul>
+	</div>
+</div>
+<div class="cloud-cover"></div>
+<div class="content">
+<!--kagami v0.6.5 — static microblog processor-->
+<!-- written 2023/12/21 -->
+<h1>Termux: SSH fingerprint authentication using Android Keystore<span id="Termux:-SSH-fingerprint-authentication-using-Android-Keystore"></span></h1>
+<p>Written on 🌗 Thu, Dec 21st, 2023.</p>
+<p>If you’re unfamiliar with <em>Termux</em>, it’s an extensible <a href="https://termux.dev">Android terminal emulator</a> that papers over the user-hostile quirks of the Android operating system to provide a mostly faithful Linux environment for running familiar *nix software. It comes with an extensive <a href="https://packages.termux.dev/">APT package repository</a> cross-compiled for ARM devices.
+You can install it from <a href="https://f-droid.org/en/packages/com.termux">F-Droid</a> or from <a href="https://github.com/termux/termux-app">upstream</a>.</p>
+<p>Does this turn your unrooted Android smartphone into a handheld Linux terminal? Yes. <br/>
+Does this ascend your smartphone from a toy computer into your most useful computing device when used to the fullest? Probably. Some people’s comfort comes from a portable VT220 emulator, you know.</p>
+<h2>I seriously hope you’re not doing this.<span id="I-seriously-hope-youre-not-doing-this."></span></h2>
+<p>I don’t like assuming the skill level of the reader, so I never write tutorials, but the loudest Termux users seem to be beginners to the *NIX command line in general.
+This is why you see many Termux users misusing <code>termux-fingerprint</code> as <a href="https://archive.ph/huXAr">a simple app lock</a> for their Termux installation.</p>
+<p>Their use of biometric security starts and ends at checking for a simple return value in their <code>~/.bashrc</code>, something that can be bypassed by opening a failsafe session.</p>
+<h2>Your phone is literally a YubiKey<span id="Your-phone-is-literally-a-YubiKey"></span></h2>
+<p>It was around this time last year where I thought it would be really cool if <code>ssh-agent</code> could use my fingerprint reader instead of a passphrase to add my OpenSSH keys, but I gave up when I saw the return value of <code>termux-fingerprint</code> provided by <code>termux-api</code>, you only get an authentication success or failure message, no key material is returned which could be used to generate a plaintext passphrase. I initially wrote this off as just another example of *nix software being a second class citizen on Android and giving up.</p>
+<video loop="loop" autoplay="autoplay" muted="muted">
+	<source type="video/webm" src="/notes/assets/termux-ssh-askpass.webm" />
+</video>
+<div class="aside">(Yes, I'm recording the screen because Android doesn't allow screenshots of the fingerprint lock screen.)</div>
+<p>But did you know that the <a href="https://en.wikipedia.org/wiki/Trusted_execution_environment">trusted execution environment</a> <em>(a.k.a security chip, embedded controller, EC, secure element, etc.)</em> on your device is exposed to Android via the <a href="https://developer.android.com/privacy-and-security/keystore">Android Keystore API</a>, providing functionality similar to a <a href="https://en.wikipedia.org/wiki/YubiKey">YubiKey</a> where it can generate non-extractable encryption keys made available to you only during a customizable validity period after a successful phone unlock attempt?
+<code>termux-api</code> already exposes this functionality to Termux with <code>termux-keystore</code>, there isn’t any writing about <a href="https://archive.ph/I6e0K">connecting the two together</a> for some reason.</p>
+<p>OpenSSH already allows for calling arbitrary graphical utilities to collect the passphrase from the user, you can write a drop-in replacement to generate an RSA signed passphrase using fingerprint lock protected encryption keys.</p>
+<p>It’s really easy and everything just works, you can be as lazy as you want without affecting your opsec <em>too</em> much.</p>
+<h2>Writing a drop-in replacement for <code>ssh-askpass</code><span id="Writing-a-drop-in-replacement-for-ssh-askpass"></span></h2>
+<blockquote>
+<p><strong>WARNING</strong> <br/>
+<em>This is an ongoing experiment in balancing convenience and security, your security threat model may find the barebones security provided by fingerprint sensors unacceptable.</em></p>
+</blockquote>
+<ol>
+<li>You should have the add-on app <code>Termux:API</code> and it’s companion library Termux package <code>termux-api</code> installed before continuing.</li>
+<li>Create a hardware-backed inaccessible RSA 4096-bit private key named <code>default</code> in your hardware-backed keystore.
+<ul>
+<li><code>termux-keystore generate 'default' -a RSA -s 4096 -u 5</code></li>
+<li><code>-u</code> sets the key validity period in seconds after a successful device unlock.</li>
+<li><code>-u 0</code> disables this functionality, don’t do that.</li>
+</ul>
+</li>
+</ol>
+<p><code>ssh-agent</code> and friends call <code>$SSH_ASKPASS</code> from your path whenever trying to work with passphrase protected encryption keys.
+Set this to the name of the new drop-in replacement you’ll be writing to by exporting the following envvars:</p>
+<pre><code># ~/.profile, or ~/.bashrc if you're extra stupid
+export SSH_ASKPASS='termux-ssh-askpass'
+export SSH_ASKPASS_REQUIRE='force'
+</code></pre>
+<p>Then you drop a shell script in your path that calls <code>termux-fingerprint</code>, which only returns some JSON containing <code>AUTH_RESULT_SUCCESS</code> if it succeeded.
+<code>termux-fingerprint</code> can also take some strings to customize user-facing prompt text but these aren’t required.</p>
+<p>After a successful fingerprint unlock, you have 5 seconds to run <code>termux-keystore sign</code> and sign a nonce value. This can be anything, as long as it’s unchanging.
+I personally sign the matching public key file<sup class="footnote-ref"><a href="#fn-1" id="fnref-1" data-footnote-ref="data-footnote-ref">1</a></sup> for the private key being unlocked, but for simplicity, you can just as easily use the string <code>'sdhfkdsklfjlksdjfkljdsklf'</code>.</p>
+<pre><code>#!/usr/bin/env sh
+
+# termux-ssh-askpass v0.1
+termux-fingerprint -d &quot;$1&quot; | jq -r '.auth_result' | fgrep -q 'AUTH_RESULT_SUCCESS' || exit 1
+echo 'sdhfkdsklfjlksdjfkljdsklf' | termux-keystore sign 'default' SHA256withRSA | base64 -w 0
+</code></pre>
+<p>Then just convert the binary signed nonce data emitted by the security chip to plaintext in any way you like, <code>base64 -w 0</code> is fine.</p>
+<p>Now prime the pump by changing the passphrase on your existing key(s) with the output from <code>termux-ssh-askpass</code>, though you may want to run it standalone first to make sure everything works.</p>
+<pre><code>SSH_ASKPASS= ssh-keygen -p -f ~/.ssh/id_rsa -N &quot;$(termux-ssh-askpass)&quot; -F 'old passphrase'
+</code></pre>
+<p>If you’ve done everything correctly, your new passphrase is now a very long string of plaintext</p>
+<p>It’s basically as seamless as having no passphrase at all.
+It requires biometrics to generate, the signing key used to generate it cannot be extracted from your phone’s hardware-backed keystore, and while I also get this is absolutely overkill for most people, it’s also really convenient!</p>
+<p>I use <code>ssh-keygen -Y sign</code> and <code>openssl enc</code> as the <a href="/notes/dotfiles.htm#nano">basis for file encryption</a> so you can imagine how much of a quality of life improvement this brings over dealing with <code>ssh-agent</code> through Gboard.</p>
+<h2>Important considerations<span id="Important-considerations"></span></h2>
+<p>If your threat model hovers somewhere around <em><strong>not wanting someone to pretend to be you while having physical access to your device</strong></em>, I think this does pretty well.</p>
+<p>This works with zero chance of vendor or device lock-in, as you are not using key material from the security chip for SSH authentication, it’s only used to decrypt your existing SSH key.</p>
+<p>Even though someone with physical access to your unlocked Android device <em><strong>could</strong></em> modify the hardware keystore without authentication and <em><strong>could</strong></em> replace keys with identically named keys that have an unlimited validity period, they will not be the same key material used to produce your signed passphrase.</p>
+<p>You also understand that, by replacing passphrases with biometrics, your <em><strong>fingerprint reader becomes your single point of failure</strong></em>, you really should not be using this kind of thing if your threat model includes <em>bioluminescent individuals</em>, you have been warned!</p>
+<section class="footnotes" data-footnotes="data-footnotes">
+<ol>
+<li id="fn-1">
+<p>I wanted to maintain feature parity with other <code>ssh-askpass</code> drop-in replacements, OpenSSH passes in a text prompt with the form <code>'Enter passphrase for /path/to/key: '</code> meant to be shown to the user.</p>
+<p>Parsing this to get the path to the private key while also accounting for <code>l18n</code> is a real pain and this is supposed to be easy.</p>
+<p>You can see <a href="https://github.com/microsounds/atelier/blob/master/.local/lib/termux-ssh-askpass">how I wrote mine</a> if you’re really interested, but emitting customized prompt text in your fingerprint lock screen and using the matching public key as a nonce value doesn’t doesn’t add any appreciable security whatsoever. <a href="#fnref-1" class="footnote-backref" data-footnote-backref="data-footnote-backref" data-footnote-backref-idx="1" aria-label="Back to reference 1">↩</a></p>
+</li>
+</ol>
+</section>
+<hr/>
+<div class="footer">
+	<span class="right" style="padding-left: 5px">
+		<a title="visitors since 2022" href="https://digits.net">
+			<img style="height: 1.3em;" alt="counter"
+				src="https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25" />
+			vistors
+		</a>
+	</span>
+	<p>written materials <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, source code <a href="https://www.gnu.org/licenses/gpl-3.0">GNU GPLv3+</a>
+	— &#169; 2015-2023 microsounds &lt;<a href="https://github.com/microsounds">https://github.com/microsounds</a>&gt;<br/>
+	Powered by <a href="https://github.com/microsounds/kagami">kagami v0.6.5 — static microblog processor</a></p>
+</div>
+</div> <!-- end of content -->
+</body>
+</html>
