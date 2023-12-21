@@ -6,7 +6,7 @@ If you're unfamiliar with _Termux_, it's an extensible [Android terminal emulato
 You can install it from [F-Droid](https://f-droid.org/en/packages/com.termux) or from [upstream](https://github.com/termux/termux-app).
 
 Does this turn your unrooted Android smartphone into a handheld Linux terminal? Yes. <br/>
-Does this ascend your smartphone from a toy computer into your most useful computing device when used to the fullest? Probably. Some people's comfort comes from a portable VT220 emulator, you know.
+Does this ascend your smartphone from a toy computer into your most useful computing device when used to the fullest? Probably. Some people's comfort comes from a portable VT102 emulator, you know.
 
 ## I seriously hope you're not doing this.
 I don't like assuming the skill level of the reader, so I never write tutorials, but the loudest Termux users seem to be beginners to the *NIX command line in general.
