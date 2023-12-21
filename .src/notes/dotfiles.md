@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">914</b>, commit `ffd1077`.**
+**Revision No. <b style="font-size: 130%">932</b>, commit `c4832c9`.**
 
-**"Documentation, added timeline for Bay Trail stability fixes"**
+**"termux-ssh-askpass: Allow for relative paths to private keys"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *29.7KiB* in
+If this document is *34.3KiB* in
 size, and the approximate size of all comment lines of code is
-*68.0KiB* then this document
-currently covers about <b style="font-size: 130%;">8.75%</b>
+*71.3KiB* then this document
+currently covers about <b style="font-size: 130%;">9.63%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -167,7 +167,8 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 
 ## Quick start on Termux for Android
 > **NOTE**<br/>
-> _This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
+> _Android-specific functionality depends on features provided by `Termux:API` and `Termux:Widget` add-on apps and must be installed along with Termux.<br/>
+> This is meant to be a lightweight port with modifications, do not initiate a full `post-install`._
 
 1. Install `git`, and bootstrap the system using `git reset --hard` as described above.
 2. Post-install: Run only [`~/.once.d/a0-android-termux.sh`]({GIT_REMOTE}/atelier/raw/master/.once.d/a0-android-termux.sh)
@@ -175,7 +176,7 @@ _Pictured: Debian stable, a "graphical shell" environment consisting mostly of x
 3. When pulling from upstream, stash changes or `git reset --hard` to prevent merge conflicts.
 	* Use `patch -p1 < ~/.termux/diff.patch` to restore changes if stash is lost.
 
-See [attached notes](#Termux-for-Android) for explanations of changes from a standard Linux environment.
+See [attached notes](#Termux-for-Android) for overview of changes from a standard Linux environment.
 
 ## List of supported platforms
 **Full graphical shell environment**
@@ -236,17 +237,22 @@ Rationale for doing things this way is summarized in commit [`2fe1c3745`][rat].
 [rat]: https://github.com/microsounds/atelier/commit/2fe1c3745 "introduced ~/.once.d/10-git-upstream.sh"
 
 ## Window manager
-Keybinds are grabbed by `dwm`, `sxkhd` or `fcitx5` to avoid keybind stomping.
+Keyboard layouts and secondary layers are handled by `keyd` globally for better quality of life on non-standard keyboards.
+At the X server level, keybinds are handled by a mix of ~~`xkb`~~, `dwm`, `sxhkd` and `fcitx5` in such a way to avoid keybind stomping.
 
+`Caps Lock` is remapped to `Super_L` on all platforms.
 `dwm` keybinds are the [defaults][dwm] with several exceptions, the modkey `Mod1` is **super** instead of **alt** because many **alt** combinations are already taken by other applications I use.
 
-
 [dwm]: https://ratfactor.com/dwm "suckless dwm tutorial"
+
+**Alt**-based keybinds are kept to a minimum because these are commonly taken by applications.
 
 | shift + | alt + | key |
 | --: | --: | :-- |
 | | kill window | F4 |
 | counter-clockwise | switch focused window | tab |
+
+**Super**-based keybinds meant for system and window manager functions.
 
 | shift + | super + | key |
 | --: | --: | :-- |
@@ -269,7 +275,9 @@ Keybinds are grabbed by `dwm`, `sxkhd` or `fcitx5` to avoid keybind stomping.
 | | lower volume 5% | F9 |
 | | raise volume 5% | F10 |
 | | randomize wallpaper | F11 |
-| | _reserved_ | F12 |
+| | _reserved_ | F12~F24 |
+
+**Special** keybinds that don't fit in other categories.
 
 | alt + | ctrl + | key<sup>[special]</sup> |
 | --: | --: | :-- |
@@ -277,17 +285,29 @@ Keybinds are grabbed by `dwm`, `sxkhd` or `fcitx5` to avoid keybind stomping.
 | task manager | | delete |
 | syslog | | insert |
 
-### Reduced layout for Chromebooks
-Search/Everything/Caps lock key serves as the super key. Same as above, with the following changes:
+### Generic 74-key Chromebook layout
+Search key is `Super_L`, most missing keys are hidden behind `Right Alt` layer.
+Power key has been remapped to `delete` for better usability.
 
-| alt gr + | key | remarks |
+Function `F1-F10` are in the usual places, F11 is lesser used and hidden behind `Right Alt`.
+| right alt + | key | remarks |
 | --: | :-- | :-- |
 | prior | up | |
 | next | down | |
 | home | left | |
 | end | right | |
-| delete | backspace | |
+| XF86Back | F1 | _Right Alt + F* may not work on pre-EC chromebooks_ |
+| XF86Forward | F2 | |
+| XF86Reload |  F3 | |
+| F11 | F4 | opens fullscreen mode in most browsers |
+| XF86LaunchA | F5 |
+| lower brightness 10%  | F6 | |
+| raise brightness 10%  | F7 | |
+| mute<sup>[toggle]</sup> | F8 | |
+| lower volume 5% | F9 | |
+| raise volume 5% | F10 | |
 | F11 | delete | same as power key, keystroke repeat not available |
+| delete | backspace | keystroke repeat works fine |
 
 # Some environment notes
 ## X server invocation
@@ -295,7 +315,7 @@ No display manager is used, login to `tty1` to start the graphical shell.
 
 All daemons and services required to support the graphical shell are initialized along with the X server and are terminated when the user terminates the session.
 
-`systemd` unit services, cronjobs and similar mechanisms are avoided.
+`systemd` unit services, cronjobs and similar mechanisms are avoided whenever possible.
 
 At startup, `startx` will pass hardware-specific `xorg.conf` files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.
 
@@ -379,7 +399,17 @@ Outside of `git` worktrees, the path component will be mangled by [`path-shortha
 
 ## Termux for Android
 Single-user shell environment should work as expected on Termux without root access or changes to `$PREFIX/etc` with several caveats described below.
+
 Post-install scripts make the following adjustments statically for existing scripts.
+These adjustments will also be saved as a diff patch in `~/.termux/diff.patch` in case these changes are overwritten with `git`.
+
+### `Termux:Widget`
+Scripts in [`~/.shortcuts`]({GIT_REMOTE}/atelier/raw/master/.shortcuts) are meant for use with `Termux:Widget` which can be found wherever you got Termux.
+This is an optional add-on to Termux that lets you launch foreground or background scripts from an Android homescreen widget.
+
+See the [project page](https://github.com/termux/termux-widget) for documentation and environment notes, it's important to note that scripts launched this way do not source `~/.profile` or `~/.bashrc` like they would running from a Termux instance.
+
+You must give Termux permission to display over other apps via `Settings > Apps > Display over other apps` for this add-on to work properly.
 
 ### Standard file descriptors
 Shell scripts on Android systems without root access have no access to standard file descriptors `/dev/std{in,out,err}`, use `/proc/self/fd/{0,1,2}` instead.
@@ -401,8 +431,40 @@ You may experience issues with processes backgrounded with the `&` operator bein
 In order to prevent Android from prematurely pruning `ssh-agent` while multitasking, it is called as the parent process for the current shell.
 
 Termux developers recommend their very own [termux-services](https://wiki.termux.com/wiki/Termux-services) for running common daemons.
-_Launch daemons in foreground mode in another terminal instance without forking and preferably with wakelock acquired from the notification bar if you wish to run a long-running task without being throttled by the operating system._
+_Launch daemons in foreground mode without forking and preferably with wakelock acquired from the `Notification Bar` or with `termux-wake-lock` if you wish to run a long-running task without being throttled by the operating system._
 
+If you don't mind the limitations of `Termux:Widget`, you can also run long-running scripts as a headless background tasks by putting it in `~/.shortcuts/tasks`.
+
+### `ssh-agent` fingerprint SSH authentication
+> **WARNING** <br/>
+> _This is an ongoing experiment in balancing convenience and security, your threat model may find the barebones security provided by fingerprint sensors unacceptable._
+
+`ssh-agent` is set up to call [`termux-ssh-askpass`]({GIT_REMOTE}/atelier/raw/master/.local/lib/termux-ssh-askpass) which uses
+Android's [hardware-backed keystore](https://developer.android.com/privacy-and-security/keystore) to generate an OpenSSH key passphrase using the fingerprint lock on your Android device.
+
+Specifically, a hardware-backed inaccessible RSA 4096-bit private key named `default` is generated during post-install
+and stored in the security chip on the device which is only made available during a short validity period after a successful fingerprint unlock.
+This inaccessible private key is used to sign the matching public key for the portable OpenSSH private key being unlocked by `ssh-agent` and friends
+to produce a passphrase from the signed nonce value emitted by the security chip on your Android device.
+
+Simply put, _this allows for fingerprint-based SSH authentication_, a massive quality of life improvement over entering case-sensitive passphrases on a smartphone.
+
+#### Important considerations
+1. Both the `termux-api` package and the companion add-on app `Termux:API` available from the same place you got Termux are required for this functionality to work.
+2. There is no chance of vendor or device lock-in, as you are not using key material from the security chip as your OpenSSH key.
+	* The nonce value is not important, it's just convenient seed data used to produce a reproducible passphrase that requires your fingerprint to unlock.
+	* The key material locked in the hardware-backed keystore is also not important, you are simply using it to generate passphrases for your existing portable OpenSSH keys.
+
+3. Even though someone with physical access to your Android device _could_ modify the hardware keystore without authentication and _could_ replace keys with identically named keys that have an unlimited validity period, they will not be the same key material used to sign and your portable OpenSSH keys will still be safe.
+4. You understand that by replacing passphrases with biometrics, your fingerprint reader becomes your single point of failure, you have been warned.
+
+#### Initial setup
+To setup your existing OpenSSH keys for fingerprint-based SSH authentication, use the output of `termux-ssh-askpass` as your new passphrase in `ssh-keygen`.
+
+```
+new_pass="$(termux-ssh-askpass ~/.ssh/id_rsa)"
+ssh-keygen -p -f ~/.ssh/id_rsa -N "$new_pass" -F 'old passphrase'
+```
 
 ## `cd`
 * The contents of `$OLDPWD` is preserved across `bash` sessions.
@@ -552,7 +614,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime9.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime1b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -562,7 +624,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 >**STATISTICS**<br/>
 > _Version numbers for selected long-lived components
 > found in the current revision:_
-> * `android-termux.sh v1.0`
+> * `android-termux.sh v1.1`
 > * `chromium_widevine.sh v0.2`
 > * `getquote v0.4`
 > * `git_status.sh v0.7`
@@ -570,6 +632,7 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `nano_overlay.sh v1.2 `
 > * `nyaa-magnet v0.1`
 > * `sfx-synth v0.2`
+> * `termux-ssh-askpass v0.3`
 > * `wm_status.sh v0.4`
 > * `xrandr_cycle.sh v0.3`
 > * `xwin_decor.sh v0.9`
@@ -577,16 +640,16 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-282.66KiB
+292.46KiB
 out of a total compressed git history size of
-926.54KiB._
+950.70KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  10K   Oct 26 2023 02:36 rev. 141 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Oct 26 2023 02:38 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
--rw-r--r-- 1  527   Oct 26 2023 02:38 rev. 11  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1 1.2K   Dec 15 2023 19:16 rev. 91  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
 -rw-r--r-- 1  427   May 25 2023 19:28 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
@@ -609,13 +672,16 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  155   Apr  6 2021 15:35 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/gtk/gtk2.conf">.config/gtk/gtk2.conf</a>
 -rw-r--r-- 1  263   Apr  6 2021 15:35 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/gtk/gtk3.conf">.config/gtk/gtk3.conf</a>
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
+-rw-r--r-- 1  872   Nov 28 2023 18:11 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/keyd/chromebook.conf">.config/keyd/chromebook.conf</a>
+-rw-r--r-- 1   81   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/keyd/default.conf">.config/keyd/default.conf</a>
 -rw-r--r-- 1  643   Dec  7 2022 19:20 rev. 20  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rwxr-xr-x 1  323   Mar 11 2022 22:34 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
--rw-r--r-- 1 2.4K   Aug 30 2023 13:56 rev. 43  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1 2.7K   Nov 29 2023 21:47 rev. 44  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1  401   Dec 20 2021 13:55 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
 -rwxr-xr-x 1  279   Sep 10 2023 23:30 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/cmark-gfm-xhtml/pre-run">.config/upstream/cmark-gfm-xhtml/pre-run</a>
+-rwxr-xr-x 1  556   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/keyd/pre-run">.config/upstream/keyd/pre-run</a>
 -rwxr-xr-x 1  519   Oct 26 2023 10:28 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/sc/pre-run">.config/upstream/sc/pre-run</a>
 -rwxr-xr-x 1  231   Mar 10 2022 17:55 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/x48/post-run">.config/upstream/x48/post-run</a>
 -rwxr-xr-x 1  311   Apr 29 2023 09:35 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/x48/pre-run">.config/upstream/x48/pre-run</a>
@@ -647,7 +713,7 @@ lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1 1.0K   Dec  6 2021 00:36 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/scramble">.local/bin/scramble</a>
 -rwxr-xr-x 1  155   Oct 16 2020 13:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
--rwxr-xr-x 1  661   Dec 15 2021 19:58 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/startx">.local/bin/startx</a>
+-rwxr-xr-x 1  671   Nov 28 2023 16:45 rev. 10  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  367   Dec 16 2022 12:16 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/to-chromium">.local/bin/to-chromium</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
 -rwxr-xr-x 1  192   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
@@ -664,11 +730,12 @@ lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xwin-widgets -> ../../
 -rw-r--r-- 1 1.6K   Dec 24 2021 12:04 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
 -rwxr-xr-x 1  477   Jul 10 2021 23:42 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/extern">.local/lib/extern</a>
--rwxr-xr-x 1  162   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
+-rwxr-xr-x 1  187   Nov 28 2023 16:45 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
 -rwxr-xr-x 1  194   Apr 14 2022 20:58 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-container">.local/lib/is-container</a>
 -rwxr-xr-x 1  376   Mar 11 2022 22:34 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-installed">.local/lib/is-installed</a>
 -rwxr-xr-x 1  314   Jul 17 2021 22:28 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-newer">.local/lib/is-newer</a>
 -rwxr-xr-x 1  356   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-ntc-chip">.local/lib/is-ntc-chip</a>
+-rwxr-xr-x 1  186   Dec 17 2023 15:36 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-termux">.local/lib/is-termux</a>
 -rwxr-xr-x 1  258   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/mk-tempdir">.local/lib/mk-tempdir</a>
 -rwxr-xr-x 1 1.3K   Apr  2 2023 19:20 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/moonphase-date">.local/lib/moonphase-date</a>
 -rwxr-xr-x 1  526   Dec  3 2021 22:08 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/notify-send">.local/lib/notify-send</a>
@@ -677,6 +744,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  553   Jul 10 2021 23:42 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/path-shorthand">.local/lib/path-shorthand</a>
 -rwxr-xr-x 1  181   Aug  2 2021 15:47 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/sfx-play">.local/lib/sfx-play</a>
 -rwxr-xr-x 1  720   Aug 30 2023 14:26 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/sfx-synth">.local/lib/sfx-synth</a>
+-rwxr-xr-x 1 2.5K   Dec 19 2023 23:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/termux-ssh-askpass">.local/lib/termux-ssh-askpass</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
 -rwxr-xr-x 1  284   Apr  2 2023 19:27 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/visual">.local/lib/visual</a>
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
@@ -710,19 +778,19 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  866   Aug 26 2023 09:09 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   Mar 21 2022 23:26 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
--rwxr-xr-x 1  803   Sep 18 2023 23:12 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
+-rwxr-xr-x 1  865   Dec 14 2023 22:03 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
 -rwxr-xr-x 1 1.1K   Nov 23 2023 19:59 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2d-intel-bay-trail.sh">.once.d/2d-intel-bay-trail.sh</a>
--rwxr-xr-x 1 3.5K   Aug 21 2023 22:33 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
--rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
+-rwxr-xr-x 1 4.3K   Dec 16 2023 23:15 rev. 30  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1  200   Nov 28 2023 16:34 rev. 10  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-power-key.sh">.once.d/c0-chromebook-power-key.sh</a>
 -rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
--rwxr-xr-x 1  199   Oct 22 2022 22:48 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
+-rwxr-xr-x 1  199   Nov 28 2023 16:34 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p0-pocketchip-power-key.sh">.once.d/p0-pocketchip-power-key.sh</a>
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  886   Sep 10 2023 23:30 rev. 31  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.scrc">.scrc</a>
--rw-r--r-- 1 2.2K   Aug 26 2023 09:09 rev. 73  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 2.2K   Nov 28 2023 17:29 rev. 74  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.9K   Oct 26 2023 02:39 rev. 28  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -732,7 +800,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  30K   Aug 26 2023 09:38 rev. 193 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  35K   Dec 17 2023 21:25 rev. 201 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 23 Nov 2023 19:59:05 -0800 -->
+<!-- updated Tue, 19 Dec 2023 23:01:53 -0800 -->

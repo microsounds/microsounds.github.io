@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">914</b>, commit <code>ffd1077</code>.</strong></p>
-<p><strong>“Documentation, added timeline for Bay Trail stability fixes”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">932</b>, commit <code>c4832c9</code>.</strong></p>
+<p><strong>“termux-ssh-askpass: Allow for relative paths to private keys”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -61,7 +61,7 @@
 </li>
 <li><a href="#Window-manager">Window manager</a>
 <ul>
-<li><a href="#Reduced-layout-for-Chromebooks">Reduced layout for Chromebooks</a></li>
+<li><a href="#Generic-74-key-Chromebook-layout">Generic 74-key Chromebook layout</a></li>
 </ul>
 </li>
 </ul>
@@ -88,10 +88,17 @@
 <li><a href="#Interactive-shell">Interactive shell</a></li>
 <li><a href="#Termux-for-Android">Termux for Android</a>
 <ul>
+<li><a href="#Termux:Widget"><code>Termux:Widget</code></a></li>
 <li><a href="#Standard-file-descriptors">Standard file descriptors</a></li>
 <li><a href="#ESC-sequences"><code>ESC</code> sequences</a></li>
 <li><a href="#PREFIX"><code>$PREFIX</code></a></li>
 <li><a href="#Background-processes-since-Android-11">Background processes since Android 11</a></li>
+<li><a href="#ssh-agent-fingerprint-SSH-authentication"><code>ssh-agent</code> fingerprint SSH authentication</a>
+<ul>
+<li><a href="#Important-considerations">Important considerations</a></li>
+<li><a href="#Initial-setup">Initial setup</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#cd"><code>cd</code></a></li>
@@ -119,19 +126,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>29.7KiB</em> in
+<p>If this document is <em>34.3KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>68.0KiB</em> then this document
-currently covers about <b style="font-size: 130%;">8.75%</b>
+<em>71.3KiB</em> then this document
+currently covers about <b style="font-size: 130%;">9.63%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌘 Thu, Nov 23rd, 2023.</p>
+<p>Last updated 🌗 Tue, Dec 19th, 2023.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime9.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime1b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -311,7 +318,8 @@ $ exec $SHELL -l
 <h2>Quick start on Termux for Android<span id="Quick-start-on-Termux-for-Android"></span></h2>
 <blockquote>
 <p><strong>NOTE</strong><br/>
-<em>This is meant to be a lightweight port with modifications, do not initiate a full <code>post-install</code>.</em></p>
+<em>Android-specific functionality depends on features provided by <code>Termux:API</code> and <code>Termux:Widget</code> add-on apps and must be installed along with Termux.<br/>
+This is meant to be a lightweight port with modifications, do not initiate a full <code>post-install</code>.</em></p>
 </blockquote>
 <ol>
 <li>Install <code>git</code>, and bootstrap the system using <code>git reset --hard</code> as described above.</li>
@@ -326,7 +334,7 @@ $ exec $SHELL -l
 </ul>
 </li>
 </ol>
-<p>See <a href="#Termux-for-Android">attached notes</a> for explanations of changes from a standard Linux environment.</p>
+<p>See <a href="#Termux-for-Android">attached notes</a> for overview of changes from a standard Linux environment.</p>
 <h2>List of supported platforms<span id="List-of-supported-platforms"></span></h2>
 <p><strong>Full graphical shell environment</strong></p>
 <ul>
@@ -431,8 +439,11 @@ Each script is self-contained, you can run them individually, anytime.</p>
 These can be placed in <a href="https://github.com/microsounds/atelier/raw/master/.config/upstream"><code>~/.config/upstream</code></a> or at the root of a persistently installed utility’s install directory as described above</p>
 <p>Rationale for doing things this way is summarized in commit <a href="https://github.com/microsounds/atelier/commit/2fe1c3745" title="introduced ~/.once.d/10-git-upstream.sh"><code>2fe1c3745</code></a>.</p>
 <h2>Window manager<span id="Window-manager"></span></h2>
-<p>Keybinds are grabbed by <code>dwm</code>, <code>sxkhd</code> or <code>fcitx5</code> to avoid keybind stomping.</p>
-<p><code>dwm</code> keybinds are the <a href="https://dwm.suckless.org/" title="suckless dwm homepage">defaults</a> with several exceptions, the modkey <code>Mod1</code> is <strong>super</strong> instead of <strong>alt</strong> because many <strong>alt</strong> combinations are already taken by other applications I use.</p>
+<p>Keyboard layouts and secondary layers are handled by <code>keyd</code> globally for better quality of life on non-standard keyboards.
+At the X server level, keybinds are handled by a mix of <del><code>xkb</code></del>, <code>dwm</code>, <code>sxhkd</code> and <code>fcitx5</code> in such a way to avoid keybind stomping.</p>
+<p><code>Caps Lock</code> is remapped to <code>Super_L</code> on all platforms.
+<code>dwm</code> keybinds are the <a href="https://dwm.suckless.org/" title="suckless dwm homepage">defaults</a> with several exceptions, the modkey <code>Mod1</code> is <strong>super</strong> instead of <strong>alt</strong> because many <strong>alt</strong> combinations are already taken by other applications I use.</p>
+<p><strong>Alt</strong>-based keybinds are kept to a minimum because these are commonly taken by applications.</p>
 <table>
 <thead>
 <tr>
@@ -454,6 +465,7 @@ These can be placed in <a href="https://github.com/microsounds/atelier/raw/maste
 </tr>
 </tbody>
 </table>
+<p><strong>Super</strong>-based keybinds meant for system and window manager functions.</p>
 <table>
 <thead>
 <tr>
@@ -561,10 +573,11 @@ These can be placed in <a href="https://github.com/microsounds/atelier/raw/maste
 <tr>
 <td style="text-align: right"></td>
 <td style="text-align: right"><em>reserved</em></td>
-<td style="text-align: left">F12</td>
+<td style="text-align: left">F12~F24</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Special</strong> keybinds that don’t fit in other categories.</p>
 <table>
 <thead>
 <tr>
@@ -591,12 +604,14 @@ These can be placed in <a href="https://github.com/microsounds/atelier/raw/maste
 </tr>
 </tbody>
 </table>
-<h3>Reduced layout for Chromebooks<span id="Reduced-layout-for-Chromebooks"></span></h3>
-<p>Search/Everything/Caps lock key serves as the super key. Same as above, with the following changes:</p>
+<h3>Generic 74-key Chromebook layout<span id="Generic-74-key-Chromebook-layout"></span></h3>
+<p>Search key is <code>Super_L</code>, most missing keys are hidden behind <code>Right Alt</code> layer.
+Power key has been remapped to <code>delete</code> for better usability.</p>
+<p>Function <code>F1-F10</code> are in the usual places, F11 is lesser used and hidden behind <code>Right Alt</code>.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: right">alt gr +</th>
+<th style="text-align: right">right alt +</th>
 <th style="text-align: left">key</th>
 <th style="text-align: left">remarks</th>
 </tr>
@@ -623,8 +638,53 @@ These can be placed in <a href="https://github.com/microsounds/atelier/raw/maste
 <td style="text-align: left"></td>
 </tr>
 <tr>
-<td style="text-align: right">delete</td>
-<td style="text-align: left">backspace</td>
+<td style="text-align: right">XF86Back</td>
+<td style="text-align: left">F1</td>
+<td style="text-align: left"><em>Right Alt + F* may not work on pre-EC chromebooks</em></td>
+</tr>
+<tr>
+<td style="text-align: right">XF86Forward</td>
+<td style="text-align: left">F2</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">XF86Reload</td>
+<td style="text-align: left">F3</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">F11</td>
+<td style="text-align: left">F4</td>
+<td style="text-align: left">opens fullscreen mode in most browsers</td>
+</tr>
+<tr>
+<td style="text-align: right">XF86LaunchA</td>
+<td style="text-align: left">F5</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">lower brightness 10%</td>
+<td style="text-align: left">F6</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">raise brightness 10%</td>
+<td style="text-align: left">F7</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">mute<sup>[toggle]</sup></td>
+<td style="text-align: left">F8</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">lower volume 5%</td>
+<td style="text-align: left">F9</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: right">raise volume 5%</td>
+<td style="text-align: left">F10</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
@@ -632,13 +692,18 @@ These can be placed in <a href="https://github.com/microsounds/atelier/raw/maste
 <td style="text-align: left">delete</td>
 <td style="text-align: left">same as power key, keystroke repeat not available</td>
 </tr>
+<tr>
+<td style="text-align: right">delete</td>
+<td style="text-align: left">backspace</td>
+<td style="text-align: left">keystroke repeat works fine</td>
+</tr>
 </tbody>
 </table>
 <h1>Some environment notes<span id="Some-environment-notes"></span></h1>
 <h2>X server invocation<span id="X-server-invocation"></span></h2>
 <p>No display manager is used, login to <code>tty1</code> to start the graphical shell.</p>
 <p>All daemons and services required to support the graphical shell are initialized along with the X server and are terminated when the user terminates the session.</p>
-<p><code>systemd</code> unit services, cronjobs and similar mechanisms are avoided.</p>
+<p><code>systemd</code> unit services, cronjobs and similar mechanisms are avoided whenever possible.</p>
 <p>At startup, <code>startx</code> will pass hardware-specific <code>xorg.conf</code> files to the X server, to enable hardware compositing on supported hardware and eliminate screen tearing.</p>
 <p>Xorg’s security model forbids non-root users from passing arbitrary config files to the X server unless said configs are located in one of several “blessed” directories.
 Post-install scripts will create symlink <code>/etc/X11/$(id -u)-override</code> that points to <code>~/.config/xorg</code> to override this behavior.</p>
@@ -709,8 +774,14 @@ See <a href="https://github.com/microsounds/atelier/raw/master/.local/include/th
 <p>The prompt path will feature embedded <code>git</code> information provided by <a href="https://github.com/microsounds/atelier/raw/master/Scripts/git_status.sh"><code>path-gitstatus</code></a> highlighting the root of a <code>git</code> worktree and it’s status.</p>
 <p>Outside of <code>git</code> worktrees, the path component will be mangled by <a href="https://github.com/microsounds/atelier/raw/master/.local/lib/path-shorthand"><code>path-shorthand</code></a> and be truncated to the last <code>$PATH_WIDTH</code> characters <em>(default is 50)</em> for improved usability.</p>
 <h2>Termux for Android<span id="Termux-for-Android"></span></h2>
-<p>Single-user shell environment should work as expected on Termux without root access or changes to <code>$PREFIX/etc</code> with several caveats described below.
-Post-install scripts make the following adjustments statically for existing scripts.</p>
+<p>Single-user shell environment should work as expected on Termux without root access or changes to <code>$PREFIX/etc</code> with several caveats described below.</p>
+<p>Post-install scripts make the following adjustments statically for existing scripts.
+These adjustments will also be saved as a diff patch in <code>~/.termux/diff.patch</code> in case these changes are overwritten with <code>git</code>.</p>
+<h3><code>Termux:Widget</code><span id="Termux:Widget"></span></h3>
+<p>Scripts in <a href="https://github.com/microsounds/atelier/raw/master/.shortcuts"><code>~/.shortcuts</code></a> are meant for use with <code>Termux:Widget</code> which can be found wherever you got Termux.
+This is an optional add-on to Termux that lets you launch foreground or background scripts from an Android homescreen widget.</p>
+<p>See the <a href="https://github.com/termux/termux-widget">project page</a> for documentation and environment notes, it’s important to note that scripts launched this way do not source <code>~/.profile</code> or <code>~/.bashrc</code> like they would running from a Termux instance.</p>
+<p>You must give Termux permission to display over other apps via <code>Settings &gt; Apps &gt; Display over other apps</code> for this add-on to work properly.</p>
 <h3>Standard file descriptors<span id="Standard-file-descriptors"></span></h3>
 <p>Shell scripts on Android systems without root access have no access to standard file descriptors <code>/dev/std{in,out,err}</code>, use <code>/proc/self/fd/{0,1,2}</code> instead.</p>
 <h3><code>ESC</code> sequences<span id="ESC-sequences"></span></h3>
@@ -724,7 +795,44 @@ In practice, shell script shebangs don’t need to be rewritten, Termux already 
 <p>You may experience issues with processes backgrounded with the <code>&amp;</code> operator being throttled or killed when multitasking outside of Termux. <em>Daemons that fork without becoming a child process or <code>exec</code>’ing the same process that called it may be killed immediately or shortly after leaving Termux if not called in foreground mode.</em></p>
 <p>In order to prevent Android from prematurely pruning <code>ssh-agent</code> while multitasking, it is called as the parent process for the current shell.</p>
 <p>Termux developers recommend their very own <a href="https://wiki.termux.com/wiki/Termux-services">termux-services</a> for running common daemons.
-<em>Launch daemons in foreground mode in another terminal instance without forking and preferably with wakelock acquired from the notification bar if you wish to run a long-running task without being throttled by the operating system.</em></p>
+<em>Launch daemons in foreground mode without forking and preferably with wakelock acquired from the <code>Notification Bar</code> or with <code>termux-wake-lock</code> if you wish to run a long-running task without being throttled by the operating system.</em></p>
+<p>If you don’t mind the limitations of <code>Termux:Widget</code>, you can also run long-running scripts as a headless background tasks by putting it in <code>~/.shortcuts/tasks</code>.</p>
+<h3><code>ssh-agent</code> fingerprint SSH authentication<span id="ssh-agent-fingerprint-SSH-authentication"></span></h3>
+<blockquote>
+<p><strong>WARNING</strong> <br/>
+<em>This is an ongoing experiment in balancing convenience and security, your threat model may find the barebones security provided by fingerprint sensors unacceptable.</em></p>
+</blockquote>
+<p><code>ssh-agent</code> is set up to call <a href="https://github.com/microsounds/atelier/raw/master/.local/lib/termux-ssh-askpass"><code>termux-ssh-askpass</code></a> which uses
+Android’s <a href="https://developer.android.com/privacy-and-security/keystore">hardware-backed keystore</a> to generate an OpenSSH key passphrase using the fingerprint lock on your Android device.</p>
+<p>Specifically, a hardware-backed inaccessible RSA 4096-bit private key named <code>default</code> is generated during post-install
+and stored in the security chip on the device which is only made available during a short validity period after a successful fingerprint unlock.
+This inaccessible private key is used to sign the matching public key for the portable OpenSSH private key being unlocked by <code>ssh-agent</code> and friends
+to produce a passphrase from the signed nonce value emitted by the security chip on your Android device.</p>
+<p>Simply put, <em>this allows for fingerprint-based SSH authentication</em>, a massive quality of life improvement over entering case-sensitive passphrases on a smartphone.</p>
+<h4>Important considerations<span id="Important-considerations"></span></h4>
+<ol>
+<li>
+<p>Both the <code>termux-api</code> package and the companion add-on app <code>Termux:API</code> available from the same place you got Termux are required for this functionality to work.</p>
+</li>
+<li>
+<p>There is no chance of vendor or device lock-in, as you are not using key material from the security chip as your OpenSSH key.</p>
+<ul>
+<li>The nonce value is not important, it’s just convenient seed data used to produce a reproducible passphrase that requires your fingerprint to unlock.</li>
+<li>The key material locked in the hardware-backed keystore is also not important, you are simply using it to generate passphrases for your existing portable OpenSSH keys.</li>
+</ul>
+</li>
+<li>
+<p>Even though someone with physical access to your Android device <em>could</em> modify the hardware keystore without authentication and <em>could</em> replace keys with identically named keys that have an unlimited validity period, they will not be the same key material used to sign and your portable OpenSSH keys will still be safe.</p>
+</li>
+<li>
+<p>You understand that by replacing passphrases with biometrics, your fingerprint reader becomes your single point of failure, you have been warned.</p>
+</li>
+</ol>
+<h4>Initial setup<span id="Initial-setup"></span></h4>
+<p>To setup your existing OpenSSH keys for fingerprint-based SSH authentication, use the output of <code>termux-ssh-askpass</code> as your new passphrase in <code>ssh-keygen</code>.</p>
+<pre><code>new_pass=&quot;$(termux-ssh-askpass ~/.ssh/id_rsa)&quot;
+ssh-keygen -p -f ~/.ssh/id_rsa -N &quot;$new_pass&quot; -F 'old passphrase'
+</code></pre>
 <h2><code>cd</code><span id="cd"></span></h2>
 <ul>
 <li>
@@ -1025,7 +1133,7 @@ because it doesn’t tie into any <code>dbus</code>-based notification daemon im
 <em>Version numbers for selected long-lived components
 found in the current revision:</em></p>
 <ul>
-<li><code>android-termux.sh v1.0</code></li>
+<li><code>android-termux.sh v1.1</code></li>
 <li><code>chromium_widevine.sh v0.2</code></li>
 <li><code>getquote v0.4</code></li>
 <li><code>git_status.sh v0.7</code></li>
@@ -1033,6 +1141,7 @@ found in the current revision:</em></p>
 <li><code>nano_overlay.sh v1.2 </code></li>
 <li><code>nyaa-magnet v0.1</code></li>
 <li><code>sfx-synth v0.2</code></li>
+<li><code>termux-ssh-askpass v0.3</code></li>
 <li><code>wm_status.sh v0.4</code></li>
 <li><code>xrandr_cycle.sh v0.3</code></li>
 <li><code>xwin_decor.sh v0.9</code></li>
@@ -1040,15 +1149,15 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-282.66KiB
+292.46KiB
 out of a total compressed git history size of
-926.54KiB.</em></p>
+950.70KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  10K   Oct 26 2023 02:36 rev. 141 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Oct 26 2023 02:38 rev. 90  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
--rw-r--r-- 1  527   Oct 26 2023 02:38 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1 1.2K   Dec 15 2023 19:16 rev. 91  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
 -rw-r--r-- 1  427   May 25 2023 19:28 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
@@ -1071,13 +1180,16 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  155   Apr  6 2021 15:35 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk2.conf">.config/gtk/gtk2.conf</a>
 -rw-r--r-- 1  263   Apr  6 2021 15:35 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk3.conf">.config/gtk/gtk3.conf</a>
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
+-rw-r--r-- 1  872   Nov 28 2023 18:11 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/keyd/chromebook.conf">.config/keyd/chromebook.conf</a>
+-rw-r--r-- 1   81   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/keyd/default.conf">.config/keyd/default.conf</a>
 -rw-r--r-- 1  643   Dec  7 2022 19:20 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rwxr-xr-x 1  323   Mar 11 2022 22:34 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
--rw-r--r-- 1 2.4K   Aug 30 2023 13:56 rev. 43  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1 2.7K   Nov 29 2023 21:47 rev. 44  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1  401   Dec 20 2021 13:55 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
 -rwxr-xr-x 1  279   Sep 10 2023 23:30 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/cmark-gfm-xhtml/pre-run">.config/upstream/cmark-gfm-xhtml/pre-run</a>
+-rwxr-xr-x 1  556   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/keyd/pre-run">.config/upstream/keyd/pre-run</a>
 -rwxr-xr-x 1  519   Oct 26 2023 10:28 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/sc/pre-run">.config/upstream/sc/pre-run</a>
 -rwxr-xr-x 1  231   Mar 10 2022 17:55 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/x48/post-run">.config/upstream/x48/post-run</a>
 -rwxr-xr-x 1  311   Apr 29 2023 09:35 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/x48/pre-run">.config/upstream/x48/pre-run</a>
@@ -1109,7 +1221,7 @@ lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1 1.0K   Dec  6 2021 00:36 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scramble">.local/bin/scramble</a>
 -rwxr-xr-x 1  155   Oct 16 2020 13:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/scrot">.local/bin/scrot</a>
--rwxr-xr-x 1  661   Dec 15 2021 19:58 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
+-rwxr-xr-x 1  671   Nov 28 2023 16:45 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  367   Dec 16 2022 12:16 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/to-chromium">.local/bin/to-chromium</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
 -rwxr-xr-x 1  192   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
@@ -1126,11 +1238,12 @@ lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xwin-widgets -> ../../
 -rw-r--r-- 1 1.6K   Dec 24 2021 12:04 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
 -rwxr-xr-x 1  477   Jul 10 2021 23:42 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/extern">.local/lib/extern</a>
--rwxr-xr-x 1  162   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
+-rwxr-xr-x 1  187   Nov 28 2023 16:45 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
 -rwxr-xr-x 1  194   Apr 14 2022 20:58 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-container">.local/lib/is-container</a>
 -rwxr-xr-x 1  376   Mar 11 2022 22:34 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-installed">.local/lib/is-installed</a>
 -rwxr-xr-x 1  314   Jul 17 2021 22:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-newer">.local/lib/is-newer</a>
 -rwxr-xr-x 1  356   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-ntc-chip">.local/lib/is-ntc-chip</a>
+-rwxr-xr-x 1  186   Dec 17 2023 15:36 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/is-termux">.local/lib/is-termux</a>
 -rwxr-xr-x 1  258   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/mk-tempdir">.local/lib/mk-tempdir</a>
 -rwxr-xr-x 1 1.3K   Apr  2 2023 19:20 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/moonphase-date">.local/lib/moonphase-date</a>
 -rwxr-xr-x 1  526   Dec  3 2021 22:08 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/notify-send">.local/lib/notify-send</a>
@@ -1139,6 +1252,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  553   Jul 10 2021 23:42 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/path-shorthand">.local/lib/path-shorthand</a>
 -rwxr-xr-x 1  181   Aug  2 2021 15:47 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-play">.local/lib/sfx-play</a>
 -rwxr-xr-x 1  720   Aug 30 2023 14:26 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-synth">.local/lib/sfx-synth</a>
+-rwxr-xr-x 1 2.5K   Dec 19 2023 23:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/termux-ssh-askpass">.local/lib/termux-ssh-askpass</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
 -rwxr-xr-x 1  284   Apr  2 2023 19:27 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/visual">.local/lib/visual</a>
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
@@ -1172,19 +1286,19 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  866   Aug 26 2023 09:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   Mar 21 2022 23:26 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
--rwxr-xr-x 1  803   Sep 18 2023 23:12 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
+-rwxr-xr-x 1  865   Dec 14 2023 22:03 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
 -rwxr-xr-x 1 1.1K   Nov 23 2023 19:59 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2d-intel-bay-trail.sh">.once.d/2d-intel-bay-trail.sh</a>
--rwxr-xr-x 1 3.5K   Aug 21 2023 22:33 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
--rwxr-xr-x 1  200   Jun 18 2021 00:52 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-delete-key.sh">.once.d/c0-chromebook-delete-key.sh</a>
+-rwxr-xr-x 1 4.3K   Dec 16 2023 23:15 rev. 30  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1  200   Nov 28 2023 16:34 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-power-key.sh">.once.d/c0-chromebook-power-key.sh</a>
 -rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
--rwxr-xr-x 1  199   Oct 22 2022 22:48 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-delete-key.sh">.once.d/p0-pocketchip-delete-key.sh</a>
+-rwxr-xr-x 1  199   Nov 28 2023 16:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-power-key.sh">.once.d/p0-pocketchip-power-key.sh</a>
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  886   Sep 10 2023 23:30 rev. 31  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
--rw-r--r-- 1 2.2K   Aug 26 2023 09:09 rev. 73  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 2.2K   Nov 28 2023 17:29 rev. 74  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 1.9K   Oct 26 2023 02:39 rev. 28  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
@@ -1194,10 +1308,10 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  30K   Aug 26 2023 09:38 rev. 193 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  35K   Dec 17 2023 21:25 rev. 201 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 23 Nov 2023 19:59:05 -0800 -->
+<!-- updated Tue, 19 Dec 2023 23:01:53 -0800 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">

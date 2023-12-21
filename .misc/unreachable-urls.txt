@@ -55,7 +55,6 @@ HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
-HTTP request sent, awaiting response... 404 Not Found
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -112,6 +111,10 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/gtk/gtk3.c
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/htop/htoprc
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/keyd/chromebook.conf
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/keyd/default.conf
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/mpv/mpv.conf
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/nano/post-run
@@ -125,6 +128,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/sxhkd/mouse
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/cmark-gfm-xhtml/pre-run
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/keyd/pre-run
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/upstream/sc/pre-run
 HTTP request sent, awaiting response... 404 Not Found
@@ -216,6 +221,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/is-newe
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/is-ntc-chip
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/is-termux
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/mk-tempdir
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/moonphase-date
@@ -229,6 +236,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/sfx-play
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/sfx-synth
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/termux-ssh-askpass
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/user-confirm
 HTTP request sent, awaiting response... 404 Not Found
@@ -308,11 +317,11 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/2d-intel-b
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/a0-android-termux.sh
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/c0-chromebook-delete-key.sh
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/c0-chromebook-power-key.sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/ntc-chip.patch
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/p0-pocketchip-delete-key.sh
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/p0-pocketchip-power-key.sh
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.once.d/p1-pocketchip-network-manager.sh
 HTTP request sent, awaiting response... 404 Not Found
@@ -367,6 +376,8 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
+https://wowana.me/
+(try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
