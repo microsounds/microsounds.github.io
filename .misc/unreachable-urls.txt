@@ -5,7 +5,7 @@ HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
-HTTP request sent, awaiting response... 503 Service Unavailable
+HTTP request sent, awaiting response... 405 Method Not Allowed
 https://api.lanyard.rest/v1/users/
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -14,6 +14,10 @@ https://archive.4plebs.org/s4s/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
+https://archive.ph/I6e0K
+HTTP request sent, awaiting response... 429 Too Many Requests
+https://archive.ph/huXAr
+HTTP request sent, awaiting response... 429 Too Many Requests
 https://archived.moe/lgbt/
 HTTP request sent, awaiting response... 403 Forbidden
 https://cdn.discordapp.com/avatars/
@@ -55,6 +59,7 @@ HTTP request sent, awaiting response... 405 Method Not Allowed
 https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
+HTTP request sent, awaiting response... 404 Not Found
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -386,3 +391,4 @@ https://www.cs.vu.nl/~ast/intel/
 (try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
+https://www.losertown.org/eats/cal.php

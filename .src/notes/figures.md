@@ -198,7 +198,7 @@ var figs = [
 	[ '1796930', '5b192', 'max limited yurayura head miku nt (2023)' ],
 	[ '1796928', '82839', 'max limited yurayura head miku (2023)' ],
 	[ 'p1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861 (2022)' ],
-	[ 'p1473759', '82d19', 'good smile nekomata okayu nendoroid #1860 (2022)' ],
+	[ 'p1473759', '90d6e', 'good smile nekomata okayu nendoroid #1860 (2022)' ],
 	[ 'p1782785', 'da0ba', 'furyu exceed creative miku cyber future ver. (2023)' ],
 	[ 'p1618453', 'd327e', 'good smile pop up parade needy girl overdose kangel (2023)' ],
 	[ 'p1780064', '9bfde', 'taito miku artist masterpiece+ birthday 2023 ver. (2023)' ],
