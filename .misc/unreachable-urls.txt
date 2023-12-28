@@ -5,7 +5,7 @@ HTTP request sent, awaiting response... 404 Not Found
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
-HTTP request sent, awaiting response... 405 Method Not Allowed
+HTTP request sent, awaiting response... 503 
 https://api.lanyard.rest/v1/users/
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -32,6 +32,8 @@ HTTP request sent, awaiting response... 501 Not Implemented
 HTTP request sent, awaiting response... 501 Not Implemented
 https://deb.debian.org/debian%60
 HTTP request sent, awaiting response... 404 Not Found
+https://diskprices.com/
+HTTP request sent, awaiting response... 403 Forbidden
 https://www.ebay.com/n/error
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
@@ -387,8 +389,5 @@ https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
-https://www.cs.vu.nl/~ast/intel/
-(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
-https://www.losertown.org/eats/cal.php

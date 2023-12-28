@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Thu, 21 Dec 2023 00:00:00 -0800</lastBuildDate>
+<lastBuildDate>Mon, 25 Dec 2023 15:40:29 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 932, commit c4832c9. “termux-ssh-askpass: Allow for relative paths to private keys” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 34.3KiB in size, and the approximate size of all comment lines of code is 71.3KiB then this document currently covers about 9.63% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 934, commit 4202cab. “ledger: Expect gnuplot to be installed for throwaway reports” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 34.3KiB in size, and the approximate size of all comment lines of code is 71.4KiB then this document currently covers about 9.62% of all implemented features and behavior in this repository. This is just [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Tue, 19 Dec 2023 23:01:53 -0800</pubDate>
+<pubDate>Mon, 25 Dec 2023 15:40:29 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>
