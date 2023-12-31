@@ -218,7 +218,7 @@ var figs = [
 	[ '1189088', 'f9b14', 'good smile hatsune miku nt nendoroid #1701 (2022)' ],
 	[ '1662862', '12eb0', 'moeyu miku embroidered blanket hoodie (2022)' ],
 	[ '1499800', '04668', 'taito miku artist masterpiece latidos 2022 ver. (2022)' ],
-	[ '1220581', '696bc', 'taito miku artist masterpiece pricess arabian ver. (2021)' ],
+	[ '1220581', '41942', 'taito miku artist masterpiece pricess arabian ver. (2021)' ],
 	[ 'x1214387', 'ea438', 'knockoff taito miku wonderland rapunzel (2021)' ],
 	[ 'x314683', 'e7d29', 'knockoff sega miku fuwa fuwa nuigurumi plush (strap) (2015)' ],
 	[ 'x370088', '27dfa', 'knockoff sega miku fuwa fuwa mega jumbo nuigurumi plush (2016)' ],

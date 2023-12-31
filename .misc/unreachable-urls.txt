@@ -1,11 +1,11 @@
 http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
 http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
-HTTP request sent, awaiting response... 404 Not Found
+HTTP request sent, awaiting response... 403 Forbidden
 https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
-HTTP request sent, awaiting response... 503 
+HTTP request sent, awaiting response... 503 Service Unavailable
 https://api.lanyard.rest/v1/users/
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -244,6 +244,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/sfx-pla
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/sfx-synth
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/systemd-sleep
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/termux-ssh-askpass
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/user-confirm
@@ -383,8 +385,6 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
-https://wowana.me/
-(try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
