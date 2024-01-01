@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2023/11/27 -->
+<!-- updated 2024/1/1 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
