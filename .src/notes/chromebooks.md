@@ -20,7 +20,7 @@ Maybe they didn't know what to write about and thought listing their used Thinkp
 I can commend anyone who can stick with a laptop long enough to blog about it, but I can't really relate.
 Maybe you can attribute it to my minimalist computer zealotry, but from 2008 to 2019, my only computing devices were low end laptops, later replaced with used mid-specced Thinkpads.
 
-They also had a a habit of becoming functionally useless as a laptop within 12 to 16 months of use.
+They also had a habit of becoming functionally useless as a laptop within 12 to 16 months of use.
 Price was never really an issue, it became very clear from this long list of e-waste that laptops from every market segment were all built as disposable commodity trash not meant to last beyond the warranty period.
 
 My miserable pile of e-waste, from 2008 to 2019:
