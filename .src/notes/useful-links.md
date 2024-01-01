@@ -79,9 +79,11 @@
 
 <img class="right" style="width: 150px;" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/WWW-LetShare.svg" />
 
-**/g/ friends** ---
-* ![ico]({DOC_ROOT}/static/button/affiliates/poopingpenis.gif) [poopingpenis's igloo](https://poopingpenis.netlify.app/)
+**we share a bond, no matter how slight** ---
+* ![ico]({DOC_ROOT}/static/button/affiliates/poopingpenis.gif) [~~poopingpenis's igloo~~ 404](https://poopingpenis.netlify.app/)
 	* _PC-98 computing enthusiast from Puerto Rico, (escrito en español)._
+* ![ico]({DOC_ROOT}/static/button/affiliates/xjunko.png) [xjunko's site](https://konno.ovh)
+	* _inspired by my site 💕, a rhythm games enthusiast from Malaysia._
 
 **docs** ---
 * [POSIX.1-2017](https://pubs.opengroup.org/onlinepubs/9699919799)
