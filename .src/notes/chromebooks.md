@@ -165,7 +165,9 @@ As I was grappling with this fact, I found you can change virtual consoles witho
 
 ### Nav Cluster keys
 I found it the most convenient to create a keyboard modifier layer using `Right Alt + arrow keys` to produce `PgUp/PgDn/Home/End`.
+You press `Right Alt` with your right index finger, and press the arrow keys with the right ring finger.
 
+I don't even think about it at all, so it's quite intuitive once you get used to it.
 Some people prefer `Left Ctrl` or even `Super`, you can experiment with whatever won't conflict with your window manager or give you carpal tunnel.
 
 ### Delete/F11
