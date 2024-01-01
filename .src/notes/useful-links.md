@@ -82,6 +82,7 @@
 **we share a bond, no matter how slight** ---
 * ![ico]({DOC_ROOT}/static/button/affiliates/poopingpenis.gif) [~~poopingpenis's igloo~~ 404](https://poopingpenis.netlify.app/)
 	* _PC-98 computing enthusiast from Puerto Rico, (escrito en español)._
+	* _His BBS is [still up](https://poopingpenis.bbs.fc2.com)._
 * ![ico]({DOC_ROOT}/static/button/affiliates/xjunko.png) [xjunko's site](https://konno.ovh)
 	* _inspired by my site 💕, a rhythm games enthusiast from Malaysia._
 * [Hidden Wonders](https://hiddenwonders.xyz)
