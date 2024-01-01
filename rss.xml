@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 29 Dec 2023 10:42:10 -0800</lastBuildDate>
+<lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -9,6 +9,16 @@
 <link>https://microsounds.github.io</link>
 <title>sentimental µsounds</title>
 <description>unix and post-ironic anemoia, µsounds' starlit diary</description>
+<item>
+<title>Friendship ended with Thinkpad, now Chromebook (w/ Coreboot) is my best friend</title>
+<description>
+<![CDATA[ Posted on . In this article, I go over my personal philosophy in choosing a general purpose laptop computer for everyday use, and why that computer should be an inexpensive, readily available, and effectively disposable x86_64 Chromebook that you reflashed into a normal computer by pressing 3 keys, disconnecting the battery, and running one (1) shell script. You can click here to skip over my gushy minimalist opinions on laptops. 	 	Samsung Chromebook 4 (2019), and yes, the keyboard [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/chromebooks.htm">https://microsounds.github.io/notes/chromebooks.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/chromebooks.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/chromebooks.htm</guid>
+<pubDate>Mon, 01 Jan 2024 00:00:00 -0800</pubDate>
+</item>
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>

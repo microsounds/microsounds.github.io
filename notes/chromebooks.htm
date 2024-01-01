@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="theme-color" content="#E2FAF9" />
+	<meta name="description" content="unix and post-ironic anemoia, µsounds' starlit diary" />
+	<meta name="keywords" content="unix, linux, gnu/linux, debian, computers, computing, shell scripting, dotfiles, scripting, programming, metaprogramming, documentation, foss, open source, free software, git, github, moon phase, teal, cyan, pink, starry night skies, pastel, anime, music, iridescent, sibilant, sentimental, microsounds, eternity, jealosy, decay, 2007 is eternal, now and forever, lucky star, vocaloid, hatsune miku, 初音ミク, 39, sankyuu, shimeji, japan, weeaboo, weeb, old web, web 1.0, neocities, geocities, blog, microblog, static website, personal website" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="google-site-verification" content="Yn_X0a7RyXs1GuMzbXL2g3P-tH1A29W_6yyG6M8oBnk" />
+	<link rel="shortcut icon" type="image/x-icon" href="/static/sky.ico" />
+	<link rel="stylesheet" type="text/css" href="/static/style.css" />
+	<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="sentimental µsounds" />
+	<script type="text/javascript" src="/static/script.js"></script>
+	<title>Friendship ended with Thinkpad, now Chromebook (w/ Coreboot) is my best friend | sentimental µsounds</title>
+</head>
+<body>
+<audio hidden="hidden" id="bgm"></audio>
+<div class="navbar">
+	<a href="/">
+		<img class="avatar" alt="avatar" src="/static/avatar.png" />
+	</a>
+	<div class="container">
+		<div class="title"><a href="/">sentimental µsounds</a></div>
+		<div class="subtitle" id="subtitle">unix and post-ironic anemoia, µsounds' starlit diary</div>
+		<ul>
+			<li><a id="bgm_toggle" href="javascript:play()">♫ play</a></li>
+			<li><a href="https://github.com/microsounds">my github</a></li>
+			<li><a href="/notes/dotfiles.htm">my dotfiles</a></li>
+			<li><a href="/notes/index.htm">my notes</a></li>
+			<li><a href="/notes/useful-links.htm">useful links</a></li>
+			<li><a href="/rss.xml">rss <img alt="rss" class="icon" src="/static/button/rss.svg" /></a></li>
+		</ul>
+	</div>
+</div>
+<div class="cloud-cover"></div>
+<div class="content">
+<!--kagami v0.6.5 — static microblog processor-->
+<!-- written 2024/1/1 -->
+<h1>Friendship ended with Thinkpad, now Chromebook (w/ Coreboot) is my best friend<span id="Friendship-ended-with-Thinkpad-now-Chromebook-w-Coreboot-is-my-best-friend"></span></h1>
+<p>Posted on 🌒 Mon, Jan 1st, 2024.</p>
+<p>In this article, I go over my personal philosophy in choosing a general purpose laptop computer for everyday use,
+and why that computer should be an <em>inexpensive, readily available, and effectively disposable</em> <code>x86_64</code> <strong>Chromebook</strong>
+that you reflashed into a <strong>normal computer</strong> by pressing 3 keys, disconnecting the battery, and running one (1) shell script.</p>
+<p><em>You can <a href="#Turning-your-Chromebook-into-a-normal-UEFI-laptop">click here</a> to skip over my gushy minimalist opinions on laptops.</em></p>
+<figure class="aside left">
+	<p><img alt="chromebook" src="assets/chromebook.jpg" /></p>
+	<figcaption>Samsung Chromebook 4 (2019), and yes, the keyboard is already seeing ABS shine!</figcaption>
+</figure>
+<h2>Laptops should NOT have moving parts<span id="Laptops-should-NOT-have-moving-parts"></span></h2>
+<p>Many personal sites similar to mine like to prominently list the author’s computing setup, complete with model numbers and performance specs.
+Maybe they didn’t know what to write about and thought listing their used Thinkpad full of aftermarket parts would interest some people,
+I can commend anyone who can stick with a laptop long enough to blog about it, but I can’t really relate.
+Maybe you can attribute it to my minimalist computer zealotry, but from 2008 to 2019, my only computing devices were low end laptops, later replaced with used mid-specced Thinkpads.</p>
+<p>They also had a a habit of becoming functionally useless as a laptop within 12 to 16 months of use.
+Price was never really an issue, it became very clear from this long list of e-waste that laptops from every market segment were all built as disposable commodity trash not meant to last beyond the warranty period.</p>
+<p>My miserable pile of e-waste, from 2008 to 2019:</p>
+<ul>
+<li>2008 <strong>Acer Aspire 4720z</strong>, has a dead battery and dim yellowing CCFL display, rusted itself inside out.</li>
+<li>2009 <strong>Acer Aspire 5810tz</strong>, has a cracked LED display, and also dead battery probably.</li>
+<li>2009 <strong>Acer Aspire One D255</strong> netbook, also rusted itself inside out, some chiclet keys broke in half.</li>
+<li>2004 <strong>IBM Thinkpad T41</strong>, lifting from the wrong corner bent the mobo and produced BGA hairline cracks in the integrated gfx.
+<ul>
+<li><em>This one pained me the most, my only ever SXGA+ 4:3 laptop, I tried to salvage this one for months by stuffing cardboard between the mobo and keyboard, but it was getting sad.</em></li>
+</ul>
+</li>
+<li>2009 <strong>Lenovo Thinkpad T400</strong>, sudden fan death, overheated, blew some microfuses, nuked the CCFL inverter and will no longer boot.
+<ul>
+<li><em>Probably my fault, I blocked the cooling fans using it in bed, still shouldn’t have happened so fast though.</em></li>
+</ul>
+</li>
+<li>Another <strong>2009 Lenovo Thinkpad T400</strong>, because I liked it a lot, took better care of it but batteries still died and CCFL screen still yellowed.</li>
+<li>2008 <strong>Lenovo Thinkpad X200</strong>, extremely loud fan grinding noises, fan died, replacement fans did not work, motherboard issues to blame, also battery died.
+<ul>
+<li><em>BIOS would throw <code>Fan error</code> unless I used compressed air to spin the fans at boot.</em></li>
+<li><em>Still used it for months with no active cooling and watched my CPU temps so it wouldn’t shut off at 212°F</em>.</li>
+</ul>
+</li>
+<li>2017 <strong>HP Stream 11</strong>, soldered eMMC died 11 months into 1 year warranty, battery inflated and died 2 months later.</li>
+<li>2011 <strong>Lenovo Thinkpad X230</strong>, 10 minute battery, only one on this list that isn’t fried or inoperable yet, only because it was barely used.</li>
+</ul>
+<p>I still have every single one, they sit in a storage tote somewhere, the rubber materials off-gassing, leaking plasticizer and turning to brittle, sticky goo.
+Thinkpad HDD rubber rails are <a href="https://archive.ph/rJuTE">infamous for releasing toxic gas</a>, the 18650 battery cells are probably waiting to rupture and leak electrolyte any day now.</p>
+<p>I can’t name anything that falls apart faster than a laptop does, deterioration only accelerates when you stop looking at them, it’s like they yearn to return to the Earth.
+Laptop fans will eventually fail, any mobile chipset capable of overheating and causing thermal damage to itself will inevitably do so.</p>
+<p>Aside from the unavoidable stuff like hinges and battery chemistry, <strong>laptops should NOT have moving parts</strong>.</p>
+<h2>Laptops are disposable trash and you should stop caring<span id="Laptops-are-disposable-trash-and-you-should-stop-caring"></span></h2>
+<p>When you make peace with all laptops being disposable trash,
+it enables you as careless as you want with your devices, you can throw them around, you can beat them up, take them anywhere, just one less thing to worry about.</p>
+<p>Since this applies at all price points, it made me content with <em>buying the cheapest thing available</em> and progressively lowering my hardware requirements to compensate.</p>
+<ul>
+<li>If you buy a model with a <em>passively cooled chipset</em>, you no longer have to worry about it overheating.</li>
+<li>If you buy a model that cost you <em>pocket change</em>, you don’t even have to worry about having to replace it.</li>
+</ul>
+<p>Somewhere along the way in the PC market’s multi-decade race to the bottom, it accidentally laid the framework for the ideal laptop.
+It was sometime in 2016, when even the most inexpensive x86 laptops available started offering advantages that could make you overlook all their flaws.</p>
+<p>Entry-level Chromebooks and budget 11.6” laptops, modern day expressions of <a href="https://en.wikipedia.org/wiki/Netbook">Netbooks</a> introduced just 10 years prior, were now all shipping with:</p>
+<ul>
+<li>14nm 1.1GHz dual core CPUs drawing 6W at full load</li>
+<li>1366x768 displays <em>(they’re ok)</em></li>
+<li>4GB of ram, soldered</li>
+<li>16GB of internal eMMC storage, also soldered</li>
+<li>The least amount of hardware acceleration required to render a webpage</li>
+<li>But most important of all, <em><strong>zero moving parts</strong></em>, <em>it’s passively cooled!</em></li>
+</ul>
+<p>In exchange for those anemic, passively cooled specs, they provided 10+ hours of battery life on a 40Wh cell.
+Pair it with a 74Wh USB power bank <em>(typically 20,000mAh @ 3.7V)</em>, and you could carry another 18.5 hours of battery life.</p>
+<p>You will never find a more unresponsive and miserable out of the box experience.
+Have you ever seen a Windows Celeron-based laptop
+<a href="https://answers.microsoft.com/en-us/windows/forum/all/all-windows-10-devices-with-16-gb-emmc-as-c-drive/1af1355c-dbf6-4d04-9248-8dc274729f8e">run out of disk space</a>
+during it’s first Windows Update?</p>
+<p>Of course, they ran like hot garbage when used with the preloaded OS, but they could be <span class="blink">made to fly</span> if your choice of OS and desktop environment were <a href="/notes/dotfiles.htm" title="like mine">minimal enough</a>.
+Their performance has <a href="https://www.cpubenchmark.net/compare/2762vs2907vs3239vs3683vs5157">only improved with time</a>,
+I assert that a sub-$120 Gemini Lake Chromebook released in 2019 is good enough to run any
+<a href="https://www.youtube.com/watch?v=cTuSXC4ZAxo" title="genshin lol">non-gaming related task</a> you could be doing outside on a laptop.
+If you feel like spending more, you get more contemporary features like convertible 360° swiveling, touchscreens, fingerprint sensors and pen tablet displays.</p>
+<p>The inherent value provided by cheaply produced trash now far exceeds that of it’s physical longevity or build quality.</p>
+<p>There are now industries dedicated to selling refurbished Chromebooks used in education because schools churn through so many,
+Google’s <a href="https://support.google.com/chrome/a/answer/6220366">update sunset policy</a>
+basically guarantees a <a href="https://pirg.org/edfund/resources/chromebook-churn-report-highlights-problems-of-short-lived-laptops-in-schools/">flood of refurbished Chromebooks</a>
+getting liquidated for the <a href="https://www.ebay.com/sch/i.html?_nkw=chromebook&amp;_sacat=0&amp;LH_BIN=1&amp;_sop=15">cost of shipping</a> before they hit the landfill.</p>
+<p>Even brand new ones can go below $100 during <a href="https://blackfridayarchive.com/Ad/WalMart/2021">certain post-Thanksgiving sales</a> every year,
+just make sure it comes with <em>USB-C PD</em> and a microSD card slot.</p>
+<p>For those reasons and more, I only buy <del>disposable trash</del> cheap Chromebooks now.<br />
+My performance requirements aren’t very high, 4GB of RAM is enough to the point where I never need swap, and the absolute performance floor in laptops far exceeded my needs sometime in 2016.
+I invite you to re-examine how much computing power you actually need, and learn to decouple the abstract fruits of computing from the mass produced <del>trash</del> physical husks that bore them.</p>
+<p>If you’re wondering why I’m not recommending standard UEFI “cloud” or “value” laptops that come preloaded with <em>Windows 11S</em>,
+they tend to cost more for the same features and level of performance, I’m not about to start paying the
+<a href="https://en.wikipedia.org/wiki/Bundling_of_Microsoft_Windows#The_%22Windows_tax%22">Windows tax</a> again.</p>
+<h2>Chromebooks are uncool, and likely always will be<span id="Chromebooks-are-uncool-and-likely-always-will-be"></span></h2>
+<p>You can take this however you like, but Chromebooks are uncool, installing Linux on one will be very unlikely to give you any kind of trendy “hacker” cred now, or in the future.</p>
+<p>Any time I suggest a used Chromebook to anyone, they reflexively think I want to subject them to using ChromeOS, and tell me off as such.
+Their marketing isn’t helpful either,
+they’re touted as a platform <a href="https://www.youtube.com/watch?v=Nk8mp4gqEMQ">completely unrelated to PCs</a>, <em>“the web, in a computer-shaped object”</em>, a literal web appliance.</p>
+<p>Almost paradoxically, Chromebook hardware is more open than any smartphone or contemporary laptop today.
+Having an open source UEFI bootloader and embedded controller (EC) already puts well above most devices for providing a truly rare example of FOSS computing that respects most of your
+<a href="https://www.gnu.org/philosophy/free-sw.en.html">software freedoms</a> at the firmware level.</p>
+<p>Does that really mean something to the end user? Probably not, but it’s a bountiful gift to anyone trying to keep e-waste out of landfills.
+It also gives you “”””“hacker”””””””” cred. Previously, this distinction was held by a few models like RMS’s MIPS-based <a href="https://stallman.org/stallman-computing.html#:~:text=Lemote%20Yeeloong">Lemote Yeeloong</a>
+netbook and several aging Thinkpad models such as the X200, T400s and X60 that now command high prices because simply having Libreboot compatibility was enough to make them collectibles.</p>
+<p>“Liberating” a Thinkpad with a FOSS bootloader requires external chip programming tools to flash Libreboot, Chromebooks don’t even need special tools to liberate.</p>
+<p>Do I want refurbished corebooted Chromebooks to become cool?<br />
+Not really, I remember a time when Thinkpads were actually <em>disposably cheap</em>.
+All you need is some YouTuber with a large audience making a video with the right framing directing the public to your <em>infinite money-saving glitch</em> and you can kiss it goodbye.
+It’s also really unlikely, most people are only interested in running <em>Windows</em> and 16GB of storage is barely enough for that.</p>
+<h2>Turning your Chromebook into a normal UEFI laptop<span id="Turning-your-Chromebook-into-a-normal-UEFI-laptop"></span></h2>
+<p>Resources for liberating your Chromebook has been documented at length elsewhere, so I won’t repeat them here:</p>
+<ul>
+<li><a href="https://chrultrabook.github.io/docs/">Chrultrabook Docs</a>
+<ul>
+<li><em>Through guide on installing Windows, MacOS or Linux on Chromebook hardware.</em></li>
+</ul>
+</li>
+<li><a href="https://chrultrabook.github.io/docs/docs/firmware/supported-devices.html">List of Supported Chromebooks</a>
+<ul>
+<li><em>Nearly all x86-based Chromebooks are supported, you should still check before buying though.</em></li>
+</ul>
+</li>
+<li><a href="https://mrchromebox.tech/">MrChromebox firmware</a>
+<ul>
+<li><em>Firmware documentation from the developers, much of this is included in Chrultrabook Docs though.</em></li>
+</ul>
+</li>
+<li><a href="https://media.ccc.de/v/37c3-11929-turning_chromebooks_into_regular_laptops">37C3: Turning Chromebooks into regular laptops</a>
+<ul>
+<li><em>(38 min) Chrultrabook devs presenting at 37th Chaos Communication Congress on 12/28/2023.</em></li>
+</ul>
+</li>
+</ul>
+<p>But in short, the process is really simple:</p>
+<ol>
+<li>Press <code>Esc + Refresh + Power</code> to enter Developer Mode.</li>
+<li>Open up the back and disconnect the battery from the motherboard to disable the <em>write-protect</em> on the firmware chip.
+<ul>
+<li><em>Models that predate the CR50 embedded controller (EC) used a write-protect screw.</em></li>
+</ul>
+</li>
+<li>Boot up while on AC power, enter <code>tty2</code> with <code>Ctrl + Alt + F2</code>, <code>curl</code> and run MrChromebox’s <a href="https://mrchromebox.tech/#fwscript">Firmware Utility Script</a>.</li>
+<li>Afterwards, install your OS normally using regular install media, your warranty is probably void at this point.</li>
+</ol>
+<p>And you’re done. You didn’t have to spend a single second using ChromeOS.</p>
+<h2>What about the keyboard, though?<span id="What-about-the-keyboard-though"></span></h2>
+<figure class="aside left">
+	<p><img width="400" alt="chromebook-layout" src="assets/chromebook-layout.png" /></p>
+	<figcaption>It's like a 60% keyboard, but actually good.</figcaption>
+</figure>
+<p>Some people may object to the standard 74-key US ANSI-esque Chromebook layout, how could they possibly become comfortable with a keyboard that lacks all function, nav cluster keys and even the super key?
+Remap them however you like.</p>
+<p>There’s no shortage of ways to do this on Linux systems,
+I used <code>xkb</code> in the past but I won’t <a href="https://github.com/microsounds/atelier/blob/e2fa617/.config/xkb/chromebook.xkb">pretend to understand</a> how it works anymore and so now I use <a href="https://github.com/rvaiya/keyd"><code>rvaiya/keyd</code></a> because it’s just <a href="https://github.com/microsounds/atelier/blob/master/.config/keyd/chromebook.conf">easier to define</a> keyboard layers.</p>
+<p>It’s also kernel based, so it works outside of X sessions, including the virtual console, it effectively replaces <code>xmodmap</code>, <code>loadkeys</code> or whatever you were using before.</p>
+<h3>Super key<span id="Super-key"></span></h3>
+<p>The <code>Search</code> key that takes the place of <code>Caps Lock</code> serves as the <code>Super_L</code> key internally in the embedded controller, you don’t need to configure this.
+I actually came to like this placement so much that now I set <code>Caps Lock</code> to <code>Super</code> on all my machines.</p>
+<h3>F1〜F10<span id="F1F10"></span></h3>
+<p>On pre-EC Chromebooks, the top row of media keys send F1-F10 internally, newer ones send media key scancodes, and need to be remapped.
+As I was grappling with this fact, I found you can change virtual consoles without access to the function row using <code>chvt 2</code> to switch to <code>tty2</code>.</p>
+<h3>Nav Cluster keys<span id="Nav-Cluster-keys"></span></h3>
+<p>I found it the most convenient to create a keyboard modifier layer using <code>Right Alt + arrow keys</code> to produce <code>PgUp/PgDn/Home/End</code>.</p>
+<p>Some people prefer <code>Left Ctrl</code> or even <code>Super</code>, you can experiment with whatever won’t conflict with your window manager or give you carpal tunnel.</p>
+<h3>Delete/F11<span id="DeleteF11"></span></h3>
+<p>By default, the power key on the top-right will power off the device, set <code>HandlePowerKey=ignore</code> in <code>/etc/systemd/logind.conf</code> on <code>systemd</code> based distros to disable this.</p>
+<p>Even though it takes the place of <code>F11</code>, I just use <code>Delete</code> more.
+You can still configure it to send <code>F11</code> when holding down the <code>Right Alt</code>.
+If you really need <code>F11</code> more, you can set <code>Right Alt + Backspace</code> to produce <code>Delete</code>, which I also use interchangeably with the other <code>Delete</code> key.</p>
+<h3>F12 and beyond<span id="F12-and-beyond"></span></h3>
+<p>I actually don’t use <code>F12</code> for anything, so I didn’t bother, you can set this to whatever you want.
+<code>Right Alt + number row</code> could be used to reach up to <code>F21</code> if that’s what you really wanted to.</p>
+<hr/>
+<div class="footer">
+	<span class="right" style="padding-left: 5px">
+		<a title="visitors since 2022" href="https://digits.net">
+			<img style="height: 1.3em;" alt="counter"
+				src="https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25" />
+			vistors
+		</a>
+	</span>
+	<p>written materials <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, source code <a href="https://www.gnu.org/licenses/gpl-3.0">GNU GPLv3+</a>
+	— &#169; 2015-2023 microsounds &lt;<a href="https://github.com/microsounds">https://github.com/microsounds</a>&gt;<br/>
+	Powered by <a href="https://github.com/microsounds/kagami">kagami v0.6.5 — static microblog processor</a></p>
+</div>
+</div> <!-- end of content -->
+</body>
+</html>
