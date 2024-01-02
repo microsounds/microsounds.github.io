@@ -33,7 +33,7 @@ var platitudes = [
 	'returning to the aether in slow motion',
 	'n-no, it\'s supposed to look like that',
 	'the last love song at the end of time',
-	'it\'s like you never existed',
+	'it\'s almost like you never existed',
 	'did you want this moment to last forever?',
 	'can i feel nostalgic for a time i never knew?',
 	'post-post-post-ironic internet anemoia',
