@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2023/11/3 -->
+<!-- updated 2024/1/3 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -170,7 +170,7 @@ var figs = [
 	[ '861021', '93e28', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
 	[ 'p1849001', '3fba5', 'gift hatsune miku nt fumo plush (2023)' ],
 	[ 'p1876348', 'f08ca', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222 (2023)' ],
-	[ 'p1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
+	[ '1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ '1258843', '55d3c', 'furyu f:nex hatsune miku chronicle 1/7 scale (2022)' ],
 	[ '926772', '68615', 'good smile racing miku 2020 nendoroid #1293 (2020)' ],
 	[ '1711391', '32d0d', 'taito kuji miku 39 no hi kinen kuji B prize (2023)' ],
@@ -197,17 +197,17 @@ var figs = [
 	[ '1495055', 'eda04', 'bandai q posket miku v4x type a (2022)' ],
 	[ '1796930', '5b192', 'max limited yurayura head miku nt (2023)' ],
 	[ '1796928', '82839', 'max limited yurayura head miku (2023)' ],
-	[ 'p1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861 (2022)' ],
-	[ 'p1473759', '90d6e', 'good smile nekomata okayu nendoroid #1860 (2022)' ],
-	[ 'p1782785', 'da0ba', 'furyu exceed creative miku cyber future ver. (2023)' ],
-	[ 'p1618453', 'd327e', 'good smile pop up parade needy girl overdose kangel (2023)' ],
+	[ '1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861 (2022)' ],
+	[ '1473759', '90d6e', 'good smile nekomata okayu nendoroid #1860 (2022)' ],
+	[ '1782785', 'da0ba', 'furyu exceed creative miku cyber future ver. (2023)' ],
+	[ '1618453', 'd327e', 'good smile pop up parade needy girl overdose kangel (2023)' ],
 	[ 'p1780064', '90bb0', 'taito miku artist masterpiece+ birthday 2023 ver. (2023)' ],
 	[ 'p1873722', '4dabb', 'taito miku fashion figure uniform ver. (2024)' ],
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper (2023)' ],
 	[ 'p945860', '328b2', 'good smile miku nendoroid doll (2020)' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll (2023)' ],
 	[ '1616455', '1154b', 'good smile pop up parade ver. L DECO*27 vampire jirai miku (2023)' ],
-	[ 'p1779734', 'fb6e1', 'taito miku fashion figure subculture ver. (2023)' ],
+	[ '1779734', 'fb6e1', 'taito miku fashion figure subculture ver. (2023)' ],
 	[ '1335582', '0d57a', 'sega sakura miku v3 SPM (2022)' ],
 	[ '1571286', '15051', 'sega miku christmas 2022 SPM (2022)' ],
 	[ '1479579', '350f9', 'sega miku 15th anniversary kei ver. SPM (2022)' ],
