@@ -6,6 +6,8 @@ https://www.amazon.com/
 HTTP request sent, awaiting response... 503 Service Unavailable
 https://www.amazon.co.jp/
 HTTP request sent, awaiting response... 503 Service Unavailable
+https://answers.microsoft.com/en-us/windows/forum/all/all-windows-10-devices-with-16-gb-emmc-as-c-drive/1af1355c-dbf6-4d04-9248-8dc274729f8e
+HTTP request sent, awaiting response... 404 Not Found
 https://api.lanyard.rest/v1/users/
 HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
@@ -17,6 +19,8 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://archive.ph/I6e0K
 HTTP request sent, awaiting response... 429 Too Many Requests
 https://archive.ph/huXAr
+HTTP request sent, awaiting response... 429 Too Many Requests
+https://archive.ph/rJuTE
 HTTP request sent, awaiting response... 429 Too Many Requests
 https://archived.moe/lgbt/
 HTTP request sent, awaiting response... 403 Forbidden
@@ -62,6 +66,8 @@ https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
 HTTP request sent, awaiting response... 404 Not Found
+https://pirg.org/edfund/resources/chromebook-churn-report-highlights-problems-of-short-lived-laptops-in-schools/
+HTTP request sent, awaiting response... 403 Forbidden
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
@@ -338,6 +344,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.profile
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.scrc
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.shortcuts/SFTP_Server
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.xinitrc
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.xresources
@@ -370,6 +378,8 @@ https://static.myfigurecollection.net/upload/items/0/
 HTTP request sent, awaiting response... 403 Forbidden
 https://static.myfigurecollection.net/upload/items/1/
 HTTP request sent, awaiting response... 403 Forbidden
+https://support.google.com/chrome/a/answer/6220366
+HTTP request sent, awaiting response... 404 Not Found
 https://suruga-ya.jp/
 https://suruya-ga.com/
 https://u1lib.org/
@@ -391,3 +401,43 @@ https://www.congress.gov/congressional-record/volume-144/issue-139/house-section
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
+https://www.ebay.com/n/error
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
+https://www.ebay.com/n/error?statuscode=500
+HTTP request sent, awaiting response... 303 See Other
