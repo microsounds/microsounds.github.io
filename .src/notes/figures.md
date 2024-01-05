@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/1/3 -->
+<!-- updated 2024/1/4 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1876376', '23b1e', 'good smile cinnamoroll miku nendo #2306 (2024)' ],
 	[ 'p1781933', 'ecbab', 'design coco miku senbonzakura 10th anniv. ver 1/7 scale (2025)' ],
 	[ 'p1974911', '8f1ef', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
 	[ 'p2004539', '226b3', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
