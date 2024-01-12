@@ -207,7 +207,7 @@ var figs = [
 	[ 'p1780064', '90bb0', 'taito miku artist masterpiece+ birthday 2023 ver. (2023)' ],
 	[ 'p1873722', '4dabb', 'taito miku fashion figure uniform ver. (2024)' ],
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper (2023)' ],
-	[ 'p945860', '328b2', 'good smile miku nendoroid doll (2020)' ],
+	[ 'p945860', '6ae97', 'good smile miku nendoroid doll (2020)' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll (2023)' ],
 	[ '1616455', '1154b', 'good smile pop up parade ver. L DECO*27 vampire jirai (2023)' ],
 	[ '1779734', 'fb6e1', 'taito miku fashion figure subculture ver. (2023)' ],
