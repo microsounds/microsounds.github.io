@@ -14,6 +14,7 @@ var urls = [
 	'https://www.youtube.com/watch?v=SeVAhNUo7ko', /* 【Project DIVA 2nd】　2D OR NOT 2D　【鏡音レン・KAITO他】*/
 	'https://www.youtube.com/watch?v=KivVBtZdYGM', /* The Ultimate Desu */
 	'https://www.youtube.com/watch?v=XpAWbMtKO5k', /* La Bikina Hatsune Miku */
+	'https://www.youtube.com/watch?v=t5rVuV5Kd-U', /* 【初音未来】fu fu 的 千 层 套 路 ~ */
 	'https://www.youtube.com/watch?v=t9bbMvbnXsY', /* Patty Sand Canyon */
 	'https://www.youtube.com/watch?v=pNMRBTN1SGU', /* Ferris' Sand Canyon */
 	'https://www.youtube.com/watch?v=UL8IpdFGeHU', /* Effe - Hatsune Miku - Night Drive - Japanese, Romaji & English Subs */

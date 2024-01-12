@@ -238,6 +238,16 @@ You should also know better than to paste <a href="http://thejh.net/misc/website
 					case 4: f.innerHTML += ' saying '; act[i].name = '"' + act[i].state + '"'; break;
 				}
 				f.innerHTML += '<em><strong>' + act[i].name + '</strong></em>';
+
+				/* discord rich presence for game activities */
+				switch (act[i].type) {
+					case 0:
+						if (act[i].details)
+							f.innerHTML += ', ' + act[i].details.charAt(0).toLowerCase() + act[i].details.slice(1);
+						if (act[i].state)
+							f.innerHTML += ', ' + act[i].state.charAt(0).toLowerCase() + act[i].state.slice(1);
+						break;
+				}
 				if (act.length > 1 && i != act.length - 1)
 					f.innerHTML += ' and';
 			}
