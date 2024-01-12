@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2024/1/1 -->
+<!-- updated 2024/1/12 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -122,6 +122,8 @@
 	* _Technical guide on the ins and outs of anal sex, exploring the mechanics of the male and female orgasm._
 * [Bad Licenses](https://github.com/ErikMcClure/bad-licenses)
 	* _A list of legally dubious and incomprensible "FOSS" software licenses found in the wild._
+* [FMHY: freemediaheckyeah](https://fmhy.net)
+	* _Enormous rabbit hole of curated resources for streaming/downloading pirated TV, movies, music, books, anime, manga, sports, broadcast TV, radio, etc._
 
 **misc** ---
 * [twofactor.date](https://twofactor.date)
@@ -130,6 +132,8 @@
 	* _Automatically curated list of new/used disk storage prices on Amazon.com for various countries._
 * [sudomemo](https://www.sudomemo.net)
 	* _A revival of [Flipnote Hatena](https://en.wikipedia.org/wiki/Flipnote_Studio), a 2010s online hosting service for Nintendo DSi/3DS Flipnote Studio animations._
+* [Yume Nikki Online Project](https://ynoproject.net)
+	* _Play the classic atmospheric horror walking sim **Yume Nikki** and its many fangames, with friends, in your browser._
 * [poyopoyo gif maker](https://poyopoyo.gifanimaker.com)
 * [NOAA GOES](https://www.star.nesdis.noaa.gov/GOES)
 	* _Near-live weather animations from US NOAA weather satellites._
