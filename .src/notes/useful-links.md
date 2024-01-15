@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2024/1/12 -->
+<!-- updated 2024/1/15 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -58,7 +58,7 @@
 [nyaa](https://nyaa.si) ·
 [fitgirl](https://fitgirl-repacks.site) ·
 [CDromance](https://cdromance.com) ·
-~~[zLibrary (rip)](https://u1lib.org)~~
+[zLibrary](https://singlelogin.re)
 
 **file hosts** ---
 [catbox](https://catbox.moe) <sup>*[litterbox](https://litterbox.catbox.moe)*</sup> ·
@@ -67,13 +67,6 @@
 **benchmarks** ---
 [CPU Mark](https://cpubenchmark.net/singleCompare.php) ·
 [G3D Mark](https://videocardbenchmark.net/singleCompare.php)
-
-**stores** ---
-[aliexpress](https://aliexpress.com) ·
-[walmart](https://walmart.com) ·
-[ebay](https://ebay.com) ·
-[amazon](https://amazon.com) <sup>*[jp](https://amazon.jp)*</sup> ·
-[mandarake](https://order.mandarake.co.jp/order/?lang=en)
 
 </details>
 

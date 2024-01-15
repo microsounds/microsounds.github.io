@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 12 Jan 2024 00:00:00 -0800</lastBuildDate>
+<lastBuildDate>Mon, 15 Jan 2024 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -77,7 +77,7 @@
 </description>
 <link>https://microsounds.github.io/notes/useful-links.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/useful-links.htm</guid>
-<pubDate>Fri, 12 Jan 2024 00:00:00 -0800</pubDate>
+<pubDate>Mon, 15 Jan 2024 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>On Copyleft and why I use GPLv3</title>
