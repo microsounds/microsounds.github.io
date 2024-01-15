@@ -133,7 +133,7 @@
 * [sudomemo](https://www.sudomemo.net)
 	* _A revival of [Flipnote Hatena](https://en.wikipedia.org/wiki/Flipnote_Studio), a 2010s online hosting service for Nintendo DSi/3DS Flipnote Studio animations._
 * [Yume Nikki Online Project](https://ynoproject.net)
-	* _Play the classic atmospheric horror walking sim **Yume Nikki** and its many fangames, with friends, in your browser._
+	* _Play the classic surreal atmospheric walking sim **Yume Nikki** and its many fangames, with friends, in your browser._
 * [poyopoyo gif maker](https://poyopoyo.gifanimaker.com)
 * [NOAA GOES](https://www.star.nesdis.noaa.gov/GOES)
 	* _Near-live weather animations from US NOAA weather satellites._
