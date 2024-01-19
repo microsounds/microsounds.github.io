@@ -260,7 +260,7 @@ var figs = [
 	[ '47413', 'd5289', 'banpresto akira kogami ichiban kuji H prize (kyun-chara2010)' ],
 	[ '167123', '00cd8', 'sega project diva arcade miku PM figure (2012)' ],
 	[ '100292', '0bb7d', 'great eastern entertainment hatsune miku plush (2012)' ],
-	[ 'w66010', 'e028f', 'good smile miku support ver. nendoroid #170 (2011)' ],
+	[ 'w66010', '03aa7', 'good smile miku support ver. nendoroid #170 (2011)' ],
 	[ 'w370088', '27dfa', 'sega fuwafuwa mega jumbo miku plush (2016)' ],
 	[ 'w451821', '07e74', 'good smile hatsune miku nendoroid JUMBO (2016)' ],
 	[ 'w945858', 'b91b5', 'good smile hatsune miku v4x nendoroid #1309 (2020)' ],
