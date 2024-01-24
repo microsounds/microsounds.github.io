@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">945</b>, commit <code>b47289a</code>.</strong></p>
-<p><strong>“Nothing important, adding faketime as essential comfort”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">948</b>, commit <code>7e22c70</code>.</strong></p>
+<p><strong>“nano: Enable touchpad scrolling support”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -114,7 +114,7 @@
 <li><a href="#notify-send"><code>notify-send</code></a></li>
 <li><a href="#sc-spreadsheet-calculator"><code>sc</code> (spreadsheet calculator)</a>
 <ul>
-<li><a href="#sc-pre-run-macro-example"><code>sc</code> pre-run macro example</a></li>
+<li><a href="#sc-pre-run-macro-example-scripts"><code>sc</code> pre-run macro example scripts</a></li>
 </ul>
 </li>
 </ul>
@@ -126,19 +126,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>34.4KiB</em> in
+<p>If this document is <em>35.9KiB</em> in
 size, and the approximate size of all comment lines of code is
 <em>72.1KiB</em> then this document
-currently covers about <b style="font-size: 130%;">9.54%</b>
+currently covers about <b style="font-size: 130%;">9.95%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌗 Thu, Jan 18th, 2024.</p>
+<p>Last updated 🌘 Fri, Jan 19th, 2024.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime19.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime32.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -1097,37 +1097,84 @@ because it doesn’t tie into any <code>dbus</code>-based notification daemon im
 </ul>
 </li>
 </ul>
-<h3><code>sc</code> pre-run macro example<span id="sc-pre-run-macro-example"></span></h3>
-<ul>
+<h3><code>sc</code> pre-run macro example scripts<span id="sc-pre-run-macro-example-scripts"></span></h3>
+<ol>
 <li>
-<p>This is an example of a conditional macro script for an inventory spreadsheet that color-codes cells when specific strings are found.</p>
-<pre><code class="language-shell"> #!/usr/bin/env sh
- # apply colors to specific strings in column B
+<p>A macro script for an inventory spreadsheet that color-codes cells when specific strings are found.</p>
+<pre><code class="language-shell">#!/usr/bin/env sh
+# apply colors to specific strings in column B
 
- file=&quot;${0%.*}&quot; # derive .sc file name from name of this script
+file=&quot;${0%.*}&quot; # derive .sc file name from name of this script
 
- # remove all instances of color from the file in place
- { rm &quot;$file&quot;; egrep -v '^color' &gt; &quot;$file&quot;; } &lt; &quot;$file&quot;
+# remove all instances of color from the file in place
+{ rm &quot;$file&quot;; egrep -v '^color' &gt; &quot;$file&quot;; } &lt; &quot;$file&quot;
 
- cat &lt;&lt;- EOF &gt;&gt; &quot;$file&quot; # set some non-default colors
- 	color 3 = @black;@red
- 	color 4 = @black;@yellow
- 	color 5 = @black;@green
- EOF
- # select only string cells from column B, apply colors based on string contents
- # sc format: leftstring B2 = &quot;example string&quot;
- egrep '^((left|right)string|label)' &lt; &quot;$file&quot; | while read -r cmd cell _ str; do
- 	case &quot;$cell&quot; in B*)
- 		case &quot;$str&quot; in
- 			*broken*) echo &quot;color $cell:$cell 3&quot;;;
- 			*bad*) echo &quot;color $cell:$cell 4&quot;;;
- 			*working*) echo &quot;color $cell:$cell 5&quot;;;
- 		esac;;
- 	esac
- done &gt;&gt; &quot;$file&quot;
+cat &lt;&lt;- EOF &gt;&gt; &quot;$file&quot; # set some non-default colors
+	color 3 = @black;@red
+	color 4 = @black;@yellow
+	color 5 = @black;@green
+EOF
+# select only string cells from column B, apply colors based on string contents
+# sc format: leftstring B2 = &quot;example string&quot;
+egrep '^((left|right)string|label)' &lt; &quot;$file&quot; | while read -r cmd cell _ str; do
+	case &quot;$cell&quot; in B*)
+		case &quot;$str&quot; in
+			*broken*) echo &quot;color $cell:$cell 3&quot;;;
+			*bad*) echo &quot;color $cell:$cell 4&quot;;;
+			*working*) echo &quot;color $cell:$cell 5&quot;;;
+		esac;;
+	esac
+done &gt;&gt; &quot;$file&quot;
 </code></pre>
 </li>
+<li>
+<p>A macro script that extracts specific fields from a spreadsheet and mangles them into arbitrary JSON data, I use this to update my <a href="https://microsounds.github.io/notes/figures.htm">figure collection page </a> on my personal site.</p>
+<ul>
+<li><code>sc</code> is very old and predates most notions of CSV or tab delimited data,
+the easiest way to extract fields with spaces is use <code>expect</code> to output a colon separated table using the <code>T</code> command <em>“interactively”</em>,
+write it to the default filename ending in <code>.cln</code>, and then delete it when finshed.</li>
 </ul>
+<pre><code class="language-shell">#!/usr/bin/env sh
+
+# generate simplified JSON data for website
+file=&quot;${0%.*}&quot;
+
+expect &lt;&lt;- EOF &gt; /dev/null
+	spawn sc &quot;$file&quot;
+	expect &quot;sc 7.16&quot; {
+		send -- &quot;T\n&quot;
+	}
+	expect &quot;i&gt; tbl&quot; {
+		send -- &quot;\n Q\n&quot;
+		expect eof
+	}
+EOF
+
+# replace empty colon delimited fields with '(null)' for consistency
+# yes this is very ugly
+cat &quot;${file%.*}.cln&quot; \
+	| sed -e '/^::/d' -e 's/^:/(null):/g' -e 's/::/:(null):/g' \
+		-e 's/::/:(null):/g' -e 's/:$/:(null)/g' \
+	| tr ':' '\t' | cut -f1-5 | tail -n +5 | while read -r status id key desc; do
+		case &quot;$desc&quot; in
+			knockoff*|counterfeit*|fake*) id=&quot;x$id&quot;;;
+			*)	case &quot;$status&quot; in
+					unopened|displayed|storage);;
+					wishlist) id=&quot;w$id&quot;;;
+					*) id=&quot;p$id&quot;;;
+				esac;;
+		esac
+		year=&quot;${desc#*	}&quot;
+		desc=&quot;${desc%	$year}&quot;
+		desc=&quot;$(echo &quot;$desc&quot; | sed &quot;s/'/\\\\'/g&quot;)&quot; # escape quotes
+		printf &quot;\t[ '%s', '%s', '%s (%s)' ],\n&quot; \
+			&quot;$id&quot; &quot;$key&quot; &quot;$desc&quot; &quot;$year&quot;
+done &gt; &quot;${file%.*}.json&quot;
+
+rm -f &quot;${file%.*}.cln&quot;
+</code></pre>
+</li>
+</ol>
 <h1>Downloads<span id="Downloads"></span></h1>
 <ul>
 <li><code>git clone https://github.com/microsounds/atelier</code></li>
@@ -1154,14 +1201,14 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-294.90KiB
+296.41KiB
 out of a total compressed git history size of
-953.82KiB.</em></p>
+956.79KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  11K   Dec 27 2023 22:56 rev. 143 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Jan 18 2024 13:16 rev. 93  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.2K   Jan 19 2024 19:07 rev. 94  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -1274,7 +1321,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1 2.0K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png">.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png</a>
 -rw-r--r-- 1  106   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta">.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta</a>
 -rw-r--r-- 1  65K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.png">.minecraft/resourcepacks/HatsuneMiku_2023/pack.png</a>
--rw-r--r-- 1 1.7K   Jun 25 2022 15:12 rev. 34  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
+-rw-r--r-- 1 1.7K   Jan 19 2024 22:51 rev. 35  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Aug 26 2023 09:38 rev. 23  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
@@ -1315,10 +1362,10 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  35K   Dec 31 2023 22:35 rev. 203 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  36K   Jan 19 2024 21:03 rev. 204 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 18 Jan 2024 13:16:17 -0800 -->
+<!-- updated Fri, 19 Jan 2024 22:51:17 -0800 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">

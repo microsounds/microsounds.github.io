@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Thu, 18 Jan 2024 13:16:17 -0800</lastBuildDate>
+<lastBuildDate>Fri, 19 Jan 2024 22:51:17 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -22,12 +22,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 945, commit b47289a. “Nothing important, adding faketime as essential comfort” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 34.4KiB in size, and the approximate size of all comment lines of code is 72.1KiB then this document currently covers about 9.54% of all implemented features and behavior in this repository. This is just an [automated [..]]]>
+<![CDATA[Revision No. 948, commit 7e22c70. “nano: Enable touchpad scrolling support” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 35.9KiB in size, and the approximate size of all comment lines of code is 72.1KiB then this document currently covers about 9.95% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Thu, 18 Jan 2024 13:16:17 -0800</pubDate>
+<pubDate>Fri, 19 Jan 2024 22:51:17 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>

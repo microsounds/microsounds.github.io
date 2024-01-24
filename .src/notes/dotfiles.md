@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">945</b>, commit `b47289a`.**
+**Revision No. <b style="font-size: 130%">948</b>, commit `7e22c70`.**
 
-**"Nothing important, adding faketime as essential comfort"**
+**"nano: Enable touchpad scrolling support"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *34.4KiB* in
+If this document is *35.9KiB* in
 size, and the approximate size of all comment lines of code is
 *72.1KiB* then this document
-currently covers about <b style="font-size: 130%;">9.54%</b>
+currently covers about <b style="font-size: 130%;">9.95%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -584,8 +584,8 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 * You can write an arbitrarily complex pre-run macro script in any language, so long as it's made aware of its own filename at runtime.
 	* _Because the `sc` file format is plaintext, you can generate `sc` syntax with just a shell script._
 
-### `sc` pre-run macro example
-* This is an example of a conditional macro script for an inventory spreadsheet that color-codes cells when specific strings are found.
+### `sc` pre-run macro example scripts
+1. A macro script for an inventory spreadsheet that color-codes cells when specific strings are found.
 
 	```shell
 	#!/usr/bin/env sh
@@ -614,8 +614,55 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 	done >> "$file"
 	```
 
+2. A macro script that extracts specific fields from a spreadsheet and mangles them into arbitrary JSON data, I use this to update my [figure collection page ](https://microsounds.github.io/notes/figures.htm) on my personal site.
+	 * `sc` is very old and predates most notions of CSV or tab delimited data,
+the easiest way to extract fields with spaces is use `expect` to output a colon separated table using the `T` command _"interactively"_,
+write it to the default filename ending in `.cln`, and then delete it when finshed.
+
+
+	```shell
+	#!/usr/bin/env sh
+
+	# generate simplified JSON data for website
+	file="${0%.*}"
+
+	expect <<- EOF > /dev/null
+		spawn sc "$file"
+		expect "sc 7.16" {
+			send -- "T\\\\n"
+		}
+		expect "i> tbl" {
+			send -- "\\\\n Q\\\\n"
+			expect eof
+		}
+	EOF
+
+	# replace empty colon delimited fields with '(null)' for consistency
+	# yes this is very ugly
+	cat "${file%.*}.cln" \
+		| sed -e '/^::/d' -e 's/^:/(null):/g' -e 's/::/:(null):/g' \
+			-e 's/::/:(null):/g' -e 's/:$/:(null)/g' \
+		| tr ':' '\\\\t' | cut -f1-5 | tail -n +5 | while read -r status id key desc; do
+			case "$desc" in
+				knockoff*|counterfeit*|fake*) id="x$id";;
+				*)	case "$status" in
+						unopened|displayed|storage);;
+						wishlist) id="w$id";;
+						*) id="p$id";;
+					esac;;
+			esac
+			year="${desc#*	}"
+			desc="${desc%	$year}"
+			desc="$(echo "$desc" | sed "s/'/\\\\\\\\\\\\\\\\'/g")" # escape quotes
+			printf "\\\\t[ '%s', '%s', '%s (%s)' ],\\\\n" \
+				"$id" "$key" "$desc" "$year"
+	done > "${file%.*}.json"
+
+	rm -f "${file%.*}.cln"
+	```
+
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime19.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime32.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -641,15 +688,15 @@ Instead, the shell function `sc()` offers an easier to understand macro system f
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-294.90KiB
+296.41KiB
 out of a total compressed git history size of
-953.82KiB._
+956.79KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  11K   Dec 27 2023 22:56 rev. 143 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Jan 18 2024 13:16 rev. 93  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.2K   Jan 19 2024 19:07 rev. 94  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -762,7 +809,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1 2.0K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png">.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png</a>
 -rw-r--r-- 1  106   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta">.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta</a>
 -rw-r--r-- 1  65K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.png">.minecraft/resourcepacks/HatsuneMiku_2023/pack.png</a>
--rw-r--r-- 1 1.7K   Jun 25 2022 15:12 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
+-rw-r--r-- 1 1.7K   Jan 19 2024 22:51 rev. 35  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Aug 26 2023 09:38 rev. 23  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
@@ -803,7 +850,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  35K   Dec 31 2023 22:35 rev. 203 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  36K   Jan 19 2024 21:03 rev. 204 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 18 Jan 2024 13:16:17 -0800 -->
+<!-- updated Fri, 19 Jan 2024 22:51:17 -0800 -->
