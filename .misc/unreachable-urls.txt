@@ -78,6 +78,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dmenu/conf
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/config.h
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/patches/desktop-icons.diff
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/patches/floating-alwayscenter.diff
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/patches/floating-saveposition.diff
@@ -91,6 +93,8 @@ HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/dwm/pre-run
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/fcitx5/profile
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/fm/desktop.conf
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.config/fm/libfm.conf
 HTTP request sent, awaiting response... 404 Not Found
@@ -372,6 +376,16 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
+https://web.archive.org/web/20150510225104/http://www.last.fm/group/Boys+who+want+to+dress+up+as+schoolgirls+and+be+dominated
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://web.archive.org/web/20150510225104/http://www.last.fm/group/Boys+who+want+to+dress+up+as+schoolgirls+and+be+dominated
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+https://web.archive.org/web/20150516133133/http://www.last.fm/group/I+fall+in+luv+with+lastfm+users+based+on+their+anime+avatars
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://web.archive.org/web/20150516133133/http://www.last.fm/group/I+fall+in+luv+with+lastfm+users+based+on+their+anime+avatars
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+https://web.archive.org/web/20220616202318/https://dev.w3.org/html5/html-polyglot/html-polyglot.html
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1

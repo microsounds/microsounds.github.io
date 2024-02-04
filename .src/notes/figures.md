@@ -149,7 +149,7 @@ var figs = [
 	[ '861021', '93e28', 'sega preciality special nuigurumi (fuwafuwa mega (jumbo2019)' ],
 	[ 'p1781933', 'ecbab', 'design coco miku senbonzakura 10th anniv. ver 1/7 (scal2025)' ],
 	[ 'p1974911', '8f1ef', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
-	[ 'p2004539', '226b3', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
+	[ 'p2004539', 'bc24f', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
 	[ 'p236103', '20356', 'freeing b-style hatsune miku V3 1/4 scale (2016)' ],
 	[ 'p1911915', 'a30de', 'good smile komi-san maid outfit pop up parade (2024)' ],
 	[ 'p1941969', '725da', 'good smile DECO*27 vampire jirai miku nendoroid #2239 (2024)' ],
@@ -158,7 +158,7 @@ var figs = [
 	[ '1009', '633df', 'good smile kagamine len nendoroid #040 (2008)' ],
 	[ '1008', 'cbcc1', 'good smile kagamine rin nendoroid #039 (2008)' ],
 	[ '117503', 'e371a', 'good smile mikudayo nendoroid #299 (2013)' ],
-	[ '23566', '8126f', 'volks moekore plus miku encore #03.9 1/6 scale (2010)' ],
+	[ '23566', '9270f', 'volks moekore plus miku encore #03.9 1/6 scale (2010)' ],
 	[ '331720', '1ff7c', 'good smile project diva ha2ne miku nendoroid co-de (2016)' ],
 	[ '22229', 'e58da', 'sega hatsune miku PM figure (2010)' ],
 	[ '266283', 'f0162', 'taito hatsune miku mamama style api miku (2015)' ],
@@ -205,7 +205,7 @@ var figs = [
 	[ '1782785', 'da0ba', 'furyu exceed creative miku cyber future ver. (2023)' ],
 	[ '1618453', 'd327e', 'good smile pop up parade needy girl overdose kangel (2023)' ],
 	[ 'p1780064', '90bb0', 'taito miku artist masterpiece+ birthday 2023 ver. (2023)' ],
-	[ 'p1873722', '4dabb', 'taito miku fashion figure uniform ver. (2024)' ],
+	[ 'p1873722', 'cb8b9', 'taito miku fashion figure uniform ver. (2024)' ],
 	[ '1696654', '98c36', 'furyu miku flower fairy noodle stopper (2023)' ],
 	[ 'p945860', '6ae97', 'good smile miku nendoroid doll (2020)' ],
 	[ '1226915', '1067b', 'good smile miku date outfit ver. nendoroid doll (2023)' ],
@@ -268,8 +268,8 @@ var figs = [
 	[ 'w198011', '69a8c', 'max factory project diva 2nd mikuzukin miku 1/7 scale (2015)' ],
 	[ 'w236245', '829af', 'good smile tell your world miku 1/8 scale (2015)' ],
 	[ 'w78591', '17fbf', 'max factory miku HSP ver. 1/7 scale (2012)' ],
-	[ 'w1917313', '23eaf', 'sega miku x cinnamoroll premium noodle stopper (2024)' ],
-	[ 'w1954286', '75f37', 'sega luminasta miku x cinnamoroll (2024)' ],
+	[ 'w1917313', '63f61', 'sega miku x cinnamoroll premium noodle stopper (2024)' ],
+	[ 'w1954286', 'cb979', 'sega luminasta miku x cinnamoroll (2024)' ],
 
 ];
 
