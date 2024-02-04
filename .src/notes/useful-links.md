@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2024/1/15 -->
+<!-- updated 2024/2/4 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -123,6 +123,8 @@
 	* _Generate TOTP codes from 2FA keys in QR or `otpauth://` format in your web browser without any authenticator phone app._
 * [disk prices](https://diskprices.com)
 	* _Automatically curated list of new/used disk storage prices on Amazon.com for various countries._
+* [Keyboard Simulator](https://keyboardsimulator.xyz)
+	* _3D custom mechanical keyboard simulator, lets you experiment with color schemes and combining keycap sets._
 * [sudomemo](https://www.sudomemo.net)
 	* _A revival of [Flipnote Hatena](https://en.wikipedia.org/wiki/Flipnote_Studio), a 2010s online hosting service for Nintendo DSi/3DS Flipnote Studio animations._
 * [Yume Nikki Online Project](https://ynoproject.net)
