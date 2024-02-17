@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sun, 04 Feb 2024 00:00:00 -0800</lastBuildDate>
+<lastBuildDate>Thu, 15 Feb 2024 02:34:27 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 955, commit 4f03ec4. “comforts: Adding some less commonly installed optional package groups” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 35.9KiB in size, and the approximate size of all comment lines of code is 72.8KiB then this document currently covers about 9.86% of all implemented features and behavior in this repository. This is just [..]]]>
+<![CDATA[Revision No. 957, commit d1201ff. “Post-install: Prevent xdg-desktop-portal- garbage from hanging GTK apps”* View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 37.2KiB in size, and the approximate size of all comment lines of code is 73.2KiB then this document currently covers about 10.16% of all implemented features and behavior in this repository. This is just an [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Thu, 01 Feb 2024 21:08:41 -0800</pubDate>
+<pubDate>Thu, 15 Feb 2024 02:34:27 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>
