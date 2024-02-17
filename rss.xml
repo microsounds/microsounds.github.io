@@ -10,16 +10,6 @@
 <title>sentimental µsounds</title>
 <description>unix and post-ironic anemoia, µsounds' starlit diary</description>
 <item>
-<title>Friendship ended with Thinkpad, now Chromebook (w/ Coreboot) is my best friend</title>
-<description>
-<![CDATA[ Posted on . In this article, I go over my personal philosophy in choosing a general purpose laptop computer for everyday use, and why that computer should be an inexpensive, readily available, and effectively disposable x86_64 Chromebook that you reflashed into a normal computer by pressing 3 keys, disconnecting the battery, and running one (1) shell script. You can click here to skip over my gushy minimalist opinions on laptops. 	 	Samsung Chromebook 4 (2019), and yes, the keyboard [..]]]>
-<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/chromebooks.htm">https://microsounds.github.io/notes/chromebooks.htm</a>]]>
-</description>
-<link>https://microsounds.github.io/notes/chromebooks.htm</link>
-<guid isPermaLink="true">https://microsounds.github.io/notes/chromebooks.htm</guid>
-<pubDate>Mon, 01 Jan 2024 00:00:00 -0800</pubDate>
-</item>
-<item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
 <![CDATA[Revision No. 955, commit 4f03ec4. “comforts: Adding some less commonly installed optional package groups” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 35.9KiB in size, and the approximate size of all comment lines of code is 72.8KiB then this document currently covers about 9.86% of all implemented features and behavior in this repository. This is just [..]]]>
@@ -78,6 +68,16 @@
 <link>https://microsounds.github.io/notes/useful-links.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/useful-links.htm</guid>
 <pubDate>Sun, 04 Feb 2024 00:00:00 -0800</pubDate>
+</item>
+<item>
+<title>Friendship ended with Thinkpad, now Chromebook (w/ Coreboot) is my best friend</title>
+<description>
+<![CDATA[ Posted on . In this article, I go over my personal philosophy in choosing a general purpose laptop computer for everyday use, and why that computer should be an inexpensive, readily available, and effectively disposable x86_64 Chromebook that you reflashed into a normal computer by pressing 3 keys, disconnecting the battery, and running one (1) shell script. You can click here to skip over my gushy minimalist opinions on laptops. 	 	Samsung Chromebook 4 (2019), and yes, the keyboard [..]]]>
+<![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/why-chromebooks.htm">https://microsounds.github.io/notes/why-chromebooks.htm</a>]]>
+</description>
+<link>https://microsounds.github.io/notes/why-chromebooks.htm</link>
+<guid isPermaLink="true">https://microsounds.github.io/notes/why-chromebooks.htm</guid>
+<pubDate>Mon, 01 Jan 2024 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>On Copyleft and why I use GPLv3</title>

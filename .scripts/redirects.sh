@@ -30,5 +30,5 @@ while read -r old new; do
 		</html>
 	EOF
 done <<- EOF
-	/notes/on-chromebooks.htm	/notes/chromebooks.htm
+	/notes/chromebooks.htm	/notes/why-chromebooks.htm
 EOF
