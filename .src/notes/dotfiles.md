@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">955</b>, commit `4f03ec4`.**
+**Revision No. <b style="font-size: 130%">957</b>, commit `d1201ff`.**
 
-**"comforts: Adding some less commonly installed optional package groups"**
+**"Post-install: Prevent xdg-desktop-portal-* garbage from hanging GTK apps"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *35.9KiB* in
+If this document is *37.2KiB* in
 size, and the approximate size of all comment lines of code is
-*72.8KiB* then this document
-currently covers about <b style="font-size: 130%;">9.86%</b>
+*73.2KiB* then this document
+currently covers about <b style="font-size: 130%;">10.16%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -236,7 +236,30 @@ Rationale for doing things this way is summarized in commit [`2fe1c3745`][rat].
 
 [rat]: https://github.com/microsounds/atelier/commit/2fe1c3745 "introduced ~/.once.d/10-git-upstream.sh"
 
-## Window manager
+## Window manager status bar
+Status bar daemon [`xwin-statusd`]({GIT_REMOTE}/atelier/raw/master/Scripts/wm_status.sh) is forked
+and piped to `xsetroot` at startup to provide a concise `dwm` status bar conditionally listing the following status information when available, including:
+
+* ⚿ `ssh-agent` status
+	* _Lists the number of active keys added to the agent, if any._
+* ∿ Avg. CPU temperature in ˚F / ↻ Fan speed in RPM
+	* _On laptops with active cooling, CPU temps are replaced with fan speed when fans spin up._
+* 📶 Network status
+	* _Lists name of first active network device reported by `network-manager`._
+* ↯ `acpi` status and battery life / 🔌 Power draw
+	* _Reports `acpi` battery life information, including net energy-rate in watts as reported by UPower._
+* 🔉 PulseAudio sink status
+	* _Reports volume and status of the currently active audio sink, detects headphone use._
+* 🌦 Geolocated current weather _(via wttr.in)_
+	* _Their API caching is very aggressive, emitting stale data often, downtime is common, only displayed when available._
+* 🌔 Moonphase and current date
+	* _Expresses the ordinal date and the current phase of the moon._
+* ⌛ Current time
+	* _Expresses the current time in AM/PM._
+
+Status bar output is suppressed to display notification text from `notify-send` when available, see [attached notes](#notify-send) for more info.
+
+## Window manager keybinds
 Keyboard layouts and secondary layers are handled by `keyd` globally for better quality of life on non-standard keyboards.
 At the X server level, keybinds are handled by a mix of ~~`xkb`~~, `dwm`, `sxhkd` and `fcitx5` in such a way to avoid keybind stomping.
 
@@ -662,7 +685,7 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime33.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime38.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -681,16 +704,16 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 > * `nyaa-magnet v0.1`
 > * `sfx-synth v0.2`
 > * `termux-ssh-askpass v0.3`
-> * `wm_status.sh v0.4`
+> * `wm_status.sh v0.5`
 > * `xrandr_cycle.sh v0.3`
 > * `xwin_decor.sh v1.0`
 > * `xwin_webm.sh v0.5`
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-298.86KiB
+300.99KiB
 out of a total compressed git history size of
-967.16KiB._
+969.86KiB._
 
 # Complete source listing
 
@@ -826,7 +849,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  619   Aug 26 2023 09:24 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/23-grub-config.sh">.once.d/23-grub-config.sh</a>
 -rwxr-xr-x 1  298   Nov 30 2021 00:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/24-initramfs-resume.sh">.once.d/24-initramfs-resume.sh</a>
 -rwxr-xr-x 1  752   Mar 21 2022 23:26 rev. 13  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/25-chromium-widevine.sh">.once.d/25-chromium-widevine.sh</a>
--rwxr-xr-x 1 1013   Dec 28 2023 02:14 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
+-rwxr-xr-x 1 1.1K   Feb 15 2024 02:34 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   Mar 21 2022 23:26 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
 -rwxr-xr-x 1  865   Dec 14 2023 22:03 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
@@ -846,13 +869,13 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1 2.0K   Dec 29 2023 10:42 rev. 29  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
--rwxr-xr-x 1 5.7K   Aug 25 2023 15:41 rev. 48  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
+-rwxr-xr-x 1 6.4K   Feb  5 2024 00:37 rev. 49  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Aug 20 2023 20:43 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 2.7K   Jan 31 2024 17:59 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  36K   Jan 19 2024 21:03 rev. 204 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  38K   Feb  5 2024 00:37 rev. 205 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 1 Feb 2024 21:08:41 -0800 -->
+<!-- updated Thu, 15 Feb 2024 02:34:27 -0800 -->

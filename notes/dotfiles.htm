@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">955</b>, commit <code>4f03ec4</code>.</strong></p>
-<p><strong>“comforts: Adding some less commonly installed optional package groups”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">957</b>, commit <code>d1201ff</code>.</strong></p>
+<p><em><em>“Post-install: Prevent xdg-desktop-portal-</em> garbage from hanging GTK apps”</em>*</p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -59,7 +59,8 @@
 <li><a href="#Essential-and-persistent-upstream-utilities">Essential and *persistent upstream utilities</a></li>
 </ul>
 </li>
-<li><a href="#Window-manager">Window manager</a>
+<li><a href="#Window-manager-status-bar">Window manager status bar</a></li>
+<li><a href="#Window-manager-keybinds">Window manager keybinds</a>
 <ul>
 <li><a href="#Generic-74-key-Chromebook-layout">Generic 74-key Chromebook layout</a></li>
 </ul>
@@ -126,19 +127,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>35.9KiB</em> in
+<p>If this document is <em>37.2KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>72.8KiB</em> then this document
-currently covers about <b style="font-size: 130%;">9.86%</b>
+<em>73.2KiB</em> then this document
+currently covers about <b style="font-size: 130%;">10.16%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌓 Thu, Feb 1st, 2024.</p>
+<p>Last updated 🌖 Thu, Feb 15th, 2024.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime33.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime38.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -438,7 +439,53 @@ Each script is self-contained, you can run them individually, anytime.</p>
 <p>Installation can be customized with user-provided executable install <del>hacks</del> scripts, named <code>{pre,post}-run</code>.
 These can be placed in <a href="https://github.com/microsounds/atelier/raw/master/.config/upstream"><code>~/.config/upstream</code></a> or at the root of a persistently installed utility’s install directory as described above</p>
 <p>Rationale for doing things this way is summarized in commit <a href="https://github.com/microsounds/atelier/commit/2fe1c3745" title="introduced ~/.once.d/10-git-upstream.sh"><code>2fe1c3745</code></a>.</p>
-<h2>Window manager<span id="Window-manager"></span></h2>
+<h2>Window manager status bar<span id="Window-manager-status-bar"></span></h2>
+<p>Status bar daemon <a href="https://github.com/microsounds/atelier/raw/master/Scripts/wm_status.sh"><code>xwin-statusd</code></a> is forked
+and piped to <code>xsetroot</code> at startup to provide a concise <code>dwm</code> status bar conditionally listing the following status information when available, including:</p>
+<ul>
+<li>⚿ <code>ssh-agent</code> status
+<ul>
+<li><em>Lists the number of active keys added to the agent, if any.</em></li>
+</ul>
+</li>
+<li>∿ Avg. CPU temperature in ˚F / ↻ Fan speed in RPM
+<ul>
+<li><em>On laptops with active cooling, CPU temps are replaced with fan speed when fans spin up.</em></li>
+</ul>
+</li>
+<li>📶 Network status
+<ul>
+<li><em>Lists name of first active network device reported by <code>network-manager</code>.</em></li>
+</ul>
+</li>
+<li>↯ <code>acpi</code> status and battery life / 🔌 Power draw
+<ul>
+<li><em>Reports <code>acpi</code> battery life information, including net energy-rate in watts as reported by UPower.</em></li>
+</ul>
+</li>
+<li>🔉 PulseAudio sink status
+<ul>
+<li><em>Reports volume and status of the currently active audio sink, detects headphone use.</em></li>
+</ul>
+</li>
+<li>🌦 Geolocated current weather <em>(via wttr.in)</em>
+<ul>
+<li><em>Their API caching is very aggressive, emitting stale data often, downtime is common, only displayed when available.</em></li>
+</ul>
+</li>
+<li>🌔 Moonphase and current date
+<ul>
+<li><em>Expresses the ordinal date and the current phase of the moon.</em></li>
+</ul>
+</li>
+<li>⌛ Current time
+<ul>
+<li><em>Expresses the current time in AM/PM.</em></li>
+</ul>
+</li>
+</ul>
+<p>Status bar output is suppressed to display notification text from <code>notify-send</code> when available, see <a href="#notify-send">attached notes</a> for more info.</p>
+<h2>Window manager keybinds<span id="Window-manager-keybinds"></span></h2>
 <p>Keyboard layouts and secondary layers are handled by <code>keyd</code> globally for better quality of life on non-standard keyboards.
 At the X server level, keybinds are handled by a mix of <del><code>xkb</code></del>, <code>dwm</code>, <code>sxhkd</code> and <code>fcitx5</code> in such a way to avoid keybind stomping.</p>
 <p><code>Caps Lock</code> is remapped to <code>Super_L</code> on all platforms.
@@ -1194,16 +1241,16 @@ found in the current revision:</em></p>
 <li><code>nyaa-magnet v0.1</code></li>
 <li><code>sfx-synth v0.2</code></li>
 <li><code>termux-ssh-askpass v0.3</code></li>
-<li><code>wm_status.sh v0.4</code></li>
+<li><code>wm_status.sh v0.5</code></li>
 <li><code>xrandr_cycle.sh v0.3</code></li>
 <li><code>xwin_decor.sh v1.0</code></li>
 <li><code>xwin_webm.sh v0.5</code></li>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-298.86KiB
+300.99KiB
 out of a total compressed git history size of
-967.16KiB.</em></p>
+969.86KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
@@ -1338,7 +1385,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  619   Aug 26 2023 09:24 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/23-grub-config.sh">.once.d/23-grub-config.sh</a>
 -rwxr-xr-x 1  298   Nov 30 2021 00:48 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/24-initramfs-resume.sh">.once.d/24-initramfs-resume.sh</a>
 -rwxr-xr-x 1  752   Mar 21 2022 23:26 rev. 13  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/25-chromium-widevine.sh">.once.d/25-chromium-widevine.sh</a>
--rwxr-xr-x 1 1013   Dec 28 2023 02:14 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
+-rwxr-xr-x 1 1.1K   Feb 15 2024 02:34 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   Mar 21 2022 23:26 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
 -rwxr-xr-x 1  865   Dec 14 2023 22:03 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
@@ -1358,16 +1405,16 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1 2.0K   Dec 29 2023 10:42 rev. 29  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
--rwxr-xr-x 1 5.7K   Aug 25 2023 15:41 rev. 48  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
+-rwxr-xr-x 1 6.4K   Feb  5 2024 00:37 rev. 49  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Aug 20 2023 20:43 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 2.7K   Jan 31 2024 17:59 rev. 34  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  36K   Jan 19 2024 21:03 rev. 204 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  38K   Feb  5 2024 00:37 rev. 205 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 1 Feb 2024 21:08:41 -0800 -->
+<!-- updated Thu, 15 Feb 2024 02:34:27 -0800 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
