@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">957</b>, commit `d1201ff`.**
+**Revision No. <b style="font-size: 130%">958</b>, commit `79944e7`.**
 
-**"Post-install: Prevent xdg-desktop-portal-* garbage from hanging GTK apps"**
+**"mpv: Reduced OSD font size during playback"**
 
 {TOC}
 
@@ -685,7 +685,7 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime38.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime51.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -711,9 +711,9 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-300.99KiB
+301.00KiB
 out of a total compressed git history size of
-969.86KiB._
+970.36KiB._
 
 # Complete source listing
 
@@ -747,7 +747,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  872   Nov 28 2023 18:11 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/keyd/chromebook.conf">.config/keyd/chromebook.conf</a>
 -rw-r--r-- 1   81   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/keyd/default.conf">.config/keyd/default.conf</a>
--rw-r--r-- 1  643   Dec  7 2022 19:20 rev. 20  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
+-rw-r--r-- 1  657   Feb 17 2024 01:11 rev. 21  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rwxr-xr-x 1  323   Mar 11 2022 22:34 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
@@ -878,4 +878,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  38K   Feb  5 2024 00:37 rev. 205 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 15 Feb 2024 02:34:27 -0800 -->
+<!-- updated Sat, 17 Feb 2024 01:11:20 -0800 -->

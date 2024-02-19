@@ -1,7 +1,7 @@
 http://crbug.com/396634.
 HTTP request sent, awaiting response... 404 Not Found
 http://storage.googleapis.com/dalecurtis-shared/vine/index.html?src=video2.webm
-HTTP request sent, awaiting response... 403 Forbidden
+HTTP request sent, awaiting response... 404 Not Found
 https://answers.microsoft.com/en-us/windows/forum/all/all-windows-10-devices-with-16-gb-emmc-as-c-drive/1af1355c-dbf6-4d04-9248-8dc274729f8e
 HTTP request sent, awaiting response... 404 Not Found
 https://api.lanyard.rest/v1/users/
@@ -40,6 +40,8 @@ https://maki.cafe/
 HTTP request sent, awaiting response... 307 Temporary Redirect
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
+https://neal.fun/internet-artifacts/
+HTTP request sent, awaiting response... 403 Forbidden
 https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
