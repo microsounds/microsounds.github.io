@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2023/10/2 -->
+<!-- updated 2024/2/19 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -96,10 +96,12 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide.
 | AMD Radeon RX 560 | 2017 | 75W | 3604 | Available from MSI, VisionTek (workstation 1-slot card) |
 | Nvidia GeForce GTX 750 Ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
 | AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
-| Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | |
+| Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | A "display adaptor" """"successor""""" to GT 1030. |
+| Intel Arc A380 | 2022 | 75W | 5091 | **Requires CPU with Resizeable BAR**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
+| Nvidia GeForce RTX 3050 6GB | 2024 | 75W | 10557 | Successor to GTX 1650 LP. |
 | Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card. |
 | Nvidia GeForce RTX 4060 | 2023 | 75W | 19444 | Listed at 115W, available in 75W low profile. |
 
