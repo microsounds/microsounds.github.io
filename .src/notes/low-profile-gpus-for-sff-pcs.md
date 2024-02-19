@@ -97,16 +97,29 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide.
 | Nvidia GeForce GTX 750 Ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
 | AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
 | Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | A "display adaptor" """"successor""""" to GT 1030. |
-| Intel Arc A380 | 2022 | 75W | 5091 | **Requires CPU with Resizeable BAR**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
+| Intel Arc A380 | 2022 | 75W | 5091 | **Requires CPU with [Resizeable BAR][6]**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
 | Nvidia GeForce RTX 3050 6GB | 2024 | 75W | 10557 | Successor to GTX 1650 LP. |
-| Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card. |
-| Nvidia GeForce RTX 4060 | 2023 | 75W | 19444 | Listed at 115W, available in 75W low profile. |
+| Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card, 12GB VRAM, most efficient LP card available. |
+
+# 2-slot Low Profile exceeding 75W
+> **NOTE**<br/>
+> _Consider other form factors if you need this much graphical power, if you don't strictly need an SFF it can be much more economical to opt for cases that fit full-height cards._
+
+These are dual slot low profile and will run very hot on account of requiring external power via PCIe 8-pin connectors.
+
+If your SFF's PSU does not feature PCIe 8-pin connectors, you can draw power from unused SATA power connectors using ***SATA to PCIe 8-pin power adaptors***, but you are also likely to exceed the power limits of your prebuilt's power supply.
+
+Even if your PSU has enough overhead, a 115W card will draw 75W from the PCIe slot and 40W more from PCIe 8-pin---you risk damaging your system if drawing that power from SATA power adaptors as the SATA spec only guarantees 54W and you are most likely already drawing 3W for every connected SATA SSD.
+
+| Name | Released | TDP | PassMark G3D Score | Remarks |
+| :-- | :--: | :--: |:--: | :-- |
+| Nvidia GeForce RTX 4060 | 2023 | 115W | 19444 | 8GB VRAM, **Requires PCIe 8-pin power.** |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [3]: https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 [4]: https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
 [5]: https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
-
+[6]: https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
