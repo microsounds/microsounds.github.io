@@ -426,3 +426,5 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
+https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
+HTTP request sent, awaiting response... 403 Forbidden
