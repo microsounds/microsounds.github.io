@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Mon, 19 Feb 2024 20:44:47 -0800</lastBuildDate>
+<lastBuildDate>Tue, 20 Feb 2024 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -67,7 +67,7 @@
 </description>
 <link>https://microsounds.github.io/notes/useful-links.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/useful-links.htm</guid>
-<pubDate>Sun, 04 Feb 2024 00:00:00 -0800</pubDate>
+<pubDate>Tue, 20 Feb 2024 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>Friendship ended with Thinkpad, now Chromebook (w/ Coreboot) is my best friend</title>

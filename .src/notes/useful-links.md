@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2024/2/4 -->
+<!-- updated 2024/2/20 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -133,7 +133,9 @@
 * [NOAA GOES](https://www.star.nesdis.noaa.gov/GOES)
 	* _Near-live weather animations from US NOAA weather satellites._
 * [PassMark CPU Benchmarks](https://www.cpubenchmark.net/singleCompare.php)
-	* _Compare CPU single and multi-threaded performance for CPUs released since 1999._
+	* _Compare relative single and multi-threaded performance for CPUs released since 1999._
+* [PassMark GPU Benchmarks](https://www.videocardbenchmark.net/singleCompare.php)
+	* _Compare relative 2D and 3D graphical performance for GPUs released since 1999._
 * [Project Sekai Stickers](https://st.ayaka.one/)
 	* _Create your own messenger emotes/stickers based on those found in mobile rhythm gacha [Project SEKAI](https://projectsekai.fandom.com/wiki/Project_SEKAI_COLORFUL_STAGE!)._
 * [hikaku sitatter](https://hikaku-sitatter.com/en/)
