@@ -22,8 +22,6 @@ https://archived.moe/lgbt/
 HTTP request sent, awaiting response... 403 Forbidden
 https://cdn.discordapp.com/avatars/
 HTTP request sent, awaiting response... 404 Not Found
-https://cdromance.com/
-HTTP request sent, awaiting response... 403 Forbidden
 https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/docs/ControlSequences&
 HTTP request sent, awaiting response... 404 Not Found
 https://counter.digits.net/?counter=%7Bc670b40d-4ee8-9e24-9d82-2ee79a5b1f54%7D&amp;template=simple&amp;background=647975&amp;charset=25
@@ -366,8 +364,6 @@ https://support.google.com/chrome/a/answer/6220366
 HTTP request sent, awaiting response... 404 Not Found
 https://suruga-ya.jp/
 https://suruya-ga.com/
-https://validator.w3.org/check?uri=referer
-HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 HTTP request sent, awaiting response... 403 Forbidden
 https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
@@ -378,6 +374,8 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
+https://wowana.me/
+(try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
@@ -428,3 +426,4 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
 HTTP request sent, awaiting response... 403 Forbidden
+https://www.losertown.org/eats/cal.php
