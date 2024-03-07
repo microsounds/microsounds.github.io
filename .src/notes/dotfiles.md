@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">960</b>, commit `c627859`.**
+**Revision No. <b style="font-size: 130%">965</b>, commit `11b25d1`.**
 
-**"mpv: Enable hardware decoding, disable filtering on chromebooks"**
+**"Post-install: Termux port is excluded from post-merge hooks for now"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *37.2KiB* in
+If this document is *38.6KiB* in
 size, and the approximate size of all comment lines of code is
-*73.3KiB* then this document
-currently covers about <b style="font-size: 130%;">10.14%</b>
+*73.8KiB* then this document
+currently covers about <b style="font-size: 130%;">10.46%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -52,8 +52,9 @@ Last updated {UPDATED}.
 <!-- start of document -->
 
 This is my primary computing setup, a self-contained graphical shell environment for Debian GNU/Linux.
-* Git is used to maintain an identical and reproducible setup across multiple machines.
-* A series of post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d) document and reproduce system-wide deviations from a fresh install.
+* Git is used to maintain an identical and reproducible setup across any number of machines.
+* A series of [procedural](#On-declarative-OSes) post-install scripts in [`~/.once.d`]({GIT_REMOTE}/atelier/raw/master/.once.d) document and reproduce system-wide deviations from a fresh install.
+	* _Git hooks ensure a [consistent running environment](#Applying-changes-automatically-after-state-change) even when the underlying state changes._
 	* _A [suite of unit tests]({GIT_REMOTE}/atelier/raw/master/.github/workflows/ci.yml) ensures a reproducible installation with each revision._
 
 Detailed installation instructions are provided, along with some documentation for the most essential components.
@@ -193,6 +194,11 @@ See [attached notes](#Termux-for-Android) for overview of changes from a standar
 * Termux terminal emulator and Linux environment for Android
 	* _Non-standard *NIX environment, currently only supports a subset of available features._
 
+## On declarative OSes
+While it might be easy to draw parallels to my setup and _NixOS_, my system completely avoids the horrors of _"containerization"_ and the innumerable drawbacks to adopting declarative functional OSes like _NixOS_ and _GNU Guix_.
+
+They're in my shortlist of [timesink software ecosystems](https://news.ycombinator.com/item?id=36262356) that I don't want anything to do with, along with the Rust programming language, equally cult-like in their usage and online communities, all of of which require significant changes to your toolchain and computing lifestyle, requiring you to adapt to their limitations when it really should be the other way around.
+
 # Usage notes
 ## Using `git meta`
 For local-scope changes, files in `$HOME` are versioned and mangled in place using Git.
@@ -235,6 +241,11 @@ These can be placed in [`~/.config/upstream`]({GIT_REMOTE}/atelier/raw/master/.c
 Rationale for doing things this way is summarized in commit [`2fe1c3745`][rat].
 
 [rat]: https://github.com/microsounds/atelier/commit/2fe1c3745 "introduced ~/.once.d/10-git-upstream.sh"
+
+### Applying changes automatically after state change
+For git operations that change the underlying state of the `git meta` working tree in `$HOME`, such as merges, pulling from remote, or checking out an older commit, post-install scripts that have changed will be re-run automatically git `post-merge` hook symlinked to [`~/.local/lib/apply-changes`]({GIT_REMOTE}/atelier/raw/master/.local/lib/apply-changes) to ensure a consistent environment.
+
+For changes that affect currently running programs, `apply-changes` will alert the user if the X session or user login should be restarted to finish applying changes.
 
 ## Window manager status bar
 Status bar daemon [`xwin-statusd`]({GIT_REMOTE}/atelier/raw/master/Scripts/wm_status.sh) is forked
@@ -439,7 +450,7 @@ You must give Termux permission to display over other apps via `Settings > Apps 
 Shell scripts on Android systems without root access have no access to standard file descriptors `/dev/std{in,out,err}`, use `/proc/self/fd/{0,1,2}` instead.
 
 ### `ESC` sequences
-`<backslash>e` to insert escape literals in scripts works for some OSC codes, but not all, use octal `<backslash>33` when in doubt.
+Using `\\\\e` to insert escape literals in scripts works for some OSC codes, but not all, use octal `\\\\33` when in doubt.
 
 ### `$PREFIX`
 Previously, `termux-chroot` was used to ensure FHS-compliance, but it introduced unacceptable performance speed.
@@ -685,7 +696,7 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 	```
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime1.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime29.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -696,6 +707,7 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 > _Version numbers for selected long-lived components
 > found in the current revision:_
 > * `android-termux.sh v1.1`
+> * `apply-changes v0.1`
 > * `chromium_widevine.sh v0.2`
 > * `getquote v0.5`
 > * `git_status.sh v0.7`
@@ -711,15 +723,15 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-301.14KiB
+303.98KiB
 out of a total compressed git history size of
-971.52KiB._
+971.47KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  11K   Dec 27 2023 22:56 rev. 143 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Feb  1 2024 21:08 rev. 95  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.2K   Mar  1 2024 22:41 rev. 96  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -747,7 +759,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  872   Nov 28 2023 18:11 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/keyd/chromebook.conf">.config/keyd/chromebook.conf</a>
 -rw-r--r-- 1   81   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/keyd/default.conf">.config/keyd/default.conf</a>
--rw-r--r-- 1  793   Feb 28 2024 00:32 rev. 23  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
+-rw-r--r-- 1  820   Mar  1 2024 22:41 rev. 24  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/mpv/mpv.conf">.config/mpv/mpv.conf</a>
 -rwxr-xr-x 1  323   Mar 11 2022 22:34 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
@@ -770,7 +782,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1 4.0K   Aug 26 2023 09:38 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
--rwxr-xr-x 1 2.3K   May 25 2023 19:52 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
+-rwxr-xr-x 1 2.6K   Mar  2 2024 11:22 rev. 18  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
@@ -801,6 +813,7 @@ lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xwin-widgets -> ../../
 -rw-r--r-- 1  690   Nov 15 2021 23:00 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/include/colors/overcast.h">.local/include/colors/overcast.h</a>
 -rw-r--r-- 1  642   Feb 15 2021 00:56 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/include/colors/xterm.h">.local/include/colors/xterm.h</a>
 -rw-r--r-- 1 1.6K   Dec 24 2021 12:04 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/include/theme.h">.local/include/theme.h</a>
+-rwxr-xr-x 1 1.1K   Mar  2 2024 19:09 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/apply-changes">.local/lib/apply-changes</a>
 -rwxr-xr-x 1  650   Jul 10 2021 23:42 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/conf-append">.local/lib/conf-append</a>
 -rwxr-xr-x 1  477   Jul 10 2021 23:42 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/extern">.local/lib/extern</a>
 -rwxr-xr-x 1  187   Nov 28 2023 16:45 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/is-chromebook">.local/lib/is-chromebook</a>
@@ -837,7 +850,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1 1.7K   Jan 26 2024 20:48 rev. 36  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Aug 26 2023 09:38 rev. 23  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
--rwxr-xr-x 1  463   Mar 24 2021 21:09 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
+-rwxr-xr-x 1  586   Mar  2 2024 12:39 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
 -rwxr-xr-x 1  213   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/0p-pocketchip-dpi.sh">.once.d/0p-pocketchip-dpi.sh</a>
 -rwxr-xr-x 1 2.5K   Aug 20 2023 20:43 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/10-git-upstream.sh">.once.d/10-git-upstream.sh</a>
 -rwxr-xr-x 1  657   Apr 29 2023 09:35 rev. 10  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
@@ -875,7 +888,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  38K   Feb  5 2024 00:37 rev. 205 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  39K   Mar  2 2024 14:00 rev. 208 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 28 Feb 2024 00:32:56 -0800 -->
+<!-- updated Sat, 2 Mar 2024 19:09:25 -0800 -->

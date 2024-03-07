@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Thu, 29 Feb 2024 00:00:00 -0800</lastBuildDate>
+<lastBuildDate>Sat, 02 Mar 2024 19:09:25 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 960, commit c627859. “mpv: Enable hardware decoding, disable filtering on chromebooks” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 37.2KiB in size, and the approximate size of all comment lines of code is 73.3KiB then this document currently covers about 10.14% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 965, commit 11b25d1. “Post-install: Termux port is excluded from post-merge hooks for now” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 38.6KiB in size, and the approximate size of all comment lines of code is 73.8KiB then this document currently covers about 10.46% of all implemented features and behavior in this repository. This is [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Wed, 28 Feb 2024 00:32:56 -0800</pubDate>
+<pubDate>Sat, 02 Mar 2024 19:09:25 -0800</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>
