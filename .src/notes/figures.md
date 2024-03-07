@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/2/29 -->
+<!-- updated 2024/3/6 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -268,7 +268,10 @@ var figs = [
 	[ 'w78591', '17fbf', 'max factory miku HSP ver. 1/7 scale (2012)' ],
 	[ 'w1917313', '63f61', 'sega miku x cinnamoroll premium noodle stopper (2024)' ],
 	[ 'w1954286', 'cb979', 'sega luminasta miku x cinnamoroll (2024)' ],
-
+	[ 'w1956669', '12734', 'good smile miku v3 nendoroid #2360 (2024)' ],
+	[ 'w1460097', '41456', 'spiritale miku my queen!! 1/7 scale (2024)' ],
+	[ 'w1623825', '9f105', 'spiritale miku birthday 2022 polaris ver. 1/7 scale (2024)' ],
+	[ 'w1974621', '553b9', 'taito miku fashion figure lolita (lmao) (2024)' ],
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
