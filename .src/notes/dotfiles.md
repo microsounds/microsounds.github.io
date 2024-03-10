@@ -725,7 +725,7 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 >_Total on-disk size of the current revision is
 303.98KiB
 out of a total compressed git history size of
-971.47KiB._
+976.34KiB._
 
 # Complete source listing
 
