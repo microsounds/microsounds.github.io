@@ -76,7 +76,15 @@ during it's first Windows Update?
 Of course, they ran like hot garbage when used with the preloaded OS, but they could be <span class="blink">made to fly</span> if your choice of OS and desktop environment were [minimal enough]({DOC_ROOT}/notes/dotfiles.md "like mine").
 Their performance has [only improved with time](https://www.cpubenchmark.net/compare/2762vs2907vs3239vs3683vs5157),
 I assert that a sub-$120 Gemini Lake Chromebook released in 2019 is good enough to run any
-[non-gaming related task](https://www.youtube.com/watch?v=cTuSXC4ZAxo "genshin lol") you could be doing outside on a laptop.
+[non-gaming related task](https://www.youtube.com/watch?v=cTuSXC4ZAxo "genshin lol") you could be doing outside on a laptop.[^gaming]
+
+[^gaming]: While I don't suggest getting a Chromebook for gaming, it's not the worst idea.
+
+	If you're willing to cut your battery life from from 10 hours to 3, you can get ***Minecraft Java Edition*** to run at a stable 60fps on a Gemini Lake Chromebook using the rendering optimization mods [Sodium](https://modrinth.com/mod/sodium), [Lithium](https://modrinth.com/mod/lithium) and optionally [FerriteCore](https://modrinth.com/mod/ferrite-core).
+	If you're still worried about battery life while gaming, you can just lock the framerate to 30fps and get 6 hours on a full charge.
+
+	I would record footage demonstrating this, but I can't maintain this framerate while also capturing the X display.
+
 If you feel like spending more, you get more contemporary features like convertible 360° swiveling, touchscreens, fingerprint sensors and pen tablet displays.
 
 The inherent value provided by cheaply produced trash now far exceeds that of it's physical longevity or build quality.
