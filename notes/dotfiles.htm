@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">965</b>, commit <code>11b25d1</code>.</strong></p>
-<p><strong>“Post-install: Termux port is excluded from post-merge hooks for now”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">972</b>, commit <code>ad809fe</code>.</strong></p>
+<p><strong>“minecraft: Ensure launcher is installed to ~/.local/opt”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -120,6 +120,16 @@
 <li><a href="#sc-pre-run-macro-example-scripts"><code>sc</code> pre-run macro example scripts</a></li>
 </ul>
 </li>
+<li><a href="#Games">Games</a>
+<ul>
+<li><a href="#minecraft"><code>minecraft</code></a></li>
+<li><a href="#genshin-impact"><code>genshin-impact</code></a>
+<ul>
+<li><a href="#Usage">Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#Downloads">Downloads</a></li>
@@ -129,19 +139,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>38.6KiB</em> in
+<p>If this document is <em>41.9KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>73.8KiB</em> then this document
-currently covers about <b style="font-size: 130%;">10.46%</b>
+<em>74.1KiB</em> then this document
+currently covers about <b style="font-size: 130%;">11.32%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌓 Sat, Mar 2nd, 2024.</p>
+<p>Last updated 🌕 Tue, Mar 12th, 2024.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime29.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime3b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -1231,6 +1241,48 @@ rm -f &quot;${file%.*}.cln&quot;
 </code></pre>
 </li>
 </ol>
+<h2>Games<span id="Games"></span></h2>
+<p>A few Linux-compatible games I like that also can be fetched easily via the internet exist in this repo as scripts that auto-install the game on first run.
+Because these scripts install proprietary software they are not included during the post-install, some implementation notes are included.</p>
+<p>Proprietary games will be installed to <code>~/.local/opt</code>, configuration beyond the initial installation is outside the scope of this repo.</p>
+<h3><code>minecraft</code><span id="minecraft"></span></h3>
+<p><a href="https://github.com/microsounds/atelier/raw/master/.local/bin/minecraft"><code>minecraft</code></a> launches or installs <a href="https://github.com/UltimMC/Launcher">UltimMC offline launcher</a>, and a Java runtime environment if not already installed.</p>
+<p>UltimMC is a fork of MultiMC which allows you to play any version of <strong>Minecraft Java Edition</strong> offline <em>with or without</em> a paid Minecraft account, it can manage your mods, resource packs and saved worlds as “instances” you can import or export freely.</p>
+<p>While you can play online multiplayer normally with a legitimate paid account, you can also login with just a username on 3rd-party servers that specifically allow unauthenticated (“pirate” or “cracked”) clients.</p>
+<p>Regardless of which Minecraft version you prefer, using vanilla optimization mods such as
+<a href="https://modrinth.com/mod/sodium">Sodium</a>,
+<a href="https://modrinth.com/mod/lithium">Lithium</a>,
+and <a href="https://modrinth.com/mod/ferrite-core">FerriteCore</a> can improve framerate, performance lag, and GPU utilization by 2.5x or more.</p>
+<p>Minimum requirements for acceptable performance:</p>
+<ul>
+<li>any integrated gfx introduced since ~2008 or so</li>
+<li>2GB of disk space</li>
+<li>1GB of RAM</li>
+</ul>
+<h3><code>genshin-impact</code><span id="genshin-impact"></span></h3>
+<blockquote>
+<p><strong>WARNING</strong><br/>
+<em>Genshin Impact 4.4.0 requires at least 170GB of disk space for intitial installation,
+this is on top of of the install size of 32-bit + 64bit Wine which is 1.3GB.</em></p>
+</blockquote>
+<p><a href="https://github.com/microsounds/atelier/raw/master/.local/bin/genshin-impact"><code>genshin-impact</code></a> launches or installs <strong>Genshin Impact</strong> using an unofficial and potentially ToS violating set of Linux patches that disables the Linux-hostile anticheat software, they request you do not name or link to them directly, just look in the script for the project repo.</p>
+<p>Newer versions of the patch still disable analytics but longer touch the actual game files, so it’s possible playing on Linux is no longer a bannable offense.
+Nobody has ever been banned <a href="https://www.google.com/search?q=genshin+impact+steam+deck">playing on a Steam Deck</a> running SteamOS.</p>
+<h4>Usage<span id="Usage"></span></h4>
+<p>Wine 5.3 or later is required, various prerequsite tools are installed along with the game.
+Since this is a Windows game running over Wine using various hacks, this installation script and the steps required are awful and anything but automatic.</p>
+<p>This is legitimately the worst script in the repo, <em><strong>read the script to understand what is being done before installing.</strong></em></p>
+<p>During the installation, a Wine prefix will be set up, some winetricks, prerequisite MSVC frameworks, along with the official installer will be downloaded and installed, install everything as it pops up.
+Follow the <code>xmessage</code> prompts as they pop up.</p>
+<p>Run <code>genshin-impact</code> to run the game. Use the <code>-l</code> flag to open the official launcher to install updates but <em><strong>DO NOT</strong></em> launch the game this way.</p>
+<p>Minimum requirements for acceptable performance:</p>
+<ul>
+<li>2c4t CPU introduced since ~2008 or so <em>(eg. i5-530, Athlon II X2, etc.)</em></li>
+<li>2GB VRAM <em>(RX 550, GT 1030 or similar.)</em></li>
+<li>170GB of disk space</li>
+<li>8GB of RAM</li>
+<li>an always-on internet connection <em>(this is a live-service F2P gacha!)</em></li>
+</ul>
 <h1>Downloads<span id="Downloads"></span></h1>
 <ul>
 <li><code>git clone https://github.com/microsounds/atelier</code></li>
@@ -1258,9 +1310,9 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-303.98KiB
+308.25KiB
 out of a total compressed git history size of
-976.34KiB.</em></p>
+985.12KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
@@ -1320,9 +1372,10 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
--rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 3.0K   Mar  9 2024 23:53 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1 1.6K   Jan 26 2024 20:48 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
+-rwxr-xr-x 1  735   Mar 12 2024 13:29 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
 -rwxr-xr-x 1  790   Nov  6 2023 17:44 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/nyaa-magnet">.local/bin/nyaa-magnet</a>
@@ -1422,10 +1475,10 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  39K   Mar  2 2024 14:00 rev. 208 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  42K   Mar 10 2024 22:25 rev. 210 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 2 Mar 2024 19:09:25 -0800 -->
+<!-- updated Tue, 12 Mar 2024 13:29:52 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">

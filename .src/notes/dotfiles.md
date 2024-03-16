@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">965</b>, commit `11b25d1`.**
+**Revision No. <b style="font-size: 130%">972</b>, commit `ad809fe`.**
 
-**"Post-install: Termux port is excluded from post-merge hooks for now"**
+**"minecraft: Ensure launcher is installed to ~/.local/opt"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *38.6KiB* in
+If this document is *41.9KiB* in
 size, and the approximate size of all comment lines of code is
-*73.8KiB* then this document
-currently covers about <b style="font-size: 130%;">10.46%</b>
+*74.1KiB* then this document
+currently covers about <b style="font-size: 130%;">11.32%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -695,8 +695,61 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 	rm -f "${file%.*}.cln"
 	```
 
+## Games
+A few Linux-compatible games I like that also can be fetched easily via the internet exist in this repo as scripts that auto-install the game on first run.
+Because these scripts install proprietary software they are not included during the post-install, some implementation notes are included.
+
+Proprietary games will be installed to `~/.local/opt`, configuration beyond the initial installation is outside the scope of this repo.
+
+### `minecraft`
+[`minecraft`]({GIT_REMOTE}/atelier/raw/master/.local/bin/minecraft) launches or installs [UltimMC offline launcher](https://github.com/UltimMC/Launcher), and a Java runtime environment if not already installed.
+
+UltimMC is a fork of MultiMC which allows you to play any version of **Minecraft Java Edition** offline _with or without_ a paid Minecraft account, it can manage your mods, resource packs and saved worlds as "instances" you can import or export freely.
+
+While you can play online multiplayer normally with a legitimate paid account, you can also login with just a username on 3rd-party servers that specifically allow unauthenticated ("pirate" or "cracked") clients.
+
+Regardless of which Minecraft version you prefer, using vanilla optimization mods such as
+[Sodium](https://modrinth.com/mod/sodium),
+[Lithium](https://modrinth.com/mod/lithium),
+and [FerriteCore](https://modrinth.com/mod/ferrite-core) can improve framerate, performance lag, and GPU utilization by 2.5x or more.
+
+Minimum requirements for acceptable performance:
+* any integrated gfx introduced since ~2008 or so
+* 2GB of disk space
+* 1GB of RAM
+
+### `genshin-impact`
+
+> **WARNING**<br/>
+> _Genshin Impact 4.4.0 requires at least 170GB of disk space for intitial installation,
+> this is on top of of the install size of 32-bit + 64bit Wine which is 1.3GB._
+
+[`genshin-impact`]({GIT_REMOTE}/atelier/raw/master/.local/bin/genshin-impact) launches or installs **Genshin Impact** using an unofficial and potentially ToS violating set of Linux patches that disables the Linux-hostile anticheat software, they request you do not name or link to them directly, just look in the script for the project repo.
+
+Newer versions of the patch still disable analytics but longer touch the actual game files, so it's possible playing on Linux is no longer a bannable offense.
+Nobody has ever been banned [playing on a Steam Deck](https://www.google.com/search?q=genshin+impact+steam+deck) running SteamOS.
+
+#### Usage
+Wine 5.3 or later is required, various prerequsite tools are installed along with the game.
+Since this is a Windows game running over Wine using various hacks, this installation script and the steps required are awful and anything but automatic.
+
+This is legitimately the worst script in the repo, ***read the script to understand what is being done before installing.***
+
+During the installation, a Wine prefix will be set up, some winetricks, prerequisite MSVC frameworks, along with the official installer will be downloaded and installed, install everything as it pops up.
+Follow the `xmessage` prompts as they pop up.
+
+Run `genshin-impact` to run the game. Use the `-l` flag to open the official launcher to install updates but ***DO NOT*** launch the game this way.
+
+Minimum requirements for acceptable performance:
+* 2c4t CPU introduced since ~2008 or so _(eg. i5-530, Athlon II X2, etc.)_
+* 2GB VRAM _(RX 550, GT 1030 or similar.)_
+* 170GB of disk space
+* 8GB of RAM
+* an always-on internet connection _(this is a live-service F2P gacha!)_
+
+
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime29.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime3b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -723,9 +776,9 @@ write it to the default filename ending in `.cln`, and then delete it when finsh
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-303.98KiB
+308.25KiB
 out of a total compressed git history size of
-976.34KiB._
+985.12KiB._
 
 # Complete source listing
 
@@ -786,9 +839,10 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
--rwxr-xr-x 1 2.8K   Aug 28 2021 01:08 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 3.0K   Mar  9 2024 23:53 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1 1.6K   Jan 26 2024 20:48 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/make">.local/bin/make</a>
+-rwxr-xr-x 1  735   Mar 12 2024 13:29 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
 -rwxr-xr-x 1  790   Nov  6 2023 17:44 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/nyaa-magnet">.local/bin/nyaa-magnet</a>
@@ -888,7 +942,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  39K   Mar  2 2024 14:00 rev. 208 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  42K   Mar 10 2024 22:25 rev. 210 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 2 Mar 2024 19:09:25 -0800 -->
+<!-- updated Tue, 12 Mar 2024 13:29:52 -0700 -->
