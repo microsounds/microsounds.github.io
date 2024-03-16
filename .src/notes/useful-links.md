@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2024/2/20 -->
+<!-- updated 2024/3/15 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -118,17 +118,27 @@
 * [FMHY: freemediaheckyeah](https://fmhy.net)
 	* _Enormous rabbit hole of curated resources for streaming/downloading pirated TV, movies, music, books, anime, manga, sports, broadcast TV, radio, etc._
 
-**misc** ---
-* [twofactor.date](https://twofactor.date)
-	* _Generate TOTP codes from 2FA keys in QR or `otpauth://` format in your web browser without any authenticator phone app._
+**import hobby goods** ---
+* Online shops where I buy Vocaloid stuff, `(scale|articulated|prize)` figures, plushies, BDs, CDs, games, etc.
+	* [HobbyLink Japan: Vocaloid, recently added](https://www.hlj.com/search/?SeriesID2=Vocaloid&Page=1&Sort=rss+desc&GenreCode2=Action+Figures&GenreCode2=Dolls&GenreCode2=Trading+Figures&GenreCode2=Figures)
+		* _Pre-order and new in-stock, recently added preorders for Vocaloid scales, articulated figures, prizes, plushies._
+	* [AmiAmi: Vocaloid, pre-owned items](https://www.amiami.com/eng/search/list/?s_keywords=vocaloid&s_st_condition_flg=1)
+		* _Pre-owned Vocaloid scales, articulated figures, prizes, etc._
+	* [Mandarake: Vocaloid, pre-owned items](https://order.mandarake.co.jp/order/listPage/list?keyword=Vocaloid&lang=en)
+		* _Pre-owned Vocaloid scales, articulated figures, prizes, plushies, doujins, etc._
+	* Suruga-ya.com (Int'l): [VOCALOID*](https://www.suruga-ya.com/en/products?keyword=vocaloid), [Hatsune Miku](https://www.suruga-ya.com/en/products?keyword=hatsune+miku), [Project DIVA](https://www.suruga-ya.com/en/products?keyword=project+diva)
+		* _Pre-owned Vocaloid stuff, all of the above, including limited run merchandise like doujinshi, doujin music, keychains, clothes, etc._
+		* _Their search engine is awful, Vocaloid exists across at least 7 categories, this should cover all of them._
+
+**shopping** ---
 * [disk prices](https://diskprices.com)
 	* _Automatically curated list of new/used disk storage prices on Amazon.com for various countries._
+
+**tools** ---
+* [twofactor.date](https://twofactor.date)
+	* _Generate TOTP codes from 2FA keys in QR or `otpauth://` format in your web browser without any authenticator phone app._
 * [Keyboard Simulator](https://keyboardsimulator.xyz)
 	* _3D custom mechanical keyboard simulator, lets you experiment with color schemes and combining keycap sets._
-* [sudomemo](https://www.sudomemo.net)
-	* _A revival of [Flipnote Hatena](https://en.wikipedia.org/wiki/Flipnote_Studio), a 2010s online hosting service for Nintendo DSi/3DS Flipnote Studio animations._
-* [Yume Nikki Online Project](https://ynoproject.net)
-	* _Play the classic surreal atmospheric walking sim **Yume Nikki** and its many fangames, with friends, in your browser._
 * [poyopoyo gif maker](https://poyopoyo.gifanimaker.com)
 * [NOAA GOES](https://www.star.nesdis.noaa.gov/GOES)
 	* _Near-live weather animations from US NOAA weather satellites._
@@ -145,14 +155,20 @@
 * [TDEE Calculator](https://tdeecalculator.net)
 * [BLÅHAJ Finder](https://blahaj.quest/)
 	* _So you can buy a stuffed IKEA shark and immediately derail any thread on 4chan._
-* [The World Wide Web Project](http://info.cern.ch/)
-	* _Browse the first ever web page, romanticized history and opinions on the creation of the WWW at CERN between 1989-1993._
-* [Neal.fun: Internet Artifacts](https://neal.fun/internet-artifacts/)
-	* _Interactive exhibit of cultural milestones in the early days of the World Wide Web._
 * [ADS-B Exchange](https://globe.adsbexchange.com/)
 	* _View live air traffic and aircraft flight paths in your area, or anywhere in the world._
 * [Zenius-I-vanisher.com Arcade Machine Locator](https://zenius-i-vanisher.com/v5.2/arcades.php)
 	* _Database of arcade businesses and arcade machine locations, covers a wide variety of eastern and western game series._
+
+**misc** ---
+* [sudomemo](https://www.sudomemo.net)
+	* _A revival of [Flipnote Hatena](https://en.wikipedia.org/wiki/Flipnote_Studio), a 2010s online hosting service for Nintendo DSi/3DS Flipnote Studio animations._
+* [Yume Nikki Online Project](https://ynoproject.net)
+	* _Play the classic surreal atmospheric walking sim **Yume Nikki** and its many fangames, with friends, in your browser._
+* [The World Wide Web Project](http://info.cern.ch/)
+	* _Browse the first ever web page, romanticized history and opinions on the creation of the WWW at CERN between 1989-1993._
+* [Neal.fun: Internet Artifacts](https://neal.fun/internet-artifacts/)
+	* _Interactive exhibit of cultural milestones in the early days of the World Wide Web._
 
 **web 1.0-esque inspirations for this website** <span class="blink" style="color: #FFFF00;"><em>NSFW!</em></span> ---
 * [/g/'s Based Sites](https://based.coom.tech)

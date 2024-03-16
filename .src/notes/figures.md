@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/3/6 -->
+<!-- updated 2024/3/15 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,9 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1956669', '12734', 'good smile miku v3 nendoroid #2360 (2024)' ],
+	[ '287708', 'e0015', 'good smile gochiusa kafu chino nendo #558 (2017)' ],
+	[ 'p1876376', '23b1e', 'good smile cinnamoroll miku nendo #2306 (2024)' ],
 	[ '861021', '93e28', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
 	[ 'p1781933', 'ecbab', 'design coco miku senbonzakura 10th anniv. ver 1/7 scale (2025)' ],
 	[ 'p1974911', '8f1ef', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
@@ -268,7 +271,6 @@ var figs = [
 	[ 'w78591', '17fbf', 'max factory miku HSP ver. 1/7 scale (2012)' ],
 	[ 'w1917313', '63f61', 'sega miku x cinnamoroll premium noodle stopper (2024)' ],
 	[ 'w1954286', 'cb979', 'sega luminasta miku x cinnamoroll (2024)' ],
-	[ 'w1956669', '12734', 'good smile miku v3 nendoroid #2360 (2024)' ],
 	[ 'w1460097', '41456', 'spiritale miku my queen!! 1/7 scale (2024)' ],
 	[ 'w1623825', '9f105', 'spiritale miku birthday 2022 polaris ver. 1/7 scale (2024)' ],
 	[ 'w1974621', '553b9', 'taito miku fashion figure lolita (lmao) (2024)' ],
