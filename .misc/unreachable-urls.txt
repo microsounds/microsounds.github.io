@@ -20,7 +20,6 @@ https://archive.ph/rJuTE
 HTTP request sent, awaiting response... 429 Too Many Requests
 https://archived.moe/lgbt/
 HTTP request sent, awaiting response... 403 Forbidden
-https://based.coom.tech/
 https://cdn.discordapp.com/avatars/
 HTTP request sent, awaiting response... 404 Not Found
 https://cdromance.org/
@@ -49,11 +48,19 @@ https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
 HTTP request sent, awaiting response... 404 Not Found
+https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.htm
+HTTP request sent, awaiting response... 404 Not Found
+https://old.reddit.com/r/AnimeFigures/comments/if2feq/just_dont_buy_how_heavy_are_the_dumbbells_you/
+HTTP request sent, awaiting response... 403 Blocked
+https://old.reddit.com/r/rhythmgames/comments/w8cxcs/arcade_ic_card_faq/
+HTTP request sent, awaiting response... 403 Blocked
 https://pirg.org/edfund/resources/chromebook-churn-report-highlights-problems-of-short-lived-laptops-in-schools/
 HTTP request sent, awaiting response... 403 Forbidden
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
+HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/microsounds/atelier/master/.shortcuts/SFTP_Server
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
@@ -249,6 +256,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/user-co
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/visual
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/lib/x-user-confirm
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/share/X11/bitmaps/diag.xbm
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.local/share/applications/mimeapps.list
@@ -335,7 +344,7 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.profile
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.scrc
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.shortcuts/SFTP_Server
+https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.shortcuts/SFTP-Server
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/.xinitrc
 HTTP request sent, awaiting response... 404 Not Found
@@ -382,6 +391,10 @@ HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
+HTTP request sent, awaiting response... 403 Forbidden
+https://www.amiami.com/eng/search/list/?s_keywords=vocaloid&amp;s_st_condition_flg=1
+HTTP request sent, awaiting response... 403 Forbidden
+https://www.amiami.com/eng/search/list/?s_keywords=vocaloid&s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
@@ -431,5 +444,9 @@ https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
 https://www.ebay.com/n/error?statuscode=500
 HTTP request sent, awaiting response... 303 See Other
+https://www.hlj.com/search/?SeriesID2=Vocaloid&Page=1&Sort=rss+desc&GenreCode2=Action+Figures&GenreCode2=Dolls&GenreCode2=Trading+Figures&GenreCode2=Figures
+HTTP request sent, awaiting response... 405 Not Allowed
+https://www.hlj.com/search/?SeriesID2=Vocaloid&amp;Page=1&amp;Sort=rss+desc&amp;GenreCode2=Action+Figures&amp;GenreCode2=Dolls&amp;GenreCode2=Trading+Figures&amp;GenreCode2=Figures
+HTTP request sent, awaiting response... 405 Not Allowed
 https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
 HTTP request sent, awaiting response... 403 Forbidden

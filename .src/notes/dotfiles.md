@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">972</b>, commit `ad809fe`.**
+**Revision No. <b style="font-size: 130%">978</b>, commit `5c64e40`.**
 
-**"minecraft: Ensure launcher is installed to ~/.local/opt"**
+**"Termux: Acquire wakelock when running SFTP server, added logs"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *41.9KiB* in
+If this document is *43.6KiB* in
 size, and the approximate size of all comment lines of code is
-*74.1KiB* then this document
-currently covers about <b style="font-size: 130%;">11.32%</b>
+*74.2KiB* then this document
+currently covers about <b style="font-size: 130%;">11.75%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -721,27 +721,50 @@ Minimum requirements for acceptable performance:
 ### `genshin-impact`
 
 > **WARNING**<br/>
-> _Genshin Impact 4.4.0 requires at least 170GB of disk space for intitial installation,
+> _Genshin Impact 4.0.0+ requires at least 170GB of disk space to unzip the game,
 > this is on top of of the install size of 32-bit + 64bit Wine which is 1.3GB._
 
-[`genshin-impact`]({GIT_REMOTE}/atelier/raw/master/.local/bin/genshin-impact) launches or installs **Genshin Impact** using an unofficial and potentially ToS violating set of Linux patches that disables the Linux-hostile anticheat software, they request you do not name or link to them directly, just look in the script for the project repo.
+[`genshin-impact`]({GIT_REMOTE}/atelier/raw/master/.local/bin/genshin-impact) launches or installs the Windows version of **Genshin Impact** from official sources.
 
-Newer versions of the patch still disable analytics but longer touch the actual game files, so it's possible playing on Linux is no longer a bannable offense.
-Nobody has ever been banned [playing on a Steam Deck](https://www.google.com/search?q=genshin+impact+steam+deck) running SteamOS.
+Before version 3.8.0, this script used a certain Linux patch that [disabled the Linux-hostile anticheat software](https://notabug.org/Krock/dawn).
+Because it patched game files, it violated MiHoYo's terms of service and you risked banning your account if used.
+
+While newer versions don't officially support Linux, the game now runs on Wine with some tweaks, patching game files is no longer required.
+To date, nobody has reported being banned for [playing on a Steam Deck](https://www.google.com/search?q=genshin+impact+steam+deck) running Linux-based SteamOS.
+
+Refer to troubleshooting guides for
+[Windows](https://docs.google.com/spreadsheets/d/1I3aaXaNbHm-igAsFwvlCEHr5xyQKO4Wot8TuywsOhxw/pubhtml)
+or [Linux-specific](https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.md) problems
+if you have issues running the game or logging in.
+
+#### Camera movement issues
+A common problem is mouse camera movement being extremely sensitive or unresponsive after switching workspaces, to fix:
+1. Go to `Settings` and set display resolution to any _windowed mode_.
+2. Click anywhere on the virtual Wine desktop to focus on it.
+3. Click on the Genshin Impact titlebar to focus it, _make sure it turns blue_.
+4. Go to `Settings` and switch back to fullscreen, mouse movement should now work correctly.
+
+As a workaround, try to get into the habit of switching to a windowed resolution before focusing away from the game.
+
+#### Manual installation
+After installing the launcher, if you have barely enough disk space _(at least 90GB)_ for the game but not for unzipping, the Windows troubleshooting guide includes direct download links to the required .zip files.
+
+You can unzip in-memory with half the disk space required using `wget -O - [url] | busybox unzip` directly into `~/.local/opt/genshin-impact/drive_c/Program Files/Genshin Impact/Genshin Impact Game`.
+
+Even if you used the official installer, if you want to download language packs other than English, I would suggest this method, because downloading it in-game _(15-18GB)_ is very slow and cannot be done in the background.
 
 #### Usage
 Wine 5.3 or later is required, various prerequsite tools are installed along with the game.
-Since this is a Windows game running over Wine using various hacks, this installation script and the steps required are awful and anything but automatic.
-
-This is legitimately the worst script in the repo, ***read the script to understand what is being done before installing.***
+Since this is a Windows game running over Wine using various hacks, this installation script and the steps required are awful and anything but automatic, ***read the script to understand what is being done before installing.***
 
 During the installation, a Wine prefix will be set up, some winetricks, prerequisite MSVC frameworks, along with the official installer will be downloaded and installed, install everything as it pops up.
 Follow the `xmessage` prompts as they pop up.
 
-Run `genshin-impact` to run the game. Use the `-l` flag to open the official launcher to install updates but ***DO NOT*** launch the game this way.
+Run `genshin-impact` to launch the game directly, use `-l` flag to open the official launcher to install updates when needed, `-m` to use `mangohud` profiler and `--` to stop accepting flags, all other flags will be passed to the game executable.
 
 Minimum requirements for acceptable performance:
 * 2c4t CPU introduced since ~2008 or so _(eg. i5-530, Athlon II X2, etc.)_
+* GPU with Vulkan-compatible GPU _(Linux only.)_
 * 2GB VRAM _(RX 550, GT 1030 or similar.)_
 * 170GB of disk space
 * 8GB of RAM
@@ -749,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime3b.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime52.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -776,15 +799,15 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-308.25KiB
+310.12KiB
 out of a total compressed git history size of
-985.12KiB._
+996.76KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1  11K   Dec 27 2023 22:56 rev. 143 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Mar  1 2024 22:41 rev. 96  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1  11K   Mar 18 2024 10:03 rev. 144 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 1.3K   Mar 18 2024 10:04 rev. 97  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -839,7 +862,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
--rwxr-xr-x 1 3.0K   Mar  9 2024 23:53 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 2.7K   Mar 20 2024 17:43 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1 1.6K   Jan 26 2024 20:48 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  735   Mar 12 2024 13:29 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
@@ -888,6 +911,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 2.5K   Dec 19 2023 23:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/termux-ssh-askpass">.local/lib/termux-ssh-askpass</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
 -rwxr-xr-x 1  284   Apr  2 2023 19:27 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/visual">.local/lib/visual</a>
+-rwxr-xr-x 1  355   Mar 18 2024 11:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/x-user-confirm">.local/lib/x-user-confirm</a>
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  280   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/applications/mimeapps.list">.local/share/applications/mimeapps.list</a>
 -rw-r--r-- 1   80   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/applications/nano.desktop">.local/share/applications/nano.desktop</a>
@@ -924,14 +948,14 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
 -rwxr-xr-x 1 1.1K   Nov 23 2023 19:59 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2d-intel-bay-trail.sh">.once.d/2d-intel-bay-trail.sh</a>
--rwxr-xr-x 1 4.3K   Dec 25 2023 15:40 rev. 31  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 4.3K   Mar 29 2024 21:07 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Nov 28 2023 16:34 rev. 10  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-power-key.sh">.once.d/c0-chromebook-power-key.sh</a>
 -rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
 -rwxr-xr-x 1  199   Nov 28 2023 16:34 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p0-pocketchip-power-key.sh">.once.d/p0-pocketchip-power-key.sh</a>
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  886   Sep 10 2023 23:30 rev. 31  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.scrc">.scrc</a>
--rwxr-xr-x 1  838   Jan 31 2024 21:05 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.shortcuts/SFTP_Server">.shortcuts/SFTP_Server</a>
+-rwxr-xr-x 1 1004   Mar 29 2024 21:07 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.shortcuts/SFTP-Server">.shortcuts/SFTP-Server</a>
 -rw-r--r-- 1 2.5K   Jan 31 2024 17:59 rev. 78  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 2.0K   Dec 29 2023 10:42 rev. 29  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
@@ -942,7 +966,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  42K   Mar 10 2024 22:25 rev. 210 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Tue, 12 Mar 2024 13:29:52 -0700 -->
+<!-- updated Fri, 29 Mar 2024 21:07:55 -0700 -->
