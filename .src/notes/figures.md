@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/3/15 -->
+<!-- updated 2024/3/29 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p1764164', 'be850', 'good smile huggy miku trading fig (2023)' ],
 	[ 'p1956669', '12734', 'good smile miku v3 nendoroid #2360 (2024)' ],
 	[ '287708', 'e0015', 'good smile gochiusa kafu chino nendo #558 (2017)' ],
 	[ 'p1876376', '23b1e', 'good smile cinnamoroll miku nendo #2306 (2024)' ],

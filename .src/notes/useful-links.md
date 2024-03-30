@@ -139,7 +139,10 @@
 	* _Generate TOTP codes from 2FA keys in QR or `otpauth://` format in your web browser without any authenticator phone app._
 * [Keyboard Simulator](https://keyboardsimulator.xyz)
 	* _3D custom mechanical keyboard simulator, lets you experiment with color schemes and combining keycap sets._
-* [poyopoyo gif maker](https://poyopoyo.gifanimaker.com)
+* [OpenTaxSolver](https://opentaxsolver.sourceforge.net)
+	* _FOSS calculator that generates U.S. federal/state income tax returns, supports GUI and plaintext editor usage._
+* [poyopoyo gif animaker](https://poyopoyo.gifanimaker.com)
+	* _Generates lively and befuddling animated GIFs of static images, great for shitposting._
 * [NOAA GOES](https://www.star.nesdis.noaa.gov/GOES)
 	* _Near-live weather animations from US NOAA weather satellites._
 * [PassMark CPU Benchmarks](https://www.cpubenchmark.net/singleCompare.php)
