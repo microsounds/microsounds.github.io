@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 29 Mar 2024 21:07:55 -0700</lastBuildDate>
+<lastBuildDate>Sat, 30 Mar 2024 13:04:15 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 978, commit 5c64e40. “Termux: Acquire wakelock when running SFTP server, added logs” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 43.6KiB in size, and the approximate size of all comment lines of code is 74.2KiB then this document currently covers about 11.75% of all implemented features and behavior in this repository. This is just [..]]]>
+<![CDATA[Revision No. 979, commit 6d50048. “ledger: Renamed ledger-plot, documentation” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 43.6KiB in size, and the approximate size of all comment lines of code is 74.3KiB then this document currently covers about 11.74% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 29 Mar 2024 21:07:55 -0700</pubDate>
+<pubDate>Sat, 30 Mar 2024 13:04:15 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>

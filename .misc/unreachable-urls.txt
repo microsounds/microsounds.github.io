@@ -60,8 +60,6 @@ https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
-https://raw.githubusercontent.com/microsounds/atelier/master/.shortcuts/SFTP_Server
-HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master

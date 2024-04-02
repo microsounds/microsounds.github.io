@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">978</b>, commit `5c64e40`.**
+**Revision No. <b style="font-size: 130%">979</b>, commit `6d50048`.**
 
-**"Termux: Acquire wakelock when running SFTP server, added logs"**
+**"ledger: Renamed ledger-plot, documentation"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *43.6KiB* in
 size, and the approximate size of all comment lines of code is
-*74.2KiB* then this document
-currently covers about <b style="font-size: 130%;">11.75%</b>
+*74.3KiB* then this document
+currently covers about <b style="font-size: 130%;">11.74%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -772,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime52.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime34b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -799,14 +799,14 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-310.12KiB
+310.21KiB
 out of a total compressed git history size of
-996.76KiB._
+997.22KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1  11K   Mar 18 2024 10:03 rev. 144 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1  11K   Mar 30 2024 13:04 rev. 145 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
 -rw-r--r-- 1 1.3K   Mar 18 2024 10:04 rev. 97  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
@@ -969,4 +969,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 29 Mar 2024 21:07:55 -0700 -->
+<!-- updated Sat, 30 Mar 2024 13:04:15 -0700 -->
