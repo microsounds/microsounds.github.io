@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">972</b>, commit <code>ad809fe</code>.</strong></p>
-<p><strong>“minecraft: Ensure launcher is installed to ~/.local/opt”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">979</b>, commit <code>6d50048</code>.</strong></p>
+<p><strong>“ledger: Renamed ledger-plot, documentation”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -125,6 +125,8 @@
 <li><a href="#minecraft"><code>minecraft</code></a></li>
 <li><a href="#genshin-impact"><code>genshin-impact</code></a>
 <ul>
+<li><a href="#Camera-movement-issues">Camera movement issues</a></li>
+<li><a href="#Manual-installation">Manual installation</a></li>
 <li><a href="#Usage">Usage</a></li>
 </ul>
 </li>
@@ -139,19 +141,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>41.9KiB</em> in
+<p>If this document is <em>43.6KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>74.1KiB</em> then this document
-currently covers about <b style="font-size: 130%;">11.32%</b>
+<em>74.3KiB</em> then this document
+currently covers about <b style="font-size: 130%;">11.74%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌕 Tue, Mar 12th, 2024.</p>
+<p>Last updated 🌒 Sat, Mar 30th, 2024.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime3b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime34b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -1262,22 +1264,41 @@ and <a href="https://modrinth.com/mod/ferrite-core">FerriteCore</a> can improve 
 <h3><code>genshin-impact</code><span id="genshin-impact"></span></h3>
 <blockquote>
 <p><strong>WARNING</strong><br/>
-<em>Genshin Impact 4.4.0 requires at least 170GB of disk space for intitial installation,
+<em>Genshin Impact 4.0.0+ requires at least 170GB of disk space to unzip the game,
 this is on top of of the install size of 32-bit + 64bit Wine which is 1.3GB.</em></p>
 </blockquote>
-<p><a href="https://github.com/microsounds/atelier/raw/master/.local/bin/genshin-impact"><code>genshin-impact</code></a> launches or installs <strong>Genshin Impact</strong> using an unofficial and potentially ToS violating set of Linux patches that disables the Linux-hostile anticheat software, they request you do not name or link to them directly, just look in the script for the project repo.</p>
-<p>Newer versions of the patch still disable analytics but longer touch the actual game files, so it’s possible playing on Linux is no longer a bannable offense.
-Nobody has ever been banned <a href="https://www.google.com/search?q=genshin+impact+steam+deck">playing on a Steam Deck</a> running SteamOS.</p>
+<p><a href="https://github.com/microsounds/atelier/raw/master/.local/bin/genshin-impact"><code>genshin-impact</code></a> launches or installs the Windows version of <strong>Genshin Impact</strong> from official sources.</p>
+<p>Before version 3.8.0, this script used a certain Linux patch that <a href="https://notabug.org/Krock/dawn">disabled the Linux-hostile anticheat software</a>.
+Because it patched game files, it violated MiHoYo’s terms of service and you risked banning your account if used.</p>
+<p>While newer versions don’t officially support Linux, the game now runs on Wine with some tweaks, patching game files is no longer required.
+To date, nobody has reported being banned for <a href="https://www.google.com/search?q=genshin+impact+steam+deck">playing on a Steam Deck</a> running Linux-based SteamOS.</p>
+<p>Refer to troubleshooting guides for
+<a href="https://docs.google.com/spreadsheets/d/1I3aaXaNbHm-igAsFwvlCEHr5xyQKO4Wot8TuywsOhxw/pubhtml">Windows</a>
+or <a href="https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.htm">Linux-specific</a> problems
+if you have issues running the game or logging in.</p>
+<h4>Camera movement issues<span id="Camera-movement-issues"></span></h4>
+<p>A common problem is mouse camera movement being extremely sensitive or unresponsive after switching workspaces, to fix:</p>
+<ol>
+<li>Go to <code>Settings</code> and set display resolution to any <em>windowed mode</em>.</li>
+<li>Click anywhere on the virtual Wine desktop to focus on it.</li>
+<li>Click on the Genshin Impact titlebar to focus it, <em>make sure it turns blue</em>.</li>
+<li>Go to <code>Settings</code> and switch back to fullscreen, mouse movement should now work correctly.</li>
+</ol>
+<p>As a workaround, try to get into the habit of switching to a windowed resolution before focusing away from the game.</p>
+<h4>Manual installation<span id="Manual-installation"></span></h4>
+<p>After installing the launcher, if you have barely enough disk space <em>(at least 90GB)</em> for the game but not for unzipping, the Windows troubleshooting guide includes direct download links to the required .zip files.</p>
+<p>You can unzip in-memory with half the disk space required using <code>wget -O - [url] | busybox unzip</code> directly into <code>~/.local/opt/genshin-impact/drive_c/Program Files/Genshin Impact/Genshin Impact Game</code>.</p>
+<p>Even if you used the official installer, if you want to download language packs other than English, I would suggest this method, because downloading it in-game <em>(15-18GB)</em> is very slow and cannot be done in the background.</p>
 <h4>Usage<span id="Usage"></span></h4>
 <p>Wine 5.3 or later is required, various prerequsite tools are installed along with the game.
-Since this is a Windows game running over Wine using various hacks, this installation script and the steps required are awful and anything but automatic.</p>
-<p>This is legitimately the worst script in the repo, <em><strong>read the script to understand what is being done before installing.</strong></em></p>
+Since this is a Windows game running over Wine using various hacks, this installation script and the steps required are awful and anything but automatic, <em><strong>read the script to understand what is being done before installing.</strong></em></p>
 <p>During the installation, a Wine prefix will be set up, some winetricks, prerequisite MSVC frameworks, along with the official installer will be downloaded and installed, install everything as it pops up.
 Follow the <code>xmessage</code> prompts as they pop up.</p>
-<p>Run <code>genshin-impact</code> to run the game. Use the <code>-l</code> flag to open the official launcher to install updates but <em><strong>DO NOT</strong></em> launch the game this way.</p>
+<p>Run <code>genshin-impact</code> to launch the game directly, use <code>-l</code> flag to open the official launcher to install updates when needed, <code>-m</code> to use <code>mangohud</code> profiler and <code>--</code> to stop accepting flags, all other flags will be passed to the game executable.</p>
 <p>Minimum requirements for acceptable performance:</p>
 <ul>
 <li>2c4t CPU introduced since ~2008 or so <em>(eg. i5-530, Athlon II X2, etc.)</em></li>
+<li>GPU with Vulkan-compatible GPU <em>(Linux only.)</em></li>
 <li>2GB VRAM <em>(RX 550, GT 1030 or similar.)</em></li>
 <li>170GB of disk space</li>
 <li>8GB of RAM</li>
@@ -1310,14 +1331,14 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-308.25KiB
+310.21KiB
 out of a total compressed git history size of
-985.12KiB.</em></p>
+997.22KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
--rw-r--r-- 1  11K   Dec 27 2023 22:56 rev. 143 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.2K   Mar  1 2024 22:41 rev. 96  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1  11K   Mar 30 2024 13:04 rev. 145 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
+-rw-r--r-- 1 1.3K   Mar 18 2024 10:04 rev. 97  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  558   Nov 28 2023 17:29 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  604   Jan 17 2022 18:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -1372,7 +1393,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/fgrep -> egrep
--rwxr-xr-x 1 3.0K   Mar  9 2024 23:53 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
+-rwxr-xr-x 1 2.7K   Mar 20 2024 17:43 rev. 9   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1 1.6K   Jan 26 2024 20:48 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  735   Mar 12 2024 13:29 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
@@ -1421,6 +1442,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 2.5K   Dec 19 2023 23:01 rev. 4   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/termux-ssh-askpass">.local/lib/termux-ssh-askpass</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
 -rwxr-xr-x 1  284   Apr  2 2023 19:27 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/visual">.local/lib/visual</a>
+-rwxr-xr-x 1  355   Mar 18 2024 11:37 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/x-user-confirm">.local/lib/x-user-confirm</a>
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  280   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/applications/mimeapps.list">.local/share/applications/mimeapps.list</a>
 -rw-r--r-- 1   80   Aug 14 2021 15:39 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/share/applications/nano.desktop">.local/share/applications/nano.desktop</a>
@@ -1457,14 +1479,14 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
 -rwxr-xr-x 1 1.1K   Nov 23 2023 19:59 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2d-intel-bay-trail.sh">.once.d/2d-intel-bay-trail.sh</a>
--rwxr-xr-x 1 4.3K   Dec 25 2023 15:40 rev. 31  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 4.3K   Mar 29 2024 21:07 rev. 32  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Nov 28 2023 16:34 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/c0-chromebook-power-key.sh">.once.d/c0-chromebook-power-key.sh</a>
 -rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
 -rwxr-xr-x 1  199   Nov 28 2023 16:34 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p0-pocketchip-power-key.sh">.once.d/p0-pocketchip-power-key.sh</a>
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  886   Sep 10 2023 23:30 rev. 31  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
--rwxr-xr-x 1  838   Jan 31 2024 21:05 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.shortcuts/SFTP_Server">.shortcuts/SFTP_Server</a>
+-rwxr-xr-x 1 1004   Mar 29 2024 21:07 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.shortcuts/SFTP-Server">.shortcuts/SFTP-Server</a>
 -rw-r--r-- 1 2.5K   Jan 31 2024 17:59 rev. 78  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 2.0K   Dec 29 2023 10:42 rev. 29  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
@@ -1475,10 +1497,10 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  42K   Mar 10 2024 22:25 rev. 210 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Tue, 12 Mar 2024 13:29:52 -0700 -->
+<!-- updated Sat, 30 Mar 2024 13:04:15 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">

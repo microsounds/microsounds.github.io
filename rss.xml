@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 972, commit ad809fe. “minecraft: Ensure launcher is installed to ~/.local/opt” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 41.9KiB in size, and the approximate size of all comment lines of code is 74.1KiB then this document currently covers about 11.32% of all implemented features and behavior in this repository. This is just an [automated [..]]]>
+<![CDATA[Revision No. 979, commit 6d50048. “ledger: Renamed ledger-plot, documentation” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 43.6KiB in size, and the approximate size of all comment lines of code is 74.3KiB then this document currently covers about 11.74% of all implemented features and behavior in this repository. This is just an [automated guess][1] though. This [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Tue, 12 Mar 2024 13:29:52 -0700</pubDate>
+<pubDate>Sat, 30 Mar 2024 13:04:15 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>
@@ -27,7 +27,11 @@
 </description>
 <link>https://microsounds.github.io/notes/figures.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
+<<<<<<< HEAD
 <pubDate>Tue, 02 Apr 2024 00:00:00 -0700</pubDate>
+=======
+<pubDate>Fri, 29 Mar 2024 00:00:00 -0700</pubDate>
+>>>>>>> refs/remotes/origin/master
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
