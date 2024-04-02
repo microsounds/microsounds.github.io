@@ -1,9 +1,5 @@
 <!-- started 2022/4/21 -->
-<<<<<<< HEAD
 <!-- updated 2024/4/2 -->
-=======
-<!-- updated 2024/3/29 -->
->>>>>>> refs/remotes/origin/master
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
