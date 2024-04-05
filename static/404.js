@@ -87,6 +87,10 @@ var urls = [
 	'https://www.youtube.com/watch?v=l62uUZqz0Z8', /* livetune - ストロボナイツ */
 	'https://www.youtube.com/watch?v=92cXTK4MtaM', /* [COMPLETE SERIES] It's not my fault that Sand Canyon is not popular */
 	'https://www.youtube.com/watch?v=Ts9zAazWIzM', /* BAKAYARO + Po Pi Po 【Miku Hatsune x Death Note】*/
+	'https://www.youtube.com/watch?v=2SGLWfImxus', /* Steam版スタマス 初音ミク Mod - THE IDOL M@STER STARLIT SEASON Hatsune Miku Mod */
+	'https://www.youtube.com/watch?v=axDSvJmjtEo', /* [Miku V2] The Idolm@ster (VOCALOID COVER) */
+	'https://www.youtube.com/watch?v=P8lTfmXWvX8', /* full remix/medley containing unknown "Digital Girl" song! */
+	'https://www.youtube.com/watch?v=G9Nc3PxxKwU', /* unknown - digital girl [recreation] */
 
 //	'https://www.youtube.com/watch?v=3lkyJKGhjxM', /* [MMD]Ninja re bang bang - Hatsune Miku (GUMI Vocal) */
 //	'https://www.youtube.com/watch?v=yVkDAJ-zQck', /* [MMD]Happy Synthesizer - Hatsune Miku */
