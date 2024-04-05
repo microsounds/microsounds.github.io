@@ -77,9 +77,11 @@ coverage="${coverage%??}%"
 	# rewrite relative markdown links
 	# rewrite block-level align attributes with CSS
 	# replace inline shimeji with a random one
-	# replace screenshot with an embedded webm
-	webm="<video loop=\"loop\" autoplay=\"autoplay\" muted=\"muted\"> \
-		<source type=\"video/webm\" src=\"${D_RAW%/*/*}/{AUTHOR}/master/dotfiles/scrot.webm\" /></video>"
+	# replace screenshot with embedded webm, leave it as fallback for safari
+	webm="<video loop=\"loop\" autoplay=\"autoplay\" muted=\"muted\" \
+		poster=\"${D_RAW%/*/*}/{AUTHOR}/master/dotfiles/scrot.png\"> \
+		<source type=\"video/webm\" \
+		src=\"${D_RAW%/*/*}/{AUTHOR}/master/dotfiles/scrot.webm\" /></video>"
 
 	cat "$readme" | sed -E \
 		-e 's,\]\(([^#http][a-zA-Z0-9._\/-]*)\),\]\({GIT_REMOTE}/atelier/raw/master/\1\),g' \
