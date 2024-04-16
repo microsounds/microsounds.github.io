@@ -19,7 +19,7 @@ printf '%s\t%s\n' \
 
 # create graph from last 30 days of activity data
 { cat <<- EOF; cat activity.tsv | sort; } | gnuplot > activity.png
-	set terminal png
+	set terminal png transparent
 
 	set xlabel "date"
 	set xdata time
