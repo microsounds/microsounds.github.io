@@ -6,9 +6,13 @@ https://answers.microsoft.com/en-us/windows/forum/all/all-windows-10-devices-wit
 HTTP request sent, awaiting response... 404 Not Found
 https://api.lanyard.rest/v1/users/
 HTTP request sent, awaiting response... 404 Not Found
+https://api.mcsrvstat.us/3
+HTTP request sent, awaiting response... 404 Not Found
 https://archive.4plebs.org/o/
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/s4s/
+HTTP request sent, awaiting response... 403 Forbidden
+https://archive.4plebs.org/s4s/search/subject/s4scraft
 HTTP request sent, awaiting response... 403 Forbidden
 https://archive.4plebs.org/x/
 HTTP request sent, awaiting response... 403 Forbidden
@@ -400,8 +404,6 @@ https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
-https://www.cs.vu.nl/~ast/intel/
-(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://www.ebay.com/n/error
