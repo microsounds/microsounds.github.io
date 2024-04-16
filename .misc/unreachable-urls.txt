@@ -366,6 +366,8 @@ https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/Userscripts/youtub
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/atelier/master/readme&
 HTTP request sent, awaiting response... 404 Not Found
+https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scrot.png
+HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/%7BAUTHOR%7D/%7BAUTHOR%7D/master/dotfiles/scrot.webm
 HTTP request sent, awaiting response... 404 Not Found
 https://soundcloud.com/-redacted-
