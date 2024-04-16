@@ -12,7 +12,8 @@ wget -O - "$API/$SERVER" | jq . > "$SERVER.json"
 
 # player count history
 # -1 means offline
-player_count="$(jq -r '.players.online' < "$SERVER.json")" || player_count='-1'
+player_count="$(jq -r '.players.online' < "$SERVER.json")"
+[ "$player_count" = 'null' ] && player_count='-1'
 printf '%s\t%s\n' \
 	"$NOW" "$player_count" >> activity.tsv
 
