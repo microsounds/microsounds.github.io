@@ -14,20 +14,21 @@ wget -O - "$API/$SERVER" | jq . > "$SERVER.json"
 # -1 means offline
 player_count="$(jq -r '.players.online' < "$SERVER.json")" || player_count='-1'
 printf '%s\t%s\n' \
-	"$NOW" "$player_count" >> 'activity.tsv'
+	"$NOW" "$player_count" >> activity.tsv
 
-# create graph from existing data
+# create graph from last 30 days of activity data
 { cat <<- EOF; cat activity.tsv | sort; } | gnuplot > activity.png
 	set terminal png
 
 	set xlabel "date"
 	set xdata time
 	set timefmt "%Y-%m-%d +%H:%M:%S%:z"
-	set xtics scale 1,1
+	set xrange [time(0) - $((60 * 60 * 24 * 30)):time(0)]
 
-	set ylabel "player count (-1 = server down)"
+	set ylabel "number of players (-1 = server down)"
 	set yrange[-1:20]
 
+	set title "/s4scraft/ player count (last 30 days)"
 	set datafile separator "\t"
 	set grid
 	set style fill solid
@@ -57,7 +58,7 @@ fi
 # sort by most active players
 { rm leaderboard.tsv; sort -nk 2 | tac > leaderboard.tsv; } < leaderboard.tsv
 
-
+# regenerate static webpage
 cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	<!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
@@ -120,7 +121,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 
 		$(column -t leaderboard.tsv | nl)
 
-	Made with Free Software™, [view source code](s4scraft-tracker/status.sh) for this page.
+	Made with Free Software™, [view source code](https://github.com/microsounds/microsounds.github.io/blob/master/misc/s4scraft-tracker/status.sh) for this page.
 
 	</html>
 EOF
