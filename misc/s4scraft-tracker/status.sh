@@ -1,0 +1,126 @@
+#!/usr/bin/env sh
+# minecraft server uptime and player activity tracker
+
+SERVER='185.228.82.241'
+API='https://api.mcsrvstat.us/3'
+NOW="$(date -u --rfc-3339='seconds')"
+
+touch leaderboard.tsv activity.tsv
+trap 'rm -rvf "$SERVER.json"' 0 1 2 3 6
+
+wget -O - "$API/$SERVER" | jq . > "$SERVER.json"
+
+# player count history
+# -1 means offline
+player_count="$(jq -r '.players.online' < "$SERVER.json")" || player_count='-1'
+printf '%s\t%s\n' \
+	"$NOW" "$player_count" >> 'activity.tsv'
+
+# create graph from existing data
+{ cat <<- EOF; cat activity.tsv | sort; } | gnuplot > activity.png
+	set terminal png
+
+	set xlabel "date"
+	set xdata time
+	set timefmt "%Y-%m-%d +%H:%M:%S%:z"
+	set xtics scale 1,1
+
+	set ylabel "player count (-1 = server down)"
+	set yrange[-1:20]
+
+	set datafile separator "\t"
+	set grid
+	set style fill solid
+	set format x "%m/%d"
+	unset key
+	plot "-" using 1:2 with lines linewidth 5
+EOF
+optipng -o7 activity.png
+
+
+IFS='
+'
+# active player leaderboard
+# shows most active players by how often they're seen online
+if [ $player_count -gt 0 ]; then
+	jq -r '.players.list[].name' < "$SERVER.json" | while read -r name; do
+		count="$(grep "^$name" < leaderboard.tsv | cut -f2)"
+		count=$(( count + 1 ))
+		if [ $count -gt 1 ]; then
+			sed -i "s/$name.*/$name\t$count\t$NOW/" leaderboard.tsv
+		else
+			printf '%s\t%s\t%s\n' "$name" "$count" "$NOW" >> leaderboard.tsv
+		fi
+	done
+fi
+
+# sort by most active players
+{ rm leaderboard.tsv; sort -nk 2 | tac > leaderboard.tsv; } < leaderboard.tsv
+
+
+cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" type="image/x-icon" href="/static/sky.ico" />
+		<title>/s4scraft/ activity tracker | sentimental µsounds</title>
+		<style type="text/css">
+		html {
+			font-family: "Liberation Sans", "Arial", "Helvetica", sans;
+			font-size: 12px;
+			line-height: 12px;
+			min-height: 100%;
+			margin: 10px;
+			color: maroon;
+			background: #ffe url("https://s.4cdn.org/image/fade.png") top center repeat-x;
+		}
+		</style>
+	</head>
+
+	[![ico](/static/button/badge.png) _Back to homepage_](../)
+
+	<img src="/misc/s4scraft-tracker/s4scraft.png" width="400" align="right" />
+
+	# /s4scraft/ activity tracker
+	## Server Address: $SERVER
+	Le [s4s] minecraf survival serbur for [s4s] frens.
+
+	Java 1.20.2 and Bedrock (via [GeyserMC](https://geysermc.org/) on port 25565)
+
+	Latest news: [&gt;&gt;&gt;/s4s/s4scraft](https://archive.4plebs.org/s4s/search/subject/s4scraft)
+
+	# 💤 About —
+	**Rules**
+	* Be nice!
+	* No griefing/stealing
+	* No hacks/cheats
+	* 18+
+	* Overall use common sense.
+
+	**Features**
+	* Supports both Microsoft and Cracked accounts!
+	* No /tp, /home, etc, you'll need to walk!
+	* No telemetry :^)
+	* Permanent hard difficulty!
+	* Includes a death plugin so you don't lose yuore hard earned loot!
+	* Custom mob head drops!
+	* Map art???
+
+	# ✨ Player Count —
+	Server online since Feburary 2024, all times UTC.
+
+	Player statistics refreshed sporadically, unless GitHub Actions throttles me again, cus I'm not paying for a VPS.
+
+	![player_count](s4scraft-tracker/activity.png)
+
+	# 👑 Most Commonly Seen Players —
+	Rank, username, times spotted, date last spotted
+
+		$(column -t leaderboard.tsv | nl)
+
+	Made with Free Software™, [view source code](s4scraft-tracker/status.sh) for this page.
+
+	</html>
+EOF
