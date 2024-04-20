@@ -29,7 +29,7 @@ printf '%s\t%s\n' \
 	set xlabel "time (UTC)"
 	set xdata time
 	set timefmt "%Y-%m-%d %H:%M:%S"
-	set xrange [time(0) - $((60 * 60 * 24 * 14)):time(0)]
+	set xrange [time(0) - $((60 * 60 * 24 * 30)):time(0)]
 	set autoscale x
 	set format x "%m/%d"
 
