@@ -21,21 +21,23 @@ printf '%s\t%s\n' \
 { cat <<- EOF; cat activity.tsv | sort; } | gnuplot > activity.png
 	set terminal png transparent
 
-	set xlabel "date"
+	set datafile separator "\t"
+	set title "/s4scraft/ player count (last 30 days)"
+	set grid
+	unset key
+
+	set xlabel "time (UTC)"
 	set xdata time
-	set timefmt "%Y-%m-%d +%H:%M:%S%:z"
-	set xrange [time(0) - $((60 * 60 * 24 * 30)):time(0)]
+	set timefmt "%Y-%m-%d %H:%M:%S"
+	set xrange [time(0) - $((60 * 60 * 24 * 14)):time(0)]
+	set autoscale x
+	set format x "%m/%d"
 
 	set ylabel "number of players (-1 = server down)"
 	set yrange[-1:20]
+	set ytics 1
 
-	set title "/s4scraft/ player count (last 30 days)"
-	set datafile separator "\t"
-	set grid
-	set style fill solid
-	set format x "%m/%d"
-	unset key
-	plot "-" using 1:2 with lines linewidth 5
+	plot "-" using 1:2 with lines linewidth 3
 EOF
 optipng -o7 activity.png
 
@@ -78,6 +80,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 			color: maroon;
 			background: #ffe url("https://s.4cdn.org/image/fade.png") top center repeat-x;
 		}
+		img { max-width: 100%; } # mobile
 		</style>
 	</head>
 
