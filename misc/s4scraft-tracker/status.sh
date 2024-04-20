@@ -31,11 +31,13 @@ printf '%s\t%s\n' \
 	set timefmt "%Y-%m-%d %H:%M:%S"
 	set xrange [time(0) - $((60 * 60 * 24 * 30)):time(0)]
 	set autoscale x
-	set format x "%m/%d"
+	set format x "%m/%d\n%H:%M"
 
 	set ylabel "number of players (-1 = server down)"
 	set yrange[-1:20]
 	set ytics 1
+	set xtics rotate by 90 offset 0,-2.3 out nomirror
+
 
 	plot "-" using 1:2 with lines linewidth 3
 EOF
