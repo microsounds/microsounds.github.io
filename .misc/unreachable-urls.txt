@@ -40,11 +40,8 @@ https://diskprices.com/
 HTTP request sent, awaiting response... 403 Forbidden
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
-https://litterbox.catbox.moe/
-(try: 2)  https://litterbox.catbox.moe/
 https://maki.cafe/
 HTTP request sent, awaiting response... 307 Temporary Redirect
-https://makidoll.io/
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://neal.fun/internet-artifacts/
@@ -55,8 +52,18 @@ https://nhentai.net/
 HTTP request sent, awaiting response... 403 Forbidden
 https://nitter.eda.gay/search
 HTTP request sent, awaiting response... 404 Not Found
+https://notabug.org/Krock/dawn
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://notabug.org/Krock/dawn
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.htm
-HTTP request sent, awaiting response... 404 Not Found
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.htm
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.md
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+(try: 2)  https://notabug.org/Krock/dawn/src/master/TROUBLESHOOTING.md
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
 https://old.reddit.com/r/AnimeFigures/comments/if2feq/just_dont_buy_how_heavy_are_the_dumbbells_you/
 HTTP request sent, awaiting response... 403 Blocked
 https://old.reddit.com/r/rhythmgames/comments/w8cxcs/arcade_ic_card_faq/
@@ -65,7 +72,6 @@ https://pirg.org/edfund/resources/chromebook-churn-report-highlights-problems-of
 HTTP request sent, awaiting response... 403 Forbidden
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
-https://poyopoyo.gifanimaker.com/
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
@@ -400,6 +406,16 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
+https://web.archive.org/web/20150205231954/http://omori-game.com/
+HTTP request sent, awaiting response... 429 Too Many Requests
+https://web.archive.org/web/20150510225104/http://www.last.fm/group/Boys+who+want+to+dress+up+as+schoolgirls+and+be+dominated
+HTTP request sent, awaiting response... 429 Too Many Requests
+https://web.archive.org/web/20150516133133/http://www.last.fm/group/I+fall+in+luv+with+lastfm+users+based+on+their+anime+avatars
+HTTP request sent, awaiting response... 429 Too Many Requests
+https://web.archive.org/web/20220616202318/https://dev.w3.org/html5/html-polyglot/html-polyglot.html
+HTTP request sent, awaiting response... 429 Too Many Requests
+https://web.archive.org/web/20220731061144/https://dokodemo.neocities.org/
+HTTP request sent, awaiting response... 429 Too Many Requests
 https://wowana.me/
 (try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_keywords=vocaloid&amp;s_st_condition_flg=1
@@ -410,6 +426,8 @@ https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
+https://www.cs.vu.nl/~ast/intel/
+(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://www.ebay.com/n/error
@@ -458,4 +476,3 @@ https://www.hlj.com/search/?SeriesID2=Vocaloid&amp;Page=1&amp;Sort=rss+desc&amp;
 HTTP request sent, awaiting response... 405 Not Allowed
 https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
 HTTP request sent, awaiting response... 403 Forbidden
-https://www.pixiv.net/en/tags/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF
