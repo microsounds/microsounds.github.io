@@ -40,8 +40,11 @@ https://diskprices.com/
 HTTP request sent, awaiting response... 403 Forbidden
 https://jigsaw.w3.org/css-validator/check/referer
 HTTP request sent, awaiting response... 403 Forbidden
+https://litterbox.catbox.moe/
+(try: 2)  https://litterbox.catbox.moe/
 https://maki.cafe/
 HTTP request sent, awaiting response... 307 Temporary Redirect
+https://makidoll.io/
 https://mangadex.org/
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://neal.fun/internet-artifacts/
@@ -62,6 +65,7 @@ https://pirg.org/edfund/resources/chromebook-churn-report-highlights-problems-of
 HTTP request sent, awaiting response... 403 Forbidden
 https://poopingpenis.netlify.app/
 HTTP request sent, awaiting response... 404 Not Found
+https://poyopoyo.gifanimaker.com/
 https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/visual
 HTTP request sent, awaiting response... 404 Not Found
 https://raw.githubusercontent.com/microsounds/atelier/master/readme&
@@ -396,6 +400,8 @@ https://warosu.org/fa/
 HTTP request sent, awaiting response... 403 Forbidden
 https://warosu.org/jp/
 HTTP request sent, awaiting response... 403 Forbidden
+https://wowana.me/
+(try: 2)  https://wowana.me/
 https://www.amiami.com/eng/search/list/?s_keywords=vocaloid&amp;s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.amiami.com/eng/search/list/?s_keywords=vocaloid&s_st_condition_flg=1
@@ -404,8 +410,6 @@ https://www.amiami.com/eng/search/list/?s_st_condition_flg=1
 HTTP request sent, awaiting response... 403 Forbidden
 https://www.congress.gov/congressional-record/volume-144/issue-139/house-section/article/H9946-1
 HTTP request sent, awaiting response... 403 Forbidden
-https://www.cs.vu.nl/~ast/intel/
-(try: 2)  https://www.cs.vu.nl/~ast/intel/
 https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 HTTP request sent, awaiting response... 405 Method Not Allowed
 https://www.ebay.com/n/error
@@ -454,3 +458,4 @@ https://www.hlj.com/search/?SeriesID2=Vocaloid&amp;Page=1&amp;Sort=rss+desc&amp;
 HTTP request sent, awaiting response... 405 Not Allowed
 https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
 HTTP request sent, awaiting response... 403 Forbidden
+https://www.pixiv.net/en/tags/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF
