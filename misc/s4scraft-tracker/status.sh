@@ -118,7 +118,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	# ✨ Player Count —
 	Server online since Feburary 2024, all times UTC. <p id="offset"></p>
 
-	Player statistics refreshed sporadically, unless GitHub Actions throttles me again, cus I'm not paying for a VPS.
+	Last updated <code>$NOW</code>, statistics refreshed every 10 minutes, unless GitHub Actions throttles me again cus I don't wanna pay for a VPS.
 
 	![player_count](s4scraft-tracker/activity.png)
 
