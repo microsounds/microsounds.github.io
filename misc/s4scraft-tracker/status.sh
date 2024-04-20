@@ -82,7 +82,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 			color: maroon;
 			background: #ffe url("https://s.4cdn.org/image/fade.png") top center repeat-x;
 		}
-		img { max-width: 100%; } # mobile
+		img { max-width: 100%; } /* mobile */
 		</style>
 	</head>
 
@@ -116,7 +116,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	* Map art???
 
 	# ✨ Player Count —
-	Server online since Feburary 2024, all times UTC.
+	Server online since Feburary 2024, all times UTC. <p id="offset"></p>
 
 	Player statistics refreshed sporadically, unless GitHub Actions throttles me again, cus I'm not paying for a VPS.
 
@@ -128,6 +128,12 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 		$(column -t leaderboard.tsv | nl)
 
 	Made with Free Software™, [view source code](https://github.com/microsounds/microsounds.github.io/blob/master/misc/s4scraft-tracker/status.sh) for this page.
+
+	<script type="text/javascript">
+		var d = new Date()
+		var utc_off = -d.getTimezoneOffset() / 60;
+		document.getElementById("offset").innerHTML += "Your local time is UTC" + utc_off + '.';
+	</script>
 
 	</html>
 EOF
