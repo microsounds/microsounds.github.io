@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">981</b>, commit `e9a5ec0`.**
+**Revision No. <b style="font-size: 130%">982</b>, commit `c383b19`.**
 
-**"chromium: Disable 2024 chrome UI refresh and update persistent flags"**
+**"Nothing important, speeding up CI execution to every 10 minutes"**
 
 {TOC}
 
@@ -772,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime4.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime3.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -801,7 +801,7 @@ Minimum requirements for acceptable performance:
 >_Total on-disk size of the current revision is
 310.45KiB
 out of a total compressed git history size of
-998.66KiB._
+980.84KiB._
 
 # Complete source listing
 
@@ -855,7 +855,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1 2.5K   Dec 28 2023 22:56 rev. 31  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 4.0K   Apr 15 2024 20:59 rev. 33  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 4.0K   Apr 20 2024 09:37 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
 -rwxr-xr-x 1 2.6K   Mar  2 2024 11:22 rev. 18  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
@@ -969,4 +969,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Tue, 16 Apr 2024 01:14:26 -0700 -->
+<!-- updated Sat, 20 Apr 2024 09:37:43 -0700 -->
