@@ -94,9 +94,9 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 			font-size: 12px;
 			line-height: 12px;
 			min-height: 100%;
-			margin: 10px;
+			margin: 0 10px 10px 10px;
 			color: maroon;
-			background: #ffe url("https://s.4cdn.org/image/fade.png") top center repeat-x;
+			background: #FFE url("s4scraft-tracker/fade.png") top center repeat-x;
 		}
 		img { max-width: 100%; } /* mobile */
 		</style>
