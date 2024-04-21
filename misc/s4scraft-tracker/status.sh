@@ -61,7 +61,8 @@ if [ $player_count -gt 0 ]; then
 fi
 
 # sort by most active players
-{ rm leaderboard.tsv; sort -nk 2 | tac > leaderboard.tsv; } < leaderboard.tsv
+# first by latest login, then no of sightings
+{ rm leaderboard.tsv; sort -nk 3 | sort -nk 2 | tac > leaderboard.tsv; } < leaderboard.tsv
 
 # generates leaderboard to embed on page, rewrites timestamps to relative dates
 # TODO: make into a pretty rendered HTML table
