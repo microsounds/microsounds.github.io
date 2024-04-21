@@ -90,7 +90,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 		<meta http-equiv="Cache-Control" content="must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
-		<meta http-equiv="refresh" content="600">
+		<meta http-equiv="refresh" content="600" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" type="image/x-icon" href="/static/sky.ico" />
 		<title>/s4scraft/ activity tracker | sentimental µsounds</title>
