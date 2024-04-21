@@ -70,8 +70,8 @@ render_leaderboard() (
 	cat leaderboard.tsv | while read -r name count date; do
 		printf "$name\t$count\t"
 		[ "$date" = "$NOW" ] && printf '[!!!] Online NOW!' \
-			|| dateutils.ddiff "$date" "$NOW" -f "%Y %m %d %H %M" | while read -r yr mo d hr min; do
-			for f in yr mo d hr min; do
+			|| dateutils.ddiff "$date" "$NOW" -f "%Y %m %d %H %M" | while read -r y mo d h min; do
+			for f in y mo d h min; do
 				eval "[ \$${f} -gt 0 ] && printf '%s%s %s' \$${f} $f ago && break"
 			done
 		done
