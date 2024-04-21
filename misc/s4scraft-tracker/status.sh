@@ -63,6 +63,22 @@ fi
 # sort by most active players
 { rm leaderboard.tsv; sort -nk 2 | tac > leaderboard.tsv; } < leaderboard.tsv
 
+# generates leaderboard to embed on page, rewrites timestamps to relative dates
+# TODO: make into a pretty rendered HTML table
+render_leaderboard() (
+	unset IFS
+	cat leaderboard.tsv | while read -r name count date; do
+		printf "$name\t$count\t"
+		[ "$date" = "$NOW" ] && printf '[!!!] Online NOW!' \
+			|| dateutils.ddiff "$date" now -f "%Y %m %d %H %M" | while read -r yr mo d hr min; do
+			for f in yr mo d hr min; do
+				eval "[ \$${f} -gt 0 ] && printf '%s%s %s' \$${f} $f ago && break"
+			done
+		done
+		printf '\n'
+	done | column -ts '	' | nl
+)
+
 # regenerate static webpage
 cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	<!DOCTYPE html>
@@ -125,7 +141,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	# 👑 Most Commonly Seen Players —
 	Rank, username, times spotted, date last spotted
 
-		$(column -t leaderboard.tsv | nl)
+		$(render_leaderboard)
 
 	Made with Free Software™, [view source code](https://github.com/microsounds/microsounds.github.io/blob/master/misc/s4scraft-tracker/status.sh) for this page.
 
@@ -137,3 +153,4 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 
 	</html>
 EOF
+
