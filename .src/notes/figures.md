@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/4/2 -->
+<!-- updated 2024/4/27 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,9 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p2222288', '8080e', 'taito artist masterpiece+ miku birthday 2024 flower ver. (2024)' ],
+	[ 'p2256547', 'ae9de', 'good smile pop up parade miku v2 translucent color ver. (2024)' ],
+	[ 'p1941522', 'a8683', 'max factory plamatea miku 16th birthday ver. model kit (2024)' ],
 	[ 'p2210315', '161f7', 'good smile world is mine miku 2024 ver. nendoroid #2430 (2024)' ],
 	[ 'p1764164', 'be850', 'good smile huggy miku trading fig (2023)' ],
 	[ 'p1956669', '12734', 'good smile miku v3 nendoroid #2360 (2024)' ],
@@ -276,6 +279,7 @@ var figs = [
 	[ 'w1460097', '41456', 'spiritale miku my queen!! 1/7 scale (2024)' ],
 	[ 'w1623825', '9f105', 'spiritale miku birthday 2022 polaris ver. 1/7 scale (2024)' ],
 	[ 'w1974621', 'c012f', 'taito miku fashion figure lolita (lmao) (2024)' ],
+
 ];
 
 var thumbs = document.getElementById('fig-thumbs');
