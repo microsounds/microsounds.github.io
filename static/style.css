@@ -271,6 +271,32 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	font-display: swap;
 }
 
+/* vocaloid webring widget */
+@font-face {
+	font-family:'Orbi';
+	src:url(https://files.catbox.moe/q521mw.ttf);
+}
+@font-face {
+	font-family:'Pixel Operator';
+	 src:url(https://files.catbox.moe/kyguk9.ttf);
+}
+.webring-container {
+	font-style: italic;
+	padding: 10px;
+	width: 150px;
+	text-align: center;
+	background-color: #FFFFFF10;
+}
+.webring-info {
+	font-family: Orbi;
+	font-size: 20px;
+	color: #F07DB4;
+}
+.webring-links {
+	font-family: Pixel Operator;
+	font-size: 16px;
+}
+
 /* changes for mobile devices */
 @media only screen and (max-width: 1160px) {
 	/* background pic */
