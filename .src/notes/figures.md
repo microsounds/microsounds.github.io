@@ -239,7 +239,7 @@ var figs = [
 	[ '718192', '29017', 'hatsune miku 2nd season Winter ver. (2018)' ],
 	[ '1251026', 'e36e0', 'bandai q posket miku type a (2021)' ],
 	[ '944728', 'c98b0', 'furyu miku bicute bunnies original ver. (2020)' ],
-	[ '1311067', '82a91', 'taito miku artist masterpiece princess alice (2022)' ],
+	[ '1311067', 'f43ff', 'taito miku artist masterpiece princess alice (2022)' ],
 	[ '1141381', 'fe94b', 'taito miku artist masterpiece birthday 2021 (14th anniv.) (2021)' ],
 	[ '1293291', 'c95e9', 'furyu sakura miku noodle stopper (2022)' ],
 	[ '886807', '5b4b2', 'taito sakura miku 2020 ver. (2020)' ],
