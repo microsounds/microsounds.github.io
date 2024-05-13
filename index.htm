@@ -281,7 +281,7 @@ You should also know better than to paste <a href="http://thejh.net/misc/website
 	 */
 	var user = 'microsounds_'
 	var key = '%2001127cee9afb7a2e038698feeb376f7f';
-	api = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + user + '&api_key=' + key + '&format=json';
+	api = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + user + '&api_key=' + key + '&format=json';
 	req = new XMLHttpRequest();
 	req.open('GET', api, true);
 	req.onload = function() {
