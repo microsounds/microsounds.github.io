@@ -122,7 +122,10 @@ a collection of <em>“About Mes”</em> previously published on Last.fm
 <h2>Contact me<span id="Contact-me"></span></h2>
 <p>I’m <span id="discord-name"></span> on d*scord, feel free to message me anytime, I receive push notifications even when offline.<br/>
 Currently <span id="discord-status"></span>.
-<span class="footer" style="color: #CCC;">Powered by <a href="https://github.com/Phineas/lanyard">Lanyard API</a></span></p>
+<span class="footer" style="color: #CCC;">Powered by <a href="https://github.com/Phineas/lanyard">Lanyard API</a></span>
+<br/>
+<span id="lastfm-status"></span>
+<span class="footer" style="color: #CCC;">I still hate you, <a href="https://last.fm">last.fm</a> 💔💔💔</span></p>
 <p>If it’s about a project or a page on this website, open an issue or a pull request on GitHub at one of the links above.</p>
 <p><span class="blink" style="color: #FFFF00;"><em>New!</em></span> —
 You can also contact me by e-mail at the following address:</p>
@@ -270,6 +273,29 @@ You should also know better than to paste <a href="http://thejh.net/misc/website
 			document.getElementById('discord-status').innerHTML += 'Lanyard API is down and this feature is broken..';
 	};
 	req.send();
+
+	/* fetch last.fm last played track with official API
+	 * idk whose API key this is i just copied it from somewhere
+	 * this API is absolutely vile
+	 * TODO: fix issue with & symbols from response breaking XML parser and refusing to inject into DOM
+	 */
+	var user = 'microsounds_'
+	var key = '%2001127cee9afb7a2e038698feeb376f7f';
+	api = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + user + '&api_key=' + key + '&format=json';
+	req = new XMLHttpRequest();
+	req.open('GET', api, true);
+	req.onload = function() {
+		if (this.status == 200) {
+			var f = JSON.parse(this.response).recenttracks.track[0];
+			document.getElementById('lastfm-status').innerHTML = 'Last seen listening to 💽 ' +
+				'<em><a href="' + f.url + '">' + f.artist['#text'] + ' – ' + f.name + '</a></em>.';
+		}
+		else
+			document.getElementById('lastfm-status').innerHTML += 'Last.fm is down or this feature is broken!!';
+
+	};
+	req.send();
+
 /* ]]> */
 </script>
 <!-- extended reading on unix and adjacent topics -->
