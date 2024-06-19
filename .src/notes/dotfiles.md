@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">983</b>, commit `b158fed`.**
+**Revision No. <b style="font-size: 130%">984</b>, commit `15755af`.**
 
-**"comforts: Adding relative date utils"**
+**"winenv: Wine environment wrapper now walks up dir tree to set WINEPREFIX"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *43.6KiB* in
 size, and the approximate size of all comment lines of code is
-*74.3KiB* then this document
-currently covers about <b style="font-size: 130%;">11.74%</b>
+*74.5KiB* then this document
+currently covers about <b style="font-size: 130%;">11.71%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -799,9 +799,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-310.46KiB
+311.11KiB
 out of a total compressed git history size of
-986.05KiB._
+982.23KiB._
 
 # Complete source listing
 
@@ -878,7 +878,7 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1  671   Nov 28 2023 16:45 rev. 10  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  367   Dec 16 2022 12:16 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/to-chromium">.local/bin/to-chromium</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
--rwxr-xr-x 1  192   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
+-rwxr-xr-x 1  848   May 20 2024 20:46 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
 lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/bin/xwin-decor -> ../../Scripts/xwin_decor.sh
 lrwxrwxrwx 1   26   (symbolic link)   rev. 0   .local/bin/xwin-statusd -> ../../Scripts/wm_status.sh
@@ -969,4 +969,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 20 Apr 2024 18:28:55 -0700 -->
+<!-- updated Mon, 20 May 2024 20:46:43 -0700 -->

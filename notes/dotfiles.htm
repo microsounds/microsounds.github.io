@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">983</b>, commit <code>b158fed</code>.</strong></p>
-<p><strong>“comforts: Adding relative date utils”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">984</b>, commit <code>15755af</code>.</strong></p>
+<p><strong>“winenv: Wine environment wrapper now walks up dir tree to set WINEPREFIX”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -143,13 +143,13 @@
 in this repo is about <strong>5:1</strong>.</p>
 <p>If this document is <em>43.6KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>74.3KiB</em> then this document
-currently covers about <b style="font-size: 130%;">11.74%</b>
+<em>74.5KiB</em> then this document
+currently covers about <b style="font-size: 130%;">11.71%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌑 Sat, Apr 20th, 2024.</p>
+<p>Last updated 🌑 Mon, May 20th, 2024.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
@@ -1331,9 +1331,9 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-310.46KiB
+311.11KiB
 out of a total compressed git history size of
-986.05KiB.</em></p>
+982.23KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
@@ -1409,7 +1409,7 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1  671   Nov 28 2023 16:45 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/startx">.local/bin/startx</a>
 -rwxr-xr-x 1  367   Dec 16 2022 12:16 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/to-chromium">.local/bin/to-chromium</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
--rwxr-xr-x 1  192   Oct 10 2022 21:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
+-rwxr-xr-x 1  848   May 20 2024 20:46 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
 lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/bin/xwin-decor -> ../../Scripts/xwin_decor.sh
 lrwxrwxrwx 1   26   (symbolic link)   rev. 0   .local/bin/xwin-statusd -> ../../Scripts/wm_status.sh
@@ -1500,7 +1500,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sat, 20 Apr 2024 18:28:55 -0700 -->
+<!-- updated Mon, 20 May 2024 20:46:43 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
