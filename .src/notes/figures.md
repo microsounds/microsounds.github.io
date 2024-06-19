@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/4/27 -->
+<!-- updated 2024/6/18 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ '1131770', 'e27f8', 'good smile rozen maiden suiseiseki nendoroid #1710 (2022)' ],
 	[ 'p2222288', '88662', 'taito artist masterpiece+ miku birthday 2024 flower ver. (2024)' ],
 	[ 'p2256547', 'ae9de', 'good smile pop up parade miku v2 translucent color ver. (2024)' ],
 	[ 'p1941522', 'a8683', 'max factory plamatea miku 16th birthday ver. model kit (2024)' ],
