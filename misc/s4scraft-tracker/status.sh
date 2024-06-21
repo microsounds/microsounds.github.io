@@ -115,7 +115,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 
 	# /s4scraft/ activity tracker
 	## Server Address: $SERVER
-	Le [s4s] minecraf survival serbur for [s4s] frens.
+	Le [s4s] minecraf survival serbur for [s4s] nicers.
 
 	Java 1.20.2 and Bedrock (via [GeyserMC](https://geysermc.org/) on port 25565)
 
