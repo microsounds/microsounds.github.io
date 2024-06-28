@@ -17,20 +17,24 @@ player_count="$(jq -r '.players.online' < "$SERVER.json")"
 printf '%s\t%s\n' \
 	"$NOW" "$player_count" >> activity.tsv
 
-# create graph from last 30 days of activity data
+# calculate days since starting
+starttime="$(cat activity.tsv | head -n 1 | tr -d '\t' | xargs -I'{}' date '+%s' -d '{}')"
+days=$(( ($(date '+%s') - $starttime) / (60 * 60 * 24) ))
+
+# create graph from last $days days of activity data
 { cat <<- EOF; cat activity.tsv | sort; } | gnuplot > activity.png
-	set terminal png transparent
+	set terminal png size 800,480 transparent
 
 	set datafile separator "\t"
-	set title "/s4scraft/ player count (last 30 days)"
+	set title "/s4scraft/ player count (last $days days)"
 	set grid
 	unset key
 
 	set xlabel "time (UTC)"
 	set xdata time
 	set timefmt "%Y-%m-%d %H:%M:%S"
-	set xrange [time(0) - $((60 * 60 * 24 * 30)):time(0)]
-	set autoscale x
+#	set xrange [time(0) - $((60 * 60 * 24 * 30)):time(0)]
+#	set autoscale x
 	set format x "%m/%d\n%H:%M"
 
 	set ylabel "number of players (-1 = server down)"
