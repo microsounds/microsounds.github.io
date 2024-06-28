@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">984</b>, commit `15755af`.**
+**Revision No. <b style="font-size: 130%">985</b>, commit `09f9074`.**
 
-**"winenv: Wine environment wrapper now walks up dir tree to set WINEPREFIX"**
+**"xrandr-cycle: Fixed issue cycling between similar display names"**
 
 {TOC}
 
@@ -772,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime14.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime45.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -801,7 +801,7 @@ Minimum requirements for acceptable performance:
 >_Total on-disk size of the current revision is
 311.11KiB
 out of a total compressed git history size of
-987.11KiB._
+982.75KiB._
 
 # Complete source listing
 
@@ -961,7 +961,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 6.4K   Feb  5 2024 00:37 rev. 49  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
--rwxr-xr-x 1 1.7K   Aug 20 2023 20:43 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
+-rwxr-xr-x 1 1.7K   Jun 27 2024 16:38 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 2.7K   Jan 31 2024 17:59 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
@@ -969,4 +969,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 20 May 2024 20:46:43 -0700 -->
+<!-- updated Thu, 27 Jun 2024 16:38:50 -0700 -->

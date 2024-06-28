@@ -276,10 +276,10 @@ var figs = [
 	[ 'w236245', '829af', 'good smile tell your world miku 1/8 scale (2015)' ],
 	[ 'w78591', '8da12', 'max factory miku HSP ver. 1/7 scale (2012)' ],
 	[ 'w1917313', '63f61', 'sega miku x cinnamoroll premium noodle stopper (2024)' ],
-	[ 'w1954286', 'cb979', 'sega luminasta miku x cinnamoroll (2024)' ],
+	[ 'w1954286', 'fc3b4', 'sega luminasta miku x cinnamoroll (2024)' ],
 	[ 'w1460097', '41456', 'spiritale miku my queen!! 1/7 scale (2024)' ],
 	[ 'w1623825', '97882', 'spiritale miku birthday 2022 polaris ver. 1/7 scale (2024)' ],
-	[ 'w1974621', 'c012f', 'taito miku fashion figure lolita (lmao) (2024)' ],
+	[ 'w1974621', 'fbc70', 'taito miku fashion figure lolita (lmao) (2024)' ],
 
 ];
 
