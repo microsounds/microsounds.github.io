@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Thu, 27 Jun 2024 16:38:50 -0700</lastBuildDate>
+<lastBuildDate>Sun, 30 Jun 2024 22:07:12 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 985, commit 09f9074. “xrandr-cycle: Fixed issue cycling between similar display names” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 43.6KiB in size, and the approximate size of all comment lines of code is 74.5KiB then this document currently covers about 11.71% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 986, commit 8b0e063. “xwin-statusd: Added support for nvidia dGPU temps” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 43.6KiB in size, and the approximate size of all comment lines of code is 74.8KiB then this document currently covers about 11.66% of all implemented features and behavior in this repository. This is just an [automated [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Thu, 27 Jun 2024 16:38:50 -0700</pubDate>
+<pubDate>Sun, 30 Jun 2024 22:07:12 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>

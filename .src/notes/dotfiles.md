@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">985</b>, commit `09f9074`.**
+**Revision No. <b style="font-size: 130%">986</b>, commit `8b0e063`.**
 
-**"xrandr-cycle: Fixed issue cycling between similar display names"**
+**"xwin-statusd: Added support for nvidia dGPU temps"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *43.6KiB* in
 size, and the approximate size of all comment lines of code is
-*74.5KiB* then this document
-currently covers about <b style="font-size: 130%;">11.71%</b>
+*74.8KiB* then this document
+currently covers about <b style="font-size: 130%;">11.66%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -772,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime45.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime17.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -792,16 +792,16 @@ Minimum requirements for acceptable performance:
 > * `nyaa-magnet v0.1`
 > * `sfx-synth v0.2`
 > * `termux-ssh-askpass v0.3`
-> * `wm_status.sh v0.5`
+> * `wm_status.sh v0.6`
 > * `xrandr_cycle.sh v0.3`
 > * `xwin_decor.sh v1.0`
 > * `xwin_webm.sh v0.5`
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-311.11KiB
+311.49KiB
 out of a total compressed git history size of
-982.75KiB._
+988.40KiB._
 
 # Complete source listing
 
@@ -960,7 +960,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1 2.0K   Dec 29 2023 10:42 rev. 29  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
--rwxr-xr-x 1 6.4K   Feb  5 2024 00:37 rev. 49  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
+-rwxr-xr-x 1 6.8K   Jun 30 2024 22:07 rev. 50  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Jun 27 2024 16:38 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 2.7K   Jan 31 2024 17:59 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
@@ -969,4 +969,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Thu, 27 Jun 2024 16:38:50 -0700 -->
+<!-- updated Sun, 30 Jun 2024 22:07:12 -0700 -->
