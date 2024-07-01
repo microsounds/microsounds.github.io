@@ -116,6 +116,7 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	[![ico](/static/button/badge.png) _Back to homepage_](../)
 
 	<img src="/misc/s4scraft-tracker/s4scraft.png" width="400" align="right" />
+	<img src="/misc/s4scraft-tracker/mick.jpg" width="400" align="right" />
 
 	# /s4scraft/ activity tracker
 	## Server Address: $SERVER
@@ -124,6 +125,8 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	Java 1.20.2 and Bedrock (via [GeyserMC](https://geysermc.org/) on port 25565)
 
 	Latest news: [&gt;&gt;&gt;/s4s/s4scraft](https://archive.4plebs.org/s4s/search/subject/s4scraft)
+
+	<!-- <iframe height="100" src="https://www.youtube.com/embed/dMlG18oAo_k?autoplay=1&amp;start=212" frameborder="0"></iframe> -->
 
 	# 💤 About —
 	**Rules**
@@ -141,6 +144,17 @@ cat <<- EOF | cmark-gfm --unsafe > ../s4scraft.htm
 	* Includes a death plugin so you don't lose yuore hard earned loot!
 	* Custom mob head drops!
 	* Map art???
+
+	# 🧭 mines, crafts, and mickers. what a treat... just b nice —
+	Pictured, west side of the spawn landmass, where the mickers live!
+
+	Server render distance is ~11 chunks (prolly), turn it waaaaaaay up with the [Bobby mod](https://modrinth.com/mod/bobby) and watch ur PC explohd at incredible hihg speed!!!
+
+	<img src="/misc/s4scraft-tracker/1.png" width="400" />
+	<img src="/misc/s4scraft-tracker/2.png" width="400" />
+	<br />
+	<img src="/misc/s4scraft-tracker/3.png" width="400" />
+	<img src="/misc/s4scraft-tracker/4.png" width="400" />
 
 	# ✨ Player Count —
 	Server online since Feburary 2024, all times UTC. <p id="offset"></p>
