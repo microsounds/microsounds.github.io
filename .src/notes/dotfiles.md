@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">986</b>, commit `8b0e063`.**
+**Revision No. <b style="font-size: 130%">987</b>, commit `ca62948`.**
 
-**"xwin-statusd: Added support for nvidia dGPU temps"**
+**"x48: Use netbook mode on small displays"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *43.6KiB* in
 size, and the approximate size of all comment lines of code is
-*74.8KiB* then this document
-currently covers about <b style="font-size: 130%;">11.66%</b>
+*74.9KiB* then this document
+currently covers about <b style="font-size: 130%;">11.64%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -772,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime17.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime28.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -799,9 +799,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-311.49KiB
+311.79KiB
 out of a total compressed git history size of
-988.40KiB._
+989.73KiB._
 
 # Complete source listing
 
@@ -839,7 +839,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rwxr-xr-x 1  323   Mar 11 2022 22:34 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
--rw-r--r-- 1 2.7K   Jan 15 2024 17:58 rev. 46  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1 2.7K   Jul  2 2024 15:08 rev. 47  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1  401   Dec 20 2021 13:55 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
 -rwxr-xr-x 1  279   Sep 10 2023 23:30 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/cmark-gfm-xhtml/pre-run">.config/upstream/cmark-gfm-xhtml/pre-run</a>
 -rwxr-xr-x 1  556   Nov 28 2023 17:29 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/keyd/pre-run">.config/upstream/keyd/pre-run</a>
@@ -879,6 +879,7 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0   .local/bin/rgrep -> egrep
 -rwxr-xr-x 1  367   Dec 16 2022 12:16 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/to-chromium">.local/bin/to-chromium</a>
 -rwxr-xr-x 1  659   Mar 21 2022 23:26 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/twopass">.local/bin/twopass</a>
 -rwxr-xr-x 1  848   May 20 2024 20:46 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/winenv">.local/bin/winenv</a>
+-rwxr-xr-x 1  258   Jul  2 2024 15:08 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/x48-resize">.local/bin/x48-resize</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0   .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
 lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/bin/xwin-decor -> ../../Scripts/xwin_decor.sh
 lrwxrwxrwx 1   26   (symbolic link)   rev. 0   .local/bin/xwin-statusd -> ../../Scripts/wm_status.sh
@@ -969,4 +970,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Sun, 30 Jun 2024 22:07:12 -0700 -->
+<!-- updated Tue, 2 Jul 2024 15:08:53 -0700 -->
