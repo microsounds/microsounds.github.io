@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/6/18 -->
+<!-- updated 2024/7/9 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,10 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ '1916908', 'fbd46', 'sega fuwa puchi nuigurumi L miku magical mirai 2023 plush (2023)' ],
+	[ '1877039', '26931', 'good smile dress up darling kuroe shikuzu nendoroid #2172 (2023)' ],
+	[ '12638', '7c73a', 'gift nendoroid plus #02 hachune miku articulated plush  (2011)' ],
+	[ '549357', 'f1872', 'good smile gochiusa hotto cocoa nendoroid #798 (2017)' ],
 	[ '1131770', 'e27f8', 'good smile rozen maiden suiseiseki nendoroid #1710 (2022)' ],
 	[ 'p2222288', '88662', 'taito artist masterpiece+ miku birthday 2024 flower ver. (2024)' ],
 	[ 'p2256547', 'ae9de', 'good smile pop up parade miku v2 translucent color ver. (2024)' ],
