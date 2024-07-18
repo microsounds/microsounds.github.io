@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">987</b>, commit `ca62948`.**
+**Revision No. <b style="font-size: 130%">988</b>, commit `b82f665`.**
 
-**"x48: Use netbook mode on small displays"**
+**"xwin-decor: Defer cleanup of temp image data to next run"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *43.6KiB* in
 size, and the approximate size of all comment lines of code is
-*74.9KiB* then this document
-currently covers about <b style="font-size: 130%;">11.64%</b>
+*75.4KiB* then this document
+currently covers about <b style="font-size: 130%;">11.57%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -772,7 +772,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime28.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime35b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -799,9 +799,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-311.79KiB
+311.99KiB
 out of a total compressed git history size of
-989.73KiB._
+991.04KiB._
 
 # Complete source listing
 
@@ -827,7 +827,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  870   Jul 16 2021 00:35 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/dwm/patches/status-allmonitors.diff">.config/dwm/patches/status-allmonitors.diff</a>
 -rwxr-xr-x 1  250   Mar 11 2022 22:34 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/dwm/pre-run">.config/dwm/pre-run</a>
 -rw-r--r-- 1  242   Apr 28 2023 22:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/fcitx5/profile">.config/fcitx5/profile</a>
--rw-r--r-- 1  360   Jan 31 2024 17:59 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/fm/desktop.conf">.config/fm/desktop.conf</a>
+-rw-r--r-- 1  360   Jul  9 2024 18:14 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/fm/desktop.conf">.config/fm/desktop.conf</a>
 -rw-r--r-- 1  719   Oct 17 2021 22:00 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/fm/libfm.conf">.config/fm/libfm.conf</a>
 -rw-r--r-- 1  387   Apr  3 2021 21:51 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/fm/pcmanfm.conf">.config/fm/pcmanfm.conf</a>
 -rw-r--r-- 1  155   Apr  6 2021 15:35 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/gtk/gtk2.conf">.config/gtk/gtk2.conf</a>
@@ -963,11 +963,11 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 6.8K   Jun 30 2024 22:07 rev. 50  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Jun 27 2024 16:38 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
--rwxr-xr-x 1 2.7K   Jan 31 2024 17:59 rev. 34  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
+-rwxr-xr-x 1 2.9K   Jul  9 2024 18:14 rev. 35  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  44K   Mar 20 2024 23:40 rev. 213 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Tue, 2 Jul 2024 15:08:53 -0700 -->
+<!-- updated Tue, 9 Jul 2024 18:14:43 -0700 -->
