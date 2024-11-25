@@ -4,5 +4,5 @@
 
 ! is-container && exit
 
-cd "$DOC_ROOT/misc/s4scraft-tracker"
-./status.sh
+#cd "$DOC_ROOT/misc/s4scraft-tracker"
+#./status.sh
