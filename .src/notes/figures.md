@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/7/18 -->
+<!-- updated 2024/11/25 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,7 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ 'p625061', '9ccb6', 'sega dodeka jumbo fuwa fuwa nuigurumi BIG MICKER!! (2018)' ],
 	[ '1916908', 'fbd46', 'sega fuwa puchi nuigurumi L miku magical mirai 2023 plush (2023)' ],
 	[ '1877039', '26931', 'good smile dress up darling kuroe shikuzu nendoroid #2172 (2023)' ],
 	[ '12638', '7c73a', 'gift nendoroid plus #02 hachune miku articulated plush  (2011)' ],
@@ -152,11 +153,11 @@ var figs = [
 	[ 'p2222288', '18548', 'taito artist masterpiece+ miku birthday 2024 flower ver. (2024)' ],
 	[ 'p2256547', 'c9e2e', 'good smile pop up parade miku v2 translucent color ver. (2024)' ],
 	[ 'p1941522', 'd96e1', 'max factory plamatea miku 16th birthday ver. model kit (2024)' ],
-	[ 'p2210315', '79581', 'good smile world is mine miku 2024 ver. nendoroid #2430 (2024)' ],
+	[ '2210315', '79581', 'good smile world is mine miku 2024 ver. nendoroid #2430 (2024)' ],
 	[ '1764164', 'be850', 'good smile huggy miku trading fig (2023)' ],
-	[ 'p1956669', '6491b', 'good smile miku v3 nendoroid #2360 (2024)' ],
+	[ '1956669', '6491b', 'good smile miku v3 nendoroid #2360 (2024)' ],
 	[ '287708', 'e0015', 'good smile gochiusa kafu chino nendo #558 (2017)' ],
-	[ 'p1876376', 'e225c', 'good smile cinnamoroll miku nendo #2306 (2024)' ],
+	[ '1876376', 'e225c', 'good smile cinnamoroll miku nendo #2306 (2024)' ],
 	[ '861021', '9c203', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
 	[ 'p1781933', 'ecbab', 'design coco miku senbonzakura 10th anniv. ver 1/7 scale (2025)' ],
 	[ '1974911', 'db59b', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
