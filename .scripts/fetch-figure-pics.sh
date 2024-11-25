@@ -15,7 +15,7 @@ TARGET="$DOC_ROOT/.src/notes/figures.md"
 
 # 2024/07: MFC started blocking GETs from non-browsers
 UA_STRING="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 \
-(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.66"
+(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.2903.63"
 
 echo "Scraping current filename keys for MFC figure pics" 1>&2
 {
