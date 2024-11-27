@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# 2024/11: temporarily disabled because i got github IPs blacklisted from MFC lol
+exit 0
+
 # run only via automated CI/CD
 ! is-container && exit
 
