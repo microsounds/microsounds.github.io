@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2024/11/25 -->
+<!-- updated 2025/1/15 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -144,6 +144,10 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ '2257530', '6fd05', 'taito coreful re (zero rem nekomimi maid ver.)' ],
+	[ '2247777', '10a51', 'sega luminasta miku project diva mega 39\'s 15th anniv. (2024)' ],
+	[ '22229', '658b2', 'sega hatsune miku PM figure (2010)' ],
+	[ '555317', 'e5cf0', 'taito miku x shuumai-kun plush (2012)' ],
 	[ 'p625061', '9ccb6', 'sega dodeka jumbo fuwa fuwa nuigurumi BIG MICKER!! (2018)' ],
 	[ '1916908', 'fbd46', 'sega fuwa puchi nuigurumi L miku magical mirai 2023 plush (2023)' ],
 	[ '1877039', '26931', 'good smile dress up darling kuroe shikuzu nendoroid #2172 (2023)' ],
