@@ -36,9 +36,9 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <!-- created 2020/10/22 -->
-<!-- updated 2024/2/19 -->
+<!-- updated 2025/3/15 -->
 <h1>List of low profile GPUs for small form factor PCs (SFFs)<span id="List-of-low-profile-GPUs-for-small-form-factor-PCs-SFFs"></span></h1>
-<p>Last updated 🌘 Mon, Feb 19th, 2024.</p>
+<p>Last updated 🌑 Sat, Mar 15th, 2025.</p>
 <p><img src="assets/low_profile_gpu.jpg" alt="img" /></p>
 <p>Most GPU marketing materials will use the term <strong>LP</strong> or <strong>“low profile”</strong> to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
 As far as discrete graphics go, these are the most space and energy-efficient GPUs that money can buy, ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors where size and/or power is a constraining factor.
@@ -411,7 +411,7 @@ If you’re not looking to drive 4x DisplayPort monitors with a single card, and
 <td style="text-align: center">2024</td>
 <td style="text-align: center">75W</td>
 <td style="text-align: center">10557</td>
-<td style="text-align: left">Successor to GTX 1650 LP.</td>
+<td style="text-align: left">Successor to GTX 1650 LP, terrible value for the price.</td>
 </tr>
 <tr>
 <td style="text-align: left">Nvidia RTX A2000</td>
@@ -427,9 +427,10 @@ If you’re not looking to drive 4x DisplayPort monitors with a single card, and
 <p><strong>NOTE</strong><br/>
 <em>Consider other form factors if you need this much graphical power, if you don’t strictly need an SFF it can be much more economical to opt for cases that fit full-height cards.</em></p>
 </blockquote>
-<p>These are dual slot low profile and will run very hot on account of requiring external power via PCIe 8-pin connectors.</p>
-<p>If your SFF’s PSU does not feature PCIe 8-pin connectors, you can draw power from unused SATA power connectors using <em><strong>SATA to PCIe 8-pin power adaptors</strong></em>, but you are also likely to exceed the power limits of your prebuilt’s power supply.</p>
-<p>Even if your PSU has enough overhead, a 115W card will draw 75W from the PCIe slot and 40W more from PCIe 8-pin—you risk damaging your system if drawing that power from SATA power adaptors as the SATA spec only guarantees 54W and you are most likely already drawing 3W for every connected SATA SSD.</p>
+<p>These are dual slot low profile and will run very hot on account of requiring external power via PCIe 8-pin connectors and are not recommended for use with the stock PSU in your SFF.</p>
+<p>If your SFF’s PSU does not feature PCIe 6/8-pin connectors, you can draw power from unused SATA power connectors using <em><strong>SATA to PCIe power adaptors</strong></em>, but you are also likely to exceed the power limits of your SATA rails either from the PSU or the power delivery on the motherboard.</p>
+<p>Even if your PSU has enough overhead, a 115W card will draw 75W from the PCIe slot and 40W more from PCIe 8-pin—you risk damaging your system if drawing that power from SATA power adaptors as the SATA spec only guarantees 54W per rail and you are most likely already drawing 3W for every connected SATA SSD.</p>
+<p>Do yourself a favor and replace the stock PSU in your SFF if you want to go this route, you’ll unlock a whole upgrade path and even improve cooling if you opt for a flex ATX model.</p>
 <table>
 <thead>
 <tr>
@@ -446,7 +447,14 @@ If you’re not looking to drive 4x DisplayPort monitors with a single card, and
 <td style="text-align: center">2023</td>
 <td style="text-align: center">115W</td>
 <td style="text-align: center">19444</td>
-<td style="text-align: left">8GB VRAM, <strong>Requires PCIe 8-pin power.</strong></td>
+<td style="text-align: left">8GB VRAM, <strong>Requires PCIe 6/8-pin power.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce RTX 5060??</td>
+<td style="text-align: center">2025</td>
+<td style="text-align: center">170W?</td>
+<td style="text-align: center">?</td>
+<td style="text-align: left">8GB VRAM GDDR7, <strong>holy shit what are you doing</strong></td>
 </tr>
 </tbody>
 </table>
@@ -460,7 +468,7 @@ If you’re not looking to drive 4x DisplayPort monitors with a single card, and
 		</a>
 	</span>
 	<p>written materials <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, source code <a href="https://www.gnu.org/licenses/gpl-3.0">GNU GPLv3+</a>
-	— &#169; 2015-2024 microsounds &lt;<a href="https://github.com/microsounds">https://github.com/microsounds</a>&gt;<br/>
+	— &#169; 2015-2025 microsounds &lt;<a href="https://github.com/microsounds">https://github.com/microsounds</a>&gt;<br/>
 	Powered by <a href="https://github.com/microsounds/kagami">kagami v0.6.5 — static microblog processor</a></p>
 </div>
 </div> <!-- end of content -->

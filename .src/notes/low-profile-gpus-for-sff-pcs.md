@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2024/2/19 -->
+<!-- updated 2025/3/15 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -101,22 +101,25 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide.
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
 | Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
-| Nvidia GeForce RTX 3050 6GB | 2024 | 75W | 10557 | Successor to GTX 1650 LP. |
+| Nvidia GeForce RTX 3050 6GB | 2024 | 75W | 10557 | Successor to GTX 1650 LP, terrible value for the price. |
 | Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card, 12GB VRAM, most efficient LP card available. |
 
 # 2-slot Low Profile exceeding 75W
 > **NOTE**<br/>
 > _Consider other form factors if you need this much graphical power, if you don't strictly need an SFF it can be much more economical to opt for cases that fit full-height cards._
 
-These are dual slot low profile and will run very hot on account of requiring external power via PCIe 8-pin connectors.
+These are dual slot low profile and will run very hot on account of requiring external power via PCIe 8-pin connectors and are not recommended for use with the stock PSU in your SFF.
 
-If your SFF's PSU does not feature PCIe 8-pin connectors, you can draw power from unused SATA power connectors using ***SATA to PCIe 8-pin power adaptors***, but you are also likely to exceed the power limits of your prebuilt's power supply.
+If your SFF's PSU does not feature PCIe 6/8-pin connectors, you can draw power from unused SATA power connectors using ***SATA to PCIe power adaptors***, but you are also likely to exceed the power limits of your SATA rails either from the PSU or the power delivery on the motherboard.
 
-Even if your PSU has enough overhead, a 115W card will draw 75W from the PCIe slot and 40W more from PCIe 8-pin---you risk damaging your system if drawing that power from SATA power adaptors as the SATA spec only guarantees 54W and you are most likely already drawing 3W for every connected SATA SSD.
+Even if your PSU has enough overhead, a 115W card will draw 75W from the PCIe slot and 40W more from PCIe 8-pin---you risk damaging your system if drawing that power from SATA power adaptors as the SATA spec only guarantees 54W per rail and you are most likely already drawing 3W for every connected SATA SSD.
+
+Do yourself a favor and replace the stock PSU in your SFF if you want to go this route, you'll unlock a whole upgrade path and even improve cooling if you opt for a flex ATX model.
 
 | Name | Released | TDP | PassMark G3D Score | Remarks |
 | :-- | :--: | :--: |:--: | :-- |
-| Nvidia GeForce RTX 4060 | 2023 | 115W | 19444 | 8GB VRAM, **Requires PCIe 8-pin power.** |
+| Nvidia GeForce RTX 4060 | 2023 | 115W | 19444 | 8GB VRAM, **Requires PCIe 6/8-pin power.** |
+| Nvidia GeForce RTX 5060?? | 2025 | 170W? | ? | 8GB VRAM GDDR7, **holy shit what are you doing** |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [3]: https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
