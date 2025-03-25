@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2025/3/15 -->
+<!-- updated 2025/3/25 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -12,7 +12,7 @@ Low profile PCIe cards with power requirements below 75W can be powered from the
 {TOC}
 
 ***This is a reference list of common, rare and/or discontinued low profile 75W PCIe GPUs up to 2 slots wide introduced since 2013.***
-Cards older than this are most likely worse than your onboard graphics.
+Recommended cards are highlighted in **bold**, cards older than 2013 will be worse than your onboard graphics.
 _Cards older than **2014** may have their driver support discontinued by the vendor, check compatibility with your operating system before purchasing._
 <hr/>
 
@@ -68,6 +68,7 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Nvidia GeForce GT 640 | 2011 | 65W | 1187 | |
 | AMD Radeon R7 250 | 2013 | 75W | 1106 | |
 | AMD Radeon R7 430 | 2017 | _N/A_ | 1102 | OEM only. |
+| Nvidia GeForce GT 1010 | 2021 | 30W | 1208 | Chinese domestic market only, features native VGA with Pascal drivers. |
 | <span class="highlight">AMD Radeon Vega 8</span> | 2018 | _N/A_ | 1586 | AMD Ryzen 3 APU integrated graphics. |
 | Nvidia Quadro P400 | 2018 | 30W | 1591 | Workstation card. |
 | AMD Radeon HD 7750 | 2012 | 55W | 1712 | VisionTek low profile card. |
@@ -86,27 +87,28 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Nvidia Quadro P1000 | 2017 | 47W | 4439 | Workstation card. |
 | Nvidia T600 | 2021 | _N/A_ | 6505 | Workstation card. |
 | Nvidia Quadro T1000 | 2019 | _N/A_ | 6533 | Workstation card. |
-| AMD Radeon RX 6400 | 2022 | 53W | 6906 | Available in single/dual slot. |
+| **AMD Radeon RX 6400** | 2022 | 53W | 6906 | 1050ti-tier, available in single/dual slot. |
 
 # 2-slot Low Profile under 75W
-These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide.
+These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you probably don't need more than this if you're hoping for light gaming at 1080p.
 
 | Name | Released | TDP | PassMark G3D Score | Remarks |
 | :-- | :--: | :--: |:--: | :-- |
 | AMD Radeon RX 560 | 2017 | 75W | 3604 | Available from MSI, VisionTek (workstation 1-slot card) |
-| Nvidia GeForce GTX 750 Ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
+| Nvidia GeForce GTX 750ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
 | AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
 | Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | A "display adaptor" """"successor""""" to GT 1030. |
-| Intel Arc A380 | 2022 | 75W | 5091 | **Requires CPU with [Resizeable BAR][6]**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
+| **Intel Arc A310** | 2023 | 30W | 5437 | **Requires CPU with [Resizeable BAR][6]**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
+| **Intel Arc A380** | 2022 | 75W | 6239 | **Requires CPU with [Resizeable BAR][6]**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
-| Nvidia GeForce GTX 1050 Ti | 2016 | 75W | 6301 | ASL made a [1-slot version][3] for the Chinese market. |
-| Nvidia GeForce GTX 1650 | 2019 | 75W | 7818 | ASL made a [1-slot version][4] for the Chinese market. |
-| Nvidia GeForce RTX 3050 6GB | 2024 | 75W | 10557 | Successor to GTX 1650 LP, terrible value for the price. |
-| Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card, 12GB VRAM, most efficient LP card available. |
+| **Nvidia GeForce GTX 1050ti** | 2016 | 75W | 6301 | Power efficient and enough for pre-2020 games, ASL made a [1-slot version][3] for the Chinese market. |
+| **Nvidia GeForce GTX 1650** | 2019 | 75W | 7818 | Successor to GTX 1050ti LP, ASL made a [1-slot version][4] for the Chinese market. |
+| **Nvidia GeForce RTX 3050 6GB** | 2024 | 75W | 10557 | Successor to GTX 1650 LP, Intel and AMD have caught up in perf/$. |
+| Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card, 12GB VRAM, most power efficient LP card available. |
 
 # 2-slot Low Profile exceeding 75W
 > **NOTE**<br/>
-> _Consider other form factors if you need this much graphical power, if you don't strictly need an SFF it can be much more economical to opt for cases that fit full-height cards._
+> _Consider other form factors if you need this much graphical power, if you don't strictly need an SFF it can be much more economical to opt for a build with a used 2-3 year old full-height card._
 
 These are dual slot low profile and will run very hot on account of requiring external power via PCIe 8-pin connectors and are not recommended for use with the stock PSU in your SFF.
 
@@ -118,7 +120,7 @@ Do yourself a favor and replace the stock PSU in your SFF if you want to go this
 
 | Name | Released | TDP | PassMark G3D Score | Remarks |
 | :-- | :--: | :--: |:--: | :-- |
-| Nvidia GeForce RTX 4060 | 2023 | 115W | 19444 | 8GB VRAM, **Requires PCIe 6/8-pin power.** |
+| **Nvidia GeForce RTX 4060** | 2023 | 115W | 19444 | Top-tier 2019-era performance in a low profile card, 8GB VRAM, **Requires PCIe 6/8-pin power.** |
 | Nvidia GeForce RTX 5060?? | 2025 | 170W? | ? | 8GB VRAM GDDR7, **holy shit what are you doing** |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
