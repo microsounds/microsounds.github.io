@@ -36,19 +36,27 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <!-- created 2020/10/22 -->
-<!-- updated 2025/3/25 -->
+<!-- updated 2025/4/11 -->
 <h1>List of low profile GPUs for small form factor PCs (SFFs)<span id="List-of-low-profile-GPUs-for-small-form-factor-PCs-SFFs"></span></h1>
-<p>Last updated 🌔 Tue, Mar 25th, 2025.</p>
+<p>Last updated 🌑 Fri, Apr 11th, 2025.</p>
 <p><img src="assets/low_profile_gpu.jpg" alt="img" /></p>
-<p>Most GPU marketing materials will use the term <strong>LP</strong> or <strong>“low profile”</strong> to refer to graphics cards that are half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
-As far as discrete graphics go, these are the most space and energy-efficient GPUs that money can buy, ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, and other niche form-factors where size and/or power is a constraining factor.
-Low profile PCIe cards with power requirements below 75W can be powered from the PCIe slot alone and do not require require additional PSU power connections.</p>
+<p>Most GPU marketing materials will use the term <strong>LP</strong> or <strong>“low profile”</strong> to refer to graphics cards that are <strong>69mm</strong>, or half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
+As far as discrete graphics go, these are the most space and energy-efficient GPUs available today, ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, converting a used office PC into a budget game console, and other niche applications where size and power draw are constraining factors.
+Low profile PCIe cards with power draw requirements below 75W can be powered from the PCIe slot alone and do not require additional PSU power connectors.</p>
+<p>Advancements in GPU computing since 2020 have prioritized higher power draw to make larger generational leaps in graphical power, sub-75W cards will soon become a relic of the past as low profile cards with 6/8-pin PCIe power connectors become more common and, in the near future, will become your only option for meaningful performance uplift in a small form factor build.
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
 <li><a href="#List-of-low-profile-GPUs-for-small-form-factor-PCs-SFFs">List of low profile GPUs for small form factor PCs (SFFs)</a>
 <ul>
-<li><a href="#Notes-on-upgrading-an-existing-prebuilt-desktop-PC">Notes on upgrading an existing prebuilt desktop PC</a></li>
+<li><a href="#Notes-on-upgrading-an-existing-prebuilt-desktop-PC">Notes on upgrading an existing prebuilt desktop PC</a>
+<ul>
+<li><a href="#Voltage-throttling">Voltage throttling</a></li>
+<li><a href="#PCIe-lane-cost-cutting">PCIe lane cost-cutting</a></li>
+<li><a href="#Non-free-graphics-drivers">Non-free graphics drivers</a></li>
+<li><a href="#Space-constraints">Space constraints</a></li>
+</ul>
+</li>
 <li><a href="#A-dying-breed-of-graphics-card">A dying breed of graphics card?</a></li>
 </ul>
 </li>
@@ -56,34 +64,39 @@ Low profile PCIe cards with power requirements below 75W can be powered from the
 <li><a href="#2-slot-Low-Profile-under-75W">2-slot Low Profile under 75W</a></li>
 <li><a href="#2-slot-Low-Profile-exceeding-75W">2-slot Low Profile exceeding 75W</a></li>
 </ul>
-</div>
+</div></p>
 <p><em><strong>This is a reference list of common, rare and/or discontinued low profile 75W PCIe GPUs up to 2 slots wide introduced since 2013.</strong></em>
 Recommended cards are highlighted in <strong>bold</strong>, cards older than 2013 will be worse than your onboard graphics.
 <em>Cards older than <strong>2014</strong> may have their driver support discontinued by the vendor, check compatibility with your operating system before purchasing.</em></p>
 <hr/>
+<hr/>
 <h2>Notes on upgrading an existing prebuilt desktop PC<span id="Notes-on-upgrading-an-existing-prebuilt-desktop-PC"></span></h2>
-<blockquote>
-<p><strong>NOTE</strong><br/>
-<em>This was written before September 2020, this may no longer be the appealing entry-level gaming PC route it once was.</em></p>
-</blockquote>
-<p>Some people might find it appealing to drop a 75W GPU into an existing prebuilt desktop PC to make an entry-level gaming PC, as these can have difficult to swap proprietary PSUs and no additional power cables for expansion cards.</p>
-<p>If you do decide to go this route, be aware that <em><strong>low-end prebuilt desktops may have inadequate motherboard voltage regulation and can exhibit performance throttling</strong></em> due to aggressive cost-cutting decisions made by the OEM. Bad VRMs and inadequate power supplied to the motherboard can turn your CPU into a bottleneck when it proves unable to sustain your CPU’s intended boost clock speeds.
-You may very well not be satisfied with the performance gains compared to published benchmarks running on unencumbered hardware.</p>
+<p><img src="assets/optiplex-9020-sff2.jpg" alt="img" /></p>
+<p>Some people might find it appealing to drop in a 75W GPU into an existing prebuilt desktop PC to make an entry-level gaming PC, as these often have proprietary power supplies with no additional PCIe cables for expansion cards.</p>
+<h3>Voltage throttling<span id="Voltage-throttling"></span></h3>
+<p>If you do decide to go this route, be aware of the limitations of pre-built OEM motherboards, their BIOS settings often inhibit or prevent customization such as undervolting, fan curve editing, and can often throw startup errors when swapping out OEM equipment such as case fans.</p>
+<p>If you decide to swap out the stock PSU for a standard ATX-compliant model, you may also experience inadequate or non-standard voltage regulation issues which can lead to performance throttling.
+Things like your CPU not being able to maintain boost clocks, or your motherboard being unable to maintain a solid 75W to the PCIe connector leading to GPU never reaching boost clocks can be the result of your stock PSU being designed for your specific motherboard and providing non-standard voltages at certain pins which ATX PSUs aren’t designed to do.</p>
+<p>You may very well not be satisfied with the performance gains compared to published benchmarks running on enthusiast-grade hardware.</p>
+<h3>PCIe lane cost-cutting<span id="PCIe-lane-cost-cutting"></span></h3>
 <p>You might also find that some SFF prebuilts have less than ideal PCIe placement.
-In the case of many late model <a href="https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7">Dell Optiplex SFFs</a>, they come outfitted with 2 PCIe 2.0 slots, with the larger 16x slot rammed against the power supply, unable to accommodate most modern cards which are 2 slots at the bare minimum.
-In this case, you’d have to run a 2-slot 16x card in the much smaller 4x PCIe slot and accept a performance loss of at least 10% on a GTX 1050/1650, potentially more on more powerful cards.</p>
-<p><em><strong>If you intend to run a <a href="https://en.wikipedia.org/wiki/Hackintosh">hackintosh</a> system or you refuse to use non-free graphics drivers on GNU/Linux, then your only real options are AMD cards and you will have to live with a slightly worse price-to-performance ratio compared to existing Nvidia low profile cards.</strong></em></p>
+In the case of many late model <a href="https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7">Dell Optiplex SFFs</a>, they come outfitted with 2 PCIe slots, with the larger 3.0 16x slot rammed against the power supply, unable to accommodate most modern cards which are 2 slots at the bare minimum.
+In this case, you’d have to run a 2-slot 16x card in the much smaller 2.0 4x PCIe slot and accept a performance loss of at least 10% on a GTX 1050ti/1650, potentially more on more powerful cards, your performance will depend on how hard you saturate the PCIe bus.</p>
+<h3>Non-free graphics drivers<span id="Non-free-graphics-drivers"></span></h3>
+<p>If you intend to run a <a href="https://en.wikipedia.org/wiki/Hackintosh">hackintosh</a> system or you refuse to use non-free graphics drivers on GNU/Linux, then your options are AMD and Intel Arc.</p>
+<p>Intel Arc cards <strong>require</strong> motherboard platforms with <a href="https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html"><em><strong>Resizable BAR</strong></em></a>, you will see substantial performance bottlenecks on systems older than 3rd gen AMD Ryzen or 10th gen Intel Core.</p>
+<p>AMD’s low profile cards have substantially worse price/performance than Nvidia options, the RX 6400 for example, is comparable to a GTX 1050ti yet lacks a hardware video encoder for streaming or video editing, for the time being, please don’t pick AMD for low profile builds trying to chase FOSS zealotry.</p>
+<h3>Space constraints<span id="Space-constraints"></span></h3>
+<p><img src="assets/gigabyte-rtx-4060-length.jpg" alt="img" />
+You should also be mindful of available space in your SFF case, low profile RTX 4060s (and possibly later cards) are much longer than the standard low profile length of <strong>167mm</strong>.</p>
+<p>Both the Gigabyte and GALAX low profile versions of the RTX 4060 are <strong>182mm</strong> at their longest point, the Gigabyte version has a <strong>182mm</strong> fan shroud with a 167mm PCB behind it, allowing for a recessed PCIe plug.
+ASUS’s version has a much longer <strong>188mm</strong> fan shroud and PCB that would very likely not fit in the application above without mods, measure twice and click buy only once!</p>
 <h2>A dying breed of graphics card?<span id="A-dying-breed-of-graphics-card"></span></h2>
-<p>Low-profile card launches regularly go unannounced, they are not well promoted because they’ve historically represented a terrible value proposition for the companies making them.</p>
-<p>In the last several years, manufacturers have had little incentive to make “budget”, or “low-end” iterations of their latest GPU architectures because they have no problem finding a market for their high end products,</p>
-<p>Due to an unprecedented quadruple-threat from gamers, <del>AI-generated erotic artwork</del> <em>“data science”</em> enthusiasts, data centers and crypto mining operations alike, manufacturers have been unable to keep their products in stock with their silicon fabs operating at full throttle. With such ideal market conditions, why bother introducing budget cards?
-More people are willing to buy low-end binned GPU dies soldered to a gaming laptop than a sub-$250 USD discrete GPU for their existing hardware.</p>
-<p>As such, nearly every card on this list is discontinued, some models and configurations may be limited to specific markets.</p>
-<p>You might still be able to find new-old stock online or where you live, if you want to take your chances with a used mining GPU, I don’t recommend it, but feel free.</p>
-<p>In order to illustrate that many users can potentially avoid having to buy a discrete GPU at all, several recent AMD <span class="highlight">integrated GPU chipsets</span> are included for comparison.
+<p>Low-profile card are often launched to little fanfare and are quietly announced halfway through the lifecycle of a particular graphics card, they don’t represent a very profitable slice of the market for the companies still making them.</p>
+<p>The entry-level price/performance floor on dGPUs have stayed roughly the same since 2019, it’s stagnated so much that integrated graphics dies on AI-focused Ryzen APUs <em>(Ryzen AI Max+ series)</em> have comparable performance to an RTX 4060, and will likely be a competitive option for entry-level gaming in the near future instead of putting a discrete GPU into a used office PC.</p>
+<p>In order to illustrate that many users can avoid having to buy a low profile GPU at all, the integrated graphics on many recent AMD APUs are <span class="highlight">highlighted</span> below for comparison.
 This list also includes workstation cards for completeness.
-They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming.
-If you’re not looking to drive 4x DisplayPort monitors with a single card, and you are not desperate, don’t bother, as they have no other ports.</p>
+They tend to offer a much worse price-to-performance ratio compared to cards meant for gaming, customers of workstation cards expect world-class customer support and it comes rolled into the price.</p>
 <h1>1-slot Low Profile under 75W<span id="1-slot-Low-Profile-under-75W"></span></h1>
 <p>These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PCIe slot.</p>
 <table>
@@ -461,13 +474,20 @@ If you’re not looking to drive 4x DisplayPort monitors with a single card, and
 <td style="text-align: center">2023</td>
 <td style="text-align: center">115W</td>
 <td style="text-align: center">19444</td>
-<td style="text-align: left">Top-tier 2019-era performance in a low profile card, 8GB VRAM, <strong>Requires PCIe 6/8-pin power.</strong></td>
+<td style="text-align: left">GTX 1080ti performance in a low profile card, 8GB VRAM, <strong>Requires PCIe 6/8-pin power.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left">Nvidia GeForce RTX 5060??</td>
+<td style="text-align: left"><span class="highlight">AMD Ryzen AI Max+ PRO 395</span></td>
 <td style="text-align: center">2025</td>
-<td style="text-align: center">170W?</td>
-<td style="text-align: center">?</td>
+<td style="text-align: center">N/A</td>
+<td style="text-align: center">19000?</td>
+<td style="text-align: left">AMD Ryzen AI Max+ integrated graphics.</td>
+</tr>
+<tr>
+<td style="text-align: left">Nvidia GeForce RTX 5060?</td>
+<td style="text-align: center">2025</td>
+<td style="text-align: center">150W?</td>
+<td style="text-align: center">23000?</td>
 <td style="text-align: left">8GB VRAM GDDR7, <strong>holy shit what are you doing</strong></td>
 </tr>
 </tbody>
