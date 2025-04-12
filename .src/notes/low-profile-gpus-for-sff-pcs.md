@@ -100,6 +100,7 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | AMD Radeon Pro WX 4100 | 2017 | 50W | 3730 | Workstation card. |
 | Nvidia T400 4GB | 2021 | 30W | 3802 | 4GB VRAM, Workstation card. |
 | Nvidia Quadro P1000 | 2017 | 47W | 4439 | Workstation card. |
+| Intel Arc Pro A40 | 2023 | 50W | 5222 | Workstation card, 6GB VRAM, **Requires CPU with [Resizeable BAR][6]** |
 | Nvidia T600 | 2021 | 40W | 6505 | 4GB VRAM, Workstation card. |
 | Nvidia Quadro T1000 | 2019 | 50W | 6533 | Workstation card. |
 | Nvidia T1000 | 2021 | 50W | 7620 | 4GB VRAM, Workstation card. |
@@ -116,6 +117,7 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you p
 | AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
 | Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | A "display adaptor" """"successor""""" to GT 1030. |
 | **Intel Arc A310** | 2023 | 30-75W | 5437 | 4GB VRAM, single and OC'd dual slot versions, **Requires CPU with [Resizeable BAR][6]** |
+| Intel Arc Pro A50 | 2023 | 75W | 5222 | Workstation card, 6GB VRAM, **Requires CPU with [Resizeable BAR][6]** |
 | **Intel Arc A380** | 2022 | 75W | 6239 | 6GB VRAM, **Requires CPU with [Resizeable BAR][6]** |
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | **Nvidia GeForce GTX 1050ti** | 2016 | 75W | 6301 | Power efficient and enough for pre-2020 games, ASL made a [1-slot version][3] for the Chinese market. |
