@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">995</b>, commit `a07b609`.**
+**Revision No. <b style="font-size: 130%">997</b>, commit `5baaa08`.**
 
-**"sxhkd: Accidentally stomped on existing middle click functions"**
+**"Post-install: Updated deb-multimedia keyring link"**
 
 {TOC}
 
@@ -785,7 +785,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime49.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime15.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -814,7 +814,7 @@ Minimum requirements for acceptable performance:
 >_Total on-disk size of the current revision is
 313.97KiB
 out of a total compressed git history size of
-992.63KiB._
+994.13KiB._
 
 # Complete source listing
 
@@ -943,7 +943,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  106   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta">.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta</a>
 -rw-r--r-- 1  65K   Sep 25 2023 02:10 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.png">.minecraft/resourcepacks/HatsuneMiku_2023/pack.png</a>
 -rw-r--r-- 1 1.7K   Jan 26 2024 20:48 rev. 36  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
--rwxr-xr-x 1 1.7K   Aug 26 2023 09:38 rev. 23  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
+-rwxr-xr-x 1 1.7K   Apr 11 2025 15:05 rev. 24  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  586   Mar  2 2024 12:39 rev. 6   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
 -rwxr-xr-x 1  213   Oct 22 2022 22:48 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/0p-pocketchip-dpi.sh">.once.d/0p-pocketchip-dpi.sh</a>
@@ -960,7 +960,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1 1.1K   Feb 15 2024 02:34 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
 -rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   Mar 21 2022 23:26 rev. 9   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
--rwxr-xr-x 1  809   Nov 25 2024 09:51 rev. 7   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
+-rwxr-xr-x 1  814   Apr  9 2025 13:27 rev. 8   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
@@ -986,4 +986,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rw-r--r-- 1  45K   Dec  4 2024 22:21 rev. 216 <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 4 Dec 2024 22:21:56 -0800 -->
+<!-- updated Fri, 11 Apr 2025 15:05:21 -0700 -->
