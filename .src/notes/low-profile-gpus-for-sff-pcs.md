@@ -79,9 +79,10 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | <span class="highlight">AMD Radeon Vega 3</span> | 2018 | _N/A_ | 886 | AMD Athlon APU integrated graphics. |
 | AMD Radeon HD 8570 | 2013 | 66W | 984 | OEM only. |
 | Nvidia GeForce GT 640 | 2011 | 65W | 1187 | |
-| AMD Radeon R7 250 | 2013 | 75W | 1106 | |
-| AMD Radeon R7 430 | 2017 | _N/A_ | 1102 | OEM only. |
+| AMD Radeon R7 250 | 2013 | 55W | 1106 | |
+| AMD Radeon R7 430 | 2017 | 50W | 1102 | OEM only. |
 | Nvidia GeForce GT 1010 | 2021 | 30W | 1208 | Chinese domestic market only, features native VGA with Pascal drivers. |
+| Nvidia GeForce GTS 450 | 2011 | 106W | 1319 | 6-pin PCIe, low profile Palit version. |
 | <span class="highlight">AMD Radeon Vega 8</span> | 2018 | _N/A_ | 1586 | AMD Ryzen 3 APU integrated graphics. |
 | Nvidia Quadro P400 | 2018 | 30W | 1591 | Workstation card. |
 | AMD Radeon HD 7750 | 2012 | 55W | 1712 | VisionTek low profile card. |
@@ -95,11 +96,14 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Nvidia Quadro K1200 | 2015 | 45W | 2854 | Workstation card. |
 | Nvidia GeForce GTX 750 | 2014 | 55W | 3374 | MQX made a low profile single-slot version. |
 | Nvidia Quadro P620 | 2018 | 40W | 3616 | Workstation card. |
-| Nvidia T400 | 2021 | _N/A_ | 3651 | Workstation card. |
+| Nvidia T400 | 2021 | 30W | 3651 | 2GB VRAM, Workstation card. |
 | AMD Radeon Pro WX 4100 | 2017 | 50W | 3730 | Workstation card. |
+| Nvidia T400 4GB | 2021 | 30W | 3802 | 4GB VRAM, Workstation card. |
 | Nvidia Quadro P1000 | 2017 | 47W | 4439 | Workstation card. |
-| Nvidia T600 | 2021 | _N/A_ | 6505 | Workstation card. |
-| Nvidia Quadro T1000 | 2019 | _N/A_ | 6533 | Workstation card. |
+| Nvidia T600 | 2021 | 40W | 6505 | 4GB VRAM, Workstation card. |
+| Nvidia Quadro T1000 | 2019 | 50W | 6533 | Workstation card. |
+| Nvidia T1000 | 2021 | 50W | 7620 | 4GB VRAM, Workstation card. |
+| Nvidia T1000 8GB | 2021 | 50W | 7656 | 8GB VRAM, Workstation card. |
 | **AMD Radeon RX 6400** | 2022 | 53W | 6906 | 1050ti-tier, available in single/dual slot. |
 
 # 2-slot Low Profile under 75W
@@ -111,13 +115,15 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you p
 | Nvidia GeForce GTX 750ti | 2014 | 60W | 3910 | MQX made a low profile single-slot version. |
 | AMD Radeon RX 460 | 2016 | 75W | 4121 | Available from MSI. |
 | Nvidia GeForce GTX 1630 | 2022 | 75W | 4927 | A "display adaptor" """"successor""""" to GT 1030. |
-| **Intel Arc A310** | 2023 | 30W | 5437 | **Requires CPU with [Resizeable BAR][6]**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
-| **Intel Arc A380** | 2022 | 75W | 6239 | **Requires CPU with [Resizeable BAR][6]**, available on AMD Ryzen 3xxx or Intel Core 10th gen or higher. |
+| **Intel Arc A310** | 2023 | 30-75W | 5437 | 4GB VRAM, single and OC'd dual slot versions, **Requires CPU with [Resizeable BAR][6]** |
+| **Intel Arc A380** | 2022 | 75W | 6239 | 6GB VRAM, **Requires CPU with [Resizeable BAR][6]** |
 | Nvidia GeForce GTX 950 | 2015 | 75W | 5357 | Available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
 | **Nvidia GeForce GTX 1050ti** | 2016 | 75W | 6301 | Power efficient and enough for pre-2020 games, ASL made a [1-slot version][3] for the Chinese market. |
 | **Nvidia GeForce GTX 1650** | 2019 | 75W | 7818 | Successor to GTX 1050ti LP, ASL made a [1-slot version][4] for the Chinese market. |
 | **Nvidia GeForce RTX 3050 6GB** | 2024 | 75W | 10557 | Successor to GTX 1650 LP, Intel and AMD have caught up in perf/$. |
-| Nvidia RTX A2000 | 2021 | 75W | 13825 | Workstation card, 12GB VRAM, most power efficient LP card available. |
+| Nvidia RTX A2000 | 2021 | 75W | 13592 | Workstation card, 6GB VRAM. |
+| Nvidia RTX A2000 12GB | 2021 | 75W | 13700 | Workstation card, 12GB VRAM. |
+| Nvidia RTX 2000 Ada Generation | 2024 | 70W | 17437 | Workstation card, 16GB VRAM, most power efficient LP card available. |
 
 # 2-slot Low Profile exceeding 75W
 > **NOTE**<br/>
