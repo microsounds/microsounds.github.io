@@ -21,7 +21,7 @@ _Cards older than **2014** may have their driver support discontinued by the ven
 
 ## Notes on upgrading an existing prebuilt desktop PC
 
-![img](assets/optiplex-9020-sff2.jpg)
+![img](assets/optiplex-9020-sff3.jpg)
 
 Some people might find it appealing to drop in a 75W GPU into an existing prebuilt desktop PC to make an entry-level gaming PC, as these often have proprietary power supplies with no additional PCIe cables for expansion cards.
 
