@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2025/4/11 -->
+<!-- updated 2025/4/23 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -103,9 +103,10 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Intel Arc Pro A40 | 2023 | 50W | 5222 | Workstation card, 6GB VRAM, **Requires CPU with [Resizeable BAR][6]** |
 | Nvidia T600 | 2021 | 40W | 6505 | 4GB VRAM, Workstation card. |
 | Nvidia Quadro T1000 | 2019 | 50W | 6533 | Workstation card. |
+| **AMD Radeon RX 6400** | 2022 | 53W | 6906 | 1050ti-tier, available in single/dual slot LP. |
+| AMD Radeon RX 6500 | 2022 | 55W | 7527 | Single slot LP available from [Zephyr][7]. |
 | Nvidia T1000 | 2021 | 50W | 7620 | 4GB VRAM, Workstation card. |
 | Nvidia T1000 8GB | 2021 | 50W | 7656 | 8GB VRAM, Workstation card. |
-| **AMD Radeon RX 6400** | 2022 | 53W | 6906 | 1050ti-tier, available in single/dual slot. |
 
 # 2-slot Low Profile under 75W
 These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you probably don't need more than this if you're hoping for light gaming at 1080p.
@@ -141,13 +142,13 @@ Do yourself a favor and replace the stock PSU in your SFF if you want to go this
 
 | Name | Released | TDP | PassMark G3D Score | Remarks |
 | :-- | :--: | :--: |:--: | :-- |
-| **Nvidia GeForce RTX 4060** | 2023 | 115W | 19444 | GTX 1080ti performance in a low profile card, 8GB VRAM, **Requires PCIe 6/8-pin power.** |
+| **Nvidia GeForce RTX 4060** | 2023 | 115W | 19444 | GTX 1080ti performance in a low profile card, 8GB VRAM, **PCIe 6/8-pin power.** |
 | <span class="highlight">AMD Ryzen AI Max+ PRO 395</span> | 2025 | N/A | 19000? | AMD Ryzen AI Max+ integrated graphics. |
-| Nvidia GeForce RTX 5060? | 2025 | 150W? | 23000? | 8GB VRAM GDDR7, **holy shit what are you doing** |
+| Nvidia GeForce RTX 5060 | 2025 | 145W | 21388? | 8GB VRAM GDDR7, **PCIe 8-pin, holy shit what are you DOING** |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
 [3]: https://videocardz.net/asl-geforce-gtx-1050-ti-4gb-battle-flag
 [4]: https://videocardz.net/asl-geforce-gtx-1650-4gb-war-knife
 [5]: https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 [6]: https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
-
+[7]: https://videocardz.com/newz/amd-radeon-rx-6500-non-xt-spotted-features-1024-cores-4gb-64-bit-memory-and-55w-tbp
