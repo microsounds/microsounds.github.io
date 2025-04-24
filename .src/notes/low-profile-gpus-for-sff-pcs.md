@@ -99,9 +99,9 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Nvidia T400 | 2021 | 2GB<br/><sup>GDDR6</sup> | 30W | 3651 | Workstation card. |
 | AMD Radeon Pro WX 4100 | 2017 | 4GB<br/><sup>GDDR5</sup> | 50W | 3730 | Workstation card. |
 | Nvidia T400 4GB | 2021 | 4GB<br/><sup>GDDR6</sup> | 30W | 3802 | Workstation card. |
-| Intel Arc A310 _(A310F)_ | 2023 |  4GB<br/><sup>GDDR6</sup> | 30W |  3873 | Matrox LP single-slot passively cooled version, **2-slot versions go harder**, **Requires CPU with [Resizeable BAR][6]**. |
+| Intel Arc A310 _(A310F)_ | 2023 |  4GB<br/><sup>GDDR6</sup> | 30W |  3873 | Matrox LP single-slot passively cooled version, **2-slot versions go harder**, **Requires CPU with [Resizable BAR][6]**. |
 | Nvidia Quadro P1000 | 2017 | 4GB<br/><sup>GDDR5</sup> | 47W | 4439 | **512 and 640 core versions exist**, Workstation card. |
-| Intel Arc Pro A40 | 2023 | 6GB<br/><sup>GDDR6</sup> | 50W | 5222 | Workstation card, **Requires CPU with [Resizeable BAR][6]**, single slot version of A50. |
+| Intel Arc Pro A40 | 2023 | 6GB<br/><sup>GDDR6</sup> | 50W | 5222 | Workstation card, **Requires CPU with [Resizable BAR][6]**, single slot version of A50. |
 | Nvidia T600 | 2021 | 4GB<br/><sup>GDDR6</sup> | 40W | 6505 | Workstation card. |
 | Nvidia Quadro T1000 | 2019 | 4GB<br/><sup>GDDR5</sup> | 50W | 6533 | Workstation card. |
 | AMD Radeon RX 6400 | 2022 | 4GB<br/><sup>GDDR6</sup> | 53W | 6906 | 1050ti-tier, Gigabyte has 2-slot version, **no hardware video encoder**. |
@@ -124,11 +124,11 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you p
 | Nvidia GeForce GTX 750ti | 2014 | 2GB<br/><sup>GDDR5</sup> | 60W | 3910 | Gigabyte 2-slot, SRhonrya, MQX made a low profile single-slot version. |
 | AMD Radeon RX 460 | 2016 | 2/4GB<br/><sup>GDDR5</sup> | 75W | 4121 | Available from MSI. |
 | Nvidia GeForce GTX 950 Low Power | 2015 | 2GB<br/><sup>GDDR5</sup> | 75W | 4451 | _Regular GTX 950 is 90W<sup>(G3D: 5341)</sup>_, available from GALAX, KUROUTOSHIKOU (玄人志向) for the Japanese market. |
-| Intel Arc A310 | 2023 | 4GB<br/><sup>GDDR6</sup> | 50W | 4699 | _Full height versions are 75W<sup>(G3D: 5437)</sup>_, various LP single and OC'd dual slot versions available, **Requires CPU with [Resizeable BAR][6]**. |
+| Intel Arc A310 | 2023 | 4GB<br/><sup>GDDR6</sup> | 50W | 4699 | _Full height versions are 75W<sup>(G3D: 5437)</sup>_, various LP single and OC'd dual slot versions available, **Requires CPU with [Resizable BAR][6]**. |
 | Nvidia GeForce GTX 1630 | 2022 | 4GB<br/><sup>GDDR6</sup> | 75W | 4927 | **AVOID**, inefficient cut down version of 1650, a "display adapter" """"successor""""" to GT 1030. |
 | Nvidia GeForce GTX 1050 | 2016 | 2GB<br/><sup>GDDR5</sup> | 75W | 5029 | Zotac, GALAX, EVGA, Colorful, 4GB GDDR5 1-slot SRhonrya version exists. |
-| Intel Arc Pro A50 | 2023 | 6GB<br/><sup>GDDR6</sup> | 75W | 5222 | Workstation card, **Requires CPU with [Resizeable BAR][6]** |
-| <span class="blink">**Intel Arc A380**</span> | 2022 | 6GB<br/><sup>GDDR6</sup> | 75W | 6239 | **Requires CPU with [Resizeable BAR][6]** |
+| Intel Arc Pro A50 | 2023 | 6GB<br/><sup>GDDR6</sup> | 75W | 5222 | Workstation card, **Requires CPU with [Resizable BAR][6]** |
+| <span class="blink">**Intel Arc A380**</span> | 2022 | 6GB<br/><sup>GDDR6</sup> | 75W | 6239 | **Requires CPU with [Resizable BAR][6]** |
 | <span class="blink">**Nvidia GeForce GTX 1050ti**</span> | 2016 | 4GB<br/><sup>GDDR5</sup> | 75W | 6301 | Very common, enough for pre-2020 games, SRhonrya, ASL have [1-slot versions][3] for the Chinese market. |
 | <span class="blink">**Nvidia GeForce GTX 1650**</span> | 2019 | 4GB<br/><sup>GDDR5/6</sup> | 75W | 7818 | **GDDR6 version offers 6% perf uplift**, successor to GTX 1050ti LP, SRhonrya, ASL have [1-slot versions][4] for the Chinese market. |
 | <span class="blink">**Nvidia GeForce RTX 3050 6GB**</span> | 2024 | 6GB<br/><sup>GDDR6</sup> | 75W | 10557 | Successor to GTX 1650 LP, **Yeston has a 1-slot version**. |
