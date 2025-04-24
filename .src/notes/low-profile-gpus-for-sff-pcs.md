@@ -102,6 +102,7 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Intel Arc A310 _(A310F)_ | 2023 |  4GB<br/><sup>GDDR6</sup> | 30W |  3873 | Matrox LP single-slot passively cooled version, **2-slot versions go harder**, **Requires CPU with [Resizable BAR][6]**. |
 | Nvidia Quadro P1000 | 2017 | 4GB<br/><sup>GDDR5</sup> | 47W | 4439 | **512 and 640 core versions exist**, Workstation card. |
 | Intel Arc Pro A40 | 2023 | 6GB<br/><sup>GDDR6</sup> | 50W | 5222 | Workstation card, **Requires CPU with [Resizable BAR][6]**, single slot version of A50. |
+| Nvidia RTX A400 | 2024 | 4GB<br/><sup>GDDR6</sup> | 50W | 5788 | Workstation card. |
 | Nvidia T600 | 2021 | 4GB<br/><sup>GDDR6</sup> | 40W | 6505 | Workstation card. |
 | Nvidia Quadro T1000 | 2019 | 4GB<br/><sup>GDDR5</sup> | 50W | 6533 | Workstation card. |
 | AMD Radeon RX 6400 | 2022 | 4GB<br/><sup>GDDR6</sup> | 53W | 6906 | 1050ti-tier, Gigabyte has 2-slot version, **no hardware video encoder**. |
