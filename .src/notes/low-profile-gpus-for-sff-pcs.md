@@ -54,9 +54,12 @@ Both the Gigabyte and GALAX low profile versions of the RTX 4060 are **182mm** a
 ASUS's version has a much longer **188mm** fan shroud and PCB that would very likely not fit in the application above without mods, measure twice and click buy only once!
 
 ## A dying breed of graphics card?
-Low-profile card are often launched to little fanfare and are quietly announced halfway through the lifecycle of a particular graphics card, they don't represent a very profitable slice of the market for the companies still making them.
+Low-profile cards are often launched to little fanfare and are quietly announced halfway through the lifecycle of a particular graphics card, they don't represent a very profitable slice of the market for the companies still making them.
 
-The entry-level price/performance floor on dGPUs have stayed roughly the same since 2019, it's stagnated so much that integrated graphics dies on AI-focused Ryzen APUs _(Ryzen AI Max+ series)_ have comparable performance to an RTX 4060, and will likely be a competitive option for entry-level gaming in the near future instead of putting a discrete GPU into a used office PC.
+The "stagflation" of entry level and low TDP gaming GPUs is [well documented][8], the entry-level price/performance floor on dGPUs have stayed roughly the same since 2019, meaning the the same amount of money spent in 2019 will buy you roughly the same amount of performance in 2025.
+In order to achieve worthwhile generational uplifts, it is no longer enough to upgrade from an old entry-level card to a more current entry-level one, you must go upmarket.
+
+The entry level bar has stagnated for so long that upcoming integrated graphics dies on AI-focused Ryzen APUs _(Ryzen AI Max+ series)_ will have have comparable performance to an RTX 4060, and will likely be an appealing option for entry-level gaming in the near future instead of putting a discrete GPU into a used office PC.
 
 In order to illustrate that many users can avoid having to buy a low profile GPU at all, the integrated graphics on many recent AMD APUs are <span class="highlight">highlighted</span> below for comparison.
 This list also includes workstation cards for completeness.
@@ -164,3 +167,4 @@ Do yourself a favor and replace the stock PSU in your SFF if you want to go this
 [5]: https://www.dell.com/support/manuals/en-us/optiplex-9020-desktop/opt9020sffom-v2?guid=guid-f9b65300-4829-4b63-9770-237e6c10dcc7
 [6]: https://www.intel.com/content/www/us/en/support/articles/000090831/graphics.html
 [7]: https://videocardz.com/newz/amd-radeon-rx-6500-non-xt-spotted-features-1024-cores-4gb-64-bit-memory-and-55w-tbp
+[8]: https://gamersnexus.net/gpus/great-nvidia-switcheroo-gpu-shrinkflation
