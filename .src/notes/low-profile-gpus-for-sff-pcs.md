@@ -112,7 +112,8 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | AMD Radeon RX 6500 | 2022 | 4GB<br/><sup>GDDR6</sup> | 55W | 7527 | Single slot LP available from [Zephyr][7]. |
 | Nvidia T1000 | 2021 | 4GB<br/><sup>GDDR6</sup> | 50W | 7620 | Workstation card. |
 | Nvidia T1000 8GB | 2021 | 8GB<br/><sup>GDDR6</sup> | 50W | 7656 | Workstation card. |
-| <span class="blink">**Nvidia GeForce RTX 3050 6GB**</span> | 2024 | 6GB<br/><sup>GDDR6</sup> | 75W | 10557 | **Best single-slot LP card available**, Yeston 1-slot version only. |
+| AMD Radeon PRO W6400 | 2022 | 4GB<br/><sup>GDDR6</sup> | 50W | 7969 | Workstation card. |
+| <span class="blink" style="color: #F79EC6;">**Nvidia GeForce RTX 3050 6GB**</span> | 2024 | 6GB<br/><sup>GDDR6</sup> | 75W | 10557 | **Best single-slot LP card available**, Yeston 1-slot version only. |
 | Nvidia RTX A1000 | 2024 | 8GB<br/><sup>GDDR6</sup> | 50W | 10842 | Workstation card. |
 
 # 2-slot Low Profile under 75W
