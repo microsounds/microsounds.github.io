@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">997</b>, commit <code>5baaa08</code>.</strong></p>
-<p><strong>“Post-install: Updated deb-multimedia keyring link”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">998</b>, commit <code>687ebc9</code>.</strong></p>
+<p><strong>“xwin-decor: Added waifu2x upscaling on desktop platforms”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -141,19 +141,19 @@
 <p>View changelog since the last revision as <a href="https://github.com/microsounds/atelier/compare/HEAD~1...HEAD.diff"> <code>diff HEAD~1...HEAD</code></a></p>
 <p>The verbosity factor of this document compared to comment lines of code
 in this repo is about <strong>5:1</strong>.</p>
-<p>If this document is <em>44.3KiB</em> in
+<p>If this document is <em>44.5KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>76.0KiB</em> then this document
-currently covers about <b style="font-size: 130%;">11.65%</b>
+<em>76.3KiB</em> then this document
+currently covers about <b style="font-size: 130%;">11.66%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌑 Fri, Apr 11th, 2025.</p>
+<p>Last updated 🌕 Sat, Apr 26th, 2025.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime48.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime45.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -827,8 +827,9 @@ For example, this configuration would suit a 2 monitor layout with the right mon
 ~/Pictures/some/path
 /media/sd_card/some/path
 </code></pre>
-<p>If it exists, <a href="https://github.com/microsounds/atelier/raw/master/Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper on startup.
-In the case of video files, a random video frame from that file will be taken and set as the wallpaper using <code>ffmpeg</code>.</p>
+<p>If it exists, <a href="https://github.com/microsounds/atelier/raw/master/Scripts/xwin_decor.sh"><code>xwin-decor</code></a> will randomly pick a directory and file within it and set it as the wallpaper for each active monitor on startup.
+In the case of video files, a random video frame from that file will be taken and set as the wallpaper using <code>ffmpeg</code>.
+If this is on a desktop, it’ll also de-noise the images and upscale them through <a href="https://github.com/nagadomi/waifu2x">waifu2x</a>, this is GPU-bound so be patient.</p>
 <h2>X resources and theming<span id="X-resources-and-theming"></span></h2>
 <p>For consistency, <code>xinit</code>, <code>dwm</code> and other scripts make use of the C preprocessor to mangle config files and configure color schemes.</p>
 <p>Theme settings and individual color schemes are stored as C header files containing preprocessor macros representing color hex codes in <a href="https://github.com/microsounds/atelier/raw/master/.local/include"><code>~/.local/include</code></a>.
@@ -1364,9 +1365,9 @@ found in the current revision:</em></p>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-313.97KiB
+315.09KiB
 out of a total compressed git history size of
-994.13KiB.</em></p>
+1002.58KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
@@ -1420,9 +1421,9 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0   .config/dmenu/pre-run -> ../dwm/p
 -rw-r--r-- 1  199   Sep 23 2020 14:50 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/amd.conf">.config/xorg/amd.conf</a>
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
--rw-r--r-- 1  289   Aug 29 2020 21:25 rev. 2   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
+-rw-r--r-- 1  364   Apr 26 2025 18:42 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
 -rw-r--r-- 1 2.5K   Dec 28 2023 22:56 rev. 31  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.gitconfig">.gitconfig</a>
--rw-r--r-- 1 4.0K   Nov 25 2024 12:24 rev. 35  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
+-rw-r--r-- 1 4.0K   Apr 26 2025 18:42 rev. 36  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
 -rwxr-xr-x 1 3.2K   Nov 25 2024 11:48 rev. 20  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
@@ -1502,6 +1503,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  657   Apr 29 2023 09:35 rev. 10  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/13-posix-docs.sh">.once.d/13-posix-docs.sh</a>
 -rwxr-xr-x 1 1022   Mar 21 2022 23:26 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/14-sunvox.sh">.once.d/14-sunvox.sh</a>
 -rwxr-xr-x 1  549   Aug  2 2021 15:28 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/15-sound-effects.sh">.once.d/15-sound-effects.sh</a>
+-rwxr-xr-x 1  512   Apr 26 2025 18:42 rev. 1   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/16-waifu2x.sh">.once.d/16-waifu2x.sh</a>
 -rwxr-xr-x 1  499   Nov 21 2020 15:41 rev. 3   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/20-xorg-override.sh">.once.d/20-xorg-override.sh</a>
 -rwxr-xr-x 1  387   Jun 18 2021 00:52 rev. 12  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/21-network-manager.sh">.once.d/21-network-manager.sh</a>
 -rwxr-xr-x 1  796   Jul  6 2022 16:51 rev. 11  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/22-realtek-rtl8812au.sh">.once.d/22-realtek-rtl8812au.sh</a>
@@ -1530,14 +1532,14 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0   .local/lib/path-gitstatus -> ../.
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 6.8K   Jun 30 2024 22:07 rev. 50  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Jun 27 2024 16:38 rev. 8   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
--rwxr-xr-x 1 2.9K   Jul  9 2024 18:14 rev. 35  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
+-rwxr-xr-x 1 3.2K   Apr 26 2025 18:42 rev. 36  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.4K   Dec  3 2021 23:13 rev. 19  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  45K   Dec  4 2024 22:21 rev. 216 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217 <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 11 Apr 2025 15:05:21 -0700 -->
+<!-- updated Sat, 26 Apr 2025 18:42:58 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
