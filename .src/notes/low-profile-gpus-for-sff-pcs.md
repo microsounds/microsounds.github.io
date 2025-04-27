@@ -4,6 +4,7 @@
 Last updated {UPDATED}.
 
 ![img](assets/low_profile_gpu.jpg)
+<span class="aside">We are now seeing year to year LP card uplifts after many years of stagnation and segment drought, it's an exciting time!</span>
 
 Most GPU marketing materials will use the term **LP** or **"low profile"** to refer to graphics cards that are **69mm**, or half the height of a normal GPU, not full-height short-length GPUs meant for Mini-ITX cases.
 As far as discrete graphics go, these are the most space and energy-efficient GPUs available today, ideal for use in space-saving PCs, small form factor PCs (SFFs), home theater PCs (HTPCs), slimline cases, specialty server hardware, converting a used office PC into a budget game console, and other niche applications where size and power draw are constraining factors.
@@ -23,6 +24,7 @@ _Cards older than **2014** may have their driver support discontinued by the ven
 ## Notes on upgrading an existing prebuilt desktop PC
 
 ![img](assets/optiplex-9020-sff3.jpg)
+<span class="aside">Dell Optiplex 9020 SFF (2014), i7-4790, RTX 4060 LP, 500W flex ATX, 32GB DDR3-1600, 1.1TB fast/14TB slow, mikuu, DVD±RW, etc..</span>
 
 Some people might find it appealing to drop in a 75W GPU into an existing prebuilt desktop PC to make an entry-level gaming PC, as these often have proprietary power supplies with no additional PCIe cables for expansion cards.
 
@@ -48,6 +50,8 @@ AMD's low profile cards have substantially worse price/performance than Nvidia o
 
 ### Space constraints
 ![img](assets/gigabyte-rtx-4060-length.jpg)
+<span class="aside">I always forget what order to remove components, the GPU has to come out before I can disconnect the drive cage.</span>
+
 You should also be mindful of available space in your SFF case, low profile RTX 4060s (and possibly later cards) are much longer than the standard low profile length of **167mm**.
 
 Both the Gigabyte and GALAX low profile versions of the RTX 4060 are **182mm** at their longest point, the Gigabyte version has a **182mm** fan shroud with a 167mm PCB behind it, allowing for a recessed PCIe plug.
