@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2025/4/24 -->
+<!-- updated 2025/5/9 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -77,6 +77,7 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | Nvidia GeForce 210 | 2009 | 512MB<br/><sup>DDR3</sup> | 26W | 98 | The eternal display adapter, still sold new, **worse than integrated**. |
 | AMD Radeon HD 8490 | 2014 | 1GB<br/><sup>DDR3</sup> | 35W | 263 | OEM only. |
 | Nvidia GeForce GT 610 | 2012 | 1GB<br/><sup>DDR3</sup> | 29W | 302 | |
+| <span class="highlight">Intel UHD Graphics 600</span> | 2018 | _N/A_ | _N/A_ | 318 | Typical low end Chromebook graphics. |
 | AMD Radeon R5 240 | 2013 | 2GB<br/><sup>DDR3</sup> | 50W | 519 | OEM only. |
 | AMD Radeon HD 7570 | 2012 | 1-2GB<br/><sup>GDDR3/5</sup> | 60W | 614 | OEM only, various configs exist. |
 | <span class="highlight">Intel HD Graphics 4600</span> | 2013 | _N/A_ | _N/A_ | 630 | Intel Core i5 Haswell-era integrated graphics. |
