@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1004</b>, commit `619346d`.**
+**Revision No. <b style="font-size: 130%">1005</b>, commit `59cc1fc`.**
 
-**"sfx-synth: Retuned fallback sounds on laptops"**
+**"git: list-files macro now lists absolute filenames"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *44.5KiB* in
 size, and the approximate size of all comment lines of code is
-*77.1KiB* then this document
-currently covers about <b style="font-size: 130%;">11.53%</b>
+*77.2KiB* then this document
+currently covers about <b style="font-size: 130%;">11.52%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -786,7 +786,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime10.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime42.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -813,9 +813,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-317.55KiB
+317.82KiB
 out of a total compressed git history size of
-1009.87KiB._
+1005.55KiB._
 
 # Complete source listing
 
@@ -871,7 +871,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  364   Apr 26 2025 18:42 rev. 3    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rw-r--r-- 1 2.5K   Dec 28 2023 22:56 rev. 31   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
+-rw-r--r-- 1 2.8K   May 23 2025 22:26 rev. 32   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 4.0K   Apr 26 2025 18:42 rev. 36   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1 1.2K   May 11 2025 20:37 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/adb-ssh-socks5">.local/bin/adb-ssh-socks5</a>
@@ -990,4 +990,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 16 May 2025 14:45:01 -0700 -->
+<!-- updated Fri, 23 May 2025 22:26:44 -0700 -->
