@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Sat, 24 May 2025 00:00:00 -0700</lastBuildDate>
+<lastBuildDate>Sun, 25 May 2025 22:32:02 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 1005, commit 59cc1fc. “git: list-files macro now lists absolute filenames” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 44.5KiB in size, and the approximate size of all comment lines of code is 77.2KiB then this document currently covers about 11.52% of all implemented features and behavior in this repository. This is just an [automated [..]]]>
+<![CDATA[Revision No. 1,007, commit 7f5c669. “xwin-statusd: Added visual feedback when launching GUI applications” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 44.5KiB in size, and the approximate size of all comment lines of code is 77.7KiB then this document currently covers about 11.45% of all implemented features and behavior in this repository. This is just an [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 23 May 2025 22:26:44 -0700</pubDate>
+<pubDate>Sun, 25 May 2025 22:32:02 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>
