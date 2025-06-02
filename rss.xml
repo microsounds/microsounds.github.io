@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 1,007, commit 7f5c669. “xwin-statusd: Added visual feedback when launching GUI applications” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 44.5KiB in size, and the approximate size of all comment lines of code is 77.7KiB then this document currently covers about 11.45% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 1007, commit 7f5c669. “xwin-statusd: Added visual feedback when launching GUI applications” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 44.5KiB in size, and the approximate size of all comment lines of code is 77.7KiB then this document currently covers about 11.45% of all implemented features and behavior in this repository. This is just an [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
