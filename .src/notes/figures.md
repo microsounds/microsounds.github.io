@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2025/1/15 -->
+<!-- updated 2025/6/2 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -35,6 +35,15 @@ I don't feel like making an account on _[myfigurecollection.net][mfc]_ to keep t
 	[coffin]: https://www.google.com/search?q=amiami+shipping+%28200%7Ccoffin%29+box+site%3Areddit.com&tbm=isch
 
 ## Collection
+<sup class="aside right">(Maybe one day I'll find every Gochiusa nendo.)</sup>
+You can probably pick up on the theme, my collection is mostly miku, then enmaided characters, but I really enjoy collecting artifacts from the first golden age of Vocaloid music _(2009-2016)_.[^criteria]
+
+[^criteria]:
+	I'm sure there's multiple thousands of _Miku-adjacent_ figures by this point, figures only barely tangentially related to Miku, eg. bearing the character license and/or "likeness", yet not related to canon illustrations, collaboration projects, Project DIVA modules, any concert series, PVs or any existing musical works aren't very interesting and I don't really go for those very often.
+
+	Classic outfit VOCALOID2 Miku is love!
+
+
 <em><strong><span id="fig-count" style="font-size: 150%"></span></strong> entries,
 	<strong><span id="fig-abs-count" style="font-size: 120%"></span></strong> of which are abstract.</em>
 _Sorted by when I remember getting it, from newest to oldest._
@@ -148,15 +157,15 @@ var figs = [
 	[ '2247777', '10a51', 'sega luminasta miku project diva mega 39\'s 15th anniv. (2024)' ],
 	[ '22229', '658b2', 'sega hatsune miku PM figure (2010)' ],
 	[ '555317', 'e5cf0', 'taito miku x shuumai-kun plush (2012)' ],
-	[ 'p625061', '9ccb6', 'sega dodeka jumbo fuwa fuwa nuigurumi BIG MICKER!! (2018)' ],
+	[ '625061', '9ccb6', 'sega dodeka jumbo fuwa fuwa nuigurumi BIG MICKER!! (2018)' ],
 	[ '1916908', 'fbd46', 'sega fuwa puchi nuigurumi L miku magical mirai 2023 plush (2023)' ],
 	[ '1877039', '26931', 'good smile dress up darling kuroe shikuzu nendoroid #2172 (2023)' ],
 	[ '12638', '7c73a', 'gift nendoroid plus #02 hachune miku articulated plush  (2011)' ],
 	[ '549357', 'f1872', 'good smile gochiusa hotto cocoa nendoroid #798 (2017)' ],
 	[ '1131770', 'e27f8', 'good smile rozen maiden suiseiseki nendoroid #1710 (2022)' ],
-	[ 'p2222288', '8c13c', 'taito artist masterpiece+ miku birthday 2024 flower ver. (2024)' ],
-	[ 'p2256547', 'c9e2e', 'good smile pop up parade miku v2 translucent color ver. (2024)' ],
-	[ 'p1941522', 'd96e1', 'max factory plamatea miku 16th birthday ver. model kit (2024)' ],
+	[ '2222288', '8c13c', 'taito artist masterpiece+ miku birthday 2024 flower ver. (2024)' ],
+	[ '2256547', 'c9e2e', 'good smile pop up parade miku v2 translucent color ver. (2024)' ],
+	[ '1941522', 'd96e1', 'max factory plamatea miku 16th birthday ver. model kit (2024)' ],
 	[ '2210315', '79581', 'good smile world is mine miku 2024 ver. nendoroid #2430 (2024)' ],
 	[ '1764164', 'be850', 'good smile huggy miku trading fig (2023)' ],
 	[ '1956669', '6491b', 'good smile miku v3 nendoroid #2360 (2024)' ],
@@ -165,8 +174,8 @@ var figs = [
 	[ '861021', '9c203', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
 	[ 'p1781933', '408d1', 'design coco miku senbonzakura 10th anniv. ver 1/7 scale (2025)' ],
 	[ '1974911', 'db59b', 'furyu bicute bunnies miku rurudo ver. (2024)' ],
-	[ '2004539', '405cf', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
-	[ 'p236103', '74cf9', 'freeing b-style hatsune miku V3 1/4 scale (2016)' ],
+	[ '2004539', '5ff5e', 'taito miku x rody artist masterpiece+ 39 ver. (2024)' ],
+	[ '236103', '74cf9', 'freeing b-style hatsune miku V3 1/4 scale (2016)' ],
 	[ '1911915', 'e3093', 'good smile komi-san maid outfit pop up parade (2024)' ],
 	[ '1941969', '7b67e', 'good smile DECO*27 vampire jirai miku nendoroid #2239 (2024)' ],
 	[ '186', '94494', 'good smile miku nendoroid #033 (2008)' ],
@@ -187,7 +196,7 @@ var figs = [
 	[ '287701', 'bb9fe', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
 	[ '41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129 (2011)' ],
 	[ '861021', '9c203', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],
-	[ '1849001', '76bfb', 'gift hatsune miku nt fumo plush (2023)' ],
+	[ '1849001', '49404', 'gift hatsune miku nt fumo plush (2023)' ],
 	[ '1876348', 'f08ca', 'good smile miku 16th birthday ~dear creators~ nendoroid #2222 (2023)' ],
 	[ '1189085', '8fa69', 'good smile hatsune miku nt 1/8 scale (2023)' ],
 	[ '1258843', '55d3c', 'furyu f-nex hatsune miku chronicle 1/7 scale (2022)' ],
@@ -234,7 +243,7 @@ var figs = [
 	[ '1376115', '30a86', 'good smile racing AMG 2021 SUPER GT round 3 1/64 scale diecast car (2022)' ],
 	[ '1275355', '94c12', 'sega preciality special nuigurumi sakura miku (2022)' ],
 	[ '1213389', '85cfa', 'good smile genshin impact venti nendoroid #1795 (2022)' ],
-	[ '1189088', 'f9b14', 'good smile hatsune miku nt nendoroid #1701 (2022)' ],
+	[ '1189088', 'a069e', 'good smile hatsune miku nt nendoroid #1701 (2022)' ],
 	[ '1662862', 'a6288', 'moeyu miku embroidered blanket hoodie (2022)' ],
 	[ '1499800', '04668', 'taito miku artist masterpiece latidos 2022 ver. (2022)' ],
 	[ '1220581', 'b0f34', 'taito miku artist masterpiece pricess arabian ver. (2021)' ],
@@ -248,7 +257,7 @@ var figs = [
 	[ '401018', 'bfb66', 'sega project diva innocent SPM miku (2016)' ],
 	[ '718192', '29017', 'hatsune miku 2nd season Winter ver. (2018)' ],
 	[ '1251026', 'e36e0', 'bandai q posket miku type a (2021)' ],
-	[ '944728', 'c98b0', 'furyu miku bicute bunnies original ver. (2020)' ],
+	[ '944728', 'f3f21', 'furyu miku bicute bunnies original ver. (2020)' ],
 	[ '1311067', 'f43ff', 'taito miku artist masterpiece princess alice (2022)' ],
 	[ '1141381', 'fe94b', 'taito miku artist masterpiece birthday 2021 (14th anniv.) (2021)' ],
 	[ '1293291', 'c95e9', 'furyu sakura miku noodle stopper (2022)' ],
