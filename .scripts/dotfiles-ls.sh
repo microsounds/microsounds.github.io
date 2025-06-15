@@ -5,9 +5,10 @@
 
 cd ~
 
+# GNU printf required
 # re-renders ~/readme.md for use as self-contained webpage
 # spits out complete listing of dotfiles with inline links
-ver="$(git meta rev-list HEAD | wc -l | xargs command printf "%'d")" # revision count
+ver="$(git meta rev-list HEAD | wc -l | xargs env printf "%'d")" # revision count
 hash="$(git meta rev-parse --short HEAD)"
 mesg="$(git meta log -1 --format=%s)"
 
