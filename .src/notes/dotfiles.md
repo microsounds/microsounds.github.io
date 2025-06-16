@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1009</b>, commit `584c6c7`.**
+**Revision No. <b style="font-size: 130%">1010</b>, commit `5feb45b`.**
 
-**"pcmanfm: Generate thumbnails on shared network devices"**
+**"Nothing important"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *44.5KiB* in
 size, and the approximate size of all comment lines of code is
-*77.8KiB* then this document
-currently covers about <b style="font-size: 130%;">11.43%</b>
+*77.9KiB* then this document
+currently covers about <b style="font-size: 130%;">11.41%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -813,9 +813,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-318.95KiB
+319.23KiB
 out of a total compressed git history size of
-1011.98KiB._
+1014.19KiB._
 
 # Complete source listing
 
@@ -871,7 +871,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rw-r--r-- 1  368   Aug 24 2020 22:50 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/intel.conf">.config/xorg/intel.conf</a>
 -rw-r--r-- 1  939   Dec 15 2021 19:58 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/ntc-chip.conf">.config/xorg/ntc-chip.conf</a>
 -rw-r--r-- 1  364   Apr 26 2025 18:42 rev. 3    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/xorg/nvidia.conf">.config/xorg/nvidia.conf</a>
--rw-r--r-- 1 2.8K   May 23 2025 22:26 rev. 32   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
+-rw-r--r-- 1 2.9K   Jun 16 2025 10:25 rev. 33   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.gitconfig">.gitconfig</a>
 -rw-r--r-- 1 4.0K   Apr 26 2025 18:42 rev. 36   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1 1.2K   May 25 2025 22:28 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/adb-ssh-socks5">.local/bin/adb-ssh-socks5</a>
@@ -947,7 +947,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1 2.0K   Sep 25 2023 02:10 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png">.minecraft/resourcepacks/HatsuneMiku_2023/assets/minecraft/textures/entity/alex.png</a>
 -rw-r--r-- 1  106   Sep 25 2023 02:10 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta">.minecraft/resourcepacks/HatsuneMiku_2023/pack.mcmeta</a>
 -rw-r--r-- 1  65K   Sep 25 2023 02:10 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.minecraft/resourcepacks/HatsuneMiku_2023/pack.png">.minecraft/resourcepacks/HatsuneMiku_2023/pack.png</a>
--rw-r--r-- 1 1.7K   Jan 26 2024 20:48 rev. 36   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
+-rw-r--r-- 1 1.8K   Jun 16 2025 10:25 rev. 37   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.nanorc">.nanorc</a>
 -rwxr-xr-x 1 1.7K   Apr 11 2025 15:05 rev. 24   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/00-apt-repositories.sh">.once.d/00-apt-repositories.sh</a>
 -rwxr-xr-x 1  695   Aug 20 2023 20:43 rev. 21   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/01-install-essential.sh">.once.d/01-install-essential.sh</a>
 -rwxr-xr-x 1  586   Mar  2 2024 12:39 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/02-meta-config.sh">.once.d/02-meta-config.sh</a>
@@ -992,4 +992,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Tue, 10 Jun 2025 16:22:27 -0700 -->
+<!-- updated Mon, 16 Jun 2025 10:25:30 -0700 -->
