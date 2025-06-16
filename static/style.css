@@ -254,6 +254,25 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	font-size: 11px;
 }
 
+/* broken and unimplemented features */
+.broken {
+	position: relative;
+}
+.broken::after {
+	content: "✖ currently broken";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #d64b64;
+	font-size: 2em;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 5px;
+	border: 3px solid #d64b64;
+	pointer-events: none;
+}
+
 /* force certain consistent fonts for all users */
 @font-face {
 	font-family: Liberation Serif; /* moonphase emoji */

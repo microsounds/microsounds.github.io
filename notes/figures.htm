@@ -299,6 +299,12 @@ var figs = [
 
 ];
 
+/* broken image fallback */
+var broken_img = function() {
+	this.onerror = null;
+	this.src = "assets/figure-broken.png";
+};
+
 var thumbs = document.getElementById('fig-thumbs');
 var gallery = document.getElementById('fig-gallery');
 
@@ -325,6 +331,7 @@ for (var i in figs) {
 		l2 = document.createElement('img');
 		l2.alt = alt;
 		l2.title = title;
+		l2.onerror = broken_img;
 		l2.src = 'https://static.myfigurecollection.net/upload/items/0/'
 			+ id + '-' + hash + ".jpg";
 		l1.appendChild(l2);
@@ -339,6 +346,7 @@ for (var i in figs) {
 			l2.href = 'https://myfigurecollection.net/pictures.php?itemId=' + id;
 
 				l3 = document.createElement('img');
+				l3.onerror = broken_img;
 				l3.src = 'https://static.myfigurecollection.net/upload/items/1/'
 					+ id + '-' + hash + ".jpg";
 				l3.title = title;
