@@ -306,12 +306,12 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 	text-align: center;
 	background-color: #FFFFFF10;
 }
-.webring-info {
+.vocaring-title {
 	font-family: Orbi;
 	font-size: 20px;
 	color: #F07DB4;
 }
-.webring-links {
+.vocaring-links-top {
 	font-family: Pixel Operator;
 	font-size: 16px;
 }
