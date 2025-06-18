@@ -314,6 +314,7 @@ tr:nth-child(even) { background: rgba(0, 0, 0, 40%); }
 .vocaring-links-top {
 	font-family: Pixel Operator;
 	font-size: 16px;
+	text-shadow: none;
 }
 
 /* changes for mobile devices */
