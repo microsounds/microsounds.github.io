@@ -76,7 +76,7 @@
 * ![ico]({DOC_ROOT}/static/button/affiliates/poopingpenis.gif) [~~poopingpenis's igloo~~ 404](https://poopingpenis.netlify.app/)
 	* _PC-98 computing enthusiast from Puerto Rico, (escrito en español)._
 	* _His BBS is [still up](https://poopingpenis.bbs.fc2.com)._
-* ![ico]({DOC_ROOT}/static/button/affiliates/xjunko.png) [xjunko's site](https://konno.ovh)
+* ![ico]({DOC_ROOT}/static/button/affiliates/xjunko.png) [xjunko's site](https://kafu.ovh)
 	* _inspired by my site 💕, a rhythm games enthusiast from Malaysia._
 * [Hidden Wonders](https://hiddenwonders.xyz)
 	* _Warm reminder of myself from years back, it takes guts to put yourself out there when you don't like revealing any bit of yourself online. I hope you find peace ❤️ー_
