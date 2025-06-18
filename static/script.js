@@ -1,10 +1,7 @@
 'use strict';
 
-/* @licstart The following is the entire license notice for the
- * javascript code in this page.
- *
- * static/script.js — interactive webpage elements
- * (c) 2023 microsounds <https://github.com/microsounds>, GPLv3+
+/* static/script.js — interactive webpage elements
+ * (c) 2025 microsounds <https://github.com/microsounds>, GPLv3+
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -19,9 +16,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA  02110-1335, USA.
- *
- * @licend The above is the entire license notice for the
- * javascript code in this page.
  */
 
 /* randomly selected subtitle text */
@@ -419,15 +413,25 @@ function generate_clouds() {
 			box_shadow(10 * Math.floor(root.scrollHeight / root.clientHeight));
 }
 
+/* main loop  */
 window.addEventListener('DOMContentLoaded', function() {
 	generate_clouds();
 	random_subtitle();
 	setup_bgm();
 
-	/* persist playback settings */
+	/* persistent playback settings */
 	if (document.cookie.includes('bgm=1'))
 		play();
 
 	linkify_images();
 	browser_check();
+});
+
+/* covers edge case where persistent playback and background sync breaks after navigating
+ * via back button because this triggers aggressive chrome optimizations eg. loading
+ * the site from bfcache and audio.play() silently failing, reload the page to fix
+ */
+window.addEventListener('pageshow', function(event) {
+	if (event.persisted)
+		window.location.reload();
 });
