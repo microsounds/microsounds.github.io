@@ -186,7 +186,7 @@
 * [allyratworld](https://allyratworld.neocities.org/home.html)
 * [neoratz](https://neoratz.neocities.org/)
 * [proxima64](https://proxima64.org)
-* [wowaname](https://wowana.me)
+* [wowaname](https://web.archive.org/web/20240325093442/https://wowana.me)
 	* _My original inspiration for creating this website, thank you 💕_
 
 
