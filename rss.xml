@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Mon, 16 Jun 2025 10:25:30 -0700</lastBuildDate>
+<lastBuildDate>Wed, 25 Jun 2025 00:00:00 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -37,7 +37,7 @@
 </description>
 <link>https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/low-profile-gpus-for-sff-pcs.htm</guid>
-<pubDate>Sat, 24 May 2025 00:00:00 -0700</pubDate>
+<pubDate>Wed, 25 Jun 2025 00:00:00 -0700</pubDate>
 </item>
 <item>
 <title>Thoughts on the disrespectful Suruga-ya.com (not suruga-ya.jp)</title>
