@@ -75,7 +75,7 @@ var loops = [
 	[ 'programmers_song1', 'MOSAIC.WAV - 電気の恋人 -I am Programmer\'s Song- /* VL-3901mkII */ ft. 初音ミク' ],
 	[ 'programmers_song2', 'MOSAIC.WAV - 電気の恋人 -I am Programmer\'s Song- /* VL-3901mkII */ ft. 初音ミク' ],
 	[ 'uwu', 'moopMELLUS Multiplexing - Querstrobernachts' ],
-/* 	[ 'kyoko', 'SUI UZI - Feel Me' ], */
+	[ 'kyoko', 'SUI UZI - Feel Me' ],
 	[ 'pdaft1', 'shu-t - VOX ft. MEIKO, 初音ミク (project diva arcade 1.01)' ],
 	[ 'pdaft2', 'shu-t - VOX ft. MEIKO, 初音ミク (project diva arcade 1.01)' ],
 	[ 'darkness', 'Mr. Kitty - After Dark (Astrophysics cover ft. 初音ミク)' ],
