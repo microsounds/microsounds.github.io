@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1010</b>, commit `5feb45b`.**
+**Revision No. <b style="font-size: 130%">1011</b>, commit `c132246`.**
 
-**"Nothing important"**
+**"getquote: Yahoo now blocks you if you don't fake HTTP headers"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *44.5KiB* in
 size, and the approximate size of all comment lines of code is
-*77.9KiB* then this document
-currently covers about <b style="font-size: 130%;">11.41%</b>
+*78.0KiB* then this document
+currently covers about <b style="font-size: 130%;">11.40%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -786,7 +786,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime19.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime30.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -799,7 +799,7 @@ Minimum requirements for acceptable performance:
 > * `android-termux.sh v1.1`
 > * `apply-changes v0.1`
 > * `chromium_widevine.sh v0.2`
-> * `getquote v0.5`
+> * `getquote v0.6`
 > * `git_status.sh v0.7`
 > * `moonphase-date v0.2`
 > * `nano_overlay.sh v1.2 `
@@ -813,9 +813,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-319.23KiB
+319.39KiB
 out of a total compressed git history size of
-1019.07KiB._
+1019.85KiB._
 
 # Complete source listing
 
@@ -882,7 +882,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rwxr-xr-x 1   85   Jul 15 2020 17:12 rev. 3    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/feh">.local/bin/feh</a>
 lrwxrwxrwx 1    5   (symbolic link)   rev. 0    .local/bin/fgrep -> egrep
 -rwxr-xr-x 1 2.7K   Mar 20 2024 17:43 rev. 9    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
--rwxr-xr-x 1 1.6K   Jan 26 2024 20:48 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
+-rwxr-xr-x 1 1.8K   Jun 25 2025 15:17 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/make">.local/bin/make</a>
 -rwxr-xr-x 1  735   Mar 12 2024 13:29 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
@@ -992,4 +992,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 16 Jun 2025 10:25:30 -0700 -->
+<!-- updated Wed, 25 Jun 2025 15:17:33 -0700 -->
