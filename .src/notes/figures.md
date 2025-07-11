@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2025/6/2 -->
+<!-- updated 2025/7/11 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -153,6 +153,10 @@ var figs = [
 	 * MFC ids prepended with x are knockoffs
 	 */
 
+	[ '1796928', '82839', 'max limited yurayura head miku clear ver. #93 (2025)' ],
+	[ '2220810', 'ef73d', 'good smile magical mirai 2023 miku nendoroid #2438 (2025)' ],
+	[ '2220809', 'a62c3', 'good smile magical mirai 2014 miku nendoroid #2439 (2024)' ],
+	[ '2163953', '7c2df', 'good smile racing miku 2024 nendoroid #2477 (2024)' ],
 	[ '2257530', '6fd05', 'taito coreful re (zero rem nekomimi maid ver.)' ],
 	[ '2247777', '10a51', 'sega luminasta miku project diva mega 39\'s 15th anniv. (2024)' ],
 	[ '22229', '658b2', 'sega hatsune miku PM figure (2010)' ],
@@ -223,8 +227,8 @@ var figs = [
 	[ '1635003', 'ea804', 'taito wonderland puss in boots miku (2023)' ],
 	[ '36788', '5b203', 'sega kagamine len EX figure (2010)' ],
 	[ '1495055', 'eda04', 'bandai q posket miku v4x type a (2022)' ],
-	[ '1796930', '5b192', 'max limited yurayura head miku nt (2023)' ],
-	[ '1796928', '82839', 'max limited yurayura head miku (2023)' ],
+	[ '1796930', '5b192', 'max limited yurayura head miku nt #76 (2023)' ],
+	[ '1796928', '82839', 'max limited yurayura head miku #75 (2023)' ],
 	[ '1473760', 'fe3fe', 'good smile inugami korone nendoroid #1861 (2022)' ],
 	[ '1473759', '90d6e', 'good smile nekomata okayu nendoroid #1860 (2022)' ],
 	[ '1782785', 'e7859', 'furyu exceed creative miku cyber future ver. (2023)' ],
