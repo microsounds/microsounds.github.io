@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2025/6/25 -->
+<!-- updated 2025/7/11 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -120,6 +120,7 @@ These can be passively cooled or have a narrow heatsink/fan, requiring only 1 PC
 | AMD Radeon PRO W6400 | 2022 | 4GB<br/><sup>GDDR6</sup> | 50W | 7969 | Workstation card. |
 | <span class="blink" style="color: #F79EC6;">**Nvidia GeForce RTX 3050 6GB**</span> | 2024 | 6GB<br/><sup>GDDR6</sup> | 75W | 10557 | **Best single-slot LP card available**, Yeston 1-slot version only. |
 | Nvidia RTX A1000 | 2024 | 8GB<br/><sup>GDDR6</sup> | 50W | 10842 | Workstation card. |
+| Nvidia RTX 2000E Ada Generation | 2024 | 16GB<br/><sup>GDDR6</sup>  | 50W | 14396 | Workstation card. |
 
 # 2-slot Low Profile under 75W
 These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you probably don't need more than this if you're hoping for light gaming at 1080p.
@@ -165,7 +166,7 @@ Do yourself a favor and replace the stock PSU in your SFF if you want to go this
 | :------ | :--: | --: | --: | :--: | :-- |
 | Nvidia GeForce GTS 450 | 2011 | 1GB<br/><sup>GDDR5</sup> | 106W | 1319 | Possibly over 200mm long, **6-pin PCIe**, Palit, Gainward and Sparkle LP versions. |
 | <span class="blink">**Nvidia GeForce RTX 4060**</span> | 2023 | 8GB<br/><sup>GDDR6</sup> | 115W | 19701 | GTX 1080ti perf in an LP card, **PCIe 6/8-pin power**. |
-| Nvidia GeForce RTX 5050 | 2025 | 8GB<br/><sup>GDDR6</sup> | 130W | 12000? | **PCIe 8-pin**, 11% more power draw, negative perf/W over RTX 4060. |
+| Nvidia GeForce RTX 5050 | 2025 | 8GB<br/><sup>GDDR6</sup> | 130W | 17000? | **PCIe 8-pin**, 11% more power draw, negative perf/W over RTX 4060. |
 | Nvidia GeForce RTX 5060 | 2025 | 8GB<br/><sup>GDDR7</sup> | 145W | 21294 | **PCIe 8-pin**, 20% more power draw, 7% perf uplift over RTX 4060. |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
