@@ -165,8 +165,8 @@ Do yourself a favor and replace the stock PSU in your SFF if you want to go this
 | Name | Released | VRAM | TDP | PassMark G3D | Remarks |
 | :------ | :--: | --: | --: | :--: | :-- |
 | Nvidia GeForce GTS 450 | 2011 | 1GB<br/><sup>GDDR5</sup> | 106W | 1319 | Possibly over 200mm long, **6-pin PCIe**, Palit, Gainward and Sparkle LP versions. |
-| <span class="blink">**Nvidia GeForce RTX 4060**</span> | 2023 | 8GB<br/><sup>GDDR6</sup> | 115W | 19701 | GTX 1080ti perf in an LP card, **PCIe 6/8-pin power**. |
 | Nvidia GeForce RTX 5050 | 2025 | 8GB<br/><sup>GDDR6</sup> | 130W | 17000? | **PCIe 8-pin**, 11% more power draw, negative perf/W over RTX 4060. |
+| <span class="blink">**Nvidia GeForce RTX 4060**</span> | 2023 | 8GB<br/><sup>GDDR6</sup> | 115W | 19701 | GTX 1080ti perf in an LP card, **PCIe 6/8-pin power**. |
 | Nvidia GeForce RTX 5060 | 2025 | 8GB<br/><sup>GDDR7</sup> | 145W | 21294 | **PCIe 8-pin**, 20% more power draw, 7% perf uplift over RTX 4060. |
 
 [1]: https://en.wikipedia.org/wiki/Hackintosh
