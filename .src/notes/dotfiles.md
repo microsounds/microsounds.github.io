@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1011</b>, commit `c132246`.**
+**Revision No. <b style="font-size: 130%">1012</b>, commit `28c49be`.**
 
-**"getquote: Yahoo now blocks you if you don't fake HTTP headers"**
+**"adb-ssh-socks5: Forcing SOCK5 proxy everywhere when enabled"**
 
 {TOC}
 
@@ -12,8 +12,8 @@ in this repo is about **5:1**.
 
 If this document is *44.5KiB* in
 size, and the approximate size of all comment lines of code is
-*78.0KiB* then this document
-currently covers about <b style="font-size: 130%;">11.40%</b>
+*78.1KiB* then this document
+currently covers about <b style="font-size: 130%;">11.38%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -786,7 +786,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime30.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -813,9 +813,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-319.39KiB
+320.02KiB
 out of a total compressed git history size of
-1014.97KiB._
+1020.85KiB._
 
 # Complete source listing
 
@@ -875,7 +875,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rw-r--r-- 1 4.0K   Apr 26 2025 18:42 rev. 36   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/ci.yml">.github/workflows/ci.yml</a>
 -rw-r--r-- 1 2.5K   Sep 15 2022 02:32 rev. 7    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.github/workflows/magnet-dl.yml">.github/workflows/magnet-dl.yml</a>
 -rwxr-xr-x 1 1.2K   May 25 2025 22:28 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/adb-ssh-socks5">.local/bin/adb-ssh-socks5</a>
--rw-r--r-- 1  803   May 11 2025 20:37 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/adb-ssh-socks5.patch">.local/bin/adb-ssh-socks5.patch</a>
+-rw-r--r-- 1 1.5K   Jul 16 2025 12:46 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/adb-ssh-socks5.patch">.local/bin/adb-ssh-socks5.patch</a>
 -rwxr-xr-x 1  232   Jan  5 2023 18:36 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/ascii2ps">.local/bin/ascii2ps</a>
 -rwxr-xr-x 1 3.2K   Nov 25 2024 11:48 rev. 20   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/chromium">.local/bin/chromium</a>
 -rwxr-xr-x 1  181   Sep 25 2022 23:41 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/egrep">.local/bin/egrep</a>
@@ -992,4 +992,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 25 Jun 2025 15:17:33 -0700 -->
+<!-- updated Wed, 16 Jul 2025 12:46:07 -0700 -->
