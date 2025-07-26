@@ -815,7 +815,7 @@ Minimum requirements for acceptable performance:
 >_Total on-disk size of the current revision is
 320.02KiB
 out of a total compressed git history size of
-1015.98KiB._
+1020.85KiB._
 
 # Complete source listing
 
