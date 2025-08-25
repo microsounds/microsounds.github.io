@@ -36,8 +36,8 @@
 <div class="content">
 <!--kagami v0.6.5 — static microblog processor-->
 <h1>Selected documentation and usage notes for my dotfiles<span id="Selected-documentation-and-usage-notes-for-my-dotfiles"></span></h1>
-<p><strong>Revision No. <b style="font-size: 130%">1012</b>, commit <code>28c49be</code>.</strong></p>
-<p><strong>“adb-ssh-socks5: Forcing SOCK5 proxy everywhere when enabled”</strong></p>
+<p><strong>Revision No. <b style="font-size: 130%">1025</b>, commit <code>92d442e</code>.</strong></p>
+<p><strong>“post-install: Pinned dwm version, deleting more dotnet-sdk bloat”</strong></p>
 <div class="toc">
 <p>Table of Contents</p>
 <ul>
@@ -143,17 +143,17 @@
 in this repo is about <strong>5:1</strong>.</p>
 <p>If this document is <em>44.5KiB</em> in
 size, and the approximate size of all comment lines of code is
-<em>78.1KiB</em> then this document
-currently covers about <b style="font-size: 130%;">11.38%</b>
+<em>80.5KiB</em> then this document
+currently covers about <b style="font-size: 130%;">11.04%</b>
 of all implemented features and behavior in this repository.
 This is just an <a href="https://github.com/microsounds/microsounds.github.io/raw/master/.scripts/dotfiles-ls.sh">automated guess</a> though.</p>
 <p>This document and repository is also mirrored at
 <a href="https://github.com/microsounds/atelier"><code>microsounds/atelier</code></a> on GitHub.</p>
-<p>Last updated 🌓 Wed, Jul 16th, 2025.</p>
+<p>Last updated 🌓 Fri, Aug 15th, 2025.</p>
 <!-- header and github badges -->
 <!-- github readmes only support align attributes for styling -->
 <div style="text-align: center;">
-<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime36b.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
+<h1><em>dotfiles—“atelier”</em><img src="/static/shimemiku/shime48.png" alt="shimeji" /><span id="_dotfilesatelier_"></span></h1>
 <p><img src="https://img.shields.io/github/commit-activity/m/microsounds/atelier?logo=github" alt="ico-freq" />
 <img src="https://img.shields.io/github/repo-size/microsounds/atelier?logo=github" alt="ico-size" />
 <a href="https://github.com/microsounds/atelier/actions/workflows/ci.yml" title="unit tests"><img src="https://github.com/microsounds/atelier/actions/workflows/ci.yml/badge.svg" alt="ico-ci" /></a>
@@ -1356,24 +1356,26 @@ found in the current revision:</em></p>
 <li><code>moonphase-date v0.2</code></li>
 <li><code>nano_overlay.sh v1.2 </code></li>
 <li><code>nyaa-magnet v0.1</code></li>
+<li><code>sfx-play v0.2</code></li>
 <li><code>sfx-synth v0.2</code></li>
 <li><code>termux-ssh-askpass v0.3</code></li>
 <li><code>wm_status.sh v0.6</code></li>
 <li><code>xrandr_cycle.sh v0.3</code></li>
-<li><code>xwin_decor.sh v1.0</code></li>
+<li><code>xwin-sfxd v0.1</code></li>
+<li><code>xwin_decor.sh v1.1</code></li>
 <li><code>xwin_webm.sh v0.6</code></li>
 <li><code>xwin_widgets.sh v0.4</code></li>
 </ul>
 <p><em>Total on-disk size of the current revision is
-320.02KiB
+328.15KiB
 out of a total compressed git history size of
-1020.85KiB.</em></p>
+1.04KiB.</em></p>
 </blockquote>
 <h1>Complete source listing<span id="Complete-source-listing"></span></h1>
 <pre><code><span class="term-prompt">microsounds@shami</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  11K   Mar 30 2024 13:04 rev. 145  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.3K   May 16 2025 14:11 rev. 101  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
--rw-r--r-- 1  594   Sep  8 2024 22:16 rev. 13   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
+-rw-r--r-- 1 1.4K   Aug  3 2025 13:13 rev. 104  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1  715   Aug  8 2025 15:05 rev. 16   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  850   Apr 16 2024 01:14 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
 -rw-r--r-- 1  427   May 25 2023 19:28 rev. 3    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/chromium/preferences.conf">.config/chromium/preferences.conf</a>
@@ -1390,13 +1392,15 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rw-r--r-- 1  501   Jul 16 2021 00:35 rev. 3    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/monocle-indicator.diff">.config/dwm/patches/monocle-indicator.diff</a>
 -rw-r--r-- 1 1.8K   Jul 16 2021 00:37 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/rule-ispermanent.diff">.config/dwm/patches/rule-ispermanent.diff</a>
 -rw-r--r-- 1  870   Jul 16 2021 00:35 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/patches/status-allmonitors.diff">.config/dwm/patches/status-allmonitors.diff</a>
--rwxr-xr-x 1  250   Mar 11 2022 22:34 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/pre-run">.config/dwm/pre-run</a>
+-rwxr-xr-x 1  292   Aug 15 2025 21:23 rev. 3    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/dwm/pre-run">.config/dwm/pre-run</a>
 -rw-r--r-- 1  242   Apr 28 2023 22:37 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/fcitx5/profile">.config/fcitx5/profile</a>
 -rw-r--r-- 1  360   Jul  9 2024 18:14 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/fm/desktop.conf">.config/fm/desktop.conf</a>
 -rw-r--r-- 1  719   Jun 10 2025 16:22 rev. 7    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/fm/libfm.conf">.config/fm/libfm.conf</a>
 -rw-r--r-- 1  387   Apr  3 2021 21:51 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/fm/pcmanfm.conf">.config/fm/pcmanfm.conf</a>
 -rw-r--r-- 1  155   Apr  6 2021 15:35 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk2.conf">.config/gtk/gtk2.conf</a>
--rw-r--r-- 1  263   Apr  6 2021 15:35 rev. 3    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk3.conf">.config/gtk/gtk3.conf</a>
+-rw-r--r-- 1  263   Aug  3 2025 01:06 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk3-dconf.conf">.config/gtk/gtk3-dconf.conf</a>
+-rw-r--r-- 1  482   Aug  3 2025 01:06 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk3.conf">.config/gtk/gtk3.conf</a>
+-rw-r--r-- 1  581   Aug  3 2025 01:06 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/gtk/gtk3.css">.config/gtk/gtk3.css</a>
 -rw-r--r-- 1  967   Jul 18 2021 11:56 rev. 15   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/htop/htoprc">.config/htop/htoprc</a>
 -rw-r--r-- 1  872   Nov 28 2023 18:11 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/keyd/chromebook.conf">.config/keyd/chromebook.conf</a>
 -rw-r--r-- 1  132   Jun  9 2025 12:19 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/keyd/default.conf">.config/keyd/default.conf</a>
@@ -1404,16 +1408,20 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rwxr-xr-x 1  323   Mar 11 2022 22:34 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/post-run">.config/nano/post-run</a>
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
--rw-r--r-- 1 2.7K   May 25 2025 22:32 rev. 48   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
+-rw-r--r-- 1 3.0K   Aug  9 2025 17:53 rev. 49   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
 -rw-r--r-- 1  532   Jun  9 2025 12:19 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
+-rwxr-xr-x 1  789   Aug 15 2025 21:23 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/OpenTabletDriver/pre-run">.config/upstream/OpenTabletDriver/pre-run</a>
 -rw-r--r-- 1  134   Sep  8 2024 22:16 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/azpainter/makefile">.config/upstream/azpainter/makefile</a>
 -rwxr-xr-x 1  264   Sep  8 2024 22:16 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/azpainter/post-run">.config/upstream/azpainter/post-run</a>
 -rwxr-xr-x 1  249   Sep  8 2024 22:16 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/azpainter/pre-run">.config/upstream/azpainter/pre-run</a>
 -rwxr-xr-x 1  279   Sep 10 2023 23:30 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/cmark-gfm-xhtml/pre-run">.config/upstream/cmark-gfm-xhtml/pre-run</a>
 -rwxr-xr-x 1  556   Nov 28 2023 17:29 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/keyd/pre-run">.config/upstream/keyd/pre-run</a>
+-rw-r--r-- 1 1.6K   Aug  3 2025 13:13 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/pcmanfm/desktop-icon-offset.patch">.config/upstream/pcmanfm/desktop-icon-offset.patch</a>
+-rwxr-xr-x 1  960   Aug  3 2025 13:13 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/pcmanfm/pre-run">.config/upstream/pcmanfm/pre-run</a>
+-rwxr-xr-x 1  579   Aug  2 2025 12:41 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/rxvt-unicode/pre-run">.config/upstream/rxvt-unicode/pre-run</a>
 -rwxr-xr-x 1  519   Oct 26 2023 10:28 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/sc/pre-run">.config/upstream/sc/pre-run</a>
 -rwxr-xr-x 1  231   Mar 10 2022 17:55 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/x48/post-run">.config/upstream/x48/post-run</a>
--rwxr-xr-x 1  311   Apr 29 2023 09:35 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/x48/pre-run">.config/upstream/x48/pre-run</a>
+-rwxr-xr-x 1  650   Aug  1 2025 13:00 rev. 6    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/x48/pre-run">.config/upstream/x48/pre-run</a>
 -rwxr-xr-x 1  313   Aug  4 2023 16:41 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/xdiskusage/pre-run">.config/upstream/xdiskusage/pre-run</a>
 -rwxr-xr-x 1  235   Dec  6 2021 18:11 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/upstream/yt-dlp/post-run">.config/upstream/yt-dlp/post-run</a>
 -rw-r--r-- 1 1019   Dec 16 2021 12:51 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.config/xkb/chromebook.xkb">.config/xkb/chromebook.xkb</a>
@@ -1452,6 +1460,7 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0    .local/bin/rgrep -> egrep
 -rwxr-xr-x 1  258   Jul  2 2024 15:08 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/x48-resize">.local/bin/x48-resize</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0    .local/bin/xrandr-cycle -> ../../Scripts/xrandr_cycle.sh
 lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/bin/xwin-decor -> ../../Scripts/xwin_decor.sh
+-rwxr-xr-x 1 1023   Aug  9 2025 17:11 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/bin/xwin-sfxd">.local/bin/xwin-sfxd</a>
 lrwxrwxrwx 1   26   (symbolic link)   rev. 0    .local/bin/xwin-statusd -> ../../Scripts/wm_status.sh
 lrwxrwxrwx 1   26   (symbolic link)   rev. 0    .local/bin/xwin-webm -> ../../Scripts/xwin_webm.sh
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0    .local/bin/xwin-widgets -> ../../Scripts/xwin_widgets.sh
@@ -1476,8 +1485,8 @@ lrwxrwxrwx 1   29   (symbolic link)   rev. 0    .local/bin/xwin-widgets -> ../..
 -rwxr-xr-x 1 1.1K   Oct 21 2021 21:08 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/palette">.local/lib/palette</a>
 lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../../Scripts/git_status.sh
 -rwxr-xr-x 1  553   Jul 10 2021 23:42 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/path-shorthand">.local/lib/path-shorthand</a>
--rwxr-xr-x 1  181   Aug  2 2021 15:47 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-play">.local/lib/sfx-play</a>
--rwxr-xr-x 1 1020   May 16 2025 14:45 rev. 6    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-synth">.local/lib/sfx-synth</a>
+-rwxr-xr-x 1  606   Aug  9 2025 17:11 rev. 2    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-play">.local/lib/sfx-play</a>
+-rwxr-xr-x 1 1022   Aug  9 2025 17:11 rev. 7    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/sfx-synth">.local/lib/sfx-synth</a>
 -rwxr-xr-x 1  526   Dec 28 2023 02:14 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/systemd-sleep">.local/lib/systemd-sleep</a>
 -rwxr-xr-x 1 2.5K   Dec 19 2023 23:01 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/termux-ssh-askpass">.local/lib/termux-ssh-askpass</a>
 -rwxr-xr-x 1  319   Jul 23 2021 00:58 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.local/lib/user-confirm">.local/lib/user-confirm</a>
@@ -1515,7 +1524,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rwxr-xr-x 1  298   Nov 30 2021 00:48 rev. 1    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/24-initramfs-resume.sh">.once.d/24-initramfs-resume.sh</a>
 -rwxr-xr-x 1  752   Mar 21 2022 23:26 rev. 13   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/25-chromium-widevine.sh">.once.d/25-chromium-widevine.sh</a>
 -rwxr-xr-x 1 1.1K   Feb 15 2024 02:34 rev. 7    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/26-freedesktop-tweaks.sh">.once.d/26-freedesktop-tweaks.sh</a>
--rwxr-xr-x 1  178   Mar 13 2021 01:07 rev. 4    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
+-rwxr-xr-x 1  279   Aug  1 2025 12:59 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/27-libvirt-rootless.sh">.once.d/27-libvirt-rootless.sh</a>
 -rwxr-xr-x 1 1.5K   Mar 21 2022 23:26 rev. 9    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/28-intel-undervolt.sh">.once.d/28-intel-undervolt.sh</a>
 -rwxr-xr-x 1  874   May  8 2025 22:37 rev. 9    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/29-chromium-extensions.sh">.once.d/29-chromium-extensions.sh</a>
 -rwxr-xr-x 1   58   Nov 30 2021 00:47 rev. 3    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.once.d/2a-remove-motd.sh">.once.d/2a-remove-motd.sh</a>
@@ -1530,20 +1539,20 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1  886   Sep 10 2023 23:30 rev. 31   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.scrc">.scrc</a>
 -rwxr-xr-x 1 1013   May 11 2025 13:28 rev. 9    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.shortcuts/SSH-Daemon">.shortcuts/SSH-Daemon</a>
--rw-r--r-- 1 2.6K   Jun  9 2025 12:19 rev. 79   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
--rw-r--r-- 1 2.0K   Dec 29 2023 10:42 rev. 29   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
+-rw-r--r-- 1 2.8K   Aug  9 2025 17:11 rev. 82   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xinitrc">.xinitrc</a>
+-rw-r--r-- 1 2.2K   Aug 10 2025 01:55 rev. 31   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
 -rwxr-xr-x 1 6.8K   Jun 30 2024 22:07 rev. 50   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Jun 27 2024 16:38 rev. 8    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
--rwxr-xr-x 1 3.2K   Apr 26 2025 18:42 rev. 36   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
+-rwxr-xr-x 1 3.8K   Aug 10 2025 00:49 rev. 37   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.7K   May 13 2025 15:05 rev. 20   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17   <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5    <a href="https://raw.githubusercontent.com/microsounds/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
 -rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217  <a href="https://raw.githubusercontent.com/microsounds/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 16 Jul 2025 12:46:07 -0700 -->
+<!-- updated Fri, 15 Aug 2025 21:23:32 -0700 -->
 <hr/>
 <div class="footer">
 	<span class="right" style="padding-left: 5px">
