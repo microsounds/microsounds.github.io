@@ -786,7 +786,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime48.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime24.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -817,7 +817,7 @@ Minimum requirements for acceptable performance:
 >_Total on-disk size of the current revision is
 328.15KiB
 out of a total compressed git history size of
-1.04KiB._
+1.05KiB._
 
 # Complete source listing
 
