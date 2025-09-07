@@ -28,7 +28,7 @@ var platitudes = [
 	'n-no, it\'s supposed to look like that',
 	'lifelike tantric abberations at 3am',
 	'the last love song at the end of time',
-	'anime-induced internet megalophobia',
+	'rapid-onset internet megalophobia',
 	'it hurts to hide myself from you',
 	'it\'s almost like you never existed',
 	'did you want this moment to last forever?',
