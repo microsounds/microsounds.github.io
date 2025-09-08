@@ -146,6 +146,7 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you p
 | <span class="blink">**Nvidia GeForce RTX 3050 6GB**</span> | 2024 | 6GB<br/><sup>GDDR6</sup> | 75W | 10557 | Successor to GTX 1650 LP, **Yeston has a 1-slot version**. |
 | Nvidia RTX A2000 | 2021 | 6GB<br/><sup>GDDR6</sup>  | 75W | 13592 | Workstation card. |
 | Nvidia RTX A2000 12GB | 2021 | 12GB<br/><sup>GDDR6</sup> | 75W | 13700 | Workstation card. |
+| _Intel Arc Pro B50_ | 2025 | 16GB<br/><sup>GDDR6</sup> | 70W | 17000? | Workstation card, **Requires CPU with [Resizable BAR][6]** |
 | Nvidia RTX 2000 Ada Generation | 2024 | 16GB<br/><sup>GDDR6</sup> | 70W | 17437 | Workstation card.. |
 | <span class="highlight">AMD Ryzen AI Max+ PRO 395</span> | 2025 | _N/A_ | N/A | 19000? | AMD Ryzen AI Max+ integrated graphics. |
 | Nvidia RTX 4000 SFF Ada Generation | 2023 | 20GB<br/><sup>GDDR6</sup> | 70W | 20215 | Workstation card, **most efficient LP card available**. |
