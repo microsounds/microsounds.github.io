@@ -1,5 +1,5 @@
 <!-- created 2020/10/22 -->
-<!-- updated 2025/9/7 -->
+<!-- updated 2025/9/12 -->
 # List of low profile GPUs for small form factor PCs (SFFs)
 Last updated {UPDATED}.
 
@@ -145,8 +145,8 @@ These run hot and have heatsink/fan assemblies that are 2 PCIe slots wide, you p
 | <span class="blink">**Nvidia GeForce GTX 1650**</span> | 2019 | 4GB<br/><sup>GDDR5/6</sup> | 75W | 7818 | **GDDR6 version offers 6% perf uplift**, successor to GTX 1050ti LP, SRhonrya, ASL have [1-slot versions][4] for the Chinese market. |
 | <span class="blink">**Nvidia GeForce RTX 3050 6GB**</span> | 2024 | 6GB<br/><sup>GDDR6</sup> | 75W | 10557 | Successor to GTX 1650 LP, **Yeston has a 1-slot version**. |
 | Nvidia RTX A2000 | 2021 | 6GB<br/><sup>GDDR6</sup>  | 75W | 13592 | Workstation card. |
-| Nvidia RTX A2000 12GB | 2021 | 12GB<br/><sup>GDDR6</sup> | 75W | 13700 | Workstation card. |
-| _Intel Arc Pro B50_ | 2025 | 16GB<br/><sup>GDDR6</sup> | 70W | 17000? | Workstation card, **Requires CPU with [Resizable BAR][6]** |
+| Nvidia RTX A2000 12GB | 2021 | 12GB<br/><sup>GDDR6</sup> | 75W | 13703 | Workstation card. |
+| Intel Arc Pro B50 | 2025 | 16GB<br/><sup>GDDR6</sup> | 70W | 13728 | Workstation card, **Requires CPU with [Resizable BAR][6]** |
 | Nvidia RTX 2000 Ada Generation | 2024 | 16GB<br/><sup>GDDR6</sup> | 70W | 17437 | Workstation card.. |
 | <span class="highlight">AMD Ryzen AI Max+ PRO 395</span> | 2025 | _N/A_ | N/A | 19000? | AMD Ryzen AI Max+ integrated graphics. |
 | Nvidia RTX 4000 SFF Ada Generation | 2023 | 20GB<br/><sup>GDDR6</sup> | 70W | 20215 | Workstation card, **most efficient LP card available**. |
