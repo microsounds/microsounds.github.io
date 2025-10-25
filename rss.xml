@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 12 Sep 2025 17:06:48 -0700</lastBuildDate>
+<lastBuildDate>Fri, 24 Oct 2025 10:06:16 -0700</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -12,12 +12,12 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 1026, commit 1acf410. “xwin-statusd: Added optional simulated HDD disk write indicator” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 44.5KiB in size, and the approximate size of all comment lines of code is 80.7KiB then this document currently covers about 11.02% of all implemented features and behavior in this repository. This is just an [..]]]>
+<![CDATA[Revision No. 1027, commit 0e2e9c9. “nano: Added keybind ‘M-K’ to cutbuffer blocks of text” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 44.5KiB in size, and the approximate size of all comment lines of code is 80.8KiB then this document currently covers about 11.01% of all implemented features and behavior in this repository. This is just [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/dotfiles.htm</guid>
-<pubDate>Fri, 12 Sep 2025 17:06:48 -0700</pubDate>
+<pubDate>Fri, 24 Oct 2025 10:06:16 -0700</pubDate>
 </item>
 <item>
 <title>My Collection of Assorted Figurines (oops all miku!)</title>
