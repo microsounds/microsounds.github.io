@@ -1,5 +1,5 @@
 <!-- started 2022/4/21 -->
-<!-- updated 2025/7/11 -->
+<!-- updated 2025/11/3 -->
 
 # My Collection of Assorted Figurines (oops all miku!)
 Last updated {UPDATED}
@@ -196,7 +196,7 @@ var figs = [
 	[ '5737', '2e05d', 'good smile kagami hiiragi \'MikkuMiku\' lucky star OVA nendoroid #062 (2009)' ],
 	[ '59755', 'c2133', 'max factory hatsune miku append figma #100 (2011)' ],
 	[ '78582', '5dc32', 'good smile hatsune miku append nendoroid #194 (2012)' ],
-	[ '757554', '0b003', 'good smile miku cheerful ver. nendoroid #1001 (2011)' ],
+	[ '66010', '03aa7', 'good smile miku cheerful ver. nendoroid #170 (2011)' ],
 	[ '287701', 'bb9fe', 'good smile mitchie m the greatest idol miku 1/8 scale (2016)' ],
 	[ '41459', '30b7f', 'good smile miku absolute HMO edition nendoroid #129 (2011)' ],
 	[ '861021', '9c203', 'sega preciality special nuigurumi (fuwafuwa mega jumbo) miku plush (2019)' ],

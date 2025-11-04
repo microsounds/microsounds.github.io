@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<lastBuildDate>Fri, 24 Oct 2025 10:06:16 -0700</lastBuildDate>
+<lastBuildDate>Mon, 03 Nov 2025 00:00:00 -0800</lastBuildDate>
 <ttl>1</ttl>
 <generator>kagami v0.6.5 — static microblog processor</generator>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
@@ -27,7 +27,7 @@
 </description>
 <link>https://microsounds.github.io/notes/figures.htm</link>
 <guid isPermaLink="true">https://microsounds.github.io/notes/figures.htm</guid>
-<pubDate>Fri, 11 Jul 2025 00:00:00 -0700</pubDate>
+<pubDate>Mon, 03 Nov 2025 00:00:00 -0800</pubDate>
 </item>
 <item>
 <title>List of low profile GPUs for small form factor PCs (SFFs)</title>
