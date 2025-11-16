@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1027</b>, commit `0e2e9c9`.**
+**Revision No. <b style="font-size: 130%">1030</b>, commit `246c406`.**
 
-**"nano: Added keybind 'M-K' to cutbuffer blocks of text"**
+**"pcmanfm: Fixed plaintext files not opening on double-click"**
 
 {TOC}
 
@@ -10,10 +10,10 @@ View changelog since the last revision as [ `diff HEAD~1...HEAD`][2]
 The verbosity factor of this document compared to comment lines of code
 in this repo is about **5:1**.
 
-If this document is *44.5KiB* in
+If this document is *44.4KiB* in
 size, and the approximate size of all comment lines of code is
 *80.8KiB* then this document
-currently covers about <b style="font-size: 130%;">11.01%</b>
+currently covers about <b style="font-size: 130%;">11.00%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -323,12 +323,12 @@ At the X server level, keybinds are handled by a mix of ~~`xkb`~~, `dwm`, `sxhkd
 | syslog | | insert |
 
 **Special** mouse keybinds with extended button layouts.
-* _This is for generic mice with more than 3 keys, usually with left/right switches on the scroll wheel._
+* _This is meant for 3 button mice with at least 2 side keys._
 
 | action | key |
 | --: | :-- |
-| move window to previous monitor | middle click left |
-| move window to next monitor | middle click right |
+| cycle focused window to next monitor | button 8 |
+| set focused window as master window  | button 9 |
 
 ### Generic 74-key Chromebook layout
 Search key is `Super_L`, most missing keys are hidden behind `Right Alt` layer.
@@ -786,7 +786,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime19.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime27.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -815,15 +815,15 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-328.60KiB
+328.57KiB
 out of a total compressed git history size of
-1.05KiB._
+1.07KiB._
 
 # Complete source listing
 
 <pre><code><span class="term-prompt">{AUTHOR}@{PC_NAME}</span>:<span class="term-dir">~</span>$ git meta ls-tree --name-only -r master | xargs ls -lhgG
 -rw-r--r-- 1  11K   Mar 30 2024 13:04 rev. 145  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.bashrc">.bashrc</a>
--rw-r--r-- 1 1.4K   Aug  3 2025 13:13 rev. 104  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
+-rw-r--r-- 1 1.4K   Nov  5 2025 16:30 rev. 105  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts">.comforts</a>
 -rw-r--r-- 1  715   Aug  8 2025 15:05 rev. 16   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.comforts-git">.comforts-git</a>
 -rw-r--r-- 1  850   Apr 16 2024 01:14 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/local_state.conf">.config/chromium/local_state.conf</a>
 -rw-r--r-- 1 3.6K   May 25 2023 19:52 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/chromium/omnibox.sql">.config/chromium/omnibox.sql</a>
@@ -858,7 +858,7 @@ lrwxrwxrwx 1   14   (symbolic link)   rev. 0    .config/dmenu/pre-run -> ../dwm/
 -rwxr-xr-x 1  215   Mar 11 2022 22:34 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/nano/pre-run">.config/nano/pre-run</a>
 -rw-r--r-- 1  197   Apr  6 2021 15:35 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/chromebook">.config/sxhkd/chromebook</a>
 -rw-r--r-- 1 3.0K   Aug  9 2025 17:53 rev. 49   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/default">.config/sxhkd/default</a>
--rw-r--r-- 1  532   Jun  9 2025 12:19 rev. 4    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
+-rw-r--r-- 1  529   Nov  5 2025 16:41 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/sxhkd/mouse">.config/sxhkd/mouse</a>
 -rwxr-xr-x 1  789   Aug 15 2025 21:23 rev. 4    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/OpenTabletDriver/pre-run">.config/upstream/OpenTabletDriver/pre-run</a>
 -rw-r--r-- 1  134   Sep  8 2024 22:16 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/azpainter/makefile">.config/upstream/azpainter/makefile</a>
 -rwxr-xr-x 1  264   Sep  8 2024 22:16 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.config/upstream/azpainter/post-run">.config/upstream/azpainter/post-run</a>
@@ -945,7 +945,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rwxr-xr-x 1  466   Jun  9 2025 12:19 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/lib/xwin-window-wait">.local/lib/xwin-window-wait</a>
 -rw-r--r-- 1  172   May 29 2020 11:21 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/X11/bitmaps/diag.xbm">.local/share/X11/bitmaps/diag.xbm</a>
 -rw-r--r-- 1  280   Aug 14 2021 15:39 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/applications/mimeapps.list">.local/share/applications/mimeapps.list</a>
--rw-r--r-- 1   80   Aug 14 2021 15:39 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/applications/nano.desktop">.local/share/applications/nano.desktop</a>
+-rw-r--r-- 1   90   Nov 13 2025 13:35 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/applications/nano.desktop">.local/share/applications/nano.desktop</a>
 -rw-r--r-- 1  685   Mar 31 2021 21:37 rev. 3    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/nano/md-kagami.nanorc">.local/share/nano/md-kagami.nanorc</a>
 -rw-r--r-- 1  291   Jul 15 2020 16:41 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/share/nano/stdc.syntax">.local/share/nano/stdc.syntax</a>
 -rw-r--r-- 1   84   Mar 26 2022 20:37 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.mailmap">.mailmap</a>
@@ -992,13 +992,13 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1 2.2K   Aug 10 2025 01:55 rev. 31   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
 -rwxr-xr-x 1  23K   Jun 25 2022 16:15 rev. 90   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/nano_overlay.sh">Scripts/nano_overlay.sh</a>
--rwxr-xr-x 1 7.1K   Sep 12 2025 17:06 rev. 51   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
+-rwxr-xr-x 1 7.1K   Nov  5 2025 16:41 rev. 52   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/wm_status.sh">Scripts/wm_status.sh</a>
 -rwxr-xr-x 1 1.7K   Jun 27 2024 16:38 rev. 8    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xrandr_cycle.sh">Scripts/xrandr_cycle.sh</a>
 -rwxr-xr-x 1 3.8K   Aug 10 2025 00:49 rev. 37   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_decor.sh">Scripts/xwin_decor.sh</a>
 -rwxr-xr-x 1 1.7K   May 13 2025 15:05 rev. 20   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.0K   Dec 13 2021 02:28 rev. 17   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  45K   Apr 26 2025 18:42 rev. 217  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  45K   Nov  5 2025 16:41 rev. 218  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Fri, 24 Oct 2025 10:06:16 -0700 -->
+<!-- updated Thu, 13 Nov 2025 13:35:59 -0800 -->
