@@ -224,7 +224,7 @@ var figs = [
 	[ '1419501', '49579', 'good smile racing miku 2022 nendoroid #1839 (2022)' ],
 	[ '1503807', '54464', 'good smile magical mirai 2021 miku nendoroid #1940 (2022)' ],
 	[ '1407723', 'd9878', 'taito big nuigurumi miku winter ver. (type B) (2021)' ],
-	[ '1635003', 'ea804', 'taito wonderland puss in boots miku (2023)' ],
+	[ '1635003', '6695d', 'taito wonderland puss in boots miku (2023)' ],
 	[ '36788', '5b203', 'sega kagamine len EX figure (2010)' ],
 	[ '1495055', 'eda04', 'bandai q posket miku v4x type a (2022)' ],
 	[ '1796930', '5b192', 'max limited yurayura head miku nt #76 (2023)' ],
