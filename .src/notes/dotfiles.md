@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1037</b>, commit `7a8caac`.**
+**Revision No. <b style="font-size: 130%">1039</b>, commit `6d29edc`.**
 
-**"x48: Upstream repo maintainer moved git hosts"**
+**"termux: SSH-Daemon no longer suggesting ssh -C anymore"**
 
 {TOC}
 
@@ -13,7 +13,7 @@ in this repo is about **5:1**.
 If this document is *45.2KiB* in
 size, and the approximate size of all comment lines of code is
 *81.1KiB* then this document
-currently covers about <b style="font-size: 130%;">11.15%</b>
+currently covers about <b style="font-size: 130%;">11.14%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -802,7 +802,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime36b.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime6.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -831,9 +831,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.4`
 >
 >_Total on-disk size of the current revision is
-335.13KiB
+335.33KiB
 out of a total compressed git history size of
-1.08KiB._
+1.09KiB._
 
 # Complete source listing
 
@@ -998,14 +998,14 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rwxr-xr-x 1  201   Mar  2 2022 12:39 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2b-enscript-fonts.sh">.once.d/2b-enscript-fonts.sh</a>
 -rwxr-xr-x 1  566   Nov 26 2022 20:37 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2c-csr8510-bluetooth.sh">.once.d/2c-csr8510-bluetooth.sh</a>
 -rwxr-xr-x 1 1.1K   Nov 23 2023 19:59 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/2d-intel-bay-trail.sh">.once.d/2d-intel-bay-trail.sh</a>
--rwxr-xr-x 1 4.3K   Nov 24 2025 17:54 rev. 33   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
+-rwxr-xr-x 1 4.3K   Jan 28 2026 14:14 rev. 34   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/a0-android-termux.sh">.once.d/a0-android-termux.sh</a>
 -rwxr-xr-x 1  200   Nov 28 2023 16:34 rev. 10   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/c0-chromebook-power-key.sh">.once.d/c0-chromebook-power-key.sh</a>
 -rw-r--r-- 1 1.1K   Oct 22 2022 22:48 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/ntc-chip.patch">.once.d/ntc-chip.patch</a>
 -rwxr-xr-x 1  199   Nov 28 2023 16:34 rev. 3    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p0-pocketchip-power-key.sh">.once.d/p0-pocketchip-power-key.sh</a>
 -rwxr-xr-x 1  396   Oct 22 2022 22:48 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.once.d/p1-pocketchip-network-manager.sh">.once.d/p1-pocketchip-network-manager.sh</a>
 -rw-r--r-- 1  886   Sep 10 2023 23:30 rev. 31   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.profile">.profile</a>
 -rw-r--r-- 1  276   Dec 14 2021 20:38 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.scrc">.scrc</a>
--rwxr-xr-x 1 1.2K   Nov 25 2025 00:37 rev. 10   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.shortcuts/SSH-Daemon">.shortcuts/SSH-Daemon</a>
+-rwxr-xr-x 1 1.4K   Jan 28 2026 14:23 rev. 12   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.shortcuts/SSH-Daemon">.shortcuts/SSH-Daemon</a>
 -rw-r--r-- 1 2.8K   Aug  9 2025 17:11 rev. 82   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xinitrc">.xinitrc</a>
 -rw-r--r-- 1 2.2K   Aug 10 2025 01:55 rev. 31   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.xresources">.xresources</a>
 -rwxr-xr-x 1 4.3K   May 15 2022 23:36 rev. 32   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/git_status.sh">Scripts/git_status.sh</a>
@@ -1019,4 +1019,4 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rw-r--r-- 1  46K   Dec  9 2025 10:56 rev. 219  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Wed, 10 Dec 2025 11:23:10 -0800 -->
+<!-- updated Wed, 28 Jan 2026 14:23:35 -0800 -->
