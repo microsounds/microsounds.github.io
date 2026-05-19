@@ -1,5 +1,5 @@
 <!-- started 2022/8/3 -->
-<!-- updated 2024/3/15 -->
+<!-- updated 2026/4/19 -->
 # Fun and Useful Links to Elsewhere
 
 <details>
@@ -92,6 +92,10 @@
 	* _Over 2,000 pages of writings on learning and memory retention, along with opinions on "toxic learning"._
 
 **guides** ---
+* [Wi is Fi: Understanding WiFi 4/5/6/6E/7/8](https://www.wiisfi.com)
+	* _Detailed writeup on upgrading Wi-Fi hardware and setting expectations for real-world performance vs. marketing hype._
+* [USB-WiFi: USB WiFi adapter information for Linux](https://github.com/morrownr/USB-WiFi)
+	* _List of USB WiFi 4/5/6E/7 chipsets since 2022 that are plug-n-play on Linux via in-tree drivers and not out-of-tree cursed vendor DKMS modules downloaded randomly from GitHub._
 * [MyAnimeList: Seasonal Anime Guide](https://myanimelist.net/anime/season)
 * [A crash course in `sc`](http://blog.startaylor.net/2016/08/29/sc)
 	* _Useful reference guide to the obsolescent *NIX spreadsheet tool `sc`._
