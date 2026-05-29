@@ -1,7 +1,7 @@
 # Selected documentation and usage notes for my dotfiles
-**Revision No. <b style="font-size: 130%">1095</b>, commit `26e0ee6`.**
+**Revision No. <b style="font-size: 130%">1096</b>, commit `5d786a5`.**
 
-**"comforts: Added backported Linux drivers for realtek rtw88* devices"**
+**"minecraft: Replacing UltimMC with PineconeMC (ElyPrismLauncher)"**
 
 {TOC}
 
@@ -13,7 +13,7 @@ in this repo is about **5:1**.
 If this document is *46.7KiB* in
 size, and the approximate size of all comment lines of code is
 *84.7KiB* then this document
-currently covers about <b style="font-size: 130%;">11.02%</b>
+currently covers about <b style="font-size: 130%;">11.03%</b>
 of all implemented features and behavior in this repository.
 This is just an [automated guess][1] though.
 
@@ -758,9 +758,9 @@ Because these scripts install proprietary software they are not included during 
 Proprietary games will be installed to `~/.local/opt`, configuration beyond the initial installation is outside the scope of this repo.
 
 ### `minecraft`
-[`minecraft`]({GIT_REMOTE}/atelier/raw/master/.local/bin/minecraft) launches or installs [UltimMC offline launcher](https://github.com/UltimMC/Launcher), and a Java runtime environment if not already installed.
+[`minecraft`]({GIT_REMOTE}/atelier/raw/master/.local/bin/minecraft) launches or installs [PineconeMC launcher](https://github.com/ElyPrismLauncher/Launcher), and a Java runtime environment if not already installed.
 
-UltimMC is a fork of MultiMC which allows you to play any version of **Minecraft Java Edition** offline _with or without_ a paid Minecraft account, it can manage your mods, resource packs and saved worlds as "instances" you can import or export freely.
+PineconeMC _(a fork of Prism Launcher (a fork of PolyMC (a fork of MultiMC)))_ allows you to play any version of **Minecraft Java Edition** offline _with or without_ a paid Minecraft account, it can manage your mods, resource packs and saved worlds as "instances" you can import or export freely.
 
 While you can play online multiplayer normally with a legitimate paid account, you can also login with just a username on 3rd-party servers that specifically allow unauthenticated ("pirate" or "cracked") clients.
 
@@ -828,7 +828,7 @@ Minimum requirements for acceptable performance:
 
 
 [scrot]: https://raw.githubusercontent.com/microsounds/microsounds/master/dotfiles/scrot.png
-[shimeji]: {DOC_ROOT}/static/shimemiku/shime46.png
+[shimeji]: {DOC_ROOT}/static/shimemiku/shime54.png
 # Downloads
 * `git clone {GIT_REMOTE}/atelier`
 * Alternatively, [download latest revision as a `gzip`'d tarball][tar].
@@ -858,9 +858,9 @@ Minimum requirements for acceptable performance:
 > * `xwin_widgets.sh v0.5`
 >
 >_Total on-disk size of the current revision is
-349.98KiB
+350.01KiB
 out of a total compressed git history size of
-1.09KiB._
+1.11KiB._
 
 # Complete source listing
 
@@ -942,7 +942,7 @@ lrwxrwxrwx 1    5   (symbolic link)   rev. 0    .local/bin/fgrep -> egrep
 -rwxr-xr-x 1 2.7K   Mar 20 2024 17:43 rev. 9    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/genshin-impact">.local/bin/genshin-impact</a>
 -rwxr-xr-x 1 1.8K   Jun 25 2025 15:17 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/getquote">.local/bin/getquote</a>
 -rwxr-xr-x 1  100   Jul 15 2020 17:12 rev. 2    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/make">.local/bin/make</a>
--rwxr-xr-x 1  735   Mar 12 2024 13:29 rev. 6    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
+-rwxr-xr-x 1  723   May 20 2026 09:59 rev. 7    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/minecraft">.local/bin/minecraft</a>
 -rwxr-xr-x 1  153   Mar 30 2021 13:19 rev. 4    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/mpv">.local/bin/mpv</a>
 lrwxrwxrwx 1   29   (symbolic link)   rev. 0    .local/bin/nano-overlay -> ../../Scripts/nano_overlay.sh
 -rwxr-xr-x 1  790   Nov  6 2023 17:44 rev. 1    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/.local/bin/nyaa-magnet">.local/bin/nyaa-magnet</a>
@@ -1052,7 +1052,7 @@ lrwxrwxrwx 1   27   (symbolic link)   rev. 0    .local/lib/path-gitstatus -> ../
 -rwxr-xr-x 1 2.3K   Apr  5 2026 13:33 rev. 22   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_webm.sh">Scripts/xwin_webm.sh</a>
 -rwxr-xr-x 1 3.1K   Apr 18 2026 21:56 rev. 19   <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Scripts/xwin_widgets.sh">Scripts/xwin_widgets.sh</a>
 -rw-r--r-- 1 2.0K   Mar 12 2022 17:16 rev. 5    <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/Userscripts/youtube_screenshot.user.js">Userscripts/youtube_screenshot.user.js</a>
--rw-r--r-- 1  47K   Apr 16 2026 13:57 rev. 225  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
+-rw-r--r-- 1  47K   May 20 2026 09:59 rev. 226  <a href="https://raw.githubusercontent.com/{AUTHOR}/atelier/master/readme&#46;md">readme&#46;md</a>
 </code></pre>
 <!-- created Mon, 19 Aug 2019 22:48:18 -0700 -->
-<!-- updated Mon, 18 May 2026 21:11:23 -0700 -->
+<!-- updated Wed, 20 May 2026 09:59:32 -0700 -->
