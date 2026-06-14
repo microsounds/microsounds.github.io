@@ -12,7 +12,7 @@
 <item>
 <title>Selected documentation and usage notes for my dotfiles</title>
 <description>
-<![CDATA[Revision No. 1,097, commit 28f40bb. “xwin-statusd: Now estimating tx/rx data throughput when networking is active” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 46.8KiB in size, and the approximate size of all comment lines of code is 85.2KiB then this document currently covers about 10.98% of all implemented features and behavior in this repository. This is [..]]]>
+<![CDATA[Revision No. 1097, commit 28f40bb. “xwin-statusd: Now estimating tx/rx data throughput when networking is active” View changelog since the last revision as [ diff HEAD~1...HEAD][2] The verbosity factor of this document compared to comment lines of code in this repo is about 5:1. If this document is 46.8KiB in size, and the approximate size of all comment lines of code is 85.1KiB then this document currently covers about 10.99% of all implemented features and behavior in this repository. This is [..]]]>
 <![CDATA[<br/>Read more at <a href="https://microsounds.github.io/notes/dotfiles.htm">https://microsounds.github.io/notes/dotfiles.htm</a>]]>
 </description>
 <link>https://microsounds.github.io/notes/dotfiles.htm</link>
